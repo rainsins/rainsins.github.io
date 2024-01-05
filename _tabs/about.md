@@ -246,21 +246,17 @@ function Device() {
       </div>
     </div>
   );
-}
-</script>
+};
 
-<script name="app" type="text/babel">
-    class App extends React.Component {
+class App extends React.Component {
       render() {
         return (<div className="container-device">
             <Device/>
         </div>);
       }
     }
-</script>
 
-<script name="index" type="text/babel">
-    ReactDOM.render(<App />, document.getElementById('device-box'));
+ReactDOM.render(<App />, document.getElementById('device-box'));
 </script>
 
 <!-- 设备的具体信息 -->
@@ -448,7 +444,7 @@ function Device() {
               {avs.name}
             </div>
             <div className="av-title-img">
-              <div className="av-title-img-main" style={nameimg} data-url={avs.url}/>
+              <div className="av-title-img-main" style={nameimg} data-url={avs.url}></div>
             </div>
           </div>
           <div className="av-detial">
@@ -473,10 +469,8 @@ function Device() {
           </div>
         </div>
       )
-    }
-</script>
+    };
 
-<script type="text/babel" defer>
     class Av extends React.Component {
       render() {
         return (<div className="container-av">
@@ -484,11 +478,9 @@ function Device() {
             <Two/>
         </div>);
       }
-    }
-</script>
+    };
 
-<script type="text/babel" defer>
-  ReactDOM.render(<Av/>, document.getElementById('av-box'));
+    ReactDOM.render(<Av/>, document.getElementById('av-box'));
 </script>
 
 <script type="text/babel" defer>
@@ -554,8 +546,7 @@ function Device() {
       </div>
     )
   }
-</script>
-<script type="text/babel" defer>
+
   class Play extends React.Component {
       render() {
         return (<div className="container-playing">
@@ -563,8 +554,7 @@ function Device() {
         </div>);
       }
   }
-</script>
-<script type="text/babel" defer>
+
   ReactDOM.render(<Play/>, document.getElementById('playing-box'));
 </script>
 
@@ -625,7 +615,8 @@ function Device() {
         </div>
       </div>
     )
-  }
+  };
+
   function Ditem({obj}){
     const style={
       backgroundImage: `url(${obj.type})`,
@@ -638,10 +629,8 @@ function Device() {
         </div>
       </div>
     )
-  }
-</script>
+  };
 
-<script type="text/babel" defer>
   ReactDOM.render(<DeviceItem/>, document.getElementById('device-only'));
 </script>
 
