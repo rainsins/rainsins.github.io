@@ -15,8 +15,6 @@ toc: false
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
 <div class="about-logo-box">
   <div class="about-logo">
     <div class="r logo-font" id="R-l">
@@ -147,6 +145,9 @@ toc: false
       <div class="detail-function">
         <div class="polt_box_ui">
         <div id="root"></div>
+        $$
+        y=\left( 0.64\sqrt{\left| x\right|  } \right)  -0.8+1.2^{\left| x\right|  }cos\left( 200x\right)  )\times \sqrt{cosx} 
+        $$
         </div>
       </div>
       <div class="detail-ins">
@@ -193,7 +194,7 @@ toc: false
 
 <div id="playing-box"></div>
 
-<script type="text/babel" defer>
+<script type="text/babel">
   const playdata = [
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BE%BD%E6%AF%9B.png",
@@ -240,7 +241,7 @@ toc: false
 
   function Pitem({obj}){
     const style_img = {
-      backgroundImage: `url(${obj.url})`
+      backgroundImage: `url(${obj.url})`,
     }
     return(
       <div className="palying-item">
@@ -256,7 +257,8 @@ toc: false
       </div>
     )
   }
-
+  </script>
+<script type="text/babel">
   class Play extends React.Component {
       render() {
         return (<div className="container-playing">
@@ -264,8 +266,10 @@ toc: false
         </div>);
       }
   }
-
-  ReactDOM.render(<Play/>, document.getElementById('playing-box'));
+</script>
+<script type="text/babel">
+  const root_play = ReactDOM.createRoot(document.getElementById('playing-box'));
+  root_play.render(<Play/>);
 </script>
 
 <!-- 装备 -->
