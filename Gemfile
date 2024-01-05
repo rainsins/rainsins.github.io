@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
-
-gem "github-pages", "~> 228", group: :jekyll_plugins
+source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
 
 gemspec
 
@@ -28,3 +26,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
+
+gem "github-pages", "~> 228", group: :jekyll_plugins
