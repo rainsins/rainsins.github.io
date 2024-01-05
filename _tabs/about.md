@@ -199,33 +199,33 @@ toc: false
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BE%BD%E6%AF%9B.png",
       name: "羽毛球",
-      layel: "❤❤❤❤❤",
+      layel: "❤❤❤❤❤"
     },
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BD%91%E7%90%83.png",
       name: "网球",
-      layel: "❤❤❤❤❤",
+      layel: "❤❤❤❤❤"
     },
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/hei.png",
       name: "黑苹果",
-      layel: "❤❤❤",
+      layel: "❤❤❤"
     },
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cube.png",
       name: "魔方",
-      layel: "❤❤❤❤",
+      layel: "❤❤❤❤"
     },
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/logarithm.png",
       name: "数学",
-      layel: "❤❤❤❤❤",
+      layel: "❤❤❤❤❤"
     },
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/pubis.png",
       name: "🚗",
-      layel: "❤❤❤❤",
-    },
+      layel: "❤❤❤❤"
+    }
   ];
 
   function Playing(){
@@ -237,7 +237,7 @@ toc: false
         {item}
       </div>
     );
-  }
+  };
 
   function Pitem({obj}){
     const style_img = {
@@ -266,7 +266,7 @@ toc: false
             <Playing/>
         </div>);
       };
-  }
+  };
 </script>
 <script type="text/babel">
   const root_play = ReactDOM.createRoot(document.getElementById('playing-box'));
