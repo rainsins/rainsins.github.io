@@ -44,7 +44,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/2000_python # change to your twitter homepage
-    - https://github.com/2000python # change to your github homepage
+    - https://github.com/rainsins # change to your github homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/wang.bill.79827
     # - https://www.linkedin.com/in/username
@@ -76,11 +76,11 @@ theme_mode: light
 #
 # e.g. 'https://cdn.com'
 #<<<<<<< HEAD
-img_cdn: "https://photo.rainsin.cn:2000"
+img_cdn: "https://rainsin-1305486451.file.myqcloud.com"
 
 # the avatar on sidebar, support local or CORS resources
 #avatar: "/commons/avatar.jpg"
-avatar: "/LightPicture/2023/06/1f132f8127c6eff8.png"
+avatar: "/rainsin-blog/home.png"
 #=======
 #img_cdn: "https://chirpy-img.netlify.app"
 
