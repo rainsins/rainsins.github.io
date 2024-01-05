@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
+#source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
 source "https://rubygems.org"
 
 gemspec
@@ -24,9 +24,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Lock jekyll-sass-converter to 2.x on Linux-musl
-if RUBY_PLATFORM =~ /linux-musl/
-  gem "jekyll-sass-converter", "~> 2.0"
-end
+# if RUBY_PLATFORM =~ /linux-musl/
+#   gem "jekyll-sass-converter", "~> 2.0"
+# end
 
-gem "kramdown-parser-gfm"
+#gem "kramdown-parser-gfm"
 #gem "github-pages", "~> 228", group: :jekyll_plugins
