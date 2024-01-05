@@ -193,6 +193,81 @@ toc: false
 
 <div id="playing-box"></div>
 
+<script type="text/babel" defer>
+  const playdata = [
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BE%BD%E6%AF%9B.png",
+      name: "羽毛球",
+      layel: "❤❤❤❤❤",
+    },
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BD%91%E7%90%83.png",
+      name: "网球",
+      layel: "❤❤❤❤❤",
+    },
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/hei.png",
+      name: "黑苹果",
+      layel: "❤❤❤",
+    },
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cube.png",
+      name: "魔方",
+      layel: "❤❤❤❤",
+    },
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/logarithm.png",
+      name: "数学",
+      layel: "❤❤❤❤❤",
+    },
+    {
+      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/pubis.png",
+      name: "🚗",
+      layel: "❤❤❤❤",
+    },
+  ];
+
+  function Playing(){
+    const item = playdata.map((e)=>{
+      return (<Pitem obj={e}/>)
+    })
+    return(
+      <div className="playing-item-box">
+        {item}
+      </div>
+    )
+  }
+
+  function Pitem({obj}){
+    const style_img = {
+      backgroundImage: `url(${obj.url})`
+    }
+    return(
+      <div className="palying-item">
+        <div className="palying-item-img">
+          <div className="palying-img" style={style_img}></div>
+        </div>
+        <div className="palying-item-name">
+          {obj.name}
+        </div>
+        <div className="palying-item-lay">
+          {obj.layel}
+        </div>
+      </div>
+    )
+  }
+
+  class Play extends React.Component {
+      render() {
+        return (<div className="container-playing">
+            <Playing/>
+        </div>);
+      }
+  }
+
+  ReactDOM.render(<Play/>, document.getElementById('playing-box'));
+</script>
+
 <!-- 装备 -->
 ## 💻我的主机
 
@@ -262,6 +337,81 @@ ReactDOM.render(<App />, document.getElementById('device-box'));
 <!-- 设备的具体信息 -->
 <div id="device-only"></div>
 
+<script type="text/babel" defer>
+  const Devicedata1 = [
+    {
+      id: 1,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/cpu-tower.png",
+      name:"Intel i5-9600kf",
+      url:"https://www.intel.com/content/www/us/en/products/sku/190884/intel-core-i59600kf-processor-9m-cache-up-to-4-60-ghz/specifications.html",
+    },
+    {
+      id: 2,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/motherboard.png",
+      name:"微星 Z390M-S01",
+      url:"https://www.msi.cn/Motherboard/Z390M-S01/Specification",
+    },
+    {
+      id: 3,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/gpu.png",
+      name:"蓝宝石 RX 570 4GB",
+      url:"https://www.sapphiretech.com/zh-cn/consumer/pulse-rx-570-4g-g5_c",
+    }];
+    const Devicedata2 = [
+    {
+      id: 4,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/ram.png",
+      name:"幻光戟 3600C18",
+      url:"https://www.gskill.com/tw/product/203/205/1582537336/F4-3600C18D-64GTZR"
+    },
+    {
+      id: 5,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/sound-card.png",
+      name:"螃蟹 ALC892 Codec",
+      url:"https://www.realtek.com/en/products/computer-peripheral-ics/item/alc892",
+    },
+    {
+      id: 6,
+      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/network-card.png",
+      name:"螃蟹 8111H",
+      url:"https://www.realtek.com/en/products/connected-media-ics/item/rtl8111h-s-cg",
+    }
+  ]
+  function DeviceItem(){
+    const SingDevice1 = Devicedata1.map((a,index)=>{
+      return (<Ditem obj={a}/>)
+    });
+    const SingDevice2 = Devicedata2.map((a,index)=>{
+      return (<Ditem obj={a}/>)
+    });
+    return(
+      <div className="sing-device-box">
+        <div className="sing-device-one-box">
+        {SingDevice1}
+        </div>
+        <div className="sing-device-one-box">
+        {SingDevice2}
+        </div>
+      </div>
+    )
+  };
+
+  function Ditem({obj}){
+    const style={
+      backgroundImage: `url(${obj.type})`,
+    }
+    return(
+      <div className="sing-device" data-url={obj.url} data-id={obj.id} id={`sing-device-id${obj.id}`}>
+        <div className="sing-device-type" style={style} data-id={obj.id}></div>
+        <div className="sing-device-name" data-id={obj.id}>
+          {obj.name}
+        </div>
+      </div>
+    )
+  };
+
+  ReactDOM.render(<DeviceItem/>, document.getElementById('device-only'));
+</script>
 
 
 <!-- 老师 -->
@@ -269,46 +419,7 @@ ReactDOM.render(<App />, document.getElementById('device-box'));
 
 <div id="av-box"></div>
 
-<link rel="stylesheet" href="/assets/about/about.css">
-
-## 👻关于本站
-
-<div class="about-site">
-  <div>
-  使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<span>Chirpy</span>。
-  </div>
-  <div>
-  使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>，因为网站的部分资源使用了我自己的服务器。
-  </div>
-  <div>
-  域名服务为<span>Godaddy</span>。
-  </div>
-</div>
-
-## 🌀关于博客
-
-<div class="about-site">
-  <div>
-  分享标记一些找到的好东西或教程，技术方面的内容会少一些。
-  </div>
-  <div>
-  坚决抵制充斥互联网的新黄色新闻、情绪化的内容和数据谎言。
-  </div>
-  <div>
-  内容如有侵权，请联系我<span>rainsin@qq.com</span>删除。
-  </div>
-</div>
-
-## 🌁BANNER
-
-<img class="blog_banner" src="https://rainsin-1305486451.cos.ap-nanjing.myqcloud.com/rainsin-blog/img/blogcover.png" alt="blog"/>
-
-<script src="/assets/about/about.js" defer></script>
-
-<script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
-
-
-<script type="text/babel" defer>
+<script type="text/babel">
     const threeav = [
     {
       name:"香水じゅん",
@@ -483,154 +594,47 @@ ReactDOM.render(<App />, document.getElementById('device-box'));
     ReactDOM.render(<Av/>, document.getElementById('av-box'));
 </script>
 
-<script type="text/babel" defer>
-  const playdata = [
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BE%BD%E6%AF%9B.png",
-      name: "羽毛球",
-      layel: "❤❤❤❤❤",
-    },
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BD%91%E7%90%83.png",
-      name: "网球",
-      layel: "❤❤❤❤❤",
-    },
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/hei.png",
-      name: "黑苹果",
-      layel: "❤❤❤",
-    },
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cube.png",
-      name: "魔方",
-      layel: "❤❤❤❤",
-    },
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/logarithm.png",
-      name: "数学",
-      layel: "❤❤❤❤❤",
-    },
-    {
-      url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/pubis.png",
-      name: "🚗",
-      layel: "❤❤❤❤",
-    },
-  ];
+<link rel="stylesheet" href="/assets/about/about.css">
 
-  function Playing(){
-    const item = playdata.map((e)=>{
-      return (<Pitem obj={e}/>)
-    })
-    return(
-      <div className="playing-item-box">
-        {item}
-      </div>
-    )
-  }
+## 👻关于本站
 
-  function Pitem({obj}){
-    const style_img = {
-      backgroundImage: `url(${obj.url})`
-    }
-    return(
-      <div className="palying-item">
-        <div className="palying-item-img">
-          <div className="palying-img" style={style_img}></div>
-        </div>
-        <div className="palying-item-name">
-          {obj.name}
-        </div>
-        <div className="palying-item-lay">
-          {obj.layel}
-        </div>
-      </div>
-    )
-  }
+<div class="about-site">
+  <div>
+  使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<span>Chirpy</span>。
+  </div>
+  <div>
+  使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>，因为网站的部分资源使用了我自己的服务器。
+  </div>
+  <div>
+  域名服务为<span>Godaddy</span>。
+  </div>
+</div>
 
-  class Play extends React.Component {
-      render() {
-        return (<div className="container-playing">
-            <Playing/>
-        </div>);
-      }
-  }
+## 🌀关于博客
 
-  ReactDOM.render(<Play/>, document.getElementById('playing-box'));
-</script>
+<div class="about-site">
+  <div>
+  分享标记一些找到的好东西或教程，技术方面的内容会少一些。
+  </div>
+  <div>
+  坚决抵制充斥互联网的新黄色新闻、情绪化的内容和数据谎言。
+  </div>
+  <div>
+  内容如有侵权，请联系我<span>rainsin@qq.com</span>删除。
+  </div>
+</div>
 
-<script type="text/babel" defer>
-  const Devicedata1 = [
-    {
-      id: 1,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/cpu-tower.png",
-      name:"Intel i5-9600kf",
-      url:"https://www.intel.com/content/www/us/en/products/sku/190884/intel-core-i59600kf-processor-9m-cache-up-to-4-60-ghz/specifications.html",
-    },
-    {
-      id: 2,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/motherboard.png",
-      name:"微星 Z390M-S01",
-      url:"https://www.msi.cn/Motherboard/Z390M-S01/Specification",
-    },
-    {
-      id: 3,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/gpu.png",
-      name:"蓝宝石 RX 570 4GB",
-      url:"https://www.sapphiretech.com/zh-cn/consumer/pulse-rx-570-4g-g5_c",
-    }];
-    const Devicedata2 = [
-    {
-      id: 4,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/ram.png",
-      name:"幻光戟 3600C18",
-      url:"https://www.gskill.com/tw/product/203/205/1582537336/F4-3600C18D-64GTZR"
-    },
-    {
-      id: 5,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/sound-card.png",
-      name:"螃蟹 ALC892 Codec",
-      url:"https://www.realtek.com/en/products/computer-peripheral-ics/item/alc892",
-    },
-    {
-      id: 6,
-      type:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/network-card.png",
-      name:"螃蟹 8111H",
-      url:"https://www.realtek.com/en/products/connected-media-ics/item/rtl8111h-s-cg",
-    }
-  ]
-  function DeviceItem(){
-    const SingDevice1 = Devicedata1.map((a,index)=>{
-      return (<Ditem obj={a}/>)
-    });
-    const SingDevice2 = Devicedata2.map((a,index)=>{
-      return (<Ditem obj={a}/>)
-    });
-    return(
-      <div className="sing-device-box">
-        <div className="sing-device-one-box">
-        {SingDevice1}
-        </div>
-        <div className="sing-device-one-box">
-        {SingDevice2}
-        </div>
-      </div>
-    )
-  };
+## 🌁BANNER
 
-  function Ditem({obj}){
-    const style={
-      backgroundImage: `url(${obj.type})`,
-    }
-    return(
-      <div className="sing-device" data-url={obj.url} data-id={obj.id} id={`sing-device-id${obj.id}`}>
-        <div className="sing-device-type" style={style} data-id={obj.id}></div>
-        <div className="sing-device-name" data-id={obj.id}>
-          {obj.name}
-        </div>
-      </div>
-    )
-  };
+<img class="blog_banner" src="https://rainsin-1305486451.cos.ap-nanjing.myqcloud.com/rainsin-blog/img/blogcover.png" alt="blog"/>
 
-  ReactDOM.render(<DeviceItem/>, document.getElementById('device-only'));
-</script>
+<script src="/assets/about/about.js" defer></script>
+
+<script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
+
+
+
+
+
+
 
