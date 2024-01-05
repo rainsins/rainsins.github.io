@@ -1,6 +1,6 @@
 @font-face {
     font-family: "FangSong";
-    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/FZFSJW3500.woff") format('woff');
+    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/FZFSJW.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -312,7 +312,7 @@
     border-radius: 12px;
     flex-direction: column;
     padding: 0 30px;
-    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/av.jpeg);
+    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/av.webp);
     background-size: cover;
 }
 .detail-music .mask{
@@ -372,7 +372,7 @@
 }
 
 .bag-ins{
-    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/6ffe4eeadb418d7e.jpg);
+    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/1668212767.webp);
     margin: 10px 0 0 0;
     background-position-y: -100px;
 }
@@ -900,7 +900,7 @@
     background-position: center;
 }
 .palying-item-name{
-    font-family: "FangSong";
+    font-family: "Ping Fang";
     border: 1px solid #e3e8f7ff;
 }
 .palying-item-lay{

@@ -437,7 +437,7 @@ root_device_box.render(<App/>);
       color3:"#D2B39C",
       color4:"#90552C",
       img:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E9%A6%99%E6%B0%B4.jpg",
-      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E9%A6%99%E6%B0%B4.jpeg",
+      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E9%A6%99%E6%B0%B4.webp",
       mfact:"S1",
       mfactlogo:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
       url:"https://xslist.org/zh/model/138616.html"
@@ -453,7 +453,7 @@ root_device_box.render(<App/>);
       color3:"#C2BBBC",
       color4:"#9BA5A4",
       img:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E5%B1%B1%E5%B2%B8/%E5%B1%B1%E5%B2%B8t.webp",
-      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E5%B1%B1%E5%B2%B8/%E5%B1%B1%E5%B2%B8.jpeg",
+      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E5%B1%B1%E5%B2%B8/%E5%B1%B1%E5%B2%B8.webp",
       mfact:"PREMIUM",
       mfactlogo:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/premium.png",
       url:"https://xslist.org/zh/model/358.html"
@@ -469,7 +469,7 @@ root_device_box.render(<App/>);
       color3:"#0DC0E5",
       color4:"#BF9989",
       img:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E7%BA%B1%E7%BB%98/%E7%BA%B1%E7%BB%98t.jpg",
-      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E7%BA%B1%E7%BB%98/%E7%BA%B1%E7%BB%98b.jpg",
+      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E7%BA%B1%E7%BB%98/%E7%BA%B1%E7%BB%98b.webp",
       mfact:"SOD",
       mfactlogo:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
       url:"https://xslist.org/zh/model/172.html"
@@ -504,7 +504,7 @@ root_device_box.render(<App/>);
       color3:"#C6BCB7",
       color4:"#838386",
       img:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/murit.jpg",
-      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/muri.jpeg",
+      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/murit.jpg",
       mfact:"S1",
       mfactlogo:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
       url:"https://xslist.org/zh/model/25134.html"
@@ -631,7 +631,7 @@ root_device_box.render(<App/>);
 
 ## 🌁BANNER
 
-<img class="blog_banner" src="https://rainsin-1305486451.cos.ap-nanjing.myqcloud.com/rainsin-blog/img/blogcover.png" alt="blog"/>
+<img class="blog_banner" src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/header_.webp" alt="blog"/>
 
 <script src="/assets/about/about.js" defer></script>
 
