@@ -266,6 +266,8 @@ function Device() {
 <!-- 设备的具体信息 -->
 <div id="device-only"></div>
 
+
+
 <!-- 老师 -->
 ##  🍑せんせい
 
@@ -309,7 +311,8 @@ function Device() {
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
 
-<script type="text/babel">
+
+<script type="text/babel" defer>
     const threeav = [
     {
       name:"香水じゅん",
@@ -437,35 +440,35 @@ function Device() {
         backgroundImage: `url(${avs.mfactlogo})`,
       }
       return(
-        <div class="av-item-box" style={st}>
-          <div class="av-mask" style={maskstyle}></div>
+        <div className="av-item-box" style={st}>
+          <div className="av-mask" style={maskstyle}></div>
           
-          <div class="av-title">
-            <div class="av-title-name" style={titlecolor}>
+          <div className="av-title">
+            <div className="av-title-name" style={titlecolor}>
               {avs.name}
             </div>
-            <div class="av-title-img">
-              <div class="av-title-img-main" style={nameimg} data-url={avs.url}/>
+            <div className="av-title-img">
+              <div className="av-title-img-main" style={nameimg} data-url={avs.url}/>
             </div>
           </div>
-          <div class="av-detial">
+          <div className="av-detial">
             <Deitem left={'生日'} right={avs.age} color={titlecolor}/>
             <Deitem left={'三围'} right={avs.three} color={titlecolor}/>
             <Deitem left={'出道'} right={avs.out} color={titlecolor}/>
             <Deitem left={'厂商'} right={avs.mfact} color={titlecolor}/>
           </div>
-          <div class="av-mfact-logo" id={avs.name} style={mfact_logo}></div>
+          <div className="av-mfact-logo" id={avs.name} style={mfact_logo}></div>
         </div>
       )
     }
 
     function Deitem({left,right,color}){
       return(
-        <div class="av-detial-item">
-          <div class="av-detial-item-main" style={color}>
+        <div className="av-detial-item">
+          <div className="av-detial-item-main" style={color}>
           {left}
           </div>
-          <div class="av-detial-item-content">
+          <div className="av-detial-item-content">
           {right}
           </div>
         </div>
@@ -473,7 +476,7 @@ function Device() {
     }
 </script>
 
-<script type="text/babel">
+<script type="text/babel" defer>
     class Av extends React.Component {
       render() {
         return (<div className="container-av">
@@ -484,11 +487,11 @@ function Device() {
     }
 </script>
 
-<script type="text/babel">
+<script type="text/babel" defer>
   ReactDOM.render(<Av/>, document.getElementById('av-box'));
 </script>
 
-<script type="text/babel">
+<script type="text/babel" defer>
   const playdata = [
     {
       url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E7%BE%BD%E6%AF%9B.png",
@@ -552,7 +555,7 @@ function Device() {
     )
   }
 </script>
-<script type="text/babel">
+<script type="text/babel" defer>
   class Play extends React.Component {
       render() {
         return (<div className="container-playing">
@@ -561,11 +564,11 @@ function Device() {
       }
   }
 </script>
-<script type="text/babel">
+<script type="text/babel" defer>
   ReactDOM.render(<Play/>, document.getElementById('playing-box'));
 </script>
 
-<script type="text/babel">
+<script type="text/babel" defer>
   const Devicedata1 = [
     {
       id: 1,
@@ -638,7 +641,7 @@ function Device() {
   }
 </script>
 
-<script type="text/babel">
+<script type="text/babel" defer>
   ReactDOM.render(<DeviceItem/>, document.getElementById('device-only'));
 </script>
 
