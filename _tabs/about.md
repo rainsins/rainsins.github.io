@@ -504,7 +504,7 @@ root_device_box.render(<App/>);
       color3:"#C6BCB7",
       color4:"#838386",
       img:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/murit.jpg",
-      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/murit.jpg",
+      bgimg:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/muri.webp",
       mfact:"S1",
       mfactlogo:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
       url:"https://xslist.org/zh/model/25134.html"
