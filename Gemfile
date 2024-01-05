@@ -28,4 +28,5 @@ if RUBY_PLATFORM =~ /linux-musl/
   gem "jekyll-sass-converter", "~> 2.0"
 end
 
+gem "kramdown-parser-gfm"
 #gem "github-pages", "~> 228", group: :jekyll_plugins
