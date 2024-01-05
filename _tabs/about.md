@@ -231,18 +231,18 @@ toc: false
   function Playing(){
     const item = playdata.map((e)=>{
       return (<Pitem obj={e}/>)
-    })
-    return(
+    });
+    return (
       <div className="playing-item-box">
         {item}
       </div>
-    )
+    );
   }
 
   function Pitem({obj}){
     const style_img = {
       backgroundImage: `url(${obj.url})`,
-    }
+    };
     return(
       <div className="palying-item">
         <div className="palying-item-img">
@@ -255,16 +255,17 @@ toc: false
           {obj.layel}
         </div>
       </div>
-    )
-  }
-  </script>
+    );
+};
+
+</script>
 <script type="text/babel">
   class Play extends React.Component {
       render() {
         return (<div className="container-playing">
             <Playing/>
         </div>);
-      }
+      };
   }
 </script>
 <script type="text/babel">
