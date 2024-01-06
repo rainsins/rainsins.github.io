@@ -13,6 +13,8 @@ babel: true
 
 <link rel="stylesheet" href="/assets/share/share.css"/>
 
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
+
 ## 📚电子书资源
 
 > 需要深入了解的书籍不适合用电子书来研读，还是用纸质书比较好。
@@ -143,7 +145,7 @@ babel: true
                 </div>
             </div>
         );
-    }
+    };
 
     function Bookbox(){
         const itembox = item.map((e,i)=>{
