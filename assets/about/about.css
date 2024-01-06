@@ -1,6 +1,6 @@
 @font-face {
     font-family: "FangSong";
-    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/FZFSJW.woff") format('woff');
+    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/%E4%BB%BF%E5%AE%8B_GB2312.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,13 @@
     --fangsong-font:"Ping Fang","PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
 }
 
-
+#access-tags,#panel-wrapper{
+    display: none;
+}
+#core-wrapper, #tail-wrapper {
+    width: 100%;
+    padding-right: 0 !important;
+}
 
 .core-wrapper{
     width: 100%;

@@ -49,9 +49,6 @@ window.onload = () => {
   $(window).resize(function () {
     plot();
   });
-
-  document.getElementById("panel-wrapper")?.remove();
-  document.getElementById("core-wrapper")?.setAttribute('style', 'width: 100% !important');
   
 
   
