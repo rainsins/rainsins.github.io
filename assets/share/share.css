@@ -1,3 +1,5 @@
+access-lastmod
+
 /* 轮播图 */
 
 .swiper-container {
@@ -227,7 +229,8 @@
     padding-right: 0 !important;
 }
 
-#access-tags {
+#access-tags,
+#access-lastmod {
     display: none;
 }
 
