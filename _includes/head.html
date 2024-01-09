@@ -43,6 +43,10 @@
   {% if page.babel %}
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   {% endif %}
+  {% if page.require %}
+  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  {% endif %}
+
   {% capture seo_tags %}
     {% seo title=false %}
   {% endcapture %}
