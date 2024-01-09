@@ -240,11 +240,12 @@ access-lastmod
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
 }
 
 .book-item-box {
     width: 100%;
-    padding: 2.5px;
 }
 
 .book-item {
@@ -253,7 +254,11 @@ access-lastmod
     padding: 30px;
     border: 1px solid #e3e8f7;
     border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
+    transition: all .4s ease;
+}
+
+.book-item:hover{
+    box-shadow: 0px 0px 20px #a6a8af55;
 }
 
 .book-item-content {
@@ -340,6 +345,11 @@ access-lastmod
     font-family: "zuopin";
     margin: 0 10px;
     border: 2px solid #e3e8f7;
+    transition: all .4s ease;
+}
+
+.art-item:hover{
+    box-shadow: 0px 0px 20px #a6a8af55;
 }
 
 .art-author{

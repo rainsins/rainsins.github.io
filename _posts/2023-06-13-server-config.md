@@ -13,7 +13,7 @@ music: false
 mathpolt: false
 jquery: false
 image:
-  path: https://photo.rainsin.cn:2000/LightPicture/2023/12/be039bb72818fece.png
+  path: https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cover/Server.png
   alt: 服务器
 ---
 
