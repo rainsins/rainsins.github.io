@@ -36,7 +36,7 @@
     --fangsong-font:"Ping Fang","PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
 }
 
-#access-tags,#panel-wrapper{
+#access-tags,#panel-wrapper,#access-lastmod{
     display: none;
 }
 #core-wrapper, #tail-wrapper {
