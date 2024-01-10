@@ -10,10 +10,10 @@ mathpolt: false
 jquery: true
 babel: true
 ---
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="/assets/share/share.css"/>
-<link rel="stylesheet" href="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/js/%E8%BD%AE%E6%92%AD%E5%9B%BE/swiper.min.css"/>
-<script src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/js/%E8%BD%AE%E6%92%AD%E5%9B%BE/swiper.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
 
 
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
