@@ -92,7 +92,7 @@
     cursor: pointer;
     background-size: cover;
     background-position: center;
-    background-image: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/left.webp");
+    background-image: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E4%B9%A6%E6%B3%95/left.webp");
 }
 .swiper-next-box>div{
     width: 100%;
@@ -100,7 +100,7 @@
     cursor: pointer;
     background-size: cover;
     background-position: center;
-    background-image: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/rigth.webp");
+    background-image: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E4%B9%A6%E6%B3%95/rigth.webp");
 }
 
 .swiper-bar-box{
@@ -255,9 +255,31 @@
     column-gap: 30px;
     row-gap: 30px;
 }
+
+@media screen and (max-width: 1300px){
+    .art-title-box{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1200px){
+    .art-title-box{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1030px){
+    .art-title-box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 450px){
+    .art-title-box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @font-face {
     font-family: "zuopin";
-    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BD%9C%E5%93%81/FZZhaoMFXSJF.woff") format("woff");
+    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BD%9C%E5%93%81/MF.woff") format("woff");
 }
 .art-item{
     display: flex;
