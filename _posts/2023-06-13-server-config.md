@@ -12,9 +12,6 @@ video: false
 music: false
 mathpolt: false
 jquery: false
-image:
-  path: https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cover/Server.png
-  alt: 服务器
 ---
 
 

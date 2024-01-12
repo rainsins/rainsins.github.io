@@ -12,9 +12,6 @@ video: false
 music: false
 mathpolt: false
 jquery: false
-image:
-  path: https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cover/Red%E2%80%93Black%20Tree.png
-  alt: 红黑树.
 ---
 
 ## 一、前言

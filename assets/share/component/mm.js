@@ -101,10 +101,73 @@ function MmerItem({ arts }) {
 //图片的名字是有序的，以开始。
 const mm_item = [
     {
+        name: "杂志",
+        path: "niannian-zazhi",
+        author: "年年",
+        home: 3,
+        page: 26,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "月刊少女",
+        path: "niannian-yuekanshaonv",
+        author: "年年",
+        home: 3,
+        page: 36,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "七月",
+        path: "niannian-qiyue",
+        author: "年年",
+        home: 3,
+        page: 40,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "沐秋",
+        path: "niannian-muqiu",
+        author: "年年",
+        home: 3,
+        page: 44,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "喵系少女",
+        path: "niannian-miaoxishaonv",
+        author: "年年",
+        home: 3,
+        page: 34,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "网络女孩",
+        path: "niannian-cybergirl",
+        author: "年年",
+        home: 3,
+        page: 44,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "吊带",
+        path: "niannian-diaodai",
+        author: "年年",
+        home: 3,
+        page: 45,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
         name: "美人淋浴",
         path: "dounianglishi-meirenmuyu",
         author: "利世",
-        home: 1,
+        home: 3,
         page: 74,
         color: "#f8df724c",
         pagefonts: ""
@@ -178,6 +241,15 @@ const mm_item = [
         author: "年年",
         home: 1,
         page: 40,
+        color: "#f8df724c",
+        pagefonts: ""
+    },
+    {
+        name: "晨跑",
+        path: "taoliang-chengpao",
+        author: "桃凉",
+        home: 3,
+        page: 44,
         color: "#f8df724c",
         pagefonts: ""
     },
@@ -269,7 +341,7 @@ function Mer() {
     //生成作品列表
     const title_arts = mm_item.map((el, i) => {
         const sty = {
-            backgroundImage: `url(https://obj.rainsin.cn:2000/mmm/${el.path}/IMG_0000${el.home}.webp)`
+            backgroundImage: `url(https://obj.rainsin.cn:2000/mmm/${el.path}/1.webp)`
         };
         return (
             <div className="mm-item" onClick={(e) => setArthandle(el, e)} key={i} style={sty} title="点击查看详情">

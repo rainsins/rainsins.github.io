@@ -11,9 +11,6 @@ react: false
 video: false
 music: false
 jquery: false
-image:
-  path: https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cover/Radix%20sort.png
-  alt: 基数排序.
 ---
 
 
