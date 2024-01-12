@@ -21,7 +21,7 @@ function ArterItem({ arts }) {
     };
 
     const get_url = (index_title) => {
-        return index_title >= 100 ? `https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E4%B9%A6%E6%B3%95/${arts.path}/IMG_00${index_title}.webp` : index_title >= 10 ? `https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E4%B9%A6%E6%B3%95/${arts.path}/IMG_000${index_title}.webp` : `https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E4%B9%A6%E6%B3%95/${arts.path}/IMG_0000${index_title}.webp`;
+        return index_title >= 100 ? `https://obj.rainsin.cn:2000/art/${arts.path}/IMG_00${index_title}.webp` : index_title >= 10 ? `https://obj.rainsin.cn:2000/art/${arts.path}/IMG_000${index_title}.webp` : `https://obj.rainsin.cn:2000/art/${arts.path}/IMG_0000${index_title}.webp`;
     };
 
     const [count,setCount] = React.useState(1);
@@ -47,13 +47,13 @@ function ArterItem({ arts }) {
         update(i);
     };
 
-    React.useEffect(()=>{
-        const aa = document.getElementById("swiper-img-id");
-        aa.classList.add("swiper-img-hov");
-        setTimeout(()=>{
-            aa.classList.remove("swiper-img-hov");
-        },550);
-    },[count]);
+    // React.useEffect(()=>{
+    //     const aa = document.getElementById("swiper-img-id");
+    //     aa.classList.add("swiper-img-hov");
+    //     setTimeout(()=>{
+    //         aa.classList.remove("swiper-img-hov");
+    //     },550);
+    // },[count]);
 
     const gen_bar = () => {
         let cs = new Array(arts.page).fill('');
@@ -92,7 +92,7 @@ function ArterItem({ arts }) {
                     <div className="swiper-img-title">
                         {title}
                     </div>
-                    <img className="swiper-img" id="swiper-img-id" src={url}/>
+                    <img className="swiper-img" loading="lazy" id="swiper-img-id" src={url}/>
             </div>
             <div className="swiper-bar-box" style={bar_boxl}>
                 {gen_bar()}
@@ -185,13 +185,106 @@ const art_item = [
         ]
     },
     {
-        name: "行书十札卷墨本",
-        path: "xingshushizha",
-        time: "元",
-        author: "赵孟頫",
-        page: 10,
-        color: "#f8df724c",
-        pagefonts: ""
+        name: "二十四节气图",
+        path: "24jieqi",
+        time: "清",
+        author: "张若霭",
+        page: 24,
+        color: "#144a744c",
+        pagefonts: [
+            ["立春", 1],
+            ["雨水", 2],
+            ["惊蛰", 3],
+            ["春分", 4],
+            ["清明", 5],
+            ["谷雨", 6],
+            ["立夏", 7],
+            ["小满", 8],
+            ["芒种", 9],
+            ["夏至", 10],
+            ["小暑", 11],
+            ["大暑", 12],
+            ["立秋", 13],
+            ["处暑", 14],
+            ["白露", 15],
+            ["秋分", 16],
+            ["寒露", 17],
+            ["霜降", 18],
+            ["立冬", 19],
+            ["小雪", 20],
+            ["大雪", 21],
+            ["冬至", 22],
+            ["小寒", 23],
+            ["大寒", 24]
+        ]
+    },
+    {
+        name: "凌烟阁二十四功臣像",
+        path: "24gongcheng",
+        time: "清",
+        author: "沈源",
+        page: 24,
+        color: "#f5391c4c",
+        pagefonts: [
+            ["长孙无忌", 1],
+            ["李孝恭", 2],
+            ["杜如晦", 3],
+            ["魏徵", 4],
+            ["房元龄", 5],
+            ["高士廉", 6],
+            ["尉迟敬德", 7],
+            ["李靖", 8],
+            ["萧瑀", 9],
+            ["段志元", 10],
+            ["刘弘基", 11],
+            ["屈突通", 12],
+            ["殷开山", 13],
+            ["柴绍", 14],
+            ["长孙顺德", 15],
+            ["张亮", 16],
+            ["侯君集", 17],
+            ["张公谨", 18],
+            ["程知节", 19],
+            ["虞世南", 20],
+            ["刘政会", 21],
+            ["李𪟝", 22],
+            ["唐俭", 23],
+            ["秦叔宝", 24]
+        ]
+    },
+    {
+        name: "司空图二十四诗品图",
+        path: "24shipin",
+        time: "清",
+        author: "潘是稷",
+        page: 24,
+        color: "#fca1064c",
+        pagefonts: [
+            ["雄浑", 1],
+            ["冲淡", 2],
+            ["纤秾", 3],
+            ["沉着", 4],
+            ["高古", 5],
+            ["典雅", 6],
+            ["洗练", 7],
+            ["劲健", 8],
+            ["绮丽", 9],
+            ["自然", 10],
+            ["含蓄", 11],
+            ["豪放", 12],
+            ["精神", 13],
+            ["缜密", 14],
+            ["疏野", 15],
+            ["清奇", 16],
+            ["委曲", 17],
+            ["实境", 18],
+            ["悲慨", 19],
+            ["形容", 20],
+            ["超诣", 21],
+            ["飘逸", 22],
+            ["旷达", 23],
+            ["流动", 24]
+        ]
     }
 ];
 
