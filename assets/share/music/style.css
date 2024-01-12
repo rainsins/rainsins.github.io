@@ -21,6 +21,12 @@
   border: 1px solid #e3e8f7;
   width: 100%;
 }
+@media screen and (max-width: 705px){
+  .wrapper{
+    flex-direction: column;
+  }
+  
+}
 
 .details {
   display: flex;
