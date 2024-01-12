@@ -322,8 +322,8 @@ const AnsContext = React.createContext(false);
 
 const questions = [
     {
-        latex: "\\lim_{n\\rightarrow +\\infty } \\frac{1}{n^{2}} \\int^{\\frac{\\pi }{2} }_{0} x\\left( \\frac{sin(nx)}{sinx} \\right)^{4}  dx",
-        ans: "\\frac{1}{e}"
+        latex: "\\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  }{sinx} ",
+        ans: "\\frac{e}{2}"
     },
 ];
 
