@@ -395,7 +395,8 @@ const AnsContext = React.createContext(false);
 const questions = [
     {
         latex: "\\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  }{sinx} ",
-        ans: "\\frac{e}{2}"
+        ans: "\\frac{e}{2}",
+        ans1: "\\frac{1}{2}e"
     },
 ];
 
@@ -467,7 +468,7 @@ function Question({lat}){
     React.useEffect(()=>{
         let math3 = document.getElementsByClassName("show-ans-latex");
         MathJax.typeset(math3);
-        if(latexData == lat.ans){
+        if(latexData == lat.ans || latexData == lat.ans1){
             setAns(true);
         }
     },[latexData]);
