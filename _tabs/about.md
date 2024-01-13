@@ -638,3 +638,21 @@ root_device_box.render(<App/>);
 <script src="/assets/about/about.js" defer></script>
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
+
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/assets/js/md5.min.js"></script>
+<script defer>
+let gitalk = new Gitalk({
+  clientID: '8609fa79e19dadf4a8fb',
+  clientSecret: '602d1db1d4f0cf81d602ead9958254b0d0440117',
+  repo: 'rainsins.github.io',
+  owner: 'rainsins',
+  admin: ['rainsins'],
+  id: md5(location.pathname),
+  distractionFreeMode: true  
+});
+gitalk.render('gitalk-container');
+</script>
