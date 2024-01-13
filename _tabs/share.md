@@ -14,6 +14,7 @@ comments: true
 ---
 
 <link rel="stylesheet" href="/assets/share/share.css"/>
+<link rel="stylesheet" href="/assets/css/comments.css"/>
 <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
 
 <script>
