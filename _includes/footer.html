@@ -13,13 +13,13 @@
       repo: 'rainsins.github.io',
       owner: 'rainsins',
       admin: ['rainsins'],
-      id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-      distractionFreeMode: true  // Facebook-like distraction free mode
-    })
+      id: md5(location.pathname),
+      distractionFreeMode: true  
+    });
   
-    gitalk.render('gitalk-container')
+    gitalk.render('gitalk-container');
     </script>
-    
+
   {% endif %}
   <div class="container px-lg-4">
     <div class="d-flex justify-content-center align-items-center text-muted mx-md-3">
