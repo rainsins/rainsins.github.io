@@ -11,6 +11,8 @@ react: false
 video: false
 music: false
 jquery: false
+forbid: true
+comments: true
 ---
 
 

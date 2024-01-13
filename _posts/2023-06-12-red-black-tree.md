@@ -12,6 +12,8 @@ video: false
 music: false
 mathpolt: false
 jquery: false
+forbid: true
+comments: true
 ---
 
 ## 一、前言

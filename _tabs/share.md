@@ -9,12 +9,11 @@ math: true
 mathpolt: false
 jquery: true
 babel: true
+forbid: true
+comments: true
 ---
-<script src="/assets/share/music/script.js" defer></script>
+
 <link rel="stylesheet" href="/assets/share/share.css"/>
-<link rel="stylesheet" href="/assets/share/music/style.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
 
 <script>
@@ -23,155 +22,9 @@ babel: true
   };
 </script>
 
-<script type="text/javascript">
-      //禁止鼠标右击
-      document.oncontextmenu = function() {
-        event.returnValue = false;
-      };
-      //禁用开发者工具F12
-      document.onkeydown = document.onkeyup = document.onkeypress = function(
-        event
-      ) {
-        let e = event || window.event || arguments.callee.caller.arguments[0];
-        if (e && e.keyCode == 123) {
-          e.returnValue = false;
-          return false;
-        }
-      };
-      let userAgent = navigator.userAgent;
-      if (userAgent.indexOf("Firefox") > -1) {
-        let checkStatus;
-        let devtools = /./;
-        devtools.toString = function() {
-          checkStatus = "on";
-        };
-        setInterval(function() {
-          checkStatus = "off";
-          console.log(devtools);
-          console.log(checkStatus);
-          console.clear();
-          if (checkStatus === "on") {
-            let target = "";
-            try {
-              window.open("about:blank", (target = "_self"));
-            } catch (err) {
-              let a = document.createElement("button");
-              a.onclick = function() {
-                window.open("about:blank", (target = "_self"));
-              };
-              a.click();
-            }
-          }
-        }, 200);
-      } else {
-        //禁用控制台
-        let ConsoleManager = {
-          onOpen: function() {
-            alert("Console is opened");
-          },
-          onClose: function() {
-            alert("Console is closed");
-          },
-          init: function() {
-            let self = this;
-            let x = document.createElement("div");
-            let isOpening = false,
-              isOpened = false;
-            Object.defineProperty(x, "id", {
-              get: function() {
-                if (!isOpening) {
-                  self.onOpen();
-                  isOpening = true;
-                }
-                isOpened = true;
-                return true;
-              }
-            });
-            setInterval(function() {
-              isOpened = false;
-              console.info(x);
-              console.clear();
-              if (!isOpened && isOpening) {
-                self.onClose();
-                isOpening = false;
-              }
-            }, 200);
-          }
-        };
-        ConsoleManager.onOpen = function() {
-          //打开控制台，跳转
-          let target = "";
-          try {
-            window.open("about:blank", (target = "_self"));
-          } catch (err) {
-            let a = document.createElement("button");
-            a.onclick = function() {
-              window.open("about:blank", (target = "_self"));
-            };
-            a.click();
-          }
-        };
-        ConsoleManager.onClose = function() {
-          alert("Console is closed!!!!!");
-        };
-        ConsoleManager.init();
-      }
-    </script>
-
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
 
 ## 🎧听点歌
-
-<div class="player-box" id="player-box-id">
-    <div class="player">
-       <div class="wrapper">
-           <div class="details">
-               <div class="now-playing">PLAYING x OF y</div>
-               <div class="track-art"></div>
-               <div class="track-name">Track Name</div>
-               <div class="track-artist">Track Artist</div>
-           </div>
-           <div class="slider-box-center">
-                <div class="slider_containers">
-                    <div class="current-time">00:00</div>
-                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                    <div class="total-duration">00:00</div>
-                </div>
-                <div class="slider_containers">
-                    <i class="fa fa-volume-down"></i>
-                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-                    <i class="fa fa-volume-up"></i>
-                </div>
-                <div class="buttons">
-                    <div class="random-track" onclick="randomTrack()">
-                        <i class="fas fa-random fa-2x" title="random"></i>
-                    </div>
-                    <div class="prev-track" onclick="prevTrack()">
-                        <i class="fa fa-step-backward fa-2x"></i>
-                    </div>
-                    <div class="playpause-track" onclick="playpauseTrack()">
-                        <i class="fa fa-play-circle fa-5x"></i>
-                    </div>
-                    <div class="next-track" onclick="nextTrack()">
-                        <i class="fa fa-step-forward fa-2x"></i>
-                    </div>
-                    <div class="repeat-track" onclick="repeatTrack()">
-                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
-                    </div>
-                </div>
-                <div id="wave">
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                </div>
-           </div>  
-       </div>
-   </div>
-</div>
 
 <div id="player"></div>
 
@@ -215,7 +68,7 @@ babel: true
 <script type="text/babel" src="/assets/share/component/instr.js"></script>
 
 
-<!-- <script defer>
+<script defer>
     const ap = new APlayer({
     container: document.getElementById('player'),
     mini: false,
@@ -246,4 +99,4 @@ babel: true
         }
     ]
 });
-</script> -->
+</script>
