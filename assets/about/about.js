@@ -270,10 +270,10 @@ window.onload = () => {
       easing: 'easeInOutSine'
     });
   },(e)=>{
-    
+    console.log(e.target);
   });
 
   $(".av-title-img-main").click((e)=>{
     window.open($(e.target).data("url"),"_blank");
-  })
+  });
 }

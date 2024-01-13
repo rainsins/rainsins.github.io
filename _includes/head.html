@@ -24,7 +24,7 @@
   <meta name="google-site-verification" content="3bYeMwOIvP3K6pO77UMubCdTY_H-YUTiM-xs_Em3HF8" />
   <meta name="baidu-site-verification" content="codeva-QKTDeuhWB9" />
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     //禁止鼠标右击
     document.oncontextmenu = function() {
       event.returnValue = false;
@@ -117,7 +117,7 @@
       };
       ConsoleManager.init();
     }
-  </script>
+  </script> -->
 
   {% if page.react %}
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -145,7 +145,10 @@
   {% endif %}
 
   {% if page.cube %}
-  <script src="https://cdn.cubing.net/js/cubing/twisty" type="module" defer></script>
+  <script type="module">
+    import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
+    window.Twistyplayer = TwistyPlayer;
+    </script>
   {% endif %}
 
   {% if page.babel %}

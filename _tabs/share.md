@@ -11,6 +11,7 @@ jquery: true
 babel: true
 forbid: true
 comments: true
+cube: true
 ---
 
 <link rel="stylesheet" href="/assets/share/share.css"/>
@@ -67,7 +68,6 @@ comments: true
 
 <script type="text/babel" src="/assets/share/component/instr.js"></script>
 
-
 <script defer>
     const ap = new APlayer({
     container: document.getElementById('player'),
@@ -81,6 +81,14 @@ comments: true
     loop: 'all',
     order: 'list',
     audio: [
+        {
+            name: '⚡探水果摊',
+            artist: '酸奶煎个蛋',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E2%9A%A1%E6%8E%A2%E6%B0%B4%E6%9E%9C%E6%91%8A.m4a',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/smiley.png',
+            lrc: '',
+            theme: '#856d72'
+        },
         {
             name: '片头',
             artist: '罗坚',
