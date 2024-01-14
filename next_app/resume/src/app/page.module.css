@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.resume_box{
+  display: flex;
+  flex-direction: column;
+  width: 210mm;
+  height: 297mm;
+  background-color: #fff;
+}
+
+.resume_left_box{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  background-color: beige;
+}
+.resume_right_box{
+  flex: 1;
+}
+.resume_img_info{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
