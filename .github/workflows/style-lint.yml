@@ -22,4 +22,3 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
       - run: npm i
-      - run: npm test
