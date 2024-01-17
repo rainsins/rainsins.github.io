@@ -384,8 +384,8 @@ i {
 
 .post-preview {
   @extend %rounded;
-  
-  border: 1px solid #e3e8f7ff;
+
+  border: 1px solid #e3e8f7ff !important;
   border: 0;
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
