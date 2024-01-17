@@ -22,7 +22,7 @@ domain: rainsins.github.io
 
 title: Rainsin # the main title
 
-tagline: Think,Practice and Adherence # it will display as the sub-title
+tagline: 思考，练习和坚持 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   一个简约的个人博客，jekyll驱动，记录学习心得和日常生活。
@@ -31,7 +31,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://rainsins.github.io"
 
 github:
-  username: 2000python # change to your github username
+  username: rainsins # change to your github username
 
 twitter:
   username: 2000_python # change to your twitter username
@@ -131,9 +131,9 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
-    # default_lang: console
+    default_lang: console
     span:
-      line_numbers: false
+      line_numbers: true
     block:
       line_numbers: true
       start_line: 1
