@@ -31,7 +31,6 @@
 .swiper-img-title{
     writing-mode: tb-rl;
     font-size: .8rem;
-    font-family: "Ping Fang";
     font-weight: 300;
 }
 .swiper-img{
@@ -205,7 +204,6 @@
 
 .book-item-content-inf>span {
     font-size: .6rem;
-    font-family: "Ping Fang";
     white-space: pre;
 }
 
@@ -413,11 +411,9 @@
 .website-item-name{
     font-size: 1em;
     font-weight: 600;
-    font-family: "Ping Fang";
 }
 .website-item-detail{
     font-size: .75rem;
-    font-family: "Ping Fang";
     margin: 5px 0;
 }
 .website-item-gfw{
