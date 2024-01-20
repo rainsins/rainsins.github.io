@@ -229,15 +229,15 @@ window.onload = () => {
   //document.getElementById("access-lastmod").className = "disappear-box";
   document.getElementById("access-tags").className = "disappear-box";
 
-  const tr = document.getElementById("geyan-tr");
+  // const tr = document.getElementById("geyan-tr");
   
-  $("#geyan-box").on("click",()=>{
-    if(tr.className == "geyan-tr-disappear"){
-      tr.className = "";
-    }else{
-      tr.className = "geyan-tr-disappear";
-    }
-  });
+  // $("#geyan-box").on("click",()=>{
+  //   if(tr.className == "geyan-tr-disappear"){
+  //     tr.className = "";
+  //   }else{
+  //     tr.className = "geyan-tr-disappear";
+  //   }
+  // });
 
   $(".sing-device").on("click",(event)=>{
     let v = $(event.target);

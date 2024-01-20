@@ -180,13 +180,20 @@ comments: true
         我的一言
       </div>
       <div class="geyan">
-        学问有余，人资于己，以不得已而应之可也。若好为人师，则自足而不复有进矣，此人之大患也。
+        思考一切
       </div>
-      <div class="geyan-tr-disappear" id="geyan-tr">
-        译：求知、求学的目的在丰富自我，不得已的情况下才拿出来应对他人，如果喜欢作别人的老师，就容易自我满足而不求进步，这就是人的最大毛病了。
-      </div>
+      <!-- <div class="geyan-tr-disappear" id="geyan-tr">
+      </div> -->
       <div class="author-geyan">
-        ——王勉评《孟子·离娄上》段目二十三
+        ——卡尔·马克思答燕妮·马克思，有关“座右铭”的问题
+      </div>
+      <div class="geyan">
+        一步实际运动比一打纲领更重要。
+      </div>
+      <!-- <div class="geyan-tr-disappear" id="geyan-tr">
+      </div> -->
+      <div class="author-geyan">
+        ——卡尔·马克思致白拉克的信件，见于《马克思恩格斯文集》第三卷，426页
       </div>
     </div>
     <div id="geng-box"></div>
