@@ -33,7 +33,8 @@
 :root{
     --Jay-shadow-border: 0 8px 16px -4px #2c2d300c;
     --style-border-always: 1px solid #e3e8f7;
-    --fangsong-font:"筑紫A", "Ping Fang","PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+    --main-font:"筑紫A", "Hiragino Sans GB", "Microsoft YaHei";
+    --pingfang-font:"Ping Fang", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
 }
 
 #access-tags,#panel-wrapper,#access-lastmod{
@@ -211,7 +212,7 @@
 .age-class{
     font-size: .6rem;
     color: #363636;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     font-weight: 700;
 }
 
@@ -262,7 +263,7 @@
 .skill-title{
     font-size: .6rem;
     color: #363636;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     font-weight: 700;
 }
 
@@ -338,7 +339,7 @@
     margin-top: 20px;
     align-content: center;
     font-size: 1rem;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     color: #fff;
     font-weight: 700;
 }
@@ -353,7 +354,7 @@
     display: flex;
     align-self: flex-end;
     font-size: 1.3rem;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     color: #fff;
     font-weight: 700;
     margin-bottom: 20px;
@@ -389,7 +390,7 @@
 .ins-title{
     color: #000;
     font-size: 1.2rem;
-    font-family:var(--fangsong-font);
+    font-family:var(--main-font);
 }
 
 .paly-ins{
@@ -563,7 +564,7 @@
 .device-main-detail-title div:nth-child(1){
     flex: 1;
     font-size: 1.3rem;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     font-weight: bold;
     color: #cc7a23;
 }
@@ -584,7 +585,7 @@
     font-size: 12px;
     font-weight: bold;
     color: rgba(44, 51, 76, .6);
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
 }
 
 .device-main-detail-title-icon{
@@ -623,7 +624,7 @@
 }
 .opencore-title{
     font-size: .6rem;
-    font-family: var(--fangsong-font);
+    font-family: var(--main-font);
     color: #000;
     font-weight: bold;
 }
@@ -906,7 +907,7 @@
     background-position: center;
 }
 .palying-item-name{
-    font-family: "Ping Fang";
+    font-family: var(--main-font);
     border: 1px solid #e3e8f7ff;
 }
 .palying-item-lay{
@@ -983,7 +984,7 @@
     background-size: cover;
 }
 .sing-device-name{
-    font-family: "Ping Fang";
+    font-family: var(--main-font);
     font-weight: 600;
     font-size: 1.4rem;
     margin: 10px 0 0 0;
