@@ -596,3 +596,6 @@
 .botton-ques:hover{
     background-color: #1677ff99;
 }
+.aplayer{
+    font-family: var(--main-font);
+}
