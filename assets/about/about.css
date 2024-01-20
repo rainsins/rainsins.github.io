@@ -847,12 +847,9 @@
     align-self: end;
     
 }
-@font-face {
-    font-family: "wenzhengming";
-    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/FZWenZMXCJW.woff") format('woff');
-}
+
 #geyan-tr{
-    font-family: "wenzhengming";
+    /* font-family: "Zhaomengfou"; */
     font-size: 1.5rem;
     margin: 20px 0;
     transition: all 1s ease-in-out;
