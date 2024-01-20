@@ -180,18 +180,14 @@ comments: true
         我的一言
       </div>
       <div class="geyan">
-        思考一切
-      </div>
-      <!-- <div class="geyan-tr-disappear" id="geyan-tr">
-      </div> -->
-      <div class="author-geyan">
-        ——卡尔·马克思答燕妮·马克思，有关“座右铭”的问题
-      </div>
-      <div class="geyan">
         一步实际运动比一打纲领更重要。
       </div>
-      <!-- <div class="geyan-tr-disappear" id="geyan-tr">
-      </div> -->
+      <div class="geyan-tr-disappear" id="geyan-tr">
+        地球上所有的人，所有的男人和女人，不管他们愿意与否，知道与否，他们在今天，在某种程度上说，都是马克思和马克思主义的继承人。<br/>
+        不管我们喜欢与否，不论我们对他具有一种什么样的意识，我们都不能不是他的继承人。<br/>
+        遗产向来不仅是赠予，它同时还是使命。我们当下所是的存在的状况，就是最重要的遗产。<br/>
+        不能没有马克思，没有马克思，没有对马克思的记忆，没有马克思的遗产，也就没有将来。
+      </div>
       <div class="author-geyan">
         ——卡尔·马克思致白拉克的信件，见于《马克思恩格斯文集》第三卷，426页
       </div>
