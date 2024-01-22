@@ -175,12 +175,15 @@ comments: true
         </div>
       </div>
     </div>
-    <div class="geyan-box" id="geyan-box" title="点击显示释义">
+    <div class="geyan-box" id="geyan-box" title="点击显示另外一个">
       <div class="geyan-title">
         我的一言
       </div>
       <div class="geyan">
         一步实际运动比一打纲领更重要。
+      </div>
+      <div class="author-geyan">
+        ——卡尔·马克思致白拉克的信件，见于《马克思恩格斯文集》第三卷，426页
       </div>
       <div class="geyan-tr-disappear" id="geyan-tr">
         地球上所有的人，所有的男人和女人，不管他们愿意与否，知道与否，他们在今天，在某种程度上说，都是马克思和马克思主义的继承人。<br/>
@@ -188,8 +191,8 @@ comments: true
         遗产向来不仅是赠予，它同时还是使命。我们当下所是的存在的状况，就是最重要的遗产。<br/>
         不能没有马克思，没有马克思，没有对马克思的记忆，没有马克思的遗产，也就没有将来。
       </div>
-      <div class="author-geyan">
-        ——卡尔·马克思致白拉克的信件，见于《马克思恩格斯文集》第三卷，426页
+      <div class="author-geyan geyan-tr-disappear" id="geyan-tr-a">
+        ——德里达，《马克思的幽灵：债务国家、哀悼活动和新国际》
       </div>
     </div>
     <div id="geng-box"></div>

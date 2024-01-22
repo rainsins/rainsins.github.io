@@ -1,6 +1,6 @@
 @font-face {
     font-family: "FangSong";
-    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/%E4%BB%BF%E5%AE%8B.woff") format('woff');
+    src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/%E4%BB%BF%E5%AE%8B_GB2312.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -838,8 +838,9 @@
 }
 
 .geyan{
-    font-family: "Zhaomengfou";
-    font-size: 3.6rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 2rem;
     margin: 12px 0;
 }
 .author-geyan{
@@ -851,7 +852,7 @@
 
 #geyan-tr{
     /* font-family: "Zhaomengfou"; */
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 20px 0;
     transition: all 1s ease-in-out;
 }
