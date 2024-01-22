@@ -26,7 +26,7 @@ comments: true
     <div id="A-l-b">A</div>
     </div>
     <div class="i logo-font" id="I-l-1">
-    <div id="I-l-1-b">I</div>
+    <div id="I-l-1-b">I </div>
     </div>
     <div class="n logo-font" id="N-l-1">
     <div id="N-l-1-b">N</div>
@@ -60,7 +60,7 @@ comments: true
       </div>
       <div class="rainsin-indivdual-info">
         <div class="rainsin-indivdual-info-first">
-          很感谢你看这个粗糙的博客
+          很感谢你可以在这个粗糙的博客上停留
         </div>
         <div class="rainsin-indivdual-info-second">
           我是
@@ -68,12 +68,11 @@ comments: true
           RAINSIN
           </span>
         </div>
-        <div class="rainsin-indivdual-info-third">
+        <!-- <div class="rainsin-indivdual-info-third">
           是一个
           <span>
-            👨‍💻自学者
           </span>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
