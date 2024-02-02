@@ -181,7 +181,7 @@
 #core-wrapper,
 #tail-wrapper {
     width: 100%;
-    padding-right: 0 !important;
+    padding-right: 4rem !important;
 }
 
 #access-tags,

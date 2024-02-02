@@ -11,7 +11,7 @@ jquery: true
 babel: true
 forbid: true
 comments: true
-cube: true
+cube: false
 ---
 
 <link rel="stylesheet" href="/assets/share/share.css"/>
@@ -105,7 +105,7 @@ cube: true
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="/assets/js/md5.min.js"></script>
-<script defer>
+<!-- <script defer>
 let gitalk = new Gitalk({
   clientID: '8609fa79e19dadf4a8fb',
   clientSecret: '602d1db1d4f0cf81d602ead9958254b0d0440117',
@@ -116,4 +116,4 @@ let gitalk = new Gitalk({
   distractionFreeMode: true  
 });
 gitalk.render('gitalk-container');
-</script>
+</script> -->
