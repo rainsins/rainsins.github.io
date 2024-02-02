@@ -50,6 +50,12 @@ cube: false
 
 <div id="book-box"></div> -->
 
+## 壁纸
+
+![壁纸1](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B8.webp)
+
+![壁纸1](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B82.webp)
+
 ## 🔞写真
 
 > 加载可能很慢，并且需要你的设备支持IPv6。加载完成后可能会有性能问题。
