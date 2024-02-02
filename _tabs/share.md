@@ -82,20 +82,44 @@ cube: true
     order: 'list',
     audio: [
         {
-            name: '⚡探水果摊',
-            artist: '酸奶煎个蛋',
-            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E2%9A%A1%E6%8E%A2%E6%B0%B4%E6%9E%9C%E6%91%8A.m4a',
-            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/smiley.png',
-            lrc: '',
-            theme: '#856d72'
-        },
-        {
             name: '片头',
             artist: '罗坚',
             url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%89%87%E5%A4%B4.ogg',
             cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%87%91%E7%93%B6%E6%A2%85.webp',
             lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%BD%97%E5%9D%9A%20-%20%E9%87%91%E7%93%B6%E6%A2%85%E7%89%87%E5%B0%BE.lrc',
             theme: '#f1939c'
+        },
+        {
+            name: '黎明',
+            artist: '黄霑',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%BB%84%E9%9C%91%20-%20%E9%BB%8E%E6%98%8E.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%BB%8E%E6%98%8E.jpg',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E8%81%8C%E8%B4%A3.lrc',
+            theme: '#856d72'
+        },
+        {
+            name: '挚爱',
+            artist: '陈勋奇',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%99%88%E5%8B%8B%E5%A5%87%E3%80%81%E4%B8%9C%E9%82%AA%E8%A5%BF%E6%AF%92%20-%20%E6%8C%9A%E7%88%B1.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E6%8C%9A%E7%88%B1.jpg',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E8%81%8C%E8%B4%A3.lrc',
+            theme: '#856d72'
+        },
+        {
+            name: '职责',
+            artist: '胡伟立',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E8%81%8C%E8%B4%A3.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%81%8C%E8%B4%A3.webp',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E8%81%8C%E8%B4%A3.lrc',
+            theme: '#856d72'
+        },
+        {
+            name: '随缘',
+            artist: '罗大佑',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E9%9A%8F%E7%BC%98.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%9A%8F%E7%BC%98.webp',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E8%83%A1%E4%BC%9F%E7%AB%8B%20-%20%E9%9A%8F%E7%BC%98.lrc',
+            theme: '#856d72'
         },
         {
             name: '片尾',
