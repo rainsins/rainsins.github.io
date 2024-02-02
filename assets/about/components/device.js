@@ -8,7 +8,7 @@ const Devicedata1 = [
     {
         id: 2,
         type: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/motherboard.png",
-        name: "微星 Z390M-S01",
+        name: "MSI Z390M-S01",
         url: "https://www.msi.cn/Motherboard/Z390M-S01/Specification"
     },
     {
@@ -21,19 +21,19 @@ const Devicedata2 = [
     {
         id: 4,
         type: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/ram.png",
-        name: "幻光戟 3600C18",
+        name: "Trident Z Neo 3600C18",
         url: "https://www.gskill.com/tw/product/203/205/1582537336/F4-3600C18D-64GTZR"
     },
     {
         id: 5,
         type: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/sound-card.png",
-        name: "螃蟹 ALC892 Codec",
+        name: "Realtek ALC892 Codec",
         url: "https://www.realtek.com/en/products/computer-peripheral-ics/item/alc892"
     },
     {
         id: 6,
         type: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/device/network-card.png",
-        name: "螃蟹 8111H",
+        name: "Realtek 8111H",
         url: "https://www.realtek.com/en/products/connected-media-ics/item/rtl8111h-s-cg"
     }
 ];
