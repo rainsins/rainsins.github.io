@@ -43,12 +43,12 @@ cube: true
 
 <div id="art-box"></div>
 
-## 📚电子书资源
+<!-- ## 📚电子书资源
 
 > 需要深入了解的书籍不适合用电子书来读，还是用纸质书比较好。
 {: .prompt-tip }
 
-<div id="book-box"></div>
+<div id="book-box"></div> -->
 
 ## 🔞写真
 
