@@ -33,7 +33,7 @@ cube: true
 
 <div id="instr-box"></div>
 
-## 🖼️我喜欢的作品
+<!-- ## 🖼️我喜欢的作品
 
 > 加载可能很慢，并且需要你的设备支持IPv6。加载完成后可能会有性能问题。
 {: .prompt-danger }
@@ -41,7 +41,7 @@ cube: true
 > 点击预览，资源来源于[书格](https://www.shuge.org/)。
 {: .prompt-tip }
 
-<div id="art-box"></div>
+<div id="art-box"></div> -->
 
 <!-- ## 📚电子书资源
 

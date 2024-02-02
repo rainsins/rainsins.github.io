@@ -34,6 +34,15 @@ function MmerItem({ arts }) {
         }
     };
 
+    React.useEffect(()=>{
+        const load = document.getElementById("swiper-img-loading-mm");
+        load.style.display = "block";
+        const imgs = document.getElementById("swiper-img-id");
+        imgs.onload = ()=>{
+            load.style.display = "none";
+        }
+    },[url]);
+
     function update(index){
         setCount(index);
         setTitle(get_title(index));
@@ -78,6 +87,12 @@ function MmerItem({ arts }) {
 
     return (
         <div className="swiper-container">
+            <div className="swiper-img-loading-mm" id="swiper-img-loading-mm" >
+                <img src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/porn.gif"></img>
+                <div className="swiper-img-loading-text">
+                    图片加载中。。。
+                </div>
+            </div>
             <div className="swiper-img-box">
                     <div className="swiper-img-title">
                         {title}
