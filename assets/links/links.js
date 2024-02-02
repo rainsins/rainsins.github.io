@@ -13,7 +13,7 @@ function LinksItem({data}) {
             backgroundImage: `url(${e.img ? e.img : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
         };
         return(
-            <a className="links-item-box" href={e.url}>
+            <a className="links-item-box" href={e.url} target="_blank">
                 <div className="links-item-img-box">
                     <div className="links-item-img" style={imgobj}></div>
                 </div>
