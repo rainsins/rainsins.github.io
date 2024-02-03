@@ -1863,3 +1863,4 @@ services:
     volumes:
       - /home/ubuntu/pdata/gitea/mysql:/var/lib/mysql
 ```
+
