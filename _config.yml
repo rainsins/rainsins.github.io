@@ -25,7 +25,7 @@ title: Rainsin # the main title
 tagline: 思考，练习和坚持 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  一个简约的个人博客，jekyll驱动，记录学习心得和日常生活。
+  Rainsin's blog,一个简约的个人博客，jekyll驱动，记录学习心得和日常生活。
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://rainsins.github.io"
