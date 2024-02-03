@@ -50,11 +50,11 @@ cube: false
 
 <div id="book-box"></div> -->
 
-## 壁纸
+## 🎇壁纸
 
-![壁纸1](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B8.webp)
-
-![壁纸1](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B82.webp)
+<p class="bizhi">
+  <img src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B82.webp" alt="壁纸1">
+</p>
 
 ## 🔞写真
 
@@ -68,9 +68,9 @@ cube: false
 
 <script type="text/babel" src="/assets/share/component/mm.js"></script>
 
-<script type="text/babel" src="/assets/share/component/book.js"></script>
+<!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
 
-<script type="text/babel" src="/assets/share/component/art.js"></script>
+<!-- <script type="text/babel" src="/assets/share/component/art.js"></script> -->
 
 <script type="text/babel" src="/assets/share/component/instr.js"></script>
 

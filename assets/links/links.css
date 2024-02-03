@@ -39,7 +39,7 @@
 .links-item-box{
     display: flex;
     color: black;
-    padding: 14px;
+    padding: 12px;
     background-color: #f4f4f4a1;
     box-shadow: 0 8px 16px -4px #2c2d300c;
     border: 1px solid #e3e8f7 !important;
@@ -74,12 +74,12 @@
     justify-content: center;
     margin-left: 18px;
     flex: 1;
-    font-family: "Link 隶书";
+    /* font-family: "Link 隶书"; */
     font-weight: bold;
 }
 
 .links-item-info-name{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #000;
     line-height: 2.2rem;
 }
