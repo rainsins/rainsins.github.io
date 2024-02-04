@@ -20,7 +20,9 @@ timezone: Asia/Shanghai
 
 domain: blog.rainsin.cn
 
-title: Rainsin's blog # the main title
+title: rainsin # the main title
+
+hometitle: Rainsin's Blog
 
 tagline: 思考，练习和坚持 # it will display as the sub-title
 
