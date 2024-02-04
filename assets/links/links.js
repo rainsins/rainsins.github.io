@@ -1,3 +1,12 @@
+// const links_data = [
+//     {
+//         name: "Rainsin（test）",
+//         url: "https://blog.rainsin.cn",
+//         img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif",
+//         dec: "一步实际运动比一打纲领更重要。"
+//     }
+// ];
+
 function LinksItem({data}) {
     const item = data.map((e,i)=>{
         const imgobj = {
@@ -27,4 +36,6 @@ function LinksItem({data}) {
 
 const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
 
-links_item.render(<LinksItem data={window.links_data}/>);
+console.log(links_data);
+
+links_item.render(<LinksItem data={links_data}/>);
