@@ -26,4 +26,5 @@ function LinksItem({data}) {
 };
 
 const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
-links_item.render(<LinksItem data={links_data}/>);
+
+links_item.render(<LinksItem data={window.links_data}/>);

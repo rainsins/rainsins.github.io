@@ -14,13 +14,11 @@ comments: true
 cube: false
 ---
 
-<script src="/assets/links/linksdata.js" defer></script>
+<script src="/assets/links/linksdata.js"></script>
 
 <link rel="stylesheet" href="/assets/links/links.css"/>
 
 <div id="links-box"></div>
-
-<script type="text/babel" src="/assets/links/links.js" defer></script>
 
 ## 申请友链
 
@@ -54,3 +52,5 @@ let gitalk = new Gitalk({
 });
 gitalk.render('gitalk-container');
 </script> -->
+
+<script type="text/babel" src="/assets/links/links.js" defer></script>
