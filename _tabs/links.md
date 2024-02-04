@@ -14,7 +14,7 @@ comments: true
 cube: false
 ---
 
-<script src="/assets/links/linksdata.js"></script>
+<script src="/assets/links/linksdata.js" defer></script>
 
 <link rel="stylesheet" href="/assets/links/links.css"/>
 
