@@ -19,7 +19,7 @@ linksdata: true
 
 <div id="links-box"></div>
 
-## 申请友链
+## ⛓️申请友链
 
 
 > 1. 网站名称：（必需）
@@ -31,7 +31,7 @@ linksdata: true
 > 将信息发到这个邮箱里rainsin@qq.com，或者下面评论(需要能够使用Github)。
 {: .prompt-tip }
 
-## 我的链接
+## 🔗我的链接
 
 > 1. 网站名称：rainsin
 > 2. 网站地址：https://blog.rainsin.cn
