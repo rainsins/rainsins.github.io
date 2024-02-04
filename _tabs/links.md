@@ -34,7 +34,6 @@ cube: false
 {: .prompt-info }
 
 > 将信息发到这个邮箱里rainsin@qq.com，或者下面评论(需要能够使用Github)。
-> 网站会写入我的sitemap文件中。
 {: .prompt-tip }
 
 ## 我的链接

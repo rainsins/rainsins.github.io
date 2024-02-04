@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+sitemap: https://blog.rainsin.cn/sitemap.xml
 sitemap: https://blog.rainsin.cn/sitemap.txt
