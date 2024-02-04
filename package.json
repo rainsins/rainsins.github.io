@@ -33,6 +33,7 @@
     "stylelint-config-standard-scss": "^9.0.0"
   },
   "dependencies": {
-    "next": "^14.0.4"
+    "next": "^14.0.4",
+    "xml2js": "^0.6.2"
   }
 }

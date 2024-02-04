@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://blog.rainsin.cn/sitemap.txt
