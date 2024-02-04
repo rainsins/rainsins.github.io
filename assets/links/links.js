@@ -7,6 +7,14 @@
 //     }
 // ];
 
+// if (typeof window !== 'undefined') {
+//     // 代码在浏览器中执行
+// } else {
+//     // 代码在Node.js中执行
+//     // 导出数据，以便使用node写入sitemap文件
+//     module.exports = links_data;
+// }
+
 function LinksItem({data}) {
     const item = data.map((e,i)=>{
         const imgobj = {
@@ -35,7 +43,5 @@ function LinksItem({data}) {
 };
 
 const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
-
-console.log(links_data);
 
 links_item.render(<LinksItem data={links_data}/>);

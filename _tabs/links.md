@@ -12,9 +12,8 @@ babel: true
 forbid: true
 comments: true
 cube: false
+linksdata: true
 ---
-
-<script src="/assets/links/linksdata.js"></script>
 
 <link rel="stylesheet" href="/assets/links/links.css"/>
 
