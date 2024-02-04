@@ -36,7 +36,7 @@ linksdata: true
 > 1. 网站名称：rainsin
 > 2. 网站地址：https://blog.rainsin.cn
 > 3. 网站头像：https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A4%B4%E5%83%8F/ff.png
-> 4. 网站描述：一步实际运动比一打纲领更重要。
+> 4. 网站描述：思考，练习和坚持。
 {: .prompt-info }
 
 <!-- <script defer>
