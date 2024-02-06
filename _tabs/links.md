@@ -28,7 +28,7 @@ linksdata: true
 > 4. 网站描述：（可选）
 {: .prompt-info }
 
-> 将信息发到这个邮箱里rainsin@qq.com，或者下面评论(需要能够使用Github)。
+> 将信息发到这个邮箱里mail@rainsin.cn，或者下面评论(需要能够使用Github)。
 {: .prompt-tip }
 
 ## 🔗我的链接
