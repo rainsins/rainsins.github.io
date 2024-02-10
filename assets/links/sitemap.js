@@ -4,14 +4,10 @@ const os = require('os');
 const xml2js = require('xml2js');
 
 fs.readFile("../../sitemap.xml", "utf-8", (err, data) => {
-    if (err) {
-        throw err;
-    }
+    if (err) throw err;
     // console.log(data);
     xml2js.parseString(data, (err, result) => {
-        if (err) {
-            throw err;
-        }
+        if (err) throw err;
 
         links_data.forEach((e,i) => {
             const post_data = {
@@ -28,12 +24,9 @@ fs.readFile("../../sitemap.xml", "utf-8", (err, data) => {
         const xml = builder.buildObject(result);
 
         fs.writeFile('../../sitemap.xml', xml, (err) => {
-            if (err) {
-                throw err;
-            }
+            if (err) throw err;
 
             console.log(`Updated XML is written to a new file.`);
         });
-
     });
 });
