@@ -127,13 +127,12 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   {% endif %}
 
-  <!-- {% if page.math %}
+  {% if page.math %}
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  {% endif %} -->
-  {% if page.math %}
-  <!-- MathJax -->
-  <script defer>
+  {% endif %}
+  <!-- {% if page.math %}
+  <script>
     /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
     MathJax = {
       tex: {
@@ -150,11 +149,9 @@
       }
     };
   </script>
-  <!-- <script src="{{ site.data.origin[type].polyfill.js | relative_url }}"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script> -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-{% endif %}
+{% endif %} -->
 
   {% if page.video %}
     <link rel="stylesheet" href="https://unpkg.byted-static.com/xgplayer/3.0.7/dist/index.min.css">
