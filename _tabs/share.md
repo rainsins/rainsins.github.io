@@ -15,13 +15,13 @@ cube: false
 ---
 
 <link rel="stylesheet" href="/assets/share/share.css"/>
-<script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> -->
 
-<script>
+<!-- <script>
   MathJax = {
     tex: {inlineMath: [['$', '$'],['$$', '$$'], ['\\(', '\\)']]}
   };
-</script>
+</script> -->
 
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
 

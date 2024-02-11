@@ -11,6 +11,29 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
 
+  {% if page.math %}
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      ...MathJax,
+      tex: {
+        inlineMath: [
+          ['$', '$'],
+          ['\\(', '\\)']
+        ],
+        displayMath: [
+          ['$$', '$$'],
+          ['\\[', '\\]']
+        ],
+        tags: 'ams'
+      }
+    };
+  </script>
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
+{% endif %}
+
   <meta name="sogou_site_verification" content="rye45oDTD8" />
 
   <!-- Google tag (gtag.js) -->
@@ -126,29 +149,6 @@
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   {% endif %}
-
-  {% if page.math %}
-  <!-- MathJax -->
-  <script>
-    MathJax = {
-      ...MathJax,
-      tex: {
-        inlineMath: [
-          ['$', '$'],
-          ['\\(', '\\)']
-        ],
-        displayMath: [
-          ['$$', '$$'],
-          ['\\[', '\\]']
-        ],
-        tags: 'ams'
-      }
-    };
-  </script>
-  
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
-{% endif %}
 
   {% if page.video %}
     <link rel="stylesheet" href="https://unpkg.byted-static.com/xgplayer/3.0.7/dist/index.min.css">
