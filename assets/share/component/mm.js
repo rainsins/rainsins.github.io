@@ -501,7 +501,7 @@ function Question({lat}){
     const key_item = key_latex.map((el,index)=>{
         return (
             <div className="key-item" key={index} title={el.title} onClick={(event) => add_text(el,event)}>
-                <div className="key-item-on">{`(${el.exp})`}$</div>
+                <div className="key-item-on">{`\\(${el.exp}\\)`}</div>
             </div>
         );
     });
