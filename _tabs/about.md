@@ -225,10 +225,10 @@ comments: true
   使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<span>Chirpy</span>。
   </div>
   <div>
-  使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>，因为网站的部分资源使用了我自己的服务器。
+  其中有些资源需使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>。
   </div>
   <div>
-  域名服务为<span>Godaddy</span>。
+  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供。
   </div>
 </div>
 

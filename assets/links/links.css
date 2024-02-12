@@ -7,7 +7,7 @@
 #core-wrapper,
 #tail-wrapper {
     width: 100%;
-    padding-right: 4rem !important;
+    padding-right: 0 !important;
 }
 
 #access-tags,
@@ -29,11 +29,11 @@
     .links-box{
         grid-template-columns: 1fr;
     }
-    #core-wrapper,
+    /* #core-wrapper,
     #tail-wrapper {
     width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5) !important;
-}
+} */
 }
 
 .links-item-box{

@@ -38,6 +38,12 @@ linksdata: true
 > 4. 网站描述：思考，练习和坚持。
 {: .prompt-info }
 
+## 💣须知
+
+> 1. 如果长时间无法访问 或 未添加本站链接将会删除友链，恕不另行通知。
+> 2. 申请链接前请先 添加本站链接。
+{: .prompt-warning }
+
 <!-- <script defer>
 let gitalk = new Gitalk({
   clientID: '8609fa79e19dadf4a8fb',
