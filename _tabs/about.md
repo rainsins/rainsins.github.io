@@ -239,10 +239,7 @@ comments: true
   分享标记一些找到的好东西或教程，技术方面的内容会少一些。
   </div>
   <div>
-  坚决抵制充斥互联网的新黄色新闻、情绪化的内容和数据谎言。
-  </div>
-  <div>
-  内容如有侵权，请联系我<span>rainsin@qq.com</span>删除。
+  内容如有侵权，请联系我<span>mail@rainsin.cn</span>删除。
   </div>
 </div>
 
