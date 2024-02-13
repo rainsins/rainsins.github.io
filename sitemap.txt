@@ -5,6 +5,7 @@ https://blog.rainsin.cn/about/%7Burl%7D
 https://blog.rainsin.cn/archives/
 https://blog.rainsin.cn/archives/%7Burl%7D
 https://blog.rainsin.cn/categories
+https://blog.rainsin.cn/b_m_m/
 https://blog.rainsin.cn/categories/
 https://blog.rainsin.cn/categories/%7Burl%7D
 https://blog.rainsin.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
