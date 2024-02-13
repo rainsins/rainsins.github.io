@@ -4,13 +4,13 @@ icon: fas fa-face-smile
 order: 5
 react: true
 video: false
-music: true
-math: true
+music: false
+math: false
 mathpolt: false
-jquery: true
+jquery: false
 babel: true
 forbid: true
-comments: true
+comments: false
 cube: false
 ---
 
