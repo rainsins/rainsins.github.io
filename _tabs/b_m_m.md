@@ -1,7 +1,7 @@
 ---
 layout: about
 icon: fas fa-face-smile
-order: 7
+order: 5
 react: true
 video: false
 music: true

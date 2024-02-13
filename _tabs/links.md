@@ -1,18 +1,19 @@
 ---
 layout: about
 icon: fas fa-paperclip
-order: 5
+order: 4
 react: true
 video: false
 music: false
 math: false
 mathpolt: false
-jquery: false
+jquery: true
 babel: true
 forbid: true
 comments: true
 cube: false
 linksdata: true
+anime: true
 ---
 
 <link rel="stylesheet" href="/assets/links/links.css"/>
@@ -58,3 +59,5 @@ gitalk.render('gitalk-container');
 </script> -->
 
 <script type="text/babel" src="/assets/links/links.js" defer></script>
+
+<script src="/assets/links/linkanime.js"></script>
