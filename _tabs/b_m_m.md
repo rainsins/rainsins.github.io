@@ -13,8 +13,6 @@ forbid: true
 comments: true
 cube: false
 ---
-<script src="/assets/bmm/data/bookdata.js">
-</script>
 
 <link rel="stylesheet" href="/assets/bmm/bmm.css"/>
 
