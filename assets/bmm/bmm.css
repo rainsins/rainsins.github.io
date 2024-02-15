@@ -2,6 +2,7 @@
 #tail-wrapper {
     width: 100%;
     padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 #access-tags,
@@ -87,9 +88,6 @@
 @media (max-width: 1344px) {
     .bbox{
         grid-template-columns: 1fr;
-    }
-    .row>*{
-        padding-left: 0;
     }
 }
 

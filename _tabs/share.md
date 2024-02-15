@@ -96,6 +96,38 @@ cube: false
             theme: '#2c9678'
         },
         {
+            name: '咕叽咕叽',
+            artist: '孙燕姿',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%92%95%E5%8F%BD%E5%92%95%E5%8F%BD.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%92%95%E5%8F%BD%E5%92%95%E5%8F%BD.jpg',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%92%95%E5%8F%BD%E5%92%95%E5%8F%BD.lrc',
+            theme: '#2c9678'
+        },
+        {
+            name: '我怀念的',
+            artist: '孙燕姿',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84.webp',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E6%88%91%E6%80%80%E5%BF%B5%E7%9A%84.lrc',
+            theme: '#2c9678'
+        },
+        {
+            name: '遇见',
+            artist: '孙燕姿',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E9%81%87%E8%A7%81.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E9%81%87%E8%A7%81.webp',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E9%81%87%E8%A7%81.lrc',
+            theme: '#2c9678'
+        },
+        {
+            name: '水晶',
+            artist: '任贤齐、徐怀钰',
+            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E4%BB%BB%E8%B4%A4%E9%BD%90%E3%80%81%E5%BE%90%E6%80%80%E9%92%B0%20-%20%E6%B0%B4%E6%99%B6.ogg',
+            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E6%B0%B4%E6%99%B6.webp',
+            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E4%BB%BB%E8%B4%A4%E9%BD%90%E3%80%81%E5%BE%90%E6%80%80%E9%92%B0%20-%20%E6%B0%B4%E6%99%B6.lrc',
+            theme: '#2c9678'
+        },
+        {
             name: '让她降落',
             artist: '何璐',
             url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E4%BD%95%E7%92%90%20-%20%E8%AE%A9%E5%A5%B9%E9%99%8D%E8%90%BD.ogg',
