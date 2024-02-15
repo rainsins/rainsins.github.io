@@ -236,7 +236,7 @@ comments: true
 
 <div class="about-site">
   <div>
-  分享标记一些找到的好东西或教程，技术方面的内容会少一些。
+  分享标记一些找到的好玩的东西、读书的笔记、生活或学习中琐碎问题的解决，技术方面的内容会少一些。
   </div>
   <div>
   内容如有侵权，请联系我<span>mail@rainsin.cn</span>删除。

@@ -25,6 +25,10 @@ cube: false
 
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
 
+# 🍭正经的东西
+
+<hr/>
+
 ## 🎧听点歌
 
 <div id="player"></div>
@@ -56,7 +60,11 @@ cube: false
   <img src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A3%81%E7%BA%B8/%E5%A3%81%E7%BA%B82.webp" alt="壁纸1">
 </p> -->
 
-## 🔞写真
+# 🔞不正经的东西
+
+<hr/>
+
+## 🎆写真
 
 > 加载可能很慢，并且需要你的网络上的所有设备都支持IPv6。加载完成后可能会有性能问题。
 {: .prompt-danger }
@@ -66,6 +74,14 @@ cube: false
 
 <div id="mm-box"></div>
 
+## 😱事件
+
+> 以下内容部分图片可能会引起不适，请谨慎观看。
+{: .prompt-danger }
+
+<div id="puzzles-box"></div>
+
+
 <script type="text/babel" src="/assets/share/component/mm.js"></script>
 
 <!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
@@ -73,6 +89,8 @@ cube: false
 <!-- <script type="text/babel" src="/assets/share/component/art.js"></script> -->
 
 <script type="text/babel" src="/assets/share/component/instr.js"></script>
+
+<script type="text/babel" src="/assets/share/component/puzzles.js"></script>
 
 <script defer>
     const ap = new APlayer({

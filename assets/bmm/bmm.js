@@ -81,28 +81,28 @@ const read_item = [
         pdfmi: "",
         ye: 584
     },
-    {
-        imgurl:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/book/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%EF%BC%8C%E5%8D%93%E9%87%8C%E5%A5%87/s30003985.webp",
-        name:"数学分析",
-        author:"B.A.卓里奇",
-        publishtime: "2006.6.1",
-        ye: 276,
-        publish:"高等教育出版社",
-        va:"110.00元",
-        pdf:"https://2000python.lanzouq.com/b01fvs9uf",
-        pdfmi:"密码:acs3"
-    },
-    {
-        imgurl:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/book/%E7%BB%8F%E6%B5%8E%E5%AD%A6.jpg",
-        name:"经济学",
-        author:"保罗·萨缪尔森 / 萧琛",
-        publishtime:"2014.6.1",
-        publish: "商务印书馆",
-        ye: 821,
-        va:"268.00元",
-        pdf:"",
-        pdfmi:""
-    },
+    // {
+    //     imgurl:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/book/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%EF%BC%8C%E5%8D%93%E9%87%8C%E5%A5%87/s30003985.webp",
+    //     name:"数学分析",
+    //     author:"B.A.卓里奇",
+    //     publishtime: "2006.6.1",
+    //     ye: 276,
+    //     publish:"高等教育出版社",
+    //     va:"110.00元",
+    //     pdf:"https://2000python.lanzouq.com/b01fvs9uf",
+    //     pdfmi:"密码:acs3"
+    // },
+    // {
+    //     imgurl:"https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/book/%E7%BB%8F%E6%B5%8E%E5%AD%A6.jpg",
+    //     name:"经济学",
+    //     author:"保罗·萨缪尔森 / 萧琛",
+    //     publishtime:"2014.6.1",
+    //     publish: "商务印书馆",
+    //     ye: 821,
+    //     va:"268.00元",
+    //     pdf:"",
+    //     pdfmi:""
+    // },
 ];
 
 
