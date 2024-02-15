@@ -4,7 +4,13 @@ const links_data = [
         url: "https://blog.rainsin.cn",
         img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif",
         dec: "思考，练习和坚持。"
-    }
+    },
+    {
+        name: "半截の诗",
+        url: "https://sweetjing.cc/",
+        img: "https://q1.qlogo.cn/g?b=qq&nk=1486823198&s=640",
+        dec: "保持热爱，奔赴山海。"
+    },
 ];
 
 if (typeof window !== 'undefined') {
