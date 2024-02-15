@@ -9,15 +9,16 @@ fs.readFile("../../sitemap.xml", "utf-8", (err, data) => {
     xml2js.parseString(data, (err, result) => {
         if (err) throw err;
 
-        links_data.forEach((e,i) => {
-            const post_data = {
-                loc:`${e.url}`,
-                priority: "1.0"
-            };
-
-            result.urlset.url.push(post_data);
-
-            fs.appendFileSync("../../sitemap.txt", `${e.url}${os.EOL}`,'utf8');
+        links_data.forEach((e, i) => {
+            if (i != 0) {
+                const post_data = {
+                    loc:`${e.url}`,
+                    priority: "1.0"
+                };
+    
+                result.urlset.url.push(post_data);
+                fs.appendFileSync("../../sitemap.txt", `${e.url}${os.EOL}`,'utf8');
+            }
         });
 
         const builder = new xml2js.Builder();
