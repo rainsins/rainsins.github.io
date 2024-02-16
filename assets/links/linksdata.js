@@ -11,6 +11,12 @@ const links_data = [
         img: "https://q1.qlogo.cn/g?b=qq&nk=1486823198&s=640",
         dec: "保持热爱，奔赴山海。"
     },
+    {
+        name: "BlogWall",
+        url: "https://www.blogwall.cn/nav/",
+        img: "",
+        dec: ""
+    }
 ];
 
 if (typeof window !== 'undefined') {
