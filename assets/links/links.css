@@ -22,19 +22,24 @@
 
 .links-box{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 }
 
 @media (max-width: 1300px) {
     .links-box{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     /* #core-wrapper,
     #tail-wrapper {
     width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5) !important;
 } */
+}
+@media (max-width: 1000px) {
+    .links-box{
+        grid-template-columns: 1fr;
+    }
 }
 
 .links-item-box{
