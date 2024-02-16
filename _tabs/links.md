@@ -61,12 +61,3 @@ gitalk.render('gitalk-container');
 <script type="text/babel" src="/assets/links/links.js" defer></script>
 
 <script src="/assets/links/linkanime.js"></script>
-
-<script>
-      window.onload = () => {
-        twikoo.init({
-          envId: 'https://comment.vip.cpolar.cn',
-          el: '#tcomment',
-        })
-      }
-</script>
