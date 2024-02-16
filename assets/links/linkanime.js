@@ -1,9 +1,4 @@
 window.onload = () => {
-  twikoo.init({
-    envId: 'https://comment.vip.cpolar.cn',
-    el: '#tcomment',
-  });
-
   $(".links-item-box").hover((e)=>{
       anime({
         targets: e.currentTarget.firstChild.firstChild,
@@ -19,5 +14,10 @@ window.onload = () => {
         easing: 'easeInOutSine'
       });
     },(e)=>{
+  });
+
+  twikoo.init({
+    envId: 'https://comment.vip.cpolar.cn',
+    el: '#tcomment',
   });
 }

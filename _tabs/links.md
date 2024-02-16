@@ -60,4 +60,4 @@ gitalk.render('gitalk-container');
 
 <script type="text/babel" src="/assets/links/links.js" defer></script>
 
-<script src="/assets/links/linkanime.js" async></script>
+<script src="/assets/links/linkanime.js"></script>
