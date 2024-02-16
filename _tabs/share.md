@@ -92,6 +92,15 @@ cube: false
 
 <script type="text/babel" src="/assets/share/component/puzzles.js"></script>
 
+<script>
+      window.onload = () => {
+        twikoo.init({
+          envId: 'https://comment.vip.cpolar.cn',
+          el: '#tcomment',
+        })
+      }
+    </script>
+
 <script defer>
     const ap = new APlayer({
     container: document.getElementById('player'),

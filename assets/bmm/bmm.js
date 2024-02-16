@@ -150,3 +150,4 @@ ing_item.render(<Ifons data={reading_item}/>);
 
 const fu_item = ReactDOM.createRoot(document.getElementById('future-box'));
 fu_item.render(<Ifons data={read_item}/>);
+

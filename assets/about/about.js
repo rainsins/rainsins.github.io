@@ -18,6 +18,11 @@
   
   
 window.onload = () => {
+  twikoo.init({
+    envId: 'https://comment.vip.cpolar.cn',
+    el: '#tcomment',
+  });
+  
   function plot() {
     functionPlot({
         target: "#root",
