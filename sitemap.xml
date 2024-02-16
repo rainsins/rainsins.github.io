@@ -228,4 +228,12 @@
     <loc>https://sweetjing.cc/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://sweetjing.cc/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.blogwall.cn/nav/</loc>
+    <priority>1.0</priority>
+  </url>
 </urlset>
