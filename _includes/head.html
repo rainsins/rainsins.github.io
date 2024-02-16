@@ -145,6 +145,27 @@
   </script> -->
   <link rel="stylesheet" href="/assets/css/comments.css"/>
 
+  {% if page.comments %}
+  <script src="
+  https://cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.min.css
+  " rel="stylesheet">
+
+    <script defer>
+      window.onload = () => {
+        twikoo.init({
+        envId: 'https://comment.vip.cpolar.cn', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+        el: '#tcomment', // 容器元素
+      // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+      // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+      // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+      })
+    }
+    </script>
+  {% endif %}
+
   {% if page.react %}
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
