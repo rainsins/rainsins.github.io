@@ -23,7 +23,8 @@ cube: false
   };
 </script> -->
 
-![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E5%A3%81%E7%BA%B83.webp)
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark }
 
 # 🍭正经的东西
 

@@ -46,16 +46,16 @@
     display: flex;
     color: black;
     padding: 12px;
-    background-color: #f4f4f4a1;
+    background-color: var(--box-bg);
     box-shadow: 0 8px 16px -4px #2c2d300c;
-    border: 1px solid #e3e8f7 !important;
+    border: var(--box-border) !important;
     border-radius: 12px;
     transition: all .4s ease-in-out;
 }
 
 .links-item-box:hover{
     box-shadow: 0px 0px 20px #a6a8af55;
-    border-bottom: 1px solid #e3e8f7 !important;
+    border-bottom: var(--box-border) !important;
 }
 
 .links-item-img-box{
