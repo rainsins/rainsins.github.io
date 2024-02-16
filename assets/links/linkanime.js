@@ -15,9 +15,4 @@ window.onload = () => {
       });
     },(e)=>{
   });
-
-  twikoo.init({
-    envId: 'https://comment.vip.cpolar.cn',
-    el: '#tcomment',
-  });
 }

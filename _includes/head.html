@@ -49,11 +49,9 @@
   <meta name="baidu-site-verification" content="codeva-QKTDeuhWB9" />
 
   <script type="text/javascript">
-    //禁止鼠标右击
     document.oncontextmenu = function() {
       event.returnValue = false;
     };
-    //禁用开发者工具F12
     document.onkeydown = document.onkeyup = document.onkeypress = function(
       event
     ) {
@@ -89,7 +87,6 @@
         }
       }, 200);
     } else {
-      //禁用控制台
       let ConsoleManager = {
         onOpen: function() {
           alert("Console is opened");
