@@ -1,4 +1,4 @@
-﻿window.algdata = [
+﻿const algdata = [
     {
         "alg": "U R U' R'",
         "rank": "1",
@@ -13858,3 +13858,91 @@
         "algFave": "yM'UM2'UM2'UM'U2M2'"
     }
 ]
+
+function f2l() {
+    let ob = {};
+    for (let index = 1; index < 42; index++) {
+        const str = index > 9 ? `F2L${index}` : `F2L0${index}`;
+        ob[str] = {
+            img: "",
+            data: []
+        };
+        for (let i = 0; i < algdata.length; i++) {
+            if (algdata[i].name.indexOf(str) != -1) {
+                ob[str].data.push(algdata[i]);
+                if (ob[str].img == "" && algdata[i].image != "") {
+                    ob[str].img = algdata[i].image;
+                }
+            }
+        }
+    }
+    return ob;
+}
+
+function oll() {
+    let ob = {};
+    for (let index = 1; index < 58; index++) {
+        const str = index > 9 ? `OLL${index}` : `OLL0${index}`;
+        ob[str] = {
+            img: "",
+            data: []
+        };
+        for (let i = 0; i < algdata.length; i++) {
+            if (algdata[i].name.indexOf(str) != -1) {
+                ob[str].data.push(algdata[i]);
+                if (ob[str].img == "" && algdata[i].image != "") {
+                    ob[str].img = algdata[i].image;
+                }
+            }
+        }
+    }
+    return ob;
+}
+
+function pll() {
+    let ob = {};
+    for (let index = 1; index < 22; index++) {
+        const str = index > 9 ? `PLL${index}` : `PLL0${index}`;
+        ob[str] = {
+            img: "",
+            data: []
+        };
+        for (let i = 0; i < algdata.length; i++) {
+            if (algdata[i].name.indexOf(str) != -1) {
+                ob[str].data.push(algdata[i]);
+                if (ob[str].img == "" && algdata[i].image != "") {
+                    ob[str].img = algdata[i].image;
+                }
+            }
+        }
+    }
+    return ob;
+}
+
+const fs = require('fs');
+
+const f2lString = JSON.stringify(f2l());
+const ollString = JSON.stringify(oll());
+const pllString = JSON.stringify(pll());
+
+fs.writeFile('./f2l.json', f2lString, (error) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('Data written to file');
+  }
+});
+fs.writeFile('./oll.json', ollString, (error) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log('Data written to file');
+    }
+});
+fs.writeFile('./pll.json', pllString, (error) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log('Data written to file');
+    }
+  });

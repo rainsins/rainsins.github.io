@@ -90,8 +90,13 @@
 
   {% if page.cube %}
   <script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script>
-  <script src="https://cdn.cubing.net/js/scramble-display" type="module"></script>
-  <script src="/assets/share/data/cubedata.js"></script>
+  <script src="/assets/share/data/f2l.js"></script>
+  <script src="/assets/share/data/oll.js"></script>
+  <script src="/assets/share/data/pll.js"></script>
+  <script type="module">
+  import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
+  window.TwistyPlayer = TwistyPlayer;
+  </script>
   {% endif %}
 
   {% if page.babel %}
