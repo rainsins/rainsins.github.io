@@ -89,12 +89,9 @@
   {% endif %}
 
   {% if page.cube %}
-  <script type="module">
-    import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
-    import { ScrambleDisplay } from "https://cdn.cubing.net/js/scramble-display";
-    window.Twistyplayer = TwistyPlayer;
-    window.ScrambleDisplay = ScrambleDisplay;
-  </script>
+  <script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script>
+  <script src="https://cdn.cubing.net/js/scramble-display" type="module"></script>
+  <script src="/assets/share/data/cubedata.js"></script>
   {% endif %}
 
   {% if page.babel %}

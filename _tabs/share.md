@@ -11,17 +11,11 @@ jquery: true
 babel: true
 forbid: true
 comments: true
-cube: false
+cube: true
 ---
 
-<script type="module">
-    import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
-    import { ScrambleDisplay } from "https://cdn.cubing.net/js/scramble-display";
-    window.Twistyplayer = TwistyPlayer;
-    window.ScrambleDisplay = ScrambleDisplay;
-  </script>
-
 <link rel="stylesheet" href="/assets/share/share.css"/>
+<link rel="stylesheet" href="/assets/share/cube.css"/>
 <!-- <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> -->
 
 <!-- <script>

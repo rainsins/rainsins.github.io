@@ -1,41 +1,31 @@
-console.log(TwistyPlayer);
+Element.prototype._attachShadow = Element.prototype.attachShadow
 
-const oll = [
+Element.prototype.attachShadow = function () {
 
-]
+        return this._attachShadow({mode:'open'})
 
-const f2l = [
-
-]
-
-const pll = [
-    
-]
+}
 
 function Cube() {
-    const cuu = new TwistyPlayer({
-        puzzle: "4x4x4",
-        alg: "R U R'",
-        hintFacelets: "none",
-        backView: "top-right",
-        background: "none"
-    });
-
-    const display = new ScrambleDisplay({
-        event: "pyram",
-        scramble: "B U' L U' L B' U' L' l' r u'",
-    })
     return (
-        <div>
-            <twisty-player
-  alg="R U R' (U' D) R2 U' R U' R' U R' U R2 (D' U)"
-  experimental-setup-anchor="end"
-  visualization="experimental-2D-LL"
-  background="none"
-  control-panel="none"
-            ></twisty-player>
-            {cuu}
-            {display}
+        <div className="cube-box">
+            <div className="cube-alg-box">
+
+            </div>
+            <div className="cube-alg-det-box">
+                
+            </div>
+            <div className="cube-info-box">
+                <twisty-player
+                    alg="R U R' (U' D) R2 U' R U' R' U R' U R2 (D' U)"
+                    experimental-setup-anchor="end"
+                    experimental-stickering="PLL"
+                    background="none"
+                ></twisty-player>
+                <div className="cube-info-alg">
+                    {"R U R' (U' D) R2 U' R U' R' U R' U R2 (D' U)"}
+                </div>
+            </div>
         </div>
     );
 };
