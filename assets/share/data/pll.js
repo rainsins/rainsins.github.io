@@ -1,4 +1,5 @@
-window.pll ={
+window.pll = {
+    type: 3,
     "PLL01": {
         "img": "",
         "data": [

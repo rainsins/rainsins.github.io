@@ -705,3 +705,25 @@
         grid-template-columns: 1fr;
     }
 }
+
+#player{
+    background: none;
+}
+
+.aplayer-body{
+    background-color: #fff;
+}
+
+.aplayer-list{
+    background-color: var(--box-bg);
+}
+.aplayer .aplayer-list ol li.aplayer-list-light{
+    background: #e9e9e966;
+}
+.aplayer .aplayer-list ol li{
+    border-top: 1px solid #e9e9e922;
+}
+
+.aplayer .aplayer-list ol li:hover{
+    background: #efefef44;
+}

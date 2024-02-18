@@ -1,7 +1,8 @@
 window.f2l = {
+    type: 3,
     "F2L01": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L01.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L01.svg",
+        data: [
             {
                 "alg": "U R U' R'",
                 "rank": "1",
@@ -252,8 +253,8 @@ window.f2l = {
         ]
     },
     "F2L02": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L02-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L02.svg",
+        data: [
             {
                 "alg": "F R' F' R",
                 "rank": "1",
@@ -426,8 +427,8 @@ window.f2l = {
         ]
     },
     "F2L03": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L03.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L03.svg",
+        data: [
             {
                 "alg": "F' U' F",
                 "rank": "1",
@@ -574,8 +575,8 @@ window.f2l = {
         ]
     },
     "F2L04": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L04.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L04.svg",
+        data: [
             {
                 "alg": "R U R'",
                 "rank": "1",
@@ -761,8 +762,8 @@ window.f2l = {
         ]
     },
     "F2L05": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L05.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L05.svg",
+        data: [
             {
                 "alg": "U' R U R' U2 R U' R'",
                 "rank": "1",
@@ -987,8 +988,8 @@ window.f2l = {
         ]
     },
     "F2L06": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L06-1.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L06-1.svg",
+        data: [
             {
                 "alg": "U' r U' R' U R U r'",
                 "rank": "1",
@@ -1252,8 +1253,8 @@ window.f2l = {
         ]
     },
     "F2L07": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L07-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L07-2.svg",
+        data: [
             {
                 "alg": "U' R U2' R' U2 R U' R'",
                 "rank": "1",
@@ -1439,8 +1440,8 @@ window.f2l = {
         ]
     },
     "F2L08": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L08.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L08.svg",
+        data: [
             {
                 "alg": "d R' U2' R U R' U2' R",
                 "rank": "1",
@@ -1678,8 +1679,8 @@ window.f2l = {
         ]
     },
     "F2L09": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L09.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L09.svg",
+        data: [
             {
                 "alg": "U' R U' R' U F' U' F",
                 "rank": "1",
@@ -1982,8 +1983,8 @@ window.f2l = {
         ]
     },
     "F2L10": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L10.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L10.svg",
+        data: [
             {
                 "alg": "U' R U R' U R U R'",
                 "rank": "1",
@@ -2234,8 +2235,8 @@ window.f2l = {
         ]
     },
     "F2L11": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L11.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L11.svg",
+        data: [
             {
                 "alg": "y' R U2 R2 U' R2 U' R'",
                 "rank": "1",
@@ -2473,8 +2474,8 @@ window.f2l = {
         ]
     },
     "F2L12": {
-        "img": "",
-        "data": [
+        img: "",
+        data: [
             {
                 "alg": "R' U2' R2 U R2' U R",
                 "rank": "1",
@@ -2699,8 +2700,8 @@ window.f2l = {
         ]
     },
     "F2L13": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L13.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L13.svg",
+        data: [
             {
                 "alg": "y' U R' U R U' R' U' R",
                 "rank": "1",
@@ -2847,8 +2848,8 @@ window.f2l = {
         ]
     },
     "F2L14": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L14.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L14.svg",
+        data: [
             {
                 "alg": "U' R U' R' U R U R'",
                 "rank": "1",
@@ -3047,8 +3048,8 @@ window.f2l = {
         ]
     },
     "F2L15": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L15-1.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L15-1.svg",
+        data: [
             {
                 "alg": "R' D' R U' R' D R U R U' R'",
                 "rank": "1",
@@ -3325,8 +3326,8 @@ window.f2l = {
         ]
     },
     "F2L16": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L16.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L16.svg",
+        data: [
             {
                 "alg": "R U' R' U2 F' U' F",
                 "rank": "1",
@@ -3577,8 +3578,8 @@ window.f2l = {
         ]
     },
     "F2L17": {
-        "img": "",
-        "data": [
+        img: "",
+        data: [
             {
                 "alg": "R U2 R' U' R U R'",
                 "rank": "1",
@@ -3777,8 +3778,8 @@ window.f2l = {
         ]
     },
     "F2L18": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L18.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L18.svg",
+        data: [
             {
                 "alg": "y' R' U2 R U R' U' R",
                 "rank": "1",
@@ -3951,8 +3952,8 @@ window.f2l = {
         ]
     },
     "F2L19": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L19.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L19.svg",
+        data: [
             {
                 "alg": "U R U2 R' U R U' R'",
                 "rank": "1",
@@ -4190,8 +4191,8 @@ window.f2l = {
         ]
     },
     "F2L20": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L20-1.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L20-1.svg",
+        data: [
             {
                 "alg": "y' U' R' U2 R U' R' U R",
                 "rank": "1",
@@ -4351,8 +4352,8 @@ window.f2l = {
         ]
     },
     "F2L21": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L21.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L21.svg",
+        data: [
             {
                 "alg": "U2 R U R' U R U' R'",
                 "rank": "1",
@@ -4616,8 +4617,8 @@ window.f2l = {
         ]
     },
     "F2L22": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L22.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L22.svg",
+        data: [
             {
                 "alg": "r U' r' U2 r U r'",
                 "rank": "1",
@@ -4842,8 +4843,8 @@ window.f2l = {
         ]
     },
     "F2L23": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L23.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L23.svg",
+        data: [
             {
                 "alg": "U R U' R' U' R U' R' U R U' R'",
                 "rank": "1",
@@ -5133,8 +5134,8 @@ window.f2l = {
         ]
     },
     "F2L24": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L24.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L24.svg",
+        data: [
             {
                 "alg": "F U R U' R' F' R U' R'",
                 "rank": "1",
@@ -5450,8 +5451,8 @@ window.f2l = {
         ]
     },
     "F2L25": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L25-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L25-2.svg",
+        data: [
             {
                 "alg": "U' R' F R F' R U R'",
                 "rank": "1",
@@ -5728,8 +5729,8 @@ window.f2l = {
         ]
     },
     "F2L26": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L26.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L26.svg",
+        data: [
             {
                 "alg": "U R U' R' F R' F' R",
                 "rank": "1",
@@ -6045,8 +6046,8 @@ window.f2l = {
         ]
     },
     "F2L27": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L27.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L27.svg",
+        data: [
             {
                 "alg": "R U' R' U R U' R'",
                 "rank": "1",
@@ -6258,8 +6259,8 @@ window.f2l = {
         ]
     },
     "F2L28": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L28-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L28-2.svg",
+        data: [
             {
                 "alg": "y L' U L U' L' U L",
                 "rank": "1",
@@ -6419,8 +6420,8 @@ window.f2l = {
         ]
     },
     "F2L29": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L29-1.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L29-1.svg",
+        data: [
             {
                 "alg": "R' F R F' U R U' R'",
                 "rank": "1",
@@ -6593,8 +6594,8 @@ window.f2l = {
         ]
     },
     "F2L30": {
-        "img": "",
-        "data": [
+        img: "",
+        data: [
             {
                 "alg": "R U R' U' R U R'",
                 "rank": "1",
@@ -6806,8 +6807,8 @@ window.f2l = {
         ]
     },
     "F2L31": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L31.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L31.svg",
+        data: [
             {
                 "alg": "U' R' F R F' R U' R'",
                 "rank": "1",
@@ -7058,8 +7059,8 @@ window.f2l = {
         ]
     },
     "F2L32": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L32-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L32-2.svg",
+        data: [
             {
                 "alg": "U R U' R' U R U' R' U R U' R'",
                 "rank": "1",
@@ -7271,8 +7272,8 @@ window.f2l = {
         ]
     },
     "F2L33": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L33.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L33.svg",
+        data: [
             {
                 "alg": "U' R U' R' U2 R U' R'",
                 "rank": "1",
@@ -7432,8 +7433,8 @@ window.f2l = {
         ]
     },
     "F2L34": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L34-2.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L34-2.svg",
+        data: [
             {
                 "alg": "U R U R' U2 R U R'",
                 "rank": "1",
@@ -7645,8 +7646,8 @@ window.f2l = {
         ]
     },
     "F2L35": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L35-3.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L35-3.svg",
+        data: [
             {
                 "alg": "U' R U R' d R' U' R",
                 "rank": "1",
@@ -7910,8 +7911,8 @@ window.f2l = {
         ]
     },
     "F2L36": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L36.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L36.svg",
+        data: [
             {
                 "alg": "U F' U' F U' R U R'",
                 "rank": "1",
@@ -8162,8 +8163,8 @@ window.f2l = {
         ]
     },
     "F2L37": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L37.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L37.svg",
+        data: [
             {
                 "alg": "R2 U2 F R2 F' U2 R' U R'",
                 "rank": "1",
@@ -8375,8 +8376,8 @@ window.f2l = {
         ]
     },
     "F2L38": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L38.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L38.svg",
+        data: [
             {
                 "alg": "R U' R' U' R U R' U2 R U' R'",
                 "rank": "1",
@@ -8601,8 +8602,8 @@ window.f2l = {
         ]
     },
     "F2L39": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L39-3.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L39-3.svg",
+        data: [
             {
                 "alg": "R U' R' U R U2 R' U R U' R'",
                 "rank": "1",
@@ -8814,8 +8815,8 @@ window.f2l = {
         ]
     },
     "F2L40": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L40.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L40.svg",
+        data: [
             {
                 "alg": "r U' r' U2 r U r' R U R'",
                 "rank": "1",
@@ -9144,8 +9145,8 @@ window.f2l = {
         ]
     },
     "F2L41": {
-        "img": "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L41.svg",
-        "data": [
+        img: "https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/F2L/F2L41.svg",
+        data: [
             {
                 "alg": "R U' R' r U' r' U2 r U r'",
                 "rank": "1",

@@ -1,4 +1,5 @@
-window.oll ={
+window.oll = {
+    type: 3,
     "OLL01": {
         "img": "",
         "data": [
