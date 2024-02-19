@@ -1,3 +1,7 @@
+import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
+import { createRoot } from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';
+import { useState, useEffect } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm'
+
 Element.prototype._attachShadow = Element.prototype.attachShadow
 
 Element.prototype.attachShadow = function () {
@@ -40,12 +44,12 @@ const cube = [
 ]
 
 function Cube() {
-    const [alg, setAlg] = React.useState("");
-    const [algType, setAlgType] = React.useState("F2L");
-    const [algArray, setAlgArray] = React.useState(f2l);
-    const [count, setCount] = React.useState(41);
-    const [puzzle, setPuzzle] = React.useState("3x3x3");
-    const [typeDet, setTypeDet] = React.useState("F2L(前两层)是 CFOP 方法的第二步，旨在求解 3x3 的前两个底层。");
+    const [alg, setAlg] = useState("");
+    const [algType, setAlgType] = useState("F2L");
+    const [algArray, setAlgArray] = useState(f2l);
+    const [count, setCount] = useState(41);
+    const [puzzle, setPuzzle] = useState("3x3x3");
+    const [typeDet, setTypeDet] = useState("F2L(前两层)是 CFOP 方法的第二步，旨在求解 3x3 的前两个底层。");
 
     const change_type = (e,el) => {
         setAlgType(el.name);
@@ -124,7 +128,7 @@ function Cube() {
         });
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         const pp = document.getElementById("cube-info-box");
 
         const player = new TwistyPlayer({
@@ -181,5 +185,5 @@ function Cube() {
 };
 
 
-const cube_boxs = ReactDOM.createRoot(document.getElementById('cubes-box'));
+const cube_boxs = createRoot(document.getElementById('cubes-box'));
 cube_boxs.render(<Cube />);
