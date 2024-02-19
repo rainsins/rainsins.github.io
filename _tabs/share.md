@@ -140,9 +140,9 @@ cube: true
 
 <script type="text/babel" src="/assets/share/component/puzzles.js"></script>
 
-<script type="text/babel" src="/assets/share/component/cube.js"></script>
+<script type="text/babel" src="/assets/share/component/cube.js" defer="defer"></script>
 
-<script type="module">
+<script>
 
   window.onload = () => {
     twikoo.init({
