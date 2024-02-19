@@ -129,12 +129,6 @@ cube: true
 
 <div id="gc-box"></div> -->
 
-<script src="/assets/share/data/f2l.js"></script>
-<script src="/assets/share/data/oll.js"></script>
-<script src="/assets/share/data/pll.js"></script>
-<script src="/assets/share/data/poll.js"></script>
-<script src="/assets/share/data/ppll.js"></script>
-
 <script type="text/babel" src="/assets/share/component/mm.js"></script>
 
 <!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
