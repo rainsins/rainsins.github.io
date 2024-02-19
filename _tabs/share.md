@@ -129,6 +129,11 @@ cube: true
 
 <div id="gc-box"></div> -->
 
+<script src="/assets/share/data/f2l.js"></script>
+<script src="/assets/share/data/oll.js"></script>
+<script src="/assets/share/data/pll.js"></script>
+<script src="/assets/share/data/poll.js"></script>
+<script src="/assets/share/data/ppll.js"></script>
 
 <script type="text/babel" src="/assets/share/component/mm.js"></script>
 
@@ -140,16 +145,15 @@ cube: true
 
 <script type="text/babel" src="/assets/share/component/puzzles.js"></script>
 
-<script type="text/babel" src="/assets/share/component/cube.js" defer="defer"></script>
+<script type="text/babel" src="/assets/share/component/cube.js"></script>
 
 <script>
-
-  window.onload = () => {
+window.onload = () => {
     twikoo.init({
-      envId: 'https://comment.vip.cpolar.cn',
-      el: '#tcomment',
+        envId: 'https://comment.vip.cpolar.cn',
+        el: '#tcomment',
     })
-  }
+}
 </script>
 
 <script defer>

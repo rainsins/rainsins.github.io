@@ -181,6 +181,5 @@ function Cube() {
 };
 
 
-
 const cube_boxs = ReactDOM.createRoot(document.getElementById('cubes-box'));
 cube_boxs.render(<Cube />);
