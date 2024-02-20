@@ -1,23 +1,19 @@
 
 function Gc() {
     React.useEffect(() => {
-        let audio = document.getElementById('jiji');
-        audio.play();
-        var lis = document.querySelectorAll('ul.jiji li');
+        const audio = document.getElementById('jiji');
+        const lis = document.querySelectorAll('ul.jiji li');
         lis.forEach(li => {
             li.onclick = function () {
                 audio.src = '/assets/share/music/jj/' + this.getAttribute('m') + '.ogg';
                 audio.play();
-                console.log(this.innerHTML)
             }
         });
         document.querySelector('.s1').onclick = function () {
             audio.currentTime = 0;
-            console.log('重开')
         };
         document.querySelector('.s2').onclick = function () {
             audio.pause();
-            console.log('停止')
         }
     }, [])
     return (
