@@ -108,8 +108,7 @@ function Cube() {
                     <div className="cube-alg" onClick={(e) => change_alg(el.alg, e)}>{el.alg}</div>
                 );
             });
-
-            console.log(datas);
+            
             const img_sty = {
                 backgroundImage: datas.img == "" ? `url(https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/${algType}/${str}.svg)` : `url(${datas.img})`,
             };
