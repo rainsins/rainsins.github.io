@@ -467,6 +467,7 @@ const key_latex = [
 ];
 
 function Question({lat}){
+    const [isOk,setIsOk] = React.useContext(okContext);
     const [isAns,setAns] = React.useContext(AnsContext);
 
     const [latexData,setLatexData] = React.useState("");
@@ -506,6 +507,14 @@ function Question({lat}){
         );
     });
 
+    function isOk_handle(){
+        if(isAns){
+            setIsOk(true);
+        }else{
+            alert("答案错误，请重新输入！")
+        }
+    };
+
     return(
         <div className="ques-main">
             <div className="ques-box">
@@ -534,14 +543,19 @@ function Question({lat}){
                         </div>
                     </div>
                 </div>
+                <div className="botton-ques-box">
+                    <div className="botton-ques" onClick={isOk_handle}>
+                        提交答案
+                    </div>
+                </div>
             </div>
         </div>
     );
 };
 
 function MathCom(){
-    const [isOk,setIsOk] = React.useContext(okContext);
-    const [isAns,setAns] = React.useContext(AnsContext);
+    // const [isOk,setIsOk] = React.useContext(okContext);
+    // const [isAns,setAns] = React.useContext(AnsContext);
 
     const q_item = questions.map((el,index)=>{
         return(
@@ -549,22 +563,17 @@ function MathCom(){
         );
     });
 
-    function isOk_handle(){
-        if(isAns){
-            setIsOk(true);
-        }else{
-            alert("答案错误，请重新输入！")
-        }
-    };
+    // function isOk_handle(){
+    //     if(isAns){
+    //         setIsOk(true);
+    //     }else{
+    //         alert("答案错误，请重新输入！")
+    //     }
+    // };
 
     return(
         <div className="question-boxs">
             {q_item}
-            <div className="botton-ques-box">
-                <div className="botton-ques" onClick={isOk_handle}>
-                    提交答案
-                </div>
-            </div>
         </div>
     );
 };

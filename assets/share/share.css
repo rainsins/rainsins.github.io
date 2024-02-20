@@ -619,7 +619,7 @@
 .botton-ques-box{
     width: 100%;
     display: flex;
-    margin-top: 16px;
+    justify-content: flex-end;
 }
 .botton-ques{
     border: var(--box-border);
@@ -726,4 +726,145 @@
 
 .aplayer .aplayer-list ol li:hover{
     background: #efefef44;
+}
+
+.mandelbrot-box{
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.jj-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 14px;
+    background-color: var(--box-bg);
+    border: var(--box-border);
+    border-radius: 12px;
+}
+
+.jj-music-box{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0 18px 18px;
+}
+.gongneng{
+    display: flex;
+    width: 100%;
+}
+.jj,.jiji{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.jj li,
+.jiji li{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    list-style:none;
+    padding: 4px;
+    border: var(--box-border);
+    background-color: #d3d3d3;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.gongneng{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.gongneng>span{
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gongneng .s{
+    flex: .6;
+    display: flex;
+}
+.gongneng .s>div{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: var(--box-border);
+    background-color: #eaecf1;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.jj-banner-box{
+    width: 100%;
+    position: relative;
+}
+
+.jj-banner-bg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    aspect-ratio: 1;
+    background-image: linear-gradient(-45deg, #ff7707 50%, #809aff 50%);
+    background-size: cover;
+    background-position: center;
+    filter: blur(89px);
+}
+
+.jj-banner-box>.img-jj{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background-image: url("/assets/share/music/jj/jj.svg");
+    background-position: center;
+    aspect-ratio: 1;
+    background-size: cover;
+}
+
+.jiji li:nth-child(6n){
+    background-color: #6379f6aa;
+}
+
+.jiji li:nth-child(6n+1){
+    background-color: #5aa4aeaa;
+}
+
+.jiji li:nth-child(6n+2){
+    background-color: #f29a76aa;
+}
+.jiji li:nth-child(6n+3){
+    background-color: #a4abd6aa;
+}
+.jiji li:nth-child(6n+4){
+    background-color: #b13b2eaa;
+}
+.jiji li:nth-child(6n+5){
+    background-color: #8ba3c7aa;
+}
+
+@media (max-width: 1300px) {
+    .jj-box{
+        grid-template-columns: 1fr;
+    }
+    .jj-banner-box{
+        aspect-ratio: 1;
+    }
 }
