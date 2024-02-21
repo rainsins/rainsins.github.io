@@ -210,21 +210,29 @@ window.onload = () => {
             theme: '#ffc90c'
         },
         {
-            name: '爱殇',
-            artist: '小时姑娘',
-            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%20%28%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%29.ogg',
-            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%88%B1%E6%AE%87.webp',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%20%28%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%29.lrc',
-            theme: '#b7ae8f'
+            name: 'Cupid',
+            artist: 'FIFTY FIFTY',
+            url: 'https://api.rainsin.cn/blog-music%2FFIFTY%20FIFTY%20-%20Cupid.mp3',
+            cover: 'https://api.rainsin.cn/blog-music%2Fcupid.jpeg',
+            lrc: 'https://api.rainsin.cn/blog-music%2FFIFTY%20FIFTY%20-%20Cupid.lrc',
+            theme: '#ffc90c'
         },
-        {
-            name: '金沙滩',
-            artist: '刘随社',
-            url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.ogg',
-            cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%A7%A6%E8%85%94.jpg',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.lrc',
-            theme: '#ed3333'
-        },
+        // {
+        //     name: '爱殇',
+        //     artist: '小时姑娘',
+        //     url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%20%28%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%29.ogg',
+        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%88%B1%E6%AE%87.webp',
+        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%20%28%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%29.lrc',
+        //     theme: '#b7ae8f'
+        // },
+        // {
+        //     name: '金沙滩',
+        //     artist: '刘随社',
+        //     url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.ogg',
+        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%A7%A6%E8%85%94.jpg',
+        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.lrc',
+        //     theme: '#ed3333'
+        // },
         {
             name: '片头',
             artist: '罗坚',
