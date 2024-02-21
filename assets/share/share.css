@@ -702,7 +702,7 @@
 
 @media screen and (max-width: 1200px) {
     .puzzle-box{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
 
