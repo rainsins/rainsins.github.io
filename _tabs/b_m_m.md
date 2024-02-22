@@ -16,7 +16,7 @@ cube: false
 
 <link rel="stylesheet" href="/assets/bmm/bmm.css"/>
 
-> 请翻烂每一本书！(字典类书籍除外)，切忌囫囵吞枣。
+> 请翻烂每一本书！(字典类书籍除外)。
 {: .prompt-danger }
 
 <h3 id="reading" class="bbox-box">
