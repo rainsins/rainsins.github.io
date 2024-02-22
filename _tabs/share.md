@@ -35,7 +35,7 @@ cube: true
 听点歌
 </h2>
 
-<div id="player"></div>
+<div id="aplayer"></div>
 
 
 <h2 id="工具">
@@ -151,8 +151,9 @@ window.onload = () => {
         envId: 'https://comment.vip.cpolar.cn',
         el: '#tcomment',
     });
+
     const ap = new APlayer({
-    container: document.getElementById('player'),
+    container: document.getElementById('aplayer'),
     mini: false,
     autoplay: false,
     theme: '#FADFA3',
