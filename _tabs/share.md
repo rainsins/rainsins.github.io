@@ -150,12 +150,7 @@ window.onload = () => {
     twikoo.init({
         envId: 'https://comment.vip.cpolar.cn',
         el: '#tcomment',
-    })
-}
-</script>
-
-
-<script defer>
+    });
     const ap = new APlayer({
     container: document.getElementById('player'),
     mini: false,
@@ -263,7 +258,7 @@ window.onload = () => {
             cover: 'https://api.rainsin.cn/blog-music%2F%E5%A5%A2%E9%A6%99.jpeg',
             lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%20-%20%E5%A5%A2%E9%A6%99%E5%A4%AB%E4%BA%BA.lrc',
             theme: '#b7ae8f'
-        },
+        }
         // {
         //     name: '请你看着我的眼睛',
         //     artist: '王馨平',
@@ -306,6 +301,7 @@ window.onload = () => {
         // }
     ]
 });
+}
 </script>
 
 
