@@ -118,7 +118,7 @@ cube: true
 
 <div id="puzzles-box"></div> -->
 
-<h2>
+<!-- <h2>
 <svg t="1708445380977" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15679" width="32" height="32"><path d="M910.8 512.59q0 17.19-1.48 33.95a397.56 397.56 0 0 1-792.2 0c-1-11.16-1.48-22.49-1.48-33.95a395.9 395.9 0 0 1 94.94-257.83C283.51 169.25 392.05 115 513.22 115s229.7 54.24 302.63 139.75a395.86 395.86 0 0 1 94.95 257.84z" fill="#F25458" p-id="15680"></path><path d="M815.85 254.76a400 400 0 0 0-54.23-52.43 395.71 395.71 0 0 1 86.87 248c0 11.45-0.47 22.78-1.48 33.94a397.35 397.35 0 0 1-644.4 276.36c2.61 3.27 5.25 6.53 8 9.72a397.57 397.57 0 0 0 698.71-223.81q1.5-16.74 1.48-33.95a395.86 395.86 0 0 0-94.95-257.83z" fill="#CE384A" p-id="15681"></path><path d="M152.73 594q-1.51-16.74-1.49-34a395.86 395.86 0 0 1 94.95-257.83c72.93-85.51 181.46-139.75 302.63-139.75 119.58 0 226.77 52.88 299.66 136.44a398.07 398.07 0 0 0-32.63-44.16C742.92 169.25 634.39 115 513.22 115s-229.71 54.25-302.64 139.76a395.9 395.9 0 0 0-94.94 257.83c0 11.46 0.47 22.79 1.48 33.95a395.38 395.38 0 0 0 93.46 223.77c1 1.15 2 2.23 3 3.36A394.61 394.61 0 0 1 152.73 594z" fill="#FFFFFF" p-id="15682"></path><path d="M512.9 927.92A415.38 415.38 0 0 1 195.53 245c7.28-8.74 15.37-17.56 24-26.16a415.38 415.38 0 0 1 587.41 587.47c-8.61 8.61-17.44 16.7-26.24 24a411.61 411.61 0 0 1-234.31 96.22q-16.78 1.39-33.49 1.39z m0.34-795.09q-15.11 0-30.29 1.2a379.74 379.74 0 0 0-238.28 110c-7.84 7.84-15.2 15.87-21.87 23.87a379.75 379.75 0 0 0 535 535.16c8.07-6.73 16.09-14.09 24-21.94a379.77 379.77 0 0 0-268.56-648.29z" fill="#212144" p-id="15683"></path><path d="M525.59 927.38l1.65-20A411.71 411.71 0 0 1 623.52 673c7.29-8.73 15.37-17.55 24-26.15a415.39 415.39 0 0 1 260.6-120.32l19.88-1.65-0.72 20.8a415.43 415.43 0 0 1-120.34 260.63c-8.61 8.61-17.44 16.7-26.24 24a411.61 411.61 0 0 1-234.31 96.22z m363.87-363A379.87 379.87 0 0 0 672.67 672c-7.85 7.84-15.21 15.87-21.87 23.86A376 376 0 0 0 565 888.77a375.85 375.85 0 0 0 192.78-85.69c8.07-6.73 16.09-14.09 24-21.94a379.89 379.89 0 0 0 107.68-216.8zM221.727 778.912l557.8-557.801 25.174 25.173L246.9 804.085z" fill="#212144" p-id="15684"></path><path d="M513.29 928q-8.34 0-16.7-0.33A415.36 415.36 0 0 1 195.53 245l9.06-10.73 12.55 6.31c114.65 57.71 227.92 140.88 327.55 240.52S727.47 694 785.2 808.67l6.32 12.55-10.74 9.06A413.74 413.74 0 0 1 513.29 928zM213.85 279a379.77 379.77 0 0 0 533 533c-55.68-107-134.07-212.43-227.34-305.7s-198.7-171.67-305.66-227.37z" fill="#212144" p-id="15685"></path><path d="M98.09 500.19l1.15-20.77A411.7 411.7 0 0 1 195.53 245c7.28-8.74 15.37-17.56 24-26.16a415.37 415.37 0 0 1 260.6-120.3l20.8-1.14-1.65 20.29A415.37 415.37 0 0 1 379 378.32c-8.6 8.6-17.43 16.69-26.24 24a411.53 411.53 0 0 1-234.36 96.25z m363.38-363.84a379.86 379.86 0 0 0-216.8 107.7c-7.84 7.84-15.2 15.87-21.87 23.87A375.92 375.92 0 0 0 137 460.78a375.86 375.86 0 0 0 192.78-85.7c8.08-6.73 16.1-14.09 23.95-21.94a379.87 379.87 0 0 0 107.74-216.79z" fill="#212144" p-id="15686"></path></svg> 
 鸡乐盒子
 </h2>
@@ -126,24 +126,7 @@ cube: true
 > 注意音量！
 {: .prompt-danger }
 
-<div id="gc-box"></div>
-
-
-<script type="text/babel" src="/assets/share/component/mm.js"></script>
-
-<!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
-
-<!-- <script type="text/babel" src="/assets/share/component/art.js"></script>  -->
-
-<script type="text/babel" src="/assets/share/component/instr.js"></script>
-
-<script type="text/babel" src="/assets/share/component/puzzles.js"></script>
-
-
-<script type="text/babel" src="/assets/share/component/gc.js"></script>
-
-
-<script type="text/babel" data-type="module" src="/assets/share/component/cube.js"></script>
+<div id="gc-box"></div> -->
 
 <script>
 window.onload = () => {
@@ -227,83 +210,28 @@ window.onload = () => {
             cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%88%B1%E6%AE%87.webp',
             lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%20%28%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%29.lrc',
             theme: '#b7ae8f'
-        },
-        {
-            name: '美丽的神话',
-            artist: '韩红、孙楠',
-            url: 'https://api.rainsin.cn/blog-music%2F%E5%AD%99%E6%A5%A0%E3%80%81%E9%9F%A9%E7%BA%A2%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.ogg',
-            cover: 'https://api.rainsin.cn/blog-music%2F%E9%9F%A9%E7%BA%A2.jpg',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%AD%99%E6%A5%A0%E3%80%81%E9%9F%A9%E7%BA%A2%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.lrc',
-            theme: '#b7ae8f'
-        },
-        {
-            name: '美丽的神话',
-            artist: '成龙、金喜善',
-            url: 'https://api.rainsin.cn/blog-music%2F%E6%88%90%E9%BE%99%E3%80%81%E9%87%91%E5%96%9C%E5%96%84%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.ogg',
-            cover: 'https://api.rainsin.cn/blog-music%2F%E8%83%A1%E6%AD%8C.webp',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E6%88%90%E9%BE%99%E3%80%81%E9%87%91%E5%96%9C%E5%96%84%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.lrc',
-            theme: '#b7ae8f'
-        },
-        {
-            name: '美丽的神话',
-            artist: '胡歌、白冰',
-            url: 'https://api.rainsin.cn/blog-music%2F%E8%83%A1%E6%AD%8C%E3%80%81%E7%99%BD%E5%86%B0%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.ogg',
-            cover: 'https://api.rainsin.cn/blog-music%2F%E7%99%BD%E5%86%B0.jpg',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E8%83%A1%E6%AD%8C%E3%80%81%E7%99%BD%E5%86%B0%20-%20%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.lrc',
-            theme: '#b7ae8f'
-        },
-        {
-            name: '奢香夫人',
-            artist: '凤凰传奇',
-            url: 'https://api.rainsin.cn/blog-music%2F%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%20-%20%E5%A5%A2%E9%A6%99%E5%A4%AB%E4%BA%BA.ogg',
-            cover: 'https://api.rainsin.cn/blog-music%2F%E5%A5%A2%E9%A6%99.jpeg',
-            lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E5%87%A4%E5%87%B0%E4%BC%A0%E5%A5%87%20-%20%E5%A5%A2%E9%A6%99%E5%A4%AB%E4%BA%BA.lrc',
-            theme: '#b7ae8f'
         }
-        // {
-        //     name: '请你看着我的眼睛',
-        //     artist: '王馨平',
-        //     url: 'https://api.rainsin.cn/blog-music%2F%E7%8E%8B%E9%A6%A8%E5%B9%B3%20-%20%E8%AF%B7%E4%BD%A0%E7%9C%8B%E7%9D%80%E6%88%91%E7%9A%84%E7%9C%BC%E7%9D%9B.ogg',
-        //     cover: 'https://api.rainsin.cn/blog-music%2F%E7%9C%BC%E7%9D%9B.jpg',
-        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E7%8E%8B%E9%A6%A8%E5%B9%B3%20-%20%E8%AF%B7%E4%BD%A0%E7%9C%8B%E7%9D%80%E6%88%91%E7%9A%84%E7%9C%BC%E7%9D%9B.lrc',
-        //     theme: '#b7ae8f'
-        // },
-        // {
-        //     name: '水晶',
-        //     artist: '任贤齐、徐怀钰',
-        //     url: 'https://api.rainsin.cn/blog-music%2F%E4%BB%BB%E8%B4%A4%E9%BD%90%E3%80%81%E5%BE%90%E6%80%80%E9%92%B0%20-%20%E6%B0%B4%E6%99%B6.ogg',
-        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E6%B0%B4%E6%99%B6.webp',
-        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/new/%E4%BB%BB%E8%B4%A4%E9%BD%90%E3%80%81%E5%BE%90%E6%80%80%E9%92%B0%20-%20%E6%B0%B4%E6%99%B6.lrc',
-        //     theme: '#2c9678'
-        // },
-        // {
-        //     name: '金沙滩',
-        //     artist: '刘随社',
-        //     url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.ogg',
-        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%A7%A6%E8%85%94.jpg',
-        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E9%87%91%E6%B2%99%E6%BB%A9%20%28%E7%A7%A6%E8%85%94%E7%89%88%29.lrc',
-        //     theme: '#ed3333'
-        // },
-        // {
-        //     name: '片头',
-        //     artist: '罗坚',
-        //     url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%89%87%E5%A4%B4.ogg',
-        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%87%91%E7%93%B6%E6%A2%85.webp',
-        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%BD%97%E5%9D%9A%20-%20%E9%87%91%E7%93%B6%E6%A2%85%E7%89%87%E5%B0%BE.lrc',
-        //     theme: '#f1939c'
-        // },
-        // {
-        //     name: '片尾',
-        //     artist: '罗坚',
-        //     url: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%89%87%E5%B0%BE.ogg',
-        //     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E9%87%91%E7%93%B6%E6%A2%85.webp',
-        //     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%BD%97%E5%9D%9A%20-%20%E9%87%91%E7%93%B6%E6%A2%85%E7%89%87%E5%B0%BE.lrc',
-        //     theme: '#856d72'
-        // }
     ]
 });
 }
 </script>
+
+
+<script type="text/babel" src="/assets/share/component/mm.js"></script>
+
+<!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
+
+<!-- <script type="text/babel" src="/assets/share/component/art.js"></script>  -->
+
+<script type="text/babel" src="/assets/share/component/instr.js"></script>
+
+<script type="text/babel" src="/assets/share/component/puzzles.js"></script>
+
+<!-- 
+<script type="text/babel" src="/assets/share/component/gc.js"></script> -->
+
+
+<script type="text/babel" data-type="module" src="/assets/share/component/cube.js"></script>
 
 
 <!-- <div id="gitalk-container"></div>
