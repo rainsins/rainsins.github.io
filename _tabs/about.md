@@ -230,6 +230,9 @@ comments: true
   <div>
   域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供。
   </div>
+  <div>
+  站点详情<a href="https://us.umami.is/share/DXb041RxaYb9jpRY/blog.rainsin.cn" target="_blank">blog.rainsin.cn</a>
+  </div>
 </div>
 
 ## 🌀关于博客
@@ -237,6 +240,9 @@ comments: true
 <div class="about-site">
   <div>
   分享标记一些找到的好玩的东西、读书的笔记、生活或学习中琐碎问题的解决，技术方面的内容会少一些。
+  </div>
+  <div>
+  网站有些页面在没有进行移动端优化，请使用PC访问。
   </div>
   <div>
   内容如有侵权，请联系我<span>mail@rainsin.cn</span>删除。
@@ -256,10 +262,11 @@ comments: true
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
 
 
-<div id="gitalk-container"></div>
+<!-- <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="/assets/js/md5.min.js"></script>
+<script src="/assets/js/md5.min.js"></script> -->
+
 <!-- <script defer>
 let gitalk = new Gitalk({
   clientID: '8609fa79e19dadf4a8fb',
