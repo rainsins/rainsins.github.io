@@ -24,11 +24,31 @@ cube: true
   };
 </script> -->
 
+<style>
+
+</style>
+
 <!-- ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark } -->
 
-![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/bannerl.gif){: .light}
-![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/bannerd.webp){: .dark}
+<p>
+<div alt="banner" class="dark" style="
+    background-image: url(/assets/img/bannerd.webp);
+    width: 100%;
+    aspect-ratio: 3/1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+"></div>
+<div alt="banner" class="light" style="
+    background-image: url(/assets/img/bannerl.gif);
+    width: 100%;
+    aspect-ratio: 3/1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+"></div>
+</p>
 
 # 🍭正经的东西
 
