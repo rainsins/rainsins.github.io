@@ -24,29 +24,17 @@ cube: true
   };
 </script> -->
 
-<style>
-
-</style>
-
 <!-- ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark } -->
 
 <p>
-<div alt="banner" class="dark" style="
-    background-image: url(/assets/img/bannerd.webp);
+<div alt="banner" style="
+    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.gif);
     width: 100%;
-    aspect-ratio: 3/1;
+    aspect-ratio: 4.8/1;
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
-"></div>
-<div alt="banner" class="light" style="
-    background-image: url(/assets/img/bannerl.gif);
-    width: 100%;
-    aspect-ratio: 3/1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
+    border-radius: 10px;
 "></div>
 </p>
 
@@ -178,7 +166,7 @@ window.load_event = {
                 {
                     name: 'Honey honey',
                     artist: '孙燕姿',
-                    url: 'https://api.rainsin.cn/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%92%95%E5%8F%BD%E5%92%95%E5%8F%BD.ogg',
+                    url: 'https://api.rainsin.cn/blog-music%2F%E5%AD%99%E7%87%95%E5%A7%BF%20-%20Honey%20Honey.ogg',
                     cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/honey.webp',
                     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20Honey%20Honey.lrc',
                     theme: '#2c9678'
