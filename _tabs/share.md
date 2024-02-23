@@ -23,8 +23,12 @@ cube: true
     tex: {inlineMath: [['$', '$'],['$$', '$$'], ['\\(', '\\)']]}
   };
 </script> -->
-![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
-![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark }
+
+<!-- ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark } -->
+
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/bannerl.gif){: .light}
+![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/bannerd.webp){: .dark}
 
 # 🍭正经的东西
 
