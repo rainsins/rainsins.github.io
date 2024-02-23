@@ -37,4 +37,16 @@
       <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:2rem;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
       </div>
   </div>
+  <script>
+    window.onload = () => {
+      if(window.load_event){
+        for(const key in window.load_event){
+          console.log(key);
+          window.load_event[key]();
+        }
+      }else{
+        console.log("没有load事件！");
+      }
+    }
+  </script>
 </footer>

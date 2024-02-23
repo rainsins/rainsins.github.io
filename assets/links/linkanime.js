@@ -1,5 +1,6 @@
-window.onload = () => {
-  $(".links-item-box").hover((e)=>{
+window.load_event = {
+  ...window.load_event,
+  animes1: $(".links-item-box").hover((e)=>{
       anime({
         targets: e.currentTarget.firstChild.firstChild,
         keyframes: [
@@ -14,5 +15,5 @@ window.onload = () => {
         easing: 'easeInOutSine'
       });
     },(e)=>{
-  });
+  }),
 }
