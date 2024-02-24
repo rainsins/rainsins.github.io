@@ -50,8 +50,6 @@ https://blog.rainsin.cn/share/
 https://blog.rainsin.cn/share/%7Burl%7D
 https://blog.rainsin.cn/src/test/
 https://blog.rainsin.cn/src/test/%7Burl%7D
-https://blog.rainsin.cn/tags
-https://blog.rainsin.cn/tags/
 https://blog.rainsin.cn/tags/%7Burl%7D
 https://blog.rainsin.cn/tags/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91/
 https://blog.rainsin.cn/tags/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91/%7Burl%7D
