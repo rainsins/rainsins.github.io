@@ -20,7 +20,7 @@ layout: compress
   {% include head.html %}
 
   <body>
-    <div id="loading-gif-light-box" class="light" style="
+    <div id="loading-gif-box" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -45,32 +45,6 @@ layout: compress
     ">
     </div>
   </div>
-
-    <div id="loading-gif-dark-box" class="dark" style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
-      transition: all .8s ease-in-out;
-      background-color: #161616;
-      z-index: 9999999999;
-      ">
-      <div class="loading-boxs-imgs" style="
-        background-image:url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/load.gif);
-        background-size: cover;
-        background-position: center;
-        width: 250px;
-        aspect-ratio: 1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-      ">
-      </div>
-    </div>
     
     {% include sidebar.html lang=lang %}
 
