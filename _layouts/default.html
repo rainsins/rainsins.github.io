@@ -20,8 +20,7 @@ layout: compress
   {% include head.html %}
 
   <body>
-    {% if site.theme == light  %}
-    <div id="loading-gif-box" style="
+    <div id="loading-gif-light-box" class="light" style="
     position: fixed;
     top: 0;
     left: 0;
@@ -46,9 +45,8 @@ layout: compress
     ">
     </div>
   </div>
-    {% else %}
 
-    <div id="loading-gif-box" style="
+    <div id="loading-gif-dark-box" class="dark" style="
       position: fixed;
       top: 0;
       left: 0;
@@ -57,11 +55,11 @@ layout: compress
       width: 100vw;
       height: 100vh;
       transition: all .8s ease-in-out;
-      background-color: #74787a;
+      background-color: #161616;
       z-index: 9999999999;
       ">
       <div class="loading-boxs-imgs" style="
-        background-image:url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/loaded22.gif);
+        background-image:url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/load.gif);
         background-size: cover;
         background-position: center;
         width: 250px;
@@ -73,8 +71,6 @@ layout: compress
       ">
       </div>
     </div>
-
-    {% endif %}
     
     {% include sidebar.html lang=lang %}
 

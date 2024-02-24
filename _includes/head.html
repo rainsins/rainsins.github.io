@@ -28,9 +28,12 @@
       window.load_event = {
       ...window.load_event,
       load_anime: ()=>{
-        const loads = document.getElementById("loading-gif-box");
+        const loads = document.getElementById("loading-gif-light-box");
         loads.style.opacity = "0";
         loads.style.zIndex = "-999999";
+        const loadsd = document.getElementById("loading-gif-dark-box");
+        loadsd.style.opacity = "0";
+        loadsd.style.zIndex = "-999999";
       }
     }
   </script>
