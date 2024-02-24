@@ -14,6 +14,11 @@ comments: true
 cube: false
 linksdata: true
 anime: true
+
+post: true
+description: 友情链接页
+keywords: rainsin, links
+author: rainsin
 ---
 
 <link rel="stylesheet" href="/assets/links/links.css"/>

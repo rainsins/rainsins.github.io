@@ -12,6 +12,11 @@ babel: true
 forbid: true
 comments: true
 cube: true
+
+post: true
+description: 分享一些我认为好玩的
+keywords: rainsin, share, blog, mandelbrot, music
+author: rainsin
 ---
 
 <link rel="stylesheet" href="/assets/share/share.css"/>

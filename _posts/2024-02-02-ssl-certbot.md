@@ -17,6 +17,11 @@ mathpolt: true
 jquery: true
 forbid: true
 comments: true
+
+post: true
+description: 使用certbot和Let’s Encrypt为本地服务器部署ssl
+keywords: rainsin, blog, 解决问题, certbot, Let’s Encrypt, ssl
+author: rainsin
 ---
 
 以前我的树莓派的SSL一直需要我在[51SSL](https://www.51ssl.com/)上手动申请，然后下载证书到服务器，比较麻烦。最近借着过年部署了一下certbot来完成申请证书的操作，记录一下过程。

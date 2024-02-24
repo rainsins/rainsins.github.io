@@ -18,7 +18,10 @@ jquery: true
 forbid: true
 comments: true
 
-permalink: /src/test/
+post: true
+description: 使用 CloudFlare 导致网站「重定向的次数过多」解决方案
+keywords: rainsin, blog, 解决问题
+author: rainsin
 ---
 
 ## 一句话解决

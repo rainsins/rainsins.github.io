@@ -12,6 +12,11 @@ babel: true
 forbid: true
 comments: false
 cube: false
+
+post: true
+description: rainsin的书单
+keywords: rainsin, book
+author: rainsin
 ---
 
 <link rel="stylesheet" href="/assets/bmm/bmm.css"/>

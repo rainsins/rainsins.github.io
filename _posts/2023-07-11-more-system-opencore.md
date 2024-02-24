@@ -14,6 +14,11 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+
+post: true
+description: 使用Opencore引导多个系统
+keywords: rainsin, blog, 黑苹果, 解决问题
+author: rainsin
 ---
 
 ## 前提
