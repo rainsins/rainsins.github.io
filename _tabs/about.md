@@ -13,6 +13,11 @@ babel: true
 toc: false
 forbid: true
 comments: true
+
+post: true
+description: 关于rainsin的博客和网站的详情
+keywords: rainsin, about
+author: rainsin
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

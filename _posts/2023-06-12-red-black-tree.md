@@ -14,6 +14,11 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+
+post: true
+description: 红黑树的实现和基础原理
+keywords: rainsin, blog, 数据结构, 二叉查找树, 2-3查找树, 红黑树
+author: rainsin
 ---
 
 ## 一、前言

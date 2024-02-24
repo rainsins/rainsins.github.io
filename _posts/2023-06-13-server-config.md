@@ -14,6 +14,11 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+
+post: true
+description: 在树莓派上创建自己的影视库和各种服务
+keywords: rainsin, blog, 树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker
+author: rainsin
 ---
 
 
