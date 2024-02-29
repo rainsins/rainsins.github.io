@@ -31,6 +31,13 @@
         const loads = document.getElementById("loading-gif-box");
         loads.style.opacity = "0";
         loads.style.zIndex = "-999999";
+      },
+      comments_style: () => {
+        const str = document.getElementsByTagName("img");
+        if(str.alt.indexOf("抽象")){
+          str.setAttribute('style', 'width: auto');
+          str.setAttribute('style', 'height: auto');
+        }
       }
     }
   </script>
