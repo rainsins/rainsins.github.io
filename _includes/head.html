@@ -34,10 +34,12 @@
       },
       comments_style: () => {
         const str = document.getElementsByTagName("img");
-        if(str.alt.indexOf("抽象")){
-          str.setAttribute('style', 'width: auto');
-          str.setAttribute('style', 'height: auto');
+        str.forEach(element => {
+          if(element.alt.indexOf("抽象")){
+          element.setAttribute('style', 'width: auto');
+          element.setAttribute('style', 'height: auto');
         }
+        });
       }
     }
   </script>
