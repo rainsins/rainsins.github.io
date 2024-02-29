@@ -21,7 +21,7 @@ window.load_event = {
   ...window.load_event,
   comments: () => {
     twikoo.init({
-      envId: 'https://comment.vip.cpolar.cn',
+      envId: 'https://comments.rainsin.cn/',
       el: '#tcomment',
     })
   },
