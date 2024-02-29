@@ -152,7 +152,9 @@ window.load_event = {
         twikoo.init({
             envId: 'https://comments.rainsin.cn/',
             el: '#tcomment',
-        });
+        }).then(function () {
+        window.load_event.comments_style();
+    });;
     },
 
     musics: () => {

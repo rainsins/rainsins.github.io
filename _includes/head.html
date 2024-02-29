@@ -65,10 +65,12 @@
   <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
 
     <script defer>
-        twikoo.init({
+      twikoo.init({
         envId: 'https://comments.rainsin.cn/',
         el: '#tcomment'
-      })
+      }).then(function () {
+        window.load_event.comments_style();
+    });
     </script>
   {% endif %}
 
