@@ -38,6 +38,18 @@
       </div>
   </div>
   <script>
+    window.load_event = {
+      ...window.load_event,
+      comments_style: () => {
+        const str = document.getElementsByClassName("tk-owo-emotion");
+        for (const element of str) {
+          if(element.alt.indexOf("抽象")){
+            element.setAttribute('style', 'width: auto');
+          }
+        }
+      }
+    }
+
     window.onload = () => {
       if(window.load_event){
         for(const key in window.load_event){
