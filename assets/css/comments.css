@@ -11,8 +11,7 @@
     background-color: var(--box-bg);
 }
 .tk-content img{
-    max-width: 512px !important;
-    max-height: 512px !important;
+    max-width: 320px !important;
     width: auto;
     height: auto;
 }
