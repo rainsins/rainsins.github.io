@@ -38,6 +38,17 @@
       </div>
   </div>
   <script>
+    window.load_event = {
+      ...window.load_event,
+      comments_style: () => {
+        const str = document.getElementsByTagName("img");
+        if(str.alt.indexOf("抽象")){
+          str.setAttribute('style', 'width: auto');
+          str.setAttribute('style', 'height: auto');
+        }
+      }
+    }
+
     window.onload = () => {
       if(window.load_event){
         for(const key in window.load_event){
