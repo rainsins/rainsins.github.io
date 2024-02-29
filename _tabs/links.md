@@ -38,9 +38,9 @@ author: rainsin
 
 ## 🔗我的链接
 
-> 1. 网站名称：rainsin
+> 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
-> 3. 网站头像：https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/%E5%A4%B4%E5%83%8F/ff.png
+> 3. 网站头像：https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/website/avatar.webp
 > 4. 网站描述：思考，练习和坚持。
 {: .prompt-info }
 

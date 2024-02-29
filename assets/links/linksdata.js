@@ -17,12 +17,6 @@ const links_data = [
         img: "https://cdn.jsdelivr.net/npm/@kmar/fonts/avatar/own.png",
         dec: "开发学习启发性二刺螈"
     },
-    {
-        name: "Leo's blog",
-        url: "https://leonis.cc",
-        img: "https://cravatar.cn/avatar/95e31f6808fafa1f8ef3313b6f0b10e6?s=800",
-        dec: "数间茅舍，藏书万卷，投老村家。"
-    },
 ];
 
 if (typeof window !== 'undefined') {
