@@ -44,7 +44,7 @@
     comments_style: () => {
         const str = document.getElementsByClassName("tk-owo-emotion");
         for (const element of str) {
-          if(element.alt.indexOf("抽象")){
+          if(element.alt.indexOf("抽象") != -1){
             element.setAttribute('style', 'width: auto');
           }
         }
