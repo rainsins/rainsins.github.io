@@ -10,13 +10,7 @@ const links_data = [
         url: "https://sweetjing.cc/",
         img: "https://q1.qlogo.cn/g?b=qq&nk=1486823198&s=640",
         dec: "保持热爱，奔赴山海。"
-    },
-    {
-        name: "山岳库博",
-        url: "https://kmar.top/",
-        img: "https://cdn.jsdelivr.net/npm/@kmar/fonts/avatar/own.png",
-        dec: "开发学习启发性二刺螈"
-    },
+    }
 ];
 
 if (typeof window !== 'undefined') {
