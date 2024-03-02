@@ -1,4 +1,4 @@
-http://blog.rainsin.cn/
+﻿http://blog.rainsin.cn/
 https://blog.rainsin.cn
 http://blog.rainsin.cn/about/
 http://blog.rainsin.cn/archives/
@@ -42,6 +42,7 @@ https://blog.rainsin.cn/posts/radix-sort
 https://blog.rainsin.cn/posts/red-black-tree
 https://blog.rainsin.cn/posts/server-config
 https://blog.rainsin.cn/posts/ssl-certbot
+https://blog.rainsin.cn/posts/owo
 https://blog.rainsin.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98
 https://blog.rainsin.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C
 https://blog.rainsin.cn/tags/2-3%E6%9F%A5%E6%89%BE%E6%A0%91
