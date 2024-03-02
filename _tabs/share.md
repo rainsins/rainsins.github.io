@@ -150,7 +150,7 @@ window.load_event = {
     ...window.load_event,
     comments: () => {
         twikoo.init({
-            envId: 'https://comments.rainsin.cn/',
+            envId: 'https://comment.vip.cpolar.cn',
             el: '#tcomment',
             onCommentLoaded: window.load_event.comments_style
         });
