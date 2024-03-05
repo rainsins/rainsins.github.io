@@ -174,6 +174,65 @@ website_datas.set("Win软件",[
 
 ]);
 
+website_datas.set("老司机工具",[
+    {
+        name:"女优图像识别",
+        url:"https://xslist.org/",
+        imgurl:"x",
+        detail: "AI识别女优图像",
+        gfw: true
+    },
+    {
+        name:"JAV目录大全",
+        url:"https://javmenu.com/",
+        imgurl:"j",
+        detail: "JAV的数据库",
+        gfw: true
+    },
+    {
+        name:"javDB（海外）",
+        url:"https://javdb.com/",
+        imgurl:"j",
+        detail: "JAV的数据库",
+        gfw: true
+    },
+    {
+        name:"javDB（国内）",
+        url:"https://javdb524.com",
+        imgurl:"j",
+        detail: "JAV的数据库",
+        gfw: false
+    },
+    {
+        name:"JAVlibrary",
+        url:"https://www.javlibrary.com/cn/",
+        imgurl:"j",
+        detail: "JAV的数据库",
+        gfw: true
+    },
+    {
+        name:"porndude",
+        url:"https://theporndude.com/zh",
+        imgurl:"p",
+        detail: "宅男导航",
+        gfw: true
+    },
+    {
+        name:"搜番",
+        url:"https://dk.sefan.cc/",
+        imgurl:"s",
+        detail: "磁力搜索",
+        gfw: true
+    },
+    {
+        name:"qBittorrent增强版",
+        url:"https://github.com/c0re100/qBittorrent-Enhanced-Edition",
+        imgurl:"q",
+        detail: "磁力下载工具",
+        gfw: false
+    },
+]);
+
 function Instrdetail({arr}){
 
     const item = arr.map((e,index)=>{
@@ -197,7 +256,7 @@ function Instrdetail({arr}){
         };
 
         return(
-            <div className="website-item-box" key={index} onClick={c_change}>
+            <div className="website-item-box" key={index} onClick={c_change} title={e.gfw ? "需要自备梯子" : "国内访问良好"}>
                 <div className="website-item-img-box" style={sty_bg}>
                     <div className="website-item-img" style={sty_bg}></div>
                 </div>
