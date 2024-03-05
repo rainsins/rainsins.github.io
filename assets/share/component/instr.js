@@ -176,14 +176,14 @@ website_datas.set("Win软件",[
 
 website_datas.set("老司机工具",[
     {
-        name:"女优图像识别",
+        name:"xslist",
         url:"https://xslist.org/",
         imgurl:"x",
         detail: "AI识别女优图像",
         gfw: true
     },
     {
-        name:"JAV目录大全",
+        name:"JAVmenu",
         url:"https://javmenu.com/",
         imgurl:"j",
         detail: "JAV的数据库",
@@ -211,7 +211,7 @@ website_datas.set("老司机工具",[
         gfw: true
     },
     {
-        name:"porndude",
+        name:"Porndude",
         url:"https://theporndude.com/zh",
         imgurl:"p",
         detail: "宅男导航",
