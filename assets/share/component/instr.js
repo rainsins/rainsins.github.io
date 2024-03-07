@@ -110,6 +110,30 @@ website_datas.set("数学工具及博客",[
     },
 ]);
 
+website_datas.set("AI资源",[
+    {
+        name:"gptgod",
+        url:"https://gptgod.online/#/register?invite_code=d60hbroczlfoiiwqo6pjgp8n1",
+        imgurl:"g",
+        detail: "各种模型都有（有免费的积分）",
+        gfw: false
+    },
+    {
+        name:"chathub",
+        url:"https://chathub.gg/?utm_source=github",
+        imgurl:"c",
+        detail: "各种模型都有（付费）",
+        gfw: false
+    },
+    
+    {
+        name:"chatall",
+        url:"http://chatall.ai/",
+        imgurl:"c",
+        detail: "各种模型都有(付费)",
+        gfw: false
+    },
+])
 
 website_datas.set("Mac软件",[
     {
