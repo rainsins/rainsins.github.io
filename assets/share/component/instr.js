@@ -112,6 +112,13 @@ website_datas.set("数学工具及博客",[
 
 website_datas.set("AI资源",[
     {
+        name:"Next-Chat",
+        url:"https://chat.rainsin.cn",
+        imgurl:"c",
+        detail: "我的Chat应用",
+        gfw: false
+    },
+    {
         name:"gptgod",
         url:"https://gptgod.online/#/register?invite_code=d60hbroczlfoiiwqo6pjgp8n1",
         imgurl:"g",
