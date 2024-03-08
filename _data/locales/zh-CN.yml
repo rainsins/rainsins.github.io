@@ -18,6 +18,7 @@ tabs:
   share: 分享
   links: 友链
   b_m_m: 书单
+  chat: Chat
 
 # the text displayed in the search bar & search results
 search:
