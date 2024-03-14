@@ -4,7 +4,7 @@ author: rainsin
 date: 2023-06-12 12:23:00 +0800
 categories: [考研, 数据结构]
 tags: [数据结构, 二叉查找树, 2-3查找树, 红黑树]
-pin: true
+pin: false
 math: true
 mermaid: true
 react: false
