@@ -19,26 +19,26 @@
     const style = document.createElement("style");
     style.type = "text/css";
 
-    Object.defineProperty(modeToggle, 'modeStatus', {
-      get: function() {
-        return modeStatus;
-      },
-      set: function(value) {
-        modeStatus = value;
-        if( value == "dark"){
-          const style1 = document.createElement("style");
-          style1.type = "text/css";
-          style1.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}";
-          document.getElementsByTagName("head")[0].appendChild(style1);
-        }else{
-          const style2 = document.createElement("style");
-          style2.type = "text/css";
-          style2.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}";
-          document.getElementsByTagName("head")[0].appendChild(style2);
-        }
-        return true;
-      }
-    });
+    // Object.defineProperty(modeToggle, 'modeStatus', {
+    //   get: function() {
+    //     return modeStatus;
+    //   },
+    //   set: function(value) {
+    //     modeStatus = value;
+    //     if( value == "dark"){
+    //       const style1 = document.createElement("style");
+    //       style1.type = "text/css";
+    //       style1.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}";
+    //       document.getElementsByTagName("head")[0].appendChild(style1);
+    //     }else{
+    //       const style2 = document.createElement("style");
+    //       style2.type = "text/css";
+    //       style2.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}";
+    //       document.getElementsByTagName("head")[0].appendChild(style2);
+    //     }
+    //     return true;
+    //   }
+    // });
 
     if(modeToggle.modeStatus == "dark"){
       style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
