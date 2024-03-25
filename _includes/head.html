@@ -19,6 +19,27 @@
     const style = document.createElement("style");
     style.type = "text/css";
 
+    Object.defineProperty(modeToggle, 'modeStatus', {
+      get: function() {
+        return modeStatus;
+      },
+      set: function(value) {
+        modeStatus = value;
+        if( value == "dark"){
+          const style = document.createElement("style");
+          style.type = "text/css";
+          style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
+          document.getElementsByTagName("head")[0].appendChild(style);
+        }else{
+          const style = document.createElement("style");
+          style.type = "text/css";
+          style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
+          document.getElementsByTagName("head")[0].appendChild(style);
+        }
+        return true;
+      }
+    });
+
     if(modeToggle.modeStatus == "dark"){
       style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
     }else{
@@ -27,6 +48,8 @@
 
     document.getElementsByTagName("head")[0].appendChild(style);
   </script>
+
+  
   {% if page.post %}
   <meta name="keywords" content="{{ page.keywords }}">
   <meta name="author" content="{{ page.author }}">
