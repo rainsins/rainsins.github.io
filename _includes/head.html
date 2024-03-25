@@ -1,6 +1,10 @@
 <!-- The Head -->
 
 <head>
+  {% unless site.theme_mode %}
+    {% include mode-toggle.html %}
+  {% endunless %}
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
@@ -10,6 +14,18 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+
+  <script>
+    const style = document.createElement("style");
+    style.type = "text/css";
+    if(modeToggle.modeStatus == "dark"){
+      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
+    }else{
+      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
+    }
+    
+    document.getElementsByTagName("head")[0].appendChild(style);
+  </script>
   {% if page.post %}
   <meta name="keywords" content="{{ page.keywords }}">
   <meta name="author" content="{{ page.author }}">
@@ -200,10 +216,27 @@
   {% endif %}
 
   <!-- JavaScript -->
+  <!-- <style>
+    @media (prefers-color-scheme: dark){
+      #loading-gif-box{
+        background-color: #000;
+      }
 
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
+      .loading-boxs-imgs{
+        background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);
+      }
+    }
+
+    @media (prefers-color-scheme: light){
+      #loading-gif-box{
+        background-color: #fff;
+      }
+
+      .loading-boxs-imgs{
+        background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);
+      }
+    }
+  </style> -->
 
   {% include metadata-hook.html %}
 </head>
