@@ -161,16 +161,18 @@
       }
   }
 
-  const modeToggle = new Proxy(new ModeToggle(),handler);
+  const mode =  new ModeToggle();
 
-  const style = document.createElement("style");
-    style.type = "text/css";
+  const modeToggle = new Proxy(mode,handler);
 
-    if(modeToggle.modeStatus == "dark"){
-      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
-    }else{
-      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
-    }
-    document.getElementsByTagName("head")[0].appendChild(style);
+  // const style = document.createElement("style");
+  //   style.type = "text/css";
+
+  //   if(modeToggle.modeStatus == "dark"){
+  //     style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
+  //   }else{
+  //     style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
+  //   }
+  //   document.getElementsByTagName("head")[0].appendChild(style);
   // const modeToggle = new ModeToggle();
 </script>
