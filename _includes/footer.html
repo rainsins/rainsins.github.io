@@ -49,13 +49,15 @@
           }
         }
     }
-  }
+  };
+</script>
 
+<script>
   const handler = {
-      get: (target,name)=>{
+      get: (target,name) => {
         return name in target ? target[name] : "no prop!"
       },
-      set: (target,prop,newval,receiver)=>{
+      set: (target,prop,newval,receiver) => {
         target[prop] = newval;
         if(prop == "modeStatus" && newval == "dark"){
           const style = document.createElement("style");
@@ -71,7 +73,7 @@
         }
         return true;
       }
-  }
+  };
 
   const mode = new Proxy(modeToggle,handler);
 </script>
