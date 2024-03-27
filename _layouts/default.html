@@ -97,17 +97,7 @@ layout: compress
     {% include search-loader.html %}
 
     <script>
-      // window.onload = () => {
-      //   if(window.load_event){
-      //     for(const key in window.load_event){
-      //       console.log(key);
-      //       window.load_event[key]();
-      //     }
-      //   }else{
-      //     console.log("没有load事件！");
-      //   }
-      // }
-      document.addEventListener("DOMContentLoaded", () => {
+      window.onload = () => {
         if(window.load_event){
           for(const key in window.load_event){
             console.log(key);
@@ -116,6 +106,10 @@ layout: compress
         }else{
           console.log("没有load事件！");
         }
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        window.load_event["load_anime"]();
       });
     </script>
   </body>
