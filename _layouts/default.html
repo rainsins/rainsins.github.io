@@ -100,8 +100,10 @@ layout: compress
       window.onload = () => {
         if(window.load_event){
           for(const key in window.load_event){
-            console.log(key);
-            window.load_event[key]();
+            if(key != "load_anime"){
+              console.log(key);
+              window.load_event[key]();
+            }
           }
         }else{
           console.log("没有load事件！");
