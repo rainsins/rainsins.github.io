@@ -185,10 +185,7 @@ author: rainsin
         我的一言
       </div>
       <div class="geyan">
-        无善无恶心之体，有善有恶意之动。
-      </div>
-      <div class="geyan">
-        知善知恶是良知，为善去恶是格物。
+        无善无恶心之体，有善有恶意之动。知善知恶是良知，为善去恶是格物。
       </div>
       <div class="author-geyan">
         ——王阳明，四句教。
