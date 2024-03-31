@@ -883,7 +883,7 @@
     /* font-family: "Zhaomengfou"; */
     font-size: 1rem;
     margin: 20px 0;
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 .geyan-title{
