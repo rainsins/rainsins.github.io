@@ -190,7 +190,7 @@ window.load_event = {
                     artist: '莫文蔚',
                     url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0ZyT2pIWTRjNE5lZDVJZ1E_ZT1EYklCV3Q.flac',
                     cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0Z5VzFqOXJuaGR2QmN3ZlE_ZT1EdVJDNUw.webp',
-                    lrc: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0Z3Z1I0Wi1HUFB2WlJJY3c_ZT1EZzRrUlg.lrc',
+                    lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%20-%20%E8%8E%AB%E6%96%87%E8%94%9A.lrc',
                     theme: '#2c9678'
                 }
             ]
