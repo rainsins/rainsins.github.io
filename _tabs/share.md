@@ -33,17 +33,6 @@ author: rainsin
 <!-- ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.webp){: .light}
 ![banner](https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banerb.webp){: .dark } -->
 
-<p>
-<div alt="banner" style="
-    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/banner/banner.gif);
-    width: 100%;
-    aspect-ratio: 4.8/1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-"></div>
-</p>
-
 <h2 id="听点歌">
 听音色
 </h2>
