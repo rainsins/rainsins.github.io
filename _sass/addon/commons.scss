@@ -112,11 +112,11 @@ html {
   font-weight: 600;
 }
 
-// @font-face {
-//   font-family: "筑紫A";
-//   src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/all/FZFWZhuZiMincho900H.woff2") format('woff2');
-//   font-weight: 700;
-// }
+@font-face {
+  font-family: "roman";
+  src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/roman/LT_57532.TTF");
+  font-weight: normal;
+}
 
 body {
   background: var(--main-bg);
