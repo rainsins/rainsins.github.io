@@ -63,9 +63,9 @@ Chat机器人
 
 <div id="cubes-box"></div>
 
-> 具体的OLL手法参见：<a href="https://www.bilibili.com/video/BV1wd4y187Cr" target="_blank">【经典重制】 菲神OLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills</a>
-> 具体的PLL手法参见：<a href="https://www.bilibili.com/video/BV1gP411g7Dw" target="_blank">【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills</a>
-> F2L技巧：<a href="https://www.bilibili.com/video/BV1WD4y1s7Z2" target="_blank">【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills</a>
+> 具体的OLL手法参见：[【经典重制】 菲神OLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills](https://www.bilibili.com/video/BV1wd4y187Cr) <br/>
+> 具体的PLL手法参见：[【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills](https://www.bilibili.com/video/BV1gP411g7Dw) <br/>
+> F2L技巧：[【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills](https://www.bilibili.com/video/BV1WD4y1s7Z2)
 {: .prompt-tip }
 
 
