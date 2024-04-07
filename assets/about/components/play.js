@@ -10,24 +10,24 @@ const playdata = [
         layel: "❤❤❤❤❤"
     },
     {
-        url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/hei.png",
-        name: "黑苹果",
-        layel: "❤❤❤"
-    },
-    {
         url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/cube.png",
         name: "魔方",
         layel: "❤❤❤❤"
     },
     {
-        url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/logarithm.png",
-        name: "数学",
-        layel: "❤❤❤❤❤"
+        url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/calligraphy.png",
+        name: "写写",
+        layel: "❤❤❤❤"
+    },
+    {
+        url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/hei.png",
+        name: "黑苹果",
+        layel: "❤❤❤"
     },
     {
         url: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/pubis.png",
         name: "🚗",
-        layel: "❤❤❤❤"
+        layel: "❤❤❤"
     }
 ];
 
