@@ -260,7 +260,7 @@
 
 .skill-title{
     font-size: .6rem;
-    color: #363636;
+    /* color: #363636; */
     font-family: var(--main-font);
     font-weight: 700;
 }
