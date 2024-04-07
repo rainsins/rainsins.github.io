@@ -10,7 +10,8 @@ function Device() {
                     <div>
                         这是我半年前配的一台小主机。 <br />
                         大多数配件都是咸鱼上买的，现在的话应该更便宜了。 <br />
-                        自己一点点摸索做出来的opencore的引导，还是不完美。<a href="https://blog.rainsin.cn/posts/mac/">详情</a>
+                        自己一点点摸索做出来的opencore的引导，还是不完美。 <br />
+                        详情：https://blog.rainsin.cn/posts/mac/
                     </div>
                 </div>
             </div>
