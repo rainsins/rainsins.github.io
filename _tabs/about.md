@@ -233,7 +233,7 @@ author: rainsin
   其中有些资源需使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>。
   </div>
   <div>
-  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，站点详情<a href="https://us.umami.is/share/DXb041RxaYb9jpRY/blog.rainsin.cn" target="_blank">blog.rainsin.cn</a>。
+  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，cf的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。站点详情<a href="https://us.umami.is/share/DXb041RxaYb9jpRY/blog.rainsin.cn" target="_blank">blog.rainsin.cn</a>。
   </div>
 </div>
 
