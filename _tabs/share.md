@@ -155,7 +155,7 @@ window.load_event = {
 
 <script type="text/babel" src="/assets/share/component/instr.js"></script>
 
-<script type="text/babel" src="/assets/share/component/puzzles.js"></script>
+<script type="text/babel" data-type="module" src="/assets/share/component/puzzles.js"></script>
 
 <!-- <script type="text/babel" src="/assets/share/component/gc.js"></script> -->
 

@@ -1,3 +1,5 @@
+import { Tooltip } from 'https://cdn.jsdelivr.net/npm/antd@5.16.1/+esm'
+
 const puzzles_data = [
     {
         "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4572ff1d-bc2d-49f7-8864-3b1dd1cb42de%2F96297399d2654f42a1e25f3c8bae92fe.jpeg?table=block&id=edc4bac3-9f3e-45f3-8e8f-06db66cea91f&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
@@ -369,27 +371,31 @@ const puzzles_data = [
 
 
 function Puzzles() {
-    const puzzles_items = puzzles_data.map((el,index) => {
+    const puzzles_items = puzzles_data.map((el, index) => {
         const imgobj = {
             backgroundImage: `url(${el.img})`
         };
 
+        const colors = `${el.status == "未解" ? "#c02c38" : el.status == "存疑" ? "#2775b6" : el.status == "假" ? "#1ba784" : "#fbcd31"}`;
+
         const state_color = {
-            color: `${el.status == "未解" ? "#c02c38" : el.status == "存疑" ? "#2775b6" : el.status == "假" ? "#1ba784" : "#fbcd31"}`
+            color: colors
         };
 
         return (
-            <div className="puzzle-item-box" title={el.content}>
-                <div className="puzzle-item-img" style={imgobj}></div>
-                <div className="puzzle-item-info">
-                    <span className="puzzle-item-title">
-                        {el.title}
-                    </span>
-                    <span className="puzzle-item-state" style={state_color}>
-                        {el.status}
-                    </span>
+            <Tooltip title="prompt text" color={colors} key={colors}>
+                <div className="puzzle-item-box" title={el.content}>
+                    <div className="puzzle-item-img" style={imgobj}></div>
+                    <div className="puzzle-item-info">
+                        <span className="puzzle-item-title">
+                            {el.title}
+                        </span>
+                        <span className="puzzle-item-state" style={state_color}>
+                            {el.status}
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </Tooltip>
         );
     });
     return (
