@@ -10,7 +10,7 @@ mathpolt: false
 jquery: true
 babel: true
 forbid: true
-comments: true
+comments: false
 cube: true
 
 post: true
@@ -141,13 +141,6 @@ Chat机器人
 <script>
 window.load_event = {
     ...window.load_event,
-    comments: () => {
-        twikoo.init({
-            envId: 'https://comment.vip.cpolar.cn',
-            el: '#tcomment',
-            onCommentLoaded: window.load_event.comments_style
-        });
-    },
 
     musics: () => {
         const ap = new APlayer({
