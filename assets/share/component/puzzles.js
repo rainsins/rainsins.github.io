@@ -370,6 +370,19 @@ const puzzles_data = [
     }
 ];
 
+const FCChildren = forwardRef((props, ref) => {
+    return (<div className="puzzle-item-box" ref={ref}>
+        <div className="puzzle-item-img" style={props.imgobj}></div>
+        <div className="puzzle-item-info">
+            <span className="puzzle-item-title">
+                {props.el.title}
+            </span>
+            <span className="puzzle-item-state" style={props.state_color}>
+                {props.el.status}
+            </span>
+        </div>
+    </div>);
+});
 
 function Puzzles() {
     const puzzles_items = puzzles_data.map((el, index) => {
@@ -388,17 +401,7 @@ function Puzzles() {
         return (
             <>
                 <Tooltip label={el.content}>
-                <div className="puzzle-item-box">
-                    <div className="puzzle-item-img" style={imgobj}></div>
-                    <div className="puzzle-item-info">
-                        <span className="puzzle-item-title">
-                            {el.title}
-                        </span>
-                        <span className="puzzle-item-state" style={state_color}>
-                            {el.status}
-                        </span>
-                    </div>
-                </div>
+                    <FCChildren el={el} imgobj={imgobj} state_color={state_color} />
                 </Tooltip>
             </>
         );
