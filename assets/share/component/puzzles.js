@@ -180,7 +180,7 @@ const puzzles_data = [
         "content": "实际上，这个村子在八十年代还是很繁盛。后因年轻人外出打工，老年人相继去死。导致村子逐渐荒废被抛弃。"
     },
     {
-        "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Feb38b2f9-5e9b-416a-8c56-fec2190548d3%2F6eb90aff-76bd-487a-aadd-4e4ab5cc9a22%2Fw700d1q75cms_(3).jpg?table=block&id=7a64a8bf-9e5c-43b8-be36-da6093fde0e3&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
+        "img": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0YzSkhjbnNCUXotYjYtY2c_ZT1TWXozdnk.jpg",
         "title": "火星男孩波力斯卡",
         "status": "假",
         "content": "火星男孩本身就是炒作，当时的营销人是一个俄罗斯教授，主要研究靛蓝儿童，以火星男孩为噱头故意炒作的闹剧"
