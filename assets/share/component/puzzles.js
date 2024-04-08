@@ -368,7 +368,7 @@ const puzzles_data = [
 ];
 
 const FCChildren = React.forwardRef((props, ref) => {
-    return (<div className="puzzle-item-box" ref={ref}>
+    return (<div className={`puzzle-item-box hint--large ${props.el.status == "真" ? "hint--success" : props.el.status == "假" ? "hint--error" : props.el.status == "存疑" ? "hint--info" : "hint--warning"}`} aria-label={props.el.content} ref={ref}>
         <div className="puzzle-item-img" style={props.imgobj}></div>
         <div className="puzzle-item-info">
             <span className="puzzle-item-title">
