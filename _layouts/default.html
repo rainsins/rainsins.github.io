@@ -20,6 +20,11 @@ layout: compress
   {% include head.html %}
 
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.load_event["load_anime"]();
+      });
+    </script>
     <div id="loading-gif-box" style="
     position: fixed;
     top: 0;
@@ -109,10 +114,6 @@ layout: compress
           console.log("没有load事件！");
         }
       };
-
-      document.addEventListener("DOMContentLoaded", () => {
-        window.load_event["load_anime"]();
-      });
     </script>
   </body>
 </html>
