@@ -399,11 +399,7 @@ function Puzzles() {
         const ids = `tooltip-${index}`
 
         return (
-            <>
-                <Tooltip label={el.content}>
-                    <FCChildren el={el} imgobj={imgobj} state_color={state_color} />
-                </Tooltip>
-            </>
+            <FCChildren el={el} imgobj={imgobj} state_color={state_color} />
         );
     });
     return (
