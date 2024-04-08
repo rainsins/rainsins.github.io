@@ -672,7 +672,6 @@
 }
 
 .puzzle-item-img{
-    flex: 1;
     aspect-ratio: 640/423;
     background-size: cover;
     background-position: center center;
@@ -681,14 +680,13 @@
 
 .puzzle-item-info{
     padding: 10px;
-    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .puzzle-item-title{
     font-weight: 600;
-    font-size:1.3rem;
+    font-size:1rem;
 }
 
 .puzzle-item-dec{

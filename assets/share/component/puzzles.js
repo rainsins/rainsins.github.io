@@ -25,7 +25,7 @@ const puzzles_data = [
     },
     {
         "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbc3f929e-4af6-4dd8-81cc-49a72bb46892%2F189FBEC7-42F5-4840-8262-90F5F5A35DAB.jpeg?table=block&id=ebe854a9-fe45-4edc-b8ef-177de5f91fae&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
-        "title": "三田光一超能力绘月球背面图",
+        "title": "三田光一绘月球背面图",
         "status": "假",
         "content": "假的不能再假，跟NASA真实拍摄照片对比，最标志性的几个陨石坑也根本找不到标志。"
     },
@@ -223,7 +223,7 @@ const puzzles_data = [
     },
     {
         "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F43d6c30b-6023-43ea-b790-acf2affc48aa%2F6597692762d0f7037e6fe17d0dfa513d2797c533.jpg?table=block&id=cb0143d0-51fa-42eb-970c-fa83fef68e64&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
-        "title": "罗斯维尔实验室解剖外星人录像",
+        "title": "罗斯维尔实验室解剖外星人",
         "status": "假",
         "content": "伦敦的导演Ray Santilli在1995年时造成了一个相当大的轰动，当时有一段录像，录像上是黑白画面，显示的是一些人在墨西哥罗斯维尔实验室对某种外星生物进行尸检的场景。 不过直到2006年，Santilli才说出来这其实是一个骗局。"
     },
@@ -295,7 +295,7 @@ const puzzles_data = [
     },
     {
         "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F31a86ab1-942a-4275-98e9-bf6b77ab9f82%2Fu43898357610796790fm26fmtauto.png?table=block&id=b637f7e5-edca-4c31-8feb-32ab47fe8120&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
-        "title": "史前文明——伊拉克巴格达电池",
+        "title": "伊拉克巴格达电池",
         "status": "假",
         "content": "这个东西是存在的，但是史前文明是假的，大致是萨珊王朝 (224-640年)时期"
     },
