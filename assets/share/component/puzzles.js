@@ -1,4 +1,4 @@
-import { Tooltip } from 'https://cdn.jsdelivr.net/npm/antd@5.16.1/+esm'
+import { Tooltip as ReactTooltip } from 'https://cdn.jsdelivr.net/npm/react-tooltip@5.26.3/+esm'
 
 const puzzles_data = [
     {
@@ -382,9 +382,11 @@ function Puzzles() {
             color: colors
         };
 
+        const ids = `tooltip-${index}`
+
         return (
-            <Tooltip title="prompt text" color={colors} key={index}>
-                <div className="puzzle-item-box" title={el.content}>
+            <>
+                <div className="puzzle-item-box" data-tooltip-id={ids}>
                     <div className="puzzle-item-img" style={imgobj}></div>
                     <div className="puzzle-item-info">
                         <span className="puzzle-item-title">
@@ -395,7 +397,12 @@ function Puzzles() {
                         </span>
                     </div>
                 </div>
-            </Tooltip>
+                <ReactTooltip
+                    id={ids}
+                    place="top"
+                    content={el.content}
+                />
+            </>
         );
     });
     return (
