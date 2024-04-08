@@ -370,7 +370,7 @@ const puzzles_data = [
     }
 ];
 
-const FCChildren = forwardRef((props, ref) => {
+const FCChildren = React.forwardRef((props, ref) => {
     return (<div className="puzzle-item-box" ref={ref}>
         <div className="puzzle-item-img" style={props.imgobj}></div>
         <div className="puzzle-item-info">
