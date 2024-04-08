@@ -19,7 +19,6 @@ keywords: rainsin, share, blog, mandelbrot, music
 author: rainsin
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-tooltip@5.26.3/dist/react-tooltip.css">
 <link rel="stylesheet" href="/assets/share/share.css"/>
 <link rel="stylesheet" href="/assets/share/cube.css"/>
 <link rel="stylesheet" href="/assets/chat/chat.css"/>

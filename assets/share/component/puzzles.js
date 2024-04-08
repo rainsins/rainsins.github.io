@@ -1,4 +1,5 @@
-import { Tooltip } from 'https://cdn.jsdelivr.net/npm/react-tooltip@5.26.3/+esm'
+
+import { Tooltip } from 'https://cdn.jsdelivr.net/npm/@chakra-ui/tooltip@2.3.1/+esm'
 
 const puzzles_data = [
     {
@@ -386,7 +387,8 @@ function Puzzles() {
 
         return (
             <>
-                <div className="puzzle-item-box" data-tooltip-id="tooltip" data-tooltip-content={el.content} data-tooltip-place="top">
+                <Tooltip label={el.content}>
+                <div className="puzzle-item-box">
                     <div className="puzzle-item-img" style={imgobj}></div>
                     <div className="puzzle-item-info">
                         <span className="puzzle-item-title">
@@ -397,14 +399,13 @@ function Puzzles() {
                         </span>
                     </div>
                 </div>
-                
+                </Tooltip>
             </>
         );
     });
     return (
         <div className="puzzle-box">
             {puzzles_items}
-            <Tooltip id="tooltip"/>
         </div>
     );
 }
