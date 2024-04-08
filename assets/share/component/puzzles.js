@@ -386,7 +386,7 @@ function Puzzles() {
 
         return (
             <>
-                <div className="puzzle-item-box" data-tooltip-id={ids}>
+                <div className="puzzle-item-box" data-tooltip-id={ids} data-tooltip-content={el.content}>
                     <div className="puzzle-item-img" style={imgobj}></div>
                     <div className="puzzle-item-info">
                         <span className="puzzle-item-title">
@@ -400,7 +400,6 @@ function Puzzles() {
                 <ReactTooltip
                     id={ids}
                     place="top"
-                    content={el.content}
                 />
             </>
         );
