@@ -379,7 +379,7 @@ function Puzzles() {
         };
 
         return (
-            <div className="puzzle-item-box">
+            <div className="puzzle-item-box" title={el.content}>
                 <div className="puzzle-item-img" style={imgobj}></div>
                 <div className="puzzle-item-info">
                     <span className="puzzle-item-title">
@@ -387,9 +387,6 @@ function Puzzles() {
                     </span>
                     <span className="puzzle-item-state" style={state_color}>
                         {el.status}
-                    </span>
-                    <span className="puzzle-item-dec">
-                        {el.content}
                     </span>
                 </div>
             </div>

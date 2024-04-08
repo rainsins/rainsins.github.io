@@ -658,7 +658,7 @@
 .puzzle-box{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -688,7 +688,7 @@
 
 .puzzle-item-title{
     font-weight: 600;
-    font-size: 2rem;
+    font-size:1.3rem;
 }
 
 .puzzle-item-dec{
