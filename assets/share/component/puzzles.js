@@ -383,7 +383,7 @@ function Puzzles() {
         };
 
         return (
-            <Tooltip title="prompt text" color={colors} key={colors}>
+            <Tooltip title="prompt text" color={colors} key={index}>
                 <div className="puzzle-item-box" title={el.content}>
                     <div className="puzzle-item-img" style={imgobj}></div>
                     <div className="puzzle-item-info">
