@@ -1,6 +1,3 @@
-
-import { Tooltip } from 'https://cdn.jsdelivr.net/npm/@chakra-ui/tooltip@2.3.1/+esm'
-
 const puzzles_data = [
     {
         "img": "https://wangyurui.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4572ff1d-bc2d-49f7-8864-3b1dd1cb42de%2F96297399d2654f42a1e25f3c8bae92fe.jpeg?table=block&id=edc4bac3-9f3e-45f3-8e8f-06db66cea91f&spaceId=eb38b2f9-5e9b-416a-8c56-fec2190548d3&width=360&userId=&cache=v2",
