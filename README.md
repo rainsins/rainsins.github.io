@@ -2,7 +2,7 @@
 
   # Rainsin Blog
 
-  使用jekyll驱动的博客，主题为churpy。
+  使用jekyll驱动的博客，主题为[chirpy](https://github.com/cotes2020/chirpy-starter)。
 
   [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
   [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
