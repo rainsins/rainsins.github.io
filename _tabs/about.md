@@ -50,7 +50,7 @@ author: rainsin
 
 <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    href="https://cdn.staticfile.net/animate.css/4.1.1/animate.min.css"
   />
 
 ## 关于我
@@ -220,7 +220,7 @@ author: rainsin
 
 <div id="av-box"></div>
 
-<link rel="stylesheet" href="/assets/about/about.css">
+<link rel="stylesheet" href="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/about.css">
 
 ## 👻关于本站
 
@@ -232,7 +232,7 @@ author: rainsin
   其中有些资源需使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>。
   </div>
   <div>
-  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。站点详情<a href="https://us.umami.is/share/DXb041RxaYb9jpRY/blog.rainsin.cn" target="_blank">blog.rainsin.cn</a>。
+  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。
   </div>
 </div>
 
@@ -254,11 +254,11 @@ author: rainsin
 
 <img class="blog_banner" src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/header_.webp" alt="blog"/>
 
-<script src="/assets/about/about.js" defer></script>
-<script type="text/babel" src="/assets/about/components/art.js"></script>
-<script type="text/babel" src="/assets/about/components/device.js"></script>
-<script type="text/babel" src="/assets/about/components/devicehead.js"></script>
-<script type="text/babel" src="/assets/about/components/play.js"></script>
+<script src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/about.js" defer></script>
+<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/components/art.js"></script>
+<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/components/device.js"></script>
+<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/components/devicehead.js"></script>
+<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/about/components/play.js"></script>
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
 
