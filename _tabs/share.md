@@ -141,7 +141,16 @@ window.load_event = {
                     cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0Z5VzFqOXJuaGR2QmN3ZlE_ZT1EdVJDNUw.webp',
                     lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%20-%20%E8%8E%AB%E6%96%87%E8%94%9A.lrc',
                     theme: '#2c9678'
-                }
+                },
+                {
+                    name: '愿望',
+                    artist: '胡彦斌',
+                    url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0Y2VHo1SHhURzdwTEdHYVE_ZT1heng0VzM.flac',
+                    cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0Y3VjRDdEFCSVFOckY3Tmc_ZT1ycnAwdEw.jpeg',
+                    lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E6%84%BF%E6%9C%9B%20-%20%E8%83%A1%E5%BD%A6%E6%96%8C.lrc',
+                    theme: '#2c9678'
+                },
+                
             ]
         });
     }
