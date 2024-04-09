@@ -220,7 +220,7 @@ author: rainsin
 
 <div id="av-box"></div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/about.css">
+<link rel="stylesheet" href="/assets/about/about.css">
 
 ## 👻关于本站
 
@@ -254,11 +254,11 @@ author: rainsin
 
 <img class="blog_banner" src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/header_.webp" alt="blog"/>
 
-<script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/about.js" defer></script>
-<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/components/art.js"></script>
-<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/components/device.js"></script>
-<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/components/devicehead.js"></script>
-<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/about/components/play.js"></script>
+<script src="/assets/about/about.js" defer></script>
+<script type="text/babel" src="/assets/about/components/art.js"></script>
+<script type="text/babel" src="/assets/about/components/device.js"></script>
+<script type="text/babel" src="/assets/about/components/devicehead.js"></script>
+<script type="text/babel" src="/assets/about/components/play.js"></script>
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
 

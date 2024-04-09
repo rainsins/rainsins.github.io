@@ -62,10 +62,10 @@
   <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
 {% endif %}
 
-  <!-- <script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/js/dev.js"></script> -->
+  <!-- <script src="/assets/js/dev.js"></script> -->
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/css/comments.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/css/root.css"/>
+  <link rel="stylesheet" href="/assets/css/comments.css"/>
+  <link rel="stylesheet" href="/assets/css/root.css"/>
   {% if page.comments %}
   <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
 
@@ -122,7 +122,7 @@
   import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
   window.TwistyPlayer = TwistyPlayer;
   </script>
-  <script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/data/data.js"></script>
+  <script src="/assets/share/data/data.js"></script>
   {% endif %}
 
   {% if page.require %}
@@ -130,7 +130,7 @@
   {% endif %}
 
   {% if page.linksdata %}
-  <script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/links/linksdata.js"></script>
+  <script src="/assets/links/linksdata.js"></script>
   {% endif %}
 
   {% if page.anime %}
@@ -200,7 +200,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
 
-  <link rel="stylesheet" href="{{ 'https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   {% if site.toc and page.toc %}
     <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">

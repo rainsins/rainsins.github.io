@@ -21,7 +21,7 @@ keywords: rainsin, links
 author: rainsin
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/links/links.css"/>
+<link rel="stylesheet" href="/assets/links/links.css"/>
 
 <div id="links-box"></div>
 
@@ -63,6 +63,6 @@ let gitalk = new Gitalk({
 gitalk.render('gitalk-container');
 </script> -->
 
-<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/links/links.js" defer></script>
+<script type="text/babel" src="/assets/links/links.js" defer></script>
 
-<script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/links/linkanime.js"></script>
+<script src="/assets/links/linkanime.js"></script>

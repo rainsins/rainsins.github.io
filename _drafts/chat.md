@@ -19,6 +19,6 @@ keywords: rainsin, chat, blog, ChatGPT
 author: rainsin
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/chat/chat.css"/>
+<link rel="stylesheet" href="/assets/chat/chat.css"/>
 
 <iframe src="https://chat.rainsin.cn" id="chat-i-box"></iframe>

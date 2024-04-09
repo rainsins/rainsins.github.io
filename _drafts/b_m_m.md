@@ -19,7 +19,7 @@ keywords: rainsin, book
 author: rainsin
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/bmm/bmm.css"/>
+<link rel="stylesheet" href="/assets/bmm/bmm.css"/>
 
 > 请翻烂每一本书！(字典类书籍除外)。
 {: .prompt-danger }
@@ -43,4 +43,4 @@ author: rainsin
 
 <div id="future-box"></div>
 
-<script src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets//bmm/bmm.js" type="text/babel" defer></script>
+<script src="/assets//bmm/bmm.js" type="text/babel" defer></script>
