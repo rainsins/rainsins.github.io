@@ -20,9 +20,9 @@ author: rainsin
 ---
 
 <link rel="stylesheet" href="https://cdn.staticfile.net/hint.css/3.0.0/hint.min.css">
-<link rel="stylesheet" href="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/share.css"/>
-<link rel="stylesheet" href="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/cube.css"/>
-<link rel="stylesheet" href="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/chat/chat.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/share.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/cube.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/chat/chat.css"/>
 <!-- <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> -->
 
 <!-- <script>
@@ -158,20 +158,20 @@ window.load_event = {
 </script>
 
 
-<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/component/mm.js"></script>
+<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/component/mm.js"></script>
 
 <!-- <script type="text/babel" src="/assets/share/component/book.js"></script> -->
 
 <!-- <script type="text/babel" src="/assets/share/component/art.js"></script>  -->
 
-<script type="text/babel" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/component/instr.js"></script>
+<script type="text/babel" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/component/instr.js"></script>
 
-<script type="text/babel" data-type="module" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/component/puzzles.js"></script>
+<script type="text/babel" data-type="module" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/component/puzzles.js"></script>
 
 <!-- <script type="text/babel" src="/assets/share/component/gc.js"></script> -->
 
 
-<script type="text/babel" data-type="module" src="https://gitee.com/rainsins/rainsins.github.io/raw/main/assets/share/component/cube.js"></script>
+<script type="text/babel" data-type="module" src="https://cdn.jsdelivr.net/gh/rainsins/rainsins.github.io/assets/share/component/cube.js"></script>
 
 
 <!-- <div id="gitalk-container"></div>
