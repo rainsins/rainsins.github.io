@@ -97,8 +97,8 @@ let out = document.getElementById("mandelbrot-out-box");
 
 butt.onclick = (e) => {
     if (butt.getAttribute("data-screen") == "no" && out.getAttribute("data-screen") == "no") {
-        butt.setAttribute("data-screen", "yes");
-        bout.setAttribute("data-screen", "yes");
+        butt.setAttribute("data-screen", "all");
+        bout.setAttribute("data-screen", "all");
     } else {
         butt.setAttribute("data-screen", "no");
         bout.setAttribute("data-screen", "no");

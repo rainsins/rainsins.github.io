@@ -885,6 +885,7 @@
     width: 100%;
     aspect-ratio: 2/1;
     transition: all .4s ease-in-out;
+    z-index: 100000;
 }
 
 .mandelbrot-out-box[data-screen="all"]{
