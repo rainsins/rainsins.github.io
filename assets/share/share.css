@@ -883,7 +883,6 @@
 .mandelbrot-out-box{
     position: relative;
     width: 100%;
-    aspect-ratio: 2/1;
     transition: all .4s ease-in-out;
     z-index: 100000;
 }
@@ -900,6 +899,7 @@
     position: relative;
     top: 0;
     left: 0;
+    aspect-ratio: 2/1;
 }
 
 .screen-mandelbrot{
