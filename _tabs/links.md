@@ -142,7 +142,7 @@ author: rainsin
 > 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
 > 3. 网站头像：https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/website/avatar.webp
-> 4. 网站描述：思考，练习和坚持。
+> 4. 网站描述：反者道之动，弱者道之用。
 {: .prompt-info }
 
 ## 💣须知
