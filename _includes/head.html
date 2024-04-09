@@ -69,13 +69,19 @@
   {% if page.comments %}
   <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
 
-    <script defer>
-      twikoo.init({
-        envId: 'https://comment.vip.cpolar.cn',
-        el: '#tcomment',
-        onCommentLoaded: window.load_event.comments_style
-      });
-    </script>
+    <script>
+      window.load_event= {
+        ...window.load_event,
+        comments: () => {
+          twikoo.init({
+            envId: 'https://comment.vip.cpolar.cn',
+            el: '#tcomment',
+            onCommentLoaded: window.load_event.comments_style
+          });
+        }
+      }
+      
+  </script>
   {% endif %}
 
   <script>
