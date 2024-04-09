@@ -85,7 +85,7 @@ Chat机器人
 {: .prompt-tip }
 
 <div class="mandelbrot-out-box " id="mandelbrot-out-box" data-screen="no">
-<iframe src="https://blog.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box"></iframe>
+<iframe src="https://blog.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box" data-screen="no"></iframe>
 <div class="screen-mandelbrot " id="screen-mandelbrot" data-screen="no">
   
 </div>
@@ -94,14 +94,17 @@ Chat机器人
 <script defer>
 let butt = document.getElementById("screen-mandelbrot");
 let out = document.getElementById("mandelbrot-out-box");
+let main = document.getElementById("mandelbrot-box");
 
 butt.onclick = (e) => {
     if (butt.getAttribute("data-screen") == "no" && out.getAttribute("data-screen") == "no") {
         butt.setAttribute("data-screen", "all");
         out.setAttribute("data-screen", "all");
+        main.setAttribute("data-screen", "all");
     } else {
         butt.setAttribute("data-screen", "no");
         out.setAttribute("data-screen", "no");
+        main.setAttribute("data-screen", "no");
     }
 }
 </script>

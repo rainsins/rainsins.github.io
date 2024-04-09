@@ -726,12 +726,6 @@
     background: #efefef44;
 }
 
-.mandelbrot-box{
-    border-radius: 12px;
-    /* width: 100%;
-    aspect-ratio: 2/1; */
-}
-
 .jj-box{
     width: 100%;
     display: grid;
@@ -878,6 +872,10 @@
     height: 100%;
     top: 0;
     right: 0;
+}
+
+.mandelbrot-box[data-screen="no"]{
+    border-radius: 12px;
 }
 
 .mandelbrot-out-box{
