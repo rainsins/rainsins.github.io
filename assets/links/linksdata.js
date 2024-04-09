@@ -16,7 +16,13 @@ const links_data = [
         url: "https://xiaoa.me",
         img: "https://xiaoa.me/logo.png",
         dec: "偷得浮生半日闲"
-    }
+    },
+    {
+        name: "Cream薄荷糖",
+        url: "https://creammint.cn/",
+        img: "https://cdn.creammint.cn/basicdata_img/avatar.webp",
+        dec: "尚未佩剑，转眼遍是江湖，喜欢的人太美，想买的东西太贵~"
+    },
 ];
 
 if (typeof window !== 'undefined') {
