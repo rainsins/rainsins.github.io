@@ -199,7 +199,7 @@ links_item.render(<LinksItem data={links_data}/>);
 <script>
   window.load_event = {
   ...window.load_event,
-  animes1: $(".links-item-box").hover((e)=>{
+  animes1: ()=>{$(".links-item-box").hover((e)=>{
       console.log(e);
       anime({
         targets: e.currentTarget.firstChild.firstChild,
@@ -215,6 +215,6 @@ links_item.render(<LinksItem data={links_data}/>);
         easing: 'easeInOutSine'
       });
     },(e)=>{
-  }),
+  })},
 }
 </script>
