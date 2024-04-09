@@ -728,8 +728,8 @@
 
 .mandelbrot-box{
     border-radius: 12px;
-    width: 100%;
-    aspect-ratio: 2/1;
+    /* width: 100%;
+    aspect-ratio: 2/1; */
 }
 
 .jj-box{
@@ -871,3 +871,56 @@
     background-color: transparent;
 }
 
+
+.mandelbrot-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.mandelbrot-out-box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/1;
+    transition: all .4s ease-in-out;
+}
+
+.mandelbrot-out-box[data-screen="all"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mandelbrot-out-box[data-screen="no"]{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.screen-mandelbrot{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen-mandelbrot[data-screen="all"]{
+    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/icon/%E9%80%80%E5%87%BA%E5%85%A8%E5%B1%8F.png);
+}
+
+.screen-mandelbrot[data-screen="no"]{
+    background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/icon/%E5%85%A8%E5%B1%8F.png);
+}
