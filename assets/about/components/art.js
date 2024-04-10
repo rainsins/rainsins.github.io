@@ -16,7 +16,7 @@ const threeav = [
         url: "https://xslist.org/zh/model/138616.html"
     },
     {
-        name: "やまぎし あやか",
+        name: "山岸あやか",
         age: "1992.11.30.",
         three: "B82 / W59 / H81",
         out: "2017.07.",
@@ -51,7 +51,7 @@ const threeav = [
 
 const twoav = [
     {
-        name: "MINAMO",
+        name: "太阳しずく",
         age: "2000.05.09.",
         three: "B88 / W54 / H87",
         out: "2021.08.",
