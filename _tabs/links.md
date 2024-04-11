@@ -15,6 +15,8 @@ cube: false
 linksdata: true
 anime: true
 
+favicon: heart
+
 post: true
 description: 友情链接页
 keywords: rainsin, links

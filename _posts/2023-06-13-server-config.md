@@ -14,6 +14,7 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+favicon: code
 
 post: true
 description: 在树莓派上创建自己的影视库和各种服务

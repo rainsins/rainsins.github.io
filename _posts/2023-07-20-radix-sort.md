@@ -13,6 +13,7 @@ music: false
 jquery: false
 forbid: true
 comments: true
+favicon: code
 
 post: true
 description: 基础排序算法之基数排序

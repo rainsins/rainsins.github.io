@@ -14,6 +14,7 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+favicon: heart
 
 post: true
 description: 使用Opencore引导多个系统

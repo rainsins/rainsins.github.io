@@ -14,6 +14,7 @@ mathpolt: false
 jquery: false
 forbid: true
 comments: true
+favicon: code
 
 post: true
 description: 红黑树的实现和基础原理

@@ -13,6 +13,8 @@ forbid: true
 comments: false
 cube: true
 
+favicon: comfort
+
 post: true
 description: 分享一些我认为好玩的
 keywords: rainsin, share, blog, mandelbrot, music

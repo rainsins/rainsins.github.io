@@ -15,6 +15,8 @@ forbid: true
 comments: true
 anime: true
 
+favicon: individual
+
 post: true
 description: 关于rainsin的博客和网站的详情
 keywords: rainsin, about
