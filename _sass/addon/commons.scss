@@ -267,9 +267,8 @@ footer {
   background-color: var(--main-bg);
 
   div.d-flex {
-    height: $footer-height;
     line-height: 1.2rem;
-    padding-bottom: 1rem;
+    padding: 20px 0 10px 0;
     border-top: 1px solid var(--main-border-color);
     flex-wrap: wrap;
   }
