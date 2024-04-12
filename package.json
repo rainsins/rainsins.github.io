@@ -26,14 +26,17 @@
     "@babel/preset-env": "^7.20.2",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-terser": "^0.4.0",
-    "rimraf": "^5.0.1",
+    "rimraf": "^5.0.5",
     "rollup": "^3.20.2",
     "rollup-plugin-license": "^3.0.1",
     "stylelint": "^15.3.0",
     "stylelint-config-standard-scss": "^9.0.0"
   },
   "dependencies": {
+    "cos-nodejs-sdk-v5": "^2.13.4",
+    "fontmin": "^1.0.1",
     "next": "^14.0.4",
+    "ttf2woff2": "^5.0.0",
     "xml2js": "^0.6.2"
   }
 }
