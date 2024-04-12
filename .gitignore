@@ -8,7 +8,6 @@ vendor/
 Gemfile.lock
 node_modules
 pnpm-lock.yaml
-updatefont/
 font/
 out_font/
 main_font/
