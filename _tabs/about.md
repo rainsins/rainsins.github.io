@@ -236,6 +236,9 @@ author: rainsin
   <div>
   域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。
   </div>
+  <div>
+  站点详情：<a href="https://us.umami.is/share/DXb041RxaYb9jpRY/blog.rainsin.cn" target="_blank">blog.rainsin.cn</a>。
+  </div>
 </div>
 
 ## 🌀关于博客
