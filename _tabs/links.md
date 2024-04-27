@@ -143,7 +143,7 @@ author: rainsin
 
 > 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
-> 3. 网站头像：https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/website/avatar.webp
+> 3. 网站头像：https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp 或 https://api.rainsin.cn/avatar.webp
 > 4. 网站描述：修心强身，乐此不疲。
 {: .prompt-info }
 
