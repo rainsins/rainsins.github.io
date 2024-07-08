@@ -1,0 +1,324 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://blog.rainsin.cn/</id>
+  <title>Rainsin • Blog</title>
+  <subtitle>rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）</subtitle>
+  <updated>2024-04-13T22:07:34+08:00</updated>
+  <author>
+    <name>rainsin</name>
+    <uri>https://blog.rainsin.cn/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://blog.rainsin.cn/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="https://blog.rainsin.cn/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 rainsin </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</title>
+    <link href="https://blog.rainsin.cn/posts/lindan/" rel="alternate" type="text/html" title="绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像" />
+    <published>2024-04-04T16:32:10+08:00</published>
+  
+    <updated>2024-04-11T15:41:33+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/lindan/</id>
+    <content src="https://blog.rainsin.cn/posts/lindan/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="羽毛球" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+  
+  全场高清录像下载链接：夸克网盘 、One Drive(密码：lindan66)、Google Drive、自己的服务(IPv6)。
+  
+  
+    右手打球的可以镜像视频进行学习：显示设置 -&amp;gt; 画面翻转 -&amp;gt; 水平。我的Safari浏览器无法播放，Chrome和火狐可以，移动端大概率无法播放。
+  
+  
+    剪辑视频来自up: mcwawa。
+  
+
+
+剪辑录像
+
+
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>一个趋于完美的黑苹果EFI文件</title>
+    <link href="https://blog.rainsin.cn/posts/mac/" rel="alternate" type="text/html" title="一个趋于完美的黑苹果EFI文件" />
+    <published>2024-03-14T16:32:10+08:00</published>
+  
+    <updated>2024-04-11T15:41:33+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/mac/</id>
+    <content src="https://blog.rainsin.cn/posts/mac/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="黑苹果" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+前言
+
+
+
+  
+  随着苹果推进自家CPU的发展，对Intel的CPU支持也将结束，现在的MacOS Snonma也许是最后一个支持Intel的版本，且用且珍惜。
+  
+  
+  这个主机兜兜转转试过了好多的系统，除了MacOS和Windows11一直都在用之外，还试过如Deepin、优麒麟、银河麒麟、开放麒麟、Ubuntu、ChromeOS、FydeOS、Zorin，以及现在正在用的统信UOS。
+  
+  
+  如何使用Opencore引导MacOS、Windows11、Linux三个系统，请看这篇使用Opencore引导多个系统。
+  
+
+
+配置
+
+
+  
+    
+      项目
+      名称
+      备注
+    
+  
+  
+    
+      处理器
+      Intel Core I5-9600KF
+      420
+    
+    
+   ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>我的OwO表情包Data-API</title>
+    <link href="https://blog.rainsin.cn/posts/owo/" rel="alternate" type="text/html" title="我的OwO表情包Data-API" />
+    <published>2024-02-28T16:32:10+08:00</published>
+  
+    <updated>2024-04-11T21:24:20+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/owo/</id>
+    <content src="https://blog.rainsin.cn/posts/owo/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="API" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      如果你的网站使用了OwO.js，就可以使用这个API。
+
+表情包都来自于这个仓库，我只取了其中的一部分，并将它们转换为了webp格式，加载会快一点。
+
+使用
+
+
+  国内使用： https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/emo/emoticon.json 
+
+
+
+  全球使用： https://blog.rainsin.cn/emoticon/emoticon.json
+
+
+我使用的表情包列表
+你可以下载一些喜欢的表情包，自己做一个API。
+
+搜索引擎
+
+社区文化 40 张
+
+拒绝伸手党。
+
+
+  
+    
+      001
+      002
+      003
+      004
+      005
+    
+  
+  
+    
+      
+      
+      
+      
+      
+ ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>奥山和纱 写真集 Clear</title>
+    <link href="https://blog.rainsin.cn/posts/ao-shan/" rel="alternate" type="text/html" title="奥山和纱 写真集 Clear" />
+    <published>2024-02-26T16:32:10+08:00</published>
+  
+    <updated>2024-04-11T15:41:33+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/ao-shan/</id>
+    <content src="https://blog.rainsin.cn/posts/ao-shan/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="写真" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  奥山和纱（奥山かずさ、おくやま かずさ），1994年3月10日出生于日本青森县，日本女演员、模特，隶属于OSCAR PROMOTION
+  
+  
+  壁纸文件： 奥山和纱 写真集 Clear 【蓝奏云】，解压码：奥山。 奥山和纱 写真集 Clear 【OneDrive】。
+  
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>使用certbot和Let’s Encrypt为本地服务器部署ssl</title>
+    <link href="https://blog.rainsin.cn/posts/ssl-certbot/" rel="alternate" type="text/html" title="使用certbot和Let’s Encrypt为本地服务器部署ssl" />
+    <published>2024-02-02T16:32:10+08:00</published>
+  
+    <updated>2024-04-11T15:41:33+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/ssl-certbot/</id>
+    <content src="https://blog.rainsin.cn/posts/ssl-certbot/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="解决问题" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      以前我的树莓派的SSL一直需要我在51SSL上手动申请，然后下载证书到服务器，比较麻烦。最近借着过年部署了一下certbot来完成申请证书的操作，记录一下过程。
+
+1. 安装 Certbot
+
+sudo apt-get install certbot
+
+
+2. 申请通配符证书
+
+sudo certbot -d domain.com -d "*.domain.com" --manual --preferred-challenges dns certonly --server https://acme-v02.api.letsencrypt.org/directory
+
+会得到以下输出：
+
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator manual, Ins...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

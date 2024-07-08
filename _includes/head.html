@@ -1,0 +1,250 @@
+<!-- The Head -->
+
+<head>
+  {% unless site.theme_mode %}
+    {% include mode-toggle.html %}
+  {% endunless %}
+
+  {% if page.babel %}
+  <script src="https://cdn.staticfile.net/babel-polyfill/7.12.1/polyfill.min.js"></script>
+  <script src="https://cdn.staticfile.net/babel-standalone/7.23.8/babel.min.js"></script>
+  {% endif %}
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  >
+
+
+  {% if page.post %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  <meta name="author" content="{{ page.author }}">
+  {% else %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="author" content="{{ site.author }}">
+  {% endif %}
+
+  <script>
+      window.load_event = {
+      ...window.load_event,
+      load_anime: ()=>{
+        const loads = document.getElementById("loading-gif-box");
+        loads.style.opacity = "0";
+        loads.style.zIndex = "-999999";
+      }
+    }
+  </script>
+
+  {% if page.math %}
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'],
+          ['\\(', '\\)']
+        ],
+        displayMath: [
+          ['$$', '$$'],
+          ['\\[', '\\]']
+        ],
+        tags: 'ams'
+      }
+    };
+  </script>
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
+{% endif %}
+
+  <!-- <script src="/assets/js/dev.js"></script> -->
+  
+  <link rel="stylesheet" href="/assets/css/comments.css"/>
+  <link rel="stylesheet" href="/assets/css/root.css"/>
+  {% if page.comments %}
+  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
+
+    <script>
+      window.load_event= {
+        ...window.load_event,
+        comments: () => {
+          twikoo.init({
+            envId: 'https://comment.vip.cpolar.cn',
+            el: '#tcomment',
+            onCommentLoaded: window.load_event.comments_style
+          });
+        }
+      }
+      
+  </script>
+  {% endif %}
+
+  <script>
+    const style = document.createElement("style");
+    style.type = "text/css";
+
+    if(modeToggle.modeStatus == "dark"){
+      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkload.webp);}"
+    }else{
+      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/lightload.webp);}"
+    };
+
+    document.getElementsByTagName("head")[0].appendChild(style);
+  </script>
+
+  {% if page.react %}
+    <script src="https://cdn.staticfile.net/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.staticfile.net/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  {% endif %}
+
+  {% if page.video %}
+  <script src="https://cdn.staticfile.net/artplayer/5.1.1/artplayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/artplayer-plugin-danmuku@5.0.1/dist/artplayer-plugin-danmuku.min.js"></script>
+  {% endif %}
+
+  {% if page.music %}
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/meting/2.0.1/Meting.min.js"></script>
+  {% endif %}
+
+  {% if page.jquery %}
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+  {% endif %}
+
+  {% if page.mathpolt %}
+    <script src="https://cdn.bootcdn.net/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://cdn.staticfile.net/function-plot/1.24.0/function-plot.min.js"></script>
+  {% endif %}
+
+  {% if page.cube %}
+  <!-- <script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script> -->
+  <script type="module">
+  import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
+  window.TwistyPlayer = TwistyPlayer;
+  </script>
+  <script src="/assets/share/data/data.js"></script>
+  {% endif %}
+
+  {% if page.require %}
+  <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  {% endif %}
+
+  {% if page.linksdata %}
+  <script src="/assets/links/linksdata.js"></script>
+  {% endif %}
+
+  {% if page.anime %}
+  <script src="https://cdn.staticfile.net/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
+  
+  {% capture seo_tags %}
+    {% seo title=false %}
+  {% endcapture %}
+
+  {% if page.image %}
+    {% assign img = page.image.path | default: page.image %}
+
+    {% unless img contains '://' %}
+      {% assign img_path = page.img_path | append: '/' | append: img | replace: '//', '/' %}
+      {% capture target %}"{{ img | absolute_url }}"{% endcapture %}
+
+      {% if site.img_cdn contains '//' %}
+        <!-- it's a cross-origin URL -->
+        {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %}
+      {% else %}
+        <!-- it's a local file path -->
+        {%- capture replacement -%}
+          "{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}"
+        {%- endcapture -%}
+      {% endif %}
+
+      {% assign seo_tags = seo_tags | replace: target, replacement %}
+    {% endunless %}
+  {% endif %}
+
+  {{ seo_tags }}
+
+  <title>
+    {%- unless page.layout == 'home' -%}
+      {{ page.title | append: ' | ' }}
+    {%- endunless -%}
+    {{ site.title }}
+  </title>
+
+  {% include favicons.html %}
+
+  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
+    <link href="{{ site.data.origin[type].webfonts | relative_url }}" rel="stylesheet">
+
+  {% else %}
+    {% for cdn in site.data.origin[type].cdns %}
+      <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
+      <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
+    {% endfor %}
+
+    <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
+  {% endif %}
+
+  <!-- GA -->
+  {% if jekyll.environment == 'production' and site.google_analytics.id != empty and site.google_analytics.id %}
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  {% endif %}
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{{ site.data.origin[type].bootstrap.css | relative_url}}">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% if site.toc and page.toc %}
+    <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
+  {% endif %}
+
+  {% if page.layout == 'page' or page.layout == 'post' %}
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}">
+  {% endif %}
+
+  <!-- 流量分析 -->
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"3IKqlmTJRQUxCNoU",ck:"3IKqlmTJRQUxCNoU",autoTrack:true})</script>
+
+  <!-- JavaScript -->
+  <!-- <style>
+    @media (prefers-color-scheme: dark){
+      #loading-gif-box{
+        background-color: #000;
+      }
+
+      .loading-boxs-imgs{
+        background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);
+      }
+    }
+
+    @media (prefers-color-scheme: light){
+      #loading-gif-box{
+        background-color: #fff;
+      }
+
+      .loading-boxs-imgs{
+        background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);
+      }
+    }
+  </style> -->
+
+  <link href="/assets/css/font.css" rel="stylesheet">
+
+  {% include metadata-hook.html %}
+</head>
