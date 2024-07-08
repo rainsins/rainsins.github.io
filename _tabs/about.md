@@ -55,7 +55,7 @@ author: rainsin
     href="https://cdn.staticfile.net/animate.css/4.1.1/animate.min.css"
   />
 
-## 关于我
+## ✍️ 关于我
 
 <div class="rainsin">
 <div class="rainsin-info">
