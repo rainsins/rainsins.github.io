@@ -11,8 +11,6 @@ const resource = [
     '/404.html',
 
     
-        '/share/',
-    
         '/categories/',
     
         '/links/',
@@ -141,7 +139,7 @@ const resource = [
 const allowedDomains = [
     
 
-    'blog.rainsin.cn',
+    'localhost:4000',
 
     
         'rainsin-1305486451.file.myqcloud.com',

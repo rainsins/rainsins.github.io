@@ -207,10 +207,16 @@
   
   <link rel="stylesheet" href="/assets/css/comments.css"/>
   <link rel="stylesheet" href="/assets/css/root.css"/>
-  
-  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
 
-    <script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css"
+  />
+
+  
+  <!-- <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script> -->
+
+    <!-- <script>
       window.load_event= {
         ...window.load_event,
         comments: () => {
@@ -222,7 +228,20 @@
         }
       }
       
-  </script>
+  </script> -->
+
+<script type="module">
+  import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@3.3.0/dist/waline.js';
+  window.load_event= {
+        ...window.load_event,
+        comments: () => {
+          init({
+              el: '#tcomment',
+              serverURL: 'https://waline.rainsin.cn',
+          });
+        }
+      }
+</script>
   
 
   <script>
@@ -230,9 +249,9 @@
     style.type = "text/css";
 
     if(modeToggle.modeStatus == "dark"){
-      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkload.webp);}"
+      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
     }else{
-      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/lightload.webp);}"
+      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
     };
 
     document.getElementsByTagName("head")[0].appendChild(style);
@@ -286,8 +305,8 @@
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="使用 CloudFlare 导致网站「重定向的次数过多」解决方案" />
 <meta property="og:description" content="使用 CloudFlare 导致网站「重定向的次数过多」解决方案" />
-<link rel="canonical" href="https://blog.rainsin.cn/posts/cloudflare/" />
-<meta property="og:url" content="https://blog.rainsin.cn/posts/cloudflare/" />
+<link rel="canonical" href="http://localhost:4000/posts/cloudflare/" />
+<meta property="og:url" content="http://localhost:4000/posts/cloudflare/" />
 <meta property="og:site_name" content="Rainsin • Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-02-01T12:22:10+08:00" />
@@ -296,7 +315,7 @@
 <meta name="twitter:site" content="@2000_python" />
 <meta name="twitter:creator" content="@2000_python" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-04-11T15:41:33+08:00","datePublished":"2024-02-01T12:22:10+08:00","description":"使用 CloudFlare 导致网站「重定向的次数过多」解决方案","headline":"使用 CloudFlare 导致网站「重定向的次数过多」解决方案","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.rainsin.cn/posts/cloudflare/"},"url":"https://blog.rainsin.cn/posts/cloudflare/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-02-01T12:22:10+08:00","datePublished":"2024-02-01T12:22:10+08:00","description":"使用 CloudFlare 导致网站「重定向的次数过多」解决方案","headline":"使用 CloudFlare 导致网站「重定向的次数过多」解决方案","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/cloudflare/"},"url":"http://localhost:4000/posts/cloudflare/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -361,6 +380,10 @@
     <!-- Manific Popup -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   
+
+  <!-- 流量分析 -->
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"3IKqlmTJRQUxCNoU",ck:"3IKqlmTJRQUxCNoU",autoTrack:true})</script>
 
   <!-- JavaScript -->
   <!-- <style>
@@ -435,7 +458,7 @@
     <div class="site-title">
       <a href="/">Rainsin's Blog</a>
     </div>
-    <div class="site-subtitle">修心强身，乐此不疲。</div>
+    <div class="site-subtitle">如人饮水，冷暖自知。</div>
   </div>
   <!-- .profile-wrapper -->
 
@@ -448,16 +471,6 @@
       </a>
     </li>
     <!-- the real tabs -->
-    
-      <li class="nav-item">
-        <a href="/share/" class="nav-link">
-          <i class="fa-fw fas fa-globe"></i>
-          
-
-          <span>分享</span>
-        </a>
-      </li>
-      <!-- .nav-item -->
     
       <li class="nav-item">
         <a href="/categories/" class="nav-link">
@@ -803,30 +816,6 @@
 
     <!-- lastmod date -->
     
-    <span>
-      更新于
-      <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1712821293"
-  data-df="YYYY/MM/DD"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  2024/04/11
-</em>
-
-    </span>
-    
 
   
 
@@ -978,7 +967,7 @@ var player = new window.Player({
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog&url=https%3A%2F%2Fblog.rainsin.cn%2Fposts%2Fcloudflare%2F"
+        href="https://twitter.com/intent/tweet?text=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcloudflare%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -991,7 +980,7 @@ var player = new window.Player({
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog&u=https%3A%2F%2Fblog.rainsin.cn%2Fposts%2Fcloudflare%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcloudflare%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -1004,7 +993,7 @@ var player = new window.Player({
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.rainsin.cn%2Fposts%2Fcloudflare%2F&text=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcloudflare%2F&text=%E4%BD%BF%E7%94%A8%20CloudFlare%20%E5%AF%BC%E8%87%B4%E7%BD%91%E7%AB%99%E3%80%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E3%80%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%20-%20Rainsin%20%E2%80%A2%20Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -1067,35 +1056,35 @@ var player = new window.Player({
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/owo/">我的OwO表情包Data-API</a>
+          <a href="/posts/server-config/">创建自己的影视库和各种服务</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ax200-bluetooth/">黑苹果Venture 13.4 Intel无线网卡(AX200,AX201,AX210,AX203)蓝牙问题排查</a>
+          <a href="/posts/mandelbrot/">分形图形的一个项目（曼德布罗集和朱莉娅集）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/more-system-opencore/">使用Opencore引导多个系统</a>
+          <a href="/posts/mystery/">奇怪的，阴谋论的</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/radix-sort/">基础排序算法之基数排序</a>
+          <a href="/posts/cube/">魔方练习中的各种工具</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/latex/">使用Latex写论文、讲义</a>
+          <a href="/posts/lindan/">绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</a>
         </li>
       
     </ul>
@@ -1244,11 +1233,10 @@ var player = new window.Player({
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -1333,91 +1321,7 @@ var player = new window.Player({
     
     
     
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1749,9 +1653,6 @@ var player = new window.Player({
         <a class="post-tag btn btn-outline-primary" href="/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/">黑苹果</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2-3%E6%9F%A5%E6%89%BE%E6%A0%91/">2-3查找树</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/apache/">Apache</a>
       
         
@@ -1768,6 +1669,9 @@ var player = new window.Player({
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/deepin/">Deepin</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
     </div>
   </div>
@@ -1880,55 +1784,43 @@ var player = new window.Player({
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -2007,6 +1899,56 @@ var player = new window.Player({
         
         
         <div class="col">
+          <a href="/posts/ssl-certbot/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1706862730"
+  data-df="YYYY/MM/DD"
+  
+>
+  2024/02/02
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>使用certbot和Let’s Encrypt为本地服务器部署ssl</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  以前我的树莓派的SSL一直需要我在51SSL上手动申请，然后下载证书到服务器，比较麻烦。最近借着过年部署了一下certbot来完成申请证书的操作，记录一下过程。
+
+1. 安装 Certbot
+
+1
+sudo apt-get install certbot
+
+
+2. 申请通配符证书
+
+1
+sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/posts/ax200-bluetooth/" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -2068,7 +2010,7 @@ USB已经定制好了，给蓝牙预留一个USB端口
         
         
         <div class="col">
-          <a href="/posts/ssl-certbot/" class="card post-preview h-100">
+          <a href="/posts/cube/" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2081,64 +2023,14 @@ USB已经定制好了，给蓝牙预留一个USB端口
 
 <em
   class="small"
-  data-ts="1706862730"
+  data-ts="1719217930"
   data-df="YYYY/MM/DD"
   
 >
-  2024/02/02
+  2024/06/24
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>使用certbot和Let’s Encrypt为本地服务器部署ssl</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  以前我的树莓派的SSL一直需要我在51SSL上手动申请，然后下载证书到服务器，比较麻烦。最近借着过年部署了一下certbot来完成申请证书的操作，记录一下过程。
-
-1. 安装 Certbot
-
-1
-sudo apt-get install certbot
-
-
-2. 申请通配符证书
-
-1
-sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/posts/lindan/" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1712219530"
-  data-df="YYYY/MM/DD"
-  
->
-  2024/04/04
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>魔方练习中的各种工具</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -2150,17 +2042,21 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
                   
 
 
-  
-  全场高清录像下载链接：夸克网盘 、One Drive(密码：lindan66)、Google Drive、自己的服务(IPv6)。
-  
-  
-    右手打球的可以镜像视频进行学习：显示设置 -&amp;gt; 画面翻转 -&amp;gt; 水平。我的Safari浏览器无法播放，Chrome和火狐可以，移动端大概率无法播放。
-  
-  
-    剪辑视频来自up: mcwawa。
-  
 
-...
+
+
+公式显示器
+
+
+
+  公式来源speedcubedb。这个小工具是我一时兴起做的，数据是从网站上扒下来的，会有很多错误，容我慢慢改，后续会对公式进行分类。
+
+
+
+
+
+  具体的OLL手法参见：【经典重制】 菲神OLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills 
+具体的PLL手法参见：【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkil...
                 </p>
               </div>
             </div>
@@ -2357,11 +2253,10 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -2446,91 +2341,7 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
     
     
     
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2862,9 +2673,6 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
         <a class="post-tag btn btn-outline-primary" href="/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/">黑苹果</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2-3%E6%9F%A5%E6%89%BE%E6%A0%91/">2-3查找树</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/apache/">Apache</a>
       
         
@@ -2881,6 +2689,9 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/deepin/">Deepin</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
     </div>
   </div>
@@ -2924,7 +2735,7 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
       &nbsp;&nbsp;
       <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:2rem;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
       &nbsp;&nbsp;
-      <a href="https://blogwe.com" target="_blank" style="font-size: larger;color: #404040;font-weight: 600;white-space: 2px;">🏠BlogWe.com</a>
+      <a href="https://blogwe.com" target="_blank" style="font-size: larger;color: #404040;font-weight: 600;white-space: 2px;">[🏠BlogWe.com]</a>
     </div>
   </div>
 </footer>
@@ -2967,6 +2778,8 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual...
 
   const mode = new Proxy(modeToggle,handler);
 </script>
+
+<script defer src="https://rainsin-1305486451.file.myqcloud.com/js%E5%BA%93/umami.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
 
 
     <div id="mask"></div>

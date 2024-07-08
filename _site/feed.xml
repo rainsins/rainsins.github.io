@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://blog.rainsin.cn/</id>
+  <id>http://localhost:4000/</id>
   <title>Rainsin • Blog</title>
   <subtitle>rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）</subtitle>
-  <updated>2024-04-13T22:07:34+08:00</updated>
+  <updated>2024-07-08T19:08:48+08:00</updated>
   <author>
     <name>rainsin</name>
-    <uri>https://blog.rainsin.cn/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://blog.rainsin.cn/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="zh-CN"
-    href="https://blog.rainsin.cn/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <rights> © 2024 rainsin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,151 @@
 
   
   <entry>
+    <title>魔方练习中的各种工具</title>
+    <link href="http://localhost:4000/posts/cube/" rel="alternate" type="text/html" title="魔方练习中的各种工具" />
+    <published>2024-06-24T16:32:10+08:00</published>
+  
+    <updated>2024-07-08T17:28:44+08:00</updated>
+  
+    <id>http://localhost:4000/posts/cube/</id>
+    <content src="http://localhost:4000/posts/cube/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="魔方" />
+    
+    <category term="OLL" />
+    
+    <category term="F2L" />
+    
+    <category term="PLL" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+
+公式显示器
+
+
+
+  公式来源speedcubedb。这个小工具是我一时兴起做的，数据是从网站上扒下来的，会有很多错误，容我慢慢改，后续会对公式进行分类。
+
+
+
+
+
+  具体的OLL手法参见：【经典重制】 菲神OLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills 
+具体的PLL手法参见：【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills 
+F2L技巧：【经典重制】菲神牛逼的F2L 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills
+
+
+🎯 魔方练习好工具
+
+1.csTimer魔方计时器
+
+这是魔方圈最著名的工具了，它不只是一个计时器，它可以单独的练习你在学习过程中每一个步骤的公式，比如PLL，OLL，F2L，ZBLL等等，是各个阶段的魔友都适用的工具。
+
+链接：csTimer
+
+2.Speed Cube DB
+
+一个...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>分形图形的一个项目（曼德布罗集和朱莉娅集）</title>
+    <link href="http://localhost:4000/posts/mandelbrot/" rel="alternate" type="text/html" title="分形图形的一个项目（曼德布罗集和朱莉娅集）" />
+    <published>2024-06-24T16:32:10+08:00</published>
+  
+    <updated>2024-07-08T18:33:35+08:00</updated>
+  
+    <id>http://localhost:4000/posts/mandelbrot/</id>
+    <content src="http://localhost:4000/posts/mandelbrot/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="混沌" />
+    
+    <category term="分形几何" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+
+分形
+
+
+
+  左边为曼德勃罗集（Mandelbrot Set），右边为对应坐标的朱莉亚集（Julia Set）。原项目地址为：Mandelbrot-maps，我觉得挺好玩就贴在这里了。
+
+
+
+  点击指南针将图案摆正。鼠标滚轮缩放图案，按住鼠标左键移动图案。
+
+
+
+
+
+  
+
+
+
+
+  如果想知道这两个分形相关的知识可以参看教程。
+
+
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</title>
-    <link href="https://blog.rainsin.cn/posts/lindan/" rel="alternate" type="text/html" title="绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像" />
+    <link href="http://localhost:4000/posts/lindan/" rel="alternate" type="text/html" title="绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像" />
     <published>2024-04-04T16:32:10+08:00</published>
   
-    <updated>2024-04-11T15:41:33+08:00</updated>
+    <updated>2024-07-08T12:05:11+08:00</updated>
   
-    <id>https://blog.rainsin.cn/posts/lindan/</id>
-    <content src="https://blog.rainsin.cn/posts/lindan/" />
+    <id>http://localhost:4000/posts/lindan/</id>
+    <content src="http://localhost:4000/posts/lindan/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -67,6 +204,8 @@
 
 
 
+
+
     </summary>
   
 
@@ -75,13 +214,13 @@
   
   <entry>
     <title>一个趋于完美的黑苹果EFI文件</title>
-    <link href="https://blog.rainsin.cn/posts/mac/" rel="alternate" type="text/html" title="一个趋于完美的黑苹果EFI文件" />
+    <link href="http://localhost:4000/posts/mac/" rel="alternate" type="text/html" title="一个趋于完美的黑苹果EFI文件" />
     <published>2024-03-14T16:32:10+08:00</published>
   
-    <updated>2024-04-11T15:41:33+08:00</updated>
+    <updated>2024-03-14T16:32:10+08:00</updated>
   
-    <id>https://blog.rainsin.cn/posts/mac/</id>
-    <content src="https://blog.rainsin.cn/posts/mac/" />
+    <id>http://localhost:4000/posts/mac/</id>
+    <content src="http://localhost:4000/posts/mac/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -145,13 +284,13 @@
   
   <entry>
     <title>我的OwO表情包Data-API</title>
-    <link href="https://blog.rainsin.cn/posts/owo/" rel="alternate" type="text/html" title="我的OwO表情包Data-API" />
+    <link href="http://localhost:4000/posts/owo/" rel="alternate" type="text/html" title="我的OwO表情包Data-API" />
     <published>2024-02-28T16:32:10+08:00</published>
   
-    <updated>2024-04-11T21:24:20+08:00</updated>
+    <updated>2024-02-28T16:32:10+08:00</updated>
   
-    <id>https://blog.rainsin.cn/posts/owo/</id>
-    <content src="https://blog.rainsin.cn/posts/owo/" />
+    <id>http://localhost:4000/posts/owo/</id>
+    <content src="http://localhost:4000/posts/owo/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -211,109 +350,6 @@
       
       
  ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>奥山和纱 写真集 Clear</title>
-    <link href="https://blog.rainsin.cn/posts/ao-shan/" rel="alternate" type="text/html" title="奥山和纱 写真集 Clear" />
-    <published>2024-02-26T16:32:10+08:00</published>
-  
-    <updated>2024-04-11T15:41:33+08:00</updated>
-  
-    <id>https://blog.rainsin.cn/posts/ao-shan/</id>
-    <content src="https://blog.rainsin.cn/posts/ao-shan/" />
-    <author>
-      <name>rainsin</name>
-    </author>
-
-  
-    
-    <category term="写真" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  奥山和纱（奥山かずさ、おくやま かずさ），1994年3月10日出生于日本青森县，日本女演员、模特，隶属于OSCAR PROMOTION
-  
-  
-  壁纸文件： 奥山和纱 写真集 Clear 【蓝奏云】，解压码：奥山。 奥山和纱 写真集 Clear 【OneDrive】。
-  
-
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>使用certbot和Let’s Encrypt为本地服务器部署ssl</title>
-    <link href="https://blog.rainsin.cn/posts/ssl-certbot/" rel="alternate" type="text/html" title="使用certbot和Let’s Encrypt为本地服务器部署ssl" />
-    <published>2024-02-02T16:32:10+08:00</published>
-  
-    <updated>2024-04-11T15:41:33+08:00</updated>
-  
-    <id>https://blog.rainsin.cn/posts/ssl-certbot/</id>
-    <content src="https://blog.rainsin.cn/posts/ssl-certbot/" />
-    <author>
-      <name>rainsin</name>
-    </author>
-
-  
-    
-    <category term="解决问题" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      以前我的树莓派的SSL一直需要我在51SSL上手动申请，然后下载证书到服务器，比较麻烦。最近借着过年部署了一下certbot来完成申请证书的操作，记录一下过程。
-
-1. 安装 Certbot
-
-sudo apt-get install certbot
-
-
-2. 申请通配符证书
-
-sudo certbot -d domain.com -d "*.domain.com" --manual --preferred-challenges dns certonly --server https://acme-v02.api.letsencrypt.org/directory
-
-会得到以下输出：
-
-Saving debug log to /var/log/letsencrypt/letsencrypt.log
-Plugins selected: Authenticator manual, Ins...
     </summary>
   
 

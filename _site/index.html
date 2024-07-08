@@ -204,6 +204,12 @@
   
   <link rel="stylesheet" href="/assets/css/comments.css"/>
   <link rel="stylesheet" href="/assets/css/root.css"/>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css"
+  />
+
   
 
   <script>
@@ -211,9 +217,9 @@
     style.type = "text/css";
 
     if(modeToggle.modeStatus == "dark"){
-      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkload.webp);}"
+      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
     }else{
-      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/lightload.webp);}"
+      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
     };
 
     document.getElementsByTagName("head")[0].appendChild(style);
@@ -249,17 +255,17 @@
 <meta property="og:locale" content="zh_CN" />
 <meta name="description" content="rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）" />
 <meta property="og:description" content="rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）" />
-<link rel="canonical" href="https://blog.rainsin.cn/" />
-<meta property="og:url" content="https://blog.rainsin.cn/" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Rainsin • Blog" />
 <meta property="og:type" content="website" />
-<link rel="next" href="https://blog.rainsin.cn/page2" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Rainsin • Blog" />
 <meta name="twitter:site" content="@2000_python" />
 <meta name="twitter:creator" content="@2000_python" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"description":"rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）","headline":"Rainsin • Blog","name":"rainsin","sameAs":["https://twitter.com/2000_python","https://github.com/rainsins","https://www.facebook.com/wang.bill.79827","https://t.me/rainsins"],"url":"https://blog.rainsin.cn/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"description":"rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）","headline":"Rainsin • Blog","name":"rainsin","sameAs":["https://twitter.com/2000_python","https://github.com/rainsins","https://www.facebook.com/wang.bill.79827","https://t.me/rainsins"],"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -319,6 +325,10 @@
   
 
   
+
+  <!-- 流量分析 -->
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"3IKqlmTJRQUxCNoU",ck:"3IKqlmTJRQUxCNoU",autoTrack:true})</script>
 
   <!-- JavaScript -->
   <!-- <style>
@@ -393,7 +403,7 @@
     <div class="site-title">
       <a href="/">Rainsin's Blog</a>
     </div>
-    <div class="site-subtitle">修心强身，乐此不疲。</div>
+    <div class="site-subtitle">如人饮水，冷暖自知。</div>
   </div>
   <!-- .profile-wrapper -->
 
@@ -406,16 +416,6 @@
       </a>
     </li>
     <!-- the real tabs -->
-    
-      <li class="nav-item">
-        <a href="/share/" class="nav-link">
-          <i class="fa-fw fas fa-globe"></i>
-          
-
-          <span>分享</span>
-        </a>
-      </li>
-      <!-- .nav-item -->
     
       <li class="nav-item">
         <a href="/categories/" class="nav-link">
@@ -896,13 +896,13 @@
       </div>
     </a>
   
-    <a href="/posts/server-config/" class="card-wrapper">
+    <a href="/posts/cube/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            创建自己的影视库和各种服务
+            魔方练习中的各种工具
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -913,32 +913,24 @@
 
 
 
-              服务器相关配置
-
-万一服务器有问题，按这个步骤来。带星号* 是舍弃的项目。
-
-设置su密码：
-
-sudo passwd
+              
 
 
-0 终端设置与美化
-
-0.1 命令行使用代理
-
-安装：
-
-sudo apt install proxychains4
 
 
-打开配置文件
 
-sudo nano /etc/proxychains4.conf
+公式显示器
 
 
-在尾部添加代理服务器协议 + ip + port
 
-# soc...
+  公式来源speedcubedb。这个小工具是我一时兴起做的，数据是从网站上扒下来的，会有很多错误，容我慢慢改，后续会对公式进行分类。
+
+
+
+
+
+  具体的OLL手法参见：【经典重制】 菲神OLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkills 
+具体的PLL手法参见：【经典重制】 菲神PLL 全网唯一4K60帧版本 挑战画质巅峰 CubeSkil...
             </p>
           </div>
 
@@ -957,11 +949,11 @@ sudo nano /etc/proxychains4.conf
 
 <em
   class=""
-  data-ts="1686367980"
+  data-ts="1719217930"
   data-df="YYYY/MM/DD"
   
 >
-  2023/06/10
+  2024/06/24
 </em>
 
 
@@ -970,17 +962,107 @@ sudo nano /etc/proxychains4.conf
                 <i class="far fa-folder-open fa-fw me-1"></i>
                 <span class="categories">
                   
-                    Server,
-                    音视频
+                    魔方,
+                    OLL,
+                    F2L,
+                    PLL
                 </span>
               
             </div>
 
             
-              <div class="pin ms-1">
-                <i class="fas fa-thumbtack fa-fw"></i>
-                <span></span>
-              </div>
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/mandelbrot/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            分形图形的一个项目（曼德布罗集和朱莉娅集）
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              
+
+
+
+
+
+分形
+
+
+
+  左边为曼德勃罗集（Mandelbrot Set），右边为对应坐标的朱莉亚集（Julia Set）。原项目地址为：Mandelbrot-maps，我觉得挺好玩就贴在这里了。
+
+
+
+  点击指南针将图案摆正。鼠标滚轮缩放图案，按住鼠标左键移动图案。
+
+
+
+
+
+  
+
+
+
+
+  如果想知道这两个分形相关的知识可以参看教程。
+
+
+
+
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1719217930"
+  data-df="YYYY/MM/DD"
+  
+>
+  2024/06/24
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    混沌,
+                    分形几何
+                </span>
+              
+            </div>
+
             
           </div>
           <!-- .post-meta -->
@@ -1229,6 +1311,88 @@ sudo nano /etc/proxychains4.conf
       </div>
     </a>
   
+    <a href="/posts/mystery/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            奇怪的，阴谋论的
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              
+
+
+
+
+
+
+
+事件
+
+
+
+  以下内容部分图片可能会引起不适，请谨慎观看。来源：Ludwigの生活觀察。
+
+
+
+
+
+
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1708763530"
+  data-df="YYYY/MM/DD"
+  
+>
+  2024/02/24
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    阴谋论,
+                    未解之谜
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
     <a href="/posts/ssl-certbot/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
@@ -1431,162 +1595,6 @@ sudo certbot -d domain.com -d &quot;*.domain.com&quot; --manual --p...
       </div>
     </a>
   
-    <a href="/posts/radix-sort/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            基础排序算法之基数排序
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              排序算法之基数排序
-
-前期准备
-
-我们提前定义一下基础操作：
-
-template &amp;lt;class E&amp;gt;
-class Sort
-{
-protected:
-    // 得到最大值索引
-    static int v_max_index(vector&amp;lt;E&amp;gt; &amp;amp;a)
-    {
-        int biggest = (int)*max_element(begi...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1689827530"
-  data-df="YYYY/MM/DD"
-  
->
-  2023/07/20
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    考研,
-                    数据结构
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/more-system-opencore/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            使用Opencore引导多个系统
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              前提
-
-Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT引导，传统的方式需要自己查找资料）。
-
-步骤
-
-
-  
-    在OpenCore中安装OpenShell.efi工具。
-
-    下载OpenShell.efi在/EFI/OC/tool路径下，一般OC自带这个文件不用单独下。
-
-    在OC中进行如下设置:
- 
- 重启。
-  
-  
-    如果你的OC隐藏了辅...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1688271780"
-  data-df="YYYY/MM/DD"
-  
->
-  2023/07/02
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    黑苹果,
-                    EFI
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
 </div>
 <!-- #post-list -->
 
@@ -1698,35 +1706,35 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/owo/">我的OwO表情包Data-API</a>
+          <a href="/posts/server-config/">创建自己的影视库和各种服务</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/ax200-bluetooth/">黑苹果Venture 13.4 Intel无线网卡(AX200,AX201,AX210,AX203)蓝牙问题排查</a>
+          <a href="/posts/mandelbrot/">分形图形的一个项目（曼德布罗集和朱莉娅集）</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/more-system-opencore/">使用Opencore引导多个系统</a>
+          <a href="/posts/mystery/">奇怪的，阴谋论的</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/radix-sort/">基础排序算法之基数排序</a>
+          <a href="/posts/cube/">魔方练习中的各种工具</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/latex/">使用Latex写论文、讲义</a>
+          <a href="/posts/lindan/">绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</a>
         </li>
       
     </ul>
@@ -1875,11 +1883,10 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -1964,91 +1971,7 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
     
     
     
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -2380,9 +2303,6 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
         <a class="post-tag btn btn-outline-primary" href="/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/">黑苹果</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2-3%E6%9F%A5%E6%89%BE%E6%A0%91/">2-3查找树</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/apache/">Apache</a>
       
         
@@ -2399,6 +2319,9 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/deepin/">Deepin</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
     </div>
   </div>
@@ -2559,11 +2482,10 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
     
     
     
-  
-    
-    
-    
-    
+      
+        
+        
+
   
     
     
@@ -2648,91 +2570,7 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
     
     
     
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3064,9 +2902,6 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
         <a class="post-tag btn btn-outline-primary" href="/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/">黑苹果</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/2-3%E6%9F%A5%E6%89%BE%E6%A0%91/">2-3查找树</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/apache/">Apache</a>
       
         
@@ -3083,6 +2918,9 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/deepin/">Deepin</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
     </div>
   </div>
@@ -3126,7 +2964,7 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
       &nbsp;&nbsp;
       <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:2rem;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
       &nbsp;&nbsp;
-      <a href="https://blogwe.com" target="_blank" style="font-size: larger;color: #404040;font-weight: 600;white-space: 2px;">🏠BlogWe.com</a>
+      <a href="https://blogwe.com" target="_blank" style="font-size: larger;color: #404040;font-weight: 600;white-space: 2px;">[🏠BlogWe.com]</a>
     </div>
   </div>
 </footer>
@@ -3169,6 +3007,8 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
 
   const mode = new Proxy(modeToggle,handler);
 </script>
+
+<script defer src="https://rainsin-1305486451.file.myqcloud.com/js%E5%BA%93/umami.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
 
 
     <div id="mask"></div>
