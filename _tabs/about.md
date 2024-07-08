@@ -93,10 +93,10 @@ author: rainsin
    </div>
    <div class="age">
     <div class="age-class">
-      职业
+      做的事
     </div>
     <div class="age-staff">
-      无业游民
+      思考
     </div>
    </div>
   </div>
@@ -139,13 +139,13 @@ author: rainsin
 
 <div id="playing-box"></div>
 
-<!-- 装备 -->
-## 💻我的主机
+<!-- 装备
+## 💻我的主机 -->
 
-<div id="device-box"></div>
+<!-- <div id="device-box"></div> -->
 
 <!-- 设备的具体信息 -->
-<div id="device-only"></div>
+<!-- <div id="device-only"></div> -->
 
 
 <!-- 老师 -->
@@ -192,7 +192,10 @@ author: rainsin
 
 <script src="/assets/about/about.js" defer></script>
 <script type="text/babel" src="/assets/about/components/art.js"></script>
+
+<!--
 <script type="text/babel" src="/assets/about/components/device.js"></script>
+-->
 <script type="text/babel" src="/assets/about/components/devicehead.js"></script>
 <script type="text/babel" src="/assets/about/components/play.js"></script>
 
