@@ -26,6 +26,21 @@ keywords: rainsin, blog, 混沌, 分形几何
 author: rainsin
 ---
 
+<style>
+#access-tags,#panel-wrapper,#access-lastmod{
+    display: none;
+}
+#core-wrapper, #tail-wrapper {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.bilibili-box{
+    width: 100%;
+    aspect-ratio: 1920/1080;
+}
+</style>
+
 <link rel="stylesheet" href="/assets/share/share.css"/>
 
 <h2>
