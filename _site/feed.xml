@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://blog.rainsin.cn/</id>
   <title>Rainsin • Blog</title>
   <subtitle>rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）</subtitle>
-  <updated>2024-07-08T19:08:48+08:00</updated>
+  <updated>2024-07-08T22:38:45+08:00</updated>
   <author>
     <name>rainsin</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://blog.rainsin.cn/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://blog.rainsin.cn/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="zh-CN"
-    href="http://localhost:4000/"/>
+    href="https://blog.rainsin.cn/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <rights> © 2024 rainsin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,90 @@
 
   
   <entry>
+    <title>好玩的网站、工具</title>
+    <link href="https://blog.rainsin.cn/posts/fine/" rel="alternate" type="text/html" title="好玩的网站、工具" />
+    <published>2024-07-08T16:32:10+08:00</published>
+  
+    <updated>2024-07-08T16:32:10+08:00</updated>
+  
+    <id>https://blog.rainsin.cn/posts/fine/</id>
+    <content src="https://blog.rainsin.cn/posts/fine/" />
+    <author>
+      <name>rainsin</name>
+    </author>
+
+  
+    
+    <category term="网站" />
+    
+    <category term="导航" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      网站（收集中。。。）
+
+
+  
+    
+      名称
+      简介
+      链接
+      是否科学
+    
+  
+  
+    
+      xslist-AI识别🔞
+      AI识别老师的图片
+      xslist
+      🪜
+    
+    
+      subtitlecat🔞
+      找有些没有字幕的学习资料的字幕文件
+      找字幕
+      🪜
+    
+    
+      javfilms🔞
+      界面没那么拥挤，在线老师教学，可以下载（我觉的比Javdb好点）
+      JAVFILMS
+      🪜
+    
+    
+      汉字字源
+      一个外国人的汉字字源网站
+      汉字字源
+      🪜
+    
+    
+      nsf小站
+      红白机音乐
+      nsf小站
+  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>魔方练习中的各种工具</title>
-    <link href="http://localhost:4000/posts/cube/" rel="alternate" type="text/html" title="魔方练习中的各种工具" />
+    <link href="https://blog.rainsin.cn/posts/cube/" rel="alternate" type="text/html" title="魔方练习中的各种工具" />
     <published>2024-06-24T16:32:10+08:00</published>
   
-    <updated>2024-07-08T17:28:44+08:00</updated>
+    <updated>2024-07-08T19:55:20+08:00</updated>
   
-    <id>http://localhost:4000/posts/cube/</id>
-    <content src="http://localhost:4000/posts/cube/" />
+    <id>https://blog.rainsin.cn/posts/cube/</id>
+    <content src="https://blog.rainsin.cn/posts/cube/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -92,13 +168,13 @@ F2L技巧：【经典重制】菲神牛逼的F2L 全网唯一4K60帧版本 挑�
   
   <entry>
     <title>分形图形的一个项目（曼德布罗集和朱莉娅集）</title>
-    <link href="http://localhost:4000/posts/mandelbrot/" rel="alternate" type="text/html" title="分形图形的一个项目（曼德布罗集和朱莉娅集）" />
+    <link href="https://blog.rainsin.cn/posts/mandelbrot/" rel="alternate" type="text/html" title="分形图形的一个项目（曼德布罗集和朱莉娅集）" />
     <published>2024-06-24T16:32:10+08:00</published>
   
-    <updated>2024-07-08T18:33:35+08:00</updated>
+    <updated>2024-07-08T19:55:20+08:00</updated>
   
-    <id>http://localhost:4000/posts/mandelbrot/</id>
-    <content src="http://localhost:4000/posts/mandelbrot/" />
+    <id>https://blog.rainsin.cn/posts/mandelbrot/</id>
+    <content src="https://blog.rainsin.cn/posts/mandelbrot/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -158,13 +234,13 @@ F2L技巧：【经典重制】菲神牛逼的F2L 全网唯一4K60帧版本 挑�
   
   <entry>
     <title>绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</title>
-    <link href="http://localhost:4000/posts/lindan/" rel="alternate" type="text/html" title="绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像" />
+    <link href="https://blog.rainsin.cn/posts/lindan/" rel="alternate" type="text/html" title="绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像" />
     <published>2024-04-04T16:32:10+08:00</published>
   
     <updated>2024-07-08T12:05:11+08:00</updated>
   
-    <id>http://localhost:4000/posts/lindan/</id>
-    <content src="http://localhost:4000/posts/lindan/" />
+    <id>https://blog.rainsin.cn/posts/lindan/</id>
+    <content src="https://blog.rainsin.cn/posts/lindan/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -214,13 +290,13 @@ F2L技巧：【经典重制】菲神牛逼的F2L 全网唯一4K60帧版本 挑�
   
   <entry>
     <title>一个趋于完美的黑苹果EFI文件</title>
-    <link href="http://localhost:4000/posts/mac/" rel="alternate" type="text/html" title="一个趋于完美的黑苹果EFI文件" />
+    <link href="https://blog.rainsin.cn/posts/mac/" rel="alternate" type="text/html" title="一个趋于完美的黑苹果EFI文件" />
     <published>2024-03-14T16:32:10+08:00</published>
   
     <updated>2024-03-14T16:32:10+08:00</updated>
   
-    <id>http://localhost:4000/posts/mac/</id>
-    <content src="http://localhost:4000/posts/mac/" />
+    <id>https://blog.rainsin.cn/posts/mac/</id>
+    <content src="https://blog.rainsin.cn/posts/mac/" />
     <author>
       <name>rainsin</name>
     </author>
@@ -276,80 +352,6 @@ F2L技巧：【经典重制】菲神牛逼的F2L 全网唯一4K60帧版本 挑�
     
     
    ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>我的OwO表情包Data-API</title>
-    <link href="http://localhost:4000/posts/owo/" rel="alternate" type="text/html" title="我的OwO表情包Data-API" />
-    <published>2024-02-28T16:32:10+08:00</published>
-  
-    <updated>2024-02-28T16:32:10+08:00</updated>
-  
-    <id>http://localhost:4000/posts/owo/</id>
-    <content src="http://localhost:4000/posts/owo/" />
-    <author>
-      <name>rainsin</name>
-    </author>
-
-  
-    
-    <category term="API" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      如果你的网站使用了OwO.js，就可以使用这个API。
-
-表情包都来自于这个仓库，我只取了其中的一部分，并将它们转换为了webp格式，加载会快一点。
-
-使用
-
-
-  国内使用： https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/emo/emoticon.json 
-
-
-
-  全球使用： https://blog.rainsin.cn/emoticon/emoticon.json
-
-
-我使用的表情包列表
-你可以下载一些喜欢的表情包，自己做一个API。
-
-搜索引擎
-
-社区文化 40 张
-
-拒绝伸手党。
-
-
-  
-    
-      001
-      002
-      003
-      004
-      005
-    
-  
-  
-    
-      
-      
-      
-      
-      
- ...
     </summary>
   
 

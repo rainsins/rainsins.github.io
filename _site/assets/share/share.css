@@ -898,6 +898,7 @@
     top: 0;
     left: 0;
     aspect-ratio: 2/1;
+    margin-bottom: 20px;
 }
 
 .screen-mandelbrot{
