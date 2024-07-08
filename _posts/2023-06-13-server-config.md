@@ -4,7 +4,7 @@ author: rainsin
 date: 2023-06-10 11:33:00 +0800
 categories: [Server, 音视频]
 tags: [树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker, Bt, Bot]
-pin: true
+pin: false
 math: true
 mermaid: true
 react: false
