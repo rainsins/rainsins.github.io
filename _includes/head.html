@@ -66,10 +66,16 @@
   
   <link rel="stylesheet" href="/assets/css/comments.css"/>
   <link rel="stylesheet" href="/assets/css/root.css"/>
-  {% if page.comments %}
-  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
 
-    <script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css"
+  />
+
+  {% if page.comments %}
+  <!-- <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script> -->
+
+    <!-- <script>
       window.load_event= {
         ...window.load_event,
         comments: () => {
@@ -81,7 +87,20 @@
         }
       }
       
-  </script>
+  </script> -->
+
+<script type="module">
+  import { init } from 'https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.js';
+  window.load_event= {
+        ...window.load_event,
+        comments: () => {
+          init({
+              el: '#tcomment',
+              serverURL: 'https://waline.rainsin.cn',
+          });
+        }
+      }
+</script>
   {% endif %}
 
   <script>
