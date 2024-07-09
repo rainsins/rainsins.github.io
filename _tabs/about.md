@@ -6,8 +6,8 @@ order: 6
 react: true
 video: false
 music: false
-math: true
-mathpolt: true
+math: false
+mathpolt: false
 jquery: true
 babel: true
 toc: false
