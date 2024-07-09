@@ -248,13 +248,25 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@3.3.0/dist/waline.js';
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
           init({
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
+              emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/weibo',
+                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+              ],
+              reaction: true,
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（评论审核后可见）',
+              },
+              dark: 'html[data-mode="dark"]',
+              login: 'disable',
           });
         }
       }
@@ -466,7 +478,7 @@
     <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
-        <span>文章</span>
+        <span>文字</span>
       </a>
     </li>
     <!-- the real tabs -->
@@ -573,6 +585,7 @@
       
     
       
+          <!-- 
 
       
         <a
@@ -587,24 +600,6 @@
           
         >
           <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
         </a>
       
     
@@ -631,7 +626,7 @@
           
             <span>
               <a href="/">
-                文章
+                文字
               </a>
             </span>
 
@@ -653,7 +648,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      文章
+      文字
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -1155,14 +1150,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/cube/">魔方练习中的各种工具</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/server-config/">创建自己的影视库和各种服务</a>
+          <a href="/posts/fine/">好玩的网站、工具</a>
         </li>
       
         
@@ -1170,6 +1158,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/lindan/">绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/cube/">魔方练习中的各种工具</a>
         </li>
       
     </ul>

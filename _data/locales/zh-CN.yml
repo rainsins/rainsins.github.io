@@ -3,14 +3,14 @@
 # ----- Commons label -----
 
 layout:
-  post: 文章
+  post: 文字
   category: 分类
   tag: 标签
 
 # The tabs of sidebar
 tabs:
   # format: <filename_without_extension>: <value>
-  home: 文章
+  home: 文字
   categories: 分类
   tags: 标签
   archives: 归档

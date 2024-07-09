@@ -228,13 +228,25 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@3.3.0/dist/waline.js';
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
           init({
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
+              emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/weibo',
+                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+              ],
+              reaction: true,
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（评论审核后可见）',
+              },
+              dark: 'html[data-mode="dark"]',
+              login: 'disable',
           });
         }
       }
@@ -258,7 +270,7 @@
 
   
   <script src="https://cdn.staticfile.net/artplayer/5.1.1/artplayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/artplayer-plugin-danmuku@5.0.1/dist/artplayer-plugin-danmuku.min.js"></script>
+  <script src="https://unpkg.com/artplayer-plugin-danmuku/dist/artplayer-plugin-danmuku.js"></script>
   
 
   
@@ -297,7 +309,7 @@
 <meta name="twitter:site" content="@2000_python" />
 <meta name="twitter:creator" content="@2000_python" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-07-08T12:05:11+08:00","datePublished":"2024-04-04T16:32:10+08:00","description":"绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像","headline":"绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.rainsin.cn/posts/lindan/"},"url":"https://blog.rainsin.cn/posts/lindan/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-07-08T23:41:55+08:00","datePublished":"2024-04-04T16:32:10+08:00","description":"绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像","headline":"绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.rainsin.cn/posts/lindan/"},"url":"https://blog.rainsin.cn/posts/lindan/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -449,7 +461,7 @@
     <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
-        <span>文章</span>
+        <span>文字</span>
       </a>
     </li>
     <!-- the real tabs -->
@@ -556,6 +568,7 @@
       
     
       
+          <!-- 
 
       
         <a
@@ -570,24 +583,6 @@
           
         >
           <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
         </a>
       
     
@@ -614,7 +609,7 @@
           
             <span>
               <a href="/">
-                文章
+                文字
               </a>
             </span>
 
@@ -636,7 +631,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      文章
+      文字
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -811,7 +806,7 @@
 
 <em
   class=""
-  data-ts="1720411511"
+  data-ts="1720453315"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -917,6 +912,14 @@
           init({
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
+              emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/weibo',
+                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+                '//unpkg.com/@waline/emojis@1.2.0/tw',
+              ],
+              reaction: true,
+              pageview: true,
           });
         }
       }
@@ -1141,14 +1144,7 @@ window.load_event = {
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/cube/">魔方练习中的各种工具</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/server-config/">创建自己的影视库和各种服务</a>
+          <a href="/posts/fine/">好玩的网站、工具</a>
         </li>
       
         
@@ -1156,6 +1152,13 @@ window.load_event = {
         
         <li class="text-truncate lh-lg">
           <a href="/posts/lindan/">绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/cube/">魔方练习中的各种工具</a>
         </li>
       
     </ul>
@@ -2061,9 +2064,9 @@ window.load_event = {
     
     
       subtitlecat🔞
-      找有些没有字幕的学习资料的字幕文件
+      找没有字幕的学习资料的字幕文件
       找字幕
-   ...
+     ...
                 </p>
               </div>
             </div>
@@ -2159,8 +2162,6 @@ window.load_event = {
 
 
                   
-
-
 
 
 

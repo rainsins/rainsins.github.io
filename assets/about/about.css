@@ -302,16 +302,12 @@
 .detail-ins{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    margin-left: 20px;
 }
 .detail-music{
     display: flex;
     position: relative;
     z-index: 1;
     flex: 1;
-    margin: 0 0 10px 0;
     background-color: #f4f4f4a1;
     border:var(--box-border);
     border-radius: 12px;
@@ -341,6 +337,7 @@
     font-family: var(--main-font);
     color: #fff;
     font-weight: 700;
+    margin-bottom: 3rem;
 }
 .music-detial{
     z-index: 3;
@@ -379,9 +376,14 @@
 
 .bag-ins{
     background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/1668212767.webp);
-    margin: 10px 0 0 0;
     background-position-y: -100px;
+    margin-left: 8px;
 }
+
+.music-fancy{
+    margin-right: 8px;
+}
+
 .bag-ins .mask2{
     background-image: linear-gradient(to right, #AD8374  0%, #D9CBC5 100%);
 }
@@ -469,15 +471,19 @@
     .rainsin-detail{
         flex-direction: column;
     }
-    .detail-music{
-        margin-left: 0;
-        margin-top: 14px;
-        
-    }
+    
     .detail-ins{
-        margin-left: 0;
-        flex: 2;
+        flex-direction: column;
     }
+    .music-fancy{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .bag-ins{
+        margin: 0;
+    }
+
     .device-main-box{
         flex-direction: column;
     }
@@ -1049,3 +1055,4 @@
         background-position: center 0 !important;
     }
 }
+

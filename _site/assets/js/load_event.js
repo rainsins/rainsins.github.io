@@ -1,11 +1,11 @@
 window.load_event = {
-    comments: () => {
-        twikoo.init({
-            envId: 'https://comment.vip.cpolar.cn',
-            el: '#tcomment',
-            onCommentLoaded: window.load_event.comments_style
-        });
-    },
+    // comments: () => {
+    //     twikoo.init({
+    //         envId: 'https://comment.vip.cpolar.cn',
+    //         el: '#tcomment',
+    //         onCommentLoaded: window.load_event.comments_style
+    //     });
+    // },
 
     musics: () => {
         const ap = new APlayer({

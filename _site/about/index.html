@@ -170,7 +170,7 @@
   
 
   
-  <script src="https://cdn.staticfile.net/babel-polyfill/7.12.1/polyfill.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/babel-polyfill/7.12.1/polyfill.min.js"></script>
   <script src="https://cdn.staticfile.net/babel-standalone/7.23.8/babel.min.js"></script>
   
 
@@ -251,13 +251,25 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@3.3.0/dist/waline.js';
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
           init({
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
+              emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/weibo',
+                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+              ],
+              reaction: true,
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（评论审核后可见）',
+              },
+              dark: 'html[data-mode="dark"]',
+              login: 'disable',
           });
         }
       }
@@ -278,7 +290,7 @@
   </script>
 
   
-    <script src="https://cdn.staticfile.net/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/react/18.2.0/umd/react.production.min.js"></script>
     <script src="https://cdn.staticfile.net/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
   
 
@@ -321,13 +333,13 @@
 <meta property="og:url" content="https://blog.rainsin.cn/about/" />
 <meta property="og:site_name" content="Rainsin • Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-07-08T22:38:45+08:00" />
+<meta property="article:published_time" content="2024-07-09T22:32:15+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <meta name="twitter:site" content="@2000_python" />
 <meta name="twitter:creator" content="@2000_python" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-07-08T22:38:45+08:00","datePublished":"2024-07-08T22:38:45+08:00","description":"关于rainsin的博客和网站的详情","headline":"About","name":"rainsin","sameAs":["https://twitter.com/2000_python","https://github.com/rainsins","https://www.facebook.com/wang.bill.79827","https://t.me/rainsins"],"url":"https://blog.rainsin.cn/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Rainsin Yu","url":"https://github.com/rainsins/"},"dateModified":"2024-07-09T22:32:15+08:00","datePublished":"2024-07-09T22:32:15+08:00","description":"关于rainsin的博客和网站的详情","headline":"About","name":"rainsin","sameAs":["https://twitter.com/2000_python","https://github.com/rainsins","https://www.facebook.com/wang.bill.79827","https://t.me/rainsins"],"url":"https://blog.rainsin.cn/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -474,7 +486,7 @@
     <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
-        <span>文章</span>
+        <span>文字</span>
       </a>
     </li>
     <!-- the real tabs -->
@@ -581,6 +593,7 @@
       
     
       
+          <!-- 
 
       
         <a
@@ -595,24 +608,6 @@
           
         >
           <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
         </a>
       
     
@@ -639,7 +634,7 @@
           
             <span>
               <a href="/">
-                文章
+                文字
               </a>
             </span>
 
@@ -773,25 +768,17 @@
    </div>
    <div class="age">
     <div class="age-class">
-      做的事
+      地方
     </div>
     <div class="age-staff">
-      思考
+      西北人
     </div>
    </div>
   </div>
   </div>
     <div class="rainsin-detail">
-      <div class="detail-function">
-        <div class="polt_box_ui">
-        <div id="root"></div>
-        $$
-        y=\left( 0.64\sqrt{\left| x\right|  } \right)  -0.8+1.2^{\left| x\right|  }cos\left( 200x\right)  )\times \sqrt{cosx} 
-        $$
-        </div>
-      </div>
       <div class="detail-ins">
-        <div class="detail-music">
+        <div class="detail-music music-fancy">
           <div class="mask">
           </div>
           <div class="music-title">音乐偏好</div>
@@ -964,14 +951,7 @@ gitalk.render('gitalk-container');
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/cube/">魔方练习中的各种工具</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/server-config/">创建自己的影视库和各种服务</a>
+          <a href="/posts/fine/">好玩的网站、工具</a>
         </li>
       
         
@@ -979,6 +959,13 @@ gitalk.render('gitalk-container');
         
         <li class="text-truncate lh-lg">
           <a href="/posts/lindan/">绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/cube/">魔方练习中的各种工具</a>
         </li>
       
     </ul>

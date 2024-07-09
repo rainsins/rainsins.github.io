@@ -93,25 +93,17 @@ author: rainsin
    </div>
    <div class="age">
     <div class="age-class">
-      喜欢
+      地方
     </div>
     <div class="age-staff">
-      深深的思考
+      西北人
     </div>
    </div>
   </div>
   </div>
     <div class="rainsin-detail">
-      <div class="detail-function">
-        <div class="polt_box_ui">
-        <div id="root"></div>
-        $$
-        y=\left( 0.64\sqrt{\left| x\right|  } \right)  -0.8+1.2^{\left| x\right|  }cos\left( 200x\right)  )\times \sqrt{cosx} 
-        $$
-        </div>
-      </div>
       <div class="detail-ins">
-        <div class="detail-music">
+        <div class="detail-music music-fancy">
           <div class="mask">
           </div>
           <div class="music-title">音乐偏好</div>
