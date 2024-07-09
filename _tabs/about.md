@@ -93,10 +93,10 @@ author: rainsin
    </div>
    <div class="age">
     <div class="age-class">
-      做的事
+      喜欢
     </div>
     <div class="age-staff">
-      思考
+      深深的思考
     </div>
    </div>
   </div>
