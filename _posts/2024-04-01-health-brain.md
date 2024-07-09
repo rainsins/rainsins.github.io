@@ -1,7 +1,7 @@
 ---
 title: 「转载」死宅更容易变傻？
-author: quantum
-date: 2024-01-01 23:44:10 +0800
+author: Qbit
+date: 2024-04-01 23:44:10 +0800
 categories: [健康, 转载]
 tags: [健康]
 pin: false
@@ -23,7 +23,7 @@ favicon: heart
 post: true
 description: 「转载」死宅更容易变傻？
 keywords: rainsin, blog, 健康
-author: rainsin
+author: Qbit
 ---
   
 Science上的一项最新研究[^paper]发现，不爱运动，大脑会更加缺氧！  
@@ -107,7 +107,7 @@ Science上的一项最新研究[^paper]发现，不爱运动，大脑会更加�
   
 研究者们将小鼠分为三组，分别在KX麻醉状态下、清醒静止状态下和清醒运动状态下进行实验，分析了在不同状态下收集的数据，比较了缺氧口袋的数量、覆盖面积、持续时间和大小。  
   
-他们发现，**在运动状态下的小鼠大脑皮层中，缺氧口袋的数量和影响范围显著减少**，减少幅度约为 $ 52% $。  
+他们发现，**在运动状态下的小鼠大脑皮层中，缺氧口袋的数量和影响范围显著减少**，减少幅度约为52%。  
   
 ![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUFZBN2VQSkNVUnlzaHRId1E_ZT1tZGVKbVU.png)  
   
