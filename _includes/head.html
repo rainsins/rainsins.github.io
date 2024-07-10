@@ -10,6 +10,10 @@
   <script src="https://{{ site.js_cdn }}/npm/@babel/standalone@7.24.7/babel.min.js"></script>
   {% endif %}
 
+  {% if page.anime %}
+  <script src="https://{{ site.js_cdn3 }}/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  {% endif %}
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
@@ -129,9 +133,10 @@
                 admin: '站长',
                 level0: '素人',
                 level1: '企划',
-                level0: '专属',
-                level0: '双专属',
-                level0: '三社共有',
+                level2: '企划专属',
+                level3: '专属',
+                level4: '双专属',
+                level5: '三社共有'
               },
               dark: 'html[data-mode="dark"]',
               login: 'disable',
@@ -196,8 +201,8 @@
   <script src="/assets/links/linksdata.js"></script>
   {% endif %}
 
-  {% if page.anime %}
-  <script src="https://{{ site.js_cdn }}/npm/animejs@3.2.2/lib/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% if page.animatecss %}
+  <link rel="stylesheet" href="https://{{ site.js_cdn3 }}/npm/animate.css@4.1.1/animate.min.css">
   {% endif %}
   
   {% capture seo_tags %}

@@ -19,39 +19,6 @@
   
 window.load_event = {
   ...window.load_event,
-  plots: () => {
-    function plot() {
-      functionPlot({
-        target: "#root",
-        width: $('#root').width(),
-        height: $('#root').width() / 1.77,
-        xAxis: {
-          label: "x - axis",
-          domain: [-4, 4]
-        },
-        yAxis: {
-          label: "y - axis"
-        },
-        grid: true,
-        data: [
-          {
-            fn: "(0.64*sqrt(abs(x))-0.8+1.2^abs(x)*cos(200*x))*sqrt(cos(x))",
-            graphType: "polyline",
-            color: "#FF0000",
-            range: [-2, 2],
-          }
-        ]
-      });
-    }
-
-    $(document).ready(function () {
-      plot();
-    });
-
-    $(window).resize(function () {
-      plot();
-    });
-  },
 
     hello: ()=>{
     let click = true;

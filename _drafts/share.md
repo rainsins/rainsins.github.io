@@ -25,7 +25,7 @@ author: rainsin
 <link rel="stylesheet" href="/assets/share/share.css"/>
 <link rel="stylesheet" href="/assets/share/cube.css"/>
 <link rel="stylesheet" href="/assets/chat/chat.css"/>
-<!-- <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> -->
+<!-- <script src="https://gcore.jsdelivr.net/npm/latex.js/dist/latex.js"></script> -->
 
 <!-- <script>
   MathJax = {
@@ -197,21 +197,3 @@ window.load_event = {
 
 
 <script type="text/babel" data-type="module" src="/assets/share/component/cube.js"></script>
-
-
-<!-- <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="/assets/js/md5.min.js"></script> -->
-<!-- <script defer>
-let gitalk = new Gitalk({
-  clientID: '8609fa79e19dadf4a8fb',
-  clientSecret: '602d1db1d4f0cf81d602ead9958254b0d0440117',
-  repo: 'rainsins.github.io',
-  owner: 'rainsins',
-  admin: ['rainsins'],
-  id: md5(location.pathname),
-  distractionFreeMode: true  
-});
-gitalk.render('gitalk-container');
-</script> -->

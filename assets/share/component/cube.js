@@ -108,7 +108,7 @@ function Cube() {
             });
             
             const img_sty = {
-                backgroundImage: datas.img == "" ? `url(https://cdn.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/${algType}/${str}.svg)` : `url(${datas.img})`,
+                backgroundImage: datas.img == "" ? `url(https://jsdelivr.b-cdn.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/${algType}/${str}.svg)` : `url(${datas.img})`,
             };
             
             return (

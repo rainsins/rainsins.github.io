@@ -14,6 +14,7 @@ toc: false
 forbid: true
 comments: true
 anime: true
+animatecss: true
 
 favicon: individual
 
@@ -48,12 +49,6 @@ author: rainsin
     </div>
   </div>
 </div>
-
-
-<link
-    rel="stylesheet"
-    href="https://cdn.staticfile.net/animate.css/4.1.1/animate.min.css"
-  />
 
 ## ✍️ 关于我
 
@@ -145,7 +140,7 @@ author: rainsin
 
 <div id="av-box"></div>
 
-<link rel="stylesheet" href="/assets/about/about.css">
+<link rel="stylesheet" href="/assets/about/about-min.css">
 
 ## 👻关于本站
 
@@ -174,15 +169,15 @@ author: rainsin
   网站有些页面没有进行移动端优化，请使用PC访问。
   </div>
   <div>
-  内容如有侵权，请联系我<span>mail@rainsin.cn</span>删除。
+  内容如有侵权，请联系我<span>1820278582@qq.com</span>删除。
   </div>
 </div>
 
 ## 🌁BANNER
 
-<img class="blog_banner" src="https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/header_.webp" alt="blog"/>
+<img class="blog_banner" src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUFZPVjZxUmVfeWxCUlM4TkE_ZT1CZWVxYWY.webp" alt="blog"/>
 
-<script src="/assets/about/about.js" defer></script>
+<script src="/assets/about/about-min.js" defer></script>
 <script type="text/babel" src="/assets/about/components/art.js"></script>
 
 <!--
@@ -192,22 +187,3 @@ author: rainsin
 <script type="text/babel" src="/assets/about/components/play.js"></script>
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
-
-
-<!-- <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="/assets/js/md5.min.js"></script> -->
-
-<!-- <script defer>
-let gitalk = new Gitalk({
-  clientID: '8609fa79e19dadf4a8fb',
-  clientSecret: '602d1db1d4f0cf81d602ead9958254b0d0440117',
-  repo: 'rainsins.github.io',
-  owner: 'rainsins',
-  admin: ['rainsins'],
-  id: md5(location.pathname),
-  distractionFreeMode: true  
-});
-gitalk.render('gitalk-container');
-</script> -->
