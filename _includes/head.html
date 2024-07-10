@@ -69,7 +69,7 @@
 
   <link
     rel="stylesheet"
-    href="https://{{ site.js_cdn }}/npm/@waline/client@3.3.0/dist/waline.min.css"
+    href="https://{{ site.js_cdn1 }}/npm/@waline/client@3.3.0/dist/waline.min.css"
   />
 
   {% if page.comments %}
@@ -99,19 +99,20 @@
               serverURL: 'https://waline.rainsin.cn',
               emoji: [
                 '//{{ site.js_cdn }}/npm/sticker-heo@2022.7.5/Sticker-100',
-                '//unpkg.com/@waline/emojis@1.2.0/weibo',
-                '//unpkg.com/@waline/emojis@1.2.0/bmoji',
-                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+                '//{{ site.js_cdn3 }}/gh/walinejs/emojis@1.2.0/weibo',
+                '//{{ site.js_cdn1 }}/gh/walinejs/emojis@1.2.0/bilibili',
+                '//{{ site.js_cdn2 }}/gh/walinejs/emojis@1.2.0/tieba',
+                '//{{ site.js_cdn3 }}/gh/walinejs/emojis@1.2.0/tw'
               ],
               reaction: [
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/正确的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/错误的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/小丑的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/满昏的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/不错的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/不堪入目.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/超逊的.png',
-                'https://fastly.jsdelivr.net/gh/yurainsin/react/发烧的.png',
+                'https://{{ site.js_cdn }}/gh/yurainsin/react/正确的.png',
+                'https://{{ site.js_cdn1 }}/gh/yurainsin/react/错误的.png',
+                'https://{{ site.js_cdn2 }}/gh/yurainsin/react/小丑的.png',
+                'https://{{ site.js_cdn3 }}/gh/yurainsin/react/满昏的.png',
+                'https://{{ site.js_cdn }}/gh/yurainsin/react/不错的.png',
+                'https://{{ site.js_cdn1 }}/gh/yurainsin/react/不堪入目.png',
+                'https://{{ site.js_cdn2 }}/gh/yurainsin/react/超逊的.png',
+                'https://{{ site.js_cdn3 }}/gh/yurainsin/react/发烧的.png',
               ],
               pageview: true,
               locale:{
@@ -159,23 +160,23 @@
   {% endif %}
 
   {% if page.video %}
-  <script src="https://{{ site.js_cdn }}/npm/artplayer@5.1.6/dist/artplayer.min.js"></script>
-  <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
+  <script src="https://{{ site.js_cdn2 }}/npm/artplayer@5.1.6/dist/artplayer.min.js"></script>
+  <script src="https://{{ site.js_cdn2 }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   {% endif %}
 
   {% if page.music %}
     <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/aplayer@1.10.1/dist/APlayer.min.css">
-    <script src="https://{{ site.js_cdn }}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://{{ site.js_cdn }}/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <script src="https://{{ site.js_cdn3 }}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://{{ site.js_cdn3 }}/npm/meting@2.0.1/dist/Meting.min.js"></script>
   {% endif %}
 
   {% if page.jquery %}
-    <script src="https://{{ site.js_cdn }}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://{{ site.js_cdn3 }}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
   {% if page.mathpolt %}
-    <script src="https://{{ site.js_cdn }}/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script src="https://{{ site.js_cdn }}/npm/function-plot@1.25.0/dist/function-plot.min.js"></script>
+    <script src="https://{{ site.js_cdn3 }}/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://{{ site.js_cdn3 }}/npm/function-plot@1.25.0/dist/function-plot.min.js"></script>
   {% endif %}
 
   {% if page.cube %}
@@ -188,7 +189,7 @@
   {% endif %}
 
   {% if page.require %}
-  <script src="https://testingcf.jsdelivr.net/npm/requirejs@2.3.6/require.min.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/requirejs@2.3.6/require.min.js"></script>
   {% endif %}
 
   {% if page.linksdata %}
