@@ -6,8 +6,8 @@
   {% endunless %}
 
   {% if page.babel %}
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/babel-polyfill/7.12.1/polyfill.min.js"></script>
-  <script src="https://cdn.staticfile.net/babel-standalone/7.23.8/babel.min.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/@babel/polyfill@7.12.1/dist/polyfill.min.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/@babel/standalone@7.24.7/babel.min.js"></script>
   {% endif %}
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -69,7 +69,7 @@
 
   <link
     rel="stylesheet"
-    href="https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css"
+    href="https://{{ site.js_cdn }}/npm/@waline/client@3.3.0/dist/waline.min.css"
   />
 
   {% if page.comments %}
@@ -90,7 +90,7 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  import { init } from 'https://{{ site.js_cdn }}/npm/@waline/client@3.3.0/dist/waline.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
@@ -98,14 +98,39 @@
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
               emoji: [
+                '//{{ site.js_cdn }}/npm/sticker-heo@2022.7.5/Sticker-100',
                 '//unpkg.com/@waline/emojis@1.2.0/weibo',
                 '//unpkg.com/@waline/emojis@1.2.0/bmoji',
                 '//unpkg.com/@waline/emojis@1.2.0/tieba',
               ],
-              reaction: true,
+              reaction: [
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/正确的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/错误的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/小丑的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/满昏的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/不错的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/不堪入目.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/超逊的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/发烧的.png',
+              ],
               pageview: true,
               locale:{
                 placeholder: '唠唠嗑（评论审核后可见）',
+                reactionTitle: '你是故意找茬是不是啊？',
+                reaction0: '正确的',
+                reaction1: '错误的',
+                reaction2: '小丑的',
+                reaction3: '满昏的',
+                reaction4: '不错的',
+                reaction5: '菜鸡的',
+                reaction6: '超逊的',
+                reaction7: '发烧的',
+                admin: '站长',
+                level0: '素人',
+                level1: '企划',
+                level0: '专属',
+                level0: '双专属',
+                level0: '三社共有',
               },
               dark: 'html[data-mode="dark"]',
               login: 'disable',
@@ -129,28 +154,28 @@
   </script>
 
   {% if page.react %}
-    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdn.staticfile.net/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
   {% endif %}
 
   {% if page.video %}
-  <script src="https://cdn.staticfile.net/artplayer/5.1.1/artplayer.min.js"></script>
-  <script src="https://unpkg.com/artplayer-plugin-danmuku/dist/artplayer-plugin-danmuku.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/artplayer@5.1.6/dist/artplayer.min.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   {% endif %}
 
   {% if page.music %}
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/meting/2.0.1/Meting.min.js"></script>
+    <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://{{ site.js_cdn }}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/meting@2.0.1/dist/Meting.min.js"></script>
   {% endif %}
 
   {% if page.jquery %}
-    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
   {% if page.mathpolt %}
-    <script src="https://cdn.bootcdn.net/ajax/libs/d3/7.8.5/d3.min.js"></script>
-    <script src="https://cdn.staticfile.net/function-plot/1.24.0/function-plot.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://{{ site.js_cdn }}/npm/function-plot@1.25.0/dist/function-plot.min.js"></script>
   {% endif %}
 
   {% if page.cube %}
@@ -163,7 +188,7 @@
   {% endif %}
 
   {% if page.require %}
-  <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  <script src="https://testingcf.jsdelivr.net/npm/requirejs@2.3.6/require.min.js"></script>
   {% endif %}
 
   {% if page.linksdata %}
@@ -171,7 +196,7 @@
   {% endif %}
 
   {% if page.anime %}
-  <script src="https://cdn.staticfile.net/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://{{ site.js_cdn }}/npm/animejs@3.2.2/lib/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
   
   {% capture seo_tags %}

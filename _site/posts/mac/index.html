@@ -207,7 +207,7 @@
 
   <link
     rel="stylesheet"
-    href="https://cdn.bootcdn.net/ajax/libs/waline/3.2.6/waline.min.css"
+    href="https://jsd.onmicrosoft.cn/npm/@waline/client@3.3.0/dist/waline.min.css"
   />
 
   
@@ -228,7 +228,7 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  import { init } from 'https://jsd.onmicrosoft.cn/npm/@waline/client@3.3.0/dist/waline.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
@@ -236,14 +236,39 @@
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
               emoji: [
+                '//jsd.onmicrosoft.cn/npm/sticker-heo@2022.7.5/Sticker-100',
                 '//unpkg.com/@waline/emojis@1.2.0/weibo',
                 '//unpkg.com/@waline/emojis@1.2.0/bmoji',
                 '//unpkg.com/@waline/emojis@1.2.0/tieba',
               ],
-              reaction: true,
+              reaction: [
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/正确的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/错误的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/小丑的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/满昏的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/不错的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/不堪入目.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/超逊的.png',
+                'https://fastly.jsdelivr.net/gh/yurainsin/react/发烧的.png',
+              ],
               pageview: true,
               locale:{
                 placeholder: '唠唠嗑（评论审核后可见）',
+                reactionTitle: '你是故意找茬是不是啊？',
+                reaction0: '正确的',
+                reaction1: '错误的',
+                reaction2: '小丑的',
+                reaction3: '满昏的',
+                reaction4: '不错的',
+                reaction5: '菜鸡的',
+                reaction6: '超逊的',
+                reaction7: '发烧的',
+                admin: '站长',
+                level0: '素人',
+                level1: '企划',
+                level0: '专属',
+                level0: '双专属',
+                level0: '三社共有',
               },
               dark: 'html[data-mode="dark"]',
               login: 'disable',
@@ -345,8 +370,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" >
       <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
     
-      <link rel="preconnect" href="https://cdn.jsdelivr.net" >
-      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+      <link rel="preconnect" href="https://jsd.onmicrosoft.cn" >
+      <link rel="dns-prefetch" href="https://jsd.onmicrosoft.cn" >
     
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
@@ -356,20 +381,20 @@
   
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
 
   <link rel="stylesheet" href="/assets/css/style.css">
 
   
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/tocbot/4.21.1/tocbot.min.css">
+    <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/tocbot@4.28.2/dist/tocbot.min.css">
   
 
   
     <!-- Manific Popup -->
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/magnific-popup@1.2.0/dist/magnific-popup.min.css">
   
 
   <!-- 流量分析 -->
@@ -565,7 +590,6 @@
       
     
       
-          <!-- 
 
       
         <a
@@ -580,6 +604,29 @@
           
         >
           <i class="fas fa-envelope"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="https://mastodon.social/@rainsin"
+          aria-label="mastodon"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer me"
+          
+        >
+          <i class="fab fa-mastodon"></i>
         </a>
       
     
@@ -2153,19 +2200,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -2502,11 +2549,11 @@ USB已经定制好了，给蓝牙预留一个USB端口
 
   
     <a
-      href="/posts/lindan/"
+      href="/posts/health-brain/"
       class="btn btn-outline-primary"
       prompt="下一篇"
     >
-      <p>绝佳的学习视频：2014年丹麦公开赛林丹VS周天成低视角高清录像</p>
+      <p>「转载」死宅更容易变傻？</p>
     </a>
   
 </div>
@@ -3282,47 +3329,47 @@ USB已经定制好了，给蓝牙预留一个USB端口
 
 
   
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   
 
   
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   
 
   
-    <script src="https://cdn.staticfile.net/simple-jekyll-search/1.9.2/simple-jekyll-search.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
   
 
   
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
   
 
   
-    <script src="https://cdn.bootcdn.net/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/magnific-popup@1.2.0/dist/jquery.magnific-popup.min.js"></script>
   
 
   
-    <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
   
 
   
-    <script src="https://cdn.staticfile.net/dayjs/1.11.10/dayjs.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/dayjs@1.11.11/dayjs.min.js"></script>
   
 
   
-    <script src="https://cdn.staticfile.net/dayjs/1.11.10/locale/zh.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/dayjs@1.11.11/locale/zh.min.js"></script>
   
 
   
-    <script src="https://cdn.staticfile.net/dayjs/1.11.10/plugin/relativeTime.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/dayjs@1.11.11/plugin/relativeTime.js"></script>
   
 
   
-    <script src="https://cdn.staticfile.net/dayjs/1.11.10/plugin/localizedFormat.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/dayjs@1.11.11/plugin/localizedFormat.js"></script>
   
 
   
-    <script src="https://cdn.bootcdn.net/ajax/libs/tocbot/4.21.1/tocbot.min.js"></script>
+    <script src="https://jsd.onmicrosoft.cn/npm/tocbot@4.28.2/dist/tocbot.min.js"></script>
   
 
 

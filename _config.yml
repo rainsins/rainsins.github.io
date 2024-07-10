@@ -28,6 +28,8 @@ tagline: 如人饮水，冷暖自知。 # it will display as the sub-title
 
 author: rainsin
 
+js_cdn: jsd.onmicrosoft.cn
+
 description: >- # used by seo meta and the atom feed
   rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）
 

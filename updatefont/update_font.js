@@ -75,7 +75,7 @@ let deleteFiles = function (marker) {
 };
 
 
-deleteFiles();
+// deleteFiles();
 
 fs.readFile('./updatefont/font.txt',function(err,data){
     if(err){
@@ -121,20 +121,20 @@ fs.readFile('./updatefont/font.txt',function(err,data){
 
                         fs.writeFileSync(`./out_font/${maps[key]}-${time}.woff2`, ttf2woff2(input));
 
-                        cos.uploadFile(
-                            {
-                              Bucket: Bucket,
-                              Region: Region,
-                              Key: `/rainsin-blog/fonts/site_use/${maps[key]}-${time}.woff2`,
-                              FilePath: `./out_font/${maps[key]}-${time}.woff2`, // 本地文件地址，需自行替换
-                              SliceSize: 1024 * 1024 * 5, // 触发分块上传的阈值，超过5MB使用分块上传，非必须
-                            },
-                            function (err, data) {
-                              console.log(err, data);
-                            }
-                        );
+                        // cos.uploadFile(
+                        //     {
+                        //       Bucket: Bucket,
+                        //       Region: Region,
+                        //       Key: `/rainsin-blog/fonts/site_use/${maps[key]}-${time}.woff2`,
+                        //       FilePath: `./out_font/${maps[key]}-${time}.woff2`, // 本地文件地址，需自行替换
+                        //       SliceSize: 1024 * 1024 * 5, // 触发分块上传的阈值，超过5MB使用分块上传，非必须
+                        //     },
+                        //     function (err, data) {
+                        //       console.log(err, data);
+                        //     }
+                        // );
 
-                        let texts = `@font-face {font-family: "筑紫A"; src:url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/site_use/${maps[key]}-${time}.woff2") format('woff2'); font-weight: ${maps[key]};} `
+                        let texts = `@font-face {font-family: "筑紫A"; src:url("https://jsdelivr.b-cdn.net/gh/rainsins.github.io/out_font/${maps[key]}-${time}.woff2") format('woff2'); font-weight: ${maps[key]};} `
 
                         fs.writeFileSync('./assets/css/font.css', texts, { flag: 'a+' });
                     }
