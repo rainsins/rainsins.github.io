@@ -72,7 +72,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
-} 
+}
 
 .lindan-reward tbody tr td:nth-child(1){
     vertical-align: middle;
