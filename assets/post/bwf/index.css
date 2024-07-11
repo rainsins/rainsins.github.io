@@ -4,7 +4,7 @@
     background: #f0f0f0;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    column-gap: 16px;
+    gap: 16px;
 }
 #imagine .table-wrapper{
     margin-bottom: 0;
@@ -76,4 +76,10 @@
 
 .lindan-reward tbody tr td:nth-child(1){
     vertical-align: middle;
+}
+
+@media screen and (max-width: 1344px){
+    #imagine{
+        grid-template-columns: 1fr;
+    }
 }
