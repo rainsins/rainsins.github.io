@@ -136,7 +136,7 @@ author: rainsin
 > 4. 网站描述：（可选）
 {: .prompt-info }
 
-> 将信息发到这个邮箱里mail@rainsin.cn，或者下面评论。
+> 将信息发到这个邮箱里1820278582@qq.com，或者下面评论。
 {: .prompt-tip }
 
 ## 🔗我的链接
@@ -144,7 +144,7 @@ author: rainsin
 > 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
 > 3. 网站头像：https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp 或 https://api.rainsin.cn/avatar.webp
-> 4. 网站描述：修心强身，乐此不疲。
+> 4. 网站描述：如人饮水，冷暖自知。
 {: .prompt-info }
 
 ## 💣须知
@@ -153,18 +153,6 @@ author: rainsin
 > 2. 申请链接前请先添加本站链接（全站友链请说明）。
 {: .prompt-warning }
 
-<!-- <script defer>
-let gitalk = new Gitalk({
-  clientID: '8609fa79e19dadf4a8fb',
-  clientSecret: '602d1db1d4f0cf81d602ead9958254b0d0440117',
-  repo: 'rainsins.github.io',
-  owner: 'rainsins',
-  admin: ['rainsins'],
-  id: md5(location.pathname),
-  distractionFreeMode: true  
-});
-gitalk.render('gitalk-container');
-</script> -->
 
 <script type="text/babel" defer>
   function LinksItem({data}) {
