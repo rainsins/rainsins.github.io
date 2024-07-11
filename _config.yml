@@ -28,10 +28,17 @@ tagline: 如人饮水，冷暖自知。 # it will display as the sub-title
 
 author: rainsin
 
-js_cdn: jsdelivr.b-cdn.net
+js_cdn: cdn.jsdmirror.com
 js_cdn1: quantil.jsdelivr.net
 js_cdn2: testingcf.jsdelivr.net
 js_cdn3: gcore.jsdelivr.net
+js_cdn4: fastly.jsdelivr.net
+unpkg_cdn: npm.elemecdn.com
+unpkg_cdn1: unpkg.zhimg.com
+unpkg_cdn2: code.bdstatic.com/npm
+unpkg_cdn3: s4.zstatic.net/npm
+cdnjs_cdn: mirrors.sustech.edu.cn/cdnjs
+cdnjs_cdn1: s4.zstatic.net
 
 description: >- # used by seo meta and the atom feed
   rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）

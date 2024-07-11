@@ -6,12 +6,12 @@
   {% endunless %}
 
   {% if page.babel %}
-  <script src="https://{{ site.js_cdn }}/npm/@babel/polyfill@7.12.1/dist/polyfill.min.js"></script>
-  <script src="https://{{ site.js_cdn }}/npm/@babel/standalone@7.24.7/babel.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
   {% endif %}
 
   {% if page.anime %}
-  <script src="https://{{ site.js_cdn3 }}/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn3 }}/animejs@3.2.2/lib/anime.min.js"></script>
   {% endif %}
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -73,7 +73,7 @@
 
   <link
     rel="stylesheet"
-    href="https://{{ site.js_cdn1 }}/npm/@waline/client@3.3.0/dist/waline.min.css"
+    href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.min.css"
   />
 
   {% if page.comments %}
@@ -94,7 +94,7 @@
   </script> -->
 
 <script type="module">
-  import { init } from 'https://{{ site.js_cdn }}/npm/@waline/client@3.3.0/dist/waline.js';
+  import { init } from 'https://{{ site.cdnjs_cdn }}/ajax/libs/waline/3.3.0/waline.min.js';
   window.load_event= {
         ...window.load_event,
         comments: () => {
@@ -102,18 +102,18 @@
               el: '#tcomment',
               serverURL: 'https://waline.rainsin.cn',
               emoji: [
-                '//{{ site.js_cdn }}/npm/sticker-heo@2022.7.5/Sticker-100',
+                '//{{ site.js_cdn4 }}/npm/sticker-heo@2022.7.5/Sticker-100',
                 '//{{ site.js_cdn3 }}/gh/walinejs/emojis@1.0.0/weibo',
                 '//{{ site.js_cdn1 }}/gh/walinejs/emojis@1.0.0/bilibili',
                 '//{{ site.js_cdn2 }}/gh/walinejs/emojis@1.0.0/tieba',
                 '//{{ site.js_cdn3 }}/gh/walinejs/emojis@1.0.0/tw',
               ],
               reaction: [
-                'https://{{ site.js_cdn }}/gh/yurainsin/react/正确的.png',
+                'https://{{ site.js_cdn4 }}/gh/yurainsin/react/正确的.png',
                 'https://{{ site.js_cdn1 }}/gh/yurainsin/react/错误的.png',
                 'https://{{ site.js_cdn2 }}/gh/yurainsin/react/小丑的.png',
                 'https://{{ site.js_cdn3 }}/gh/yurainsin/react/满昏的.png',
-                'https://{{ site.js_cdn }}/gh/yurainsin/react/不错的.png',
+                'https://{{ site.js_cdn4 }}/gh/yurainsin/react/不错的.png',
                 'https://{{ site.js_cdn1 }}/gh/yurainsin/react/不堪入目.png',
                 'https://{{ site.js_cdn2 }}/gh/yurainsin/react/超逊的.png',
                 'https://{{ site.js_cdn3 }}/gh/yurainsin/react/发烧的.png',
@@ -160,28 +160,28 @@
   </script>
 
   {% if page.react %}
-    <script src="https://{{ site.js_cdn }}/npm/react@18.3.1/umd/react.production.min.js"></script>
-    <script src="https://{{ site.js_cdn }}/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
   {% endif %}
 
   {% if page.video %}
-  <script src="https://{{ site.js_cdn2 }}/npm/artplayer@5.1.6/dist/artplayer.min.js"></script>
-  <script src="https://{{ site.js_cdn2 }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn3 }}/artplayer@5.1.6/dist/artplayer.js"></script>
+  <script src="https://{{ site.unpkg_cdn3 }}/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.js"></script>
   {% endif %}
 
   {% if page.music %}
-    <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/aplayer@1.10.1/dist/APlayer.min.css">
-    <script src="https://{{ site.js_cdn3 }}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script src="https://{{ site.js_cdn3 }}/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <link rel="stylesheet" href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
   {% endif %}
 
   {% if page.jquery %}
-    <script src="https://{{ site.js_cdn3 }}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
   {% if page.mathpolt %}
-    <script src="https://{{ site.js_cdn3 }}/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script src="https://{{ site.js_cdn3 }}/npm/function-plot@1.25.0/dist/function-plot.min.js"></script>
+    <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="https://{{ site.unpkg_cdn3 }}/function-plot@1.25.0/dist/function-plot.js"></script>
   {% endif %}
 
   {% if page.cube %}
@@ -194,7 +194,7 @@
   {% endif %}
 
   {% if page.require %}
-  <script src="https://{{ site.js_cdn }}/npm/requirejs@2.3.6/require.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn3 }}/requirejs@2.3.6/require.min.js"></script>
   {% endif %}
 
   {% if page.linksdata %}
@@ -202,7 +202,7 @@
   {% endif %}
 
   {% if page.animatecss %}
-  <link rel="stylesheet" href="https://{{ site.js_cdn3 }}/npm/animate.css@4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css">
   {% endif %}
   
   {% capture seo_tags %}
