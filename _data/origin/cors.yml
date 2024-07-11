@@ -9,18 +9,6 @@ cdns:
   # jsDelivr CDN
   - url: https://gcore.jsdelivr.net
 
-js_cdn: cdn.jsdmirror.com
-js_cdn1: quantil.jsdelivr.net
-js_cdn2: testingcf.jsdelivr.net
-js_cdn3: gcore.jsdelivr.net
-js_cdn4: fastly.jsdelivr.net
-unpkg_cdn: npm.elemecdn.com
-unpkg_cdn1: unpkg.zhimg.com
-unpkg_cdn2: code.bdstatic.com/npm
-unpkg_cdn3: s4.zstatic.net/npm
-cdnjs_cdn: mirrors.sustech.edu.cn/cdnjs
-cdnjs_cdn1: s4.zstatic.net
-
 # fonts
 
 webfonts: https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap
@@ -28,44 +16,44 @@ webfonts: https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:w
 # Libraries
 
 jquery:
-  js: https://${unpkg_cdn3}/jquery@3.7.1/dist/jquery.min.js
+  js: https://s4.zstatic.net/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
-  css: https://${cdnjs_cdn}/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css
-  js: https://${cdnjs_cdn}/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js
+  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css
+  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js
 
 toc:
-  css: https://${cdnjs_cdn}/ajax/libs/tocbot/4.28.2/tocbot.min.css
-  js: https://${cdnjs_cdn}/ajax/libs/tocbot/4.28.2/tocbot.min.js
+  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/tocbot/4.28.2/tocbot.min.css
+  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/tocbot/4.28.2/tocbot.min.js
 
 fontawesome:
-  css: https://${cdnjs_cdn}/ajax/libs/font-awesome/6.5.2/css/all.min.css
+  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.5.2/css/all.min.css
 
 search:
-  js: https://${unpkg_cdn3}/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
+  js: https://s4.zstatic.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
 
 mermaid:
-  js: https://${cdnjs_cdn}/ajax/libs/mermaid/10.9.1/mermaid.min.js
+  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/mermaid/10.9.1/mermaid.min.js
 
 dayjs:
   js:
-    common: https://${cdnjs_cdn}/ajax/libs/dayjs/1.11.11/dayjs.min.js
-    locale: https://${cdnjs_cdn}/ajax/libs/dayjs/1.11.11/locale/:LOCALE.min.js
-    relativeTime: https://${cdnjs_cdn}/ajax/libs/dayjs/1.11.11/plugin/relativeTime.js
-    localizedFormat: https://${cdnjs_cdn}/ajax/libs/dayjs/1.11.11/plugin/localizedFormat.js
+    common: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/dayjs.min.js
+    locale: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/locale/:LOCALE.min.js
+    relativeTime: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/plugin/relativeTime.js
+    localizedFormat: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/plugin/localizedFormat.js
 
 magnific-popup:
-  css: https://${cdnjs_cdn}/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css
-  js: https://${cdnjs_cdn1}/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js
+  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css
+  js: https://s4.zstatic.net/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js
 
 lazysizes:
-  js: https://${cdnjs_cdn}/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
+  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
 
 clipboard:
-  js: https://${unpkg_cdn}/clipboard@2.0.11/dist/clipboard.min.js
+  js: https://npm.elemecdn.com/clipboard@2.0.11/dist/clipboard.min.js
 
 polyfill:
   js: https://polyfill.io/v3/polyfill.min.js?features=es6
 
 mathjax:
-  js: https://${unpkg_cdn}/mathjax@3.2.2/es5/tex-chtml.js
+  js: https://npm.elemecdn.com/mathjax@3.2.2/es5/tex-chtml.js
