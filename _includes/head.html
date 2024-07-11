@@ -164,6 +164,10 @@
     <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
+  {% if page.chart %}
+    <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
+  {% endif %}
+
   {% if page.mathpolt %}
     <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
     <script src="https://{{ site.unpkg_cdn3 }}/function-plot@1.25.0/dist/function-plot.js"></script>

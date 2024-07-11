@@ -9,3 +9,6 @@ node_modules
 pnpm-lock.yaml
 updatefont/config.json
 _site/
+out_font/
+post_font/
+main_font/

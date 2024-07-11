@@ -1,6 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://blog.rainsin.cn/sitemap.xml
-Sitemap: https://blog.rainsin.cn/sitemap.html
-Sitemap: https://blog.rainsin.cn/sitemap.txt
