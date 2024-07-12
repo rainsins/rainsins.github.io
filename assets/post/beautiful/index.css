@@ -123,6 +123,9 @@
 
 .is-show-mm{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .botton-ques-box{
