@@ -1,5 +1,5 @@
 ---
-title: 使用Opencore引导多个系统
+title: 「教程」使用Opencore引导多个系统
 author: rainsin
 date: 2023-07-02 12:23:00 +0800
 categories: [黑苹果, EFI]
