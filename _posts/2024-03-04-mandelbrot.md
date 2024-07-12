@@ -1,7 +1,7 @@
 ---
 title: 分形图形的一个项目（曼德布罗集和朱莉娅集）
 author: rainsin
-date: 2024-6-24 16:32:10 +0800
+date: 2024-03-04 16:32:10 +0800
 categories: [混沌, 分形几何]
 tags: [混沌]
 pin: false
