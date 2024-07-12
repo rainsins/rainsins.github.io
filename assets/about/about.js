@@ -20,6 +20,29 @@
 window.load_event = {
   ...window.load_event,
 
+//   musics: () => {
+//     const ap = new APlayer({
+//         container: document.getElementById('aplayer'),
+//         mini: false,
+//         autoplay: false,
+//         theme: '#FADFA3',
+//         preload: 'auto',
+//         volume: 0.7,
+//         mutex: true,
+//         lrcType: 3,
+//         audio: [
+//             {
+//                 name: 'Brave Love,TIGA (PIANO VERSION)',
+//                 artist: '矢野立美',
+//                 url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNSMGFfNGJhM1FzT1ptX2c_ZT1lN2Vmc1M.flac',
+//                 cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT1zOHNVSnk.jpg',
+//                 lrc: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNRREdydFhYNlBreEJBcmc_ZT1SSmZYUnM.lrc',
+//                 theme: '#2c9678'
+//             } 
+//         ]
+//     });
+// },
+
     hello: ()=>{
     let click = true;
     window.onload = () => {

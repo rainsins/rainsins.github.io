@@ -148,34 +148,15 @@ window.load_event = {
             volume: 0.7,
             mutex: true,
             lrcType: 3,
-            loop: 'all',
-            order: 'list',
             audio: [
                 {
-                    name: 'Honey honey',
-                    artist: '孙燕姿',
-                    url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0ZwalpubVJ4d1J6X3lkVUE_ZT11bm9GcWg.flac',
-                    cover: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/honey.webp',
-                    lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20Honey%20Honey.lrc',
+                    name: 'Brave Love,TIGA (PIANO VERSION)',
+                    artist: '矢野立美',
+                    url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNSMGFfNGJhM1FzT1ptX2c_ZT1lN2Vmc1M.flac',
+                    cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT1zOHNVSnk.jpg',
+                    lrc: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNRREdydFhYNlBreEJBcmc_ZT1SSmZYUnM.lrc',
                     theme: '#2c9678'
-                },
-                {
-                    name: '盛夏的果实',
-                    artist: '莫文蔚',
-                    url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0ZyT2pIWTRjNE5lZDVJZ1E_ZT1EYklCV3Q.flac',
-                    cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0Z5VzFqOXJuaGR2QmN3ZlE_ZT1EdVJDNUw.webp',
-                    lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E%20-%20%E8%8E%AB%E6%96%87%E8%94%9A.lrc',
-                    theme: '#2c9678'
-                },
-                {
-                    name: '愿望',
-                    artist: '胡彦斌',
-                    url: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0Y2VHo1SHhURzdwTEdHYVE_ZT1heng0VzM.flac',
-                    cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0Y3VjRDdEFCSVFOckY3Tmc_ZT1ycnAwdEw.jpeg',
-                    lrc: 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/%E9%9F%B3%E4%B9%90/%E6%84%BF%E6%9C%9B%20-%20%E8%83%A1%E5%BD%A6%E6%96%8C.lrc',
-                    theme: '#2c9678'
-                },
-                
+                } 
             ]
         });
     }

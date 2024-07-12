@@ -24,6 +24,10 @@ keywords: rainsin, about
 author: rainsin
 ---
 
+<script>
+  window.arr_audio = 0;
+</script>
+
 <div class="about-logo-box">
   <div class="about-logo">
     <div class="r logo-font" id="R-l">
@@ -122,6 +126,10 @@ author: rainsin
     </div>
 </div>
 
+##  🥹看见了，奥比克
+
+<div id="a-player"></div>
+
 ##  📴在玩的
 
 <div id="playing-box"></div>
@@ -141,12 +149,13 @@ author: rainsin
 <div id="av-box"></div>
 
 <link rel="stylesheet" href="/assets/about/about-min.css">
+<link rel="stylesheet" href="/assets/music/music-min.css">
 
 ## 👻关于本站
 
 <div class="about-site">
   <div>
-  使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<span>Chirpy</span>。
+  使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
   </div>
   <div>
   其中有些资源需使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>。
@@ -185,5 +194,7 @@ author: rainsin
 -->
 <script type="text/babel" src="/assets/about/components/devicehead.js"></script>
 <script type="text/babel" src="/assets/about/components/play.js"></script>
+
+<script type="text/babel" src="/assets/music/music.js"></script>
 
 <script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
