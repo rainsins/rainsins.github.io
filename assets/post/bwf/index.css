@@ -1,7 +1,6 @@
 #imagine{
     width: 100%;
-    padding: 12px;
-    background: #f0f0f0;
+    background: #f0f0f000;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 16px;
@@ -12,22 +11,24 @@
 }
 
 .left-lindan-able{
-    background: #ffffff;
+    background: var(--tb-even-bg);
     border-radius: 12px;
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    border: var(--box-border);
 }
 
 .right-lindan-able{
-    background: #ffffff;
+    background: var(--tb-even-bg);
     border-radius: 12px;
+    border: var(--box-border);
 }
 
 #imagine .table-wrapper>table tr{
     border-bottom: 0;
-    background: #ffffff;
+    background-color: unset;
 }
 #imagine .table-wrapper>table tr td{
     padding: .4rem .2rem;
@@ -82,4 +83,15 @@
     #imagine{
         grid-template-columns: 1fr;
     }
+}
+
+.lindan-reward tbody tr:nth-child(2n){
+    background-color: var(--tb-even-bg);
+}
+
+.lindan-reward{
+    background-color: unset;
+}
+.table>:not(caption)>*>*{
+    background-color: unset;
 }
