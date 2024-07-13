@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 16px;
+    margin-bottom: 20px;
 }
 #imagine .table-wrapper{
     margin-bottom: 0;
