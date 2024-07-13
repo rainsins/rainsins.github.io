@@ -5,6 +5,8 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
   {% if page.babel %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
