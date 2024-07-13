@@ -5,7 +5,7 @@ const audios = [
         "songName": "LOVE Theme from TIGA",
         "files": {
             "song": "https://api.rainsin.cn/music/post-about/tigo.ogg",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT15RFgweU8.jpg"
+            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNoZ0xac2QzUzFWOGRwNXc_ZT1DWVlDOE4.jpg"
         }
     },
     {
@@ -14,7 +14,7 @@ const audios = [
         "songName": "远き呼び声の彼方へ",
         "files": {
             "song": "https://api.rainsin.cn/music/post-about/%E5%91%BC.ogg",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNoZ0xac2QzUzFWOGRwNXc_ZT1DWVlDOE4.jpg"
+            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNlbFVRZUtzal9TaUphOEE_ZT1BU0c4bjk.jpg"
         }
     },
     {
@@ -23,7 +23,7 @@ const audios = [
         "songName": "安らぎを君に",
         "files": {
             "song": "https://api.rainsin.cn/music/post-about/%E5%AE%89.ogg",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNlbFVRZUtzal9TaUphOEE_ZT1BU0c4bjk.jpg"
+            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGcyam55bWZkWWFuWGFHd1E_ZT1MaGRidk0.jpg"
         }
     },
     {
@@ -41,7 +41,7 @@ const audios = [
         "songName": "Brave Love,TIGA(P V)",
         "files": {
             "song": "https://api.rainsin.cn/music/post-about/pv.ogg",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNkLWM4V3VjSEJfTmIyRnc_ZT11T1JDS3c.jpg"
+            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT15RFgweU8.jpg"
         }
     },
     {
@@ -58,40 +58,55 @@ const audios = [
 
 function MusicPlayers() {
     const [arr, setArr] = React.useState(-1);
+    const [isLoading, setIsLoading] = React.useState(false);
+
+    const pause_m = (audio_in, index) => {
+        audio_in.pause();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).removeClass('player-playing');
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-pause').hide();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-play').show();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-spinner').hide();
+        
+    }
+
+    const play_m = (audio_in, index) => {
+        audio_in.play();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).addClass('player-playing');
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-play').hide();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-pause').show();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-spinner').hide();
+    }
+
+    const load_m = (audio_in, index) => {
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).addClass('player-playing');
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-play').hide();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-pause').hide();
+        $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-spinner').show();
+        audio_in.oncanplaythrough = function (ev) {
+            play_m(audio_in, index);  
+            setIsLoading(false);
+        }
+    }
 
     const change_arr = (el, i) => {
         const audio_bt = document.getElementById('audio-obk');
 
         if (i == arr) {
             if (audio_bt.paused == false) {
-                audio_bt.pause();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).removeClass('player-playing');
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-pause').hide();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').show();
+                pause_m(audio_bt, i);
             } else {
-                audio_bt.play();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).addClass('player-playing');
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').hide();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-pause').show();
+                play_m(audio_bt, i);
             }
         } else {
             if (audio_bt.paused == false) {
-                audio_bt.pause();
-                $(`#a-player .player-music-card:nth-child(${arr + 1})`).removeClass('player-playing');
-                $(`#a-player .player-music-card:nth-child(${arr + 1})`).find('.fa-pause').hide();
-                $(`#a-player .player-music-card:nth-child(${arr + 1})`).find('.fa-play').show();
+                pause_m(audio_bt, arr);
                 audio_bt.src = audios[i].files.song;
-                audio_bt.play();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).addClass('player-playing');
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').hide();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-pause').show();
+                setIsLoading(true);
+                load_m(audio_bt, i);
             } else {
                 audio_bt.src = audios[i].files.song;
-                audio_bt.play();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).addClass('player-playing');
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').hide();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-pause').show();
-
+                setIsLoading(true);
+                load_m(audio_bt, i);
             }
         }
 
@@ -115,7 +130,8 @@ function MusicPlayers() {
                     <div className='player-artist'>{ e.artist}</div>
                 </div>
                 <i className="fa fa-solid fa-pause player-trigger" onClick={(el) => change_arr(el,i)} aria-hidden="true" data-id={i}></i>
-                <i className="fa fa-solid fa-play player-trigger" onClick={(el) => change_arr(el,i)} aria-hidden="true" data-id={i}></i>
+                <i className="fa fa-solid fa-play player-trigger" onClick={(el) => change_arr(el, i)} aria-hidden="true" data-id={i}></i>
+                <i className="fa fa-solid fa-spinner player-trigger player-loading" aria-hidden="true" data-id={i}></i>
             </div>
         );
     });
@@ -127,8 +143,18 @@ function MusicPlayers() {
         audio_bt.autoplay = false;
         arr_audio = 0;
 
+        audio_bt.onstalled = function (ev) {
+            swal('获取音频失败，可能网络有点问题或者我的服务有问题！');
+            $('.player-music-card').removeClass('player-playing');
+            $('.fa-play').show();
+            $('.fa-pause').hide();
+            $('.fa-spinner').hide();
+            audio_bt.pause();
+        }
+
         $('.fa-play').show();
         $('.fa-pause').hide();
+        $('.fa-spinner').hide();
     },[])
 
     return (
