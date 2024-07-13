@@ -34,6 +34,7 @@
 #imagine .table-wrapper>table tr td{
     padding: .4rem .2rem;
     font-size: 75%;
+    color: var(--text-color);
 }
 
 .right-lindan-able{
