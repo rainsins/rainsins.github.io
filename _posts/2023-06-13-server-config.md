@@ -5,7 +5,7 @@ date: 2023-06-10 11:33:00 +0800
 categories: [Server, 音视频]
 tags: [树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker, Bt, Bot]
 pin: false
-math: true
+math: false
 mermaid: true
 react: false
 video: false
@@ -103,10 +103,6 @@ register ./target/release/<repositories>
 #### 0.2.5 Oh-my-posh
 
 参考 [官方文档](https://ohmyposh.dev/docs/installation/linux) ，很详尽。
-
-效果：
-
-![Snipaste_2023-03-10_00-45-07.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/ca7064780eb43ded.png)
 
 ## 1 fstab文件的配置
 
@@ -226,8 +222,6 @@ windows用IPv6访问：
 dpkg -i emby-server-deb_4.7.11.0_arm64.deb //arm64架构
 dpkg -i emby-server-deb_4.7.11.0_amd64.deb //X64架构
 ```
-
-![Snipaste_2023-03-09_00-38-37.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/291deb91c4a9d86e.png)。
 
 
 ## 4 安装Docker
@@ -896,8 +890,6 @@ return [
 
 在浏览器中输入`http(s)://ip+port/install` 进行安装，第一步会检查环境是否配置完成，会显示未配置好的部分，根据它的提示配置好后第二步就填写MySQL的信息，最后完成。
 
-![Snipaste_2023-03-09_00-28-19.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/88bb1afa70d6db1c.png)。
-
 ## 14 博客安装*
 
 ```bash
@@ -1301,8 +1293,6 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
     
     qbittorrent的设置与transmission不一样，transmission直接输入脚本路径就行，qb的不一样
     
-    ![iShot_2023-03-13_14.24.20.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/3036f9fa90ef2b74.png)
-    
     ```bash
     bash /var/qb/btadd.sh "%N" "%F" "%R" "%D" "%C" "%Z" "%I" "%J"
     ```
@@ -1491,10 +1481,6 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
     ```
     
 
-#### 19.2.4 效果
-
-![iShot_2023-03-13_11.51.01.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/aa5482dfbccd27d2.png)
-
 #### 19.2.5 安装qBittorrent
 
 1. 安装add-apt-repository命令(非必需)
@@ -1598,10 +1584,6 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
     
 
 最后反向代理，完成。
-
-#### 19.2.6 效果
-
-![iShot_2023-03-13_11.52.49.png](https://photo.rainsin.cn:2000/LightPicture/2023/06/f0ad94fdc2a44d61.png)
 
 ## 20 设置clash代理
 

@@ -6,15 +6,15 @@ categories: [解决问题]
 tags: [解决问题]
 pin: false
 math: false
-react: true
+react: false
 mermaid: false
 video: true
 music: false
-cube: true
-babel: true
+cube: false
+babel: false
 
-mathpolt: true
-jquery: true
+mathpolt: false
+jquery: false
 forbid: true
 comments: true
 
