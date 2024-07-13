@@ -4,7 +4,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "LOVE Theme from TIGA",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNaTFNrMVlnNG1QNGRyUlE_ZT1UcmN6c3A.flac",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20LOVE%20Theme%20from%20TIGA%20M-2.flac",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT15RFgweU8.jpg"
         }
     },
@@ -13,7 +13,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "远き呼び声の彼方へ",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNjNVBfQnZLSk5uRG0ySWc_ZT1QOXdDM1U.flac",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20%E8%BF%9C%E3%81%8D%E5%91%BC%E3%81%B3%E5%A3%B0%E3%81%AE%E5%BD%BC%E6%96%B9%E3%81%B8%20M-41%2CM-62A.flac",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNoZ0xac2QzUzFWOGRwNXc_ZT1DWVlDOE4.jpg"
         }
     },
@@ -22,7 +22,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "安らぎを君に",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNhVHIwc01wSVZ2eUtjMGc_ZT1GVVo5MXQ.flac",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20%E5%AE%89%E3%82%89%E3%81%8E%E3%82%92%E5%90%9B%E3%81%AB%20M-62B%2CM-35.flac",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNlbFVRZUtzal9TaUphOEE_ZT1BU0c4bjk.jpg"
         }
     },
@@ -31,7 +31,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "3000万年前からのメッセージ",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNiSEVnZ1IyWDVUT254MkE_ZT1Tc2VjRXE.flac",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%203000%E4%B8%87%E5%B9%B4%E5%89%8D%E3%81%8B%E3%82%89%E3%81%AE%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%20M-44%2CTam%E3%81%AE%E3%81%BF%2CM-45.flac",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNmb1NycVhWSkZwYk56UVE_ZT1FMVBkYks.jpg"
         }
     },
@@ -40,7 +40,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "Brave Love,TIGA(P V)",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNSMGFfNGJhM1FzT1ptX2c_ZT1lN2Vmc1M.flac",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20Brave%20Love%2CTIGA%20(PIANO%20VERSION)%20M-7.flac",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNkLWM4V3VjSEJfTmIyRnc_ZT11T1JDS3c.jpg"
         }
     },
@@ -49,7 +49,7 @@ const audios = [
         "artist": "Tatsumi Yano",
         "songName": "Lounge Music2",
         "files": {
-            "song": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNZalpkc0gwREdtaEVlVVE_ZT1kaXh5Vm8.mp3",
+            "song": "https://api.rainsin.cn/music/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20Lounge%20Music2M-63.mp3",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNneHJET0szUE9idFN0ZWc_ZT1FQUtaZFo.jpg"
         }
     }
