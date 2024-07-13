@@ -96,4 +96,5 @@
 }
 .table>:not(caption)>*>*{
     background-color: unset;
+    color: var(--text-color);
 }
