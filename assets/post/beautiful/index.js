@@ -1,3 +1,7 @@
+import Markdown from 'https://cdn.jsdmirror.com/npm/react-markdown@9.0.1/+esm'
+import rehypeKatex from 'https://cdn.jsdmirror.com/npm/rehype-katex@7.0.0/+esm'
+import remarkMath from 'https://cdn.jsdmirror.com/npm/remark-math@6.0.0/+esm'
+
 function Mer() {
     return (
         <>
@@ -236,17 +240,75 @@ function MathCom() {
         );
     });
 
-    // function isOk_handle(){
-    //     if(isAns){
-    //         setIsOk(true);
-    //     }else{
-    //         alert("答案错误，请重新输入！")
-    //     }
-    // };
+    React.useEffect(() => {
+        let math = document.getElementsByClassName("show-tip-latex");
+        MathJax.typeset(math);
+    }, []);
 
     return (
         <div className="question-boxs">
             {q_item}
+            <h4 id='提示'>提示</h4>
+            <p>
+            对分子进行泰勒展开，写成级数形式:
+            </p>
+            <p>
+            由于
+            </p>
+            <div className="show-tip-latex">
+            {`$$ ln\\left( 1+x\\right)  =x-\\frac{1}{2} x^{2}+\\frac{1}{3} x^{3}\\  \\cdots  $$`}
+            </div>
+            <p>
+            所以有
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\frac{ln\\left( 1+x\\right)  }{x} =1-\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots  $$`}
+            </div>
+            <p>
+            故可以有
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\left( 1+x\\right)^{\\frac{1}{x} }  =e^{\\frac{ln\\left( 1+x\\right)  }{x} }=e^{\\left[ 1-\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  }=e\\  e^{\\left[ -\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  } $$`}
+            </div>
+            <p>
+            又因为
+            </p>
+            <div className="show-tip-latex">
+            {`$$ e^{x}=1+x+\\frac{1}{2} x^{2}+\\frac{1}{6} x^{3}+\\  \\cdots  $$`}
+            </div>
+            <p>
+            所以有
+            </p>
+            <div className="show-tip-latex">
+            {`$$ e\\  e^{\\left[ -\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  }=e\\left[ 1-\\frac{1}{2} x+\\underbrace{\\frac{1}{3} x^{2}\\  \\cdots +\\frac{1}{2} \\left( -\\frac{1}{2} x+\\frac{1}{3} x^{2}\\  \\cdots \\right)^{2}  +\\cdots }_{\\text{次数高于1次} } \\right]   $$`}
+            </div>
+            <p>
+            此题我们只需到<strong>一次</strong>就行了，如上，我们将次数高于1次的合并有
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\left( 1+x\\right)^{\\frac{1}{x} }  =e\\left[ 1-\\frac{1}{2} x+o\\left( x\\right)  \\right]  =e-\\frac{1}{2} ex+o\\left( x\\right)  $$`}
+            </div>
+            <p>
+            于是我们得到了一个无穷小等价
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\left( 1+x\\right)^{\\frac{1}{x} }  -e\\  \\sim \\  -\\frac{1}{2} ex $$`}
+            </div>
+            <p>
+            应用到此题中 
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  }{sin\\  x} =\\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -e-[\\left( 1+2x\\right)^{\\frac{1}{2x} }  -e]}{sin\\  x} =\\lim_{x\\rightarrow 0} \\frac{-\\frac{1}{2} ex+ex}{sin\\  x} =\\lim_{x\\rightarrow 0} \\frac{\\frac{1}{2} ex}{sin\\  x} $$`}
+            </div>
+            <p>
+            由重要极限
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\lim_{x\\rightarrow 0} \\frac{sin\\  x}{x} \\  =\\  1 $$`}
+            </div>
+            <p>
+            这样就可以得出答案了。上面的无穷小等价在求极限时很有用，如果你要考研的话可以记一记。
+            </p>
         </div>
     );
 };
