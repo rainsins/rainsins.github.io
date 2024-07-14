@@ -1,4 +1,4 @@
-import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
+import { TwistyPlayer } from "https://cdn.jsdmirror.com/npm/cubing@0.50.0/dist/lib/cubing/twisty";
 
 Element.prototype._attachShadow = Element.prototype.attachShadow
 
