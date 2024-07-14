@@ -141,7 +141,6 @@ function MusicPlayers() {
         audio_bt.src = audios[0].files.song;
         audio_bt.volume = 0.3;
         audio_bt.autoplay = false;
-        arr_audio = 0;
 
         audio_bt.onstalled = function (ev) {
             swal('获取音频失败，可能网络有点问题或者我的服务有问题！');

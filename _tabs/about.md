@@ -24,10 +24,6 @@ keywords: rainsin, about
 author: rainsin
 ---
 
-<script>
-  window.arr_audio = 0;
-</script>
-
 <div class="about-logo-box">
   <div class="about-logo">
     <div class="r logo-font" id="R-l">

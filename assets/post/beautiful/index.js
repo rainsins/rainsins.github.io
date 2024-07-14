@@ -246,28 +246,34 @@ function MathCom() {
             {q_item}
             <h4 id='提示'>提示</h4>
             <p>
-            对分子进行泰勒展开，写成级数形式:
+            分子变形：
+            </p>
+            <div className="show-tip-latex">
+            {`$$ \\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  =e^{\\frac{ln\\left( 1+x\\right)  }{x} }-e^{\\frac{ln\\left( 1+2x\\right)  }{2x} }  $$`}
+            </div>
+            <p>
+            对分子进行泰勒展开，写成无穷级数形式：
             </p>
             <p>
-            由于
+            由以下常用的展开式：
             </p>
             <div className="show-tip-latex">
             {`$$ ln\\left( 1+x\\right)  =x-\\frac{1}{2} x^{2}+\\frac{1}{3} x^{3}\\  \\cdots  $$`}
             </div>
             <p>
-            所以有
+            我们可以有
             </p>
             <div className="show-tip-latex">
             {`$$ \\frac{ln\\left( 1+x\\right)  }{x} =1-\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots  $$`}
             </div>
             <p>
-            故可以有
+            故我们可以得到分子指数部分的展开
             </p>
             <div className="show-tip-latex">
-            {`$$ \\left( 1+x\\right)^{\\frac{1}{x} }  =e^{\\frac{ln\\left( 1+x\\right)  }{x} }=e^{\\left[ 1-\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  }=e\\  e^{\\left[ -\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  } $$`}
+            {`$$ e^{\\frac{ln\\left( 1+x\\right)  }{x} }=e^{\\left[ 1-\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  }=e\\  e^{\\left[ -\\frac{1}{2} x+\\frac{1}{3} x^{2}-\\  \\cdots \\right]  } $$`}
             </div>
             <p>
-            又因为
+            又由另外一个常用的展开式：
             </p>
             <div className="show-tip-latex">
             {`$$ e^{x}=1+x+\\frac{1}{2} x^{2}+\\frac{1}{6} x^{3}+\\  \\cdots  $$`}

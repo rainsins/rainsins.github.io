@@ -979,7 +979,9 @@
 
 .playing-item-box {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
 }
 
 .palying-item {
@@ -997,6 +999,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    border: var(--box-border);
+    border-radius: 12px;
 }
 
 .palying-item>div {
@@ -1008,7 +1012,6 @@
 
 .palying-item-img {
     padding: 20px;
-    border: var(--box-border);
 }
 
 .palying-img {
@@ -1020,56 +1023,25 @@
 
 .palying-item-name {
     font-family: var(--main-font);
-    border: var(--box-border);
+    border-bottom: var(--box-border);
+    border-top: var(--box-border);
 }
 
 .palying-item-lay {
-    border: var(--box-border);
     color: #ff4500;
 }
 
-.playing-item-box .palying-item:nth-child(1)>.palying-item-img {
-    border-top-left-radius: 12px;
-    border-top: none;
-    border-left: 1px solid rgba(0, 0, 0, 0);
-
-}
-
-.playing-item-box .palying-item:nth-child(1)>.palying-item-lay {
-    border-bottom-left-radius: 12px;
-    border-bottom: none;
-    border-left: none;
-}
-
-.playing-item-box .palying-item:nth-child(6)>.palying-item-img {
-    border-top-right-radius: 12px;
-    border-top: none;
-    border-right: 1px solid rgba(0, 0, 0, 0);
-}
-
-.playing-item-box .palying-item:nth-child(6)>.palying-item-lay {
-    border-bottom-right-radius: 12px;
-    border-bottom: none;
-    border-right: none;
-}
-
-.playing-item-box .palying-item:nth-child(n + 1)>.palying-item-img {
-    border-top: none;
-}
-
-.playing-item-box .palying-item:nth-child(n + 1)>.palying-item-lay {
-    border-bottom: none;
-}
-
-.playing-item-box .palying-item:nth-child(1)>.palying-item-name {
-    border-left: none;
-}
-
-.playing-item-box .palying-item:nth-child(6)>.palying-item-name {
-    border-right: none;
-}
-
-
+@media screen and (max-width:1280px) {
+    .playing-item-box {
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  @media screen and (max-width:800px) {
+    .playing-item-box {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
 
 #device-only {
     width: 100%;

@@ -61,13 +61,5 @@ function Pitem({ obj }) {
     );
 };
 
-class Play extends React.Component {
-    render() {
-        return (<div className="container-playing">
-            <Playing />
-        </div>);
-    };
-};
-
 const root_play = ReactDOM.createRoot(document.getElementById('playing-box'));
-root_play.render(<Play />);
+root_play.render(<Playing />);

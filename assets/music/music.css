@@ -139,14 +139,21 @@
   gap:20px;
 }
 
-@media screen and (max-width:1134px) {
+@media screen and (max-width:1280px) {
   #a-player{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width:800px) {
   #a-player{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player-title {
+    font-size: .85em;
+  }
+  
+  .player-artist {
+    color: 1em;
   }
 }
