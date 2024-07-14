@@ -1,7 +1,3 @@
-import Markdown from 'https://cdn.jsdmirror.com/npm/react-markdown@9.0.1/+esm'
-import rehypeKatex from 'https://cdn.jsdmirror.com/npm/rehype-katex@7.0.0/+esm'
-import remarkMath from 'https://cdn.jsdmirror.com/npm/remark-math@6.0.0/+esm'
-
 function Mer() {
     return (
         <>
