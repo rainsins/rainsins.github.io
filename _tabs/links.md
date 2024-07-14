@@ -10,7 +10,7 @@ mathpolt: false
 jquery: true
 babel: true
 forbid: true
-comments: true
+comments: false
 cube: false
 linksdata: true
 anime: true
@@ -126,32 +126,20 @@ author: rainsin
 
 </style>
 
+## 💣须知
+
 <div id="links-box"></div>
 
-## ⛓️申请友链
+> 先友后链，可以交流交流之后再添加友链，熟了自然就会添加对方。我的邮箱：1820278582@qq.com
+{: .prompt-warning }
 
-> 1. 网站名称：（必需）
-> 2. 网站地址：（必需）
-> 3. 网站头像：（可选，没有的话为默认）
-> 4. 网站描述：（可选）
-{: .prompt-info }
-
-> 将信息发到这个邮箱里1820278582@qq.com，或者下面评论。
-{: .prompt-tip }
-
-## 🔗我的链接
+## 🔗我的信息
 
 > 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
-> 3. 网站头像：https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp 或 https://api.rainsin.cn/avatar.webp
+> 3. 网站头像：https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp
 > 4. 网站描述：如人饮水，冷暖自知。
 {: .prompt-info }
-
-## 💣须知
-
-> 1. 如果长时间无法访问 或 未添加本站链接将会删除友链，恕不另行通知。
-> 2. 申请链接前请先添加本站链接（全站友链请说明）。
-{: .prompt-warning }
 
 
 <script type="text/babel" defer>
