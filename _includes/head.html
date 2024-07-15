@@ -129,7 +129,7 @@
                 nick: '名称',
                 sofa: '来一起击剑🤺吧'
               },
-              dark: 'html[data-mode="dark"]',
+              dark: 'html:not([data-mode="light"])',
               login: 'disable',
               imageUploader: true,
               serach: false
@@ -137,6 +137,8 @@
         }
       }
 </script>
+
+
   {% endif %}
 
   <script>
