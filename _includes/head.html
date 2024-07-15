@@ -107,7 +107,7 @@
               ],
               pageview: true,
               locale:{
-                placeholder: '唠唠嗑（评论审核后可见）',
+                placeholder: '唠唠嗑（评论审核后可见，添加邮箱可在被回复时邮件提醒）',
                 reactionTitle: '你是故意找茬是不是啊？',
                 reaction0: '正确的',
                 reaction1: '错误的',
@@ -129,6 +129,8 @@
               },
               dark: 'html[data-mode="dark"]',
               login: 'disable',
+              imageUploader: true,
+              serach: false
           });
         }
       }
@@ -278,7 +280,7 @@
 
   <link href="/assets/css/font.css" rel="stylesheet">
 
-  <!-- <script src="/assets/js/dev.js"></script> -->
+  <script src="/assets/js/dev.js"></script>
 
   {% include metadata-hook.html %}
 </head>
