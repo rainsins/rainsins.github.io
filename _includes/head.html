@@ -5,6 +5,8 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59cba351e80c4c8c8248f979e6804edd"}'></script>
+
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
   {% if page.babel %}
@@ -280,7 +282,7 @@
 
   <link href="/assets/css/font.css" rel="stylesheet">
 
-  <script src="/assets/js/dev.js"></script>
+  <!-- <script src="/assets/js/dev.js"></script> -->
 
   {% include metadata-hook.html %}
 </head>
