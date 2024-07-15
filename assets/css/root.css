@@ -1,32 +1,18 @@
 @font-face {
     font-family: '方正书宋繁';
     src: url("https://api.rainsin.cn/fontconverter/FZSSK.woff2");
-    font-weight: 400;
 }
 
 @font-face {
     font-family: '方正宋黑繁';
     src: url("https://api.rainsin.cn/fontconverter/FZSHK.woff2");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: '方正书宋简';
-    src: url("https://api.rainsin.cn/fontconverter/FZSSKJ.woff2");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: '方正宋黑简';
-    src: url("https://api.rainsin.cn/fontconverter/FZSHKJ.woff2");
-    font-weight: 600;
 }
 
 :root{
     --box-border: 1px solid rgba(143, 155, 168, 0.15);
     --Jay-shadow-border: 0 8px 16px -4px #2c2d300c;
     --style-border-always: var(--box-border);
-    --main-font: "筑紫A", "方正宋三繁", "方正宋黑繁","方正书宋简" ,"方正宋黑简" ,"Hiragino Sans GB", "Microsoft YaHei";
+    --main-font: "筑紫A", "方正宋黑繁", "方正书宋繁" ,"Hiragino Sans GB", "Microsoft YaHei";
     --pingfang-font:"Ping Fang", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
     --box-bg: #d3d3d323;
     --box-border-b: var(--box-border);
