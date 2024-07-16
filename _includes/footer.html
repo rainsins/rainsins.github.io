@@ -60,30 +60,4 @@
   };
 </script> -->
 
-<script>
-  const handler = {
-      get: (target,name) => {
-        return name in target ? target[name] : "no prop!"
-      },
-      set: (target,prop,newval,receiver) => {
-        target[prop] = newval;
-        if(prop == "modeStatus" && newval == "dark"){
-          const style = document.createElement("style");
-          style.type = "text/css";
-          style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load/darkloading.gif);}"
-          document.appendChild(style);
-        }
-        if(prop == "modeStatus" && newval == "light"){
-          const style = document.createElement("style");
-          style.type = "text/css";
-          style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/load6.gif);}"
-          document.appendChild(style);
-        }
-        return true;
-      }
-  };
-
-  const mode = new Proxy(modeToggle,handler);
-</script>
-
 <script defer src="https://rainsin-1305486451.file.myqcloud.com/js%E5%BA%93/umami.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
