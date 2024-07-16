@@ -896,8 +896,8 @@
 .av-mfact-logo {
     z-index: 3;
     position: absolute;
-    width: 88px;
-    height: 88px;
+    width: 3.2rem;
+    aspect-ratio: 1;
     background-size: cover;
     background-position: center;
 }
