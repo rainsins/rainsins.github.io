@@ -128,14 +128,12 @@ author: rainsin
 
 <div id="a-player"></div>
 
-> 以前的村子早已消失了。
-
 ##  📴在玩的
 
 <div id="playing-box"></div>
 
-<!-- 装备
-## 💻我的主机 -->
+<!-- 装备 -->
+<!-- ## 💻我的主机 -->
 
 <!-- <div id="device-box"></div> -->
 
@@ -189,10 +187,11 @@ author: rainsin
 <script src="/assets/about/about-min.js" defer></script>
 <script type="text/babel" src="/assets/about/components/art.js"></script>
 
-<!--
-<script type="text/babel" src="/assets/about/components/device.js"></script>
--->
-<script type="text/babel" src="/assets/about/components/devicehead.js"></script>
+
+<!-- <script type="text/babel" src="/assets/about/components/device.js"></script> -->
+
+<!-- <script type="text/babel" src="/assets/about/components/devicehead.js"></script> -->
+
 <script type="text/babel" src="/assets/about/components/play.js"></script>
 
 <script type="text/babel" src="/assets/music/music.js"></script>

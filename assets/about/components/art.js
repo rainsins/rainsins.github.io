@@ -46,7 +46,23 @@ const threeav = [
         mfact: "SOD",
         mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
         url: "https://xslist.org/zh/model/172.html"
-    }
+    },
+    {
+        name: "神木丽",
+        age: "1999.12.20.",
+        three: "B95 / W60 / H85",
+        out: "2022.06.",
+        color: "#734b3a",
+        color1: "#96908c",
+        color2: "#d0ae96",
+        color3: "#c19e8d",
+        color4: "#352824",
+        img: "https://api.rainsin.cn/2024/07/0e0720484e044631ee59e24c2cf02043.webp",
+        bgimg: "https://api.rainsin.cn/2024/07/081a21a76fbf4df21d6dd243c977a9b3.webp",
+        mfact: "SOD",
+        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
+        url: "https://xslist.org/zh/model/159548.html"
+    },
 ];
 
 const twoav = [

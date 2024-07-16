@@ -777,14 +777,14 @@
 
 .three-av .av-item-box {
     width: 100%;
-    aspect-ratio: 4/5;
+    aspect-ratio: 4/6;
     background-position: center;
     background-size: cover;
 }
 
 .Two-av .av-item-box {
     width: 100%;
-    aspect-ratio: 9/6;
+    aspect-ratio: 10/6;
     background-position: center;
     background-size: cover;
 }
@@ -801,10 +801,14 @@
 }
 
 .three-av .av-item-box:nth-child(2) {
-    margin: 0 2.5px;
+    margin: 0 3.75px 0 2.5px;
 }
 
 .three-av .av-item-box:nth-child(3) {
+    margin: 0 2.5px 0 3.75px;
+}
+
+.three-av .av-item-box:nth-child(4) {
     margin-left: 5px;
 }
 
@@ -844,7 +848,7 @@
 }
 
 .av-title-name {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     align-self: center;
     flex: 1;
@@ -900,7 +904,7 @@
 
 .av-mfact-logo {
     bottom: 30px;
-    right: 30px;
+    right: 40px;
 }
 
 
