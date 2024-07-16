@@ -41,6 +41,10 @@
     scrollbar-arrow-color: blue;
 }
 
+.tk-owo-emotion{
+    width: 1.5em;
+}
+
 .about-site{
     display: flex;
     width: 100%;
