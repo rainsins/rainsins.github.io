@@ -156,9 +156,6 @@ author: rainsin
   使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
   </div>
   <div>
-  其中有些资源需使用<span>IPv6</span>进行访问，需要你的网络路径上的所有设备都支持 <span>IPv6</span>。
-  </div>
-  <div>
   域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。
   </div>
   <div>
