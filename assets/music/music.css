@@ -151,7 +151,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .player-title {
-    font-size: .85em;
+    font-size: .4em;
   }
   
   .player-artist {

@@ -133,12 +133,12 @@ author: rainsin
 <div id="playing-box"></div>
 
 <!-- 装备 -->
-## 💻我的主机
+<!-- ## 💻我的主机 -->
 
-<div id="device-box"></div>
+<!-- <div id="device-box"></div> -->
 
 <!-- 设备的具体信息 -->
-<div id="device-only"></div>
+<!-- <div id="device-only"></div> -->
 
 
 <!-- 老师 -->
@@ -188,9 +188,9 @@ author: rainsin
 <script type="text/babel" src="/assets/about/components/art.js"></script>
 
 
-<script type="text/babel" src="/assets/about/components/device.js"></script>
+<!-- <script type="text/babel" src="/assets/about/components/device.js"></script> -->
 
-<script type="text/babel" src="/assets/about/components/devicehead.js"></script>
+<!-- <script type="text/babel" src="/assets/about/components/devicehead.js"></script> -->
 
 <script type="text/babel" src="/assets/about/components/play.js"></script>
 
