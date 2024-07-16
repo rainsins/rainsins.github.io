@@ -1,5 +1,3 @@
-import { TwistyPlayer } from "https://cdn.cubing.net/js/cubing/twisty";
-
 Element.prototype._attachShadow = Element.prototype.attachShadow
 
 Element.prototype.attachShadow = function () {
