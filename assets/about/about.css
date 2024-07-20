@@ -30,6 +30,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Zhaomengfou";
+    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/%E4%BB%BF%E5%AE%8B%E4%B8%80%E5%B0%8F%E6%AE%B5/FZYiYBLSJW.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 #access-tags,
 #panel-wrapper,
 #access-lastmod {
@@ -1136,4 +1144,55 @@
 #aplayer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+@font-face {
+    font-family: "wzm";
+    src: url("https://api.rainsin.cn/FZWenZMXKJW.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.profile-box{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    background: var(--box-bg);
+    border-radius: 12px;
+    border: var(--box-border);
+    background-image: url(https://api.rainsin.cn/%E5%BF%83.webp);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+}
+
+.profile-box span{
+    font-family: "wzm";
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2em;
+    color: #ffffff;
+}
+.profile-box span:nth-child(5){
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: .8em;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.profile-box span img{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 4px auto;
 }

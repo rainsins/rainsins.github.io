@@ -1,19 +1,19 @@
 const threeav = [
     {
-        name: "香水じゅん",
-        age: "2001.03.29.",
-        three: "B82 / W55 / H85",
-        out: "2021.7.",
+        name: "明日葉みつは",
+        age: "2000.01.30.",
+        three: "B87 / W58 / H88",
+        out: "2023.07.11.",
         color: "#5248b5",
         color1: "#6E4A35",
         color2: "#CB926E",
         color3: "#D2B39C",
         color4: "#90552C",
-        img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E9%A6%99%E6%B0%B4.jpg",
-        bgimg: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E9%A6%99%E6%B0%B4.webp",
+        img: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5%E5%8F%B6.jpg",
+        bgimg: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5.webp",
         mfact: "S1",
         mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
-        url: "https://xslist.org/zh/model/138616.html"
+        url: "https://twitter.com/ashitaba_taba"
     },
     {
         name: "山岸あやか",

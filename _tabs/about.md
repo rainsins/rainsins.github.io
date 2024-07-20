@@ -95,7 +95,21 @@ author: rainsin
     </div>
    </div>
   </div>
+
   </div>
+
+<div class="profile-box">
+<div class="profile">
+<span>下根之人</span>
+<span>根器不利</span>
+<span>唯有培根</span>
+<span>方得自在</span>
+<span>
+种树培根
+<img src="/assets/img/914810001721461586.png" alt=""/>
+</span>
+</div>
+</div>
     <div class="rainsin-detail">
       <div class="detail-ins">
         <div class="detail-music music-fancy">
@@ -123,8 +137,6 @@ author: rainsin
 </div>
 
 ##  🥹看见了，奥比克
-
-> 以前的村子又回来了！
 
 <div id="a-player"></div>
 
