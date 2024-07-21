@@ -1,11 +1,11 @@
-/* #access-tags,#panel-wrapper,#access-lastmod{
+#access-tags,#panel-wrapper,#access-lastmod{
     display: none;
 }
 #core-wrapper, #tail-wrapper {
     width: 100%;
     padding-right: 0 !important;
     padding-left: 0 !important;
-} */
+}
 
 .question-boxs{
     width: 100%;
