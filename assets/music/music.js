@@ -94,7 +94,8 @@ function MusicPlayers() {
         if (i == arr) {
             if (isLoading) {
                 $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-spinner').hide();
-                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').hide();
+                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').show();
+                $(`#a-player .player-music-card:nth-child(${index + 1})`).find('.fa-pause').hide();
                 $(`#a-player .player-music-card:nth-child(${i + 1})`).removeClass('player-playing');
             } else {
                 if (audio_bt.paused == false) {
