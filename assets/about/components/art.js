@@ -9,10 +9,10 @@ const threeav = [
         color2: "#CB926E",
         color3: "#D2B39C",
         color4: "#90552C",
-        img: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5%E5%8F%B6.jpg",
-        bgimg: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9UNjVFOEN5TWdaTlU1R1E_ZT1oMTkxY3I.jpg",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9PUWZ0eE5UN1BPS2VpMFE_ZT1xU0d5NUQ.webp",
         mfact: "S1",
-        mfactlogo: "https://api.rainsin.cn/av/s1.webp",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9HRWgxdEZpb1hSeWlqVkE_ZT1YN1BLNmQ.webp",
         url: "https://twitter.com/ashitaba_taba"
     },
     {
@@ -25,10 +25,10 @@ const threeav = [
         color2: "#D6D7DA",
         color3: "#C2BBBC",
         color4: "#9BA5A4",
-        img: "https://api.rainsin.cn/av/%E5%B1%B1%E5%B2%B8t.webp",
-        bgimg: "https://api.rainsin.cn/av/%E5%B1%B1%E5%B2%B8.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9GRVJFUmlQa2dmaGpfdmc_ZT11RWJjcUE.webp",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9FbVA0QXgwZE1wMThuQWc_ZT1saFM1b2k.webp",
         mfact: "PREMIUM",
-        mfactlogo: "https://api.rainsin.cn/av/premium.png",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9EVzdVMUMyekdjWmpKaVE_ZT1tVUUwYzQ.png",
         url: "https://xslist.org/zh/model/358.html"
     },
     {
@@ -41,10 +41,10 @@ const threeav = [
         color2: "#2092C5",
         color3: "#0DC0E5",
         color4: "#BF9989",
-        img: "https://api.rainsin.cn/av/%E7%BA%B1%E7%BB%98t.jpg",
-        bgimg: "https://api.rainsin.cn/av/%E7%BA%B1%E7%BB%98b.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9BRHFwUHFwTlF0OXZ5Zmc_ZT1nanB1S1o.jpg",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9Dd1o0akR5MURuSGxYbVE_ZT1QUDkyQXo.webp",
         mfact: "SOD",
-        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9CVF9SWjhNVDNSVG92ZVE_ZT15MUY5NGs.webp",
         url: "https://xslist.org/zh/model/172.html"
     },
     {
@@ -57,10 +57,10 @@ const threeav = [
         color2: "#d0ae96",
         color3: "#c19e8d",
         color4: "#352824",
-        img: "https://api.rainsin.cn/2024/07/0e0720484e044631ee59e24c2cf02043.webp",
-        bgimg: "https://api.rainsin.cn/2024/07/081a21a76fbf4df21d6dd243c977a9b3.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9VUDB4V09FNTB5WDNWR1E_ZT05c2ZqMXY.webp",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9RSzdyMFJ3QjZ4anhlY2c_ZT1nSlg4Zzg.jpg",
         mfact: "SOD",
-        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9CVF9SWjhNVDNSVG92ZVE_ZT15MUY5NGs.webp",
         url: "https://xslist.org/zh/model/159548.html"
     },
 ];
@@ -76,10 +76,10 @@ const twoav = [
         color2: "#DFB095",
         color3: "#B49179",
         color4: "#AD6F4B",
-        img: "https://api.rainsin.cn/av/mot.jpg",
-        bgimg: "https://api.rainsin.cn/av/mob1.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGwtTURuaURzZ0hQN185bXc_ZT1YZXJJU2E.jpg",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGxfYm4ySFB1d0piR3JPVVE_ZT1rYkFxbFM.webp",
         mfact: "SOD",
-        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9CVF9SWjhNVDNSVG92ZVE_ZT15MUY5NGs.webp",
         url: "https://xslist.org/zh/model/134598.html"
     },
     {
@@ -92,10 +92,10 @@ const twoav = [
         color2: "#E6CECA",
         color3: "#C6BCB7",
         color4: "#838386",
-        img: "https://api.rainsin.cn/av/murit.jpg",
-        bgimg: "https://api.rainsin.cn/av/muri.webp",
+        img: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGw4MmVVeTgyRVhIYWhkeHc_ZT1rY1hsRVc.jpg",
+        bgimg: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGw5RlFRTGhmSFhuSm1JTUE_ZT10WThCaUQ.webp",
         mfact: "S1",
-        mfactlogo: "https://api.rainsin.cn/av/s1.webp",
+        mfactlogo: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUG9HRWgxdEZpb1hSeWlqVkE_ZT1YN1BLNmQ.webp",
         url: "https://xslist.org/zh/model/25134.html"
     },
 ];
