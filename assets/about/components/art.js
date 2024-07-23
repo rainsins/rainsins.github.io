@@ -12,7 +12,7 @@ const threeav = [
         img: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5%E5%8F%B6.jpg",
         bgimg: "https://api.rainsin.cn/art/%E6%98%8E%E6%97%A5.webp",
         mfact: "S1",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
+        mfactlogo: "https://api.rainsin.cn/av/s1.webp",
         url: "https://twitter.com/ashitaba_taba"
     },
     {
@@ -25,10 +25,10 @@ const threeav = [
         color2: "#D6D7DA",
         color3: "#C2BBBC",
         color4: "#9BA5A4",
-        img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E5%B1%B1%E5%B2%B8/%E5%B1%B1%E5%B2%B8t.webp",
-        bgimg: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E5%B1%B1%E5%B2%B8/%E5%B1%B1%E5%B2%B8.webp",
+        img: "https://api.rainsin.cn/av/%E5%B1%B1%E5%B2%B8t.webp",
+        bgimg: "https://api.rainsin.cn/av/%E5%B1%B1%E5%B2%B8.webp",
         mfact: "PREMIUM",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/premium.png",
+        mfactlogo: "https://api.rainsin.cn/av/premium.png",
         url: "https://xslist.org/zh/model/358.html"
     },
     {
@@ -41,10 +41,10 @@ const threeav = [
         color2: "#2092C5",
         color3: "#0DC0E5",
         color4: "#BF9989",
-        img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E7%BA%B1%E7%BB%98/%E7%BA%B1%E7%BB%98t.jpg",
-        bgimg: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E7%BA%B1%E7%BB%98/%E7%BA%B1%E7%BB%98b.webp",
+        img: "https://api.rainsin.cn/av/%E7%BA%B1%E7%BB%98t.jpg",
+        bgimg: "https://api.rainsin.cn/av/%E7%BA%B1%E7%BB%98b.webp",
         mfact: "SOD",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
+        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
         url: "https://xslist.org/zh/model/172.html"
     },
     {
@@ -60,7 +60,7 @@ const threeav = [
         img: "https://api.rainsin.cn/2024/07/0e0720484e044631ee59e24c2cf02043.webp",
         bgimg: "https://api.rainsin.cn/2024/07/081a21a76fbf4df21d6dd243c977a9b3.webp",
         mfact: "SOD",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
+        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
         url: "https://xslist.org/zh/model/159548.html"
     },
 ];
@@ -76,10 +76,10 @@ const twoav = [
         color2: "#DFB095",
         color3: "#B49179",
         color4: "#AD6F4B",
-        img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/mi/mot.jpg",
-        bgimg: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/mi/mob1.webp",
+        img: "https://api.rainsin.cn/av/mot.jpg",
+        bgimg: "https://api.rainsin.cn/av/mob1.webp",
         mfact: "SOD",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/sod.webp",
+        mfactlogo: "https://api.rainsin.cn/av/sod.webp",
         url: "https://xslist.org/zh/model/134598.html"
     },
     {
@@ -92,10 +92,10 @@ const twoav = [
         color2: "#E6CECA",
         color3: "#C6BCB7",
         color4: "#838386",
-        img: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/murit.jpg",
-        bgimg: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/av/%E6%9D%BF%E5%88%80/muri.webp",
+        img: "https://api.rainsin.cn/av/murit.jpg",
+        bgimg: "https://api.rainsin.cn/av/muri.webp",
         mfact: "S1",
-        mfactlogo: "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/s1.webp",
+        mfactlogo: "https://api.rainsin.cn/av/s1.webp",
         url: "https://xslist.org/zh/model/25134.html"
     },
 ];
