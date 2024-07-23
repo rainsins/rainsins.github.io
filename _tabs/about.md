@@ -91,7 +91,7 @@ author: rainsin
       地方
     </div>
     <div class="age-staff">
-      甘肃天水人
+      西北人
     </div>
    </div>
   </div>
