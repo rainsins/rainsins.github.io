@@ -92,21 +92,35 @@ function MusicPlayers() {
         const audio_bt = document.getElementById('audio-obk');
 
         if (i == arr) {
-            if (audio_bt.paused == false) {
-                pause_m(audio_bt, i);
+            if (isLoading) {
+                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-spinner').hide();
+                $(`#a-player .player-music-card:nth-child(${i + 1})`).find('.fa-play').hide();
+                $(`#a-player .player-music-card:nth-child(${i + 1})`).removeClass('player-playing');
             } else {
-                play_m(audio_bt, i);
+                if (audio_bt.paused == false) {
+                    pause_m(audio_bt, i);
+                } else {
+                    play_m(audio_bt, i);
+                }
             }
         } else {
-            if (audio_bt.paused == false) {
-                pause_m(audio_bt, arr);
+            if (isLoading) {
+                $(`#a-player .player-music-card:nth-child(${arr + 1})`).find('.fa-spinner').hide();
+                $(`#a-player .player-music-card:nth-child(${arr + 1})`).find('.fa-play').show();
+                $(`#a-player .player-music-card:nth-child(${arr + 1})`).removeClass('player-playing');
                 audio_bt.src = audios[i].files.song;
-                setIsLoading(true);
                 load_m(audio_bt, i);
             } else {
-                audio_bt.src = audios[i].files.song;
-                setIsLoading(true);
-                load_m(audio_bt, i);
+                if (audio_bt.paused == false) {
+                    pause_m(audio_bt, arr);
+                    audio_bt.src = audios[i].files.song;
+                    setIsLoading(true);
+                    load_m(audio_bt, i);
+                } else {
+                    audio_bt.src = audios[i].files.song;
+                    setIsLoading(true);
+                    load_m(audio_bt, i);
+                }
             }
         }
 
@@ -131,7 +145,7 @@ function MusicPlayers() {
                 </div>
                 <i className="fa fa-solid fa-pause player-trigger" onClick={(el) => change_arr(el,i)} aria-hidden="true" data-id={i}></i>
                 <i className="fa fa-solid fa-play player-trigger" onClick={(el) => change_arr(el, i)} aria-hidden="true" data-id={i}></i>
-                <i className="fa fa-solid fa-spinner player-trigger player-loading" aria-hidden="true" data-id={i}></i>
+                <i className="fa fa-solid fa-spinner player-trigger player-loading" onClick={(el) => change_arr(el, i)} aria-hidden="true" data-id={i}></i>
             </div>
         );
     });
