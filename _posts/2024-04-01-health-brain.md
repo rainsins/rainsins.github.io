@@ -25,7 +25,9 @@ description: 「转载」死宅更容易变傻？
 keywords: rainsin, blog, 健康
 author: Qbit
 ---
-  
+
+文章来源详见作者公众号。
+
 Science上的一项最新研究[^paper]发现，不爱运动，大脑会更加缺氧！  
   
 来自丹麦、瑞士和美国的研究人员，拍下了小鼠大脑中的氧气分布：  

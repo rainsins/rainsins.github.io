@@ -940,24 +940,7 @@ cp -r <path> <备份path>
 nohup sudo MINIO_ROOT_USER=admin MINIO_ROOT_PASSWORD=ABC871220 minio server /home/ubuntu/pdata/minio/data --console-address ":9001" &
 ```
 
-## 16 ddns域名列表
-
-```ini
-ddns.rainsin.cn
-hm.rainsin.cn
-emby.rainsin.cn
-rss.rainsin.cn
-mima.rainsin.cn
-pan.rainsin.cn
-photo.rainsin.cn
-draw.rainsin.cn
-webdav.rainsin.cn
-book.rainsin.cn
-bt.rainsin.cn
-sys.rainsin.cn
-```
-
-## 17 MySQL安装
+## 16 MySQL安装
 
 ```bash
 sudo apt-get install mysql-server
@@ -1004,7 +987,7 @@ mysql -u root -p dbname<filename.sql
 > 注意：dbname是自定义的数据库名，且必须先创建好。
 > 
 
-## 18 图书管理系统*
+## 17 图书管理系统*
 
 ```bash
 docker run -d --restart=always --name calibresrv_web -p 8083:8083 -v /mdata/book/config:/config -v /mdata/book/Library:/books -v /mdata/book/Books_Calibre:/Books_Calibre -v /mdata/book/Books_Calibre_Backup:/Books_Calibre_Backup \-v /mdata/book/Backup_Library:/Backup_Library  -e NOTIFICATIONS=enabled -e TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxx" -e CHATID="xxxxxxxxx"  -d mephistoxol/calibresrv_web
@@ -1014,9 +997,9 @@ docker run -d --restart=always --name calibresrv_web -p 8083:8083 -v /mdata/book
 docker run -d --name=calibre --security-opt seccomp=unconfined `#optional` -e PUID=1000 -e PGID=1000 -e TZ=Asia/Shanghai -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8082:8080 -p 8081:8081 -v /path/to/data:/config --restart unless-stopped linuxserver/calibre:latest
 ```
 
-## 19 Bt下载管理器*
+## 18 Bt下载管理器*
 
-### 19.1 transmission和qBittorrent的安装及配置
+### 18.1 transmission和qBittorrent的安装及配置
 
 下载种子和做种工具。
 
@@ -1034,7 +1017,7 @@ docker start qbittorrent
 docker run -d --name=transmission -e PUID=1000 -e PGID=1000 -e TZ=Asia/Shanghai -e TRANSMISSION_WEB_HOME=/transmission-web-control/src -e USER=<user> -e PASS=<pass> -e WHITELIST=* -e PEERPORT=51413 -e HOST_WHITELIST=* -p 9091:9091 -p 51413:51413 -p 51413:51413/udp -v /mdata/config:/config -v /mdata/bt/downloads:/downloads -v /mdata/bt/watch/folder:/watch -v /home/ubuntu/transmission-web-control:/transmission-web-control --restart unless-stopped linuxserver/transmission:latest
 ```
 
-#### 19.1.1 **下载 transmission-web-control**
+#### 18.1.1 **下载 transmission-web-control**
 
 GitHub地址：[https://github.com/ronggang/transmission-web-control](https://github.com/ronggang/transmission-web-control)
 
@@ -1044,7 +1027,7 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
 
 解压文件到本地目录。
 
-#### 19.1.2 配置邮箱通知
+#### 18.1.2 配置邮箱通知
 
 1. 安装bsd-mailx
    
@@ -1390,7 +1373,7 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
     ```
     
 
-#### 19.1.3 安装transmission
+#### 18.1.3 安装transmission
 
 1. 安装
    
@@ -1481,7 +1464,7 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
     ```
     
 
-#### 19.2.5 安装qBittorrent
+#### 18.2.5 安装qBittorrent
 
 1. 安装add-apt-repository命令(非必需)
    
@@ -1585,7 +1568,7 @@ Gitee 地址： [https://gitee.com/culturist/transmission-web-control](https://g
 
 最后反向代理，完成。
 
-## 20 设置clash代理
+## 19 设置clash代理
 
 ### Clash 下载
 
@@ -1796,13 +1779,13 @@ tun:
 
 最后重启 Clash 服务即可，这样流量就会通过 TUN 接口转发，同时利用强大的分流规则，实现按需代理。也可以设置局域网内的网关地址和 DNS 服务器地址，实现透明网关。
 
-## 21 服务器状态监控
+## 20 服务器状态监控
 
 ```bash
 docker run --restart unless-stopped -it -d --name ward -p 4000:4000 -e WARD_PORT=4000 -e WARD_THEME=dark --privileged antonyleons/ward
 ```
 
-## 22 Gitea安装
+## 21 Gitea安装
 
 文件：`docker-compose.yml` 
 
@@ -1829,9 +1812,9 @@ services:
     networks:
       - gitea
     volumes:
-      - /home/ubuntu/pdata/gitea:/data
-      - /home/ubuntu/pdata/gitea/timezone:/etc/timezone:ro
-      - /home/ubuntu/pdata/gitea/localtime:/etc/localtime:ro
+      - {you_path}/gitea:/data
+      - {you_path}/gitea/timezone:/etc/timezone:ro
+      - {you_path}/gitea/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
       - "222:22"
