@@ -3,9 +3,13 @@
 - type: github
   icon: "fab fa-github"
 
+# - type: mastodon
+#   icon: 'fas fa-train-subway'
+#   url:  'https://www.travellings.cn/go.html' 
+
 - type: mastodon
-  icon: 'fas fa-train-subway'
-  url:  'https://www.travellings.cn/go.html' 
+  icon: 'fab fa-mastodon'
+  url:  'https://mastodon.social/@rainsin' 
 
 - type: email
   icon: "fas fa-envelope"
