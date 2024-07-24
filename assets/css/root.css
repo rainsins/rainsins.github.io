@@ -9,78 +9,6 @@
 }
 
 @font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0lBV3pyYXk4dHFkb29HY3c_ZT1nVEZLeDQ.woff2") format('woff2');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0ZfNmZRWXFzNmZWcFk4RVE_ZT1MNzJHdVA.woff2") format('woff2');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0YteXpnZnJXYzFPQWs4anc_ZT1QYTExZTY.woff2") format('woff2');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0lEbWJ2d1ljaUJmVmhGSHc_ZT01YTllYnk.woff2") format('woff2');
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0lDYXpORFM0YjJqSUk5RGc_ZT1ZQmhlM1k.woff2") format('woff2');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "筑紫ALL";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZoX0lCZTM4TFNmUmxXQnV1Smc_ZT0zSFYzbUY.woff2") format('woff2');
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "筑紫a主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1djb2t6NjVUal85VEJvSVE_ZT1WTkFNM2I.woff2") format('woff2');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "筑紫a主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1djRVgzdzg2Z1VYdWotLXc_ZT1HU1VFMHE.woff2") format('woff2');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "筑紫A主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1djY05CbW5WTjNLUEd5djQ_ZT1VQ25LTnU.woff2") format('woff2');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "筑紫a主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1diUkpPWkwtTlhCbDUwMnc_ZT15dlVIU2M.woff2") format('woff2');
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "筑紫a主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1dibHZBQ1hNeE80a2pyb0E_ZT1QMVJjZ08.woff2") format('woff2');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "筑紫a主";
-    src: url("https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaGo3cGoyZ3h1S1diMTNpeFlybzRzR3pZQms_ZT0yYklxaW0.woff2") format('woff2');
-    font-weight: 200;
-}
-
-@font-face {
     font-family: "筑紫a备";
     src: url("https://api.rainsin.cn/out_font/500-1721485067.woff2") format('woff2');
     font-weight: 500;
@@ -120,7 +48,7 @@
     --box-border: 1px solid rgba(143, 155, 168, 0.15);
     --Jay-shadow-border: 0 8px 16px -4px #2c2d300c;
     --style-border-always: var(--box-border);
-    --main-font: "筑紫a主", "方正宋黑繁", "方正书宋繁", "筑紫a备", "筑紫a", "筑紫ALL", "Hiragino Sans GB", "Microsoft YaHei";
+    --main-font: "筑紫a备","筑紫a", "方正宋黑繁", "方正书宋繁", "Hiragino Sans GB", "Microsoft YaHei";
     --pingfang-font: "Ping Fang", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
     --box-bg: #d3d3d323;
     --box-border-b: var(--box-border);

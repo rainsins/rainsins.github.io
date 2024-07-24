@@ -4,17 +4,12 @@
 }
 
 @font-face {
-    font-family: "cjpxk主";
-    src: url(https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUDA1cWRWV0twZHlrWjZ3bUE_ZT1YdE1VZTM.woff2);
-}
-
-@font-face {
     font-family: "cjpxk备";
     src: url(/assets/post/nian/FZZJ-CJPXKJW.woff2);
 }
 
 .poem-box{
-    font-family: "cjpxk主", "cjpxk", "cjpxk备";
+    font-family: "cjpxk", "cjpxk备";
     width: 100%;
     padding: 20px;
     border: var(--box-border);
