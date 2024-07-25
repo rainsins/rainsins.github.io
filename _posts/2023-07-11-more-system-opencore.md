@@ -4,7 +4,7 @@ author: rainsin
 date: 2023-07-02 12:23:00 +0800
 categories: [黑苹果, EFI]
 tags: [黑苹果, EFI, Openkylin, Deepin, Ubuntu, Debian, Windows10, Windows11, MacOS, Linux]
-pin: false
+pin: true
 math: false
 mermaid: true
 react: false
