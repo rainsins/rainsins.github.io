@@ -15,4 +15,4 @@ main_font/
 font/
 package-lock.json
 .idea/
-Gemfile
+jekyll-theme-chirpy.gemspec
