@@ -165,10 +165,13 @@ author: rainsin
 
 <div class="about-site">
   <div>
-  使用<span>Github Pages</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
+  <a href="https://blog.rainsin.cn">主力站</a>,使用<span>本地的服务器</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
   </div>
   <div>
-  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，不过我现在没有时间备案，等过段时间再看看能不能备一下。
+  <a href="https://blogs.rainsin.cn">备用站</a>,使用<span>Github Pages</span>部署。
+  </div>
+  <div>
+  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，<span>cf</span>的cdn国内访问也很慢，我部署了cloudflare优选ip，不过也会时不时的抽风，我现在没有时间备案，等过段时间再看看能不能备一下。
   </div>
 </div>
 
