@@ -3,6 +3,11 @@
 #source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
 source "https://rubygems.org"
 
+if RUBY_VERSION =~ /1.9/
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
+
 gemspec
 
 group :test do
@@ -22,6 +27,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+
 
 # Lock jekyll-sass-converter to 2.x on Linux-musl
 # if RUBY_PLATFORM =~ /linux-musl/
