@@ -43,7 +43,7 @@ cdnjs_cdn1: s4.zstatic.net
 description: >- # used by seo meta and the atom feed
   rainsin，一个简约的个人博客，jekyll驱动，除了写一点没什么营养的东西外，这里还是一个试验场，我会在里面写一些前端的东西，比如React和Vue。（blog）
 
-keywords: rainsin, blog, rainsin's blog, 技术, 分享, 前端, 后端, AI
+keywords: rainsin, raisin, rainsins , raisins ,  blog, rainsin's blog, 技术, 分享, 前端, 后端, AI
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://blog.rainsin.cn"
@@ -87,7 +87,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: 
+theme_mode:
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
