@@ -16,3 +16,4 @@ font/
 package-lock.json
 .idea/
 jekyll-theme-chirpy.gemspec
+yarn.lock
