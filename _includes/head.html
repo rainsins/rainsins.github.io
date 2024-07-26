@@ -5,6 +5,11 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  {% if page.swiper %}
+  <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
+  {% endif %}
+
   {% if page.cube %}
 
   <script src="/assets/share/data/data-min.js" async></script>
