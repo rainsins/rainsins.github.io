@@ -257,18 +257,22 @@ const Jieqi = () => {
     });
 
     return (
-        <>
-            <div className="swiper mySwiper2">
-                <div className="swiper-wrapper">
-                    {big}
-                </div>
-            </div>
-            <div className="swiper mySwiper" id="zi-dky">
-                <div className="swiper-wrapper">
-                    {smell}
-                </div>
-            </div>
-        </>
+      <>
+        <div className="swiper mySwiper2 swiper-no-swiping">
+          <div className="swiper-wrapper">
+            {big}
+          </div>
+        </div>
+        <div className="swiper mySwiper" id="zi-dky">
+          <div className="swiper-wrapper">
+            {smell}
+          </div>
+        </div>
+        <div className="poem-box" id="poem-box">
+          <div>
+          </div>
+        </div>
+      </>
     )
 }
 
