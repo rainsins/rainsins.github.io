@@ -165,7 +165,7 @@ author: rainsin
 
 <div class="about-site">
   <div>
-  <a href="https://blog.rainsin.cn">主力站</a>,使用<span>本地的服务器(一台树莓派4B)</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
+  <a href="https://blog.rainsin.cn">主力站</a>,使用<span>本地的服务器(一台树莓派4B🍓)</span>部署，如果家里断网或者停电这个网站也就不能访问(应该cf会有缓存)，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，原主题被我糟蹋的不成样子了，里面的代码面目全非，秉持能跑不动的原则，千万不要fork项目，有可能会有许多意想不到的错误。
   </div>
   <div>
   <a href="https://www.rainsin.cn">备用站</a>,使用<span>CloudFlare Pages</span>部署。
