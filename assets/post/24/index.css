@@ -10,9 +10,6 @@
 
 .poem-box{
     font-family: "cjpxk", "cjpxk备";
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
     width: 100%;
     padding: 20px;
     font-size: 2em;
@@ -21,7 +18,6 @@
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    z-index: 2;
 }
 
 .poem-box div {

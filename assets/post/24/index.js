@@ -262,10 +262,6 @@ const Jieqi = () => {
                 <div className="swiper-wrapper">
                     {big}
                 </div>
-                <div class="poem-box" id="poem-box">
-                <div>
-                </div>
-                </div>
             </div>
             <div className="swiper mySwiper" id="zi-dky">
                 <div className="swiper-wrapper">
