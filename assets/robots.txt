@@ -7,4 +7,6 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: https://blog.rainsin.cn/sitemap.xml
+Sitemap: https://blog.rainsin.cn/sitemap.txt
+Sitemap: https://blog.rainsin.cn/sitemap.html
