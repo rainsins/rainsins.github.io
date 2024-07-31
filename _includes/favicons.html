@@ -8,7 +8,7 @@
 {% else %}
   {% assign faviconss = "main" %}
 {% endif %}
-{% capture favicon_path %} {{ 'https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/favicon/' | append: faviconss }}  {% endcapture %}
+{% capture favicon_path %} {{ 'https://api.rainsin.cn/favicon/' | append: faviconss }}  {% endcapture %}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path | rstrip }}/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path | rstrip }}/favicon-32x32.png">
