@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "ManbowLines-Regular";
-    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/manbow/ManbowLines-Regular.woff") format('woff');
+    src: url("https://pan.rainsin.cn:2000/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Gourmand";
-    src: url("https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/fonts/Gourmand-.woff") format('woff');
+    src: url("https://pan.rainsin.cn:2000/d/blog/font/Gourmand-.woff?sign=h6-2SUODfbL4ukPvWwJpRYeaAcIny5bbmvYePpDh6to=:0") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -1050,7 +1050,7 @@
         grid-template-columns: repeat(3,1fr);
     }
   }
-  
+
   @media screen and (max-width:800px) {
     .playing-item-box {
         grid-template-columns: repeat(2,1fr);
