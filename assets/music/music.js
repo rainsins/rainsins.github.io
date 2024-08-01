@@ -5,52 +5,52 @@ const audios = [
         "songName": "LOVE Theme from TIGA",
         "files": {
             "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20LOVE%20Theme%20from%20TIGA%20M-2.flac?sign=RhbpSmHcAaENzOKZQLXdaQmZ95rQLMzAL4eg-msIu6s=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNoZ0xac2QzUzFWOGRwNXc_ZT1DWVlDOE4.jpg"
-        }
-    },
-    {
-        "bg": "#0896eba1",
-        "artist": "Tatsumi Yano",
-        "songName": "远き呼び声の彼方へ",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20%E8%BF%9C%E3%81%8D%E5%91%BC%E3%81%B3%E5%A3%B0%E3%81%AE%E5%BD%BC%E6%96%B9%E3%81%B8%20M-41%2CM-62A.flac?sign=5_6QSQMqOOa0uW0Srp6SQszUtAWMyvjjGX0-4nKFi1w=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNlbFVRZUtzal9TaUphOEE_ZT1BU0c4bjk.jpg"
-        }
-    },
-    {
-        "bg": "#ebbe03",
-        "artist": "Tatsumi Yano",
-        "songName": "安らぎを君に",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20%E5%AE%89%E3%82%89%E3%81%8E%E3%82%92%E5%90%9B%E3%81%AB%20M-62B%2CM-35.flac?sign=ebtjUdGbnwmk6odqHQQbjWsry7gsSkGH2upYASIooRs=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGcyam55bWZkWWFuWGFHd1E_ZT1MaGRidk0.jpg"
-        }
-    },
-    {
-        "bg": "#ffc382",
-        "artist": "Tatsumi Yano",
-        "songName": "3000万年前からのメッセージ",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%203000%E4%B8%87%E5%B9%B4%E5%89%8D%E3%81%8B%E3%82%89%E3%81%AE%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%20M-44%2CTam%E3%81%AE%E3%81%BF%2CM-45.flac?sign=htbQN8RrcU3p84_RNmRDYwM6gg7jWkl08zFfsAz8eDM=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNmb1NycVhWSkZwYk56UVE_ZT1FMVBkYks.jpg"
-        }
-    },
-    {
-        "bg": "#44c16fb5",
-        "artist": "Tatsumi Yano",
-        "songName": "Brave Love,TIGA(P V)",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20Brave%20Love%2CTIGA%20(PIANO%20VERSION)%20M-7.flac?sign=8Msd8-vkIu21EgaUvYDnruSrEL6TWme6s1MGB7uYFb8=:0",
             "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT15RFgweU8.jpg"
         }
     },
     {
-        "bg": "#ffcbdc",
-        "artist": "Tatsumi Yano",
-        "songName": "Lounge Music2",
+        "bg": "#0896eba1",
+        "artist": "群星",
+        "songName": "读书郎",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20Lounge%20Music2M-63.mp3?sign=blwKzl0cFFgdlKtJPSeCtYk0187gbbyEg_dZ90obDus=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNneHJET0szUE9idFN0ZWc_ZT1FQUtaZFo.jpg"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%AF%BB%E4%B9%A6%E9%83%8E.aac?sign=1NEjZ5bNfQp3tUFQcoQaKCNPratwttnbAPkL0RskSPI=:0",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/Karl_Marx_001.jpg?sign=6G7gIiF4DBrVTVxgHoGB9Bu-CUD7Lh07i41M5Gv8D68=:0"
+        }
+    },
+    {
+        "bg": "#ebbe03",
+        "artist": "甘萍",
+        "songName": "三个和尚",
+        "files": {
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E4%B8%89%E4%B8%AA%E5%92%8C%E5%B0%9A.mp3?sign=BQ-DItDUjrBUbl5g6AT4K-Ga0BCIVb9WemPHYStQn_w=:0",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/three.png?sign=Gj5N33s4ataC-na6db7Oe6617O1m2JHDXYJnCJ3Azt4=:0"
+        }
+    },
+    {
+        "bg": "#ffc382",
+        "artist": "吴应炬",
+        "songName": "葫芦娃",
+        "files": {
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%90%B4%E5%BA%94%E7%82%AC%20-%20%E8%91%AB%E8%8A%A6%E5%A8%83.mp3?sign=V8NqZDVSKynR5F-STwnsR_w53F4FFhQX29z1Gg_Vn4w=:0",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/45B4FC97921942A4C5FD0427E41BCB94.jpg?sign=JArVEo1ost3X-N8jDX__zgQGrepWJYw-co_n_MmZxDs=:0"
+        }
+    },
+    {
+        "bg": "#44c16fb5",
+        "artist": "古巨基",
+        "songName": "烟雨朦朦",
+        "files": {
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%90%8C%E8%90%8C.mp3?sign=iXmaD7yZd46ZbHHhMuR67ZMDYlqClTQoSWgFLxlzkmE=:0",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%92%99%E8%92%99.jpg?sign=9KuaPLcQnOSfAFDdJ8LOXMS1FChQN7gt6ZHt9fHiZLo=:0"
+        }
+    },
+    {
+        "bg": "#ffcbdc",
+        "artist": "曾淑琴",
+        "songName": "鲁冰花",
+        "files": {
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3?sign=2dMc1a4uP_6YZujVfGiBZ9tTMlJDoI1pIkfooCZuTvw=:0",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/colorhub.webp?sign=3BGZaGixz3TDhzQxMhSBdMRvSBE3OzFl3Q76q2i9mZk=:0"
         }
     }
 ];

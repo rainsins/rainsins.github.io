@@ -136,30 +136,19 @@ author: rainsin
     </div>
 </div>
 
-##  🥹看见了，奥比克
+## 🌀关于博客
 
-<div id="a-player"></div>
-
-##  📴在玩的
-
-<div id="playing-box"></div>
-
-<!-- 装备 -->
-<!-- ## 💻我的主机 -->
-
-<!-- <div id="device-box"></div> -->
-
-<!-- 设备的具体信息 -->
-<!-- <div id="device-only"></div> -->
-
-
-<!-- 老师 -->
-##  🍑せんせい
-
-<div id="av-box"></div>
-
-<link rel="stylesheet" href="/assets/about/about-min.css">
-<link rel="stylesheet" href="/assets/music/music-min.css">
+<div class="about-site">
+  <div>
+  使用<span>WebStorm</span>写代码，分享标记一些找到的好玩的东西、读书的笔记、生活或学习中琐碎问题的解决和转载一些我感觉对生活有帮助的文章，技术方面的内容会少一些(因为我没有技术🤡)。
+  </div>
+  <div>
+  网站有些页面没有进行移动端优化，请使用PC访问。
+  </div>
+  <div>
+  内容如有侵权，请联系我<span>1820278582@qq.com</span>删除。
+  </div>
+</div>
 
 ## 👻关于本站
 
@@ -175,34 +164,37 @@ author: rainsin
   </div>
 </div>
 
-## 🌀关于博客
+<div class="more-about-box">
+<h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
 
-<div class="about-site">
-  <div>
-  使用<span>WebStorm</span>写代码，分享标记一些找到的好玩的东西、读书的笔记、生活或学习中琐碎问题的解决和转载一些我感觉对生活有帮助的文章，技术方面的内容会少一些(因为我没有技术🤡)。
-  </div>
-  <div>
-  网站有些页面没有进行移动端优化，请使用PC访问。
-  </div>
-  <div>
-  内容如有侵权，请联系我<span>1820278582@qq.com</span>删除。
-  </div>
+<div id="a-player" class="show-about" style="display: none"></div>
+
+<h2 class="show-about" style="display: none">📴在玩的</h2>
+
+<div id="playing-box" class="show-about" style="display: none"></div>
+
+<h2 class="show-about" style="display: none">🍑せんせい</h2>
+
+<div id="av-box" class="show-about" style="display: none"></div>
+
+<div id="is-show-about"></div>
 </div>
 
-## 🌁BANNER
+<style>
+.more-about-box{
+  width: 100%;
+}
+</style>
 
-<img class="blog_banner" src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUFZPVjZxUmVfeWxCUlM4TkE_ZT1CZWVxYWY.webp" alt="blog"/>
+<link rel="stylesheet" href="/assets/about/about-min.css">
+<link rel="stylesheet" href="/assets/music/music-min.css">
 
 <script src="/assets/about/about-min.js" defer></script>
 <script type="text/babel" src="/assets/about/components/art.js"></script>
 
-
-<!-- <script type="text/babel" src="/assets/about/components/device.js"></script> -->
-
-<!-- <script type="text/babel" src="/assets/about/components/devicehead.js"></script> -->
-
 <script type="text/babel" src="/assets/about/components/play.js"></script>
+
+<script type="text/babel" src="/assets/about/components/show.js"></script>
 
 <script type="text/babel" src="/assets/music/music.js"></script>
 
-<script src="https://c.webfontfree.com/c.js?f=ManbowClear-Regular:ManbowDots-Regular:ManbowFill-Regular:ManbowLines-Regular:ManbowScreen-Regular:ManbowSolid-Regular:ManbowSpots-Regular:ManbowStripe-Regular:ManbowTone-Regular" type="text/javascript"></script>
