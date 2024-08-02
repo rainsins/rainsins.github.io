@@ -1138,6 +1138,10 @@
     .three-av .av-item-box:nth-child(2) {
         background-position: center 0 !important;
     }
+
+  .is-show-box{
+    margin-top: 20px;
+  }
 }
 
 

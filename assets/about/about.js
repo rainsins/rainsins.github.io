@@ -15,8 +15,8 @@
   //   });
   // })
 
-  
-  
+
+
 window.load_event = {
   ...window.load_event,
 
@@ -38,7 +38,7 @@ window.load_event = {
 //                 cover: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT1zOHNVSnk.jpg',
 //                 lrc: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBb2VyMmNVNVNsT0ZpUGNRREdydFhYNlBreEJBcmc_ZT1SSmZYUnM.lrc',
 //                 theme: '#2c9678'
-//             } 
+//             }
 //         ]
 //     });
 // },
@@ -50,7 +50,7 @@ window.load_event = {
         document.getElementById("hello").className = "";
       }, 700);
     }
-  
+
     $("#hello").hover(() => {
       const targetas = document.getElementById("hello");
       targetas.className = "animate__animated animate__wobble";
@@ -68,7 +68,7 @@ window.load_event = {
     // };
     // document.getElementById("hello").onmouseleave = ()=>{
     //   // @ts-ignore
-    
+
     //   document.getElementById("hello").className = "";
     // };
 
@@ -222,7 +222,7 @@ window.load_event = {
     document.getElementById("access-tags").className = "disappear-box";
 
     // const tr = document.getElementById("geyan-tr");
-  
+
     // $("#geyan-box").on("click",()=>{
     //   if(tr.className == "geyan-tr-disappear"){
     //     tr.className = "";
@@ -249,26 +249,5 @@ window.load_event = {
       main_obj.removeClass("sing-device-hover-after");
     });
 
-    $(".av-title-img-main").hover((e) => {
-      anime({
-        targets: e.target,
-        keyframes: [
-          { rotate: "18deg", },
-          { rotate: "-18deg" },
-          { rotate: "10deg" },
-          { rotate: "-8deg" },
-          { rotate: "5deg" },
-          { rotate: "-1deg" },
-          { rotate: 0 },
-        ],
-        easing: 'easeInOutSine'
-      });
-    }, (e) => {
-      console.log(e.target);
-    });
-
-    $(".av-title-img-main").click((e) => {
-      window.open($(e.target).data("url"), "_blank");
-    });
   }
 }

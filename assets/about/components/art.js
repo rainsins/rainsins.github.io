@@ -148,7 +148,7 @@ function AvItem({ avs }) {
                     {avs.name}
                 </div>
                 <div className="av-title-img">
-                    <div className="av-title-img-main"  style={nameimg} data-url={avs.url}></div>
+                    <div className="av-title-img-main" style={nameimg} data-url={avs.url}></div>
                 </div>
             </div>
             <div className="av-detial">
@@ -163,6 +163,7 @@ function AvItem({ avs }) {
 };
 
 function Deitem({ left, right, color }) {
+
     return (
         <div className="av-detial-item">
             <div className="av-detial-item-main" style={color}>
@@ -175,13 +176,35 @@ function Deitem({ left, right, color }) {
     );
 };
 
-class Av extends React.Component {
-    render() {
+function Av(){
+
+  React.useEffect(()=>{
+    $(".av-title-img-main").hover((e) => {
+      anime({
+        targets: e.target,
+        keyframes: [
+          { rotate: "18deg", },
+          { rotate: "-18deg" },
+          { rotate: "10deg" },
+          { rotate: "-8deg" },
+          { rotate: "5deg" },
+          { rotate: "-1deg" },
+          { rotate: 0 },
+        ],
+        easing: 'easeInOutSine'
+      });
+    }, (e) => {
+    });
+
+    $(".av-title-img-main").click((e) => {
+      window.open($(e.target).data("url"), "_blank");
+    });
+  },[]);
+
         return (<div className="container-av">
             <Three />
             <Two />
         </div>);
-    };
 };
 
 const av_boxs = ReactDOM.createRoot(document.getElementById('av-box'));
