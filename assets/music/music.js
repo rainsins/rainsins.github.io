@@ -1,13 +1,22 @@
 const audios = [
-    {
-        "bg": "#c9bea28f",
-        "artist": "Tatsumi Yano",
-        "songName": "LOVE Theme from TIGA",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%9F%A2%E9%87%8E%E7%AB%8B%E7%BE%8E%20-%20LOVE%20Theme%20from%20TIGA%20M-2.flac?sign=RhbpSmHcAaENzOKZQLXdaQmZ95rQLMzAL4eg-msIu6s=:0",
-            "cover": "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNTdlYwWmY1eV9aUHFlLWc_ZT15RFgweU8.jpg"
-        }
-    },
+  {
+    "bg": "#ffcbdc",
+    "artist": "曾淑琴",
+    "songName": "鲁冰花",
+    "files": {
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3?sign=2dMc1a4uP_6YZujVfGiBZ9tTMlJDoI1pIkfooCZuTvw=:0",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/colorhub.webp?sign=3BGZaGixz3TDhzQxMhSBdMRvSBE3OzFl3Q76q2i9mZk=:0"
+    }
+  },
+  {
+    "bg": "#c9bea28f",
+    "artist": "李劫夫",
+    "songName": "二小",
+    "files": {
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%AD%8C%E5%94%B1%E4%BA%8C%E5%B0%8F.mp4?sign=bTVUN2GkjFrklKuW8YG8DMBkAT7TBdJEr6fDXwYa7M4=:0",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%8A%97%E6%88%98.jpg?sign=nh1pBIGXkwEPJdKY8hARGK2vg97qzj5zSddmtlJr6gY=:0"
+    }
+  },
     {
         "bg": "#0896eba1",
         "artist": "群星",
@@ -32,7 +41,7 @@ const audios = [
         "songName": "葫芦娃",
         "files": {
             "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%90%B4%E5%BA%94%E7%82%AC%20-%20%E8%91%AB%E8%8A%A6%E5%A8%83.mp3?sign=V8NqZDVSKynR5F-STwnsR_w53F4FFhQX29z1Gg_Vn4w=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/45B4FC97921942A4C5FD0427E41BCB94.jpg?sign=JArVEo1ost3X-N8jDX__zgQGrepWJYw-co_n_MmZxDs=:0"
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%91%AB%E8%8A%A6.webp?sign=BGV-wvuGo0Pv7NsNQv-jnTMQYPLRzgAFvBN6LgiPWlY=:0"
         }
     },
     {
@@ -44,15 +53,7 @@ const audios = [
             "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%92%99%E8%92%99.jpg?sign=9KuaPLcQnOSfAFDdJ8LOXMS1FChQN7gt6ZHt9fHiZLo=:0"
         }
     },
-    {
-        "bg": "#ffcbdc",
-        "artist": "曾淑琴",
-        "songName": "鲁冰花",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3?sign=2dMc1a4uP_6YZujVfGiBZ9tTMlJDoI1pIkfooCZuTvw=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/colorhub.webp?sign=3BGZaGixz3TDhzQxMhSBdMRvSBE3OzFl3Q76q2i9mZk=:0"
-        }
-    }
+
 ];
 
 

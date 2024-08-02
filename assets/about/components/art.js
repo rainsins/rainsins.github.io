@@ -148,7 +148,7 @@ function AvItem({ avs }) {
                     {avs.name}
                 </div>
                 <div className="av-title-img">
-                    <div className="av-title-img-main" style={nameimg} data-url={avs.url}></div>
+                    <div className="av-title-img-main"  style={nameimg} data-url={avs.url}></div>
                 </div>
             </div>
             <div className="av-detial">
