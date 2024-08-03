@@ -34,6 +34,10 @@
   border: 1px solid rgb(175 174 174 / 50%);
 }
 
+.player-music-card:hover{
+  box-shadow: 0 0 20px #a6a8af55;
+}
+
 .player-image {
   /* background: url('http://static1.squarespace.com/static/530b728de4b04fc9b23a5988/t/569880381a5203aa7d44c1a8/1452834873397/00.jpg?format=1000w') no-repeat 75%; */
   background-size: cover;

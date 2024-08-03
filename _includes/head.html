@@ -30,6 +30,12 @@
   }
   </script>
 
+
+
+  {% if page.bodymovin %}
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
+  {% endif %}
+
   {% if page.babel %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>

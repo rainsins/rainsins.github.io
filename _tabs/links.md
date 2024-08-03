@@ -12,7 +12,7 @@ babel: true
 forbid: true
 comments: true
 cube: false
-linksdata: true
+linksdata: false
 anime: true
 
 favicon: heart
@@ -143,57 +143,4 @@ author: rainsin
 {: .prompt-info }
 
 
-<script type="text/babel" defer>
-  function LinksItem({data}) {
-    const item = data.map((e,i)=>{
-        const imgobj = {
-            backgroundImage: `url(${e.img ? e.img : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
-        };
-        return(
-            <a className="links-item-box" href={e.url} target="_blank">
-                <div className="links-item-img-box">
-                    <div className="links-item-img" style={imgobj}></div>
-                </div>
-                <div className="links-item-info-box">
-                    <span className="links-item-info-name">{e.name}</span>
-                    <span className="links-item-info-url">{e.url}</span>
-                    {e.dec ? <span className="links-item-info-dec">
-                        {e.dec}
-                    </span> : null}
-                </div>
-            </a>
-        );
-    });
-    return (
-        <div className="links-box">
-            {item}
-        </div>
-    );
-};
-
-const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
-links_item.render(<LinksItem data={links_data}/>);
-</script>
-
-<script>
-  window.load_event = {
-  ...window.load_event,
-  animes1: ()=>{$(".links-item-box").hover((e)=>{
-      console.log(e);
-      anime({
-        targets: e.currentTarget.firstChild.firstChild,
-        keyframes: [
-          {rotate: "18deg",},
-          {rotate: "-18deg"},
-          {rotate: "10deg"},
-          {rotate: "-8deg"},
-          {rotate: "5deg"},
-          {rotate: "-1deg"},
-          {rotate: 0},
-        ],
-        easing: 'easeInOutSine'
-      });
-    },(e)=>{
-  })},
-}
-</script>
+<script type="text/babel" src="/assets/links/links.js"></script>
