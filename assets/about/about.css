@@ -1235,7 +1235,7 @@ hr.sep-1::after {
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   padding: 1px 1rem;
-  background-color: white;
+  background-color: var(--main-bg);
 }
 hr.sep-2::after {
   content: '♉ 是名我';
@@ -1245,5 +1245,5 @@ hr.sep-2::after {
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   padding: 1px 1rem;
-  background-color: white;
+  background-color: var(--main-bg);
 }
