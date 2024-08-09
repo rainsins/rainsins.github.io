@@ -1,57 +1,57 @@
 const audios = [
   {
     "bg": "#ffcbdc",
-    "artist": "曾淑琴",
-    "songName": "鲁冰花",
+    "artist": "叶蒨文",
+    "songName": "黎明不要来",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3?sign=2dMc1a4uP_6YZujVfGiBZ9tTMlJDoI1pIkfooCZuTvw=:0",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/colorhub.webp?sign=3BGZaGixz3TDhzQxMhSBdMRvSBE3OzFl3Q76q2i9mZk=:0"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%8F%B6%E8%92%A8%E6%96%87%20-%20%E9%BB%8E%E6%98%8E%E4%B8%8D%E8%A6%81%E6%9D%A5.flac",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%8E%8B%E7%A5%96%E8%B4%A4.jpeg"
     }
   },
   {
     "bg": "#c9bea28f",
-    "artist": "李劫夫",
-    "songName": "二小",
+    "artist": "孙燕姿",
+    "songName": "Honey Honey",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%AD%8C%E5%94%B1%E4%BA%8C%E5%B0%8F.mp4?sign=bTVUN2GkjFrklKuW8YG8DMBkAT7TBdJEr6fDXwYa7M4=:0",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%8A%97%E6%88%98.jpg?sign=nh1pBIGXkwEPJdKY8hARGK2vg97qzj5zSddmtlJr6gY=:0"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20Honey%20Honey.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/honey.jpg"
     }
   },
     {
         "bg": "#0896eba1",
-        "artist": "群星",
-        "songName": "读书郎",
+        "artist": "小时姑娘",
+        "songName": "爱殇",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%AF%BB%E4%B9%A6%E9%83%8E.aac?sign=1NEjZ5bNfQp3tUFQcoQaKCNPratwttnbAPkL0RskSPI=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/Karl_Marx_001.jpg?sign=6G7gIiF4DBrVTVxgHoGB9Bu-CUD7Lh07i41M5Gv8D68=:0"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%EF%BC%88%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%EF%BC%89.flac",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E4%B8%9C%E5%AE%AB.jpeg"
         }
     },
     {
         "bg": "#ebbe03",
-        "artist": "甘萍",
-        "songName": "三个和尚",
+        "artist": "罗坚",
+        "songName": "金瓶梅片头",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E4%B8%89%E4%B8%AA%E5%92%8C%E5%B0%9A.mp3?sign=BQ-DItDUjrBUbl5g6AT4K-Ga0BCIVb9WemPHYStQn_w=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/three.png?sign=Gj5N33s4ataC-na6db7Oe6617O1m2JHDXYJnCJ3Azt4=:0"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%BD%97%E5%9D%9A%20-%20%E9%87%91%E7%93%B6%E6%A2%85%E7%89%87%E5%A4%B4.mp3",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%A4%A7%E6%A1%A5.jpg"
         }
     },
     {
         "bg": "#ffc382",
-        "artist": "吴应炬",
-        "songName": "葫芦娃",
+        "artist": "刘随社",
+        "songName": "【秦腔】杀庙",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%90%B4%E5%BA%94%E7%82%AC%20-%20%E8%91%AB%E8%8A%A6%E5%A8%83.mp3?sign=V8NqZDVSKynR5F-STwnsR_w53F4FFhQX29z1Gg_Vn4w=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%91%AB%E8%8A%A6.webp?sign=BGV-wvuGo0Pv7NsNQv-jnTMQYPLRzgAFvBN6LgiPWlY=:0"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E3%80%90%E7%A7%A6%E8%85%94%E3%80%91%E6%9D%80%E5%BA%99_%5Bcut_41sec%5D_join.mp3",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%80%E5%BA%99.jpg"
         }
     },
     {
-        "bg": "#44c16fb5",
-        "artist": "古巨基",
-        "songName": "烟雨朦朦",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%90%8C%E8%90%8C.mp3?sign=iXmaD7yZd46ZbHHhMuR67ZMDYlqClTQoSWgFLxlzkmE=:0",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%92%99%E8%92%99.jpg?sign=9KuaPLcQnOSfAFDdJ8LOXMS1FChQN7gt6ZHt9fHiZLo=:0"
-        }
+      "bg": "#ffcbdc",
+      "artist": "曾淑琴",
+      "songName": "鲁冰花",
+      "files": {
+        "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%BC%A0%E6%B8%A0%20-%20%E9%87%87%E8%96%87.flac",
+        "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%94%E5%AD%90.jpg"
+      }
     },
 
 ];
