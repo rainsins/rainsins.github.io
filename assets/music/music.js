@@ -46,8 +46,8 @@ const audios = [
     },
     {
       "bg": "#ffcbdc",
-      "artist": "曾淑琴",
-      "songName": "鲁冰花",
+      "artist": "张渠",
+      "songName": "采薇",
       "files": {
         "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%BC%A0%E6%B8%A0%20-%20%E9%87%87%E8%96%87.flac",
         "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%94%E5%AD%90.jpg"

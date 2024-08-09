@@ -167,13 +167,13 @@ author: rainsin
     </div>
 </div>
 
-<h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
-
-<div id="a-player" class="show-about" style="display: none"></div>
-
 <h2 class="show-about" style="display: none">📴在玩的</h2>
 
 <div id="playing-box" class="show-about" style="display: none"></div>
+
+<h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
+
+<div id="a-player" class="show-about" style="display: none"></div>
 
 <h2 class="show-about" style="display: none">🍑せんせい</h2>
 
