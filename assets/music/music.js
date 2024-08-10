@@ -26,15 +26,15 @@ const audios = [
             "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E4%B8%9C%E5%AE%AB.jpeg"
         }
     },
-    {
-        "bg": "#ebbe03",
-        "artist": "罗坚",
-        "songName": "金瓶梅片头",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%BD%97%E5%9D%9A%20-%20%E9%87%91%E7%93%B6%E6%A2%85%E7%89%87%E5%A4%B4.mp3",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%A4%A7%E6%A1%A5.jpg"
-        }
-    },
+  {
+    "bg": "#ffcbdc",
+    "artist": "张渠",
+    "songName": "采薇",
+    "files": {
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%BC%A0%E6%B8%A0%20-%20%E9%87%87%E8%96%87.flac",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%94%E5%AD%90.jpg"
+    }
+  },
     {
         "bg": "#ffc382",
         "artist": "刘随社",
@@ -44,16 +44,15 @@ const audios = [
             "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%80%E5%BA%99.jpg"
         }
     },
-    {
-      "bg": "#ffcbdc",
-      "artist": "张渠",
-      "songName": "采薇",
-      "files": {
-        "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%BC%A0%E6%B8%A0%20-%20%E9%87%87%E8%96%87.flac",
-        "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%94%E5%AD%90.jpg"
-      }
-    },
-
+  {
+    "bg": "#ffcbdc",
+    "artist": "卫赞成",
+    "songName": "【眉户】莲花落",
+    "files": {
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%8E%B2%E8%8A%B1%E8%90%BD.AAC",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%8E%B2%E8%8A%B1.webp"
+    }
+  },
 ];
 
 
