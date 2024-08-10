@@ -1,519 +1,505 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://blog.rainsin.cn/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/links/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/about/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/archives/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/mac/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/more-system-opencore/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan1/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/24jq/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/niannian/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/fine/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/cube/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan10/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/xuan/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/mei/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/bwf/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E8%AF%BE%E7%A8%8B/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E5%86%99%E7%9C%9F/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/efi/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/apache/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/api/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/bot/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/bt/</loc>
-	<lastmod>2024-07-30T05:53:27+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/debian/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/deepin/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/docker/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/emby/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/gitea/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/linux/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/macos/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/openkylin/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/ubuntu/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/windows10/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/windows11/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E5%81%A5%E5%BA%B7/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E5%A3%81%E7%BA%B8/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E5%A5%A5%E5%B1%B1%E5%92%8C%E7%BA%B1/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E6%96%87%E5%8C%96/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E6%B5%81%E7%A8%8B/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E6%B7%B7%E6%B2%8C/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E7%BD%91%E7%AB%99/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E9%98%B4%E8%B0%8B%E8%AE%BA/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/%E9%AD%94%E6%96%B9/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/api/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/server/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E9%9F%B3%E8%A7%86%E9%A2%91/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%81%A5%E5%BA%B7/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E8%BD%AC%E8%BD%BD/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%86%99%E7%9C%9F/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%B9%B4%E5%B9%B4/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%BD%A2%E4%BD%93%E7%BE%8E/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%A3%81%E7%BA%B8/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%96%87%E5%8C%96/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E7%8E%84%E4%B9%8B%E5%8F%88%E7%8E%84/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%B7%B7%E6%B2%8C/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%88%86%E5%BD%A2%E5%87%A0%E4%BD%95/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E7%BD%91%E7%AB%99/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E5%AF%BC%E8%88%AA/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E7%BE%BD%E6%AF%9B%E7%90%83/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E8%AF%BE%E7%A8%8B/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%96%87%E5%AD%97%E7%A8%BF/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E9%98%B4%E8%B0%8B%E8%AE%BA/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%9C%AA%E8%A7%A3%E4%B9%8B%E8%B0%9C/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E9%AD%94%E6%96%B9/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/oll/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/efi/</loc>
-	<lastmod>2024-07-30T05:53:29+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/lindan/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan9/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/health-brain/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan8/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/mandelbrot/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/owo/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/ao-shan/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/mystery/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan7/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/ssl-certbot/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/cloudflare/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan6/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan5/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan4/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan3/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/ax200-bluetooth/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/tan2/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/posts/server-config/</loc>
-	<lastmod>2024-07-30T05:53:35+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/page2/</loc>
-	<lastmod>2024-07-30T05:53:52+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%B0%91%E4%BF%97/</loc>
-	<lastmod>2024-07-30T05:53:52+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/%E6%96%87%E7%89%A9/</loc>
-	<lastmod>2024-07-30T05:53:52+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/page3/</loc>
-	<lastmod>2024-07-30T05:53:53+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/f2l/</loc>
-	<lastmod>2024-07-30T05:53:54+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/categories/pll/</loc>
-	<lastmod>2024-07-30T05:53:54+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/</loc>
-	<lastmod>2024-07-30T05:54:59+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?N=D</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?M=D</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?S=D</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?N=A</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?M=A</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://blog.rainsin.cn/tags/?S=A</loc>
-	<lastmod>2024-07-30T05:55:00+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 100 Generated at: 2024-08-10 10:01:25 -->
+
+  <url>
+    <loc>https://www.rainsin.cn/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/links/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/about/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/archives/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/feed.xml</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/mac/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/more-system-opencore/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan1/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E8%AF%BE%E7%A8%8B/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E5%86%99%E7%9C%9F/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/efi/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E7%BE%BD%E6%AF%9B%E7%90%83/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/apache/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/api/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/bot/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/bt/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/marks/</loc>
+    <priority>0.79</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/niannian/</loc>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan10/</loc>
+    <priority>0.77</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/fine/</loc>
+    <priority>0.77</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/cube/</loc>
+    <priority>0.77</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/xuan/</loc>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/mei/</loc>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/page2</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/page3</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/server-config/</loc>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan9/</loc>
+    <priority>0.62</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E8%AF%BE%E7%A8%8B/</loc>
+    <priority>0.61</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%96%87%E5%AD%97%E7%A8%BF/</loc>
+    <priority>0.61</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/ax200-bluetooth/</loc>
+    <priority>0.61</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan2/</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/ao-shan/</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/ssl-certbot/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/cloudflare/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/health-brain/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan8/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/mandelbrot/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/mystery/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan7/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan6/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan5/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan4/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/tan3/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/bwf/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/lindan/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/posts/owo/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/</loc>
+    <priority>0.59</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%86%99%E7%9C%9F/</loc>
+    <priority>0.58</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/</loc>
+    <priority>0.58</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/ubuntu/</loc>
+    <priority>0.58</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E7%BE%BD%E6%AF%9B%E7%90%83/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/debian/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/deepin/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/docker/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/emby/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/gitea/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/linux/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/macos/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/openkylin/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/windows10/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/windows11/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E5%81%A5%E5%BA%B7/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E5%A5%A5%E5%B1%B1%E5%92%8C%E7%BA%B1/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E6%96%87%E5%8C%96/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E6%B5%81%E7%A8%8B/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E6%B7%B7%E6%B2%8C/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E7%BD%91%E7%AB%99/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E9%98%B4%E8%B0%8B%E8%AE%BA/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/tags/%E9%AD%94%E6%96%B9/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/api/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/server/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E9%9F%B3%E8%A7%86%E9%A2%91/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%81%A5%E5%BA%B7/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%B9%B4%E5%B9%B4/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%BD%A2%E4%BD%93%E7%BE%8E/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%93%B2%E5%AD%A6/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E9%A9%AC%E5%85%8B%E6%80%9D/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%96%87%E5%8C%96/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E7%8E%84%E4%B9%8B%E5%8F%88%E7%8E%84/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%B7%B7%E6%B2%8C/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%88%86%E5%BD%A2%E5%87%A0%E4%BD%95/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E7%BD%91%E7%AB%99/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E5%AF%BC%E8%88%AA/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E9%98%B4%E8%B0%8B%E8%AE%BA/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%9C%AA%E8%A7%A3%E4%B9%8B%E8%B0%9C/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E9%AD%94%E6%96%B9/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/oll/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/efi/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/f2l/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/pll/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%B0%91%E4%BF%97/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/categories/%E6%96%87%E7%89%A9/</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rainsin.cn/cdn-cgi/l/email-protection</loc>
+    <priority>0.53</priority>
+  </url>
+
 </urlset>
