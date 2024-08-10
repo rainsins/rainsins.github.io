@@ -80,10 +80,9 @@ author: rainsin
 
 <hr class="sep-2"/>
 
-<div class="more-about-box">
-<h2 class="show-about" style="display: none">✍️ 关于我</h2>
+<h2>✍️ 关于我</h2>
 
-<div class="rainsin" class="show-about" style="display: none">
+<div class="rainsin">
 <div class="rainsin-info">
   <div class="rainsin-indivdual width-change-indivdual" id="ind_info">
     <div class="rainsin-indivdual-box">
@@ -167,10 +166,11 @@ author: rainsin
     </div>
 </div>
 
-<h2 class="show-about" style="display: none">📴在玩的</h2>
+<h2>📴在玩的</h2>
 
-<div id="playing-box" class="show-about" style="display: none"></div>
+<div id="playing-box"></div>
 
+<div class="more-about-box">
 <h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
 
 <div id="a-player" class="show-about" style="display: none"></div>
