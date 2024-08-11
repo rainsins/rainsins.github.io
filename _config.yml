@@ -18,7 +18,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-domain: www.rainsin.cn
+domain: blog.rainsin.cn
 
 title: Rainsin • Blog # the main title
 
@@ -46,7 +46,7 @@ description: >- # used by seo meta and the atom feed
 keywords: rainsin, raisin, rainsins , raisins ,  blog, rainsin's blog, 技术, 分享, 前端, 后端, AI
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://www.rainsin.cn"
+url: "https://blog.rainsin.cn"
 
 github:
   username: rainsins # change to your github username
