@@ -23,6 +23,8 @@ keywords: rainsin, links
 author: rainsin
 ---
 
+<script src="https://s4.zstatic.net/ajax/libs/crypto-js/4.2.0/md5.min.js"></script>
+
 <style>
   /*  */
 @font-face {
@@ -131,7 +133,7 @@ author: rainsin
 
 ## 💣须知
 
-> 可以击剑🤺之后再添加友链（吾剑也未尝不利）。我的邮箱：1820278582@qq.com
+> 可以击剑🤺之后再添加友链（吾剑也未尝不利）。我的邮箱：1820278582[at]qq.com
 {: .prompt-warning }
 
 ## 🔗我的信息
@@ -140,6 +142,7 @@ author: rainsin
 > 2. 网站地址：https://blog.rainsin.cn
 > 3. 网站头像：[右键复制链接](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp)
 > 4. 网站描述：如人饮水，冷暖自知。
+> 5. 邮箱：1820278582[at]qq.com
 {: .prompt-info }
 
 

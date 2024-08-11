@@ -60,7 +60,7 @@ author: rainsin
   使用<span>WebStorm</span>写代码，使用<span>Typora</span>写文字，技术方面的内容会少一些(因为我没有技术🤡)。
   </div>
   <div>
-  内容如有侵权，请联系我<span>1820278582@qq.com</span>删除。
+  内容如有侵权，请联系我<span>1820278582[at]qq.com</span>删除。
   </div>
 </div>
 
