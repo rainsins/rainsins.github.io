@@ -23,7 +23,7 @@ keywords: rainsin, links
 author: rainsin
 ---
 
-<script src="https://s4.zstatic.net/ajax/libs/crypto-js/4.2.0/md5.min.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
 <style>
   /*  */

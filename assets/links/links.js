@@ -51,7 +51,7 @@ function LinksItem({data}) {
 
     const item = data.map((e,i)=>{
         const imgobj = {
-            backgroundImage: `url(${e.img ? e.img : e.emil ? `https://cravatar.cn/avatar/${MD5(e.emil)}` : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
+            backgroundImage: `url(${e.img ? e.img : e.emil ? `https://cravatar.cn/avatar/${MD5.generate(e.emil)}` : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
         };
         return(
             <a className="links-item-box" href={e.url} target="_blank">
