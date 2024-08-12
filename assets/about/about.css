@@ -325,6 +325,7 @@
 .rainsin-detail {
     width: 100%;
     display: flex;
+  margin-bottom: 20px;
 }
 
 .detail-function {

@@ -68,13 +68,10 @@ author: rainsin
 
 <div class="about-site">
   <div>
-  <a href="https://www.rainsin.cn">主站</a>,使用CloudFlare Pages部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>。
+  这个土土的站点使用CloudFlare Pages部署，由Jekyll驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>。
   </div>
   <div>
-  <a href="https://blog.rainsin.cn">备站</a>,使用本地的服务器(一台<span>树莓派4B🍓</span>)部署，如果家里断网或者停电这个网站也就寄了(应该cf会有缓存)。
-  </div>
-  <div>
-  域名服务商<span>Godaddy</span>，DNS服务由<span>cloudflare</span>提供，cf的cdn国内访问也很慢，不过我现在也没时间备案，就这样吧。
+  域名服务商Godaddy，DNS服务用的cloudflare，cf的cdn国内访问也很慢，不过我现在也没时间备案，就这样吧。
   </div>
 </div>
 
