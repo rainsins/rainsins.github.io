@@ -19,20 +19,20 @@ const audios = [
   },
     {
         "bg": "#0896eba1",
-        "artist": "小时姑娘",
-        "songName": "爱殇",
+        "artist": "毛崇海",
+        "songName": "【秦腔】烙碗计",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%B0%8F%E6%97%B6%E5%A7%91%E5%A8%98%20-%20%E7%88%B1%E6%AE%87%EF%BC%88%E7%94%B5%E8%A7%86%E5%89%A7%E3%80%8A%E4%B8%9C%E5%AE%AB%E3%80%8B%E7%89%87%E5%A4%B4%E6%9B%B2%EF%BC%89.flac",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E4%B8%9C%E5%AE%AB.jpeg"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A2%97.aac",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A2%97.webp"
         }
     },
   {
     "bg": "#ffcbdc",
-    "artist": "张渠",
-    "songName": "采薇",
+    "artist": "张蛇龙",
+    "songName": "【秦腔】斩李广",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%BC%A0%E6%B8%A0%20-%20%E9%87%87%E8%96%87.flac",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%94%E5%AD%90.jpg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A7%A6%E8%85%94%20-%20%E5%BC%A0%E8%9B%87%E9%BE%99%E3%80%8A%E6%96%A9%E6%9D%8E%E5%B9%BF%E3%80%8B%E4%B8%83%E5%8D%81%E4%BA%8C%E4%B8%AA%E5%86%8D%E4%B8%8D%E8%83%BD.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%8E%E5%B9%BF.webp"
     }
   },
     {
@@ -40,17 +40,17 @@ const audios = [
         "artist": "刘随社",
         "songName": "【秦腔】放饭",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/music/audio%40%E8%A3%81%E5%89%AA.mp3",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%80%E5%BA%99.jpg"
+            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.mp3",
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.webp"
         }
     },
   {
     "bg": "#c9bea28f",
-    "artist": "古巨基",
-    "songName": "烟雨蒙蒙",
+    "artist": "刘随社",
+    "songName": "【秦腔】杀庙",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%90%8C%E8%90%8C.mp3",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%92%99%E8%92%99.jpg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E3%80%90%E7%A7%A6%E8%85%94%E3%80%91%E6%9D%80%E5%BA%99_%5Bcut_41sec%5D_join.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%80%E5%BA%99.jpg"
     }
   },
 
