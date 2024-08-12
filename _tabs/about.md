@@ -127,10 +127,10 @@ author: rainsin
 
 <div class="profile-box">
 <div class="profile">
-<span>下根之人</span>
-<span>根器不利</span>
-<span>唯有培根</span>
-<span>方得自在</span>
+<span>直指人心</span>
+<span>见性成佛</span>
+<span>如人饮水</span>
+<span>冷暖自知</span>
 <span>
 种树培根
 <img src="/assets/img/914810001721461586.png" alt=""/>

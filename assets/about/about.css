@@ -325,7 +325,7 @@
 .rainsin-detail {
     width: 100%;
     display: flex;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .detail-function {
@@ -1155,7 +1155,7 @@
 
 @font-face {
     font-family: "wzm";
-    src: url("https://api.rainsin.cn/fontconverter/FZWenZMXKJW.woff2");
+    src: url("https://api.rainsin.cn/fontconverter/FZWenZM.woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
