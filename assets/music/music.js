@@ -9,12 +9,21 @@ const audios = [
     }
   },
   {
-    "bg": "#ffcbdc",
-    "artist": "筷子兄弟",
-    "songName": "父亲",
+    "bg": "#ffc382",
+    "artist": "刘随社",
+    "songName": "【秦腔】放饭",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F%20-%20%E7%88%B6%E4%BA%B2.flac",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%88%B6%E4%BA%B2.jpg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.webp"
+    }
+  },
+  {
+    "bg": "#ffcbdc",
+    "artist": "卫赞成",
+    "songName": "【眉户】莲花落",
+    "files": {
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%8E%B2%E8%8A%B1%E8%90%BD.AAC",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9B%B2%E6%B1%9F.webp"
     }
   },
     {
@@ -35,15 +44,6 @@ const audios = [
       "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%8E%E5%B9%BF.webp"
     }
   },
-    {
-        "bg": "#ffc382",
-        "artist": "刘随社",
-        "songName": "【秦腔】放饭",
-        "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.mp3",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%94%BE%E9%A5%AD.webp"
-        }
-    },
   {
     "bg": "#c9bea28f",
     "artist": "刘随社",

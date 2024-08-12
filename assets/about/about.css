@@ -1161,6 +1161,15 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: "wzms";
+  src: url("https://api.rainsin.cn/fontconverter/FZWenZMXKJW.woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 .profile-box{
     width: 100%;
 }
@@ -1188,6 +1197,7 @@
     color: #ffffff;
 }
 .profile-box span:nth-child(5){
+    font-family: "wzms";
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: .8em;
