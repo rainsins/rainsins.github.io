@@ -60,7 +60,7 @@ author: rainsin
   使用<span>WebStorm</span>写代码，使用<span>Typora</span>写文字，技术方面的内容会少一些(因为我没有技术🤡)。
   </div>
   <div>
-  内容如有侵权，请联系我<span>1820278582[at]qq.com</span>删除。
+  内容如有侵权，请联系我1820278582[at]qq.com删除。
   </div>
 </div>
 
@@ -68,13 +68,13 @@ author: rainsin
 
 <div class="about-site">
   <div>
-  <a href="https://blog.rainsin.cn">主力站</a>,使用本地的服务器(一台<span>树莓派4B🍓</span>)部署，如果家里断网或者停电这个网站也就寄了(应该cf会有缓存)，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>。
+  <a href="https://www.rainsin.cn">主站</a>,使用CloudFlare Pages部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>。
   </div>
   <div>
-  <a href="https://www.rainsin.cn">备用站</a>,使用<span>CloudFlare Pages</span>部署。
+  <a href="https://blog.rainsin.cn">备站</a>,使用本地的服务器(一台<span>树莓派4B🍓</span>)部署，如果家里断网或者停电这个网站也就寄了(应该cf会有缓存)。
   </div>
   <div>
-  域名服务商为<span>Godaddy</span>，<span>DNS</span>服务由<span>cloudflare</span>提供，cf的cdn国内访问也很慢，我部署了cloudflare优选ip，不过也会时不时的抽风。
+  域名服务商<span>Godaddy</span>，DNS服务由<span>cloudflare</span>提供，cf的cdn国内访问也很慢，不过我现在也没时间备案，就这样吧。
   </div>
 </div>
 
@@ -166,11 +166,12 @@ author: rainsin
     </div>
 </div>
 
-<h2>📴在玩的</h2>
-
-<div id="playing-box"></div>
-
 <div class="more-about-box">
+
+<h2 class="show-about" style="display: none">📴在玩的</h2>
+
+<div id="playing-box" class="show-about" style="display: none"></div>
+
 <h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
 
 <div id="a-player" class="show-about" style="display: none"></div>

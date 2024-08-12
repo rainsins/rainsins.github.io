@@ -1,20 +1,20 @@
 const audios = [
   {
     "bg": "#ffcbdc",
-    "artist": "叶蒨文",
-    "songName": "黎明不要来",
+    "artist": "曾淑琴",
+    "songName": "鲁冰花",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%8F%B6%E8%92%A8%E6%96%87%20-%20%E9%BB%8E%E6%98%8E%E4%B8%8D%E8%A6%81%E6%9D%A5.flac",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%8E%8B%E7%A5%96%E8%B4%A4.jpeg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AE%B6.jpg"
     }
   },
   {
-    "bg": "#c9bea28f",
-    "artist": "孙燕姿",
-    "songName": "Honey Honey",
+    "bg": "#ffcbdc",
+    "artist": "筷子兄弟",
+    "songName": "父亲",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20Honey%20Honey.mp3",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/honey.jpg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F%20-%20%E7%88%B6%E4%BA%B2.flac",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%88%B6%E4%BA%B2.jpg"
     }
   },
     {
@@ -38,21 +38,22 @@ const audios = [
     {
         "bg": "#ffc382",
         "artist": "刘随社",
-        "songName": "【秦腔】杀庙",
+        "songName": "【秦腔】放饭",
         "files": {
-            "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%88%98%E9%9A%8F%E7%A4%BE%20-%20%E3%80%90%E7%A7%A6%E8%85%94%E3%80%91%E6%9D%80%E5%BA%99_%5Bcut_41sec%5D_join.mp3",
+            "song": "https://pan.rainsin.cn:2000/d/music/audio%40%E8%A3%81%E5%89%AA.mp3",
             "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E6%9D%80%E5%BA%99.jpg"
         }
     },
   {
-    "bg": "#ffcbdc",
-    "artist": "卫赞成",
-    "songName": "【眉户】莲花落",
+    "bg": "#c9bea28f",
+    "artist": "古巨基",
+    "songName": "烟雨蒙蒙",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%8E%B2%E8%8A%B1%E8%90%BD.AAC",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%8E%B2%E8%8A%B1.webp"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%90%8C%E8%90%8C.mp3",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%83%9F%E9%9B%A8%E8%92%99%E8%92%99.jpg"
     }
   },
+
 ];
 
 
