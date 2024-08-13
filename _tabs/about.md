@@ -124,19 +124,6 @@ author: rainsin
   </div>
 
   </div>
-
-<div class="profile-box">
-<div class="profile">
-<span>直指人心</span>
-<span>见性成佛</span>
-<span>如人饮水</span>
-<span>冷暖自知</span>
-<span>
-种树培根
-<img src="/assets/img/914810001721461586.png" alt=""/>
-</span>
-</div>
-</div>
     <div class="rainsin-detail">
       <div class="detail-ins">
         <div class="detail-music music-fancy">
@@ -164,6 +151,21 @@ author: rainsin
 </div>
 
 <div class="more-about-box">
+
+<h2 class="show-about" style="display: none">☯️一言</h2>
+
+<div class="profile-box show-about" style="display: none">
+<div class="profile">
+<span>直指人心</span>
+<span>见性成佛</span>
+<span>如人饮水</span>
+<span>冷暖自知</span>
+<span>
+种树培根
+<img src="/assets/img/914810001721461586.png" alt=""/>
+</span>
+</div>
+</div>
 
 <h2 class="show-about" style="display: none">📴在玩的</h2>
 
