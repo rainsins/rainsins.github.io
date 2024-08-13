@@ -1,11 +1,11 @@
 const audios = [
   {
     "bg": "#ffcbdc",
-    "artist": "曾淑琴",
-    "songName": "鲁冰花",
+    "artist": "贠宗翰",
+    "songName": "【秦腔】赵氏孤儿",
     "files": {
-      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E9%B2%81%E5%86%B0%E8%8A%B1.mp3",
-      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E5%AE%B6.jpg"
+      "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%B5%B5%E6%B0%8F%E5%AD%A4%E5%84%BF.AAC",
+      "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A2%97.webp"
     }
   },
   {
@@ -32,7 +32,7 @@ const audios = [
         "songName": "【秦腔】烙碗计",
         "files": {
             "song": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A2%97.aac",
-            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E7%A2%97.webp"
+            "cover": "https://pan.rainsin.cn:2000/d/blog/aobike/%E8%AE%B0.webp"
         }
     },
   {

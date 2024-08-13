@@ -145,7 +145,7 @@ author: rainsin
           <div class="music-title">音乐偏好</div>
           <div class="music-detial">
           <div>
-            <span>国语流行</span>、<span>戏曲</span>
+            <span>国语流行</span>、<span>秦腔</span>
           </div>
           </div>
         </div>
