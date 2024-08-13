@@ -93,7 +93,7 @@ function Cube() {
         return temp.map((el, ind) => {
             const i = ind + 1;
             const str = i > 9 ? `${algType}${i}` : `${algType}0${i}`;
-            
+
             const datas = algArray[str];
 
             const data_items = datas.data.map((el, i) => {
@@ -104,11 +104,11 @@ function Cube() {
                     <div className="cube-alg" onClick={(e) => change_alg(el.alg, e)}>{el.alg}</div>
                 );
             });
-            
+
             const img_sty = {
                 backgroundImage: datas.img == "" ? `url(https://gcore.jsdelivr.net/gh/Niinjoy/cube-alg-to-notion@master/cubeImg/${algType}/${str}.svg)` : `url(${datas.img})`,
             };
-            
+
             return (
                 <div className="cube-alg-det-item-box">
                     <div className="cube-alg-det-item-info">
@@ -134,14 +134,14 @@ function Cube() {
             background: "none",
             backView: "top-right"
         });
-        
+
         if (pp.firstChild.nodeName == "TWISTY-PLAYER") {
             pp.removeChild(pp.firstChild);
         }
 
         pp.insertBefore(player, pp.firstChild);
     }, [alg, algType, puzzle])
-    
+
     // React.useEffect(() => {
     //     const pp = document.getElementById("cube-info-box");
 
@@ -153,7 +153,7 @@ function Cube() {
     //         background: "none",
     //         backView: "top-right"
     //     });
-        
+
     //     pp.insertBefore(player, pp.firstChild);
     // },[])
 
