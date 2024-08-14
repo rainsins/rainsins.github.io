@@ -107,7 +107,7 @@ keywords: rainsin, blog, 混沌, 分形几何
 {: .prompt-tip }
 
 <div class="mandelbrot-out-box " id="mandelbrot-out-box" data-screen="no">
-<iframe src="https://gh.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box" data-screen="no"></iframe>
+<iframe src="https://blogs.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box" data-screen="no"></iframe>
 <div class="screen-mandelbrot " id="screen-mandelbrot" data-screen="no">
   
 </div>
