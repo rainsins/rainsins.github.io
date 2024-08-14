@@ -108,7 +108,7 @@ author: rainsin
 {: .prompt-tip }
 
 <div class="mandelbrot-out-box " id="mandelbrot-out-box" data-screen="no">
-<iframe src="https://blog.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box" data-screen="no"></iframe>
+<iframe src="https://gh.rainsin.cn/Mandelbrot" class="mandelbrot-box" id="mandelbrot-box" data-screen="no"></iframe>
 <div class="screen-mandelbrot " id="screen-mandelbrot" data-screen="no">
   
 </div>
