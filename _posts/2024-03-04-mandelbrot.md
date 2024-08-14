@@ -23,7 +23,6 @@ favicon: heart
 post: true
 description: 超美的分形图形（曼德布罗集和朱莉娅集）
 keywords: rainsin, blog, 混沌, 分形几何
-author: rainsin
 ---
 
 <style>
