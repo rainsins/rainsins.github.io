@@ -152,7 +152,9 @@ author: rainsin
 
 <div class="more-about-box">
 
+<!--
 <h2 class="show-about" style="display: none">☯️一言</h2>
+
 
 <div class="profile-box show-about" style="display: none">
 <div class="profile">
@@ -167,9 +169,12 @@ author: rainsin
 </div>
 </div>
 
+
 <h2 class="show-about" style="display: none">📴在玩的</h2>
 
 <div id="playing-box" class="show-about" style="display: none"></div>
+
+-->
 
 <h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
 
@@ -186,9 +191,12 @@ author: rainsin
 <link rel="stylesheet" href="/assets/music/music-min.css">
 
 <script src="/assets/about/about-min.js" defer></script>
+
 <script type="text/babel" src="/assets/about/components/art.js"></script>
 
+<!--
 <script type="text/babel" src="/assets/about/components/play.js"></script>
+-->
 
 <script type="text/babel" src="/assets/about/components/show.js"></script>
 
