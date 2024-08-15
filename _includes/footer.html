@@ -55,6 +55,55 @@
     </div>
   </div>
 </footer>
+<script defer>
+  function testIPv6Support() {
+    return new Promise(function(resolve, reject) {
+      let ipv6Url = 'https://api6.ipify.org?format=json';
+
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', ipv6Url, true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          try {
+            let response = JSON.parse(xhr.responseText);
+            let ipAddress = response.ip;
+            if (isIPv6Address(ipAddress)) {
+              resolve(true);
+            } else {
+              resolve(false);
+            }
+          } catch (error) {
+            resolve(false);
+          }
+        } else {
+          resolve(false);
+        }
+      };
+      xhr.onerror = function() {
+        resolve(false);
+      };
+      xhr.send();
+    });
+  }
+
+  function isIPv6Address(ipAddress) {
+    // 检查IP地址是否为IPv6格式
+    let regex = /^([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}$/;
+    return regex.test(ipAddress);
+  }
+  // 使用示例
+  testIPv6Support().then(function(supported) {
+    if (supported) {
+      ipv6Flag = true;
+    } else {
+      Swal.fire({
+        title: "当前网络好像不支持IPv6?",
+        text: "可能是你使用了不支持IPv6的梯子，亦或者脚本判断有问题。如果网络不支持IPv6，这个网站中的一部分内容可能无法访问。",
+        icon: "question"
+      });
+    }
+  });
+</script>
 <!-- <script>
   window.load_event = {
     ...window.load_event,
