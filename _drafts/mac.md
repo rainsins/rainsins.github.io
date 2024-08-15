@@ -56,6 +56,7 @@ image:
 
 - Snonma 14.2.1
 - Windows 11
+- 统信
 
 ## 正常的功能
 

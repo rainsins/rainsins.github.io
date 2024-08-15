@@ -1,6 +1,5 @@
 ---
 title: 「教程」创建自己的影视库和各种服务
-author: rainsin
 date: 2023-06-10 11:33:00 +0800
 categories: [Server, 音视频]
 tags: [树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker, Bt, Bot]

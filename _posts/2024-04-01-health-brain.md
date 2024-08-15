@@ -1,6 +1,5 @@
 ---
 title: 「转载」死宅更容易变傻？
-author: Qbit
 date: 2024-04-01 23:44:10 +0800
 categories: [健康, 转载]
 tags: [健康]
