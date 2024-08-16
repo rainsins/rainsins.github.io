@@ -170,3 +170,110 @@
 .some-font_sasadsasd111ww2::after {
     content: "渭";
 }
+
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+
+figure.img-fig-card {
+  width: 85%;
+  border: 2px silver solid;
+  min-width: 250px;
+  background-color: white;
+
+  margin: 3% auto;
+  padding: 15px;
+}
+figure.img-fig-card img{
+  width: 100%;
+  display: block;
+
+  box-shadow: 0px 0px 12px 3px silver;
+}
+
+figure.img-fig-card figcaption {
+  font-family: var(--main-font), "Kalam", cursive;
+  height: 2.5em;
+
+  font-size: 1.2em;
+
+  margin: 0;
+  padding: 5px;
+}
+figure.img-fig-card .wiggle1 {
+  animation: wiggle1 0.4s;
+}
+figure.img-fig-card .wiggle {
+  animation: wiggle 0.4s;
+}
+figure.img-fig-card .wiggle2 {
+  animation: wiggle2 0.4s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(3);
+  }
+
+  45% {
+    transform: rotate(-3deg);
+  }
+  85% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes wiggle1 {
+  0% {
+    transform: rotate(-3);
+  }
+
+  45% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes wiggle2 {
+  0% {
+    transform: rotate(1);
+  }
+
+  45% {
+    transform: rotate(2deg);
+  }
+  85% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+@media only screen and (min-width: 636px) and (max-width: 960px) {
+    figure.img-fig-card {
+    width: 40%;
+    margin: 2%;
+    float: left;
+  }
+  figure.img-fig-card figcaption {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 961px) {
+    figure.img-fig-card {
+    width: 27%;
+    float: left;
+    margin: 1% 1%;
+  }
+  figure.img-fig-card figcaption {
+    font-size: 1.4em;
+  }
+}
