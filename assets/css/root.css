@@ -174,7 +174,7 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam");
 
 figure.img-fig-card {
-  width: 85%;
+  width: 100%;
   border: 2px silver solid;
   min-width: 250px;
   background-color: white;
@@ -259,7 +259,7 @@ figure.img-fig-card .wiggle2 {
 }
 @media only screen and (min-width: 636px) and (max-width: 960px) {
     figure.img-fig-card {
-    width: 40%;
+    width: 100%;
     margin: 2%;
     float: left;
   }
@@ -269,7 +269,7 @@ figure.img-fig-card .wiggle2 {
 }
 @media only screen and (min-width: 961px) {
     figure.img-fig-card {
-    width: 27%;
+    width: 100%;
     float: left;
     margin: 1% 1%;
   }
