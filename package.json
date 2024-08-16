@@ -36,6 +36,7 @@
     "cos-nodejs-sdk-v5": "^2.14.2",
     "css-min": "^1.0.0",
     "fontmin": "^1.1.0",
+    "github-webhook-handler": "^1.0.0",
     "next": "^14.0.4",
     "ttf2woff2": "^5.0.0",
     "xml2js": "^0.6.2"

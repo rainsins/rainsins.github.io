@@ -16,3 +16,5 @@ font/
 package-lock.json
 .idea/
 jekyll-theme-chirpy.gemspec
+webhook.js
+deploy.sh
