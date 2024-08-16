@@ -209,55 +209,6 @@
     <script src="/assets/js/swr.min.js" async></script>
   {% endif %}
 
-  {% if page.imgcard %}
-    {% if page.jquery != true %}
-    <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
-    {% endif %}
-    <script defer>
-    function type($target) {
-  //stop typing when hover is off//
-  if ($target.Stop) {
-    return;
-  }
-  if ($target.index < $target.caption.length) {
-    $target.text($target.text() + $target.caption.charAt($target.index));
-
-    $target.index++;
-
-    setTimeout(function() {
-      type($target);
-    }, 100);
-  }
-}
-$(document).ready(function() {
-  var $figures = $("figure.img-fig-card .wiggly");
-  $figures.each(function() {
-    let $figure = $(this);
-
-    let $caption = $figure.find("figure.img-fig-card figcaption");
-
-    $caption.caption = $caption.text();
-    $caption.index = 0;
-    $caption.text("");
-    $caption.Stop = false;
-    let $img = $figure.find("img");
-    $figure.hover(
-      function(e) {
-        $caption.Stop = false;
-        type($caption);
-      },
-      function() {
-        $caption.Stop = true;
-        $caption.text("");
-        $caption.index = 0;
-      }
-    );
-  });
-});
-
-    </script>
-  {% endif %}
-
   {% if page.video %}
   <script src="https://{{ site.unpkg_cdn3 }}/artplayer@5.1.6/dist/artplayer.js"></script>
   <script src="https://{{ site.unpkg_cdn3 }}/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.js"></script>
