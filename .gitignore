@@ -18,3 +18,4 @@ package-lock.json
 jekyll-theme-chirpy.gemspec
 webhook.js
 deploy.sh
+yarn.lock
