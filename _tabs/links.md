@@ -75,11 +75,13 @@ author: rainsin
     display: flex;
     color: black;
     padding: 12px;
-    background-color: var(--box-bg);
     box-shadow: 0 8px 16px -4px #2c2d300c;
     border: var(--box-border) !important;
     border-radius: 12px;
     transition: all .4s ease-in-out;
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .links-item-box:hover{
