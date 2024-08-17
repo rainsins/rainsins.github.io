@@ -63,7 +63,7 @@ function LinksItem({data}) {
       }
       
       const imgbg = {
-        backgroundImage: `url(${ e.index ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 13) * 13 )})`
+        backgroundImage: `url(${ e.index === null ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 13) * 13 )})`
       }
         return(
             <a className="links-item-box" href={e.url} target="_blank" style={imgbg}>
