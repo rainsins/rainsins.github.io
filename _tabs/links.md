@@ -51,7 +51,7 @@ author: rainsin
 
 .links-box{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
 }
 
@@ -129,48 +129,6 @@ author: rainsin
     color: #767676;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
-
-#imgbg-box {
-    width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0rem;
-  padding: 1rem;
-}
-
-.card {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem 2rem;
-  background: #f8f3e8;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-.card > img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 600/300;
-}
-
-.card > h2 {
-  margin-top: 1rem;
-  font-family: "Kalam", cursive;
-  font-weight: normal;
-  font-size: 2rem;
-  color: #4a4a7d;
-  text-align: center;
-}
-
-.card > p {
-  font-family: "Kalam", cursive;
-  font-size: 1rem;
-  color: #5e5e89;
-  text-align: center;
-}
-
 </style>
 
 <div id="links-box"></div>
@@ -189,13 +147,4 @@ author: rainsin
 > 5. 邮箱：1820278582[at]qq.com
 {: .prompt-info }
 
-## 小背景
-
-> 小背景自己备注序号，默认按顺序。
-{: .prompt-tip }
-
-<div id="imgbg-box"></div>
-
 <script type="text/babel" src="/assets/links/links.js"></script>
-
-<script type="text/babel" src="/assets/links/bg.js"></script>
