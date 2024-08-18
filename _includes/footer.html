@@ -106,12 +106,28 @@
   window.load_event = {
     ...window.load_event,
     comments_style: () => {
-        const str = document.getElementsByClassName("tk-owo-emotion");
-        for (const element of str) {
-          if(element.alt.indexOf("抽象") != -1){
-            element.setAttribute('style', 'width: auto');
-          }
-        }
+        
+        const editer = document.getElementById("wl-edit");
+
+        editer.addEventListener("change", (el) => {
+          const arr = Array.from(document.querySelectorAll(".wl-content .vemoji, .wl-content .wl-emoji"));
+          arr.forEach((e,i)=>{
+            if(e.alt.indexOf('小黑子') >= 0 || e.alt.indexOf('搜索引擎') >= 0  || e.alt.indexOf('小人') >= 0  || e.alt.indexOf('机场') >= 0  || e.alt.indexOf('猫狗') >= 0  || e.alt.indexOf('突然') >= 0 || e.alt.indexOf('抽象') >= 0) {
+              e.setAttribute("style", "height: 9em")
+            }
+          })
+        });
+
+        document.querySelectorAll(".wl-action")[2].addEventListener("click",(el) => {
+          const arr = Array.from(document.querySelectorAll(".wl-content .vemoji, .wl-content .wl-emoji"));
+          arr.forEach((e,i)=>{
+            if(e.alt.indexOf('小黑子') >= 0 || e.alt.indexOf('搜索引擎') >= 0  || e.alt.indexOf('小人') >= 0  || e.alt.indexOf('机场') >= 0  || e.alt.indexOf('猫狗') >= 0  || e.alt.indexOf('突然') >= 0 || e.alt.indexOf('抽象') >= 0) {
+              e.setAttribute("style", "height: 9em")
+            }
+          })
+        })
     }
   };
+
+
 </script>
