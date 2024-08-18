@@ -32,60 +32,61 @@ const links_data = [
     index: null
   },
 ];
-function LinksItem({data}) {
+function LinksItem({ data }) {
 
-    React.useEffect(()=>{
-      $(".links-item-box").hover((e)=>{
-        anime({
-          targets: e.currentTarget.firstChild.firstChild,
-          keyframes: [
-            {rotate: "18deg",},
-            {rotate: "-18deg"},
-            {rotate: "10deg"},
-            {rotate: "-8deg"},
-            {rotate: "5deg"},
-            {rotate: "-1deg"},
-            {rotate: 0},
-          ],
-          easing: 'easeInOutSine'
-        });
-      },(e)=>{
+  React.useEffect(() => {
+    $(".links-item-box").hover((e) => {
+      anime({
+        targets: e.currentTarget.firstChild.firstChild,
+        keyframes: [
+          { rotate: "18deg", },
+          { rotate: "-18deg" },
+          { rotate: "10deg" },
+          { rotate: "-8deg" },
+          { rotate: "5deg" },
+          { rotate: "-1deg" },
+          { rotate: 0 },
+        ],
+        easing: 'easeInOutSine'
       });
-    },[])
-
-    const item = data.map((e,i)=>{
-        const imgobj = {
-            backgroundImage: `url(${e.img ? e.img : e.emil ? `https://cravatar.cn/avatar/${MD5.generate(e.emil)}` : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
-      };
-
-      const get_imgurl = (index1) => {
-        return index1 >= 9 ? `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg` : `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg`
-      }
-      
-      const imgbg = {
-        backgroundImage: `url(${ e.index === null ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 12) * 12 )})`
-      }
-        return(
-            <a className="links-item-box" href={e.url} target="_blank" style={imgbg}>
-                <div className="links-item-img-box">
-                    <div className="links-item-img" style={imgobj}></div>
-                </div>
-                <div className="links-item-info-box">
-                    <span className="links-item-info-name">{e.name}</span>
-                    <span className="links-item-info-url">{e.url}</span>
-                    {e.dec ? <span className="links-item-info-dec">
-                        {e.dec}
-                    </span> : null}
-                </div>
-            </a>
-        );
+    }, (e) => {
     });
+  }, [])
+
+  const item = data.map((e, i) => {
+    const imgobj = {
+      backgroundColor: "#fff",
+      backgroundImage: `url(${e.img ? e.img : e.emil ? `https://cravatar.cn/avatar/${MD5.generate(e.emil)}` : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
+    };
+
+    const get_imgurl = (index1) => {
+      return index1 >= 9 ? `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg` : `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg`
+    }
+
+    const imgbg = {
+      backgroundImage: `url(${e.index === null ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 12) * 12)})`
+    }
     return (
-        <div className="links-box">
-            {item}
+      <a className="links-item-box" href={e.url} target="_blank" style={imgbg}>
+        <div className="links-item-img-box">
+          <div className="links-item-img" style={imgobj}></div>
         </div>
+        <div className="links-item-info-box">
+          <span className="links-item-info-name">{e.name}</span>
+          <span className="links-item-info-url">{e.url}</span>
+          {e.dec ? <span className="links-item-info-dec">
+            {e.dec}
+          </span> : null}
+        </div>
+      </a>
     );
+  });
+  return (
+    <div className="links-box">
+      {item}
+    </div>
+  );
 };
 
 const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
-links_item.render(<LinksItem data={links_data}/>);
+links_item.render(<LinksItem data={links_data} />);
