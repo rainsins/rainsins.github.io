@@ -21,24 +21,60 @@
     "fixlint": "npm run test -- --fix"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-env": "^7.20.2",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-terser": "^0.4.0",
-    "rimraf": "^5.0.5",
-    "rollup": "^3.20.2",
-    "rollup-plugin-license": "^3.0.1",
-    "stylelint": "^15.3.0",
-    "stylelint-config-standard-scss": "^9.0.0"
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-class-properties": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "concurrently": "^8.2.2",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "husky": "^9.0.11",
+    "purgecss": "^6.0.0",
+    "rollup": "^4.18.0",
+    "semantic-release": "^24.0.0",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0"
   },
-  "dependencies": {
-    "cos-nodejs-sdk-v5": "^2.14.2",
-    "css-min": "^1.0.0",
-    "fontmin": "^1.1.0",
-    "github-webhook-handler": "^1.0.0",
-    "next": "^14.0.4",
-    "ttf2woff2": "^5.0.0",
-    "xml2js": "^0.6.2"
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss",
+    "rules": {
+      "no-descending-specificity": null,
+      "shorthand-property-no-redundant-values": null,
+      "at-rule-no-vendor-prefix": null,
+      "property-no-vendor-prefix": null,
+      "selector-no-vendor-prefix": null,
+      "value-no-vendor-prefix": null,
+      "color-function-notation": "legacy",
+      "alpha-value-notation": "number",
+      "selector-not-notation": "simple",
+      "color-hex-length": "long",
+      "declaration-block-single-line-max-declarations": 3,
+      "scss/operator-no-newline-after": null,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "after-comment",
+            "first-nested"
+          ]
+        }
+      ],
+      "value-keyword-case": [
+        "lower",
+        {
+          "ignoreProperties": [
+            "/^\\$/"
+          ]
+        }
+      ],
+      "media-feature-range-notation": "prefix"
+    }
   }
 }
