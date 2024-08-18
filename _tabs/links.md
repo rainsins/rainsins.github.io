@@ -139,6 +139,12 @@ author: rainsin
 > 可以击剑🤺之后再添加友链（吾剑也未尝不利）。我的邮箱：1820278582[at]qq.com
 {: .prompt-warning }
 
+## 🫶🏻感谢
+
+> 白天模式的小背景来自[站酷: 亮点漫画](https://abenben.zcool.com.cn/)的[十二梦](https://www.zcool.com.cn/work/ZNjA0MDg3Ng==.html)。<br/>
+> 白天模式的小背景来自[站酷: 那小先art](https://www.zcool.com.cn/u/18496248)。
+{: .prompt-tip }
+
 ## 🔗我的信息
 
 > 1. 网站名称：rainsin's blog
@@ -148,4 +154,4 @@ author: rainsin
 > 5. 邮箱：1820278582[at]qq.com
 {: .prompt-info }
 
-<script type="text/babel" src="/assets/links/links.js"></script>
+<script type="text/babel"  data-type="module" src="/assets/links/links.js"></script>
