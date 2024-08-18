@@ -79,8 +79,9 @@ author: rainsin
     border: var(--box-border) !important;
     border-radius: 12px;
     transition: all .4s ease-in-out;
-    background-size: auto 100%;
+    background-size: auto 102%;
     background-position: right;
+    background-position-x: 101%;
     background-repeat: no-repeat;
 }
 
