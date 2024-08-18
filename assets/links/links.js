@@ -55,7 +55,6 @@ function LinksItem({ data }) {
 
   const item = data.map((e, i) => {
     const imgobj = {
-      backgroundColor: "#fff",
       backgroundImage: `url(${e.img ? e.img : e.emil ? `https://cravatar.cn/avatar/${MD5.generate(e.emil)}` : "https://rainsin-1305486451.file.myqcloud.com/rainsin-blog/img/mm/act.gif"})`
     };
 
@@ -64,6 +63,7 @@ function LinksItem({ data }) {
     }
 
     const imgbg = {
+      backgroundColor: "#fff",
       backgroundImage: `url(${e.index === null ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 12) * 12)})`
     }
     return (
