@@ -109,7 +109,7 @@ function LinksItem({ data, mode }) {
 
 const links_item = ReactDOM.createRoot(document.getElementById('links-box'));
 
-links_item.render(<LinksItem data={links_data} mode={"light"} />);
+links_item.render(<LinksItem data={links_data} mode={modeToggle.modeStatus} />);
 
 const targetNode_link = document.documentElement;
 
@@ -122,11 +122,9 @@ const callback_link = function (mutationsList, observer) {
     if (mutation.type === "attributes" && mutation.attributeName === "data-mode") {
 
       if (modeToggle.modeStatus === 'dark') {
-        console.log('dark');
         links_item.render(<LinksItem data={links_data} mode={'dark'} />);
       }
       else {
-        console.log('light');
         links_item.render(<LinksItem data={links_data} mode={"light"} />);
       }
     }
