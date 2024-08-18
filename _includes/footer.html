@@ -87,11 +87,9 @@
   }
 
   function isIPv6Address(ipAddress) {
-    // 检查IP地址是否为IPv6格式
     let regex = /^([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}$/;
     return regex.test(ipAddress);
   }
-  // 使用示例
   testIPv6Support().then(function(supported) {
     if (supported) {
       ipv6Flag = true;
@@ -104,7 +102,7 @@
     }
   });
 </script>
-<!-- <script>
+<script>
   window.load_event = {
     ...window.load_event,
     comments_style: () => {
@@ -116,4 +114,4 @@
         }
     }
   };
-</script> -->
+</script>
