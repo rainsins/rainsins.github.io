@@ -33,10 +33,7 @@ const links_data = [
   },
 ];
 
-const dcolor = ["#f7dfe5", "#c2cfd0", "#eadfb5", "#dae9ef", "#d6d4e2",
-  "#bcbea9", "#697291", "#a5898c", "#aec2c8", "#e9d0b1",
-  "#8890a4", "#d1c0c6"
-]
+const dcolor = ["#f7dfe5", "#c2cfd0", "#eadfb5", "#dae9ef", "#d6d4e2", "#bcbea9", "#697291", "#a5898c", "#aec2c8", "#e9d0b1", "#8890a4", "#d1c0c6"];
 
 function LinksItem({ data, mode }) {
 
@@ -66,19 +63,19 @@ function LinksItem({ data, mode }) {
     };
 
     const get_imgurl = (index1) => {
-      return index1 >= 9 ? `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg` : `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg`
+      return index1 >= 9 ? `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg` : `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg`;
     }
 
     const get_darkimgurl = (index1) => {
-      return `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E8%8A%B1%E7%A5%9E/${i + 1}.png`
+      return `https://pan.rainsin.cn:2000/d/blog/img/post/%E5%8D%81%E4%BA%8C%E8%8A%B1%E7%A5%9E/${i + 1}.png`;
     }
 
     const get_lighturl = () => {
-      return `url(${e.index >= 0 ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 12) * 12)})`
+      return `url(${e.index >= 0 ? get_imgurl(e.index) : get_imgurl(i - Math.floor(i % 12) * 12)})`;
     }
 
     const get_darkurl = () => {
-      return `url(${e.index >= 0 ? get_darkimgurl(e.index) : get_darkimgurl(i - Math.floor(i % 12) * 12)})`
+      return `url(${e.index >= 0 ? get_darkimgurl(e.index) : get_darkimgurl(i - Math.floor(i % 12) * 12)})`;
     }
 
     const imgbg = {
