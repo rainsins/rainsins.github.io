@@ -39,6 +39,7 @@
     "purgecss": "^6.0.0",
     "rollup": "^4.18.0",
     "semantic-release": "^24.0.0",
+    "rollup-plugin-license": "^3.5.2",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0"
   }
