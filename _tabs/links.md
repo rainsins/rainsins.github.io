@@ -77,7 +77,6 @@ author: rainsin
     padding: 12px;
     box-shadow: 0 8px 16px -4px #2c2d300c;
     border: var(--box-border) !important;
-    backgorund-color: rgb(255,255,255);
     border-radius: 12px;
     transition: all .4s ease-in-out;
     background-size: auto 100%;
