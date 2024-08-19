@@ -36,9 +36,8 @@
 window.load_event = {
       ...window.load_event,
       load_post_summary: ()=>{
-        const content = document.getElementById("post-content") 
         new ChucklePostAI({
-          el: content,
+          el: "#post-content",
           key: 'FA3XwN6IKUk',
           rec_method: 'web'
         });
