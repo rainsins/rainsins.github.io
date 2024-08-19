@@ -552,7 +552,7 @@
     font-family: 'Cormorant Garamond';
     font-style: italic;
     font-weight: 500;
-    src: url(/assets/about/font/rm.woff2) format('woff2');
+    src: url(https://pan.rainsin.cn:2000/d/blog/font/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf) format('ttf');
   }
 
 .about-site {
