@@ -583,7 +583,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow 5s linear infinite;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond",var(--main-font);
     font-style: italic;
     font-weight: 500;
 }
@@ -593,13 +593,13 @@
     border: var(--box-border);
     border-radius: 4px;
     line-height: 1rem;
-    background-size: 200%;
+    background-size: 200%; 
     margin: 0 4px;
     padding: 0 6px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow 5s linear infinite;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond",var(--main-font);
     font-style: italic;
     font-weight: 500;
 }
