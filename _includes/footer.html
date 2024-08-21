@@ -96,22 +96,9 @@
     } else {
       Swal.fire({
         title: "当前网络好像不支持IPv6?",
-        text: "可能是你使用了不支持IPv6的梯子，亦或者脚本判断有问题。如果网络不支持IPv6，这个网站中的一部分内容可能无法访问。",
+        text: "可能是你使用了梯子，亦或者脚本判断有问题。如果网络不支持IPv6，这个网站中的一部分内容（字体、图片等）可能无法获取。",
         icon: "question"
       });
     }
   });
-</script>
-<script>
-  window.load_event = {
-    ...window.load_event,
-    comments_style: () => {
-        const str = document.getElementsByClassName("tk-owo-emotion");
-        for (const element of str) {
-          if(element.alt.indexOf("抽象") != -1){
-            element.setAttribute('style', 'width: auto');
-          }
-        }
-    }
-  };
 </script>
