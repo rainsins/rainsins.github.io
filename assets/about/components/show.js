@@ -22,7 +22,7 @@ function MoreAbout(){
   return(
     <>
       <div className="is-show-box" onClick={changeshow}>
-        {isShow ? "点击收起更多关于我" : "点击查看更多关于我"}
+        {isShow ? "赶紧收起来" : "🙅不要点"}
       </div>
     </>
   )
