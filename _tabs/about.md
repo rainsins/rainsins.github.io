@@ -57,13 +57,10 @@ author: rainsin
 
 <div class="about-site">
   <div>
-  <span>rainsin</span>这个网站名没啥特殊含义，我都忘了当时是怎么想起来用它的了（应该是随机抽了几个字母）。
+  <span>Rainsin</span>这个网站名没啥特殊含义，我都忘了当时是怎么想起来用它的了（应该是随机抽了几个字母）。
   </div>
   <div>
   技术方面的内容会少一些(因为我没有技术🤡)，也不是啥正经人，代码写的也拉垮，也没什么活。
-  </div>
-  <div>
-  内容如有侵权，请联系我<span>1820278582[at]qq.com</span>删除。
   </div>
 </div>
 
@@ -78,11 +75,13 @@ author: rainsin
   </div>
 </div>
 
-<hr class="sep-2"/>
+<div class="more-about-box">
 
-<h2>✍️ 关于我</h2>
+<hr class="sep-2 show-about" style="display: none"/>
 
-<div class="rainsin">
+<h2 class="show-about" style="display: none">✍️ 关于我</h2>
+
+<div class="rainsin show-about" style="display: none">
 <div class="rainsin-info">
   <div class="rainsin-indivdual width-change-indivdual" id="ind_info">
     <div class="rainsin-indivdual-box">
@@ -156,8 +155,6 @@ author: rainsin
       </div>
     </div>
 </div>
-
-<div class="more-about-box">
 
 <!--
 <h2 class="show-about" style="display: none">☯️一言</h2>
