@@ -67,6 +67,7 @@ author: rainsin
   </div>
 </div>
 
+<!--
 ## 👻关于本站
 
 <div class="about-site">
@@ -77,6 +78,7 @@ author: rainsin
   域名服务商<span>Godaddy</span>，DNS服务用的<span>cloudflare</span>，cf的cdn国内访问也很慢，不过我现在也没时间备案，就这样吧。
   </div>
 </div>
+-->
 
 ## ✍️ 关于我
 
