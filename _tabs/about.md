@@ -53,7 +53,7 @@ author: rainsin
 
 <!-- <hr class="sep-1"/> -->
 
-<h2>✍️ 真的关于我</h2>
+<h2>✍️ 关于我</h2>
 
 <div class="rainsin">
 <div class="rainsin-info">
