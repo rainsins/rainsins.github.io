@@ -22,7 +22,7 @@ function MoreAbout(){
   return(
     <>
       <div className="is-show-box" onClick={changeshow}>
-        {isShow ? "我，既非我，是名我。" : "我，既非我，是名我。"}
+        {isShow ? `我 即非我 是名我` : `我 即非我 是名我`}
       </div>
     </>
   )

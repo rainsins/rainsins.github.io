@@ -352,6 +352,18 @@
     min-height: 90px;
 }
 
+.mask {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #E9AE91 0%, #E9AE91 52%, #A66648 78%, #81492B 100%);
+    opacity: .74;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
 .detail-music .mask {
     position: absolute;
     z-index: 2;
@@ -1226,9 +1238,14 @@
     margin: 4px auto;
 }
 
+@font-face {
+    font-family: "篆书";
+    src: url(https://pan.rainsin.cn:2000/d/blog/font/FZZJ-GJPKZTFU.woff);
+}
+
 .is-show-box{
   width: 100%;
-  height: 50px;
+  padding: 14px;
   background: var(--box-bg);
   border: var(--box-border);
   border-radius: 12px;
@@ -1236,6 +1253,59 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  font-family: "篆书";
+  font-size: 1.4em;
+}
+
+.about-site{
+    position: relative;
+    font-size: 1.1em;
+    padding: 20px 30px;
+}
+.about-site div.ah-box{
+    z-index: 3;
+}
+
+.about-site div.ah-box span{
+        background-image: none;
+    border: none;
+    border-radius: 0;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    animation: none;
+    font-family: "Cormorant Garamond", var(--main-font);
+    font-style: normal;
+    -webkit-background-clip: unset; 
+    -webkit-text-fill-color: unset;
+    font-weight: 500;
+}
+
+.about-site div.ah-box span:nth-child(4){
+    color: #5cb3cc;
+}
+.about-site div.ah-box span:nth-child(5){
+    color: #12aa9c;
+}
+.about-site div.ah-box span:nth-child(3){
+    color: #fa7e23;
+}
+
+.about-site div.ah-title{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about-site .mask3{
+    margin: 0;
+    background-image: linear-gradient(to right,#9ca49c 0%,#bc8861 52%,#ecd3a9 78%,#4f2f17 100%);
+}
+
+.bgimg-box{
+    background: url(https://pan.rainsin.cn:2000/d/blog/img/about/%E6%98%8E%E9%87%8C.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .more-about-box{
@@ -1269,3 +1339,5 @@ hr.sep-2::after {
   padding: 1px 1rem;
   background-color: var(--main-bg);
 }
+
+
