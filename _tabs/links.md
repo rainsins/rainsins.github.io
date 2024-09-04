@@ -142,7 +142,7 @@ author: rainsin
 ## 🫶🏻感谢
 
 > 白天模式的小背景来自[站酷: 亮点漫画](https://abenben.zcool.com.cn/)的[十二梦](https://www.zcool.com.cn/work/ZNjA0MDg3Ng==.html)。<br/>
-> 黑夜模式的小背景来自[站酷: 那小先art](https://www.zcool.com.cn/u/18496248)。
+> 黑夜模式的小背景来自[站酷: 那小先art](https://www.zcool.com.cn/u/18496248)。侵删。
 {: .prompt-tip }
 
 ## 🔗我的信息
