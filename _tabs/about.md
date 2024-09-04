@@ -160,9 +160,6 @@ author: rainsin
 -->
 
 <div class="more-about-box">
-
-<hr class="sep-2 show-about" style="display: none"/>
-
 <!--
 <h2 class="show-about" style="display: none">☯️一言</h2>
 
