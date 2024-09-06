@@ -19,3 +19,4 @@ jekyll-theme-chirpy.gemspec
 webhook.js
 deploy.sh
 yarn.lock
+*/.DS_Store
