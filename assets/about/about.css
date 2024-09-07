@@ -560,13 +560,6 @@
     }
 }
 
-@font-face {
-    font-family: "Cormorant Garamond";
-    src: url(https://pan.rainsin.cn:2000/d/blog/font/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf);
-    font-style: italic;
-    font-weight: 500;
-  }
-
 .about-site {
     display: flex;
     width: 100%;

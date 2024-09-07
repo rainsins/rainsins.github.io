@@ -1,4 +1,19 @@
-<figure class="img-fig-card wiggly wiggle2">
-    <img src="{{ include.src }}" alt="{ include.alt }">
-    <figcaption>{{ include.text }}</figcaption>
-</figure>
+<div class="minip">
+    <div class="mg">
+      <div class="clr"></div>
+      <div class="group">
+        <span>{{include.Dname}}</span>
+      </div>
+    </div>
+    <div class="av" style="background-image: url({{include.bg}});"></div>
+    <div class="info">
+      <name>{{include.name}}</name>
+      <deets>
+        {{include.con}}<br>
+        {{include.ski}}
+      </deets>
+    </div>
+    <a class="plot" title="plot with jinkyu" href="{{include.det}}" target="_blank">
+      view plots →
+    </a>
+  </div>

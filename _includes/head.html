@@ -46,8 +46,22 @@ window.load_event = {
 </script>
 {% endif %}
 
+{% if page.blockquote-sep %}
+<link rel="stylesheet" href="https://{{site.cdnjs_cdn1}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css">
+  {% endif %}
+
   {% if page.bodymovin %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
+  {% endif %}
+
+  {% if page.guwen %}
+  <link rel="stylesheet" href="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti.min.css">
+  {% endif %}
+
+  <link rel="stylesheet" href="/assets/css/card-profile.css">
+
+  {% if page.charch %}
+  <script type="text/javascript" src="https://{{ site.js_cdn }}/npm/charch@0.1.0/charch.build.js"></script>
   {% endif %}
 
   {% if page.babel %}
@@ -69,6 +83,11 @@ window.load_event = {
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
 
+  <style>
+    .footnotes>ol>li>p, .charch-indent blockquote p{
+      text-indent: 0;
+    }
+  </style>
 
   {% if page.post %}
   <meta name="keywords" content="{{ page.keywords }}">
@@ -88,6 +107,16 @@ window.load_event = {
       }
     }
   </script>
+
+
+
+{% if page.guwen-addon %}
+<script src="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti-addon.min.js"></script>
+<script defer>
+  const heti = new Heti('#post-content');
+  heti.autoSpacing();
+</script>
+{% endif %}
 
   {% if page.math %}
   <!-- MathJax -->
@@ -113,8 +142,8 @@ window.load_event = {
 
   <!-- <script src="/assets/js/dev.js"></script> -->
 
-  <link rel="stylesheet" href="/assets/css/comments.css"/>
-  <link rel="stylesheet" href="/assets/css/root.css"/>
+  <link rel="stylesheet" href="/assets/css/comments-min.css"/>
+  <link rel="stylesheet" href="/assets/css/root-min.css"/>
 
   {% if page.comments %}
   <link

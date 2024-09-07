@@ -1,0 +1,27 @@
+{
+  "name": "mojikumi",
+  "version": "0.0.1",
+  "authors": [
+    "houmai <houkanshan@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/houkanshan/mojikumi",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "1eeb4a11da5f38fa218dbb7359542f47fe648bb0"
+  },
+  "_source": "https://github.com/houkanshan/mojikumi.git",
+  "_target": "^0.0.1",
+  "_originalSource": "mojikumi",
+  "_direct": true
+}

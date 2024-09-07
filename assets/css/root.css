@@ -69,6 +69,18 @@
 }
 
 @font-face {
+  font-family: "Cormorant Garamond";
+  src: url(https://pan.rainsin.cn:2000/d/blog/font/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf);
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url(https://pan.rainsin.cn:2000/d/blog/font/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
   font-family: "筑紫a主";
   src: url("https://pan.rainsin.cn:2000/d/blog/font/%E7%AD%91%E7%B4%ABold/FZFWZhuZiAOldMinchoM.woff2?sign=vUQFz4_v4adNZDQsvIGfeqwBIHEXQ2pwKEfyTNtRbC8=:0") format('woff2');
   font-weight: 300;
@@ -244,5 +256,199 @@
   }
   100% {
     transform: rotate(0);
+  }
+}
+
+.blockquote-sep-box {
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+.blockquote-sep-box blockquote.blockquote-sep {
+  border-left: 3px solid #FF5154;
+  color: #1a1a1a;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.8em;
+  padding: 1em 1em 1em 2em;
+  position: relative;
+  transition: 0.2s border ease-in-out;
+  z-index: 0;
+}
+
+.blockquote-sep-box blockquote.blockquote-sep p{
+  margin-bottom: .5em;
+}
+
+.blockquote-sep-box blockquote.blockquote-sep:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  height: 2em;
+  background-color: #fff;
+  width: 5px;
+  margin-top: -1em;
+}
+
+.blockquote-sep-box blockquote.blockquote-sep:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  color: #FF5154;
+  font-family: "Ionicons";
+  font-style: normal;
+  line-height: 1em;
+  text-align: center;
+  text-indent: -2px;
+  width: 1em;
+  margin-top: -0.5em;
+  transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}
+
+.blockquote-sep-box blockquote.blockquote-sep:active:after {
+  transform: rotateY(360deg);
+}
+
+.blockquote-sep-box blockquote.blockquote-sep cite {
+  display: block;
+  font-size: 0.75em;
+  line-height: 1.8em;
+  margin-top: 1em;
+  text-align: end;
+}
+
+@media (max-width: 980px) {
+  .blockquote-sep-box blockquote.blockquote-sep {
+    font-size: 1em;
+    margin: 1.1em -2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .blockquote-sep-box blockquote.blockquote-sep {
+    border-top: 2px solid #FF5154;
+    border-bottom: 2px solid #FF5154;
+    border-left: none;
+    margin: 1.5em 0;
+    padding: 1.5em 1em;
+  }
+  .blockquote-sep-box blockquote.blockquote-sep:before {
+    left: 50%;
+    top: 0;
+    height: 4px;
+    margin-top: -3px;
+    margin-left: -1em;
+    width: 2em;
+  }
+  .blockquote-sep-box blockquote.blockquote-sep:after {
+    font-size: 0.75em;
+    left: 50%;
+    top: 0;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+  .blockquote-sep-box blockquote.blockquote-sep cite {
+    text-align: right;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Karla|Space+Mono");
+:root {
+  --contentHeight: 30vh;
+  --sectionWidth: 700px;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  font-family: var(--main-font), monospace;
+  font-size: 22px;
+  transition: 0.3s;
+  border-bottom: 2px solid;
+  user-select: none;
+}
+
+details > div {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 100%;
+  user-select: none;
+  padding: 0 20px;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+}
+
+details > div > img {
+  align-self: flex-start;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+details > div > p {
+  flex: 1;
+}
+
+details[open] > summary {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  details[open] > div > p {
+    opacity: 0;
+    animation-name: showContent;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    margin: 0;
+    padding-left: 20px;
+  }
+  details[open] > div {
+    animation-name: slideDown;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  details[open] > div > img {
+    opacity: 0;
+    height: 100%;
+    margin: 0;
+    animation-name: showImage;
+    animation-duration: 0.3s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+  }
+  to {
+    opacity: 1;
+    height: var(--contentHeight);
+    padding: 20px;
+  }
+}
+@keyframes showImage {
+  from {
+    opacity: 0;
+    clip-path: inset(50% 0 50% 0);
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -88,7 +88,7 @@ tail_includes:
 
 </div> <!-- .post-meta -->
 
-<div class="post-content" id="post-content">
+<div class="post-content {% if page.charch %}{{'charch'}}{% endif %} {% if page.indent %}{{'charch-indent'}}{% endif %} {% if page.pseudo %}{{'charch-pseudo'}}{% endif %} {% if page.cjk-latin-space %}{{'charch-cjk-latin-space'}}{% endif %} {% if page.bracket-replace %}{{'charch-bracket-replace'}}{% endif %} {% if page.link-space %}{{'charch-link-space'}}{% endif %} {% if page.line-height %}{{'charch-line-height'}}{% endif %}" id="post-content">
   {{ content }}
 </div>
 
