@@ -1,47 +1,47 @@
 @font-face {
-    font-family: '方正书宋繁';
-    src: url("https://api.rainsin.cn/fontconverter/FZSSK.woff2");
+  font-family: '方正书宋繁';
+  src: url("https://api.rainsin.cn/fontconverter/FZSSK.woff2");
 }
 
 @font-face {
-    font-family: '方正宋黑繁';
-    src: url("https://api.rainsin.cn/fontconverter/FZSHK.woff2");
+  font-family: '方正宋黑繁';
+  src: url("https://api.rainsin.cn/fontconverter/FZSHK.woff2");
 }
 
 @font-face {
-    font-family: "筑紫a备";
-    src: url("https://api.rainsin.cn/out_font/500-1721485067.woff2") format('woff2');
-    font-weight: 500;
+  font-family: "筑紫a备";
+  src: url("https://api.rainsin.cn/out_font/500-1721485067.woff2") format('woff2');
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: "筑紫a备";
-    src: url("https://api.rainsin.cn/out_font/400-1721485067.woff2") format('woff2');
-    font-weight: 400;
+  font-family: "筑紫a备";
+  src: url("https://api.rainsin.cn/out_font/400-1721485067.woff2") format('woff2');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "筑紫a备";
-    src: url("https://api.rainsin.cn/out_font/600-1721485067.woff2") format('woff2');
-    font-weight: 600;
+  font-family: "筑紫a备";
+  src: url("https://api.rainsin.cn/out_font/600-1721485067.woff2") format('woff2');
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "筑紫A备";
-    src: url("https://api.rainsin.cn/out_font/100-1721485067.woff2") format('woff2');
-    font-weight: 100;
+  font-family: "筑紫A备";
+  src: url("https://api.rainsin.cn/out_font/100-1721485067.woff2") format('woff2');
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: "筑紫a备";
-    src: url("https://api.rainsin.cn/out_font/300-1721485067.woff2") format('woff2');
-    font-weight: 300;
+  font-family: "筑紫a备";
+  src: url("https://api.rainsin.cn/out_font/300-1721485067.woff2") format('woff2');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: "筑紫a备";
-    src: url("https://api.rainsin.cn/out_font/200-1721485067.woff2") format('woff2');
-    font-weight: 200;
+  font-family: "筑紫a备";
+  src: url("https://api.rainsin.cn/out_font/200-1721485067.woff2") format('woff2');
+  font-weight: 200;
 }
 
 @font-face {
@@ -93,94 +93,95 @@
 }
 
 :root {
-    --box-border: 1px solid rgba(143, 155, 168, 0.15);
-    --Jay-shadow-border: 0 8px 16px -4px #2c2d300c;
-    --style-border-always: var(--box-border);
-    --main-font: "筑紫a主", "筑紫a备","筑紫a", "方正宋黑繁", "方正书宋繁", "Hiragino Sans GB", "Microsoft YaHei";
-    --pingfang-font: "Ping Fang", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
-    --box-bg: #d3d3d323;
-    --box-border-b: var(--box-border);
+  --box-border: 1px solid rgba(143, 155, 168, 0.15);
+  --Jay-shadow-border: 0 8px 16px -4px #2c2d300c;
+  --style-border-always: var(--box-border);
+  --main-font: "筑紫a主", "筑紫a备", "筑紫a", "方正宋黑繁", "方正书宋繁", "Hiragino Sans GB", "Microsoft YaHei";
+  --pingfang-font: "Ping Fang", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+  --box-bg: #d3d3d323;
+  --box-border-b: var(--box-border);
 }
 
 *::-webkit-scrollbar {
-    width: 8px;
-    height: 1px;
+  width: 8px;
+  height: 1px;
 }
 
 *::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    box-shadow: inset 0 0 5px rgba(182, 176, 176, 0.2);
-    background: #bcc1c7;
-    border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(182, 176, 176, 0.2);
+  background: #bcc1c7;
+  border-radius: 4px;
 }
 
 *::-webkit-scrollbar-track {
-    box-shadow: none;
-    border-radius: 4px;
-    background: transparent;
+  box-shadow: none;
+  border-radius: 4px;
+  background: transparent;
 }
 
 * {
-    scrollbar-width: 8px;
-    scrollbar-base-color: #EEF4FA;
-    scrollbar-track-color: transparent;
-    scrollbar-arrow-color: blue;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d1d1 #23232300;
+  scrollbar-base-color: #EEF4FA;
+  scrollbar-track-color: transparent;
+  scrollbar-arrow-color: blue;
 }
 
 .tk-owo-emotion {
-    width: 1.5em;
+  width: 1.5em;
 }
 
 .about-site {
-    display: flex;
-    width: 100%;
-    background-color: var(--box-bg);
-    border: 2px solid rgba(34, 36, 38, .15);
-    border-radius: 12px;
-    padding: 20px;
-    flex-direction: column;
-    margin: 20px 0 24px 0
+  display: flex;
+  width: 100%;
+  background-color: var(--box-bg);
+  border: 2px solid rgba(34, 36, 38, .15);
+  border-radius: 12px;
+  padding: 20px;
+  flex-direction: column;
+  margin: 20px 0 24px 0
 }
 
 .about-site div {
-    display: inline;
-    flex: 1;
-    align-content: center;
-    margin: 10px 0;
+  display: inline;
+  flex: 1;
+  align-content: center;
+  margin: 10px 0;
 }
 
 .about-site div span {
-    background-image: linear-gradient(to left, #ff4500, orange, gold, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
-    border: var(--box-border);
-    border-radius: 4px;
-    line-height: 1rem;
-    background-size: 200%;
-    margin: 0 4px;
-    padding: 0 6px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 5s linear infinite;
+  background-image: linear-gradient(to left, #ff4500, orange, gold, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
+  border: var(--box-border);
+  border-radius: 4px;
+  line-height: 1rem;
+  background-size: 200%;
+  margin: 0 4px;
+  padding: 0 6px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s linear infinite;
 }
 
 .about-site div a {
-    background-image: linear-gradient(to left, #ff4500, orange, gold, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
-    border: var(--box-border);
-    border-radius: 4px;
-    line-height: 1rem;
-    background-size: 200%;
-    margin: 0 4px;
-    padding: 0 6px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 5s linear infinite;
+  background-image: linear-gradient(to left, #ff4500, orange, gold, #90ee90, #0ff, #1e90ff, #9370db, #ff69b4, #ff4500);
+  border: var(--box-border);
+  border-radius: 4px;
+  line-height: 1rem;
+  background-size: 200%;
+  margin: 0 4px;
+  padding: 0 6px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s linear infinite;
 }
 
 .table-wrapper>table {
-    width: 100%;
+  width: 100%;
 }
 
 .some-font_sasadsasd111ww2::after {
-    content: "渭";
+  content: "渭";
 }
 
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
@@ -210,7 +211,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-#page-404-box #errorLink:hover, #page-404-box #errorLink:active {
+#page-404-box #errorLink:hover,
+#page-404-box #errorLink:active {
   color: #fff;
   background: #000;
 }
@@ -224,36 +226,47 @@
   0% {
     transform: rotate(0);
   }
+
   5% {
     transform: rotate(3deg);
   }
+
   15% {
     transform: rotate(-2.5deg);
   }
+
   25% {
     transform: rotate(2deg);
   }
+
   35% {
     transform: rotate(-1.5deg);
   }
+
   45% {
     transform: rotate(1deg);
   }
+
   55% {
     transform: rotate(-1.5deg);
   }
+
   65% {
     transform: rotate(2deg);
   }
+
   75% {
     transform: rotate(-2deg);
   }
+
   85% {
     transform: rotate(2.5deg);
   }
+
   95% {
     transform: rotate(-3deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -262,11 +275,11 @@
 .blockquote-sep-box {
   width: 100%;
   margin: 1.5em 0;
+  color: var(--text-color);
 }
 
 .blockquote-sep-box blockquote.blockquote-sep {
   border-left: 3px solid #FF5154;
-  color: #1a1a1a;
   font-size: 1em;
   font-weight: 700;
   line-height: 1.8em;
@@ -276,7 +289,7 @@
   z-index: 0;
 }
 
-.blockquote-sep-box blockquote.blockquote-sep p{
+.blockquote-sep-box blockquote.blockquote-sep p {
   margin-bottom: .5em;
 }
 
@@ -286,7 +299,7 @@
   top: 50%;
   left: -4px;
   height: 2em;
-  background-color: #fff;
+  background-color: var(--main-bg);
   width: 5px;
   margin-top: -1em;
 }
@@ -334,6 +347,7 @@
     margin: 1.5em 0;
     padding: 1.5em 1em;
   }
+
   .blockquote-sep-box blockquote.blockquote-sep:before {
     left: 50%;
     top: 0;
@@ -342,6 +356,7 @@
     margin-left: -1em;
     width: 2em;
   }
+
   .blockquote-sep-box blockquote.blockquote-sep:after {
     font-size: 0.75em;
     left: 50%;
@@ -349,12 +364,14 @@
     margin-top: -0.5em;
     margin-left: -0.5em;
   }
+
   .blockquote-sep-box blockquote.blockquote-sep cite {
     text-align: right;
   }
 }
 
 @import url("https://fonts.googleapis.com/css?family=Karla|Space+Mono");
+
 :root {
   --contentHeight: 30vh;
   --sectionWidth: 700px;
@@ -371,7 +388,7 @@ summary {
   user-select: none;
 }
 
-details > div {
+details>div {
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
@@ -382,22 +399,22 @@ details > div {
   line-height: 1.5;
 }
 
-details > div > img {
+details>div>img {
   align-self: flex-start;
   max-width: 100%;
   margin-top: 20px;
 }
 
-details > div > p {
+details>div>p {
   flex: 1;
 }
 
-details[open] > summary {
+details[open]>summary {
   color: red;
 }
 
 @media (min-width: 768px) {
-  details[open] > div > p {
+  details[open]>div>p {
     opacity: 0;
     animation-name: showContent;
     animation-duration: 0.6s;
@@ -406,12 +423,14 @@ details[open] > summary {
     margin: 0;
     padding-left: 20px;
   }
-  details[open] > div {
+
+  details[open]>div {
     animation-name: slideDown;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
   }
-  details[open] > div > img {
+
+  details[open]>div>img {
     opacity: 0;
     height: 100%;
     margin: 0;
@@ -421,33 +440,39 @@ details[open] > summary {
     animation-fill-mode: forwards;
   }
 }
+
 @keyframes slideDown {
   from {
     opacity: 0;
     height: 0;
     padding: 0;
   }
+
   to {
     opacity: 1;
     height: var(--contentHeight);
     padding: 20px;
   }
 }
+
 @keyframes showImage {
   from {
     opacity: 0;
     clip-path: inset(50% 0 50% 0);
     transform: scale(0.4);
   }
+
   to {
     opacity: 1;
     clip-path: inset(0 0 0 0);
   }
 }
+
 @keyframes showContent {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

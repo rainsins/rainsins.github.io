@@ -116,6 +116,7 @@
     align-content: flex-start;
     transition: 
       bottom .6s linear;
+      color: #000;
   }
   .minip:hover .info {
     bottom: 50px;

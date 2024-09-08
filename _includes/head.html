@@ -268,6 +268,10 @@ window.load_event = {
     <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
+  {% if page.pinyin %}
+  <script src="https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js"></script>
+  {% endif %}
+
   {% if page.chart %}
     <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
   {% endif %}
