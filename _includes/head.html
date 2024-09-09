@@ -10,6 +10,18 @@
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
   {% endif %}
 
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
+
+  <script>
+    window.load_event = {
+          ...window.load_event,
+          autoSpacing: ()=>{
+            pangu.spacingElementByClassName('post-content');
+            pangu.autoSpacingPage();
+          }
+        };
+  </script>
+
   {% if page.cube %}
 
   <script src="https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js" async></script>
@@ -56,6 +68,21 @@ window.load_event = {
 
   {% if page.guwen %}
   <link rel="stylesheet" href="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti.min.css">
+  <style>
+    .heti{
+        max-width: 100%;
+    }
+    .heti-box{
+        max-width: 100%;
+        margin: 40px 0;
+    }
+    .heti--vertical{
+        max-width: 100%;
+        max-height: 30em;
+        overflow-x: auto;
+        margin: 0 auto;
+    }
+</style>
   {% endif %}
 
   <link rel="stylesheet" href="/assets/css/card-profile.css">
@@ -112,10 +139,6 @@ window.load_event = {
 
 {% if page.guwen-addon %}
 <script src="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti-addon.min.js"></script>
-<script defer>
-  const heti = new Heti('#post-content');
-  heti.autoSpacing();
-</script>
 {% endif %}
 
   {% if page.math %}
@@ -159,7 +182,7 @@ window.load_event = {
         comments: () => {
           Waline.init({
               el: '#tcomment',
-              serverURL: 'https://waline.rainsin.cn',
+              serverURL: 'https://comments.rainsin.cn/',
               emoji: [
                 "//pan.rainsin.cn:2000/d/blog/em/小黑子",
                 "//pan.rainsin.cn:2000/d/blog/em/Sticker-100",

@@ -109,7 +109,7 @@ function creactObject(text) {
                 break;
             case "addr":
                 c = `title="${ele_first[0]}"`;
-                result += `<addr ${c}>`;
+                result += `<abbr ${c}>`;
                 break;
             case "mr":
                 result += `<mark>`;
@@ -182,7 +182,7 @@ function creactObject(text) {
                 result += `</q>`;
                 break;
             case "addr":
-                result += `</addr>`;
+                result += `</abbr>`;
                 break;
             case "mr":
                 result += `</mark>`;
@@ -233,4 +233,7 @@ $("py").each(function () {
         _self.append(element);
     })
 });
-
+$(".heti-box").each(function () {
+    const heti = new Heti('.post-content');
+    heti.autoSpacing();
+});
