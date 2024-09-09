@@ -233,7 +233,3 @@ $("py").each(function () {
         _self.append(element);
     })
 });
-$(".heti-box").each(function () {
-    const heti = new Heti('.post-content');
-    heti.autoSpacing();
-});

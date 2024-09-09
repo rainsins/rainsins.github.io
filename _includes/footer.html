@@ -57,7 +57,16 @@
 </footer>
 {% if page.guwen %}
 <script src="/assets/js/heti.js"></script>
-  {% endif %}
+{% endif %}
+
+{% if page.guwen-addon %}
+<script src="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti-addon.min.js"></script>
+
+<script>
+  const heti_addon = new Heti('.heti');
+  heti_addon.autoSpacing();
+</script>
+{% endif %}
 
 <script defer>
   function testIPv6Support() {

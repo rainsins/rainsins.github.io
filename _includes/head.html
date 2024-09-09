@@ -10,6 +10,7 @@
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
   {% endif %}
 
+  {% if page.pangu != true  %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script>
@@ -21,6 +22,7 @@
           }
         };
   </script>
+  {% endif %}
 
   {% if page.cube %}
 
@@ -135,11 +137,6 @@ window.load_event = {
     }
   </script>
 
-
-
-{% if page.guwen-addon %}
-<script src="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti-addon.min.js"></script>
-{% endif %}
 
   {% if page.math %}
   <!-- MathJax -->
