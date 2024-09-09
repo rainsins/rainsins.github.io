@@ -324,10 +324,10 @@ function creactObject(text) {
                 result += `</code>`;
                 break;
             case "dfn":
-                result += `<dfn>`;
+                result += `</dfn>`;
                 break;
             case "s":
-                result += `<s>`;
+                result += `</s>`;
                 break;
             default:
                 console.log(`Sorry, we are out of.`);
