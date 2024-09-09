@@ -70,6 +70,7 @@ window.load_event = {
 
   {% if page.guwen %}
   <link rel="stylesheet" href="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti.min.css">
+  
   <style>
     .heti{
         max-width: 100%;
@@ -82,6 +83,79 @@ window.load_event = {
         max-width: 100%;
         overflow-x: auto;
         margin: 0 auto;
+    }
+    .heti .heti-em{
+      text-emphasis-style: dot;
+    }
+    em.charch, .charch em{
+      text-emphasis-style: triangle !important;
+    }
+
+    .heti--fangsong{
+      font-family: "Times New Roman", times , "heti Fangsong";
+    }
+
+    .heti-fangsong{
+      font-family: "Times New Roman", times , "heti Fangsong";
+    }
+
+    @font-face {
+    font-family: "Heti Song";
+    src: local("Songti SC Regular"), local("Songti TC Regular"),local("Songti SC"), local("Songti TC"), local("STsong"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STSongti-SC-Regular.woff2), local("SimSun");
+  }
+  @font-face {
+    font-family: "Heti Song";
+    font-weight: 200;
+    src: local("Songti SC Light"), local("Songti TC Light"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STSongti-SC-Light.woff2), "Heti Song Light Fallback";
+  }
+  @font-face {
+    font-family: "Heti Song Light Fallback";
+    font-weight: 200;
+    src: local("SimSun"), local("STsong");
+  }
+  @font-face {
+    font-family: "Heti Song";
+    font-weight: 600;
+    src: local("Songti SC Bold"), local("Songti TC Bold"), local("Songti SC"), local("Songti TC"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STSongti-SC-Bold.woff2), "Heti Song Bold Fallback";
+  }
+  @font-face {
+    font-family: "Heti Song Bold Fallback";
+    font-weight: 600;
+    src: local("STsong"), local("SimSun");
+  }
+  @font-face {
+    font-family: "Heti Song Black";
+    font-weight: 800;
+    src: local("Songti SC Black"), local("Songti SC"), local("Songti TC"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STSongti-SC-Black.woff2), local("SimSun");
+  }
+  @font-face {
+    font-family: "Heti Kai";
+    src: local("Kaiti SC Regular"), local("Kaiti TC Regular"), local("Kaiti SC"), local("Kaiti TC"), local("STKaiti"), local("Kaiti"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STKaitiSC-Regular.woff2), local("BiauKai");
+  }
+  @font-face {
+    font-family: "Heti Kai";
+    font-weight: 600;
+    src: local("Kaiti SC Bold"), local("Kaiti SC"), local("Kaiti TC"),local("Kaiti TC Bold"), "Heti Kai Bold Fallback";
+  }
+  @font-face {
+    font-family: "Heti Kai Bold Fallback";
+    font-weight: 600;
+    src: local("STKaiti"), local("Kaiti"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STKaitiSC-Bold.woff2),local("BiauKai");
+  }
+  @font-face {
+    font-family: "Heti Kai Black";
+    font-weight: 800;
+    src: local("Kaiti SC Black"), local("Kaiti TC Black"), local("Kaiti SC"), local("Kaiti TC"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/STKaitiSC-Black.woff2),local("STKaiti"),local("Kaiti");
+  }
+
+  @font-face {
+    font-family: "Heti Fangsong";
+    src: local("STFangsong"), local("FangSong"), local("FangSong_GB2312"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/FZFSK--GBK1-0.woff2);
+  }
+
+    .heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+      font-family: "Times New Roman",times,"Heti Kai",serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-weight: 600;
     }
 </style>
   {% endif %}
