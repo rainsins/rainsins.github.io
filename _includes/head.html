@@ -5,6 +5,32 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  <script>
+    /** * 检测系统 * */ 
+  window.OS = function () {
+  var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'Mac OS';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'iOS';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'Windows';
+  } else if (/Android/.test(userAgent)) {
+    os = 'Android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'Linux';
+  }
+
+  return os;
+}();
+  </script>
+
   {% if page.swiper %}
   <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -154,10 +180,36 @@ window.load_event = {
   }
 
     .heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
-      font-family: "Times New Roman",times,"Heti Kai",serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-      font-weight: 600;
+      font-family: "Times New Roman",times,"Heti Kai Black",serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-weight: 800;
     }
+
 </style>
+<script>
+  window.load_event = {
+    ...window.load_event,
+    heti_title_style: () => {
+      if(OS == "Linux"){
+    $().append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+      font-weight: 400;
+    }</style>`));
+  }else if(OS == "iOS" || OS == "Mac OS"){
+    $().append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+      font-weight: 600;
+    }</style>`));
+  }else if(OS == "Android"){
+    $().append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+      font-family: "Times New Roman",times,url(https://pan.rainsin.cn:2000/d/blog/font/heti/STKaitiSC-Bold.woff2),serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-weight: 600;
+    }</style>`));
+  }else{
+    console.log("哇！");
+    
+  }
+    }
+  }
+
+</script>
   {% endif %}
 
   <link rel="stylesheet" href="/assets/css/card-profile.css">
