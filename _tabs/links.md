@@ -14,6 +14,7 @@ comments: true
 cube: false
 linksdata: false
 anime: true
+pangu: true
 
 favicon: heart
 
