@@ -388,8 +388,6 @@ function each_el(e, data, count) {
             })
 
             _e.replaceWith($(results));
-            console.log(_e);
-            
         }
         return type_e !== 3;
     }).each((i, el) => {
