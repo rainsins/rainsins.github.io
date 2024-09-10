@@ -117,12 +117,12 @@ window.load_event = {
       text-emphasis-style: triangle !important;
     }
 
-    .heti--fangsong{
-      font-family: "Times New Roman", times , "heti Fangsong";
+    .heti--fangsong *{
+      font-family: "Times New Roman", times , "heti Fangsong" !important;
     }
 
-    .heti-fangsong{
-      font-family: "Times New Roman", times , "heti Fangsong";
+    .heti-fangsong *{
+      font-family: "Times New Roman", times , "heti Fangsong" !important;
     }
 
     @font-face {
@@ -194,7 +194,24 @@ window.load_event = {
       text-wrap: nowrap;
       overflow-x: auto;
     }
-
+    .heti .heti-intent{
+      text-indent: 2em;
+    }
+    .heti .heti-intent-3em{
+      text-indent: 3em;
+    }
+    .heti .heti-intent-4em{
+      text-indent: 4em;
+    }
+    html[data-mode="dark"] .heti blockquote{
+      background-color: #f0ada011;
+    }
+    .heti blockquote{
+      color: var(--text-color);
+    }
+    .heti .heti-inline-block{
+      display: inline-block;
+    }
 </style>
 <script>
   window.load_event = {

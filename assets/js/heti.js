@@ -215,6 +215,9 @@ function creactObject(text) {
             case "s":
                 result += `<s>`;
                 break;
+            case "bq":
+                result += `<blockquote>`;
+                break;
             default:
                 console.log(`Sorry, we are out of.`);
                 break;
@@ -329,6 +332,9 @@ function creactObject(text) {
             case "s":
                 result += `</s>`;
                 break;
+            case "bq":
+                result += `</blockquote>`;
+                break;
             default:
                 console.log(`Sorry, we are out of.`);
                 break;
@@ -360,20 +366,44 @@ $(".heti-box").each(function () {
     _self.append(heti(_html));
 });
 
-//获取拼音
-$("py").each(function () {
-    const _self = $(this);
-    const pp = _self.data("pinyin") ? _self.data("pinyin").split(",") : false;
-    const str = _self.text().replace(/[^\u4E00-\u9FA5]/g, "").split("");
-    _self.text("");
-    str.forEach((el, index) => {
-        let pinyins_str = "";
-        if (pp && pp[index]) {
-            pinyins_str = pp[index];
-        } else {
-            pinyins_str = pinyin(el);
+function each_el(e, data, count) { 
+    e.contents().filter((i, ele) => {
+        const _e = $(ele);
+        const type_e = _e[0].nodeType;
+        let results = "";
+
+        if (type_e === 3) {
+            const str = _e[0].nodeValue.split("");
+            
+            str.forEach((el, index) => {
+                let pinyins_str = "";
+                if (/[\u4E00-\u9FFF]/g.test(el) && data && data[0] && count > 0) {
+                    pinyins_str = data[0];
+                    data.splice(0, 1);
+                    count--;
+                } else if (/[\u4E00-\u9FFF]/g.test(el)) {
+                    pinyins_str = pinyin(el);
+                }
+                results += `<ruby><rb>${el}</rb><rp>(</rp><rt lang="zh-Latn">${pinyins_str}</rt><rp>)</rp></ruby>`;
+            })
+
+            _e.replaceWith($(results));
+            console.log(_e);
+            
         }
-        const element = $(`<ruby><rb>${el}</rb><rp>(</rp><rt lang="zh-Latn">${pinyins_str}</rt><rp>)</rp></ruby>`);
-        _self.append(element);
+        return type_e !== 3;
+    }).each((i, el) => {
+        each_el($(el),data,count)
     })
+}
+//获取拼音
+$("py").each(function (i, e) {
+    let count = 0;
+    if ($(e).data("pinyin")) {
+        const data = $(e).data("pinyin").split(",");
+        let count = data.length;
+        each_el($(e),data,count);
+    } else {
+        each_el($(e),false,false);
+    }
 });
