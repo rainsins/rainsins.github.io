@@ -5,30 +5,23 @@
     {% include mode-toggle.html %}
   {% endunless %}
 
+  {% include embed/pan.html %}
+  {% include embed/testOS.html %}
   <script>
-    /** * 检测系统 * */ 
-  window.OS = function () {
-  var userAgent = window.navigator.userAgent,
-      platform = window.navigator.platform,
-      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-      os = null;
-
-  if (macosPlatforms.indexOf(platform) !== -1) {
-    os = 'Mac OS';
-  } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = 'iOS';
-  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-    os = 'Windows';
-  } else if (/Android/.test(userAgent)) {
-    os = 'Android';
-  } else if (!os && /Linux/.test(platform)) {
-    os = 'Linux';
+    window.appendJQCDN = (src) => {
+      var head = document.head || document.getElementsByTagName('head')[0];
+      if(src.indexOf("js")== -1){ //css
+          var style = document.createElement('style');
+          style.setAttribute("rel", "stylesheet"); 
+          style.setAttribute("href",src);
+          head.appendChild(style);
+      }else{
+          var script = document.createElement('script');
+          script.type = "text/javascript";
+          script.setAttribute("src",src);
+          head.appendChild(script);
+      }
   }
-
-  return os;
-}();
   </script>
 
   {% if page.swiper %}
@@ -51,8 +44,9 @@
   {% endif %}
 
   {% if page.cube %}
-
-  <script src="https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js" async></script>
+  <script>
+    sessionStorage.getItem("isPan") ? appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js") : appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js")
+  </script>
 
   {% endif %}
 
@@ -131,12 +125,12 @@ window.load_event = {
 
     @font-face {
     font-family: "Heti Song";
-    src: local("Songti SC Regular"), local("Songti TC Regular"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2) ,local("Songti SC"), local("Songti TC"), local("STsong"), local("CESI_SS_GB2312"), local("Noto Serif CJK"), local("Source Han Serif"), local("SimSun");
+    src: local("Songti SC Regular"), local("Songti TC Regular"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2) ,local("Songti SC"), local("Songti TC"), local("STsong"), local("CESI_SS_GB2312"), local("Noto Serif CJK"), local("Source Han Serif"), local("SimSun");
   }
   @font-face {
     font-family: "Heti Song";
     font-weight: 200;
-    src: local("Songti SC Light"), local("Songti TC Light"), local("Songti SC"), local("Songti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), local("CESI_SS_GB2312"), local("Noto Serif CJK"), local("Source Han Serif"), "Heti Song Light Fallback";
+    src: local("Songti SC Light"), local("Songti TC Light"), local("Songti SC"), local("Songti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), local("CESI_SS_GB2312"), local("Noto Serif CJK"), local("Source Han Serif"), "Heti Song Light Fallback";
   }
   @font-face {
     font-family: "Heti Song Light Fallback";
@@ -146,7 +140,7 @@ window.load_event = {
   @font-face {
     font-family: "Heti Song";
     font-weight: 600;
-    src: local("Songti SC Bold"), local("Songti TC Bold"), local("Songti SC"), local("Songti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), local("CESI_SS_GB2312"),local("Noto Serif CJK"), local("Source Han Serif"), "Heti Song Bold Fallback";
+    src: local("Songti SC Bold"), local("Songti TC Bold"), local("Songti SC"), local("Songti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%AE%8B%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), local("CESI_SS_GB2312"),local("Noto Serif CJK"), local("Source Han Serif"), "Heti Song Bold Fallback";
   }
   @font-face {
     font-family: "Heti Song Bold Fallback";
@@ -160,12 +154,12 @@ window.load_event = {
   }
   @font-face {
     font-family: "Heti Kai";
-    src: local("Kaiti SC Regular"), local("Kaiti TC Regular"), local("Kaiti SC"), local("Kaiti TC"), local("STKaiti"), local("Kaiti"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2), local("CESI_KT_GB18030"), local("BiauKai");
+    src: local("Kaiti SC Regular"), local("Kaiti TC Regular"), local("Kaiti SC"), local("Kaiti TC"), local("STKaiti"), local("Kaiti"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2), local("CESI_KT_GB18030"), local("BiauKai");
   }
   @font-face {
     font-family: "Heti Kai";
     font-weight: 600;
-    src: local("Kaiti SC Bold"),local("Kaiti TC Bold"), local("Kaiti SC"), local("Kaiti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2), local("CESI_KT_GB18030"), "Heti Kai Bold Fallback";
+    src: local("Kaiti SC Bold"),local("Kaiti TC Bold"), local("Kaiti SC"), local("Kaiti TC"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2), local("CESI_KT_GB18030"), "Heti Kai Bold Fallback";
   }
   @font-face {
     font-family: "Heti Kai Bold Fallback";
@@ -175,12 +169,12 @@ window.load_event = {
   @font-face {
     font-family: "Heti Kai Black";
     font-weight: 800;
-    src: local("Kaiti SC Black"), local("Kaiti TC Black"), local("Kaiti SC"), local("Kaiti TC"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2),local("CESI_KT_GB18030"),local("STKaiti"),local("Kaiti");
+    src: local("Kaiti SC Black"), local("Kaiti TC Black"), local("Kaiti SC"), local("Kaiti TC"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E6%A5%B7%E4%BD%93_%E5%B8%B8%E8%A7%84.woff2), url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%8D%8E%E6%96%87%E6%A5%B7%E4%BD%93.woff2), local("CESI_KT_GB18030"),local("STKaiti"),local("Kaiti");
   }
 
   @font-face {
     font-family: "Heti Fangsong";
-    src: local("STFangsong"), local("FangSong"), local("FangSong_GB2312"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E4%BB%BF%E5%AE%8B_%E5%B8%B8%E8%A7%84.woff2),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E4%BB%BF%E5%AE%8B.woff2), local("CESI_FS_GB18030"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/FZFSK--GBK1-0.woff2);
+    src: local("STFangsong"), local("FangSong"), local("FangSong_GB2312"), url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E4%BB%BF%E5%AE%8B_%E5%B8%B8%E8%A7%84.woff2),url(https://pan.rainsin.cn:2000/d/blog/font/heti/%E5%8D%8E%E6%96%87%E4%BB%BF%E5%AE%8B.woff2), url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E4%BB%BF%E5%AE%8B_%E5%B8%B8%E8%A7%84.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/%E5%8D%8E%E6%96%87%E4%BB%BF%E5%AE%8B.woff2),local("CESI_FS_GB18030"),url(https://pan.rainsin.cn:2000/d/blog/font/heti/FZFSK--GBK1-0.woff2),url(https://mypan.hk.cpolar.io/d/blog/font/heti/FZFSK--GBK1-0.woff2);
   }
 
     .heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
@@ -194,7 +188,7 @@ window.load_event = {
     .heti u[title]{
       border-block-end-color: var(--text-color);
     }
-    .heti .heti--nowarp{
+    .heti--nowarp{
       text-wrap: nowrap;
       overflow-x: auto;
     }
@@ -224,6 +218,7 @@ window.load_event = {
   window.load_event = {
     ...window.load_event,
     heti_title_style: () => {
+      const OS = sessionStorage.getItem("OS")
       if(OS == "Linux"){
     $("body").append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
       font-weight: 400;
@@ -337,7 +332,8 @@ window.load_event = {
   window.load_event= {
         ...window.load_event,
         comments: () => {
-          Waline.init({
+          if(sessionStorage.getItem("isPan")){
+            Waline.init({
               el: '#tcomment',
               serverURL: 'https://comment.cpolar.cn/',
               emoji: [
@@ -399,6 +395,71 @@ window.load_event = {
               imageUploader: false,
               search: false
           });
+          }else{
+            Waline.init({
+              el: '#tcomment',
+              serverURL: 'https://comment.cpolar.cn/',
+              emoji: [
+                "//mypan.hk.cpolar.io/d/blog/em/小黑子",
+                "//mypan.hk.cpolar.io/d/blog/em/Sticker-100",
+                "//mypan.hk.cpolar.io/d/blog/em/bilibili",
+                "//mypan.hk.cpolar.io/d/blog/em/Tieba",
+                "//mypan.hk.cpolar.io/d/blog/em/alus",
+                "//mypan.hk.cpolar.io/d/blog/em/商业头盔",
+                "//mypan.hk.cpolar.io/d/blog/em/小人",
+                "//mypan.hk.cpolar.io/d/blog/em/小坏坏",
+                "//mypan.hk.cpolar.io/d/blog/em/抽象",
+                "//mypan.hk.cpolar.io/d/blog/em/搜索引擎",
+                "//mypan.hk.cpolar.io/d/blog/em/机场",
+                "//mypan.hk.cpolar.io/d/blog/em/猥琐萌",
+                "//mypan.hk.cpolar.io/d/blog/em/猫狗",
+                "//mypan.hk.cpolar.io/d/blog/em/白白",
+                "//mypan.hk.cpolar.io/d/blog/em/突然",
+                "//mypan.hk.cpolar.io/d/blog/em/胡桃",
+                "//mypan.hk.cpolar.io/d/blog/em/被子",
+                "//mypan.hk.cpolar.io/d/blog/em/酷安",
+                "//mypan.hk.cpolar.io/d/blog/em/tw",
+                "//mypan.hk.cpolar.io/d/blog/em/qq",
+                "//mypan.hk.cpolar.io/d/blog/em/weibo"
+              ],
+              reaction: [
+                'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
+                'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
+                'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
+                'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
+                'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
+                'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
+                'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
+                'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
+              ],
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
+                reactionTitle: '你是故意找茬是不是啊？',
+                reaction0: '正确的',
+                reaction1: '错误的',
+                reaction2: '小丑的',
+                reaction3: '满昏的',
+                reaction4: '不错的',
+                reaction5: '菜鸡的',
+                reaction6: '超逊的',
+                reaction7: '发烧的',
+                admin: '站长',
+                level0: '素人',
+                level1: '企划',
+                level2: '企划专属',
+                level3: '专属',
+                level4: '双专属',
+                level5: '三社共有',
+                nick: '名称',
+                sofa: '来一起击剑🤺吧'
+              },
+              dark: 'html[data-mode="dark"]',
+              imageUploader: false,
+              search: false
+          });
+          }
+          
         }
       }
 </script>
@@ -417,13 +478,20 @@ window.load_event = {
   <script>
     const style = document.createElement("style");
     style.type = "text/css";
-
-    if(modeToggle.modeStatus == "dark"){
+    if (sessionStorage.getItem("isPan")) {
+      if(modeToggle.modeStatus == "dark"){
       style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}"
     }else{
       style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}"
     };
+    } else {
+      if(modeToggle.modeStatus == "dark"){
+      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}"
+    }else{
+      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}"
+    };
 
+    }
     document.getElementsByTagName("head")[0].appendChild(style);
   </script>
 
@@ -449,7 +517,13 @@ window.load_event = {
   {% endif %}
 
   {% if page.pinyin %}
-  <script src="https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js"></script>
+  <script>
+    if(sessionStorage.getItem("isPan")){
+      appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js");
+    }else{
+      appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/pinyin.min.js");
+    }
+  </script>
   {% endif %}
 
   {% if page.chart %}

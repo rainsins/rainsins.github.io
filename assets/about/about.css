@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "ManbowLines-Regular";
-    src: url("https://pan.rainsin.cn:2000/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0") format('woff');
+    src: url("https://pan.rainsin.cn:2000/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0"),url("https://mypan.hk.cpolar.io/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Gourmand";
-    src: url("https://pan.rainsin.cn:2000/d/blog/font/Gourmand-.woff?sign=h6-2SUODfbL4ukPvWwJpRYeaAcIny5bbmvYePpDh6to=:0") format('woff');
+    src: url("https://pan.rainsin.cn:2000/d/blog/font/Gourmand-.woff?sign=h6-2SUODfbL4ukPvWwJpRYeaAcIny5bbmvYePpDh6to=:0"),url("https://mypan.hk.cpolar.io/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -1173,7 +1173,7 @@
 
 @font-face {
     font-family: "wzm";
-    src: url("https://pan.rainsin.cn:2000/d/blog/font/FZWenZM.woff2");
+    src: url("https://pan.rainsin.cn:2000/d/blog/font/FZWenZM.woff2"),url(https://mypan.hk.cpolar.io/d/blog/font/FZWenZM.woff2);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -1233,7 +1233,7 @@
 
 @font-face {
     font-family: "篆书";
-    src: url(https://pan.rainsin.cn:2000/d/blog/font/FZZJ-GJPKZTFU.woff);
+    src: url(https://pan.rainsin.cn:2000/d/blog/font/FZZJ-GJPKZTFU.woff),url(https://mypan.hk.cpolar.io/d/blog/font/FZZJ-GJPKZTFU.woff);
 }
 
 .is-show-box{
@@ -1296,7 +1296,7 @@
 }
 
 .bgimg-box{
-    background: url(https://pan.rainsin.cn:2000/d/blog/img/about/%E6%98%8E%E9%87%8C.jpg);
+    background-image: url(https://pan.rainsin.cn:2000/d/blog/img/about/%E6%98%8E%E9%87%8C.jpg),url(https://mypan.hk.cpolar.io/d/blog/img/about/%E6%98%8E%E9%87%8C.jpg);
     background-position: center;
     background-size: cover;
 }
