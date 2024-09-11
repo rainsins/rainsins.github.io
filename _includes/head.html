@@ -27,7 +27,7 @@
   }
 
   window.isAppendCDN = (ins,outs) => {
-    if(sessionStorage.getItem("isOut")){
+    if(sessionStorage.getItem("isOut") == "false"){
       appendJQCDN(ins);
     }else{
       appendJQCDN(outs);
@@ -61,7 +61,7 @@
 
   {% if page.cube %}
   <script>
-    sessionStorage.getItem("isPan") ? appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js") : appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js")
+    sessionStorage.getItem("isOut") == "false" ? appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js") : appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js")
   </script>
 
   {% endif %}
@@ -359,7 +359,7 @@ window.load_event = {
   window.load_event= {
         ...window.load_event,
         comments: () => {
-          if(sessionStorage.getItem("isPan")){
+          if(sessionStorage.getItem("isOut") == "false"){
             Waline.init({
               el: '#tcomment',
               serverURL: 'https://comment.cpolar.cn/',
@@ -505,7 +505,7 @@ window.load_event = {
   <script>
     const style = document.createElement("style");
     style.type = "text/css";
-    if (sessionStorage.getItem("isPan")) {
+    if (sessionStorage.getItem("isOut") == "false") {
       if(modeToggle.modeStatus == "dark"){
       style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}"
     }else{
@@ -548,7 +548,7 @@ window.load_event = {
 
   {% if page.pinyin %}
   <script>
-    if(sessionStorage.getItem("isPan")){
+    if(sessionStorage.getItem("isOan") == "false"){
       appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js");
     }else{
       appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/pinyin.min.js");
@@ -642,7 +642,7 @@ window.load_event = {
 
   {% if page.md5 %}
   <script>
-    if(sessionStorage.getItem("isOut")){
+    if(sessionStorage.getItem("isOut") == "false"){
       appendJQCDN("https://cdn.jsdmirror.com/npm/md5-js-tools@1.0.2/lib/md5.min.js");
     }else{
       appendJQCDN("https://quantil.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js");
