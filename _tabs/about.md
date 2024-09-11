@@ -4,7 +4,7 @@ layout: about
 icon: fas fa-infinity
 order: 6
 react: true
-video: false
+video: true
 music: false
 math: false
 mathpolt: false
@@ -162,8 +162,6 @@ author: rainsin
 <div class="more-about-box">
 <!--
 <h2 class="show-about" style="display: none">☯️一言</h2>
-
-
 <div class="profile-box show-about" style="display: none">
 <div class="profile">
 <span>诸法空相</span>
@@ -176,17 +174,25 @@ author: rainsin
 </span>
 </div>
 </div>
-
-
 <h2 class="show-about" style="display: none">📴在玩的</h2>
-
 <div id="playing-box" class="show-about" style="display: none"></div>
-
 -->
 
 <h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
 
 <div id="a-player" class="show-about" style="display: none"></div>
+
+<h2 class="show-about" style="display: none">🎶听的时间最长的一首歌</h2>
+
+<div id="ml" class="show-about" style="display: none"></div>
+
+<style>
+  #ml{
+    width: 100%;
+    margin: 2em 0;
+    aspect-ratio: 1920/1080;
+  }
+</style>
 
 <h2 class="show-about" style="display: none">🍑せんせい</h2>
 
@@ -210,3 +216,47 @@ author: rainsin
 
 <script type="text/babel" src="/assets/music/music.js"></script>
 
+<script>
+    (() => {
+
+    let mseplayer = new Artplayer({
+      container: '#ml',
+      url: sessionStorage.getItem("isPan") ? 'https://pan.rainsin.cn:2000/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.mp4' : "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBb2VyMmNVNVNsT0ZpWUFxMnRIQUVhUGxvSFFLUmc_ZT11RWRuSVg.mp4",
+      theme: "#2c9678",
+        autoMini: true,
+        flip: true,
+        playbackRate: true,
+        screenshot: true,
+        hotkey: true,
+        pip: true,
+        mutex: true,
+        fullscreen: true,
+        fullscreenWeb: true,
+        miniProgressBar: true,
+        playsInline: true,
+        setting: true,
+        autoOrientation: true,
+        plugins: [
+            artplayerPluginDanmuku({
+                danmuku: sessionStorage.getItem("isPan") ? 'https://pan.rainsin.cn:2000/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.xml' : 'https://mypan.hk.cpolar.io/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.xml',
+                speed: 5,
+                opacity: 1,
+                fontSize: 25,
+                color: '#FFFFFF',
+                mode: 0,
+                margin: [10, '25%'],
+                antiOverlap: true,
+                useWorker: true,
+                synchronousPlayback: false,
+                lockTime: 5,
+                maxLength: 100,
+                minWidth: 200,
+                maxWidth: 600,
+                theme: 'light',
+                heatmap: false,
+                beforeEmit: (danmu) => !!danmu.text.trim(),
+            }),
+        ]
+    });
+    })();
+</script>

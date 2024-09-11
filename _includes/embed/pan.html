@@ -1,5 +1,4 @@
 <script>
-  if (!sessionStorage.getItem("isPan")) {
     const testPan = () =>
       new Promise((resolve, reject) => {
         let url = "https://pan.rainsin.cn:2000/d/blog/js/data.json";
@@ -27,15 +26,14 @@
           resolve(false);
         };
         xhr.send();
-      });
-
-    testPan().then(function (supported) {
+      }).then(function (supported) {
       if (supported) {
         sessionStorage.setItem("isPan", true);
       } else {
         sessionStorage.setItem("isPan", false);
       }
-    });
-  };
-  
+    });;
+window.addEventListener('beforeunload', (event) => {
+  testPan();
+});
 </script>

@@ -28,15 +28,20 @@ tagline: 如人饮水，冷暖自知。 # it will display as the sub-title
 
 author: rainsin
 
+out_js_cdn: cdn.jsdelivr.net
 js_cdn: cdn.jsdmirror.com
 js_cdn1: quantil.jsdelivr.net
 js_cdn2: testingcf.jsdelivr.net
 js_cdn3: gcore.jsdelivr.net
 js_cdn4: fastly.jsdelivr.net
+
+out_unpkg_cdn: unpkg.com
 unpkg_cdn: npm.elemecdn.com
 unpkg_cdn1: unpkg.zhimg.com
 unpkg_cdn2: code.bdstatic.com/npm
 unpkg_cdn3: s4.zstatic.net/npm
+
+out_cdnjs_cdn: cdnjs.cloudflare.com
 cdnjs_cdn: mirrors.sustech.edu.cn/cdnjs
 cdnjs_cdn1: s4.zstatic.net
 
@@ -74,7 +79,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-CK39568XK4 # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #

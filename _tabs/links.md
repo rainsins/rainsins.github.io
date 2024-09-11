@@ -15,6 +15,7 @@ cube: false
 linksdata: false
 anime: true
 pangu: true
+md5: true
 
 favicon: heart
 
@@ -23,8 +24,6 @@ description: 友情链接页
 keywords: rainsin, links
 author: rainsin
 ---
-
-<script src="https://cdn.jsdmirror.com/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
 <style>
   /*  */
