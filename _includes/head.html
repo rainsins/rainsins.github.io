@@ -36,12 +36,12 @@
   </script>
 
 {% if page.swiper %}
-  <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   {% if page.pangu != true  %}
-  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha512-/rAx1wbtSaEdVG5s4Ze1OHI3qujbk2sh7nbJdeBIE7iW9Olx7ICNa53U5QV3nb94qS820aQUwkr2OtyGt8U31w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     window.load_event = {
@@ -60,7 +60,7 @@
 
   {% endif %}
 
-  <script src="https://{{ site.js_cdn }}/npm/sweetalert2@11"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
 
@@ -75,7 +75,7 @@
   </script>
 
 {% if page.postsummary %}
-<script src="https://quantil.jsdelivr.net/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script>
 <script data-pjax>
 window.load_event = {
       ...window.load_event,
@@ -91,7 +91,7 @@ window.load_event = {
 {% endif %}
 
 {% if page.blockquote-sep %}
-<link rel="stylesheet" href="https://{{site.cdnjs_cdn1}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/ionicons/7.4.0/collection/components/icon/icon.min.css" integrity="sha512-zecFQhqjByF5zwU6vEP+OCjvWME5YPEv23mvHsgvcTLISftyI8KwnIknGexGxvrex83ZuqpzsgK6UXb05uNHYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {% endif %}
 
   {% if page.bodymovin %}
@@ -99,7 +99,7 @@ window.load_event = {
   {% endif %}
 
   {% if page.guwen %}
-  <link rel="stylesheet" href="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti.min.css">
+  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/heti/0.9.4/heti.min.css" integrity="sha512-/My2cHBMxofuHmAIIK29zje0pIqA2iCC9HDMa76E1jzK5u+wudGzJMMnTsdA5FmVGsoXB1xoJM7fKhniOhz+HA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <style>
     .heti{
@@ -256,16 +256,16 @@ window.load_event = {
   <link rel="stylesheet" href="/assets/css/card-profile.css">
 
   {% if page.charch %}
-  <script type="text/javascript" src="https://{{ site.js_cdn1 }}/npm/charch@0.1.0/charch.build.js"></script>
+  <script type="text/javascript" src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"></script>
   {% endif %}
 
   {% if page.babel %}
-  <script src="https://{{site.js_cdn1}}/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
-  <script src="https://{{site.js_cdn1}}/npm/@babel/standalone@7.25.6/babel.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js" integrity="sha512-uzOpZ74myvXTYZ+mXUsPhDF+/iL/n32GDxdryI2SJronkEyKC8FBFRLiBQ7l7U/PTYebDbgTtbqTa6/vGtU23A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/babel-standalone/7.25.6/babel.min.js" integrity="sha512-8M1WWEzuftS49rfh63fHz354qx+Pzvp3kcQVVTOxIdFSzjYC3I3vk5zgN0guAook97MQIZTfEdl9pUQTov9V6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   {% if page.anime %}
-  <script src="https://{{site.js_cdn2}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -332,12 +332,9 @@ window.load_event = {
   <link rel="stylesheet" href="/assets/css/root-min.css"/>
 
   {% if page.comments %}
-  <link
-    rel="stylesheet"
-    href="https://{{site.js_cdn2}}/npm/@waline/client@3.3.1/dist/waline.min.css"
-  />
+  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.1/waline.min.css" integrity="sha512-Gj8cpUZV6Dl0E3wb+ezSaJSoeGLHSSKuGyjfI7x4KtQlqt47yzA2WNK7ofkrHOAONmyTQaqOtlk0LfJI2L9g2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="https://{{site.js_cdn2}}/npm/@waline/client@3.3.1/dist/waline.umd.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.1/waline.umd.min.js" integrity="sha512-zFhvYxv73VV9gG04/Jg4mxKlFifZqUjiJJtAxHuUKxgmuEaDb809qecbpHs2m3/8IWQupW+9EnXg8SeCndWLqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <style>
   .wl-emoji-popup .wl-tab-wrapper button{
@@ -371,23 +368,23 @@ window.load_event = {
   </script>
 
   {% if page.react %}
-    <script src="https://{{site.js_cdn3}}/npm/react@18.3.1/umd/react.production.min.js"></script>
-    <script src="https://{{site.js_cdn3}}/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/react/18.3.1/cjs/react.production.min.js" integrity="sha512-wGcZXj/wGy0PrK1PUJpABds0CNVMN5FOvx6RJ4VFX6d1cP21LHdn32pqqHZxnlAyTY3MN6agJQnV/RkWiOTZzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js" integrity="sha512-JNrK0svSdzmupRoUCGrnD5Im9ybaQ/dtwjbEE8top7nLk6qlV6jatbUinWJf1B+//gADpfBVm8nF1eyreAJX3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/swr.min.js" async></script>
   {% endif %}
 
   {% if page.video %}
-  <script src="https://{{site.js_cdn3}}/npm/artplayer@5.1.7/dist/artplayer.min.js"></script>
-  <script src="https://{{site.js_cdn3}}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/artplayer/5.1.7/artplayer.min.js" integrity="sha512-qDYn1E57GtCU3FULcPqeTkfqykK+HIrHULWCG3OTPxAo/jMwjxqPEh3D7iXLD7LPsAc5lVCmiQkmBAZlyMxZew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://{{site.js_cdn4}}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   {% endif %}
 
   {% if page.music %}
-  <script src="https://{{site.js_cdn1}}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <link rel="stylesheet" href="https://{{site.js_cdn1}}/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/aplayer/1.10.1/APlayer.min.js" integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {% endif %}
 
   {% if page.jquery %}
-  <script src="https://{{site.js_cdn1}}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   {% if page.pinyin %}
@@ -396,12 +393,12 @@ window.load_event = {
   {% endif %}
 
   {% if page.chart %}
-  <script src="https://{{site.js_cdn2}}/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   {% if page.mathpolt %}
-    <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
-    <script src="https://{{ site.unpkg_cdn3 }}/function-plot@1.25.0/dist/function-plot.js"></script>
+    <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/function-plot/1.25.0/function-plot.js" integrity="sha512-7MI0msHrbnIetu1m53ACfA0Hu0t12NG8yyrVzjSqABYJglzbwYa97UoFzd74rB1bwY7Na850s+cg+5YuWE+TDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% endif %}
 
   {% if page.cube %}
@@ -426,7 +423,7 @@ window.load_event = {
   {% endif %}
 
   {% if page.animatecss %}
-  <link rel="stylesheet" href="https://{{site.js_cdn2}}/npm/animate.css@4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {% endif %}
 
   {% capture seo_tags %}
@@ -478,17 +475,17 @@ window.load_event = {
   {% endif %}
 
   {% if page.md5 %}
-  <script src="https://{{site.js_cdn1}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
+  <script src="https://{{site.js_cdn4}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
   {% endif %}
 
   <!-- GA -->
   {% if jekyll.environment == 'production' and site.google_analytics.id != empty and site.google_analytics.id %}
-    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://myproxy.rainsin.cn/-----www.google-analytics.com" crossorigin="use-credentials">
+    <link rel="dns-prefetch" href="https://myproxy.rainsin.cn/-----www.google-analytics.com">
 
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://myproxy.rainsin.cn/-----www.googletagmanager.com" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://myproxy.rainsin.cn/-----www.googletagmanager.com">
   {% endif %}
 
   <!-- Bootstrap -->

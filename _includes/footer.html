@@ -61,7 +61,7 @@
 {% endif %}
 
 {% if page.guwen-addon %}
-<script src="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti-addon.min.js"></script>
+<script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/heti/0.9.4/heti-addon.min.js" integrity="sha512-GChf2qekcjrSoPicCypQLPqkaZkEnkcsJr85AmkczY0HG5SkfbxOmZY6RoFJLdoeKTGk8EZvkRBaF7BIqV1Ipw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
   const heti_addon = new Heti('.heti');
@@ -207,51 +207,3 @@
   </script>
 
 {% endif %}
-
-<script defer>
-  function testIPv6Support() {
-    return new Promise(function(resolve, reject) {
-      let ipv6Url = 'https://api6.ipify.org?format=json';
-
-      let xhr = new XMLHttpRequest();
-      xhr.open('GET', ipv6Url, true);
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          try {
-            let response = JSON.parse(xhr.responseText);
-            let ipAddress = response.ip;
-            if (isIPv6Address(ipAddress)) {
-              resolve(true);
-            } else {
-              resolve(false);
-            }
-          } catch (error) {
-            resolve(false);
-          }
-        } else {
-          resolve(false);
-        }
-      };
-      xhr.onerror = function() {
-        resolve(false);
-      };
-      xhr.send();
-    });
-  }
-
-  function isIPv6Address(ipAddress) {
-    let regex = /^([0-9a-fA-F]{0,4}:){1,7}[0-9a-fA-F]{0,4}$/;
-    return regex.test(ipAddress);
-  }
-  testIPv6Support().then(function(supported) {
-    if (supported) {
-      ipv6Flag = true;
-    } else {
-      Swal.fire({
-        title: "当前网络好像不支持国内IPv6?",
-        text: "可能是你使用了梯子，又或者你在境外访问，亦或者脚本判断有问题。如果网络不支持国内IPv6，这个网站中的一部分内容（字体、图片等）可能无法获取。",
-        icon: "question"
-      });
-    }
-  });
-</script>
