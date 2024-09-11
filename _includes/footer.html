@@ -69,6 +69,145 @@
 </script>
 {% endif %}
 
+{% if page.comments %}
+<script>
+  window.load_event= {
+        ...window.load_event,
+        comments: () => {
+          if(sessionStorage.getItem("isOut") == "false"){
+            Waline.init({
+              el: '#tcomment',
+              serverURL: 'https://comment.cpolar.cn/',
+              emoji: [
+                "//pan.rainsin.cn:2000/d/blog/em/小黑子",
+                "//pan.rainsin.cn:2000/d/blog/em/Sticker-100",
+                "//pan.rainsin.cn:2000/d/blog/em/bilibili",
+                "//pan.rainsin.cn:2000/d/blog/em/Tieba",
+                "//pan.rainsin.cn:2000/d/blog/em/alus",
+                "//pan.rainsin.cn:2000/d/blog/em/商业头盔",
+                "//pan.rainsin.cn:2000/d/blog/em/小人",
+                "//pan.rainsin.cn:2000/d/blog/em/小坏坏",
+                "//pan.rainsin.cn:2000/d/blog/em/抽象",
+                "//pan.rainsin.cn:2000/d/blog/em/搜索引擎",
+                "//pan.rainsin.cn:2000/d/blog/em/机场",
+                "//pan.rainsin.cn:2000/d/blog/em/猥琐萌",
+                "//pan.rainsin.cn:2000/d/blog/em/猫狗",
+                "//pan.rainsin.cn:2000/d/blog/em/白白",
+                "//pan.rainsin.cn:2000/d/blog/em/突然",
+                "//pan.rainsin.cn:2000/d/blog/em/胡桃",
+                "//pan.rainsin.cn:2000/d/blog/em/被子",
+                "//pan.rainsin.cn:2000/d/blog/em/酷安",
+                "//pan.rainsin.cn:2000/d/blog/em/tw",
+                "//pan.rainsin.cn:2000/d/blog/em/qq",
+                "//pan.rainsin.cn:2000/d/blog/em/weibo"
+              ],
+              reaction: [
+                'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
+                'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
+                'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
+                'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
+                'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
+                'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
+                'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
+                'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
+              ],
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
+                reactionTitle: '你是故意找茬是不是啊？',
+                reaction0: '正确的',
+                reaction1: '错误的',
+                reaction2: '小丑的',
+                reaction3: '满昏的',
+                reaction4: '不错的',
+                reaction5: '菜鸡的',
+                reaction6: '超逊的',
+                reaction7: '发烧的',
+                admin: '站长',
+                level0: '素人',
+                level1: '企划',
+                level2: '企划专属',
+                level3: '专属',
+                level4: '双专属',
+                level5: '三社共有',
+                nick: '名称',
+                sofa: '来一起击剑🤺吧'
+              },
+              dark: 'html[data-mode="dark"]',
+              imageUploader: false,
+              search: false
+          });
+          }else{
+            Waline.init({
+              el: '#tcomment',
+              serverURL: 'https://comment.cpolar.cn/',
+              emoji: [
+                "//mypan.hk.cpolar.io/d/blog/em/小黑子",
+                "//mypan.hk.cpolar.io/d/blog/em/Sticker-100",
+                "//mypan.hk.cpolar.io/d/blog/em/bilibili",
+                "//mypan.hk.cpolar.io/d/blog/em/Tieba",
+                "//mypan.hk.cpolar.io/d/blog/em/alus",
+                "//mypan.hk.cpolar.io/d/blog/em/商业头盔",
+                "//mypan.hk.cpolar.io/d/blog/em/小人",
+                "//mypan.hk.cpolar.io/d/blog/em/小坏坏",
+                "//mypan.hk.cpolar.io/d/blog/em/抽象",
+                "//mypan.hk.cpolar.io/d/blog/em/搜索引擎",
+                "//mypan.hk.cpolar.io/d/blog/em/机场",
+                "//mypan.hk.cpolar.io/d/blog/em/猥琐萌",
+                "//mypan.hk.cpolar.io/d/blog/em/猫狗",
+                "//mypan.hk.cpolar.io/d/blog/em/白白",
+                "//mypan.hk.cpolar.io/d/blog/em/突然",
+                "//mypan.hk.cpolar.io/d/blog/em/胡桃",
+                "//mypan.hk.cpolar.io/d/blog/em/被子",
+                "//mypan.hk.cpolar.io/d/blog/em/酷安",
+                "//mypan.hk.cpolar.io/d/blog/em/tw",
+                "//mypan.hk.cpolar.io/d/blog/em/qq",
+                "//mypan.hk.cpolar.io/d/blog/em/weibo"
+              ],
+              reaction: [
+                'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
+                'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
+                'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
+                'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
+                'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
+                'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
+                'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
+                'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
+              ],
+              pageview: true,
+              locale:{
+                placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
+                reactionTitle: '你是故意找茬是不是啊？',
+                reaction0: '正确的',
+                reaction1: '错误的',
+                reaction2: '小丑的',
+                reaction3: '满昏的',
+                reaction4: '不错的',
+                reaction5: '菜鸡的',
+                reaction6: '超逊的',
+                reaction7: '发烧的',
+                admin: '站长',
+                level0: '素人',
+                level1: '企划',
+                level2: '企划专属',
+                level3: '专属',
+                level4: '双专属',
+                level5: '三社共有',
+                nick: '名称',
+                sofa: '来一起击剑🤺吧'
+              },
+              dark: 'html[data-mode="dark"]',
+              imageUploader: false,
+              search: false
+          });
+          }
+          
+        }
+      }
+  </script>
+
+{% endif %}
+
 <script defer>
   function testIPv6Support() {
     return new Promise(function(resolve, reject) {

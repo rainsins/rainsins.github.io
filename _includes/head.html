@@ -35,18 +35,13 @@
   }
   </script>
 
-  {% if page.swiper %}
-  <script>
-    isAppendCDN("https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css","https://{{ site.out_js_cdn }}/npm/swiper@11/swiper-bundle.min.css");
-    isAppendCDN("https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js","https://{{ site.out_js_cdn }}/npm/swiper@11/swiper-bundle.min.js");
-  </script>
+{% if page.swiper %}
+  <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
   {% endif %}
 
   {% if page.pangu != true  %}
-  
-  <script>
-    isAppendCDN("https://{{ site.cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js","https://{{ site.out_cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js");
-  </script>
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script>
     window.load_event = {
@@ -60,15 +55,12 @@
   {% endif %}
 
   {% if page.cube %}
-  <script>
-    sessionStorage.getItem("isOut") == "false" ? appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/cube/data-min.js") : appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js")
-  </script>
+
+  <script src="https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js"></script>
 
   {% endif %}
 
-  <script>
-    isAppendCDN("https://{{ site.js_cdn }}/npm/sweetalert2@11","https://{{ site.out_js_cdn }}/npm/sweetalert2@11")
-  </script>
+  <script src="https://{{ site.js_cdn }}/npm/sweetalert2@11"></script>
 
   <script>
 
@@ -99,17 +91,15 @@ window.load_event = {
 {% endif %}
 
 {% if page.blockquote-sep %}
-<script>
-  isAppendCDN("https://{{site.cdnjs_cdn1}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css","https://{{site.out_cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css")
-</script>
-{% endif %}
+<link rel="stylesheet" href="https://{{site.cdnjs_cdn1}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css">
+  {% endif %}
 
   {% if page.bodymovin %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
   {% endif %}
 
   {% if page.guwen %}
-  <link rel="stylesheet" href="https://{{site.js_cdn1}}/npm/heti@0.9.4/umd/heti.min.css">
+  <link rel="stylesheet" href="https://{{site.js_cdn}}/npm/heti@0.9.4/umd/heti.min.css">
   
   <style>
     .heti{
@@ -265,25 +255,16 @@ window.load_event = {
   <link rel="stylesheet" href="/assets/css/card-profile.css">
 
   {% if page.charch %}
-  <script>
-    isAppendCDN("https://{{ site.js_cdn }}/npm/charch@0.1.0/charch.build.js","https://{{ site.out_js_cdn }}/npm/charch@0.1.0/charch.build.js")
-  </script>
+  <script type="text/javascript" src="https://{{ site.js_cdn1 }}/npm/charch@0.1.0/charch.build.js"></script>
   {% endif %}
 
   {% if page.babel %}
-
-  <script>
-    isAppendCDN("https://{{ site.cdnjs_cdn }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js","https://{{ site.out_cdnjs_cdn }}/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js")
-  </script>
-  <script>
-    isAppendCDN("https://{{ site.cdnjs_cdn }}/ajax/libs/babel-standalone/7.24.7/babel.min.js","https://{{ site.out_cdnjs_cdn }}/ajax/libs/babel-standalone/7.24.7/babel.min.js")
-  </script>
+  <script src="https://{{site.js_cdn1}}/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
+  <script src="https://{{site.js_cdn1}}/npm/@babel/standalone@7.25.6/babel.min.js"></script>
   {% endif %}
 
   {% if page.anime %}
-  <script>
-    isAppendCDN("https://{{ site.unpkg_cdn3 }}/animejs@3.2.2/lib/anime.min.js","https://{{ site.out_unpkg_cdn }}/animejs@3.2.2/lib/anime.min.js")
-  </script>
+  <script src="https://{{site.js_cdn2}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
   {% endif %}
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -350,146 +331,12 @@ window.load_event = {
   <link rel="stylesheet" href="/assets/css/root-min.css"/>
 
   {% if page.comments %}
-  <script>
-    isAppendCDN("https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.min.css","https://{{ site.out_cdnjs_cdn }}/ajax/libs/waline/3.3.0/waline.min.css");
-    isAppendCDN("https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.umd.min.js","https://{{ site.out_cdnjs_cdn }}/ajax/libs/waline/3.3.0/waline.umd.min.js");
-  </script>
+  <link
+    rel="stylesheet"
+    href="https://{{site.js_cdn2}}/npm/@waline/client@3.3.1/dist/waline.min.css"
+  />
 
-  <script>
-  window.load_event= {
-        ...window.load_event,
-        comments: () => {
-          if(sessionStorage.getItem("isOut") == "false"){
-            Waline.init({
-              el: '#tcomment',
-              serverURL: 'https://comment.cpolar.cn/',
-              emoji: [
-                "//pan.rainsin.cn:2000/d/blog/em/小黑子",
-                "//pan.rainsin.cn:2000/d/blog/em/Sticker-100",
-                "//pan.rainsin.cn:2000/d/blog/em/bilibili",
-                "//pan.rainsin.cn:2000/d/blog/em/Tieba",
-                "//pan.rainsin.cn:2000/d/blog/em/alus",
-                "//pan.rainsin.cn:2000/d/blog/em/商业头盔",
-                "//pan.rainsin.cn:2000/d/blog/em/小人",
-                "//pan.rainsin.cn:2000/d/blog/em/小坏坏",
-                "//pan.rainsin.cn:2000/d/blog/em/抽象",
-                "//pan.rainsin.cn:2000/d/blog/em/搜索引擎",
-                "//pan.rainsin.cn:2000/d/blog/em/机场",
-                "//pan.rainsin.cn:2000/d/blog/em/猥琐萌",
-                "//pan.rainsin.cn:2000/d/blog/em/猫狗",
-                "//pan.rainsin.cn:2000/d/blog/em/白白",
-                "//pan.rainsin.cn:2000/d/blog/em/突然",
-                "//pan.rainsin.cn:2000/d/blog/em/胡桃",
-                "//pan.rainsin.cn:2000/d/blog/em/被子",
-                "//pan.rainsin.cn:2000/d/blog/em/酷安",
-                "//pan.rainsin.cn:2000/d/blog/em/tw",
-                "//pan.rainsin.cn:2000/d/blog/em/qq",
-                "//pan.rainsin.cn:2000/d/blog/em/weibo"
-              ],
-              reaction: [
-                'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
-                'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
-                'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
-                'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
-                'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
-                'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
-                'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
-                'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
-              ],
-              pageview: true,
-              locale:{
-                placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
-                reactionTitle: '你是故意找茬是不是啊？',
-                reaction0: '正确的',
-                reaction1: '错误的',
-                reaction2: '小丑的',
-                reaction3: '满昏的',
-                reaction4: '不错的',
-                reaction5: '菜鸡的',
-                reaction6: '超逊的',
-                reaction7: '发烧的',
-                admin: '站长',
-                level0: '素人',
-                level1: '企划',
-                level2: '企划专属',
-                level3: '专属',
-                level4: '双专属',
-                level5: '三社共有',
-                nick: '名称',
-                sofa: '来一起击剑🤺吧'
-              },
-              dark: 'html[data-mode="dark"]',
-              imageUploader: false,
-              search: false
-          });
-          }else{
-            Waline.init({
-              el: '#tcomment',
-              serverURL: 'https://comment.cpolar.cn/',
-              emoji: [
-                "//mypan.hk.cpolar.io/d/blog/em/小黑子",
-                "//mypan.hk.cpolar.io/d/blog/em/Sticker-100",
-                "//mypan.hk.cpolar.io/d/blog/em/bilibili",
-                "//mypan.hk.cpolar.io/d/blog/em/Tieba",
-                "//mypan.hk.cpolar.io/d/blog/em/alus",
-                "//mypan.hk.cpolar.io/d/blog/em/商业头盔",
-                "//mypan.hk.cpolar.io/d/blog/em/小人",
-                "//mypan.hk.cpolar.io/d/blog/em/小坏坏",
-                "//mypan.hk.cpolar.io/d/blog/em/抽象",
-                "//mypan.hk.cpolar.io/d/blog/em/搜索引擎",
-                "//mypan.hk.cpolar.io/d/blog/em/机场",
-                "//mypan.hk.cpolar.io/d/blog/em/猥琐萌",
-                "//mypan.hk.cpolar.io/d/blog/em/猫狗",
-                "//mypan.hk.cpolar.io/d/blog/em/白白",
-                "//mypan.hk.cpolar.io/d/blog/em/突然",
-                "//mypan.hk.cpolar.io/d/blog/em/胡桃",
-                "//mypan.hk.cpolar.io/d/blog/em/被子",
-                "//mypan.hk.cpolar.io/d/blog/em/酷安",
-                "//mypan.hk.cpolar.io/d/blog/em/tw",
-                "//mypan.hk.cpolar.io/d/blog/em/qq",
-                "//mypan.hk.cpolar.io/d/blog/em/weibo"
-              ],
-              reaction: [
-                'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
-                'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
-                'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
-                'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
-                'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
-                'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
-                'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
-                'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
-              ],
-              pageview: true,
-              locale:{
-                placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
-                reactionTitle: '你是故意找茬是不是啊？',
-                reaction0: '正确的',
-                reaction1: '错误的',
-                reaction2: '小丑的',
-                reaction3: '满昏的',
-                reaction4: '不错的',
-                reaction5: '菜鸡的',
-                reaction6: '超逊的',
-                reaction7: '发烧的',
-                admin: '站长',
-                level0: '素人',
-                level1: '企划',
-                level2: '企划专属',
-                level3: '专属',
-                level4: '双专属',
-                level5: '三社共有',
-                nick: '名称',
-                sofa: '来一起击剑🤺吧'
-              },
-              dark: 'html[data-mode="dark"]',
-              imageUploader: false,
-              search: false
-          });
-          }
-          
-        }
-      }
-</script>
+  <script src="https://{{site.js_cdn2}}/npm/@waline/client@3.3.1/dist/waline.umd.min.js"></script>
 
 <style>
   .wl-emoji-popup .wl-tab-wrapper button{
@@ -523,43 +370,31 @@ window.load_event = {
   </script>
 
   {% if page.react %}
-    <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
-    <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://{{site.js_cdn3}}/npm/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://{{site.js_cdn3}}/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
     <script src="/assets/js/swr.min.js" async></script>
   {% endif %}
 
   {% if page.video %}
-  <script src="https://{{ site.unpkg_cdn3 }}/artplayer@5.1.6/dist/artplayer.js"></script>
-  <script src="https://{{ site.unpkg_cdn3 }}/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.js"></script>
+  <script src="https://{{site.js_cdn3}}/npm/artplayer@5.1.7/dist/artplayer.min.js"></script>
+  <script src="https://{{site.js_cdn3}}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   {% endif %}
 
   {% if page.music %}
-    <script>
-      isAppendCDN("https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css","https://{{ site.out_unpkg_cdn }}/aplayer@1.10.1/dist/APlayer.min.css");
-      isAppendCDN("https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js","https://{{ site.out_unpkg_cdn }}/aplayer@1.10.1/dist/APlayer.min.js");
-    </script>
+  <script src="https://{{site.js_cdn1}}/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <link rel="stylesheet" href="https://{{site.js_cdn1}}/npm/aplayer@1.10.1/dist/APlayer.min.css">
   {% endif %}
 
   {% if page.jquery %}
-    <script src=>
-      isAppendCDN("https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js","https://{{ site.out_unpkg_cdn }}/jquery@3.7.1/dist/jquery.min.js");
-    </script>
+  <script src="https://{{site.js_cdn1}}/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %}
 
   {% if page.pinyin %}
-  <script>
-    if(sessionStorage.getItem("isOan") == "false"){
-      appendJQCDN("https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js");
-    }else{
-      appendJQCDN("https://mypan.hk.cpolar.io/d/blog/js/pinyin.min.js");
-    }
-  </script>
+  <script src="https://{{site.js_cdn1}}/npm/pinyin-pro@3.24.2/dist/index.min.js"></script>
   {% endif %}
 
   {% if page.chart %}
-    <script>
-      isAppendCDN("https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js","https://{{ site.out_unpkg_cdn }}/chart.js@4.4.3/dist/chart.umd.js")
-    </script>
+  <script src="https://{{site.js_cdn2}}/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   {% endif %}
 
   {% if page.mathpolt %}
@@ -589,7 +424,7 @@ window.load_event = {
   {% endif %}
 
   {% if page.animatecss %}
-  <link rel="stylesheet" href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://{{site.js_cdn2}}/npm/animate.css@4.1.1/animate.min.css">
   {% endif %}
 
   {% capture seo_tags %}
@@ -641,13 +476,7 @@ window.load_event = {
   {% endif %}
 
   {% if page.md5 %}
-  <script>
-    if(sessionStorage.getItem("isOut") == "false"){
-      appendJQCDN("https://cdn.jsdmirror.com/npm/md5-js-tools@1.0.2/lib/md5.min.js");
-    }else{
-      appendJQCDN("https://quantil.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js");
-    }
-  </script>
+  <script src="https://{{site.js_cdn1}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
   {% endif %}
 
