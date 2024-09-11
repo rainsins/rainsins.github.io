@@ -358,8 +358,6 @@ function heti(str) {
     return $(result);
 }
 
-const { pinyin } = pinyinPro;
-
 //遍历要作用的元素
 $(".heti-box").each(function () {
     const _self = $(this);
