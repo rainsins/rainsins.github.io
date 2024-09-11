@@ -22,7 +22,9 @@ xhr.open('GET', endpoint, true);
 xhr.send();   
 }
 
+isO();
+
 window.addEventListener('beforeunload', (event) => {
-  isO();
+  sessionStorage.clear();
 });
 </script>
