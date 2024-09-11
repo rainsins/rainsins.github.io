@@ -14,12 +14,12 @@
   <script>
     window.appendJQCDN = (src) => {
       var head = document.head || document.getElementsByTagName('head')[0];
-      if(src.indexOf("js")== -1){ //css
+      if(src.endsWith(".css")){ //css
           var style = document.createElement('style');
           style.setAttribute("rel", "stylesheet"); 
           style.setAttribute("href",src);
           head.appendChild(style);
-      }else{
+      }else if(src.endsWith(".js")){
           var script = document.createElement('script');
           script.type = "text/javascript";
           script.setAttribute("src",src);
