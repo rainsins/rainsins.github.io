@@ -536,6 +536,23 @@ window.load_event = {
 
   <link href="/assets/css/font.css" rel="stylesheet">
   <link href="/assets/css/em.css" rel="stylesheet">
+
+  <script>
+    window.load_event = {
+      ...window.load_event,
+      is_out_alert: ()=>{
+        if(sessionStorage.getItem("isOutAlert")){
+          return
+        }else{
+          if(sessionStorage.getItem("isOut") == "true"){
+            sessionStorage.setItem("isOutAlert","true");
+            Qmsg.warning("哈，你可能使用了梯子或者在外国访问这个站点，有些资源可能会加载不出来，请见谅！");
+          }
+        }
+      }
+    }
+  </script>
+
   {% include set-mode.html %}
   {% include metadata-hook.html %}
 </head>
