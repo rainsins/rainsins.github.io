@@ -1,34 +1,44 @@
 function Mer() {
+    React.useEffect(() => {
+        const mm = document.getElementsByClassName("is-show-mm")[0];
+        mm.setAttribute("style", "display: grid;grid-auto-rows: 5px;grid-template-columns: repeat(auto-fill, calc(50% - 5px));align-items: start;justify-content: space-between;gap:unset;");
+    },[])
+
+    const loadImage = (e) => {
+        const el = e.target;
+        const rows = Math.ceil(el.clientHeight / 5) + 2;
+        el.style.gridRowEnd = `span ${rows}`;
+    }
     return (
         <>
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNrdmRQRjlUeGhuQjJIZkE_ZT1ja3lFMmc.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRqQVBrUFRfa1hWdFpCcUE_ZT1jOGhVNzU.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRsamx0SmRZdUc3XzFwcXc_ZT1hT1hRWG4.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRmY082bmVJckNzMk5SU0E_ZT1SV1hIOWM.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNuT1d4c2FBMHV6YVk2OEE_ZT1Gc1hhQW8.png" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNtd05TUS1vQ3pmb3hFVUE_ZT1DSVBEeVA.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNvZDMwOUsyYTZYZFd2dFE_ZT1udlVoSnU.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNyeHVOc2pCeGNQWlFfTnc_ZT1rWVBzZ00.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNwN1FpNW9xcDJQLUtITlE_ZT1vZ2NtUGc.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGN5Q0RKaUZQSjRZNW9tT2c_ZT02dkFkTVo.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGMyM2ZRWDNzN1MtY0k3UlE_ZT1OQjNLeGk.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGMzeXpRNEdTeDZzLWk4VFE_ZT14VndqTlA.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGM4MTJlSXpFakx2Slo5Y1E_ZT1BWHk0YlY.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRCbUFfaWxLMF9yWXZOQmc_ZT1zOW1FRWM.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGREb1BMbTNoNDhIQnZkTWc_ZT1BVEFVYVA.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRGZnJOdjhQNlJuN3lUTXc_ZT1pYnRaVkE.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRJV3R1eW1NOXVUb1RPRHc_ZT1LSGFaSWk.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRKeXBJX1YyVTRmMEhnYWc_ZT1TMGxKdFc.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRLZEN0THZlOURQQ1dqelE_ZT1DR3lEV1A.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRMeEdZRlNUT0FVZEgzYlE_ZT1SdHVtQ00.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGROVnd0V29LM2JrU0RabGc_ZT11a1dYM2g.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRRQjhUUWVtcDFJQkRwSlE_ZT1WMmxjbkI.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRUOUl0eUFUMU0yZUtwdHc_ZT1ySkp4a2c.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRXUDMtbHcydGl5M29hdnc_ZT1aQjdrQXg.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRvNWJFQUFrbnpnb1gzLVE_ZT1LWWxCWUE.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRxblB6NGEzN3VfR0tPNVE_ZT1pd3lQSTk.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRnRjU2OUJyMkNHWnppc0E_ZT11RzRzVG4.jpg" />
-            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRaWG5ieUNXQm5TVDh3U0E_ZT1VUGVsTDI.jpg" />
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNrdmRQRjlUeGhuQjJIZkE_ZT1ja3lFMmc.jpg" onLoad={loadImage} />
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRqQVBrUFRfa1hWdFpCcUE_ZT1jOGhVNzU.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRsamx0SmRZdUc3XzFwcXc_ZT1hT1hRWG4.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRmY082bmVJckNzMk5SU0E_ZT1SV1hIOWM.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNuT1d4c2FBMHV6YVk2OEE_ZT1Gc1hhQW8.png" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNtd05TUS1vQ3pmb3hFVUE_ZT1DSVBEeVA.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNvZDMwOUsyYTZYZFd2dFE_ZT1udlVoSnU.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNyeHVOc2pCeGNQWlFfTnc_ZT1rWVBzZ00.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGNwN1FpNW9xcDJQLUtITlE_ZT1vZ2NtUGc.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGN5Q0RKaUZQSjRZNW9tT2c_ZT02dkFkTVo.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGMyM2ZRWDNzN1MtY0k3UlE_ZT1OQjNLeGk.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGMzeXpRNEdTeDZzLWk4VFE_ZT14VndqTlA.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGM4MTJlSXpFakx2Slo5Y1E_ZT1BWHk0YlY.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRCbUFfaWxLMF9yWXZOQmc_ZT1zOW1FRWM.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGREb1BMbTNoNDhIQnZkTWc_ZT1BVEFVYVA.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRGZnJOdjhQNlJuN3lUTXc_ZT1pYnRaVkE.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRJV3R1eW1NOXVUb1RPRHc_ZT1LSGFaSWk.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRKeXBJX1YyVTRmMEhnYWc_ZT1TMGxKdFc.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRLZEN0THZlOURQQ1dqelE_ZT1DR3lEV1A.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRMeEdZRlNUT0FVZEgzYlE_ZT1SdHVtQ00.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGROVnd0V29LM2JrU0RabGc_ZT11a1dYM2g.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRRQjhUUWVtcDFJQkRwSlE_ZT1WMmxjbkI.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRUOUl0eUFUMU0yZUtwdHc_ZT1ySkp4a2c.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRXUDMtbHcydGl5M29hdnc_ZT1aQjdrQXg.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRvNWJFQUFrbnpnb1gzLVE_ZT1LWWxCWUE.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRxblB6NGEzN3VfR0tPNVE_ZT1pd3lQSTk.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRnRjU2OUJyMkNHWnppc0E_ZT11RzRzVG4.jpg" onLoad={loadImage}/>
+            <img src="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpUGRaWG5ieUNXQm5TVDh3U0E_ZT1VUGVsTDI.jpg" onLoad={loadImage}/>
         </>
     );
 };
@@ -40,9 +50,11 @@ const AnsContext = React.createContext(false);
 
 const questions = [
     {
-        latex: "\\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  }{sinx} ",
+        latex: `1.\\quad\\lim_{x\\rightarrow 0} \\frac{\\left( 1+x\\right)^{\\frac{1}{x} }  -\\left( 1+2x\\right)^{\\frac{1}{2x} }  }{sinx} = \\quad ?`,
         ans: "\\frac{e}{2}",
-        ans1: "\\frac{1}{2}e"
+        ans1: "\\frac{1}{2}e",
+        ans2: "e",
+        ans3: "?"
     },
 ];
 
@@ -115,7 +127,7 @@ function Question({ lat }) {
     React.useEffect(() => {
         let math3 = document.getElementsByClassName("show-ans-latex");
         MathJax.typeset(math3);
-        if (latexData == lat.ans || latexData == lat.ans1) {
+        if (latexData == lat.ans || latexData == lat.ans1 || latexData == lat.ans2 || latexData == lat.ans3) {
             setAns(true);
         }
     }, [latexData]);
@@ -154,6 +166,8 @@ function Question({ lat }) {
                 </div>
                 <div className="ques-detail">
                     $${lat.latex}$$
+                <br></br>
+                    $$ {`2. \\quad 2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+\\frac{3}{4+\\frac{4}{5+ \\cdots } } } } } = \\quad ?` } $$
                 </div>
             </div>
             <div className="ans-box">
