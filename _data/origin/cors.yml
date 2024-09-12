@@ -2,7 +2,7 @@
 
 cdns:
   # Google Fonts
-  - url: https://fonts.googleapis.com
+  - url: https://fonts.font.im
   - url: https://fonts.gstatic.com
     args: crossorigin
   - url: https://fonts.googleapis.com
@@ -11,7 +11,7 @@ cdns:
 
 # fonts
 
-webfonts: https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap
+webfonts: https://fonts.font.im/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap
 
 # Libraries
 
