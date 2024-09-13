@@ -1,74 +1,71 @@
 <!-- The Head -->
 
 <head>
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
-
-  {% include embed/lookup.html %}
-  {% include embed/pan.html %}
-  {% include embed/testOS.html %}
+  {% unless site.theme_mode %} {% include mode-toggle.html %} {% endunless %} {%
+  include embed/lookup.html %} {% include embed/pan.html %} {% include
+  embed/testOS.html %}
 
   <script>
     window.appendJQCDN = (src) => {
-      var head = document.head || document.getElementsByTagName('head')[0];
-      if(src.endsWith(".css")){ //css
-          var style = document.createElement('style');
-          style.setAttribute("rel", "stylesheet"); 
-          style.setAttribute("href",src);
-          head.appendChild(style);
-      }else if(src.endsWith(".js")){
-          var script = document.createElement('script');
-          script.type = "text/javascript";
-          script.setAttribute("src",src);
-          head.appendChild(script);
+      var head = document.head || document.getElementsByTagName("head")[0];
+      if (src.endsWith(".css")) {
+        //css
+        var style = document.createElement("style");
+        style.setAttribute("rel", "stylesheet");
+        style.setAttribute("href", src);
+        head.appendChild(style);
+      } else if (src.endsWith(".js")) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.setAttribute("src", src);
+        head.appendChild(script);
       }
-  }
+    };
 
-  window.isAppendCDN = (ins,outs) => {
-    if(sessionStorage.getItem("isOut") == "false"){
-      appendJQCDN(ins);
-    }else{
-      appendJQCDN(outs);
-    }
-  }
+    window.isAppendCDN = (ins, outs) => {
+      if (sessionStorage.getItem("isOut") == "false") {
+        appendJQCDN(ins);
+      } else {
+        appendJQCDN(outs);
+      }
+    };
   </script>
 
-<link rel="stylesheet" href="/assets/message/message.min.css" />
-<script src="/assets/message/message.min.js"></script>
+  <link rel="stylesheet" href="/assets/message/message.min.css" />
+  <script src="/assets/message/message.min.js"></script>
 
-{% if page.tooltipcss %}
-<link rel="stylesheet" href="https://cdn.staticfile.net/hint.css/3.0.0/hint.min.css">
-{% endif %}
-
-{% if page.tooltipjs %}
-<script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
-<script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
-{% endif %}
-
-{% if page.swiper %}
-<link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
+  {% if page.tooltipcss %}
+  <link
+    rel="stylesheet"
+    href="https://cdn.staticfile.net/hint.css/3.0.0/hint.min.css"
+  />
+  {% endif %} {% if page.tooltipjs %}
+  <script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
+  <script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
+  {% endif %} {% if page.swiper %}
+  <link
+    rel="stylesheet"
+    href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css"
+  />
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
-  {% endif %}
-  {% if page.clipboard %}
-  <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js" type="application/javascript"></script>
-  {% endif %}
-
-  {% if page.pangu != true  %}
+  {% endif %} {% if page.clipboard %}
+  <script
+    src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
+    type="application/javascript"
+  ></script>
+  {% endif %} {% if page.pangu != true %}
   <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script>
     window.load_event = {
-          ...window.load_event,
-          autoSpacing: ()=>{
-            pangu.spacingElementByClassName('post-content');
-            pangu.autoSpacingPage();
-          }
-        };
+      ...window.load_event,
+      autoSpacing: () => {
+        pangu.spacingElementByClassName("post-content");
+        pangu.autoSpacingPage();
+      },
+    };
   </script>
-  {% endif %}
-
-  {% if page.cube %}
+  {% endif %} {% if page.cube %}
 
   <script src="https://mypan.hk.cpolar.io/d/blog/js/cube/data-min.js"></script>
 
@@ -77,124 +74,145 @@
   <script src="https://{{ site.js_cdn4 }}/npm/sweetalert2@11"></script>
 
   <script>
-
     let box = document.documentElement;
-    if(!box.getAttribute('data-mode')){
-      if(modeToggle.modeStatus == 'dark'){
-          box.setAttribute('data-mode','dark')
-      }else{
-          box.setAttribute('data-mode','light')
+    if (!box.getAttribute("data-mode")) {
+      if (modeToggle.modeStatus == "dark") {
+        box.setAttribute("data-mode", "dark");
+      } else {
+        box.setAttribute("data-mode", "light");
       }
-  }
+    }
   </script>
 
-{% if page.postsummary %}
-<script src="https://{{site.js_cdn1}}/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script>
-<script data-pjax>
-window.load_event = {
+  {% if page.postsummary %}
+  <script src="https://{{site.js_cdn1}}/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script>
+  <script data-pjax>
+    window.load_event = {
       ...window.load_event,
-      load_post_summary: ()=>{
+      load_post_summary: () => {
         new ChucklePostAI({
           el: "#post-content",
-          key: 'FA3XwN6IKUk',
-          rec_method: 'web'
+          key: "FA3XwN6IKUk",
+          rec_method: "web",
         });
-      }
+      },
     };
-</script>
-{% endif %}
-
-{% if page.blockquote-sep %}
-<link rel="stylesheet" href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css">
-  {% endif %}
-
-  {% if page.bodymovin %}
+  </script>
+  {% endif %} {% if page.blockquote-sep %}
+  <link
+    rel="stylesheet"
+    href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css"
+  />
+  {% endif %} {% if page.bodymovin %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
-  {% endif %}
+  {% endif %} {% if page.guwen %}
+  <link
+    rel="stylesheet"
+    href="https://{{ site.cdnjs_cdn }}/ajax/libs/heti/0.9.4/heti.min.css"
+    integrity="sha512-/My2cHBMxofuHmAIIK29zje0pIqA2iCC9HDMa76E1jzK5u+wudGzJMMnTsdA5FmVGsoXB1xoJM7fKhniOhz+HA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-  {% if page.guwen %}
-  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn }}/ajax/libs/heti/0.9.4/heti.min.css" integrity="sha512-/My2cHBMxofuHmAIIK29zje0pIqA2iCC9HDMa76E1jzK5u+wudGzJMMnTsdA5FmVGsoXB1xoJM7fKhniOhz+HA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
   <style>
-  @import url(/assets/css/heti-add-min.css);
-</style>
-<script>
-  window.load_event = {
-    ...window.load_event,
-    heti_title_style: () => {
-      const OS = sessionStorage.getItem("OS")
-      if(OS == "Linux"){
-    $("body").append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+    @import url(/assets/css/heti-add-min.css);
+  </style>
+  <script>
+    window.load_event = {
+      ...window.load_event,
+      heti_title_style: () => {
+        const OS = sessionStorage.getItem("OS");
+        if (OS == "Linux") {
+          $("body").append(
+            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
       font-weight: 400;
-    }</style>`));
-  }else if(OS == "iOS" || OS == "Mac OS"){
-    $("body").append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+    }</style>`)
+          );
+        } else if (OS == "iOS" || OS == "Mac OS") {
+          $("body").append(
+            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
       font-family: "Times New Roman",times,"Heti Kai",serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
       font-weight: 600;
-    }</style>`));
-  }else if(OS == "Android"){
-    $("body").append($(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
+    }</style>`)
+          );
+        } else if (OS == "Android") {
+          $("body").append(
+            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
       font-weight: 600;
-    }</style>`));
-  }else{
-    console.log("哇！");
-    
-  }
-    }
-  }
-
-</script>
+    }</style>`)
+          );
+        } else {
+          console.log("哇！");
+        }
+      },
+    };
+  </script>
   {% endif %}
 
-  <link rel="stylesheet" href="/assets/css/card-profile.css">
+  <link rel="stylesheet" href="/assets/css/card-profile.css" />
 
   {% if page.charch %}
-  <script type="text/javascript" src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"></script>
-  {% endif %}
-
-  {% if page.babel %}
-  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/babel-standalone/7.25.6/babel.min.js" integrity="sha512-8M1WWEzuftS49rfh63fHz354qx+Pzvp3kcQVVTOxIdFSzjYC3I3vk5zgN0guAook97MQIZTfEdl9pUQTov9V6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  {% endif %}
-
-  {% if page.anime %}
+  <script
+    type="text/javascript"
+    src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"
+  ></script>
+  {% endif %} {% if page.babel %}
+  <script
+    src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/babel-standalone/7.25.6/babel.min.js"
+    integrity="sha512-8M1WWEzuftS49rfh63fHz354qx+Pzvp3kcQVVTOxIdFSzjYC3I3vk5zgN0guAook97MQIZTfEdl9pUQTov9V6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  {% endif %} {% if page.anime %}
   <script src="https://{{site.js_cdn}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
   {% endif %}
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: light)"
+    content="#f7f7f7"
+  />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: dark)"
+    content="#1b1b1e"
+  />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  />
   <meta
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-  >
+  />
 
   <style>
-    .footnotes>ol>li>p, .charch-indent blockquote p{
+    .footnotes > ol > li > p,
+    .charch-indent blockquote p {
       text-indent: 0;
     }
   </style>
 
   {% if page.post %}
-  <meta name="keywords" content="{{ page.keywords }}">
-  <meta name="author" content="{{ page.author }}">
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="author" content="{{ page.author }}" />
   {% else %}
-  <meta name="keywords" content="{{ site.keywords }}">
-  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <meta name="author" content="{{ site.author }}" />
   {% endif %}
 
   <script>
-      window.load_event = {
+    window.load_event = {
       ...window.load_event,
-      load_anime: ()=>{
+      load_anime: () => {
         const loads = document.getElementById("loading-gif-box");
         loads.style.opacity = "0";
         loads.style.zIndex = "-999999";
-      }
-    }
+      },
+    };
   </script>
-
 
   {% if page.math %}
   <!-- MathJax -->
@@ -202,195 +220,206 @@ window.load_event = {
     MathJax = {
       tex: {
         inlineMath: [
-          ['$', '$'],
-          ['\\(', '\\)']
+          ["$", "$"],
+          ["\\(", "\\)"],
         ],
         displayMath: [
-          ['$$', '$$'],
-          ['\\[', '\\]']
+          ["$$", "$$"],
+          ["\\[", "\\]"],
         ],
-        tags: 'ams'
-      }
+        tags: "ams",
+      },
     };
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
-{% endif %}
+  <script
+    id="MathJax-script"
+    async
+    src="{{ site.data.origin[type].mathjax.js | relative_url }}"
+  ></script>
+  {% endif %}
 
   <!-- <script src="/assets/js/dev.js"></script> -->
 
-  <link rel="stylesheet" href="/assets/css/comments-min.css"/>
-  <link rel="stylesheet" href="/assets/css/root-min.css"/>
+  <link rel="stylesheet" href="/assets/css/comments-min.css" />
+  <link rel="stylesheet" href="/assets/css/root-min.css" />
 
   {% if page.comments %}
-  <link rel="stylesheet" href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.min.css"
+  />
 
   <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.3.0/waline.umd.min.js"></script>
 
-  <script >
-    window.load_event= {
-          ...window.load_event,
-          comments: () => {
-            if(sessionStorage.getItem("isOut") == "false"){
-              Waline.init({
-                el: '#tcomment',
-                serverURL: 'https://comment.cpolar.cn/',
-                emoji: [
-                  "//pan.rainsin.cn:2000/d/blog/em/小黑子",
-                  "//pan.rainsin.cn:2000/d/blog/em/Sticker-100",
-                  "//pan.rainsin.cn:2000/d/blog/em/bilibili",
-                  "//pan.rainsin.cn:2000/d/blog/em/Tieba",
-                  "//pan.rainsin.cn:2000/d/blog/em/alus",
-                  "//pan.rainsin.cn:2000/d/blog/em/商业头盔",
-                  "//pan.rainsin.cn:2000/d/blog/em/小人",
-                  "//pan.rainsin.cn:2000/d/blog/em/小坏坏",
-                  "//pan.rainsin.cn:2000/d/blog/em/抽象",
-                  "//pan.rainsin.cn:2000/d/blog/em/搜索引擎",
-                  "//pan.rainsin.cn:2000/d/blog/em/机场",
-                  "//pan.rainsin.cn:2000/d/blog/em/猥琐萌",
-                  "//pan.rainsin.cn:2000/d/blog/em/猫狗",
-                  "//pan.rainsin.cn:2000/d/blog/em/白白",
-                  "//pan.rainsin.cn:2000/d/blog/em/突然",
-                  "//pan.rainsin.cn:2000/d/blog/em/胡桃",
-                  "//pan.rainsin.cn:2000/d/blog/em/被子",
-                  "//pan.rainsin.cn:2000/d/blog/em/酷安",
-                  "//pan.rainsin.cn:2000/d/blog/em/tw",
-                  "//pan.rainsin.cn:2000/d/blog/em/qq",
-                  "//pan.rainsin.cn:2000/d/blog/em/weibo"
-                ],
-                reaction: [
-                  'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
-                  'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
-                  'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
-                  'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
-                  'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
-                  'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
-                  'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
-                  'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
-                ],
-                pageview: true,
-                locale:{
-                  placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
-                  reactionTitle: '你是故意找茬是不是啊？',
-                  reaction0: '正确的',
-                  reaction1: '错误的',
-                  reaction2: '小丑的',
-                  reaction3: '满昏的',
-                  reaction4: '不错的',
-                  reaction5: '菜鸡的',
-                  reaction6: '超逊的',
-                  reaction7: '发烧的',
-                  admin: '站长',
-                  level0: '素人',
-                  level1: '企划',
-                  level2: '企划专属',
-                  level3: '专属',
-                  level4: '双专属',
-                  level5: '三社共有',
-                  nick: '名称',
-                  sofa: '来一起击剑🤺吧'
-                },
-                dark: 'html[data-mode="dark"]',
-                imageUploader: false,
-                search: false
-            });
-            }else{
-              Waline.init({
-                el: '#tcomment',
-                serverURL: 'https://comment.cpolar.cn/',
-                emoji: [
-                  "//mypan.hk.cpolar.io/d/blog/em/小黑子",
-                  "//mypan.hk.cpolar.io/d/blog/em/Sticker-100",
-                  "//mypan.hk.cpolar.io/d/blog/em/bilibili",
-                  "//mypan.hk.cpolar.io/d/blog/em/Tieba",
-                  "//mypan.hk.cpolar.io/d/blog/em/alus",
-                  "//mypan.hk.cpolar.io/d/blog/em/商业头盔",
-                  "//mypan.hk.cpolar.io/d/blog/em/小人",
-                  "//mypan.hk.cpolar.io/d/blog/em/小坏坏",
-                  "//mypan.hk.cpolar.io/d/blog/em/抽象",
-                  "//mypan.hk.cpolar.io/d/blog/em/搜索引擎",
-                  "//mypan.hk.cpolar.io/d/blog/em/机场",
-                  "//mypan.hk.cpolar.io/d/blog/em/猥琐萌",
-                  "//mypan.hk.cpolar.io/d/blog/em/猫狗",
-                  "//mypan.hk.cpolar.io/d/blog/em/白白",
-                  "//mypan.hk.cpolar.io/d/blog/em/突然",
-                  "//mypan.hk.cpolar.io/d/blog/em/胡桃",
-                  "//mypan.hk.cpolar.io/d/blog/em/被子",
-                  "//mypan.hk.cpolar.io/d/blog/em/酷安",
-                  "//mypan.hk.cpolar.io/d/blog/em/tw",
-                  "//mypan.hk.cpolar.io/d/blog/em/qq",
-                  "//mypan.hk.cpolar.io/d/blog/em/weibo"
-                ],
-                reaction: [
-                  'https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png',
-                  'https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png',
-                  'https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png',
-                  'https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png',
-                  'https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png',
-                  'https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png',
-                  'https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png',
-                  'https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png',
-                ],
-                pageview: true,
-                locale:{
-                  placeholder: '唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）',
-                  reactionTitle: '你是故意找茬是不是啊？',
-                  reaction0: '正确的',
-                  reaction1: '错误的',
-                  reaction2: '小丑的',
-                  reaction3: '满昏的',
-                  reaction4: '不错的',
-                  reaction5: '菜鸡的',
-                  reaction6: '超逊的',
-                  reaction7: '发烧的',
-                  admin: '站长',
-                  level0: '素人',
-                  level1: '企划',
-                  level2: '企划专属',
-                  level3: '专属',
-                  level4: '双专属',
-                  level5: '三社共有',
-                  nick: '名称',
-                  sofa: '来一起击剑🤺吧'
-                },
-                dark: 'html[data-mode="dark"]',
-                imageUploader: false,
-                search: false
-            });
-            }
-            
-          }
+  <script>
+    window.load_event = {
+      ...window.load_event,
+      comments: () => {
+        if (sessionStorage.getItem("isOut") == "false") {
+          Waline.init({
+            el: "#tcomment",
+            serverURL: "https://comment.cpolar.cn/",
+            emoji: [
+              "//pan.rainsin.cn:2000/d/blog/em/小黑子",
+              "//pan.rainsin.cn:2000/d/blog/em/Sticker-100",
+              "//pan.rainsin.cn:2000/d/blog/em/bilibili",
+              "//pan.rainsin.cn:2000/d/blog/em/Tieba",
+              "//pan.rainsin.cn:2000/d/blog/em/alus",
+              "//pan.rainsin.cn:2000/d/blog/em/商业头盔",
+              "//pan.rainsin.cn:2000/d/blog/em/小人",
+              "//pan.rainsin.cn:2000/d/blog/em/小坏坏",
+              "//pan.rainsin.cn:2000/d/blog/em/抽象",
+              "//pan.rainsin.cn:2000/d/blog/em/搜索引擎",
+              "//pan.rainsin.cn:2000/d/blog/em/机场",
+              "//pan.rainsin.cn:2000/d/blog/em/猥琐萌",
+              "//pan.rainsin.cn:2000/d/blog/em/猫狗",
+              "//pan.rainsin.cn:2000/d/blog/em/白白",
+              "//pan.rainsin.cn:2000/d/blog/em/突然",
+              "//pan.rainsin.cn:2000/d/blog/em/胡桃",
+              "//pan.rainsin.cn:2000/d/blog/em/被子",
+              "//pan.rainsin.cn:2000/d/blog/em/酷安",
+              "//pan.rainsin.cn:2000/d/blog/em/tw",
+              "//pan.rainsin.cn:2000/d/blog/em/qq",
+              "//pan.rainsin.cn:2000/d/blog/em/weibo",
+            ],
+            reaction: [
+              "https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png",
+              "https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png",
+              "https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png",
+              "https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png",
+              "https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png",
+              "https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png",
+              "https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png",
+              "https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png",
+            ],
+            pageview: true,
+            locale: {
+              placeholder:
+                "唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）",
+              reactionTitle: "你是故意找茬是不是啊？",
+              reaction0: "正确的",
+              reaction1: "错误的",
+              reaction2: "小丑的",
+              reaction3: "满昏的",
+              reaction4: "不错的",
+              reaction5: "菜鸡的",
+              reaction6: "超逊的",
+              reaction7: "发烧的",
+              admin: "站长",
+              level0: "素人",
+              level1: "企划",
+              level2: "企划专属",
+              level3: "专属",
+              level4: "双专属",
+              level5: "三社共有",
+              nick: "名称",
+              sofa: "来一起击剑🤺吧",
+            },
+            dark: 'html[data-mode="dark"]',
+            imageUploader: false,
+            search: false,
+          });
+        } else {
+          Waline.init({
+            el: "#tcomment",
+            serverURL: "https://comment.cpolar.cn/",
+            emoji: [
+              "//mypan.hk.cpolar.io/d/blog/em/小黑子",
+              "//mypan.hk.cpolar.io/d/blog/em/Sticker-100",
+              "//mypan.hk.cpolar.io/d/blog/em/bilibili",
+              "//mypan.hk.cpolar.io/d/blog/em/Tieba",
+              "//mypan.hk.cpolar.io/d/blog/em/alus",
+              "//mypan.hk.cpolar.io/d/blog/em/商业头盔",
+              "//mypan.hk.cpolar.io/d/blog/em/小人",
+              "//mypan.hk.cpolar.io/d/blog/em/小坏坏",
+              "//mypan.hk.cpolar.io/d/blog/em/抽象",
+              "//mypan.hk.cpolar.io/d/blog/em/搜索引擎",
+              "//mypan.hk.cpolar.io/d/blog/em/机场",
+              "//mypan.hk.cpolar.io/d/blog/em/猥琐萌",
+              "//mypan.hk.cpolar.io/d/blog/em/猫狗",
+              "//mypan.hk.cpolar.io/d/blog/em/白白",
+              "//mypan.hk.cpolar.io/d/blog/em/突然",
+              "//mypan.hk.cpolar.io/d/blog/em/胡桃",
+              "//mypan.hk.cpolar.io/d/blog/em/被子",
+              "//mypan.hk.cpolar.io/d/blog/em/酷安",
+              "//mypan.hk.cpolar.io/d/blog/em/tw",
+              "//mypan.hk.cpolar.io/d/blog/em/qq",
+              "//mypan.hk.cpolar.io/d/blog/em/weibo",
+            ],
+            reaction: [
+              "https://api.rainsin.cn/2024/07/1720857486493d53f4f18aab45f5c46a716c161670ccd.png",
+              "https://api.rainsin.cn/2024/07/17208574864939a772c7206fdda6fd6fafcb8fb63e166.png",
+              "https://api.rainsin.cn/2024/07/17208574864933b982af04875523bd86ca76ef8a879df.png",
+              "https://api.rainsin.cn/2024/07/17208574864936efb36a4f6d7b16fc3b028d887ef25b8.png",
+              "https://api.rainsin.cn/2024/07/1720857486492f900aa3fab03c830f35d6171b313cf1b.png",
+              "https://api.rainsin.cn/2024/07/172085748649226e4f8c76fcd7a3f8f705b111319bce9.png",
+              "https://api.rainsin.cn/2024/07/17208574864938a3853cfb31b45490464ac06a0dd3533.png",
+              "https://api.rainsin.cn/2024/07/172085748649340dcb5b6edb8f423c2350bf460d2eff3.png",
+            ],
+            pageview: true,
+            locale: {
+              placeholder:
+                "唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒）",
+              reactionTitle: "你是故意找茬是不是啊？",
+              reaction0: "正确的",
+              reaction1: "错误的",
+              reaction2: "小丑的",
+              reaction3: "满昏的",
+              reaction4: "不错的",
+              reaction5: "菜鸡的",
+              reaction6: "超逊的",
+              reaction7: "发烧的",
+              admin: "站长",
+              level0: "素人",
+              level1: "企划",
+              level2: "企划专属",
+              level3: "专属",
+              level4: "双专属",
+              level5: "三社共有",
+              nick: "名称",
+              sofa: "来一起击剑🤺吧",
+            },
+            dark: 'html[data-mode="dark"]',
+            imageUploader: false,
+            search: false,
+          });
         }
-    </script>
+      },
+    };
+  </script>
 
-<style>
-  .wl-emoji-popup .wl-tab-wrapper button{
-    width: 4em;
-  }
-  .wl-emoji-popup .wl-tab-wrapper button img{
-    max-height: 3.5em;
-    max-width: 3.5em;
-  }
-</style>
+  <style>
+    .wl-emoji-popup .wl-tab-wrapper button {
+      width: 4em;
+    }
+    .wl-emoji-popup .wl-tab-wrapper button img {
+      max-height: 3.5em;
+      max-width: 3.5em;
+    }
+  </style>
   {% endif %}
 
   <script>
     const style = document.createElement("style");
     style.type = "text/css";
     if (sessionStorage.getItem("isOut") == "false") {
-      if(modeToggle.modeStatus == "dark"){
-      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}"
-    }else{
-      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}"
-    };
+      if (modeToggle.modeStatus == "dark") {
+        style.innerHTML =
+          "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
+      } else {
+        style.innerHTML =
+          "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://pan.rainsin.cn:2000/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
+      }
     } else {
-      if(modeToggle.modeStatus == "dark"){
-      style.innerHTML="#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}"
-    }else{
-      style.innerHTML="#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}"
-    };
-
+      if (modeToggle.modeStatus == "dark") {
+        style.innerHTML =
+          "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
+      } else {
+        style.innerHTML =
+          "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://mypan.hk.cpolar.io/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
+      }
     }
     document.getElementsByTagName("head")[0].appendChild(style);
   </script>
@@ -398,39 +427,36 @@ window.load_event = {
   {% if page.react %}
   <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
   <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-    <script src="/assets/js/swr.min.js" async></script>
-  {% endif %}
-
-  {% if page.video %}
+  <script src="/assets/js/swr.min.js" async></script>
+  {% endif %} {% if page.video %}
   <script src="https://{{site.js_cdn1}}/npm/artplayer@5.1.7/dist/artplayer.min.js"></script>
   <script src="https://{{ site.unpkg_cdn3 }}/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.js"></script>
-  {% endif %}
-
-  {% if page.music %}
-  <link rel="stylesheet" href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css">
+  {% endif %} {% if page.music %}
+  <link
+    rel="stylesheet"
+    href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css"
+  />
   <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
   <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
-  {% endif %}
-
-  {% if page.jquery %}
+  {% endif %} {% if page.jquery %}
   <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
-  {% endif %}
-
-  {% if page.pinyin %}
+  {% endif %} {% if page.pinyin %}
   <script src="https://pan.rainsin.cn:2000/d/blog/js/pinyin.min.js"></script>
-  <script async src="https://mypan.hk.cpolar.io/d/blog/js/pinyin.min.js"></script>
-  {% endif %}
-
-  {% if page.chart %}
+  <script
+    async
+    src="https://mypan.hk.cpolar.io/d/blog/js/pinyin.min.js"
+  ></script>
+  {% endif %} {% if page.chart %}
   <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
-  {% endif %}
-
-  {% if page.mathpolt %}
-    <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
-    <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/function-plot/1.25.0/function-plot.js" integrity="sha512-7MI0msHrbnIetu1m53ACfA0Hu0t12NG8yyrVzjSqABYJglzbwYa97UoFzd74rB1bwY7Na850s+cg+5YuWE+TDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  {% endif %}
-
-  {% if page.cube %}
+  {% endif %} {% if page.mathpolt %}
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script
+    src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/function-plot/1.25.0/function-plot.js"
+    integrity="sha512-7MI0msHrbnIetu1m53ACfA0Hu0t12NG8yyrVzjSqABYJglzbwYa97UoFzd74rB1bwY7Na850s+cg+5YuWE+TDA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  {% endif %} {% if page.cube %}
   <script src="/assets/post/cube/dist/705.js"></script>
   <script src="/assets/post/cube/dist/781.js"></script>
   <script src="/assets/post/cube/dist/795.js"></script>
@@ -439,120 +465,129 @@ window.load_event = {
   <script src="/assets/post/cube/dist/200.js"></script>
   <script src="/assets/post/cube/dist/134.js"></script>
 
-   <script src="/assets/post/cube/dist/main.js"></script>
+  <script src="/assets/post/cube/dist/main.js"></script>
 
-  {% endif %}
-
-  {% if page.require %}
+  {% endif %} {% if page.require %}
   <script src="https://{{ site.unpkg_cdn3 }}/requirejs@2.3.6/require.min.js"></script>
-  {% endif %}
-
-  {% if page.linksdata %}
+  {% endif %} {% if page.linksdata %}
   <script src="/assets/links/linksdata.js"></script>
-  {% endif %}
-
-  {% if page.animatecss %}
-  <link rel="stylesheet" href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css">
-  {% endif %}
-
-  {% capture seo_tags %}
-    {% seo title=false %}
-  {% endcapture %}
-
-  {% if page.image %}
-    {% assign img = page.image.path | default: page.image %}
-
-    {% unless img contains '://' %}
-      {% assign img_path = page.img_path | append: '/' | append: img | replace: '//', '/' %}
-      {% capture target %}"{{ img | absolute_url }}"{% endcapture %}
-
-      {% if site.img_cdn contains '//' %}
-        <!-- it's a cross-origin URL -->
-        {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %}
-      {% else %}
-        <!-- it's a local file path -->
-        {%- capture replacement -%}
-          "{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}"
-        {%- endcapture -%}
-      {% endif %}
-
-      {% assign seo_tags = seo_tags | replace: target, replacement %}
-    {% endunless %}
-  {% endif %}
-
-  {{ seo_tags }}
+  {% endif %} {% if page.animatecss %}
+  <link
+    rel="stylesheet"
+    href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css"
+  />
+  {% endif %} {% capture seo_tags %} {% seo title=false %} {% endcapture %} {%
+  if page.image %} {% assign img = page.image.path | default: page.image %} {%
+  unless img contains '://' %} {% assign img_path = page.img_path | append: '/'
+  | append: img | replace: '//', '/' %} {% capture target %}"{{ img |
+  absolute_url }}"{% endcapture %} {% if site.img_cdn contains '//' %}
+  <!-- it's a cross-origin URL -->
+  {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %} {%
+  else %}
+  <!-- it's a local file path -->
+  {%- capture replacement -%} "{{ site.img_cdn | append: '/' | append: img_path
+  | replace: '//', '/' | absolute_url }}" {%- endcapture -%} {% endif %} {%
+  assign seo_tags = seo_tags | replace: target, replacement %} {% endunless %}
+  {% endif %} {{ seo_tags }}
 
   <title>
-    {%- unless page.layout == 'home' -%}
-      {{ page.title | append: ' | ' }}
-    {%- endunless -%}
-    {{ site.title }}
+    {%- unless page.layout == 'home' -%} {{ page.title | append: ' | ' }} {%-
+    endunless -%} {{ site.title }}
   </title>
 
-  {% include favicons.html %}
+  {% include favicons.html %} {% if site.resources.ignore_env !=
+  jekyll.environment and site.resources.self_hosted %}
+  <link
+    href="{{ site.data.origin[type].webfonts | relative_url }}"
+    rel="stylesheet"
+  />
 
-  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
-    <link href="{{ site.data.origin[type].webfonts | relative_url }}" rel="stylesheet">
+  {% else %} {% for cdn in site.data.origin[type].cdns %}
+  <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }} />
+  <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }} />
+  {% endfor %}
 
-  {% else %}
-    {% for cdn in site.data.origin[type].cdns %}
-      <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
-      <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
-    {% endfor %}
-
-    <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
-  {% endif %}
-
-  {% if page.md5 %}
+  <link
+    rel="stylesheet"
+    href="{{ site.data.origin[type].webfonts | relative_url }}"
+  />
+  {% endif %} {% if page.md5 %}
   <script src="https://{{site.js_cdn4}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
   {% endif %}
 
   <!-- GA -->
-  {% if jekyll.environment == 'production' and site.google_analytics.id != empty and site.google_analytics.id %}
-    <link rel="preconnect" href="https://myproxy.rainsin.cn/-----www.google-analytics.com" crossorigin="use-credentials">
-    <link rel="dns-prefetch" href="https://myproxy.rainsin.cn/-----www.google-analytics.com">
+  {% if jekyll.environment == 'production' and site.google_analytics.id != empty
+  and site.google_analytics.id %}
+  <link
+    rel="preconnect"
+    href="https://myproxy.rainsin.cn/-----www.google-analytics.com"
+    crossorigin="use-credentials"
+  />
+  <link
+    rel="dns-prefetch"
+    href="https://myproxy.rainsin.cn/-----www.google-analytics.com"
+  />
 
-    <link rel="preconnect" href="https://myproxy.rainsin.cn/-----www.googletagmanager.com" crossorigin="anonymous">
-    <link rel="dns-prefetch" href="https://myproxy.rainsin.cn/-----www.googletagmanager.com">
+  <link
+    rel="preconnect"
+    href="https://myproxy.rainsin.cn/-----www.googletagmanager.com"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="dns-prefetch"
+    href="https://myproxy.rainsin.cn/-----www.googletagmanager.com"
+  />
   {% endif %}
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{ site.data.origin[type].bootstrap.css | relative_url}}">
+  <link
+    rel="stylesheet"
+    href="{{ site.data.origin[type].bootstrap.css | relative_url}}"
+  />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
+  <link
+    rel="stylesheet"
+    href="{{ site.data.origin[type].fontawesome.css | relative_url }}"
+  />
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
   {% if site.toc and page.toc %}
-    <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
+  <link
+    rel="stylesheet"
+    href="{{ site.data.origin[type].toc.css | relative_url }}"
+  />
+  {% endif %} {% if page.layout == 'page' or page.layout == 'post' %}
+  <!-- Manific Popup -->
+  <link
+    rel="stylesheet"
+    href="{{ site.data.origin[type].magnific-popup.css | relative_url }}"
+  />
   {% endif %}
 
-  {% if page.layout == 'page' or page.layout == 'post' %}
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}">
-  {% endif %}
-
-  <link href="/assets/css/font.css" rel="stylesheet">
-  <link href="/assets/css/em.css" rel="stylesheet">
+  <link href="/assets/css/font.css" rel="stylesheet" />
+  <link href="/assets/css/em.css" rel="stylesheet" />
 
   <script>
     window.load_event = {
       ...window.load_event,
-      is_out_alert: ()=>{
-        if(sessionStorage.getItem("isOutAlert")){
-          return
-        }else{
-          if(sessionStorage.getItem("isOut") == "true"){
-            sessionStorage.setItem("isOutAlert","true");
-            Qmsg.warning("哈，你可能使用了梯子或者在外国访问这个站点，有些资源可能会加载不出来，请见谅！",{timeout:5000});
+      is_out_alert: () => {
+        if (sessionStorage.getItem("isOutAlert")) {
+          return;
+        } else {
+          if (sessionStorage.getItem("isOut") == "true") {
+            sessionStorage.setItem("isOutAlert", "true");
+            Qmsg.warning(
+              "哈，你可能使用了梯子或者在外国访问这个站点，有些资源可能会加载不出来，请见谅！",
+              { timeout: 5000 }
+            );
           }
         }
-      }
-    }
+      },
+    };
   </script>
 
-  {% include set-mode.html %}
-  {% include metadata-hook.html %}
+  {% include set-mode.html %} {% include metadata-hook.html %}
 </head>
