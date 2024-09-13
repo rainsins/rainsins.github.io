@@ -217,7 +217,7 @@ author: rainsin
 <script type="text/babel" src="/assets/music/music.js"></script>
 
 <script>
-    (() => { -->
+    (() => {
 
     let mseplayer = new Artplayer({
       container: '#ml',
@@ -238,4 +238,4 @@ author: rainsin
         autoOrientation: true,
     });
     })();
-</script>
+</script>-->
