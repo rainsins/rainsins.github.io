@@ -60,6 +60,12 @@
 <script src="/assets/js/heti.js"></script>
 {% endif %}
 
+{% if page.charch %}
+  <script type="text/javascript">
+  Charch(document);
+  </script>
+{% endif %}
+
 {% if page.guwen-addon %}
 <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/heti/0.9.4/heti-addon.min.js" integrity="sha512-GChf2qekcjrSoPicCypQLPqkaZkEnkcsJr85AmkczY0HG5SkfbxOmZY6RoFJLdoeKTGk8EZvkRBaF7BIqV1Ipw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
