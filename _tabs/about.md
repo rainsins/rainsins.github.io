@@ -68,7 +68,7 @@ author: rainsin
         </div>
         <div class="rainsin-indivdual-info-second">
           我是
-          <span title="名字：尉旭胜，实名上网。">
+          <span>
           RAINSIN
           </span>
         </div>
