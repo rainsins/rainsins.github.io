@@ -129,6 +129,10 @@
     gap: 20px;
 }
 
+.is-show-mm img{
+    width: 100%;
+}
+
 .botton-ques-box{
     width: 100%;
     display: flex;
