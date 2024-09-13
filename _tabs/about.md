@@ -221,7 +221,7 @@ author: rainsin
 
     let mseplayer = new Artplayer({
       container: '#ml',
-      url: sessionStorage.getItem("isOut") == "false" ? 'https://pan.rainsin.cn:2000/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.mp4' : "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBb2VyMmNVNVNsT0ZpWUFxMnRIQUVhUGxvSFFLUmc_ZT11RWRuSVg.mp4",
+      url: sessionStorage.getItem("isOut") == "false" ? 'https://pan.rainsin.cn:2000/d/blog/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4' : "https://mypan.hk.cpolar.io/d/blog/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4",
       theme: "#2c9678",
         autoMini: true,
         flip: true,
@@ -236,27 +236,6 @@ author: rainsin
         playsInline: true,
         setting: true,
         autoOrientation: true,
-        plugins: [
-            artplayerPluginDanmuku({
-                danmuku: sessionStorage.getItem("isOut") == "false" ? 'https://pan.rainsin.cn:2000/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.xml' : 'https://mypan.hk.cpolar.io/d/blog/video/about/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D.xml',
-                speed: 5,
-                opacity: 1,
-                fontSize: 25,
-                color: '#FFFFFF',
-                mode: 0,
-                margin: [10, '25%'],
-                antiOverlap: true,
-                useWorker: true,
-                synchronousPlayback: false,
-                lockTime: 5,
-                maxLength: 100,
-                minWidth: 200,
-                maxWidth: 600,
-                theme: 'light',
-                heatmap: false,
-                beforeEmit: (danmu) => !!danmu.text.trim(),
-            }),
-        ]
     });
     })();
 </script>
