@@ -216,7 +216,7 @@ function MathCom() {
     return (
         <div className="question-boxs">
             {q_item}
-            <h4 id='提示'>提示</h4>
+            <h3 id='提示'>提示（第一题）</h3>
             <p>
             分子变形：
             </p>
