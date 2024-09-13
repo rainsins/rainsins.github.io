@@ -3,19 +3,19 @@
 layout: about
 icon: fas fa-infinity
 order: 6
-react: true
-video: true
+react: false
+video: false
 music: false
 math: false
 mathpolt: false
 jquery: true
-babel: true
+babel: false
 toc: false
 forbid: true
 comments: false
 anime: true
 animatecss: true
-bodymovin: true
+bodymovin: false
 
 favicon: individual
 
@@ -206,7 +206,7 @@ author: rainsin
 
 <script src="/assets/about/about-min.js" defer></script>
 
-<script type="text/babel" src="/assets/about/components/art.js"></script>
+<!-- <script type="text/babel" src="/assets/about/components/art.js"></script>
 
 
 <script type="text/babel" src="/assets/about/components/play.js"></script>
@@ -217,7 +217,7 @@ author: rainsin
 <script type="text/babel" src="/assets/music/music.js"></script>
 
 <script>
-    (() => {
+    (() => { -->
 
     let mseplayer = new Artplayer({
       container: '#ml',
