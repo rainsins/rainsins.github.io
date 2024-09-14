@@ -383,7 +383,7 @@
         let count = 0;
         let set_comment_time = setInterval(()=>{
           const get_anno_img = Array.from(document.querySelectorAll(".wl-cards .wl-user .wl-user-avatar[src='https://seccdn.libravatar.org/avatar/d41d8cd98f00b204e9800998ecf8427e']"));
-          if(count < 4){
+          if(count < 60){
             get_anno_img.forEach((el,index)=>{
           el.src = sessionStorage.getItem("isOut") == "true" ? "https://mypan.hk.cpolar.io/d/blog/img/comment/act.gif" : "https://pan.rainsin.cn:2000/d/blog/img/comment/act.gif";
         });
@@ -392,7 +392,7 @@
             clearInterval(set_comment_time);
             return;
           }
-        },2000)
+        },500)
       },
     };
   </script>
