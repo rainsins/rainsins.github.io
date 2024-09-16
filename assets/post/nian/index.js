@@ -1,4 +1,9 @@
 const nn = document.getElementById("nmnm-mima");
+const ou_nian = document.getElementById("out_mima");
+const ti_nian = document.getElementById("tiquma");
+const tippy_ob = set_ti("点击复制进剪贴板。");
+const tippy_out_ob = set_ti("点击复制进剪贴板。");
+const tippy_tiqu_ob = set_ti("点击复制进剪贴板。");
 
 const set_ti = (text) => {
     return tippy(nn, {
@@ -21,8 +26,6 @@ const set_ti = (text) => {
 } 
 
 window.nn_click_count = 0;
-
-const tippy_ob = set_ti("点击复制进剪贴板。");
 
 const myClipboard = (text,success,failed) => {
     navigator.clipboard.writeText(text).then(
@@ -82,4 +85,14 @@ nn.addEventListener("click", (event) => {
     tippy_ob.show();
     myClipboard(event.target.dataset.clipboardText, success, failed);
     tippy_ob.show();
+});
+ou_nian.addEventListener("click", (event) => {
+    tippy_out_ob.show();
+    myClipboard(event.target.dataset.clipboardText, success, failed);
+    tippy_out_ob.show();
+})
+ti_nian.addEventListener("click", (event) => {
+    tippy_tiqu_ob.show();
+    myClipboard(event.target.dataset.clipboardText, success, failed);
+    tippy_tiqu_ob.show();
 })
