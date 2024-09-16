@@ -29,14 +29,14 @@ author: rainsin
 
 <main id="shrink-card">
   <div class="c-glitch" style="border-radius: 12px;
-    width: 100%;aspect-ratio: 1 / .6;background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');">
-    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png');"></div>
+    width: 45%;aspect-ratio: 1 / .6;background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');">
+    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://pan.rainsin.cn:2000/d/blog/img/friend/friend.png'),url('https://mypan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
   </div>
-  <div>
+  <div style="text-align: center;color: #00000066;">
     海内存知已，天涯若比邻
   </div>
 </main>
