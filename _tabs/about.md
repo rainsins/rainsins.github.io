@@ -142,7 +142,7 @@ author: rainsin
   使用<span>CloudFlare Pages</span>持续部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，代码仓库<a href="https://github.com/rainsins/rainsins.github.io" target="_blank">Github</a>。
   </div>
   <div>
-  内容如有侵权请联系<span>1820278582[at]qq.com</span>。
+  内容如有侵权请联系<span>mail[at]rainsin.cn</span>。
   </div>
 </div>
 

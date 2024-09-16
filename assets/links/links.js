@@ -4,7 +4,7 @@ const links_data = [
     url: "https://blog.rainsin.cn",
     img: "",
     dec: "如人饮水，冷暖自知。",
-    emil: "1820278582@qq.com",
+    emil: "mail@rainsin.cn",
     index: 1,
   },
   {
