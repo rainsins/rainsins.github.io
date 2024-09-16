@@ -1,12 +1,9 @@
 const nn = document.getElementById("nmnm-mima");
 const ou_nian = document.getElementById("out_mima");
 const ti_nian = document.getElementById("tiquma");
-const tippy_ob = set_ti("点击复制进剪贴板。");
-const tippy_out_ob = set_ti("点击复制进剪贴板。");
-const tippy_tiqu_ob = set_ti("点击复制进剪贴板。");
 
-const set_ti = (text) => {
-    return tippy(nn, {
+const set_ti = (text, ob) => {
+    return tippy(ob, {
         content: text,
         theme: "mmmm",
         arrow: true,
@@ -23,18 +20,18 @@ const set_ti = (text) => {
             box.classList.remove('animate__rubberBand');
         },
     });
-} 
+}
 
 window.nn_click_count = 0;
 
-const myClipboard = (text,success,failed) => {
+const myClipboard = (text, success, failed, ob) => {
     navigator.clipboard.writeText(text).then(
-        success,
-        failed,
-      );
+        function () { success(ob) },
+        function () { failed(ob) },
+    );
 }
 
-function success() {
+function success(ob) {
     let str = "";
     switch ((nn_click_count % 10)) {
         case 0:
@@ -72,27 +69,31 @@ function success() {
     }
 
     Qmsg.success(str);
-    tippy_ob.setContent("恭喜，复制成功！点击再次复制。");
+    ob.setContent("恭喜，复制成功！点击再次复制。");
     nn_click_count++;
 }
 
-function failed() {
+const failed = (ob) => {
     Qmsg.success("哎呀，没对准！🤡");
-    tippy_ob.setContent("哎，复制失败了！重新点一下试试。");
-}
+    ob.setContent("哎，复制失败了！重新点一下试试。");
+};
+
+const tippy_ob = set_ti("点击复制进剪贴板。",nn);
+const tippy_out_ob = set_ti("点击复制进剪贴板。",ou_nian);
+const tippy_tiqu_ob = set_ti("点击复制进剪贴板。",ti_nian);
 
 nn.addEventListener("click", (event) => {
     tippy_ob.show();
-    myClipboard(event.target.dataset.clipboardText, success, failed);
+    myClipboard(event.target.dataset.clipboardText, success, failed, tippy_ob);
     tippy_ob.show();
 });
 ou_nian.addEventListener("click", (event) => {
     tippy_out_ob.show();
-    myClipboard(event.target.dataset.clipboardText, success, failed);
+    myClipboard(event.target.dataset.clipboardText, success, failed, tippy_out_ob);
     tippy_out_ob.show();
 })
 ti_nian.addEventListener("click", (event) => {
     tippy_tiqu_ob.show();
-    myClipboard(event.target.dataset.clipboardText, success, failed);
+    myClipboard(event.target.dataset.clipboardText, success, failed, tippy_tiqu_ob);
     tippy_tiqu_ob.show();
 })
