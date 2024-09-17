@@ -31,6 +31,13 @@
     };
   </script>
 
+  <script>
+    const sss = ["B","D","E","L","M","R"];
+    sss.forEach((el,index)=>{
+      isAppendCDN(`https://pan.rainsin.cn:2000/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`,`https://mypan.hk.cpolar.io/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`)
+    })
+  </script>
+
   <link rel="stylesheet" href="/assets/message/message.min.css" />
   <script src="/assets/message/message.min.js"></script>
 
@@ -98,14 +105,17 @@
       },
     };
   </script>
-  {% endif %} {% if page.blockquote-sep %}
+  {% endif %} 
+  {% if page.blockquote-sep %}
   <link
     rel="stylesheet"
     href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css"
   />
-  {% endif %} {% if page.bodymovin %}
+  {% endif %} 
+  {% if page.bodymovin %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
-  {% endif %} {% if page.guwen %}
+  {% endif %} 
+  {% if page.guwen %}
   <link
     rel="stylesheet"
     href="https://{{ site.cdnjs_cdn }}/ajax/libs/heti/0.9.4/heti.min.css"
@@ -113,6 +123,14 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+  <script>
+    const sdsd = ["fangsong","STSONG","STfangsong","STkaiti", "kaiti","京華老宋体2","STSongti-SC-Black","STSongti-SC-Bold","STSongti-SC-Light","STSongti-SC-Regular","STKaitiSC-Regular","FZFSK--GBK1-0"];
+
+    sdsd.forEach((el,index)=>{
+      isAppendCDN(`https://pan.rainsin.cn:2000/blog/font/heti/split/${el}/result.css`,`https://mypan.hk.cpolar.io/blog/font/heti/split/${el}/result.css`)
+    })
+  </script>
   <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/京華老宋体v2_002/result.css' /> 
   <style>
     @import url(/assets/css/heti-add-min.css);
