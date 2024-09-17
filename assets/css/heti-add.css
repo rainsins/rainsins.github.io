@@ -155,3 +155,11 @@ html[data-mode="dark"] .heti blockquote {
 .heti .heti-fangsong-regular {
     font-size: 1.1em;
 }
+
+.heti .heti-kinghua {
+    font-family: "KingHwa_OldSong" !important;
+}
+
+.heti .heti--kinghua {
+    font-family: "KingHwa_OldSong" !important;
+}
