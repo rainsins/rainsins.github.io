@@ -10,7 +10,8 @@
       var head = document.head || document.getElementsByTagName("head")[0];
       if (src.endsWith(".css")) {
         //css
-        var style = document.createElement("style");
+        var style = document.createElement("LINK");
+        style.setAttribute("type", "text/css");
         style.setAttribute("rel", "stylesheet");
         style.setAttribute("href", src);
         head.appendChild(style);
