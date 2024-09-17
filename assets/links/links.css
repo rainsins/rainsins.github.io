@@ -214,7 +214,19 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  width: 60vw;
+  width: 45%;
+}
+
+@media screen and (max-width: 767px) {
+  .c-glitch {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px){
+  .c-glitch {
+    width: 65%;
+  }
 }
 
 .c-glitch__img {
