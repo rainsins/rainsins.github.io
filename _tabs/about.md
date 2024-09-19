@@ -64,7 +64,7 @@ author: rainsin
       </div>
       <div class="rainsin-indivdual-info">
         <div class="rainsin-indivdual-info-first">
-          很感谢你可以在这个粗糙的博客上停留
+          很感谢您可以在这个粗糙的博客上停留
         </div>
         <div class="rainsin-indivdual-info-second">
           我是
@@ -94,7 +94,7 @@ author: rainsin
       地方
     </div>
     <div class="age-staff">
-      西北人
+      甘肃·天水
     </div>
    </div>
   </div>
