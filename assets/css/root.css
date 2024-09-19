@@ -38,6 +38,10 @@
   scrollbar-arrow-color: blue;
 }
 
+.qmsg-content span{
+  text-wrap: wrap;
+}
+
 .tk-owo-emotion {
   width: 1.5em;
 }

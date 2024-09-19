@@ -1,0 +1,7 @@
+<audio controls id="{{ include.id }}"></audio>
+
+<script>
+    const audio_{{include.id}} = document.getElementById("{{include.id}}");
+
+    audio_{{include.id}}.src = sessionStorage.getItem("isOut") == "true" ? "https://mypan.hk.cpolar.io/{{include.src}}" : "https://pan.rainsin.cn:2000/{{include.src}}";
+</script>
