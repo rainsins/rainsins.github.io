@@ -523,8 +523,13 @@
     .rainsin-yan {
         margin-left: 0;
         margin-top: 24px;
+        flex-direction: column;
     }
 
+    .rainsin-yan .age:nth-child(2){
+        margin-top: 1.5em;
+    }
+    
     .rainsin-skill-box {
         margin-top: 24px;
     }
