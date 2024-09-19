@@ -13,10 +13,11 @@ out_font/
 post_font/
 main_font/
 font/
-package-lock.json
+*/package-lock.json
 .idea/
 jekyll-theme-chirpy.gemspec
 webhook.js
 deploy.sh
-yarn.lock
+*/yarn.lock
 */.DS_Store
+*/Cargo.lock
