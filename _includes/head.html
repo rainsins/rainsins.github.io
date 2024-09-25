@@ -59,14 +59,6 @@
   />
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
   {% endif %}
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
-  {% if page.clipboard %}
-  <script
-    src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
-    type="application/javascript"
-  ></script>
-  {% endif %} {% if page.pangu != true %}
-  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -75,6 +67,15 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "o8k1pzrsqv");
   </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
+  
+  {% if page.clipboard %}
+  <script
+    src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
+    type="application/javascript"
+  ></script>
+  {% endif %} {% if page.pangu != true %}
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script>
     window.load_event = {
