@@ -23,11 +23,19 @@
       }
     };
 
-    window.isAppendCDN = (ins, outs) => {
+    window.isAppendCDN = (ins, outs, err) => {
       if (sessionStorage.getItem("isOut") == "false") {
-        appendJQCDN(ins);
+        if(sessionStorage.getItem("isPan") == "true"){
+          appendJQCDN(ins);
+        }else{
+          appendJQCDN(err);
+        } 
       } else {
-        appendJQCDN(outs);
+        if(sessionStorage.getItem("isPan") == "true"){
+          appendJQCDN(outs);
+        }else{
+          appendJQCDN(err);
+        } 
       }
     };
   </script>
@@ -35,7 +43,7 @@
   <script>
     const sss = ["B","D","E","L","M","R"];
     sss.forEach((el,index)=>{
-      isAppendCDN(`https://pan.rainsin.cn:2000/d/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`,`https://mypan.hk.cpolar.io/d/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`)
+      isAppendCDN(`https://pan.rainsin.cn:2000/d/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`,`https://mypan.hk.cpolar.io/d/blog/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`, `https://api.rainsin.cn/blog_data/font/heti/split/FZFWZhuZiAOldMincho${el}/result.css`)
     })
   </script>
 
@@ -142,7 +150,7 @@
     const sdsd = ["fangsong","STSONG","STfangsong","STkaiti", "kaiti","京華老宋体2","STSongti-SC-Black","STSongti-SC-Bold","STSongti-SC-Light","STSongti-SC-Regular","STKaitiSC-Regular","FZFSK--GBK1-0"];
 
     sdsd.forEach((el,index)=>{
-      isAppendCDN(`https://pan.rainsin.cn:2000/d/blog/font/heti/split/${el}/result.css`,`https://mypan.hk.cpolar.io/d/blog/font/heti/split/${el}/result.css`)
+      isAppendCDN(`https://pan.rainsin.cn:2000/d/blog/font/heti/split/${el}/result.css`,`https://mypan.hk.cpolar.io/d/blog/font/heti/split/${el}/result.css`,`https://api.rainsin.cn/blog_data/font/heti/split/${el}/result.css`)
     })
   </script>
   <style>
@@ -591,13 +599,22 @@
         if (sessionStorage.getItem("isOutAlert")) {
           
         } else {
-          if (sessionStorage.getItem("isOut") == "true") {
+          if(sessionStorage.getItem("isPan") == "true"){
+            if (sessionStorage.getItem("isOut") == "true") {
             sessionStorage.setItem("isOutAlert", "true");
             Qmsg.warning(
               "哈，你可能使用了梯子或者在国外访问这个站点，有些资源可能会加载不出来，请见谅！",
               { timeout: 5000 }
             );
           }
+          }else{
+            sessionStorage.setItem("isOutAlert", "true");
+            Qmsg.warning(
+              "我家里停电了，服务器宕了，请见谅！",
+              { timeout: 5000 }
+            );
+          }
+          
         }
   </script>
 
