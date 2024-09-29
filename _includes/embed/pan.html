@@ -28,11 +28,12 @@
         xhr.send();
       }).then(function (supported) {
       if (supported) {
-        sessionStorage.setItem("isPan", true);
+        sessionStorage.setItem("isPan", 'true');
       } else {
-        sessionStorage.setItem("isPan", false);
+        sessionStorage.setItem("isPan", 'false');
       }
-    });;
+    });
+    testPan();
 window.addEventListener('beforeunload', (event) => {
   testPan();
 });
