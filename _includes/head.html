@@ -187,10 +187,7 @@ isAppendCDN(`https://fonts.rainsin.cn/HYKB/result.css`);
   {% if page.guwen %}
   <link
     rel="stylesheet"
-    href="https://{{ site.cdnjs_cdn }}/ajax/libs/heti/0.9.4/heti.min.css"
-    integrity="sha512-/My2cHBMxofuHmAIIK29zje0pIqA2iCC9HDMa76E1jzK5u+wudGzJMMnTsdA5FmVGsoXB1xoJM7fKhniOhz+HA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+    href="/assets/css/heti-min.css"
   />
 
   <script>
@@ -597,13 +594,6 @@ isAppendCDN(`https://fonts.rainsin.cn/HYKB/result.css`);
       }
     }
   </script>
-
-{% if page.guwen %}
-<link
-rel="stylesheet"
-href="/assets/css/heti-add-min.css"
-/>
-{% endif %}
 
   {% include set-mode.html %} 
   {% include metadata-hook.html %}
