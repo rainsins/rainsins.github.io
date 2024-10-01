@@ -63,12 +63,17 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/汇文明朝体/result.css"
 rel="stylesheet"
 href="https://file.rainsin.cn/d/blog/font/heti/split/STSONG/result.css"
 />
+<link
+rel="stylesheet"
+href="https://file.rainsin.cn/d/blog/font/heti/split/HYKB/result.css"
+/>
 <script>
 const sss = ["FZFSB","FZKTB","FZKTK","STFANGSO","STSONG","simfang","simkai","京華老宋体2","汇文明朝体"];
 
 sss.forEach((el,ind)=>{
   isAppendCDN(`https://fonts.rainsin.cn/split/${el}/result.css`);
-})
+});
+isAppendCDN(`https://fonts.rainsin.cn/HYKB/result.css`);
 </script>
 {% endif %} 
 
@@ -77,12 +82,15 @@ sss.forEach((el,ind)=>{
   href="https://file.rainsin.cn/d/blog/font/heti/split/FZZzOM/result.css"
 />
 
-<script>
-  const ssss = ["B", "D", "E", "L", "M", "R"];
 
-ssss.forEach((el, index) => {
-  isAppendCDN(`https://fonts.rainsin.cn/split/FZFWZhuZiAOldMincho${el}/result.css`);
-})
+<link
+  rel="stylesheet"
+  href="https://file.rainsin.cn/d/blog/font/heti/split/FOT-TsukuAOldMinPr6/result.css"
+/>
+
+<script>
+  isAppendCDN(`https://fonts.rainsin.cn/split/FZZzOM/result.css`);
+  isAppendCDN(`https://fonts.rainsin.cn/FOT-TsukuAOldMinPr6/result.css`);
 </script>
 
 
