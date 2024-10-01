@@ -193,11 +193,6 @@ isAppendCDN(`https://fonts.rainsin.cn/HYKB/result.css`);
     referrerpolicy="no-referrer"
   />
 
-<link
-rel="stylesheet"
-href="/assets/css/heti-add-min.css"
-/>
-
   <script>
     window.load_event = {
       ...window.load_event,
@@ -324,8 +319,7 @@ href="/assets/css/heti-add-min.css"
   <!-- <script src="/assets/js/dev.js"></script> -->
 
   <link rel="stylesheet" href="/assets/css/comments-min.css" />
-  <!-- <link rel="stylesheet" href="/assets/css/root-min.css" /> -->
-  <link rel="stylesheet" href="/assets/css/main-font.css" />
+  <link rel="stylesheet" href="/assets/css/root-min.css" />
 
   {% if page.comments %}
   <link
@@ -603,6 +597,13 @@ href="/assets/css/heti-add-min.css"
       }
     }
   </script>
+
+{% if page.guwen %}
+<link
+rel="stylesheet"
+href="/assets/css/heti-add-min.css"
+/>
+{% endif %}
 
   {% include set-mode.html %} 
   {% include metadata-hook.html %}
