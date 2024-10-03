@@ -219,6 +219,9 @@ exclude:
   - rollup.config.js
   - node_modules
   - package*.json
+  - webpack_package
+  - updatefont
+  - bower_components
 
 jekyll-archives:
   enabled: [categories, tags]

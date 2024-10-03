@@ -23,6 +23,9 @@ layout.tail_includes %} {% assign has_tail = true %} {% endif %}
       {% else %} {{ _content }} {% endif %}
     </div>
   </div>
+  {% if page.code-group %}
+<script type="text/babel" src="/assets/js/shiki.js"></script>
+{% endif %}
   <!-- #core-wrapper -->
 
   <!-- panel -->

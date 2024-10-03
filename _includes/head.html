@@ -30,6 +30,107 @@
     };
   </script>
 
+{% if page.better-scroll %}
+<script src="https://{{site.cdnjs_cdn1}}/ajax/libs/better-scroll/2.5.1/better-scroll.min.js"></script>
+{% endif %}
+
+{% if page.code-group %}
+<script async>
+  if(sessionStorage.getItem("isPan") == "false"){
+    fetch("https://api.rainsin.cn/blog_data/js/code_type.json")
+  .then((response) => response.json())
+  .then((data) => window.code_data = data);
+  }else{
+    fetch("https://file.rainsin.cn/d/blog/js/code_type.json")
+  .then((response) => response.json())
+  .then((data) => window.code_data = data);
+  }
+
+  window.myClipboard = (text) => {
+
+function success() {
+    let str = "";
+    switch ((nn_click_count % 10)) {
+        case 0:
+            str = "文质彬彬👩‍🏫"
+            break;
+        case 1:
+            str = "风流倜傥👨‍🍳"
+            break;
+        case 2:
+            str = "英俊潇洒👴"
+            break;
+        case 3:
+            str = "才华横溢🧑‍🎓"
+            break;
+        case 4:
+            str = "才貌双全🦸"
+            break;
+        case 5:
+            str = "谦谦君子🤵"
+            break;
+        case 6:
+            str = "儒雅随和🗣"
+            break;
+        case 7:
+            str = "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️"
+            break;
+        case 8:
+            str = "屡戒不悛🛐"
+            break;
+        case 9:
+            str = "阿弥陀佛🙏"
+            break;
+        default:
+            break;
+    }
+
+    Qmsg.success(str);
+    nn_click_count++;
+}
+
+const failed = () => {
+    Qmsg.success("哎呀，没对准！🤡");
+};
+
+navigator.clipboard.writeText(text).then(
+    function () { success() },
+    function () { failed() },
+);
+}
+</script>
+
+<script type="text/babel" data-type="module" src="/assets/js/shiki.js"></script>
+
+<style>
+  .shiki{display: inline-block;padding: 1.9em 2.1em;border-bottom-left-radius: .5em;border-bottom-right-radius: .5em;margin-bottom:0 !important;}html[data-mode="light"] pre.shiki.one-dark-pro{background-color: #f7f7f7 !important;}.code-nav{display: inline-flex;}html[data-mode="dark"] .code-nav-box{background-color: #363b45;border-bottom: 1px solid #3f3f3fb3;}.code-nav-item{box-sizing:border-box;display: grid;grid-template-columns: auto 1fr;padding: 0 4px .4em 4px;margin: 16px 0.6em 3px 12px;overflow: auto hidden;white-space: nowrap;list-style: none;border-radius: 6px 6px 0 0;cursor: pointer;overflow: clip }.code-nav-item.active{box-shadow: 0 3px 0 0 #d4c4b7;}.code-content{position: relative;overflow: auto;max-height: 25em; border-bottom-left-radius: .4em;border-bottom-right-radius: .4em;margin-bottom: .75em;}.code-type-smell{position: absolute;right: 0.3em;
+    top: 0.2em;
+    font-size: 10px;color: var(--text-color);}
+  .code-copy-smell{position: absolute;right: 2em;
+    top: 5em;
+    width: 1.4em;
+    aspect-ratio: 1;
+    background-size: cover;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23ffa061' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='72' stroke-dashoffset='72' d='M12 3h7v18h-14v-18h7Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='72;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='12' stroke-dashoffset='12' stroke-width='1' d='M14.5 3.5v3h-5v-3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.2s' values='12;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='4' stroke-dashoffset='4' d='M9 10h3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.9s' dur='0.2s' values='4;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='6' stroke-dashoffset='6' d='M9 13h5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.1s' dur='0.2s' values='6;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M9 16h6'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.3s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+
+  html[data-mode="light"] .code-content{
+    background-color: #f7f7f7;
+  }
+  html[data-mode="dark"] .code-content{
+    background-color: #282c34;
+  }
+  .code-group{
+    margin-top: .75em;
+    position: relative;
+  }
+  .code-nav-box{
+    overflow-x:overlay;
+    border-top-left-radius: .5em;border-top-right-radius: .5em;
+    background-color: #ececec;border-bottom: 1px solid #d3d3d3;
+  }
+</style>
+
+{% endif %}
+
 {% if page.guwen %}
 <link
 rel="stylesheet"
@@ -114,15 +215,6 @@ isAppendCDN(`https://fonts.rainsin.cn/HYKB/result.css`);
   />
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
   {% endif %}
-
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "o8k1pzrsqv");
-  </script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="202ceef1-7698-45d5-a10e-fc97f6a046c0"></script>
   
   {% if page.clipboard %}
   <script
