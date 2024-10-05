@@ -16,7 +16,7 @@ comments: true
 favicon: code
 
 post: true
-description: 在树莓派上创建自己的影视库和各种服务
+description: 在我的一块小树莓派上创建自己的影视库和各种服务，坏了之后可以按这个步骤再重新弄。
 keywords: rainsin, blog, 树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker
 author: rainsin
 ---

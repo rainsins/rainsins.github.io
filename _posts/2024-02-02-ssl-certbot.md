@@ -20,7 +20,6 @@ comments: true
 favicon: code
 
 post: true
-description: 使用certbot和Let’s Encrypt为本地服务器部署ssl
 keywords: rainsin, blog, 解决问题, certbot, Let’s Encrypt, ssl
 author: rainsin
 ---

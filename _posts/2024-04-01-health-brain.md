@@ -20,7 +20,6 @@ comments: true
 favicon: heart
 
 post: true
-description: 「转载」死宅更容易变傻？
 keywords: rainsin, blog, 健康
 author: Qbit
 ---
