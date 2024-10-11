@@ -132,6 +132,15 @@ navigator.clipboard.writeText(text).then(
 
 {% endif %}
 
+{% if page.video-more %}
+<script src="
+https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.js
+"></script>
+<link href="
+https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
+" rel="stylesheet">
+{% endif %}
+
 {% if page.guwen %}
 <link
 rel="stylesheet"
