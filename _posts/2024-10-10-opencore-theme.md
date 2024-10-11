@@ -28,7 +28,7 @@ author: rainsin
 
 ![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpWUVRdUZnSVVkako4TWlfZ0E_ZT1kMUJtbDM.png)
 
-打开OC的配置文件，修改<kbd>启动界面主题</kbd>为`android12/android12`：
+打开OC的配置文件，修改<kbd>启动界面主题</kbd>为`android12/android12`，就是主题的相对与`Image/`的路径，我的压缩包解压出来好像有三层，如果是三层就是`android12/android12/android12`，你可以自己看看：
 
 ![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpWUVQYUtmWHZ1cTNKQWFkQ0E_ZT0zZ1A5bE4.png)
 
