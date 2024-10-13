@@ -99,7 +99,7 @@ theme_mode:
 #
 # e.g. 'https://cdn.com'
 #<<<<<<< HEAD
-img_cdn: "https://www.rainsin.cn"
+img_cdn: "https://blogs.rainsin.cn"
 
 # the avatar on sidebar, support local or CORS resources
 #avatar: "/commons/avatar.jpg"

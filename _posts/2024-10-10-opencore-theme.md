@@ -18,13 +18,11 @@ favicon: heart
 post: true
 keywords: rainsin, blog, 黑苹果, 主题
 author: rainsin
-
-
 ---
 
 ### 使用
 
-将压缩包解压，将`android12`文件加移动到`EFI->OC->Resources->Image`下：
+先添加OpenCanopy.efi到`EFI/OC/Drivers`,将压缩包解压，将`android12`文件加移动到`EFI->OC->Resources->Image`下：
 
 ![](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZpWUVRdUZnSVVkako4TWlfZ0E_ZT1kMUJtbDM.png)
 
