@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: message
 icon: fas fa-message
 order: 9
 forbid: true
