@@ -19,6 +19,7 @@ tabs:
   links: 友链
   b_m_m: 书单
   chat: Chat
+  comment: 留言
 
 # the text displayed in the search bar & search results
 search:

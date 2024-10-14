@@ -250,7 +250,9 @@ s.forEach((el,ind)=>{
     src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
     type="application/javascript"
   ></script>
-  {% endif %} {% if page.pangu != true %}
+  {% endif %} 
+  
+  {% if page.post and page.pangu != true %}
   <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
   <script>
@@ -262,7 +264,8 @@ s.forEach((el,ind)=>{
       },
     };
   </script>
-  {% endif %} {% if page.cube %}
+  {% endif %} 
+  {% if page.cube %}
 
   <script src="https://file.rainsin.cn/d/blog/js/cube/data-min.js"></script>
 
