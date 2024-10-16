@@ -59,7 +59,7 @@ author: rainsin
 
 > 1. 网站名称：rainsin's blog
 > 2. 网站地址：https://blog.rainsin.cn
-> 3. 网站头像：[右键复制链接](https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBb2VyMmNVNVNsT0ZoX0pMWUVkY1dXQjNvSEFuREE_ZT1FekMwdXQ.webp)
+> 3. 网站头像：[右键复制链接](https://api.rainsin.cn/blog_data/img/avator.jpg)
 > 4. 网站描述：如人饮水，冷暖自知。
 > 5. 邮箱：mail[at]rainsin.cn
 {: .prompt-info }

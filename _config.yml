@@ -99,11 +99,11 @@ theme_mode:
 #
 # e.g. 'https://cdn.com'
 #<<<<<<< HEAD
-img_cdn: "https://blogs.rainsin.cn"
+img_cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 #avatar: "/commons/avatar.jpg"
-avatar: "/assets/img/avatar.webp"
+avatar: "/assets/img/avator.jpg"
 #=======
 #img_cdn: "https://chirpy-img.netlify.app"
 
