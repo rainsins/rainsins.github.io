@@ -55,13 +55,4 @@ author: rainsin
 > 黑夜模式的小背景来自[站酷: 那小先art](https://www.zcool.com.cn/u/18496248)。侵删。
 {: .prompt-tip }
 
-## 🔗我的信息
-
-> 1. 网站名称：rainsin's blog
-> 2. 网站地址：https://blog.rainsin.cn
-> 3. 网站头像：[右键复制链接](https://api.rainsin.cn/blog_data/img/avator.jpg)
-> 4. 网站描述：如人饮水，冷暖自知。
-> 5. 邮箱：mail[at]rainsin.cn
-{: .prompt-info }
-
 <script type="text/babel"  data-type="module" src="/assets/links/links.js"></script>
