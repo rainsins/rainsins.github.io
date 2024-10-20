@@ -146,6 +146,96 @@ author: rainsin
   </div>
 </div>
 
+<!--
+## 👻关于本站
+
+<div class="about-site">
+  <div>
+  这个土土的站点使用<span>CloudFlare Pages</span>部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，代码仓库<a href="https://github.com/rainsins/rainsins.github.io" target="_blank">Github</a>。
+  </div>
+  <div>
+  域名服务商<span>Godaddy</span>，DNS服务用的<span>cloudflare</span>，cf的cdn国内访问也很慢，不过我现在也没时间备案，就这样吧。
+  </div>
+</div>
+-->
+
+<div class="more-about-box">
+<!--
+<h2 class="show-about" style="display: none">☯️一言</h2>
+<div class="profile-box show-about" style="display: none">
+<div class="profile">
+<span>诸法空相</span>
+<span>不生不灭</span>
+<span>不垢不净</span>
+<span>不增不减</span>
+<span>
+种树培根
+<img src="/assets/img/914810001721461586.png" alt=""/>
+</span>
+</div>
+</div>
+<h2 class="show-about" style="display: none">📴在玩的</h2>
+<div id="playing-box" class="show-about" style="display: none"></div>
+-->
+
+<h2 class="show-about" style="display: none">🥹看见了，奥比克</h2>
+
+<div id="a-player" class="show-about" style="display: none"></div>
+
+<h2 class="show-about" style="display: none">🎶听的时间最长的一首歌</h2>
+
+<div id="ml" class="show-about" style="display: none"></div>
+
+<style>
+  #ml{
+    width: 100%;
+    margin: 2em 0 4em 0;
+    aspect-ratio: 1920/1080;
+  }
+</style>
+
+<h2 class="show-about" style="display: none">🍑せんせい</h2>
+
+<div id="av-box" class="show-about" style="display: none"></div>
+
+<div id="is-show-about"></div>
+</div>
+
 <link rel="stylesheet" href="/assets/about/about-min.css">
+<link rel="stylesheet" href="/assets/music/music-min.css">
 
 <script src="/assets/about/about-min.js" defer></script>
+
+<!-- <script type="text/babel" src="/assets/about/components/art.js"></script>
+
+
+<script type="text/babel" src="/assets/about/components/play.js"></script>
+
+
+<script type="text/babel" src="/assets/about/components/show.js"></script>
+
+<script type="text/babel" src="/assets/music/music.js"></script>
+
+<script>
+    (() => {
+
+    let mseplayer = new Artplayer({
+      container: '#ml',
+      url: sessionStorage.getItem("isOut") == "false" ? 'https://file.rainsin.cn/d/blog/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4' : "https://mypan.hk.cpolar.io/d/blog/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4",
+      theme: "#2c9678",
+        autoMini: true,
+        flip: true,
+        playbackRate: true,
+        screenshot: true,
+        hotkey: true,
+        pip: true,
+        mutex: true,
+        fullscreen: true,
+        fullscreenWeb: true,
+        miniProgressBar: true,
+        playsInline: true,
+        setting: true,
+        autoOrientation: true,
+    });
+    })();
+</script>-->
