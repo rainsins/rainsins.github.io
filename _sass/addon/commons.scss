@@ -832,12 +832,13 @@ $btn-mb: 0.5rem;
 
   .site-title {
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 2.5em;
     line-height: 1.2;
     letter-spacing: 0.25px;
     color: rgba(134, 133, 133, 0.99);
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
+    font-family: "ManbowLines-Regular";
 
     a {
       @extend %clickable-transition;
