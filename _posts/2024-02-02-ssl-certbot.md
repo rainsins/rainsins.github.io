@@ -95,13 +95,11 @@ certbot certonly \
 - certbot-dns-route53
 - certbot-dns-sakuracloud
 
-### 2.2 没有官方插件（阿里云 DNS、腾讯云 DNS、华为云 NDS、GoDaddy）
+### 2.2 没有官方插件
 
-我没有用cloudflare插件，而是用的自己下载的脚本，如果你的域名是其他的服务商，也可以用cloudflare的域名解析服务，将dns服务器改成cloudflare就行。
+我没有用cloudflare插件，而是用的自己下载的脚本，如果你的域名是其他的服务商（阿里云 DNS、腾讯云 DNS、华为云 NDS、GoDaddy）没有官方插件，一个解决办法就是换成cloudflare的域名解析服务，将dns服务器改成cloudflare就行，这样就可以用我的这个方案或者官方插件，不然还是得你自己找脚本。
 
-哈，我还是用Cloudflare做示范，其他的都大同小异。
-
-#### 2.2.1 先创建更新DNS的脚本（如果有现成的直接下载下来）
+#### 2.2.1 先创建更新DNS的脚本
 
 我用的是Cloudflare的DNS解析，如果你用的是其他云服务商，可以在github上找找，应该都会有的，用这个脚本更新DNS解析以验证域名归属：
 
@@ -245,7 +243,7 @@ else:
 sudo certbot certonly --server https://acme-v02.api.letsencrypt.org/directory --manual-auth-hook="python3 /home/<your>/certbot/cloudflare-dns-hook.py" --manual-cleanup-hook="python3 /home/<your>/certbot/cloudflare-dns-hook.py"  --post-hook="systemctl reload apache2 && systemctl restart apache2" --manual --preferred-challenges dns -d 'domain.cn,*.domain.cn'
 ```
 
-上面`--manual-auth-hook`在申请证书时验证域名归属时执行，而`--manual-cleanup-hook`则时验证完成之后删除对应的txt解析条目，`--post-hook`是证书部署之后要执行的命令，我的是重启apache。
+上面`--manual-auth-hook`在申请证书时验证域名归属时执行，而`--manual-cleanup-hook`则是验证完成之后删除对应的txt解析条目，`--post-hook`是证书部署之后要执行的命令，我的是重启apache。
 
 如果成功就会有以下输出：
 
@@ -297,9 +295,9 @@ manual_cleanup_hook = python3 /home/ubuntu/certbot/certbot-cloudflare-hook.py
 
 后续续期使用的就是这个文件。
 
-### 2.3 如果没有脚本
+### 2.3 没有脚本也没插件
 
-续期会失败，需要手动验证域名。
+如果没有脚本也没插件，续期会失败，需要手动验证域名。
 
 ```shell
 sudo certbot certonly --server https://acme-v02.api.letsencrypt.org/directory --post-hook="systemctl reload apache2 && systemctl restart apache2" --manual --preferred-challenges dns -d 'domain.cn,*.domain.cn'
@@ -359,6 +357,8 @@ IMPORTANT NOTES:
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
 ```
+
+在到期之前需要你手动续期然后验证域名。
 
 ## 4. 更新apache2证书
 
