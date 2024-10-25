@@ -146,6 +146,20 @@ author: rainsin
   </div>
 </div>
 
+## 🌀关于内容
+
+<div class="about-site">
+  <div>
+  思想从来都是旧的，在思想与智慧的领域当中我们只能重返古代，
+  </div>
+  <div>
+  <del>使用<span>CloudFlare Pages</span>持续部署</del>，使用本地（家里）的一台树莓派部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，代码仓库<a href="https://github.com/rainsins/rainsins.github.io" target="_blank">Github</a>。
+  </div>
+  <div>
+  内容如有侵权请联系<span>mail[at]rainsin.cn</span>。
+  </div>
+</div>
+
 <link rel="stylesheet" href="/assets/about/about-min.css">
 
 <script src="/assets/about/about-min.js" defer></script>
