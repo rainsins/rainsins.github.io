@@ -143,7 +143,7 @@ author: rainsin
 
 <div class="about-site contents">
   <div>
-  博客的内容可能只会在代码、魔方等等中会有我自己的东西（却也是不成体系不成系统的零散的），其他的方面都是过往的他人的成果，把它们放在这里，将来也许正好会有有缘人来到这里，机缘巧合下解开了他的一点点疑惑，这也是我们结的一点善缘了罢。
+  博客的内容可能只会在代码、魔方等等方面中会有我自己的东西（却也是不成体系不成系统的零散的），其他的方面都是过往的他人的成果，把它们放在这里，将来也许正好会有有缘人来到这里，机缘巧合下解开了他的一点点疑惑，这也是我们结的一点善缘了罢。
   </div>
 </div>
 
@@ -152,9 +152,6 @@ author: rainsin
 <div class="about-site">
   <div>
   <span>RAINSIN</span>这个网站名没啥特殊含义，我只是随机抽了几个字母然后组合起来。
-  </div>
-  <div>
-  博客的内容可能只会在我有能力去讨论的抽离了感性材料的种种范畴（代码、魔方等等）中会有我自己的东西（却也是不成体系不成系统的零散的），其他的都是过往的他人的成果（就比如哲学、国学、数学等等），把它们放在这里，将来也许正好有有缘人来到这里，解开了他的一点点疑惑，这也是我们结的一点善缘了。
   </div>
   <div>
   <del>使用<span>CloudFlare Pages</span>持续部署</del>，使用本地（家里）的一台树莓派部署，由<span>Jekyll</span>驱动，主题是<a href="https://github.com/cotes2020/chirpy-starter" target="_blank">Chirpy</a>，代码仓库<a href="https://github.com/rainsins/rainsins.github.io" target="_blank">Github</a>。
