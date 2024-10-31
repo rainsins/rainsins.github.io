@@ -10,7 +10,7 @@ mathpolt: false
 jquery: true
 babel: true
 forbid: true
-comments: false
+comments: true
 cube: false
 linksdata: false
 anime: true
