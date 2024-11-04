@@ -3,10 +3,6 @@
 - type: github
   icon: "fab fa-github"
 
-# - type: mastodon
-#   icon: 'fas fa-train-subway'
-#   url:  'https://www.travellings.cn/go.html' 
-
 - type: telegram
   icon: 'fab fa-telegram'
   url:  'https://t.me/rainsins' 
@@ -15,9 +11,13 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: twitter
-  icon: 'fab fa-twitter'
-  url:  'https://twitter.com/2000_python' 
+- type: mastodon
+  icon: 'fas fa-train-subway'
+  url:  'https://www.travellings.cn/go-by-clouds.html' 
+
+# - type: twitter
+#   icon: 'fab fa-twitter'
+#   url:  'https://twitter.com/2000_python' 
 
 #- type: rss
 #  icon: "fas fa-rss"
