@@ -124,13 +124,6 @@ author: rainsin
         </div>
       </div>
     </div>
-<div class="about-site bgimg-content-box">
-    <div class="mask mask4"></div>
-    <div class="ah-box ah-title">一言</div>
-  <div class="ah-box" style="color: #d3d3d3;font-family: var(--decs-font);">
-  我们身处其中的文明已经高度复杂和精致化，充满着种种知识和机巧，在如此复杂和精致的文明中生活的人离开智慧最为遥远，那些我们所珍视的知识、经验和技巧却无法安顿我们的那颗最难安放的心灵，只有在朴素的文明中的人才可能俯仰天地，领会天人之际，所以思想从来都是旧的，在思想与智慧的领域当中我们只能重返古代。
-  </div>
-  </div>
     <div class="about-site bgimg-box">
     <div class="mask mask3"></div>
     <div class="ah-box ah-title">做一些事</div>
