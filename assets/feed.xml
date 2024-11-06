@@ -23,6 +23,8 @@ permalink: /feed.xml
   <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
 
 {% for post in site.posts limit: 5 %}
+{% if post.isrss %}
+{% else %}
   {% assign post_absolute_url = post.url | absolute_url %}
   <entry>
     <title>{{ post.title }}</title>
@@ -48,6 +50,7 @@ permalink: /feed.xml
   <summary>{% include post-description.html max_length=400 %}</summary>
 
   </entry>
+{% endif %}
 {% endfor %}
 </feed>
 {% endcapture %}
