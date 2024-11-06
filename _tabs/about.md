@@ -12,7 +12,7 @@ jquery: true
 babel: false
 toc: false
 forbid: true
-comments: false
+comments: true
 anime: true
 animatecss: true
 bodymovin: false
