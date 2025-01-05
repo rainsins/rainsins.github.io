@@ -44,10 +44,15 @@ author: rainsin
 
 <div id="links-box"></div>
 
-## 💣须知
-
 > 可以击剑🤺之后再添加友链（吾剑也未尝不利）。我的邮箱：mail[at]rainsin.cn
 {: .prompt-warning }
+
+> 我的信息：<br>
+> 站点名称：rainsin<br>
+> 站点链接：https://blog.rainsin.cn<br>
+> 站点头像：https://blog.rainsin.cn/assets/img/avatar2.jpg<br>
+> 站点寄语：如人饮水，冷暖自知。<br>
+{: .prompt-info }
 
 ## 🫶🏻感谢
 
