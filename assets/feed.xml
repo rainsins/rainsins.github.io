@@ -22,7 +22,7 @@ permalink: /feed.xml
   <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
   <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
 
-{% for post in site.posts limit: 5 %}
+{% for post in site.posts limit: 8 %}
 {% if post.isrss %}
 {% else %}
   {% assign post_absolute_url = post.url | absolute_url %}
@@ -47,7 +47,13 @@ permalink: /feed.xml
     {% endfor %}
   {% endif %}
 
-  <summary>{% include post-description.html max_length=400 %}</summary>
+  <summary>
+  {% if post.description %}
+  {{ post.description }}
+  {% else %}
+  {% include post-description.html max_length=400 %}
+  {% endif %}
+  </summary>
 
   </entry>
 {% endif %}
