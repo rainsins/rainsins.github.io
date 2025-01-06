@@ -3,13 +3,13 @@
 - type: github
   icon: "fab fa-github"
 
-- type: sitemap
-  icon: 'fab fa-map-location-dot'
-  url:  'https://blog.rainsin.cn/sitemap.xml' 
-
 - type: rss
   icon: "fas fa-rss"
   url: 'https://blog.rainsin.cn/feed.xml'
+
+- type: sitemap
+  icon: 'fas fa-map-location-dot'
+  url:  'https://blog.rainsin.cn/sitemap.xml' 
 
 # - type: email
 #   icon: "fas fa-envelope"
