@@ -3,13 +3,17 @@
 - type: github
   icon: "fab fa-github"
 
-- type: telegram
-  icon: 'fab fa-telegram'
-  url:  'https://t.me/rainsins' 
+- type: sitemap
+  icon: 'fab fa-sitemap'
+  url:  'https://blog.rainsin.cn/sitemap.xml' 
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+- type: rss
+  icon: "fas fa-rss"
+  url: 'https://blog.rainsin.cn/feed.xml'
+
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: true # open link in current tab
 
 - type: mastodon
   icon: 'fas fa-train-subway'
