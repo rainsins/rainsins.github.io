@@ -4,7 +4,7 @@
   icon: "fab fa-github"
 
 - type: sitemap
-  icon: 'fab fa-sitemap'
+  icon: 'fab fa-map-location-dot'
   url:  'https://blog.rainsin.cn/sitemap.xml' 
 
 - type: rss
