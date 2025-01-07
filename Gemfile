@@ -35,3 +35,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 #gem "kramdown-parser-gfm"
 #gem "github-pages", "~> 228", group: :jekyll_plugins
+
+group :jekyll_plugins do
+  gem 'jekyll-gzip'
+end
