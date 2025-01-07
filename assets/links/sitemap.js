@@ -7,10 +7,9 @@ fs.readFile("../../_site/sitemap.xml", "utf-8", (err, data) => {
     // console.log(data);
     xml2js.parseString(data, (err, result) => {
         if (err) throw err;
-
-        links_data.forEach((e, i) => {
-            
-            fs.appendFileSync("../../_site/sitemap.txt", `${e.url}${os.EOL}`,'utf8');
+        
+        result.urlset.url.forEach((e, i) => {
+            fs.appendFileSync("../../_site/sitemap.txt", `${e.loc}${os.EOL}`,'utf8');
         });
     });
 });
