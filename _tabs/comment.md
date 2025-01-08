@@ -138,9 +138,9 @@ author: rainsin
 }
 
 .av-title-img-main {
-    width: 2.4em;
-    height: 2.4em;
-    border-radius: 1.2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
     border: 2px solid #e3e8f7ff;
     background-size: cover;
     background-position: center;
