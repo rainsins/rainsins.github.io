@@ -232,4 +232,5 @@ jekyll-archives:
     category: /categories/:name/
 
 plugins:
+  - jekyll-brotli
   - jekyll-gzip

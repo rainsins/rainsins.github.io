@@ -231,7 +231,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   <link rel="stylesheet" href="/assets/message/message.min.css" />
   <script src="/assets/message/message.min.js"></script>
 
-  <script src="https://file.rainsin.cn/d/blog/js/instantpage/instantpage.min.js"></script>
+  <script src="https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js" type="module"></script>
 
   {% if page.tooltipcss %}
   <link
@@ -251,13 +251,13 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   
   {% if page.clipboard %}
   <script
-    src="https://file.rainsin.cn/d/blog/js/clipboard/clipboard.min.js"
+    src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
     type="application/javascript"
   ></script>
   {% endif %} 
   
   {% if page.post and page.pangu != true %}
-  <script src="https://file.rainsin.cn/d/blog/js/pangu/pangu.min.js"></script>
+  <script src="/assets/gzip/pangu.min.js"></script>
 
   <script>
     window.load_event = {
@@ -271,11 +271,11 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% endif %} 
   {% if page.cube %}
 
-  <script src="https://file.rainsin.cn/d/blog/js/cube/data-min.js"></script>
+  <script src="/assets/gzip/cube/data-min.js"></script>
 
   {% endif %}
 
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/sweetalert2.js"></script>
+  <script src="https://{{ site.js_cdn4 }}/npm/sweetalert2@11"></script>
 
   <script>
     let box = document.documentElement;
@@ -306,7 +306,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% if page.blockquote-sep %}
   <link
     rel="stylesheet"
-    href="https://file.rainsin.cn/d/blog/js/gzip/ionicons.min.css"
+    href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css"
   />
   {% endif %} 
   {% if page.bodymovin %}
@@ -354,14 +354,17 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% if page.charch %}
   <script
     type="text/javascript"
-    src="https://file.rainsin.cn/d/blog/js/gzip/charch.build.js"
+    src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"
   ></script>
   {% endif %} {% if page.babel %}
   <script
-    src="https://file.rainsin.cn/d/blog/js/gzip/babel.min.js"
+    src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/babel-standalone/7.25.6/babel.min.js"
+    integrity="sha512-8M1WWEzuftS49rfh63fHz354qx+Pzvp3kcQVVTOxIdFSzjYC3I3vk5zgN0guAook97MQIZTfEdl9pUQTov9V6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
   ></script>
   {% endif %} {% if page.anime %}
-  <script src="https://file.rainsin.cn/d/blog/js/anime/anime.min.js"></script>
+  <script src="https://{{site.js_cdn}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
   {% endif %}
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -445,12 +448,12 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% if page.comments %}
   <link
     rel="stylesheet"
-    href="https://file.rainsin.cn/d/blog/js/gzip/waline.min.css"
+    href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.4.2/waline.min.css"
   />
 
   <link
     rel="stylesheet"
-    href="https://file.rainsin.cn/d/blog/js/gzip/waline-meta.css"
+    href="https://{{ site.out_cdnjs_cdn }}/ajax/libs/waline/3.4.2/waline-meta.css"
   />
 
   <style>
@@ -462,7 +465,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     }
   </style>
 
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/waline.umd.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.4.2/waline.umd.min.js"></script>
 
   <script>
     window.load_event = {
@@ -579,8 +582,8 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
 {% endif %}
 
   {% if page.react %}
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/react.production.min.js"></script>
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/react-dom.production.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
   <script src="/assets/js/swr.min.js" async></script>
   {% endif %} {% if page.video %}
   <script src="https://file.rainsin.cn/d/blog/js/artplayer/index.min.js"></script>
@@ -588,7 +591,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
   {% endif %}
   {% if page.imgpre %}
-  <script src="https://file.rainsin.cn/d/blog/js/img-previewer/index.min.js"></script>
+  <script src="/assets/gzip/img-previewer/index.min.js"></script>
   {% endif %}
   {% if page.music %}
   <link
@@ -598,9 +601,13 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
   <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
   {% endif %} {% if page.jquery %}
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/jquery.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %} {% if page.pinyin %}
   <script src="https://file.rainsin.cn/d/blog/js/pinyin.min.js"></script>
+  <script
+    async
+    src="https://file.rainsin.cn/d/blog/js/pinyin.min.js"
+  ></script>
   {% endif %} {% if page.chart %}
   <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
   {% endif %} {% if page.mathpolt %}
@@ -629,7 +636,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% endif %} {% if page.animatecss %}
   <link
     rel="stylesheet"
-    href="https://file.rainsin.cn/d/blog/js/gzip/animate.min.css"
+    href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css"
   />
   {% endif %} {% capture seo_tags %} {% seo title=false %} {% endcapture %} {%
   if page.image %} {% assign img = page.image.path | default: page.image %} {%
@@ -667,7 +674,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     href="{{ site.data.origin[type].webfonts | relative_url }}"
   />
   {% endif %} {% if page.md5 %}
-  <script src="https://file.rainsin.cn/d/blog/js/gzip/md5.min.js"></script>
+  <script src="https://{{site.js_cdn4}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
 
   {% endif %}
 
@@ -679,9 +686,9 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
 
   <!-- Font Awesome -->
   <link
-  rel="stylesheet"
-  href="{{ site.data.origin[type].fontawesome.css | relative_url }}"
-/>
+    rel="stylesheet"
+    href="{{ site.data.origin[type].fontawesome.css | relative_url }}"
+  />
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
