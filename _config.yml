@@ -233,4 +233,3 @@ jekyll-archives:
 
 plugins:
   - jekyll-brotli
-  - jekyll-gzip
