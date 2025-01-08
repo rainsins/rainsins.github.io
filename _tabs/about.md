@@ -168,7 +168,7 @@ author: rainsin
 <link rel="stylesheet" href="/assets/about/about-min.css">
 <link rel="stylesheet" href="/assets/music/music-min.css">
 <script src="/assets/about/about-min.js" defer></script>
-<script src="https://file.rainsin.cn/d/blog/js/about-music.min.js"></script>
+<script src="/assets/gzip/js/about-music.min.js"></script>
 
 <script defer>
   $("#profile-music-control").click(()=>{
