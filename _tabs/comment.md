@@ -9,6 +9,8 @@ babel: true
 react: true
 anime: true
 
+favicon: comment
+
 post: true
 description: 留言页
 keywords: rainsin, categories
