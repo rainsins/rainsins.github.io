@@ -432,7 +432,11 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     };
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+crossorigin="anonymous"
+src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"
+>
+</script>
   <script
     id="MathJax-script"
     async
@@ -603,11 +607,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% endif %} {% if page.jquery %}
   <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
   {% endif %} {% if page.pinyin %}
-  <script src="https://file.rainsin.cn/d/blog/js/pinyin.min.js"></script>
-  <script
-    async
-    src="https://file.rainsin.cn/d/blog/js/pinyin.min.js"
-  ></script>
+  <script src="/assets/gzip/js/pinyin.min.js"></script>
   {% endif %} {% if page.chart %}
   <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
   {% endif %} {% if page.mathpolt %}
