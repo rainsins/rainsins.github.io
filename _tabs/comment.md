@@ -102,7 +102,7 @@ author: rainsin
 }
 
 .av-title-name {
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 600;
     align-self: center;
     flex: 1;
@@ -128,7 +128,8 @@ author: rainsin
 
 .av-detial {
     z-index: 3;
-    font-size: .2em;
+    margin-top: 2em;
+    font-size: 0.8em;
 }
 
 
