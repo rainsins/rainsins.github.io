@@ -43,7 +43,7 @@
         <img src="https://api.rainsin.cn/logo.gif" alt="开往-友链接力" height="2rem" style="width:auto;height:1.5rem;">
       </a>
     </div> -->
-    <div class="justify-content-center align-items-center text-muted mx-md-3" style="display: flex;  padding: 0 0 20px 0;flex-wrap: wrap;">
+    <div class="justify-content-center align-items-center text-muted mx-md-3" style="display: flex;  padding: 0 0 9px 0;flex-wrap: wrap;">
       友情链接：&nbsp;&nbsp;
       <a class="font-links-a" href="https://sweetjing.cc/" target="_blank" title="保持热爱，奔赴山海。">半截の诗</a>，
       <a class="font-links-a" href="https://www.foreverblog.cn/go.html" target="_blank" title="穿梭虫洞-随机访问十年之约友链博客">虫洞</a>，
@@ -53,6 +53,10 @@
       <a class="font-links-a" href="https://storeweb.cn/" target="_blank" title="个站商店">个站商店</a>
       <!-- <a class="font-links-a" href="https://www.travellings.cn/" target="_blank" title="开往-友链接力">开往官网</a> -->
       。
+    </div>
+    <div class="justify-content-center align-items-center text-muted mx-md-3" style="display: flex;  padding: 0 0 20px 0;flex-wrap: wrap;">
+<i class="fa fa-cog fa-spin fa-1x fa-fw"></i><!--动态齿轮图标-->
+<span>本站已运行 <span id="days" style="font-weight:800; color:#1ba784"> </span> </span>
     </div>
   </div>
 </footer>
@@ -75,3 +79,31 @@
   heti_addon.autoSpacing();
 </script>
 {% endif %}
+
+<script language=javascript>
+  function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      var t1 = Date.UTC(2023,06,01,00,00,00);
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=+diffYears+"年"+diffDays+"天"+diffHours+"时"+diffMinutes+"分钟"+diffSeconds+"秒";
+  }
+  siteTime();
+</script>
