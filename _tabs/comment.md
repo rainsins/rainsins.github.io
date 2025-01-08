@@ -22,6 +22,23 @@ author: rainsin
     font-style: normal;
     font-display: swap;
 }
+
+#access-tags,
+#panel-wrapper,
+#access-lastmod {
+    display: none;
+}
+
+#core-wrapper,
+#tail-wrapper {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.core-wrapper {
+    width: 100%;
+}
 .av-box {
     width: 100%;
 }
