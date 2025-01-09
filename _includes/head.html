@@ -255,7 +255,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   ></script>
   {% endif %} 
   
-  {% if page.post and page.pangu %}
+  {% if page.post and page.pangu != true %}
   <script src="/assets/gzip/pangu.min.js"></script>
 
   <script>
@@ -712,7 +712,6 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
       ...window.load_event,
       isOutPan: () => {
         if (sessionStorage.getItem("isOutAlert")) {
-          
         } else {
           if(sessionStorage.getItem("isPan") == "false"){
             sessionStorage.setItem("isOutAlert", "true");
@@ -726,7 +725,7 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
     }
   </script>
 
-<script type="text/javascript">
+<script>
   (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
