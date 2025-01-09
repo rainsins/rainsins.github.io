@@ -580,6 +580,10 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   <script src="https://{{ site.unpkg_cdn3 }}/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.js"></script>
   <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
   {% endif %}
+  {% if page.hls %}
+  <script src="https://{{site.js_cdn4}}/npm/hls.js@1.5.18/dist/hls.min.js"></script>
+  {% endif %}
+
   {% if page.imgpre %}
   <script src="/assets/gzip/img-previewer/index.min.js"></script>
   {% endif %}
