@@ -11,5 +11,10 @@ Disallow: /categories/
 Disallow: /assets/
 Disallow: /emoticon/
 Disallow: /src/
+Disallow: /comment/
+Disallow: /links/
+Disallow: /categories/
+Disallow: /archives/
+Disallow: /about/
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
