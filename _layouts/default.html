@@ -16,7 +16,7 @@ layout: compress
 {% endcapture %}
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
+<html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }} class='han-la'>
   {% include head.html %}
   <body>
     <script>

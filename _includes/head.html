@@ -256,17 +256,9 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   {% endif %} 
   
   {% if page.post and page.pangu != true %}
-  <script src="/assets/gzip/pangu.min.js"></script>
+  <script src="/assets/js/text-autospace.min.js"></script>
 
-  <script>
-    window.load_event = {
-      ...window.load_event,
-      autoSpacing: () => {
-        pangu.spacingElementByClassName("post");
-        pangu.autoSpacingPage();
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="/assets/css/autospace-ex-min.css">
   {% endif %} 
   {% if page.cube %}
 
