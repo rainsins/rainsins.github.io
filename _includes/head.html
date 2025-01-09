@@ -12,7 +12,6 @@
     window.appendJQCDN = (src) => {
       var head = document.head || document.getElementsByTagName("head")[0];
       if (src.endsWith(".css")) {
-        //css
         var style = document.createElement("LINK");
         style.setAttribute("type", "text/css");
         style.setAttribute("rel", "stylesheet");
@@ -256,14 +255,14 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
   ></script>
   {% endif %} 
   
-  {% if page.post and page.pangu != true %}
+  {% if page.post and page.pangu %}
   <script src="/assets/gzip/pangu.min.js"></script>
 
   <script>
     window.load_event = {
       ...window.load_event,
       autoSpacing: () => {
-        pangu.spacingElementByClassName("post-content");
+        pangu.spacingElementByClassName("post");
         pangu.autoSpacingPage();
       },
     };
