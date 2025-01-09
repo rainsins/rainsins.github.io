@@ -4,13 +4,16 @@
   <div class="container px-lg-4">
     <div class="d-flex justify-content-center align-items-center text-muted mx-md-3" >
       <p>
-        {%- capture _platform -%}
-          <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
-        {%- endcapture -%}
-
-        {%- capture _theme -%}
-          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank">Chirpy</a>
-        {%- endcapture -%}
+        本站采用
+      <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>，主题 
+      <a
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="v{{ theme.version }}"
+        href="https://github.com/cotes2020/jekyll-theme-chirpy"
+        target="_blank"
+        rel="noopener"
+      >Chirpy</a>
 
         {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
       </p>
@@ -35,14 +38,6 @@
         border-bottom: none;
       }
     </style>
-
-    <!-- <div class="justify-content-center align-items-center text-muted mx-md-3" style="display: flex;  margin: 0 0 10px 0;">
-      <a class="font-links-a" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:2rem;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
-      &nbsp;&nbsp;
-      <a class="font-links-a" href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
-        <img src="https://api.rainsin.cn/logo.gif" alt="开往-友链接力" height="2rem" style="width:auto;height:1.5rem;">
-      </a>
-    </div> -->
     <div class="justify-content-center align-items-center text-muted mx-md-3" style="display: flex;  padding: 0 0 9px 0;flex-wrap: wrap;">
       友情链接：&nbsp;&nbsp;
       <a class="font-links-a" href="https://sweetjing.cc/" target="_blank" title="保持热爱，奔赴山海。">半截の诗</a>，
