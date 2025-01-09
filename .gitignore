@@ -28,3 +28,5 @@ yarn.lock
 */.DS_Store
 Cargo.lock
 */Cargo.lock
+*/bun.lockb
+bun.lockb
