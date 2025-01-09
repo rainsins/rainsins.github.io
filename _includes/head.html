@@ -32,6 +32,9 @@
     };
   </script>
 
+
+  <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
+
 {% if page.better-scroll %}
 <script src="https://{{site.cdnjs_cdn1}}/ajax/libs/better-scroll/2.5.1/better-scroll.min.js"></script>
 {% endif %}
@@ -508,12 +511,10 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
 
         window.time_comment = 0;
         let set_comment_time = setInterval(()=>{
-          const get_anno_img = Array.from(document.querySelectorAll(".wl-cards .wl-user .wl-user-avatar[src='https://seccdn.libravatar.org/avatar/d41d8cd98f00b204e9800998ecf8427e']"));
+          const get_anno_img = $(".wl-cards .wl-user .wl-user-avatar[src^='https://seccdn.libravatar.org/avatar']");
           if(time_comment < 500){
-            get_anno_img.forEach((el,index)=>{
-          el.src = "https://file.rainsin.cn/d/blog/img/comment/act.gif";
-        });
-        time_comment++;
+            get_anno_img.attr("src", "https://file.rainsin.cn/d/blog/img/comment/act.gif");
+            time_comment++;
           }else{
             clearInterval(set_comment_time);
             return;
@@ -594,9 +595,7 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   />
   <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
   <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
-  {% endif %} {% if page.jquery %}
-  <script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
-  {% endif %} {% if page.pinyin %}
+  {% endif %}  {% if page.pinyin %}
   <script src="/assets/gzip/js/pinyin.min.js"></script>
   {% endif %} {% if page.chart %}
   <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>

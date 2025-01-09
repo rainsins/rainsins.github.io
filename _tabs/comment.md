@@ -69,22 +69,6 @@ author: rainsin
     border-radius: 18px;
 }
 
-.three-av .av-item-box:nth-child(2) {
-    margin: 0 3.75px 0 2.5px;
-}
-
-.three-av .av-item-box:nth-child(3) {
-    margin: 0 2.5px 0 3.75px;
-}
-
-.three-av .av-item-box:nth-child(4) {
-    margin-left: 5px;
-}
-
-.three-av .av-item-box:nth-child(1) {
-    margin-right: 5px;
-}
-
 .av-item-box {
     flex: 1;
     flex-direction: column;
@@ -99,9 +83,6 @@ author: rainsin
 
 }
 
-.three-av>div:nth-child(2) {
-    align-self: flex-end;
-}
 
 .av-title-name {
     font-size: 1.4em;
