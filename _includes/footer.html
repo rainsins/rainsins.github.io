@@ -106,3 +106,14 @@
   }
   siteTime();
 </script>
+
+{% if page.post and page.pangu %}
+
+{% if page.jquery != true %}
+<script src="https://{{ site.unpkg_cdn3 }}/jquery@3.7.1/dist/jquery.min.js"></script>
+{% endif %}
+
+  <script src="/assets/js/text-autospace.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/css/autospace-ex-min.css">
+{% endif %} 

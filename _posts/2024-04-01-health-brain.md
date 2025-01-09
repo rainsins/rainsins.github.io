@@ -16,6 +16,7 @@ mathpolt: false
 jquery: false
 forbid: false
 comments: true
+pangu: true
 
 favicon: heart
 

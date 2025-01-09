@@ -12,6 +12,7 @@ music: false
 mathpolt: false
 jquery: false
 forbid: true
+pangu: true
 comments: true
 favicon: heart
 
