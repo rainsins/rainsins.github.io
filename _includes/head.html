@@ -585,6 +585,18 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   <script src="https://{{site.js_cdn4}}/npm/hls.js@1.5.18/dist/hls.min.js"></script>
   {% endif %}
 
+  {% if page.flv %}
+  <script src="https://{{site.js_cdn4}}/npm/flv.js@1.6.2/dist/flv.min.js"></script>
+  {% endif %}
+  {% if page.crypto %}
+  <script src="https://{{site.js_cdn4}}/npm/crypto-js@4.2.0/crypto-js.js"></script>
+  {% endif %}
+  
+
+  {% if page.webtorrent %}
+  <script src="https://{{site.js_cdn4}}/npm/webtorrent@2.5.12/index.min.js"></script>
+  {% endif %}
+
   {% if page.imgpre %}
   <script src="/assets/gzip/img-previewer/index.min.js"></script>
   {% endif %}
