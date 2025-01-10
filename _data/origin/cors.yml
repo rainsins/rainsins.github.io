@@ -16,7 +16,7 @@ webfonts: https://fonts.font.im/css2?family=Lato&family=Source+Sans+Pro:wght@400
 # Libraries
 
 jquery:
-  js: https://s4.zstatic.net/npm/jquery@3.7.1/dist/jquery.min.js
+  js: https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
   css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css
@@ -30,7 +30,7 @@ fontawesome:
   css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.5.2/css/all.min.css
 
 search:
-  js: https://s4.zstatic.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
+  js: https://cdn.jsdmirror.com/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
 
 mermaid:
   js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/mermaid/10.9.1/mermaid.min.js
