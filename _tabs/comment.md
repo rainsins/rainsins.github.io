@@ -20,7 +20,7 @@ author: rainsin
 <style>
   @font-face {
     font-family: "Gourmand";
-    src: url("https://file.rainsin.cn/d/blog/font/Gourmand-.woff?sign=h6-2SUODfbL4ukPvWwJpRYeaAcIny5bbmvYePpDh6to=:0"),url("https://mypan.cpolar.io/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
+    src: url("https://file.rainsin.cn/d/blog/font/Gourmand-.woff?sign=h6-2SUODfbL4ukPvWwJpRYeaAcIny5bbmvYePpDh6to=:0"),url("https://rainsinpan.vip.cpolar.cn/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
