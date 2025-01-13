@@ -27,7 +27,7 @@ toc:
   js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/tocbot/4.28.2/tocbot.min.js
 
 fontawesome:
-  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.5.2/css/all.min.css
+  css: https://mynpm.rainsin.cn/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
 
 search:
   js: https://cdn.jsdmirror.com/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
