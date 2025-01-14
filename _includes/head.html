@@ -14,7 +14,7 @@
     (async function () {
       if(!sessionStorage.getItem("Info")){
       const info = await browser.getInfo();
-    sessionStorage.setItem("Info",info);
+    sessionStorage.setItem("Info",JSON.stringify(info));
     const options = {
       method: 'POST',
       headers: {
