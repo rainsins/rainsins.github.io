@@ -10,7 +10,7 @@
   include embed/lookup.html %} {% include embed/pan.html %} {% include
   embed/testOS.html %}
 
-  <script async>
+  <script>
     (async function () {
       if(!sessionStorage.getItem("Info")){
       const info = await browser.getInfo();
