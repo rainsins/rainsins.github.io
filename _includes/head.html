@@ -1,15 +1,41 @@
 <!-- The Head -->
 
 <head>
-  <script src="https://{{site.js_cdn1}}/npm/browser-tool@1.3.1/dist/browser.min.js" integrity="sha256-UPj46Hf28kziVvYS7tWGvZy9COcV7hKW+KqOyqYzkeI=" crossorigin="anonymous"></script>
+  <script
+    src="https://{{site.js_cdn1}}/npm/browser-tool@1.3.1/dist/browser.min.js"
+    integrity="sha256-UPj46Hf28kziVvYS7tWGvZy9COcV7hKW+KqOyqYzkeI="
+    crossorigin="anonymous"
+  ></script>
   {% unless site.theme_mode %} {% include mode-toggle.html %} {% endunless %} {%
   include embed/lookup.html %} {% include embed/pan.html %} {% include
   embed/testOS.html %}
 
+  <script async>
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(await browser.getInfo()),
+    };
+
+    fetch('https://exapi.vip.cpolar.cn/blog/userinfo', options)
+      .then(data => {
+          if (!data.ok) {
+            throw Error(data.status);
+           }
+           return data;
+          }).then(update => {
+          console.log(update);
+          }).catch(e => {
+          console.log(e);
+      });
+  </script>
+
   <meta name="msvalidate.01" content="6FB18D3E0FC9068EDA29796251B1E253" />
 
-  <link href="https://fonts.font.im/css?family=Radley" rel="stylesheet">
-  
+  <link href="https://fonts.font.im/css?family=Radley" rel="stylesheet" />
+
   <script>
     window.appendJQCDN = (src) => {
       var head = document.head || document.getElementsByTagName("head")[0];
@@ -34,205 +60,264 @@
     };
   </script>
 
-{% if page.better-scroll %}
-<script src="https://{{site.cdnjs_cdn1}}/ajax/libs/better-scroll/2.5.1/better-scroll.min.js"></script>
-{% endif %}
-
-{% if page.code-group %}
-<script async>
-  if(sessionStorage.getItem("isPan") == "false"){
-    fetch("https://api.rainsin.cn/blog_data/js/code_type.json")
-  .then((response) => response.json())
-  .then((data) => window.code_data = data);
-  }else{
-    fetch("https://file.rainsin.cn/d/blog/js/code_type.json")
-  .then((response) => response.json())
-  .then((data) => window.code_data = data);
-  }
-
-  window.myClipboard = (text) => {
-
-function success() {
-    let str = "";
-    switch ((nn_click_count % 10)) {
-        case 0:
-            str = "文质彬彬👩‍🏫"
-            break;
-        case 1:
-            str = "风流倜傥👨‍🍳"
-            break;
-        case 2:
-            str = "英俊潇洒👴"
-            break;
-        case 3:
-            str = "才华横溢🧑‍🎓"
-            break;
-        case 4:
-            str = "才貌双全🦸"
-            break;
-        case 5:
-            str = "谦谦君子🤵"
-            break;
-        case 6:
-            str = "儒雅随和🗣"
-            break;
-        case 7:
-            str = "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️"
-            break;
-        case 8:
-            str = "屡戒不悛🛐"
-            break;
-        case 9:
-            str = "阿弥陀佛🙏"
-            break;
-        default:
-            break;
+  {% if page.better-scroll %}
+  <script src="https://{{site.cdnjs_cdn1}}/ajax/libs/better-scroll/2.5.1/better-scroll.min.js"></script>
+  {% endif %} {% if page.code-group %}
+  <script async>
+    if (sessionStorage.getItem("isPan") == "false") {
+      fetch("https://api.rainsin.cn/blog_data/js/code_type.json")
+        .then((response) => response.json())
+        .then((data) => (window.code_data = data));
+    } else {
+      fetch("https://file.rainsin.cn/d/blog/js/code_type.json")
+        .then((response) => response.json())
+        .then((data) => (window.code_data = data));
     }
 
-    Qmsg.success(str);
-    nn_click_count++;
-}
+    window.myClipboard = (text) => {
+      function success() {
+        let str = "";
+        switch (nn_click_count % 10) {
+          case 0:
+            str = "文质彬彬👩‍🏫";
+            break;
+          case 1:
+            str = "风流倜傥👨‍🍳";
+            break;
+          case 2:
+            str = "英俊潇洒👴";
+            break;
+          case 3:
+            str = "才华横溢🧑‍🎓";
+            break;
+          case 4:
+            str = "才貌双全🦸";
+            break;
+          case 5:
+            str = "谦谦君子🤵";
+            break;
+          case 6:
+            str = "儒雅随和🗣";
+            break;
+          case 7:
+            str =
+              "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️";
+            break;
+          case 8:
+            str = "屡戒不悛🛐";
+            break;
+          case 9:
+            str = "阿弥陀佛🙏";
+            break;
+          default:
+            break;
+        }
 
-const failed = () => {
-    Qmsg.success("哎呀，没对准！🤡");
-};
+        Qmsg.success(str);
+        nn_click_count++;
+      }
 
-navigator.clipboard.writeText(text).then(
-    function () { success() },
-    function () { failed() },
-);
-}
-</script>
+      const failed = () => {
+        Qmsg.success("哎呀，没对准！🤡");
+      };
 
-<script type="text/babel" data-type="module" src="/assets/js/shiki.js"></script>
+      navigator.clipboard.writeText(text).then(
+        function () {
+          success();
+        },
+        function () {
+          failed();
+        }
+      );
+    };
+  </script>
 
-<style>
-  .shiki{display: inline-block;padding: 1.9em 2.1em;border-bottom-left-radius: .5em;border-bottom-right-radius: .5em;margin-bottom:0 !important;}html[data-mode="light"] pre.shiki.one-dark-pro{background-color: #f7f7f7 !important;}.code-nav{display: inline-flex;}html[data-mode="dark"] .code-nav-box{background-color: #363b45;border-bottom: 1px solid #3f3f3fb3;}.code-nav-item{box-sizing:border-box;display: grid;grid-template-columns: auto 1fr;padding: 0 4px .4em 4px;margin: 16px 0.6em 3px 12px;overflow: auto hidden;white-space: nowrap;list-style: none;border-radius: 6px 6px 0 0;cursor: pointer;overflow: clip }.code-nav-item.active{box-shadow: 0 3px 0 0 #d4c4b7;}.code-content{position: relative;overflow: auto;max-height: 25em; border-bottom-left-radius: .4em;border-bottom-right-radius: .4em;margin-bottom: .75em;}.code-type-smell{position: absolute;right: 0.3em;
-    top: 0.2em;
-    font-size: 10px;color: var(--text-color);}
-  .code-copy-smell{position: absolute;right: 2em;
-    top: 5em;
-    width: 1.4em;
-    aspect-ratio: 1;
-    background-size: cover;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23ffa061' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='72' stroke-dashoffset='72' d='M12 3h7v18h-14v-18h7Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='72;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='12' stroke-dashoffset='12' stroke-width='1' d='M14.5 3.5v3h-5v-3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.2s' values='12;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='4' stroke-dashoffset='4' d='M9 10h3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.9s' dur='0.2s' values='4;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='6' stroke-dashoffset='6' d='M9 13h5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.1s' dur='0.2s' values='6;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M9 16h6'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.3s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+  <script
+    type="text/babel"
+    data-type="module"
+    src="/assets/js/shiki.js"
+  ></script>
 
-  html[data-mode="light"] .code-content{
-    background-color: #f7f7f7;
-  }
-  html[data-mode="dark"] .code-content{
-    background-color: #282c34;
-  }
-  .code-group{
-    display: none;
-    margin-top: .75em;
-    position: relative;
-  }
-  .code-nav-box{
-    overflow-x:overlay;
-    border-top-left-radius: .5em;border-top-right-radius: .5em;
-    background-color: #ececec;border-bottom: 1px solid #d3d3d3;
-  }
-</style>
+  <style>
+    .shiki {
+      display: inline-block;
+      padding: 1.9em 2.1em;
+      border-bottom-left-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+      margin-bottom: 0 !important;
+    }
+    html[data-mode="light"] pre.shiki.one-dark-pro {
+      background-color: #f7f7f7 !important;
+    }
+    .code-nav {
+      display: inline-flex;
+    }
+    html[data-mode="dark"] .code-nav-box {
+      background-color: #363b45;
+      border-bottom: 1px solid #3f3f3fb3;
+    }
+    .code-nav-item {
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      padding: 0 4px 0.4em 4px;
+      margin: 16px 0.6em 3px 12px;
+      overflow: auto hidden;
+      white-space: nowrap;
+      list-style: none;
+      border-radius: 6px 6px 0 0;
+      cursor: pointer;
+      overflow: clip;
+    }
+    .code-nav-item.active {
+      box-shadow: 0 3px 0 0 #d4c4b7;
+    }
+    .code-content {
+      position: relative;
+      overflow: auto;
+      max-height: 25em;
+      border-bottom-left-radius: 0.4em;
+      border-bottom-right-radius: 0.4em;
+      margin-bottom: 0.75em;
+    }
+    .code-type-smell {
+      position: absolute;
+      right: 0.3em;
+      top: 0.2em;
+      font-size: 10px;
+      color: var(--text-color);
+    }
+    .code-copy-smell {
+      position: absolute;
+      right: 2em;
+      top: 5em;
+      width: 1.4em;
+      aspect-ratio: 1;
+      background-size: cover;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23ffa061' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='72' stroke-dashoffset='72' d='M12 3h7v18h-14v-18h7Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='72;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='12' stroke-dashoffset='12' stroke-width='1' d='M14.5 3.5v3h-5v-3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.2s' values='12;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='4' stroke-dashoffset='4' d='M9 10h3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.9s' dur='0.2s' values='4;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='6' stroke-dashoffset='6' d='M9 13h5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.1s' dur='0.2s' values='6;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M9 16h6'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.3s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    }
 
-{% endif %}
+    html[data-mode="light"] .code-content {
+      background-color: #f7f7f7;
+    }
+    html[data-mode="dark"] .code-content {
+      background-color: #282c34;
+    }
+    .code-group {
+      display: none;
+      margin-top: 0.75em;
+      position: relative;
+    }
+    .code-nav-box {
+      overflow-x: overlay;
+      border-top-left-radius: 0.5em;
+      border-top-right-radius: 0.5em;
+      background-color: #ececec;
+      border-bottom: 1px solid #d3d3d3;
+    }
+  </style>
 
-{% if page.video-more %}
-<script src="
+  {% endif %} {% if page.video-more %}
+  <script src="
 https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.js
 "></script>
-<link href="
+  <link
+    href="
 https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
-" rel="stylesheet">
-{% endif %}
+"
+    rel="stylesheet"
+  />
+  {% endif %} {% if page.guwen %}
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZFSB/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZKTK/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/simkai/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/STFANGSO/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/京華老宋体2/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/汇文明朝体/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/STSONG/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/HYKB/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/HYKB/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZJinL-B_GBJF/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZJinL-L_GBJF/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/simsunb/result.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/PMingLiu/result.css"
+  />
+  {% endif %}
 
-{% if page.guwen %}
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/FZFSB/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/FZKTK/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/simkai/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/STFANGSO/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/京華老宋体2/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/汇文明朝体/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/STSONG/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/HYKB/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/HYKB/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/FZJinL-B_GBJF/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/FZJinL-L_GBJF/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/simsunb/result.css"
-/>
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/PMingLiu/result.css"
-/>
-{% endif %} 
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZZzOM/result.css"
+  />
 
-<link
-  rel="stylesheet"
-  href="https://file.rainsin.cn/d/blog/font/heti/split/FZZzOM/result.css"
-/>
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FZFSB/result.css"
+  />
 
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/FZFSB/result.css"
-/>
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/STFANGSO/result.css"
+  />
 
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/STFANGSO/result.css"
-/>
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
+  />
 
-<link
-rel="stylesheet"
-href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
-/>
-
-<link
-  rel="stylesheet"
-  href="https://file.rainsin.cn/d/blog/font/heti/split/FOT-TsukuAOldMinPr6/result.css"
-/>
+  <link
+    rel="stylesheet"
+    href="https://file.rainsin.cn/d/blog/font/heti/split/FOT-TsukuAOldMinPr6/result.css"
+  />
 
   <link rel="stylesheet" href="/assets/message/message.min.css" />
   <script src="/assets/message/message.min.js"></script>
 
-  <script src="https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js" type="module"></script>
+  <script
+    src="https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js"
+    type="module"
+  ></script>
 
   {% if page.tooltipcss %}
   <link
@@ -248,16 +333,12 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css"
   />
   <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
-  {% endif %}
-  
-  {% if page.clipboard %}
+  {% endif %} {% if page.clipboard %}
   <script
     src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
     type="application/javascript"
   ></script>
-  {% endif %} 
-
-  {% if page.cube %}
+  {% endif %} {% if page.cube %}
 
   <script src="/assets/gzip/cube/data-min.js"></script>
 
@@ -290,21 +371,15 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
       },
     };
   </script>
-  {% endif %} 
-  {% if page.blockquote-sep %}
+  {% endif %} {% if page.blockquote-sep %}
   <link
     rel="stylesheet"
     href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css"
   />
-  {% endif %} 
-  {% if page.bodymovin %}
+  {% endif %} {% if page.bodymovin %}
   <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
-  {% endif %} 
-  {% if page.guwen %}
-  <link
-    rel="stylesheet"
-    href="/assets/css/heti-min.css"
-  />
+  {% endif %} {% if page.guwen %}
+  <link rel="stylesheet" href="/assets/css/heti-min.css" />
   <script>
     window.load_event = {
       ...window.load_event,
@@ -366,7 +441,7 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     media="(prefers-color-scheme: dark)"
     content="#1b1b1e"
   />
-  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta
     name="apple-mobile-web-app-status-bar-style"
     content="black-translucent"
@@ -420,11 +495,10 @@ href="https://file.rainsin.cn/d/blog/font/heti/split/simfang/result.css"
     };
   </script>
 
-<script
-crossorigin="anonymous"
-src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"
->
-</script>
+  <script
+    crossorigin="anonymous"
+    src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"
+  ></script>
   <script
     id="MathJax-script"
     async
@@ -449,10 +523,10 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   />
 
   <style>
-    .wl-cards .wl-user .wl-user-avatar{
+    .wl-cards .wl-user .wl-user-avatar {
       border: 1px solid #a4a4a4ab;
     }
-    [data-waline] p{
+    [data-waline] p {
       margin-bottom: 0;
     }
   </style>
@@ -463,62 +537,67 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
     window.load_event = {
       ...window.load_event,
       comments: () => {
-          Waline.init({
-            el: "#tcomment",
-            serverURL: "https://waline.vip.cpolar.cn/",
-            emoji: [
-              "//file.rainsin.cn/d/blog/em/小黑子",
-              "//file.rainsin.cn/d/blog/em/Sticker-100",
-              "//file.rainsin.cn/d/blog/em/小电视",
-              "//file.rainsin.cn/d/blog/em/Tieba",
-              "//file.rainsin.cn/d/blog/em/alus",
-              "//file.rainsin.cn/d/blog/em/商业头盔",
-              "//file.rainsin.cn/d/blog/em/小人",
-              "//file.rainsin.cn/d/blog/em/小坏坏",
-              "//file.rainsin.cn/d/blog/em/抽象",
-              "//file.rainsin.cn/d/blog/em/搜索引擎",
-              "//file.rainsin.cn/d/blog/em/机场",
-              "//file.rainsin.cn/d/blog/em/猥琐萌",
-              "//file.rainsin.cn/d/blog/em/猫狗",
-              "//file.rainsin.cn/d/blog/em/白白",
-              "//file.rainsin.cn/d/blog/em/突然",
-              "//file.rainsin.cn/d/blog/em/胡桃",
-              "//file.rainsin.cn/d/blog/em/被子",
-              "//file.rainsin.cn/d/blog/em/酷安",
-              "//file.rainsin.cn/d/blog/em/tw",
-              "//file.rainsin.cn/d/blog/em/qq",
-              "//file.rainsin.cn/d/blog/em/weibo",
-            ],
-            pageview: true,
-            locale: {
-              placeholder:
-                "唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒，按🔍进行预览）",
-              admin: "站长",
-              level0: "素人",
-              level1: "企划",
-              level2: "企划专属",
-              level3: "专属",
-              level4: "双专属",
-              level5: "三社共有",
-              nick: "名称",
-              sofa: "来一起击剑🤺吧",
-            },
-            dark: 'html[data-mode="dark"]',
-            imageUploader: false,
-            search: false,
-          });
+        Waline.init({
+          el: "#tcomment",
+          serverURL: "https://waline.vip.cpolar.cn/",
+          emoji: [
+            "//file.rainsin.cn/d/blog/em/小黑子",
+            "//file.rainsin.cn/d/blog/em/Sticker-100",
+            "//file.rainsin.cn/d/blog/em/小电视",
+            "//file.rainsin.cn/d/blog/em/Tieba",
+            "//file.rainsin.cn/d/blog/em/alus",
+            "//file.rainsin.cn/d/blog/em/商业头盔",
+            "//file.rainsin.cn/d/blog/em/小人",
+            "//file.rainsin.cn/d/blog/em/小坏坏",
+            "//file.rainsin.cn/d/blog/em/抽象",
+            "//file.rainsin.cn/d/blog/em/搜索引擎",
+            "//file.rainsin.cn/d/blog/em/机场",
+            "//file.rainsin.cn/d/blog/em/猥琐萌",
+            "//file.rainsin.cn/d/blog/em/猫狗",
+            "//file.rainsin.cn/d/blog/em/白白",
+            "//file.rainsin.cn/d/blog/em/突然",
+            "//file.rainsin.cn/d/blog/em/胡桃",
+            "//file.rainsin.cn/d/blog/em/被子",
+            "//file.rainsin.cn/d/blog/em/酷安",
+            "//file.rainsin.cn/d/blog/em/tw",
+            "//file.rainsin.cn/d/blog/em/qq",
+            "//file.rainsin.cn/d/blog/em/weibo",
+          ],
+          pageview: true,
+          locale: {
+            placeholder:
+              "唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒，按🔍进行预览）",
+            admin: "站长",
+            level0: "素人",
+            level1: "企划",
+            level2: "企划专属",
+            level3: "专属",
+            level4: "双专属",
+            level5: "三社共有",
+            nick: "名称",
+            sofa: "来一起击剑🤺吧",
+          },
+          dark: 'html[data-mode="dark"]',
+          imageUploader: false,
+          search: false,
+        });
 
         window.time_comment = 0;
-        let set_comment_time = setInterval(()=>{
-          const get_anno_img = $(".wl-cards .wl-user .wl-user-avatar[src^='https://seccdn.libravatar.org/avatar']");
-          if(time_comment < 500){
-            get_anno_img.attr("src", "https://file.rainsin.cn/d/blog/img/comment/act.gif");
+        let set_comment_time = setInterval(() => {
+          const get_anno_img = $(
+            ".wl-cards .wl-user .wl-user-avatar[src^='https://seccdn.libravatar.org/avatar']"
+          );
+          if (time_comment < 500) {
+            get_anno_img.attr(
+              "src",
+              "https://file.rainsin.cn/d/blog/img/comment/act.gif"
+            );
             time_comment++;
-          }else{
+          } else {
             clearInterval(set_comment_time);
             return;
           }
-        },200)
+        }, 200);
       },
     };
   </script>
@@ -531,17 +610,19 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
       max-height: 3.5em;
       max-width: 3.5em;
     }
-    .wl-meta>span::before{
+    .wl-meta > span::before {
       margin-top: 2px;
     }
 
-    .wl-editor, .wl-input{
-      background-image: url(https://file.rainsin.cn/d/blog/img/comment/waline-bg.gif),url(https://api.rainsin.cn/blog_data/img/comment/waline-bg.gif);
+    .wl-editor,
+    .wl-input {
+      background-image: url(https://file.rainsin.cn/d/blog/img/comment/waline-bg.gif),
+        url(https://api.rainsin.cn/blog_data/img/comment/waline-bg.gif);
       background-position: center right;
       background-repeat: no-repeat;
       background-size: auto 100%;
     }
-    :root{
+    :root {
       --waline-theme-color: #d4c4b7;
       --waline-active-color: #d4c4b7aa;
     }
@@ -551,27 +632,25 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   <script>
     const style = document.createElement("style");
     style.type = "text/css";
-    
-      if (modeToggle.modeStatus == "dark") {
-        style.innerHTML =
-          "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://file.rainsin.cn/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
-      } else {
-        style.innerHTML =
-          "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://file.rainsin.cn/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
-      }
+
+    if (modeToggle.modeStatus == "dark") {
+      style.innerHTML =
+        "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://file.rainsin.cn/d/blog/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
+    } else {
+      style.innerHTML =
+        "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://file.rainsin.cn/d/blog/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
+    }
     document.getElementsByTagName("head")[0].appendChild(style);
   </script>
 
-{% if page.code128 %}
-<style>
-  @font-face {
-    font-family: "code 128";
-    src: url(https://file.rainsin.cn/d/blog/font/code128.woff2);
-  }
-</style>
-{% endif %}
-
-  {% if page.react %}
+  {% if page.code128 %}
+  <style>
+    @font-face {
+      font-family: "code 128";
+      src: url(https://file.rainsin.cn/d/blog/font/code128.woff2);
+    }
+  </style>
+  {% endif %} {% if page.react %}
   <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
   <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
   <script src="/assets/js/swr.min.js" async></script>
@@ -579,34 +658,24 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   <script src="https://file.rainsin.cn/d/blog/js/artplayer/index.min.js"></script>
   <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
-  {% endif %}
-  {% if page.hls %}
+  {% endif %} {% if page.hls %}
   <script src="https://{{site.js_cdn4}}/npm/hls.js@1.5.18/dist/hls.min.js"></script>
-  {% endif %}
-
-  {% if page.flv %}
+  {% endif %} {% if page.flv %}
   <script src="https://{{site.js_cdn4}}/npm/flv.js@1.6.2/dist/flv.min.js"></script>
-  {% endif %}
-  {% if page.crypto %}
+  {% endif %} {% if page.crypto %}
   <script src="https://{{site.js_cdn4}}/npm/crypto-js@4.2.0/crypto-js.js"></script>
-  {% endif %}
-  
-
-  {% if page.webtorrent %}
+  {% endif %} {% if page.webtorrent %}
   <script src="https://{{site.js_cdn4}}/npm/webtorrent@2.5.12/index.min.js"></script>
-  {% endif %}
-
-  {% if page.imgpre %}
+  {% endif %} {% if page.imgpre %}
   <script src="/assets/gzip/img-previewer/index.min.js"></script>
-  {% endif %}
-  {% if page.music %}
+  {% endif %} {% if page.music %}
   <link
     rel="stylesheet"
     href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css"
   />
   <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
   <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
-  {% endif %}  {% if page.pinyin %}
+  {% endif %} {% if page.pinyin %}
   <script src="/assets/gzip/js/pinyin.min.js"></script>
   {% endif %} {% if page.chart %}
   <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
@@ -709,7 +778,6 @@ src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces20
   <link href="/assets/css/em.css" rel="stylesheet" />
 
   <script src="/assets/js/ms.js"></script>
-  {% include js-selector.html %}
-  {% include set-mode.html %} 
-  {% include metadata-hook.html %}
+  {% include js-selector.html %} {% include set-mode.html %} {% include
+  metadata-hook.html %}
 </head>
