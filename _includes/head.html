@@ -11,7 +11,8 @@
   embed/testOS.html %}
 
   <script async>
-    if(!sessionStorage.getItem("Info")){
+    (async function () {
+      if(!sessionStorage.getItem("Info")){
       const info = await browser.getInfo();
     sessionStorage.setItem("Info",info);
     const options = {
@@ -34,6 +35,7 @@
           console.log(e);
       });
     }
+    })();
   </script>
 
   <meta name="msvalidate.01" content="6FB18D3E0FC9068EDA29796251B1E253" />
