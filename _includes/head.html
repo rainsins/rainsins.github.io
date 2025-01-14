@@ -11,12 +11,15 @@
   embed/testOS.html %}
 
   <script async>
+    if(!sessionStorage.getItem("Info")){
+      const info = await browser.getInfo();
+    sessionStorage.setItem("Info",info);
     const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(await browser.getInfo()),
+      body: JSON.stringify(info),
     };
 
     fetch('https://exapi.vip.cpolar.cn/blog/userinfo', options)
@@ -30,6 +33,7 @@
           }).catch(e => {
           console.log(e);
       });
+    }
   </script>
 
   <meta name="msvalidate.01" content="6FB18D3E0FC9068EDA29796251B1E253" />
