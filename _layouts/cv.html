@@ -29,6 +29,8 @@ layout: compress
 	<script src="/assets/cv/js/typed.min.js" defer></script>
 	<script src="/assets/cv/js/kube.min.js" defer></script>
 	<script src="/assets/cv/js/site-min.js" defer></script>
+	<script src="https://npm.elemecdn.com/@popperjs/core@2"></script>
+	<script src="https://npm.elemecdn.com/tippy.js@6"></script>
 	<style>
 		.intro h1:before {
 			/* Edit this with your name or anything else */
@@ -56,7 +58,7 @@ layout: compress
 							window.history.back();
 						}
 						</script>
-						<li><a href="javascript:goBack()"><i class="fa-thin fa-arrow-left"></i> Back</a></li>
+						<li><a href="javascript:void(0)" onclick="goBack"><i class="fa-thin fa-arrow-left"></i> Back</a></li>
 						<li class="active"><a href="#about">About</a></li>
 						<li><a href="#PREFERENCE">Preference</a></li>
 						<li><a href="#skills">Skills</a></li>
@@ -258,8 +260,8 @@ layout: compress
 					<ul class="social list-flat right">
 						<li><a href="https://blog.rainsin.cn" title="我的博客"><i class="fa-duotone fa-solid fa-blog"></i></a></li>
 						<li><a href="mailto:1820278582@qq.com" title="给我发邮件"><i class="fa-solid fa-paper-plane"></i></a></li>
-						<li><a href="https://t.me/rainsins" title="和我玩"><i class="fa-brands fa-telegram"></i></a></li>
-						<li><a href="https://blog.rainsin.cn/sitemap.xml" title="站点地图"><i class="fas fa-sitemap"></i></a></li>
+						<li><a href="https://www.travellings.cn/go-by-clouds.html" title="开往"><i class="fa-duotone fa-solid fa-train"></i></a></li>
+						<li><a href="https://www.foreverblog.cn/go.html" title="黑洞"><i class="fa-duotone fa-solid fa-galaxy"></i></a></li>
 						<li><a href="https://blog.rainsin.cn/feed.xml" title="RSS"><i class="fas fa-rss"></i></a></li>
 					</ul>
 				</div>
@@ -308,6 +310,17 @@ layout: compress
 				}
 			}
 		});
+
+		tippy('#profile-music-control', {
+        content: '播放赵本山',
+		theme: "mmmm",
+        arrow: true,
+      });
+	  tippy('#profile-music-control-prefer', {
+        content: '播放莫文蔚',
+		theme: "mmmm",
+        arrow: true,
+      });
 	</script>
 </body>
 
