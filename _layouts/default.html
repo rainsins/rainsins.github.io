@@ -112,5 +112,33 @@ layout: compress
         }
       };
     </script>
+
+<script>
+  (async function () {
+    if(!sessionStorage.getItem("Info")){
+    const info = await browser.getInfo();
+  sessionStorage.setItem("Info",JSON.stringify(info));
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(info),
+  };
+
+  fetch('https://exapi.vip.cpolar.cn/blog/userinfo', options)
+    .then(data => {
+        if (!data.ok) {
+          throw Error(data.status);
+         }
+         return data;
+        }).then(update => {
+        console.log(update);
+        }).catch(e => {
+        console.log(e);
+    });
+  }
+  })();
+</script>
   </body>
 </html>
