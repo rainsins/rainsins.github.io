@@ -74,6 +74,8 @@ window.load_event = {
     }
 }
 
+let isLoad = false;
+
 function send_message() {
     const password = $("#email-field").val();
 
@@ -86,10 +88,13 @@ function send_message() {
         padding: CryptoJS.pad.Pkcs7
     }).toString();
 
-    fetch(`https://myapi.rainsin.cn:2000/blog/envideo/${query}`)
+    if (isLoad) {
+        fetch(`https://enapi.rainsin.cn/blog/envideo/${query}`)
         .then((response) => {
+            isLoad = true;
             if (response.status == "404") {
-                Qmsg.error("哎呀，密码不对！🤡")
+                Qmsg.error("哎呀，密码不对！🤡");
+                isLoad = false;
                 return false;
             } else {
                 return response.json()
@@ -125,10 +130,14 @@ function send_message() {
                     art.currentTime = 0;
                 });
             }
+            isLoad = false;
         });
+    }
+
+    
 }
 
-fetch("https://myapi.rainsin.cn:2000/blog/video")
+fetch("https://enapi.rainsin.cn/blog/video")
     .then((response) => response.json())
     .then((data) => {
         
@@ -174,11 +183,19 @@ fetch("https://myapi.rainsin.cn:2000/blog/video")
 
         $("#email-field").keypress(function (event) {
             if (event.which === 13) {
-                send_message();
+                if (isLoad) {
+                    Qmsg.success("点慢一点！奴家受不了啦！🌶")
+                } else {
+                    send_message();
+                }
             }
         });
 
         $('#subscribe-button').on("mousedown",() => {
-            send_message();
+            if (isLoad) {
+                Qmsg.success("点慢一点！奴家受不了啦！🌶")
+            } else {
+                send_message();
+            }
         })
     });
