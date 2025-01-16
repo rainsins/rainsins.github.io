@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 layout: cv
-icon: fa-duotone fa-solid fa-house
+icon: fa-duotone fa-solid fa-seedling
 order: 6
 
 description: 关于rainsin的博客和网站的详情

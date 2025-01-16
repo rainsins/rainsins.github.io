@@ -1,6 +1,6 @@
 ---
 layout: about
-icon: fa-duotone fa-solid fa-link
+icon: fa-duotone fa-solid fa-users
 order: 4
 react: true
 video: false

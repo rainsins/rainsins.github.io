@@ -1,19 +1,18 @@
 #  The contact options.
+- type: email
+  icon: "fa-duotone fa-solid fa-mailbox"
+  noblank: true # open link in current tab
 
-- type: github
-  icon: "fa-brands fa-github-alt"
+# - type: github
+#   icon: "fa-brands fa-github-alt"
 
 - type: rss
   icon: "fa-duotone fa-solid fa-rss"
   url: 'https://blog.rainsin.cn/feed.xml'
 
 - type: sitemap
-  icon: 'fa-duotone fa-solid fa-sitemap'
+  icon: 'fa-duotone fa-solid fa-map-location-dot'
   url:  'https://blog.rainsin.cn/sitemap.xml'
-
-# - type: email
-#   icon: "fas fa-envelope"
-#   noblank: true # open link in current tab
 
 - type: mastodon
   icon: 'fa-duotone fa-solid fa-train'
