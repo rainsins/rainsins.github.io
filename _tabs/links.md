@@ -1,6 +1,6 @@
 ---
 layout: about
-icon: fas fa-paperclip
+icon: fa-duotone fa-solid fa-link
 order: 4
 react: true
 video: false

@@ -1,6 +1,6 @@
 ---
 layout: categories
-icon: fas fa-stream
+icon: fa-duotone fa-solid fa-bars-staggered
 order: 2
 forbid: true
 comments: false

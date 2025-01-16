@@ -1,23 +1,23 @@
 #  The contact options.
 
 - type: github
-  icon: "fab fa-github"
+  icon: "fa-brands fa-github-alt"
 
 - type: rss
-  icon: "fas fa-rss"
+  icon: "fa-duotone fa-solid fa-rss"
   url: 'https://blog.rainsin.cn/feed.xml'
 
 - type: sitemap
-  icon: 'fas fa-map-location-dot'
-  url:  'https://blog.rainsin.cn/sitemap.xml' 
+  icon: 'fa-duotone fa-solid fa-sitemap'
+  url:  'https://blog.rainsin.cn/sitemap.xml'
 
 # - type: email
 #   icon: "fas fa-envelope"
 #   noblank: true # open link in current tab
 
 - type: mastodon
-  icon: 'fas fa-train-subway'
-  url:  'https://www.travellings.cn/go-by-clouds.html' 
+  icon: 'fa-duotone fa-solid fa-train'
+  url:  'https://www.travellings.cn/go-by-clouds.html'
 
 # - type: twitter
 #   icon: 'fab fa-twitter'
