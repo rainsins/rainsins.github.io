@@ -19,7 +19,7 @@ tail_includes:
     <p class="post-desc fw-light mb-4">{{ page.description }}</p>
     {% endif %}
     <!-- published date -->
-    <i class="fa-duotone fa-regular fa-calendar-pen"></i>&ensp;
+    <i class="fa-duotone fa-regular fa-calendar-pen"></i>&thinsp;
     <span>
       {{ site.data.locales[lang].post.posted }}
       {% include datetime.html date=page.date tooltip=true lang=lang %}
@@ -28,7 +28,7 @@ tail_includes:
     <!-- lastmod date -->
     {% if page.last_modified_at and page.last_modified_at != page.date %}
     &emsp;
-    <i class="fa-duotone fa-solid fa-calendar-clock"></i>&ensp;
+    <i class="fa-duotone fa-solid fa-calendar-clock"></i>&thinsp;
     <span>
       {{ site.data.locales[lang].post.updated }}
       {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
@@ -63,7 +63,7 @@ tail_includes:
         {% assign authors = page.authors %}
       {% endif %}
 
-      <i class="fa-duotone fa-solid fa-user"></i>&ensp;
+      <i class="fa-duotone fa-solid fa-user"></i>&thinsp;
 
       {{ site.data.locales[lang].post.written_by }}
 
