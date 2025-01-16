@@ -1,5 +1,25 @@
 <!-- The Footer -->
+<script>
+  (() => {
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
 
+  [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => {
+      return $(tooltipTriggerEl).data("bs-title") ? tippy(tooltipTriggerEl, {
+        content: $(tooltipTriggerEl).data("bs-title"),
+        placement: 'top',
+        theme: 'translucent',
+      }) : tippy(tooltipTriggerEl, {
+        content: $(tooltipTriggerEl).data("bs-original-title"),
+        placement: 'top',
+        theme: 'translucent',
+      });
+    }
+  );
+})();
+</script>
 <footer>
   <div class="container px-lg-4">
     <div class="d-flex justify-content-center align-items-center text-muted mx-md-3" >
