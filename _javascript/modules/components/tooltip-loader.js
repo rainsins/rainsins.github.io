@@ -7,6 +7,16 @@ export function loadTooptip() {
   );
 
   [...tooltipTriggerList].map(
-    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    (tooltipTriggerEl) => {
+      return $(tooltipTriggerEl).data("bs-title") ? tippy(tooltipTriggerEl, {
+        content: $(tooltipTriggerEl).data("bs-title"),
+        placement: 'top',
+        theme: 'translucent',
+      }) : tippy(tooltipTriggerEl, {
+        content: $(tooltipTriggerEl).data("bs-original-title"),
+        placement: 'top',
+        theme: 'translucent',
+      });
+    }
   );
 }

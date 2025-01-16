@@ -14,6 +14,9 @@
 
   <link href="https://fonts.font.im/css?family=Radley" rel="stylesheet" />
 
+  <script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
+  <script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
+
   <script>
     window.appendJQCDN = (src) => {
       var head = document.head || document.getElementsByTagName("head")[0];
@@ -303,10 +306,9 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     rel="stylesheet"
     href="https://cdn.staticfile.net/hint.css/3.0.0/hint.min.css"
   />
-  {% endif %} {% if page.tooltipjs %}
-  <script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
-  <script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
-  {% endif %} {% if page.swiper %}
+  {% endif %} 
+  
+  {% if page.swiper %}
   <link
     rel="stylesheet"
     href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css"
