@@ -8,17 +8,23 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display SC", "FZZzOM", "OMPJ", serif;
-  color: #333333; }
+  color: var(--title-text-color); }
 
-a, p, li {
+ p, li {
   font-family: "Lato", "FZZzOM", "OMPJ", Arial, sans-serif;
-  color: #4e4e4e;
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: 1.75em; }
+
+a{
+  font-family: "Lato", "FZZzOM", "OMPJ", Arial, sans-serif;
+  color: var(--a-color);
   font-size: 1em;
   line-height: 1.75em; }
 
 a:hover {
   text-decoration: none !important;
-  color: #333333 !important;
+  color: var(--a-active-color) !important;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -80,7 +86,7 @@ a:hover {
   background: var(--nav-bg-color);
   padding-top: 23px; }
   .main-nav nav ul li a {
-    color: #a7a7a7; }
+    color: var(--nav-mute-color); }
   .main-nav nav ul li.active a {
     color: var(--nav-active-color); }
 
@@ -112,7 +118,7 @@ a:hover {
     top: -150px;
     font-size: 270px;
     z-index: -1;
-    color: #f4f4f4; }
+    color: var(--intro-big-color); }
   .intro h1 span {
     font-size: 47px; }
 
@@ -121,27 +127,27 @@ a:hover {
   .work .work-list li {
     list-style: none;
     font-size: 0.9375em;
-    color: #8c8c8c; }
+    color: var(--text-color); }
     .work .work-list li a {
       padding-bottom: 5px;
       font-size: 1.1875em;
       font-weight: 700;
       text-decoration: none;
-      border-bottom: 1px solid #b3b3b3; }
+      color: var(--a-color); }
       .work .work-list li a:hover {
-        border-bottom: 1px solid #333333; }
+        color: var(--a-active-color); }
 
 .award .award-list {
   margin-left: 0px; }
   .award .award-list li:first-child {
     font-size: 0.9375em;
-    color: #8c8c8c; }
+    color: var(--text-mute-color); }
 
 .skills .skill-list {
   margin-left: 0px; }
   .skills .skill-list li:first-child {
     font-size: 0.9375em;
-    color: #8c8c8c; }
+    color: var(--text-mute-color); }
 
 .quote {
   display: flex;
@@ -154,8 +160,8 @@ a:hover {
   .quote h2 {
     margin: 100px 0px;
     padding: 40px 20px;
-    border: 5px solid var(--img-font-color);
-    color: var(--img-font-color); }
+    border: 5px solid var(--main-bg-color);
+    color: var(--main-bg-color); }
 
 footer {
   padding: 50px 0px 0px 0px; }
