@@ -12,7 +12,7 @@
   data-ts="{{ include.date | date: '%s' }}"
   data-df="{{ df_dayjs }}"
   {% if include.tooltip %}
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-toggle="tooltip" data-bs-placement="top"
   {% endif %}
 >
   {{ include.date | date: df_strftime }}
