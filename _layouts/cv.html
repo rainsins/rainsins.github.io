@@ -238,31 +238,18 @@ layout: compress
           <div class="unit-80">
             <h1>I'm & enjoying <br /><span id="typed"></span></h1>
           </div>
-          <p>
-            不要延宕，不要把觉悟这件事情推到来世，不要波波度一生，到头还自懊，不要死到临头了再后悔，抓住当下。</p>
-            <p>
-              说通及心通，如日处虚空；唯传见性法，出世破邪宗。<br>
-              法即无顿见，迷悟有迟疾；说即虽万般，合理还归一。<br>
-              邪来烦恼至，正来烦恼除；除却邪与正，清净至无余。<br>
-              菩提本至性，净心在妄中；修道即修心，心圆同虚空。<br>
-              常见己之过，莫寻他人非；离心别觅道，终身与道违。<br>
-              波波度一生，到头还自懊；时时勤返照，彼岸自然到。<br>
-              若真修道人，不见世间过；若见他人非，自非却是左。<br>
-              他非我不非，我非自有过；但自却非心，打除烦恼破。<br>
-              佛法在世间，不离世间觉；离世觅菩提，恰如求兔角。<br>
-              此颂是顿教，亦名大法船；迷闻经累劫，悟则刹那间。<br>
-            </p>
-            <i
-              class="fa-duotone fa-solid fa-hand-point-right"
-            ></i
-            >&ensp;<i
-              class="fa-duotone fa-solid fa-seedling"
-              id="profile-music-control"
-            ></i>
-            <audio
-              id="profile-music"
-              src="https://otherpan.rainsin.cn/d/kuake/blog/music/%E5%B0%8F%E8%8D%89.webm"
-            ></audio>
+          <p >
+            不要延宕，不要把觉悟这件事情推到来世，不要波波度一生，到头还自懊，不要死到临头了再后悔，<span id="wuxiang">抓住当下</span>。<i
+            class="fa-duotone fa-solid fa-hand-point-right"
+          ></i
+          >&ensp;<i
+            class="fa-duotone fa-solid fa-seedling"
+            id="profile-music-control"
+          ></i>
+          <audio
+            id="profile-music"
+            src="https://otherpan.rainsin.cn/d/kuake/blog/music/%E5%B0%8F%E8%8D%89.webm"
+          ></audio></p>
           </p>
         </div>
       </div>
@@ -651,8 +638,23 @@ layout: compress
       });
       tippy("#profile-music-control-prefer", {
         content: "播放莫文蔚",
-        theme: "mmmm",
         arrow: true,
+      });
+      tippy("#wuxiang", {
+        content: `<p>
+          说通及心通，如日处虚空；唯传见性法，出世破邪宗。<br>
+          法即无顿见，迷悟有迟疾；说即虽万般，合理还归一。<br>
+          邪来烦恼至，正来烦恼除；除却邪与正，清净至无余。<br>
+          菩提本至性，净心在妄中；修道即修心，心圆同虚空。<br>
+          常见己之过，莫寻他人非；离心别觅道，终身与道违。<br>
+          波波度一生，到头还自懊；时时勤返照，彼岸自然到。<br>
+          若真修道人，不见世间过；若见他人非，自非却是左。<br>
+          他非我不非，我非自有过；但自却非心，打除烦恼破。<br>
+          佛法在世间，不离世间觉；离世觅菩提，恰如求兔角。<br>
+          此颂是顿教，亦名大法船；迷闻经累劫，悟则刹那间。<br>
+        </p>`,
+        arrow: true,
+        allowHTML: true,
       });
     </script>
   </body>
