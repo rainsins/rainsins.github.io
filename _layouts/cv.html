@@ -121,6 +121,10 @@ layout: compress
         color: #f68c60;
       }
 
+      #wuxiang-content{
+        font-size: small;
+      }
+
       html[data-mode="light"] {
         --icon-footer-color: #999999;
         --intro-big-color: #f4f4f4;
@@ -640,8 +644,7 @@ layout: compress
         arrow: true,
       });
       tippy("#wuxiang", {
-        content: `<p>
-          说通及心通，如日处虚空；唯传见性法，出世破邪宗。<br>
+        content: `<p id="wuxiang-content">说通及心通，如日处虚空；唯传见性法，出世破邪宗。<br>
           法即无顿见，迷悟有迟疾；说即虽万般，合理还归一。<br>
           邪来烦恼至，正来烦恼除；除却邪与正，清净至无余。<br>
           菩提本至性，净心在妄中；修道即修心，心圆同虚空。<br>
@@ -650,8 +653,7 @@ layout: compress
           若真修道人，不见世间过；若见他人非，自非却是左。<br>
           他非我不非，我非自有过；但自却非心，打除烦恼破。<br>
           佛法在世间，不离世间觉；离世觅菩提，恰如求兔角。<br>
-          此颂是顿教，亦名大法船；迷闻经累劫，悟则刹那间。<br>
-        </p>`,
+          此颂是顿教，亦名大法船；迷闻经累劫，悟则刹那间。<br></p>`,
         arrow: true,
         allowHTML: true,
       });
