@@ -16,7 +16,7 @@ babel: false
 mathpolt: false
 jquery: false
 forbid: false
-comments: true
+
 
 favicon: heart
 

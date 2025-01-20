@@ -15,7 +15,7 @@ babel: false
 mathpolt: false
 jquery: false
 forbid: true
-comments: true
+
 pangu: true
 
 favicon: code

@@ -19,7 +19,7 @@ animatecss: false
 mathpolt: false
 jquery: false
 forbid: false
-comments: true
+
 
 code-group: true
 better-scroll: true

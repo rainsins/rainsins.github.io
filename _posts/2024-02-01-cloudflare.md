@@ -16,7 +16,6 @@ babel: true
 mathpolt: true
 jquery: true
 forbid: true
-comments: true
 
 favicon: code
 
