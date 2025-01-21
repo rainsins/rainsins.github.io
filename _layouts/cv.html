@@ -213,7 +213,7 @@ layout: compress
             <ul>
               <script>
                 function goBack() {
-                  window.history.back();
+                  window.location.href = document.referrer
                 }
               </script>
               <li>
@@ -247,20 +247,27 @@ layout: compress
           <div class="unit-80">
             <h1>I'm & enjoying <br /><span id="typed"></span></h1>
           </div>
-          <p >
-            不要延宕，不要把觉悟这件事情推到来世，不要波波度一生，到头还自懊，不要死到临头了再后悔，<span id="wuxiang">抓住当下</span>。<i
-            class="fa-duotone fa-solid fa-hand-point-right"
-          ></i
-          >&ensp;<i
-            class="fa-duotone fa-solid fa-seedling"
-            id="profile-music-control"
-          ></i>
-          <audio
-            id="profile-music"
-            src="https://otherpan.rainsin.cn/d/kuake/blog/music/%E5%B0%8F%E8%8D%89.webm"
-          ></audio></p>
-          </p>
+          2000年出生在甘肃天水的一个小乡村。<i
+          class="fa-duotone fa-solid fa-hand-point-right"
+        ></i
+        >&ensp;<i
+          class="fa-duotone fa-solid fa-seedling"
+          id="profile-music-control"
+        ></i>
+        <audio
+          id="profile-music"
+          src="https://otherpan.rainsin.cn/d/kuake/blog/music/%E5%B0%8F%E8%8D%89.webm"
+        ></audio> 
         </div>
+      </div>
+    </div>
+
+    <div class="work section second" id="experiences">
+      <div class="container">
+        <h1>Saying</h1>
+        <p>
+          不要延宕，不要把觉悟这件事情推到来世，不要波波度一生，到头还自懊，不要死到临头了再后悔，<span id="wuxiang">抓住当下</span>。
+        </p>
       </div>
     </div>
 
@@ -268,6 +275,16 @@ layout: compress
     <div class="award section second" id="PREFERENCE">
       <div class="container">
         <h1>Life &amp;<br />preference</h1>
+        <ul class="award-list list-flat">
+          <li>阅读</li>
+          <li>
+            <b>喜欢</b> ：<i class="fa-duotone fa-solid fa-face-thinking"></i> 哲学&ensp;/&ensp;<i class="fa-duotone fa-solid fa-yin-yang"></i>国学&ensp;/&ensp;<i class="fa-solid fa-planet-ringed"></i>其它随缘
+
+          </li>
+          <li>
+            <b>最近</b> ：《巴黎手稿》&《德意志意识形态（节选本）》
+          </li>
+        </ul>
         <ul class="award-list list-flat">
           <li>音乐</li>
           <li>
@@ -610,10 +627,10 @@ layout: compress
         const audios = document.getElementById("profile-music");
         if (
           audios.src !=
-          "https://file.rainsin.cn/d/blog/music/%E5%B0%8F%E8%8D%89.webm"
+          "https://file.rainsin.cn/d/blog/music/%E5%B0%8F%E8%8D%89.mp3"
         ) {
           audios.src =
-            "https://file.rainsin.cn/d/blog/music/%E5%B0%8F%E8%8D%89.webm";
+            "https://file.rainsin.cn/d/blog/music/%E5%B0%8F%E8%8D%89.mp3";
           audios.load();
           audios.play();
         } else {
@@ -625,6 +642,10 @@ layout: compress
           }
         }
       });
+
+      document.getElementById("profile-music").onended = function() {
+        document.getElementById("profile-music").paused = true;
+    };
 
       $("#profile-music-control-prefer").click(() => {
         const audios = document.getElementById("profile-music");
@@ -640,11 +661,15 @@ layout: compress
           if (audios.paused) {
             audios.currentTime = 0;
             audios.play();
-          } else {
+          } else if(audios.ended){
+            audios.currentTime = 0;
+            audios.play();
+          }else{
             audios.pause();
           }
         }
       });
+
       $("#profile-music-control-opera").click(() => {
         const audios = document.getElementById("profile-music");
         if (
@@ -659,14 +684,17 @@ layout: compress
           if (audios.paused) {
             audios.currentTime = 0;
             audios.play();
-          } else {
+          } else if(audios.ended){
+            audios.currentTime = 0;
+            audios.play();
+          }else{
             audios.pause();
           }
         }
       });
 
       tippy("#profile-music-control", {
-        content: "播放赵本山",
+        content: "播放赵本山 By 王利夫",
         arrow: true,
       });
       tippy("#profile-music-control-prefer", {
