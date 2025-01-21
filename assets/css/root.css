@@ -74,12 +74,6 @@
   -webkit-border-radius: 6px;
 }
 
-.wl-cards{
-  border: 1px dashed #b8b8b8;
-  margin: 0 6px;
-  border-radius: 8px;
-}
-
 .qmsg-content span{
 text-wrap: wrap;
 }
