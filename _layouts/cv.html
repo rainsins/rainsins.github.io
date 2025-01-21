@@ -247,7 +247,7 @@ layout: compress
           <div class="unit-80">
             <h1>I'm & enjoying <br /><span id="typed"></span></h1>
           </div>
-          2000年出生在甘肃天水的一个小乡村。<i
+          <span style="color: var(--text-color);">2000年出生在甘肃天水的一个三十户人家的<span id="me-countryout-map">小乡村</span>。<i
           class="fa-duotone fa-solid fa-hand-point-right"
         ></i
         >&ensp;<i
@@ -258,6 +258,7 @@ layout: compress
           id="profile-music"
           src="https://otherpan.rainsin.cn/d/kuake/blog/music/%E5%B0%8F%E8%8D%89.webm"
         ></audio> 
+          </span>
         </div>
       </div>
     </div>
@@ -721,7 +722,13 @@ layout: compress
         可怜把众烈士一命皆亡。`,
         arrow:true,
         allowHTML: true
-      })
+      });
+      
+      tippy("#me-countryout-map",{
+        content:`<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5034.406208075248!2d105.02806181824555!3d34.910398386743225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1szh-CN!2s!4v1737465564085!5m2!1szh-CN!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`,
+        arrow:true,
+        allowHTML: true
+      });
     </script>
   </body>
 </html>
