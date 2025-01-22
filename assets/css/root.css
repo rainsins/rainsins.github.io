@@ -78,6 +78,10 @@
 text-wrap: wrap;
 }
 
+.footnotes {
+  font-size: .85em;
+}
+
 .tk-owo-emotion {
 width: 1.5em;
 }
