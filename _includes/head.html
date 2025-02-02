@@ -495,13 +495,9 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
   {% if page.comments %}
   <link
     rel="stylesheet"
-    href="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.4.2/waline.min.css"
+    href="https://mynpm.rainsin.cn/artalk@2.9.1/Artalk.css"
   />
 
-  <link
-    rel="stylesheet"
-    href="https://{{ site.out_cdnjs_cdn }}/ajax/libs/waline/3.4.2/waline-meta.css"
-  />
 
   <style>
     .wl-cards .wl-user .wl-user-avatar {
@@ -512,73 +508,16 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     }
   </style>
 
-  <script src="https://{{ site.cdnjs_cdn1 }}/ajax/libs/waline/3.4.2/waline.umd.min.js"></script>
+  <script src="https://mynpm.rainsin.cn/artalk@2.9.1/Artalk.min.js"></script>
 
   <script>
     window.load_event = {
       ...window.load_event,
       comments: () => {
-        Waline.init({
-          el: "#tcomment",
-          serverURL: "https://waline.vip.cpolar.cn/",
-          emoji: [
-            "//file.rainsin.cn/d/blog/em/小黑子",
-            "//file.rainsin.cn/d/blog/em/Sticker-100",
-            "//file.rainsin.cn/d/blog/em/小电视",
-            "//file.rainsin.cn/d/blog/em/Tieba",
-            "//file.rainsin.cn/d/blog/em/alus",
-            "//file.rainsin.cn/d/blog/em/商业头盔",
-            "//file.rainsin.cn/d/blog/em/小人",
-            "//file.rainsin.cn/d/blog/em/小坏坏",
-            "//file.rainsin.cn/d/blog/em/抽象",
-            "//file.rainsin.cn/d/blog/em/搜索引擎",
-            "//file.rainsin.cn/d/blog/em/机场",
-            "//file.rainsin.cn/d/blog/em/猥琐萌",
-            "//file.rainsin.cn/d/blog/em/猫狗",
-            "//file.rainsin.cn/d/blog/em/白白",
-            "//file.rainsin.cn/d/blog/em/突然",
-            "//file.rainsin.cn/d/blog/em/胡桃",
-            "//file.rainsin.cn/d/blog/em/被子",
-            "//file.rainsin.cn/d/blog/em/酷安",
-            "//file.rainsin.cn/d/blog/em/tw",
-            "//file.rainsin.cn/d/blog/em/qq",
-            "//file.rainsin.cn/d/blog/em/weibo",
-          ],
-          pageview: true,
-          locale: {
-            placeholder:
-              "唠唠嗑（登录和上面信息都不是必需的，评论审核后可见，添加邮箱可在被回复时邮件提醒，按🔍进行预览）",
-            admin: "站长",
-            level0: "素人",
-            level1: "企划",
-            level2: "企划专属",
-            level3: "专属",
-            level4: "双专属",
-            level5: "三社共有",
-            nick: "名称",
-            sofa: "来一起击剑🤺吧",
-          },
-          dark: 'html[data-mode="dark"]',
-          imageUploader: false,
-          search: false,
-        });
-
-        window.time_comment = 0;
-        let set_comment_time = setInterval(() => {
-          const get_anno_img = $(
-            ".wl-cards .wl-user .wl-user-avatar[src^='https://seccdn.libravatar.org/avatar']"
-          );
-          if (time_comment < 500) {
-            get_anno_img.attr(
-              "src",
-              "https://file.rainsin.cn/d/blog/img/comment/act.gif"
-            );
-            time_comment++;
-          } else {
-            clearInterval(set_comment_time);
-            return;
-          }
-        }, 200);
+        Artalk.init({
+          el:'#tcomment',        
+          server:'http://comment.vip.cpolar.cn',
+          site:'Rainsin\'s Blog',});
       },
     };
   </script>
