@@ -48,7 +48,6 @@ layout.tail_includes %} {% assign has_tail = true %} {% endif %}
     {% for _include in layout.tail_includes %} {% assign _include_path =
     _include | append: '.html' %} {% include {{ _include_path }} lang=lang %} {%
     endfor %}
-    <div id="tcomment"></div>
   </div>
 </div>
 {% endif %}
