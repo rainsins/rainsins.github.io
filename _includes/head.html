@@ -410,6 +410,7 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
           darkMode: modeToggle.modeStatus === "dark",
           site: 'Rainsin\'s Blog'
         });
+        document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
         window.mode_change = {
           ...window.mode_change,
           artalk_mode: () => {
@@ -419,6 +420,7 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
               darkMode: modeToggle.modeStatus === "dark",
               site: 'Rainsin\'s Blog'
             });
+            document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
           }
         }
       },
