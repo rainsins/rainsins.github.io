@@ -499,11 +499,21 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     window.load_event = {
       ...window.load_event,
       comments: () => {
-        Artalk.init({
+        const artalk = Artalk.init({
           el:'#tcomment',        
           server:'https://waline.vip.cpolar.cn',
           darkMode: sessionStorage.getItem("mode"),
-          site:'Rainsin\'s Blog',});
+          site:'Rainsin\'s Blog'});
+          window.mode_change = {
+            ...window.mode_change,
+            artalk_mode: () => {
+              artalk.update({
+          el:'#tcomment',        
+          server:'https://waline.vip.cpolar.cn',
+          darkMode: sessionStorage.getItem("mode"),
+          site:'Rainsin\'s Blog'});
+            }
+          }
       },
     };
   </script>

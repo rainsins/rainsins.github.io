@@ -13,6 +13,13 @@ const callback = function (mutationsList, observer) {
                 targetNode.setAttribute('data-mode','light');
             }
         }
+        if(window.mode_change){
+          for(const key in window.mode_change){
+              window.mode_change[key]();
+            }
+        }else{
+          console.log("没有mode事件！");
+        }
     }
   }
 };
