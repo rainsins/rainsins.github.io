@@ -17,6 +17,7 @@ pangu: true
 favicon: heart
 
 post: true
+description: 本文介绍了一个简约的Opencore的主题包的安装教程。
 keywords: rainsin, blog, 黑苹果, 主题
 author: rainsin
 ---

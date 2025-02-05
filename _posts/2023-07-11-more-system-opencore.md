@@ -17,7 +17,7 @@ pangu: true
 favicon: heart
 
 post: true
-description: 通过OpenCore（OC）引导Windows、Linux和macOS等多个系统的步骤。
+description: 本文介绍了通过OpenCore（OC）引导Windows、Linux和macOS等多个系统的步骤。
 keywords: rainsin, blog, 黑苹果, 解决问题
 author: rainsin
 ---

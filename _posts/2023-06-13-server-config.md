@@ -17,7 +17,7 @@ pangu: true
 favicon: code
 
 post: true
-description: 在我的一块小树莓派上创建自己的影视库和各种服务，坏了之后可以按这个步骤再重新弄。
+description: 本文介绍了一些常见的服务器服务的安装和常见的问题解决，坏了之后可以按这个步骤再重新弄。
 keywords: rainsin, blog, 树莓派, 流程, ubuntu, Emby, Gitea, Apache, Docker
 author: rainsin
 ---
