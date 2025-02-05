@@ -11,7 +11,7 @@ video: true
 music: false
 cube: false
 babel: false
-comment: true
+comments: true
 mathpolt: false
 jquery: false
 forbid: true
