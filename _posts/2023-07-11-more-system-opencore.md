@@ -13,7 +13,7 @@ mathpolt: false
 jquery: false
 forbid: true
 pangu: true
-
+comment: true
 favicon: heart
 
 post: true

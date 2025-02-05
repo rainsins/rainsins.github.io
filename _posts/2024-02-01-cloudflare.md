@@ -12,7 +12,7 @@ video: true
 music: false
 cube: true
 babel: true
-
+comment: true
 mathpolt: true
 jquery: true
 forbid: true
