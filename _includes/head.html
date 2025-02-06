@@ -407,7 +407,7 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
         const artalk = Artalk.init({
           el: '#tcomment',
           server: 'https://waline.vip.cpolar.cn',
-          darkMode: document.documentElement.dataset == "dark",
+          darkMode: document.documentElement.dataset.mode == "dark",
           site: 'Rainsin\'s Blog'
         });
         document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
@@ -417,7 +417,7 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
             artalk.update({
               el: '#tcomment',
               server: 'https://waline.vip.cpolar.cn',
-              darkMode: document.documentElement.dataset == "dark",
+              darkMode: document.documentElement.dataset.mode == "dark",
               site: 'Rainsin\'s Blog'
             });
             document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
