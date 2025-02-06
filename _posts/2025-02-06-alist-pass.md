@@ -18,7 +18,6 @@ favicon: heart
 pangu: true
 
 post: true
-description: 本文介绍了alist无法设置密码时的解决方法。
 keywords: rainsin, blog, 解决问题
 author: rainsin
 ---
