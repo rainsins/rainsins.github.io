@@ -5,9 +5,9 @@ order: 8
 forbid: true
 comments: true
 jquery: false
-babel: false
-react: false
-anime: false
+babel: true
+react: true
+anime: true
 
 favicon: comment
 
@@ -48,13 +48,10 @@ author: rainsin
 > 站点寄语：如人饮水，冷暖自知。<br>
 {: .prompt-info }
 
-## 🫶🏻感谢
-
-> 白天模式的小背景来自[站酷: 亮点漫画](https://abenben.zcool.com.cn/)的[十二梦](https://www.zcool.com.cn/work/ZNjA0MDg3Ng==.html)。<br/>
-> 黑夜模式的小背景来自[站酷: 那小先art](https://www.zcool.com.cn/u/18496248)。侵删。
-{: .prompt-tip }
-
 <script type="text/babel"  data-type="module" src="/assets/links/links.js"></script>
+
+
+## 🫶🏻 留言
 
 > 把留言统一放在这里了，有什么跟我聊的可以在这里留言，留言审核后可见。也可以使用邮箱与我联系，我的邮箱：mail[at]rainsin.cn
 {: .prompt-warning }
