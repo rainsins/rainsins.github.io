@@ -8,7 +8,7 @@ jquery: false
 babel: true
 react: true
 anime: true
-
+md5: true
 favicon: comment
 
 post: true
