@@ -17,6 +17,15 @@ keywords: rainsin, categories
 author: rainsin
 ---
 
+<style>
+@media (min-width: 1400px) {
+    .px-xxl-5 {
+        padding-right: 9rem !important;
+        padding-left: 9rem !important;
+    }
+}
+</style>
+
 <link rel="stylesheet" href="/assets/links/links-min.css"/>
 
 <main id="shrink-card">
