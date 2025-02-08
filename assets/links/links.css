@@ -47,7 +47,7 @@
 .links-item-box {
   display: flex;
   color: black;
-  padding: 12px;
+  padding: 1em 1em 1em 1.6em;
   box-shadow: 0 8px 16px -4px #2c2d300c;
   border: var(--box-border) !important;
   border-radius: 12px;
@@ -65,7 +65,6 @@
 
 .links-item-img-box {
   display: flex;
-  width: 88px;
   aspect-ratio: 1;
   align-content: center;
   justify-content: center;
@@ -75,9 +74,9 @@
 .links-item-img {
   background-size: cover;
   background-position: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
   border: 1px solid #dadce0;
 }
 
@@ -92,7 +91,7 @@
 }
 
 .links-item-info-name {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #000;
   line-height: 2.2rem;
 }
