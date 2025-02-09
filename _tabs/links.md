@@ -61,6 +61,7 @@ author: rainsin
     white-space: pre-wrap !important;
     background-color: #f3f4f5;
     color: var(--at-color-font);
+    background-color: var(--highlight-bg-color);
     margin: 0;
     overflow: auto;
     text-wrap: nowrap;
@@ -70,7 +71,7 @@ author: rainsin
     <span style="color: #F19726">url</span>: "<span style="color: #E8552D">https</span>://<span style="color: #1AAB8E">blog</span>.<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>",
     <span style="color: #1BA1E6">img</span>: "<span style="color: #E8552D">https</span>://<span style="color: #1AAB8E">blog</span>.<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>/<span style="color: #A3338B">assets</span>/<span style="color: #1BA1E6">img</span>/<span style="color: #91C132">avatar</span>.<span style="color: #F19726">webp</span>", 
     <span style="color: #E8552D">dec</span>: "<span style="color: #1AAB8E">如人饮水</span>，<span style="color: #E1147F">冷暖自知</span>。",
-    <span style="color: #2980C1">emil</span>: "<span style="color: #1BA1E6">mail</span>@<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>"
+    <span style="color: #2980C1">email</span>: "<span style="color: #1BA1E6">mail</span>@<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>"
 }</code>
 </pre>
 
