@@ -47,8 +47,36 @@ author: rainsin
 
 ## 📌须知
 
-> 可以击剑🤺之后再添加友链（吾剑也未尝不利）。我的邮箱：mail[at]rainsin.cn
+> 可以击剑🤺之后再添加友链（吾剑也未尝不利）。
 {: .prompt-warning }
+
+<pre id="info-indiv" style="
+    border-radius: .5rem;
+    width: 100%;
+    line-height: 1.6em;
+    display: flex;
+    padding: 10px 15px;
+    white-space: pre-wrap !important;
+    background-color: #f3f4f5;
+    color: var(--at-color-font);
+    margin: 0;
+    overflow: auto;
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+"><code class="hljs language-json">{
+    <span style="color: #23AC69">name</span>: "<span style="color: #91C132">Rainsin</span>",
+    <span style="color: #F19726">url</span>: "<span style="color: #E8552D">https</span>://<span style="color: #1AAB8E">blog</span>.<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>",
+    <span style="color: #1BA1E6">img</span>: "<span style="color: #E8552D">https</span>://<span style="color: #1AAB8E">blog</span>.<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>/<span style="color: #A3338B">assets</span>/<span style="color: #1BA1E6">img</span>/<span style="color: #91C132">avatar</span>.<span style="color: #F19726">webp</span>", 
+    <span style="color: #E8552D">dec</span>: "<span style="color: #1AAB8E">如人饮水</span>，<span style="color: #E1147F">冷暖自知</span>。",
+    <span style="color: #2980C1">emil</span>: "<span style="color: #1BA1E6">mail</span>@<span style="color: #E1147F">rainsin</span>.<span style="color: #2980C1">cn</span>"
+}</code>
+</pre>
+
+<style>
+pre#info-indiv span {
+    display: inline-block;
+}
+</style>
 
 <script type="text/babel"  data-type="module" src="/assets/links/links.js"></script>
 
