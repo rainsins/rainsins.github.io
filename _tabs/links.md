@@ -50,6 +50,8 @@ author: rainsin
 > 可以击剑🤺之后再添加友链（吾剑也未尝不利）。
 {: .prompt-warning }
 
+## 😉我的信息
+
 <pre id="info-indiv" style="
     border-radius: .5rem;
     width: 100%;
