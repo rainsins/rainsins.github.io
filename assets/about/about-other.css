@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Gourmand";
-    src: url("https://file.rainsin.cn/d/blog/font/Gourmand-.woff"),url("https://rainsinpan.hk.cpolar.io/d/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
+    src: url("https://file.rainsin.cn/blog/font/Gourmand-.woff"),url("https://rainsinpan.hk.cpolar.io/blog/font/ManbowLines-Regular.woff?sign=4TvTEtxmA39bE2mKh8uwEkoj3mzCHwZcTnZNZlGajuY=:0");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -322,7 +322,7 @@
     border-radius: 12px;
     flex-direction: column;
     padding: 0 30px;
-    background-image: url(https://file.rainsin.cn/d/blog/img/about/av.webp);
+    background-image: url(https://file.rainsin.cn/blog/img/about/av.webp);
     background-size: cover;
     min-height: 90px;
 }
@@ -400,7 +400,7 @@
 }
 
 .bag-ins {
-    background-image: url(https://file.rainsin.cn/d/blog/img/about/1668212767.webp);
+    background-image: url(https://file.rainsin.cn/blog/img/about/1668212767.webp);
     background-position-y: -100px;
     margin-left: 8px;
 }
@@ -1153,7 +1153,7 @@
 
 @font-face {
     font-family: "wzm";
-    src: url("https://file.rainsin.cn/d/blog/font/FZWenZM.woff2"),url(https://rainsinpan.hk.cpolar.io/d/blog/font/FZWenZM.woff2);
+    src: url("https://file.rainsin.cn/blog/font/FZWenZM.woff2"),url(https://rainsinpan.hk.cpolar.io/blog/font/FZWenZM.woff2);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -1213,7 +1213,7 @@
 
 @font-face {
     font-family: "篆书";
-    src: url(https://file.rainsin.cn/d/blog/font/FZZJ-GJPKZTFU.woff),url(https://rainsinpan.hk.cpolar.io/d/blog/font/FZZJ-GJPKZTFU.woff);
+    src: url(https://file.rainsin.cn/blog/font/FZZJ-GJPKZTFU.woff),url(https://rainsinpan.hk.cpolar.io/blog/font/FZZJ-GJPKZTFU.woff);
 }
 
 .is-show-box{
@@ -1285,7 +1285,7 @@
 }
 
 .bgimg-box{
-    background-image: url(https://file.rainsin.cn/d/blog/img/about/1736134812890.jpg);
+    background-image: url(https://file.rainsin.cn/blog/img/about/1736134812890.jpg);
     background-position: center;
     background-size: cover;
 }
