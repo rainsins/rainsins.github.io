@@ -126,7 +126,7 @@ layout: compress
     body: JSON.stringify(info),
   };
 
-  fetch('https://exapi.hk.cpolar.io/blog/userinfo', options)
+  fetch('https://exapi.hk.cpolar.io/userinfo', options)
     .then(data => {
         if (!data.ok) {
           throw Error(data.status);
