@@ -9,7 +9,7 @@
           return;
         }
 
-        let expectedTheme = mode === modeToggle.mode ? 'dark' : 'neutral';
+        let expectedTheme = mode !== modeToggle.mode ? 'dark' : 'neutral';
         let config = { 
           theme: expectedTheme,
           look: 'handDrawn',
