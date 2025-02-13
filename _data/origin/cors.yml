@@ -33,7 +33,7 @@ search:
   js: https://cdn.jsdmirror.com/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
 
 mermaid:
-  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/mermaid/10.9.1/mermaid.min.js
+  js: https://mynpm.rainsin.cn/mermaid@11.4.1/dist/mermaid.min.js
 
 dayjs:
   js:
