@@ -9,9 +9,9 @@
           return;
         }
 
-        let expectedTheme = mode === ModeToggle.DARK_MODE ? 'dark' : 'neutral';
+        let expectedTheme = mode === modeToggle.mode ? 'dark' : 'neutral';
         let config = { 
-          theme: 'neutral',
+          theme: expectedTheme,
           look: 'handDrawn',
           themeVariables: {
             fontFamily: '"Number Box", "Radley", "FZZzOM", "OMPJ"',
