@@ -10,7 +10,15 @@
         }
 
         let expectedTheme = mode === ModeToggle.DARK_MODE ? 'dark' : 'neutral';
-        let config = { theme: expectedTheme, look: 'handDrawn' };
+        let config = { 
+          theme: expectedTheme, 
+          look: 'handDrawn',
+          themeVariables: {
+            fontFamily: 'var(--main-font)',
+            nodeFontFamily: 'var(--main-font)',
+            edgeFontFamily: 'var(--main-font)'
+          } 
+        };
 
         /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
         $('.mermaid').each(function () {
