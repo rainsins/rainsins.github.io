@@ -10,7 +10,8 @@
         }
 
         let expectedTheme = mode === ModeToggle.DARK_MODE ? 'dark' : 'neutral';
-        let config = { 
+        let config = {
+          title: {{ page.mermaidtitle }}, 
           theme: expectedTheme, 
           look: 'handDrawn',
           themeVariables: {
