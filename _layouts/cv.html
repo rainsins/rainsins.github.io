@@ -560,13 +560,9 @@ layout: compress
         allowHTML: true
       });
       tippy("#me-countryout-map",{
-        content:`<img src='https://file.rainsin.cn/img/about/mmexport1739515916137.jpg' style='height: auto;'><br><p style='text-align: center;'>在这里完成了社会化的初始过程</p>`,
+        content:`<img src='https://file.rainsin.cn/img/about/mmexport1739515916137.jpg' style='width: 400px; height: auto;'><br><p style='text-align: center;'>在这里完成了社会化的初始过程</p>`,
         arrow:true,
         allowHTML: true,
-        onShow(instance) {
-          const img = instance.popper.querySelector('img');
-          img.style.width = '400px'; // 动态设置宽度
-        }
       });
       
     </script>
