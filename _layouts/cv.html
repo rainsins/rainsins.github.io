@@ -251,7 +251,7 @@ layout: compress
           <div class="unit-80">
             <h1>I'm & enjoying <br /><span id="typed"></span></h1>
           </div>
-          <span style="color: var(--text-color);">00年出生在甘肃天水的一个三十户人家的 <span id="me-countryout-map" style="cursor: pointer;"> <i class="fa-duotone fa-solid fa-face-viewfinder"></i> 小乡村</span>。<i
+          <span style="color: var(--text-color);"><span id="me" style="cursor: pointer;"><i class="fa-duotone fa-solid fa-child"></i> 我</span>，00年出生在甘肃天水的一个三十户人家的 <span id="me-countryout-map" style="cursor: pointer;"> <i class="fa-duotone fa-solid fa-face-viewfinder"></i> 小乡村</span>。<i
           class="fa-duotone fa-solid fa-hand-point-right"
         ></i
         >&ensp;<i
@@ -568,7 +568,11 @@ layout: compress
         arrow:true,
         allowHTML: true,
       });
-      
+      tippy("#me",{
+        content:`<img src='https://file.rainsin.cn/img/about/mmexport1739519486333.webp' style='width: 400px; height: auto;'><br><p style='text-align: center;'>真是00后</p>`,
+        arrow:true,
+        allowHTML: true,
+      });
     </script>
   </body>
 </html>
