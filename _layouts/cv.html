@@ -271,7 +271,7 @@ layout: compress
       <div class="container">
         <h1>Saying</h1>
         <p>
-          <span id="wuxiang">不以物喜，不以己悲。</span>
+          <span id="wuxiang">天在人，不遗人以同天；道在我，赖有我而凝道。</span>
         </p>
       </div>
     </div>
@@ -297,7 +297,7 @@ layout: compress
           <li>
             <b>最近</b> ：<span id="profile-music-control-prefer"
               ><i class="fa-duotone fa-solid fa-watermelon-slice"></i>
-              盛夏的果实</span
+              乡间小路</span
             >
             <i class="fa-duotone fa-solid fa-hand-point-left"></i>&ensp; | &ensp;<i
             class="fa-duotone fa-solid fa-hand-point-right"
@@ -315,7 +315,7 @@ layout: compress
           </li>
           <li>
             <b>最近</b>
-            ：除了一直在看的西游记，今年其他的电视剧、电影一部也没看，可能是心浮气躁的原因，没有耐心看新的东西了。
+            ：自从大三之后再也没有看过新剧了，看的也就是反反复复那几部。
           </li>
         </ul>
         <ul class="award-list list-flat">
@@ -331,6 +331,16 @@ layout: compress
           </li>
           <li>
             <b>最近</b> ：正在学习Rust中，我还挺喜欢它的语法的，写起来很舒服。<del>计划把服务器里的服务都换成Rust和Zig实现的</del>。
+          </li>
+        </ul>
+
+        <ul class="award-list list-flat">
+          <li>写字</li>
+          <li>
+            <b>想玩</b> ：硬笔行楷<sup>+</sup> &ensp;/&ensp; 软笔行书<sup>*</sup> &ensp;/&ensp; 硬笔楷书 &ensp;/&ensp;
+          </li>
+          <li>
+            <b>最近</b> ：<span id="profile-graph-prefer">梁诗正《跋仇英清明上河图》</span>，字写的没眼看，不过人嘛，总是得有一个艺术方面的爱好才行。
           </li>
         </ul>
       </div>
@@ -374,7 +384,7 @@ layout: compress
               p-id="40620"
             ></path></svg
           >Jekyll</a>，跑得比蜗牛还慢。主题选的 <a href="https://chirpy.cotes.page/" target="_blank"
-          >Chirpy</a>，本来想着抄个近道，结果被我改得亲妈都不认识了，升级是别想了，只能自力更生，自己维护了。原主题的代码仓库在<a
+          >Chirpy</a>。原主题的代码仓库在<a
           href="https://github.com/cotes2020/jekyll-theme-chirpy"
           target="_blank"
           >这儿</a>，感兴趣的可以瞅瞅。</p>
@@ -500,10 +510,10 @@ layout: compress
         const audios = document.getElementById("profile-music");
         if (
           audios.src !=
-          "https://file.rainsin.cn/music/%E8%8E%AB%E6%96%87%E8%94%9A-%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.webm"
+          "https://file.rainsin.cn/music/%E4%B9%A1%E9%97%B4%E5%B0%8F%E8%B7%AF.mp3"
         ) {
           audios.src =
-            "https://file.rainsin.cn/music/%E8%8E%AB%E6%96%87%E8%94%9A-%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.webm";
+            "https://file.rainsin.cn/music/%E4%B9%A1%E9%97%B4%E5%B0%8F%E8%B7%AF.mp3";
           audios.load();
           audios.play();
         } else {
@@ -571,6 +581,11 @@ layout: compress
       
       tippy("#me",{
         content:`<img src='https://file.rainsin.cn/img/about/mmexport1739519486333.webp' style='width: 400px; height: auto;'><br><p style='text-align: center;'>真是00后</p>`,
+        arrow:true,
+        allowHTML: true,
+      });
+      tippy("#profile-graph-prefer",{
+        content:`<img src='https://file.rainsin.cn/img/post/ba-chou-ying-qing-ming-shang-he-tu-oYK-rec52v1eYRmS7f29V-1.jpg' style='width: 400px; height: auto;'><br><p style='text-align: center;'>梁诗正《跋仇英清明上河图》部分</p>`,
         arrow:true,
         allowHTML: true,
       });

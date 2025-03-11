@@ -110,6 +110,9 @@ layout: compress
         }else{
           console.log("没有load事件！");
         }
+        Qmsg.info(`按下 <kbd><i class="fa-solid fa-command"></i></kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> 或 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> 强制刷新。`, {
+        isHTML:true,
+      });
       };
     </script>
 
@@ -118,15 +121,12 @@ layout: compress
     if(!sessionStorage.getItem("Info")){
     const info = await browser.getInfo();
   sessionStorage.setItem("Info",JSON.stringify(info));
+
   const options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(info),
+    method: 'GET',
   };
 
-  fetch('https://exapi.hk.cpolar.io/userinfo', options)
+  fetch(`https://exapi.hk.cpolar.io/blog/userinfo?ip=${info.ip}&browser=${info.browser}&system=${info.system}`, options)
     .then(data => {
         if (!data.ok) {
           throw Error(data.status);
