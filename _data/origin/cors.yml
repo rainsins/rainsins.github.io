@@ -10,7 +10,6 @@ cdns:
   - url: https://gcore.jsdelivr.net
 
 # fonts
-
 webfonts: https://fonts.font.im/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap
 
 # Libraries
