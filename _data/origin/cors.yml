@@ -19,35 +19,35 @@ jquery:
   js: https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
-  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css
-  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js
+  css: https://mynpm.rainsin.cn/bootstrap/dist/css/bootstrap.min.css
+  js: https://mynpm.rainsin.cn/bootstrap/dist/js/bootstrap.min.js
 
 toc:
-  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/tocbot/4.28.2/tocbot.min.css
-  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/tocbot/4.28.2/tocbot.min.js
+  css: https://mynpm.rainsin.cn/tocbot/dist/tocbot.css
+  js: https://mynpm.rainsin.cn/tocbot/dist/tocbot.min.js
 
 fontawesome:
   css: https://mynpm.rainsin.cn/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
 
 search:
-  js: https://cdn.jsdmirror.com/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js
+  js: https://mynpm.rainsin.cn/simple-jekyll-search/dest/simple-jekyll-search.min.js
 
 mermaid:
   js: https://mynpm.rainsin.cn/mermaid@11.4.1/dist/mermaid.min.js
 
 dayjs:
   js:
-    common: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/dayjs.min.js
-    locale: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/locale/:LOCALE.min.js
-    relativeTime: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/plugin/relativeTime.js
-    localizedFormat: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/dayjs/1.11.11/plugin/localizedFormat.js
+    common: https://mynpm.rainsin.cn/dayjs/dayjs.min.js
+    locale: https://mynpm.rainsin.cn/dayjs/locale/:LOCALE.min.js
+    relativeTime: https://mynpm.rainsin.cn/dayjs/plugin/relativeTime.js
+    localizedFormat: https://mynpm.rainsin.cn/dayjs/plugin/localizedFormat.js
 
 magnific-popup:
-  css: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css
-  js: https://s4.zstatic.net/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js
+  css: https://mynpm.rainsin.cn/magnific-popup/dist/magnific-popup.css
+  js: https://mynpm.rainsin.cn/magnific-popup/dist/jquery.magnific-popup.min.js
 
 lazysizes:
-  js: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
+  js: https://mynpm.rainsin.cn/lazysizes/lazysizes.min.js
 
 clipboard:
   js: https://npm.elemecdn.com/clipboard@2.0.11/dist/clipboard.min.js
