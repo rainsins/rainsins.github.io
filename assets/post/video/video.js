@@ -61,5 +61,3 @@ async function send_message() {
             });
     }
 }
-
-
