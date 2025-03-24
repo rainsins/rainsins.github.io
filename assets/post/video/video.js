@@ -1,19 +1,3 @@
-function getExtension(name) {
-    return name.substring(name.lastIndexOf(".") + 1)
-}
-
-String.prototype.gblen = function () {
-    var len = 0;
-    for (var i = 0; i < this.length; i++) {
-        if (this.charCodeAt(i) > 127 || this.charCodeAt(i) == 94) {
-            len += 2;
-        } else {
-            len++;
-        }
-    }
-    return len;
-}
-
 let isLoad = false;
 
 function send_message() {
@@ -29,7 +13,7 @@ function send_message() {
     }).toString();
 
     if (isLoad) {
-        fetch(`https://enapi.rainsin.cn/envideo/${query}`)
+        fetch(`https://enapi.rainsin.cn/blog/envideo/${query}`)
         .then((response) => {
             isLoad = true;
             if (response.status == "404") {
