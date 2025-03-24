@@ -80,20 +80,26 @@ function send_message() {
     
 }
 
-$("#email-field").keypress(function (event) {
-    if (event.which === 13) {
-        if (isLoad) {
-            Qmsg.success("点慢一点！奴家受不了啦！🌶")
-        } else {
-            send_message();
-        }
+window.load_event = {
+    ...window.load_event,
+    player_video: () => {
+        $("#email-field").keypress(function (event) {
+            if (event.which === 13) {
+                if (isLoad) {
+                    Qmsg.success("点慢一点！奴家受不了啦！🌶")
+                } else {
+                    send_message();
+                }
+            }
+        });
+        
+        $('#subscribe-button').on("mousedown",() => {
+            if (isLoad) {
+                Qmsg.success("点慢一点！奴家受不了啦！🌶")
+            } else {
+                send_message();
+            }
+        })
     }
-});
 
-$('#subscribe-button').on("mousedown",() => {
-    if (isLoad) {
-        Qmsg.success("点慢一点！奴家受不了啦！🌶")
-    } else {
-        send_message();
-    }
-})
+}
