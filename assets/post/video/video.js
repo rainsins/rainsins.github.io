@@ -55,7 +55,9 @@ async function send_message() {
                     },
                         function onReady(art) {
                             this.pause()
-                        },);
+                        });
+                    
+                    $("#middle").hide();
                 }
                 isLoad = false;
             });
