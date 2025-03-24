@@ -12,7 +12,7 @@ async function send_message() {
         padding: CryptoJS.pad.Pkcs7
     }).toString();
 
-    if (isLoad) {
+    if (!isLoad) {
         fetch(`https://myapi.rainsin.cn:2000/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
@@ -60,8 +60,6 @@ async function send_message() {
                 isLoad = false;
             });
     }
-
-
 }
 
 
