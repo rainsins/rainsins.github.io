@@ -1,5 +1,5 @@
 window.isLoad = false;
-
+let art = null;
 async function send_message() {
     const password = $("#email-field").val();
 
@@ -25,7 +25,8 @@ async function send_message() {
                 }
             }).then((data) => {
                 if (data) {
-                    new Artplayer({
+                    art.destroy();
+                    art = new Artplayer({
                         container: '#video-box',
                         url: 'https://pan.rainsin.cn:2002/%E7%BB%93%E6%88%90%E6%9E%9C%E5%AE%9E/Start-111-Uc.mp4',
                         type: 'mp4',
@@ -66,7 +67,7 @@ async function send_message() {
 window.load_event = {
     ...window.load_event,
     artsss: () => {
-        new Artplayer({
+        art = new Artplayer({
             container: '#video-box',
             url: 'https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/01.mp4',
             type: 'mp4',
