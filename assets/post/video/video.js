@@ -14,76 +14,54 @@ function send_message() {
 
     if (isLoad) {
         fetch(`https://enapi.rainsin.cn/blog/envideo/${query}`)
-        .then((response) => {
-            isLoad = true;
-            if (response.status == "404") {
-                Qmsg.error("哎呀，密码不对！🤡");
-                isLoad = false;
-                return false;
-            } else {
-                return response.json()
-            }
-        }).then((data) => {
-            if (data) {
-                new Artplayer({
-                    container: '#video-box',
-                    url: 'https://pan.rainsin.cn:2002/%E7%BB%93%E6%88%90%E6%9E%9C%E5%AE%9E/Start-111-Uc.mp4',
-                    type: 'mp4',
-                    theme: "#2c9678",
-                    title: 'Start-111',
-                    flip: true,
-                    playbackRate: true,
-                    screenshot: true,
-                    hotkey: true,
-                    pip: true,
-                    mutex: true,
-                    fullscreen: true,
-                    fullscreenWeb: true,
-                    miniProgressBar: true,
-                    playsInline: true,
-                    setting: true,
-                    autoOrientation: true,
-                    plugins: [artplayerPlaylist({
-                        rebuildPlayer: false, // 换P时重建播放器，默认false
-                        onchanged: (art) => { // 换P后的回调函数
-                          console.log('Video Changed');
-                        },
-                        autoNext: true, // 自动播放下一P, 默认false
-                        showText: false, // 在控制栏显示文本，否则显示图标，默认为false
-                        playlist: data
-                      })]
-                },
-                    function onReady(art) {
-                        this.pause()
-                    },);
-            }
-            isLoad = false;
-        });
-    }
-
-    
-}
-
-window.load_event = {
-    ...window.load_event,
-    player_video: () => {
-        $("#email-field").keypress(function (event) {
-            if (event.which === 13) {
-                if (isLoad) {
-                    Qmsg.success("点慢一点！奴家受不了啦！🌶")
+            .then((response) => {
+                isLoad = true;
+                if (response.status == "404") {
+                    Qmsg.error("哎呀，密码不对！🤡");
+                    isLoad = false;
+                    return false;
                 } else {
-                    send_message();
+                    return response.json()
                 }
-            }
-        });
-        
-        $('#subscribe-button').on("mousedown",() => {
-            if (isLoad) {
-                Qmsg.success("点慢一点！奴家受不了啦！🌶")
-            } else {
-                send_message();
-            }
-        })
+            }).then((data) => {
+                if (data) {
+                    new Artplayer({
+                        container: '#video-box',
+                        url: 'https://pan.rainsin.cn:2002/%E7%BB%93%E6%88%90%E6%9E%9C%E5%AE%9E/Start-111-Uc.mp4',
+                        type: 'mp4',
+                        theme: "#2c9678",
+                        title: 'Start-111',
+                        flip: true,
+                        playbackRate: true,
+                        screenshot: true,
+                        hotkey: true,
+                        pip: true,
+                        mutex: true,
+                        fullscreen: true,
+                        fullscreenWeb: true,
+                        miniProgressBar: true,
+                        playsInline: true,
+                        setting: true,
+                        autoOrientation: true,
+                        plugins: [artplayerPlaylist({
+                            rebuildPlayer: false, // 换P时重建播放器，默认false
+                            onchanged: (art) => { // 换P后的回调函数
+                                console.log('Video Changed');
+                            },
+                            autoNext: true, // 自动播放下一P, 默认false
+                            showText: false, // 在控制栏显示文本，否则显示图标，默认为false
+                            playlist: data
+                        })]
+                    },
+                        function onReady(art) {
+                            this.pause()
+                        },);
+                }
+                isLoad = false;
+            });
     }
 
+
 }
+
+

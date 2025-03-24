@@ -37,7 +37,7 @@ mermaid:
 dayjs:
   js:
     common: https://mynpm.rainsin.cn/dayjs/dayjs.min.js
-    locale: https://mynpm.rainsin.cn/dayjs/locale/:LOCALE.min.js
+    locale: https://mynpm.rainsin.cn/dayjs/locale/:LOCALE.js
     relativeTime: https://mynpm.rainsin.cn/dayjs/plugin/relativeTime.js
     localizedFormat: https://mynpm.rainsin.cn/dayjs/plugin/localizedFormat.js
 
