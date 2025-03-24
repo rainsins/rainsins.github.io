@@ -457,7 +457,12 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
   <script
     src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
-  {% endif %} {% if page.hls %}
+  {% endif %}
+  {% if page.videoplaylist %}
+  <script src="https://mynpm.rainsin.cn/playlist.js"></script>
+  {% endif %}
+ 
+  {% if page.hls %}
   <script src="https://{{site.js_cdn4}}/npm/hls.js@1.5.18/dist/hls.min.js"></script>
   {% endif %} {% if page.flv %}
   <script src="https://{{site.js_cdn4}}/npm/flv.js@1.6.2/dist/flv.min.js"></script>
