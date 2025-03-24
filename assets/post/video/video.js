@@ -1,6 +1,6 @@
-let isLoad = false;
+window.isLoad = false;
 
-function send_message() {
+async function send_message() {
     const password = $("#email-field").val();
 
     const key = CryptoJS.enc.Utf8.parse('qfqf0kqcajzoa04h');
@@ -13,7 +13,7 @@ function send_message() {
     }).toString();
 
     if (isLoad) {
-        fetch(`https://enapi.rainsin.cn/blog/envideo/${query}`)
+        fetch(`https://myapi.rainsin.cn:2000/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == "404") {
