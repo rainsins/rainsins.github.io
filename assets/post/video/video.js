@@ -1,5 +1,18 @@
 window.isLoad = false;
 let art = null;
+
+function playMpd(video, url, art) {
+    if (dashjs.supportsMediaSource()) {
+        if (art.dash) art.dash.destroy();
+        const dash = dashjs.MediaPlayer().create();
+        dash.initialize(video, url, art.option.autoplay);
+        art.dash = dash; 
+        art.on('destroy', () => dash.destroy());
+    } else {
+        art.notice.show = 'Unsupported playback format: mpd';
+    }
+}
+
 async function send_message() {
     const password = $("#email-field").val();
 
@@ -28,10 +41,10 @@ async function send_message() {
                     art.destroy();
                     art = new Artplayer({
                         container: '#video-box',
-                        url: 'https://pan.rainsin.cn:2002/%E7%BB%93%E6%88%90%E6%9E%9C%E5%AE%9E/Start-111-Uc.mp4',
-                        type: 'mp4',
+                        url: 'https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/up/Sone-544/main.mpd',
+                        type: 'mpd',
                         theme: "#2c9678",
-                        title: 'Start-111',
+                        title: 'Sone-544',
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
@@ -43,6 +56,9 @@ async function send_message() {
                         miniProgressBar: true,
                         playsInline: true,
                         setting: true,
+                        customType: {
+                            mpd: playMpd
+                        },
                         autoOrientation: true,
                         plugins: [artplayerPlaylist({
                             rebuildPlayer: false, // 换P时重建播放器，默认false
@@ -64,6 +80,9 @@ async function send_message() {
             });
     }
 }
+
+
+
 window.load_event = {
     ...window.load_event,
     artsss: () => {
