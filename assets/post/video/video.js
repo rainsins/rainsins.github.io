@@ -6,7 +6,7 @@ function playMpd(video, url, art) {
         if (art.dash) art.dash.destroy();
         const dash = dashjs.MediaPlayer().create();
         dash.initialize(video, url, art.option.autoplay);
-        art.dash = dash; 
+        art.dash = dash;
         art.on('destroy', () => dash.destroy());
     } else {
         art.notice.show = 'Unsupported playback format: mpd';
@@ -73,7 +73,7 @@ async function send_message() {
                         function onReady(art) {
                             this.pause()
                         });
-                    
+
                     $("#middle").hide();
                 }
                 isLoad = false;
@@ -88,8 +88,8 @@ window.load_event = {
     artsss: () => {
         art = new Artplayer({
             container: '#video-box',
-            url: 'https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/01.mp4',
-            type: 'mp4',
+            url: 'https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E01.2007.WEB-DL.1080p.HE/main.mpd',
+            type: 'mpd',
             theme: "#2c9678",
             title: '第1集',
             flip: true,
@@ -104,6 +104,9 @@ window.load_event = {
             playsInline: true,
             setting: true,
             autoOrientation: true,
+            customType: {
+                mpd: playMpd
+            },
             plugins: [artplayerPlaylist({
                 rebuildPlayer: false, // 换P时重建播放器，默认false
                 onchanged: (art) => { // 换P后的回调函数
@@ -113,191 +116,191 @@ window.load_event = {
                 showText: false, // 在控制栏显示文本，否则显示图标，默认为false
                 playlist: [
                     {
-                        title: "01集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/01.mp4"
+                        title: "大明王朝1566 第01集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E01.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "02集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/02.mp4"
+                        title: "大明王朝1566 第02集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E02.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "03集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/03.mp4"
+                        title: "大明王朝1566 第03集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E03.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "04集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/04.mp4"
+                        title: "大明王朝1566 第04集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E04.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "05集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/05.mp4"
+                        title: "大明王朝1566 第05集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E05.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "06集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/06.mp4"
+                        title: "大明王朝1566 第06集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E06.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "07集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/07.mp4"
+                        title: "大明王朝1566 第07集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E07.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "08集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/08.mp4"
+                        title: "大明王朝1566 第08集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E08.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "09集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/09.mp4"
+                        title: "大明王朝1566 第09集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E09.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "10集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/10.mp4"
+                        title: "大明王朝1566 第10集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E10.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "11集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/11.mp4"
+                        title: "大明王朝1566 第11集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E11.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "12集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/12.mp4"
+                        title: "大明王朝1566 第12集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E12.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "13集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/13.mp4"
+                        title: "大明王朝1566 第13集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E13.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "14集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/14.mp4"
+                        title: "大明王朝1566 第14集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E14.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "15集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/15.mp4"
+                        title: "大明王朝1566 第15集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E15.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "16集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/16.mp4"
+                        title: "大明王朝1566 第16集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E16.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "17集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/17.mp4"
+                        title: "大明王朝1566 第17集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E17.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "18集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/18.mp4"
+                        title: "大明王朝1566 第18集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E18.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "19集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/19.mp4"
+                        title: "大明王朝1566 第19集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E19.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "20集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/20.mp4"
+                        title: "大明王朝1566 第20集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E20.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "21集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/21.mp4"
+                        title: "大明王朝1566 第21集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E21.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "22集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/22.mp4"
+                        title: "大明王朝1566 第22集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E22.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "23集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/23.mp4"
+                        title: "大明王朝1566 第23集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E23.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "24集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/24.mp4"
+                        title: "大明王朝1566 第24集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E24.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "25集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/25.mp4"
+                        title: "大明王朝1566 第25集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E25.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "26集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/26.mp4"
+                        title: "大明王朝1566 第26集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E26.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "27集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/27.mp4"
+                        title: "大明王朝1566 第27集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E27.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "28集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/28.mp4"
+                        title: "大明王朝1566 第28集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E28.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "29集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/29.mp4"
+                        title: "大明王朝1566 第29集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E29.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "30集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/30.mp4"
+                        title: "大明王朝1566 第30集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E30.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "31集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/31.mp4"
+                        title: "大明王朝1566 第31集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E31.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "32集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/32.mp4"
+                        title: "大明王朝1566 第32集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E32.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "33集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/33.mp4"
+                        title: "大明王朝1566 第33集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E33.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "34集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/34.mp4"
+                        title: "大明王朝1566 第34集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E34.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "35集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/35.mp4"
+                        title: "大明王朝1566 第35集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E35.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "36集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/36.mp4"
+                        title: "大明王朝1566 第36集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E36.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "37集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/37.mp4"
+                        title: "大明王朝1566 第37集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E37.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "38集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/38.mp4"
+                        title: "大明王朝1566 第38集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E38.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "39集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/39.mp4"
+                        title: "大明王朝1566 第39集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E39.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "40集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/40.mp4"
+                        title: "大明王朝1566 第40集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E40.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "41集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/41.mp4"
+                        title: "大明王朝1566 第41集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E41.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "42集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/42.mp4"
+                        title: "大明王朝1566 第42集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E42.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "43集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/43.mp4"
+                        title: "大明王朝1566 第43集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E43.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "44集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/44.mp4"
+                        title: "大明王朝1566 第44集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E44.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "45集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/45.mp4"
+                        title: "大明王朝1566 第45集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E45.2007.WEB-DL.1080p.HE/main.mpd"
                     },
                     {
-                        title: "46集",
-                        url: "https://pans.rainsin.cn:2000/d/kk/%E5%BD%B1%E8%A7%86/%E5%89%A7%E9%9B%86/D%20%E6%89%93%E9%B8%A3%E7%8E%8B%E6%9B%B91566%EF%BC%882007%EF%BC%892K%E4%BF%AE%E5%A4%8D%E7%89%88%20%E5%85%A846%E9%9B%86/46.mp4"
+                        title: "大明王朝1566 第46集",
+                        url: "https://pans.rainsin.cn:2000/d/aliup/win.DESKTOP-PLI9GE8/剧集/大明/[47BT]大明王朝1566.Ming.Dynasty.in.1566.E46.2007.WEB-DL.1080p.HE/main.mpd"
                     }
                 ]
             })]
-        },function onReady(art) {this.pause()});
+        }, function onReady(art) { this.pause() });
     }
 }
