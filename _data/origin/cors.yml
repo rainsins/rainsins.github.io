@@ -18,35 +18,35 @@ jquery:
   js: https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
-  css: https://mynpm.rainsin.cn/bootstrap/dist/css/bootstrap.min.css
-  js: https://mynpm.rainsin.cn/bootstrap/dist/js/bootstrap.min.js
+  css: https://ennpm.hk.cpolar.io/bootstrap/dist/css/bootstrap.min.css
+  js: https://ennpm.hk.cpolar.io/bootstrap/dist/js/bootstrap.min.js
 
 toc:
-  css: https://mynpm.rainsin.cn/tocbot/dist/tocbot.css
-  js: https://mynpm.rainsin.cn/tocbot/dist/tocbot.min.js
+  css: https://ennpm.hk.cpolar.io/tocbot/dist/tocbot.css
+  js: https://ennpm.hk.cpolar.io/tocbot/dist/tocbot.min.js
 
 fontawesome:
-  css: https://mynpm.rainsin.cn/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
+  css: https://ennpm.hk.cpolar.io/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
 
 search:
-  js: https://mynpm.rainsin.cn/simple-jekyll-search/dest/simple-jekyll-search.min.js
+  js: https://ennpm.hk.cpolar.io/simple-jekyll-search/dest/simple-jekyll-search.min.js
 
 mermaid:
-  js: https://mynpm.rainsin.cn/mermaid@11.4.1/dist/mermaid.min.js
+  js: https://ennpm.hk.cpolar.io/mermaid@11.4.1/dist/mermaid.min.js
 
 dayjs:
   js:
-    common: https://mynpm.rainsin.cn/dayjs/dayjs.min.js
-    locale: https://mynpm.rainsin.cn/dayjs/locale/:LOCALE.js
-    relativeTime: https://mynpm.rainsin.cn/dayjs/plugin/relativeTime.js
-    localizedFormat: https://mynpm.rainsin.cn/dayjs/plugin/localizedFormat.js
+    common: https://ennpm.hk.cpolar.io/dayjs/dayjs.min.js
+    locale: https://ennpm.hk.cpolar.io/dayjs/locale/:LOCALE.js
+    relativeTime: https://ennpm.hk.cpolar.io/dayjs/plugin/relativeTime.js
+    localizedFormat: https://ennpm.hk.cpolar.io/dayjs/plugin/localizedFormat.js
 
 magnific-popup:
-  css: https://mynpm.rainsin.cn/magnific-popup/dist/magnific-popup.css
-  js: https://mynpm.rainsin.cn/magnific-popup/dist/jquery.magnific-popup.min.js
+  css: https://ennpm.hk.cpolar.io/magnific-popup/dist/magnific-popup.css
+  js: https://ennpm.hk.cpolar.io/magnific-popup/dist/jquery.magnific-popup.min.js
 
 lazysizes:
-  js: https://mynpm.rainsin.cn/lazysizes/lazysizes.min.js
+  js: https://ennpm.hk.cpolar.io/lazysizes/lazysizes.min.js
 
 clipboard:
   js: https://npm.elemecdn.com/clipboard@2.0.11/dist/clipboard.min.js

@@ -26,7 +26,7 @@ async function send_message() {
     }).toString();
 
     if (!isLoad) {
-        fetch(`https://myapi.rainsin.cn:2000/blog/envideo/${query}`)
+        fetch(`https://myexapi.hk.cpolar.io:2000/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == "404") {

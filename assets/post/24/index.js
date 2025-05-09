@@ -239,7 +239,7 @@ const Jieqi = () => {
     }, [])
 
     const big = data.map((el, index) => {
-        let im = `https://api.rainsin.cn/24/webp/${Object.keys(el)[0]}.webp`
+        let im = `https://exapi.hk.cpolar.io/24/webp/${Object.keys(el)[0]}.webp`
         return (
             <div className="swiper-slide" key={index}>
                 <img src={im} />
@@ -248,7 +248,7 @@ const Jieqi = () => {
     });
 
     const smell = data.map((el, index) => {
-        let im = `https://api.rainsin.cn/24/webpsmell/${Object.keys(el)[0]}.webp`
+        let im = `https://exapi.hk.cpolar.io/24/webpsmell/${Object.keys(el)[0]}.webp`
         return (
             <div className="swiper-slide" key={index}>
                 <img src={im} />

@@ -33,18 +33,18 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
     下载[OpenShell.efi](https://github.com/acidanthera/OpenCorePkg/releases)在`/EFI/OC/tool`路径下，一般OC自带这个文件不用单独下。
 
     在OC中进行如下设置:
-    ![iShot_2024-07-13_15.06.43](https://api.rainsin.cn/2024/07/1720854548828.png)
+    ![iShot_2024-07-13_15.06.43](https://exapi.hk.cpolar.io/2024/07/1720854548828.png)
     重启。
 2. 如果你的OC隐藏了辅助条目，则在开机引导界面看不到`UEFI Shell`项，按空格键就会显示出来，之后选择`UEFI Shell`项回车进入。
 
-    ![13050813](https://api.rainsin.cn/2024/07/1720854176814.png)
+    ![13050813](https://exapi.hk.cpolar.io/2024/07/1720854176814.png)
 3. 找到所有的要引导的系统的EFI文件分区
 
     FS1:,FS2:,…FS12：是连接到系统的所有硬盘设备的分区，你必须确定哪个是Windows分区，哪个是Mac分区，哪个是Linux分区：
 
     `FS{n}:`进入相应的分区，`ls`或`dir`命令查看文件目录，`cd /路径`进入文件目录。熟悉Linux的这些命令都很熟悉，用这些命令找根目录长下面这样的FS：
 
-    ![scanner_20240713_131013](https://api.rainsin.cn/2024/07/1720854004935.jpg)
+    ![scanner_20240713_131013](https://exapi.hk.cpolar.io/2024/07/1720854004935.jpg)
 
     键入`cd EFI`，看文件目录，如果有Microsoft文件夹就是windows的EFI分区，如果有Deepin文件夹就是Linux/deepin的EFI分区，记住这些分区对应的`FS{n}`。
 
@@ -72,11 +72,11 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
 
     我的设置：
 
-    ![iShot_2024-07-13_15.08.26](https://api.rainsin.cn/2024/07/1720854570979.png)
+    ![iShot_2024-07-13_15.08.26](https://exapi.hk.cpolar.io/2024/07/1720854570979.png)
 5. 一些小设置
     - 如果你想自定义你的引导项标题比如下面这样：
 
-        ![13050813](https://api.rainsin.cn/2024/07/1720854176814.png)
+        ![13050813](https://exapi.hk.cpolar.io/2024/07/1720854176814.png)
 
         可以到对应的EFI目录下更改`.contentDetails`文件
 
@@ -84,8 +84,8 @@ Mac可以正常引导，其他系统都已经安装好了（本文使用UEFI+GPT
 
         `Kernel`中的设置：
 
-        ![iShot_2024-07-13_15.11.02](https://api.rainsin.cn/2024/07/1720854713973.png)
+        ![iShot_2024-07-13_15.11.02](https://exapi.hk.cpolar.io/2024/07/1720854713973.png)
 
         `Booter`中的设置：
 
-        ![iShot_2024-07-13_15.11.24](https://api.rainsin.cn/2024/07/1720854725637.png)
+        ![iShot_2024-07-13_15.11.24](https://exapi.hk.cpolar.io/2024/07/1720854725637.png)

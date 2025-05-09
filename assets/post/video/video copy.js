@@ -89,7 +89,7 @@ function send_message() {
     }).toString();
 
     if (isLoad) {
-        fetch(`https://enapi.rainsin.cn/envideo/${query}`)
+        fetch(`https://enexapi.hk.cpolar.io/envideo/${query}`)
         .then((response) => {
             isLoad = true;
             if (response.status == "404") {
@@ -137,7 +137,7 @@ function send_message() {
     
 }
 
-fetch("https://enapi.rainsin.cn/video")
+fetch("https://enexapi.hk.cpolar.io/video")
     .then((response) => response.json())
     .then((data) => {
         
