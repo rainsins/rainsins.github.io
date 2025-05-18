@@ -43,7 +43,8 @@
     "rollup-plugin-license": "^3.5.2",
     "semantic-release": "^24.0.0",
     "stylelint": "^16.6.1",
-    "stylelint-config-standard-scss": "^13.1.0"
+    "stylelint-config-standard-scss": "^13.1.0",
+    "bun": "^1.2.13"
   },
   "dependencies": {
     "xml2js": "^0.6.2"
