@@ -27,12 +27,12 @@ author: rainsin
 <link rel="stylesheet" href="/assets/links/links-min.css"/>
 
 <main id="shrink-card">
-  <div class="c-glitch" style="border-radius: 12px;;aspect-ratio: 1 / .6;background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');">
-    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
-    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/d/blog/img/friend/friend.png');"></div>
+  <div class="c-glitch" style="border-radius: 12px;;aspect-ratio: 1 / .6;background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');">
+    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');"></div>
+    <div class="c-glitch__img" style="background-image: url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png'),url('https://rainsinpan.hk.cpolar.io/img/friend/friend.png');"></div>
   </div>
   <div style="text-align: center;color: var(--text-color);">
     海内存知已，天涯若比邻

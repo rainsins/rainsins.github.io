@@ -154,7 +154,7 @@ s.forEach((el,ind)=>{
         const get_anno_img = Array.from(querySelectorAll(".wl-cards .wl-user .wl-user-avatar[src='https://seccdn.libravatar.org/avatar/d41d8cd98f00b204e9800998ecf8427e']"));
 
         get_anno_img.forEach((el,index)=>{
-          el.src = sessionStorage.getItem("isOut") == "true" ? "https://rainsinpan.hk.cpolar.io/d/blog/img/comment/act.gif" : "https://rainsinpan.hk.cpolar.io/d/blog/img/comment/act.gif";
+          el.src = sessionStorage.getItem("isOut") == "true" ? "https://rainsinpan.hk.cpolar.io/img/comment/act.gif" : "https://rainsinpan.hk.cpolar.io/img/comment/act.gif";
         })
       },
     };
@@ -223,7 +223,7 @@ s.forEach((el,ind)=>{
         if (time_comment < 500) {
           get_anno_img.attr(
             "src",
-            "https://rainsinpan.hk.cpolar.io/d/blog/img/comment/act.gif"
+            "https://rainsinpan.hk.cpolar.io/img/comment/act.gif"
           );
           time_comment++;
         } else {
@@ -249,7 +249,7 @@ s.forEach((el,ind)=>{
 
   .wl-editor,
   .wl-input {
-    background-image: url(https://rainsinpan.hk.cpolar.io/d/blog/img/comment/waline-bg.gif),
+    background-image: url(https://rainsinpan.hk.cpolar.io/img/comment/waline-bg.gif),
       url(https://exapi.hk.cpolar.io/blog_data/img/comment/waline-bg.gif);
     background-position: center right;
     background-repeat: no-repeat;
