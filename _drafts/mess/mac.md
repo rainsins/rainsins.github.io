@@ -80,7 +80,7 @@ image:
 
 [EFI-蓝奏云](https://2000python.lanzoum.com/iA7Z011mpjba)
 
-[EFI-Zfile](https://rainsinpan.hk.cpolar.io/s/tel67c)
+[EFI-Zfile](https://rainsinpan.hk.cpolar.io/d/blog/s/tel67c)
 
 ## 效果
 ### 引导
