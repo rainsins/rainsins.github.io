@@ -223,7 +223,7 @@ author: rainsin
 
     let mseplayer = new Artplayer({
       container: '#ml',
-      url: sessionStorage.getItem("isOut") == "false" ? 'https://rainsinpan.hk.cpolar.io/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4' : "https://rainsinpan.hk.cpolar.io/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4",
+      url: sessionStorage.getItem("isOut") == "false" ? 'http://pan.fucku.top/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4' : "http://pan.fucku.top/video/about/%E7%9B%9B%E5%A4%8F%E7%9A%84%E6%9E%9C%E5%AE%9E.mp4",
       theme: "#2c9678",
         autoMini: true,
         flip: true,
