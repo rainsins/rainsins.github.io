@@ -5,7 +5,7 @@ const playdata = [
         layel: "❤❤❤❤❤"
     },
     {
-        url: "http://pan.fucku.top/img/healthy.png",
+        url: "https://rainsinpan.hk.cpolar.io/img/healthy.png",
         name: "国学",
         layel: "❤❤❤❤❤"
     },
@@ -15,7 +15,7 @@ const playdata = [
         layel: "❤❤❤❤❤"
     },
     {
-        url: "http://pan.fucku.top/img/tai-chi.png",
+        url: "https://rainsinpan.hk.cpolar.io/img/tai-chi.png",
         name: "太极拳",
         layel: "❤❤❤❤"
     },

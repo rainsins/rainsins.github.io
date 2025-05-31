@@ -63,11 +63,11 @@ function LinksItem({ data, mode }) {
     };
 
     const get_imgurl = (index1) => {
-      return index1 >= 9 ? `http://pan.fucku.top/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg`:`http://pan.fucku.top/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg` ;
+      return index1 >= 9 ? `https://rainsinpan.hk.cpolar.io/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/100${i + 1}.jpg`:`https://rainsinpan.hk.cpolar.io/img/post/%E5%8D%81%E4%BA%8C%E6%A2%A6_%E4%BA%AE%E7%82%B9%E6%BC%AB%E7%94%BB-%E7%AB%99%E9%85%B7ZCOOL/1000${i + 1}.jpg` ;
     }
 
     const get_darkimgurl = (index1) => {
-      return `http://pan.fucku.top/img/post/%E5%8D%81%E4%BA%8C%E8%8A%B1%E7%A5%9E/${i + 1}.png`
+      return `https://rainsinpan.hk.cpolar.io/img/post/%E5%8D%81%E4%BA%8C%E8%8A%B1%E7%A5%9E/${i + 1}.png`
     }
 
     const get_lighturl = () => {

@@ -46,7 +46,7 @@ author: rainsin
 <script>
 var player = new window.Player({
   id: 'mse',
-  url: 'http://pan.fucku.top/s/r3e91t',
+  url: 'https://rainsinpan.hk.cpolar.io/s/r3e91t',
 })
 </script>
 
