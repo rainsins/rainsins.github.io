@@ -18,35 +18,35 @@ jquery:
   js: https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
-  css: https://ennpm.hk.cpolar.io/bootstrap/dist/css/bootstrap.min.css
-  js: https://ennpm.hk.cpolar.io/bootstrap/dist/js/bootstrap.min.js
+  css: http://cdn.fucku.top/bootstrap/dist/css/bootstrap.min.css
+  js: http://cdn.fucku.top/bootstrap/dist/js/bootstrap.min.js
 
 toc:
-  css: https://ennpm.hk.cpolar.io/tocbot/dist/tocbot.css
-  js: https://ennpm.hk.cpolar.io/tocbot/dist/tocbot.min.js
+  css: http://cdn.fucku.top/tocbot/dist/tocbot.css
+  js: http://cdn.fucku.top/tocbot/dist/tocbot.min.js
 
 fontawesome:
-  css: https://ennpm.hk.cpolar.io/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
+  css: http://cdn.fucku.top/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
 
 search:
-  js: https://ennpm.hk.cpolar.io/simple-jekyll-search/dest/simple-jekyll-search.min.js
+  js: http://cdn.fucku.top/simple-jekyll-search/dest/simple-jekyll-search.min.js
 
 mermaid:
-  js: https://ennpm.hk.cpolar.io/mermaid@11.4.1/dist/mermaid.min.js
+  js: http://cdn.fucku.top/mermaid@11.4.1/dist/mermaid.min.js
 
 dayjs:
   js:
-    common: https://ennpm.hk.cpolar.io/dayjs/dayjs.min.js
-    locale: https://ennpm.hk.cpolar.io/dayjs/locale/:LOCALE.js
-    relativeTime: https://ennpm.hk.cpolar.io/dayjs/plugin/relativeTime.js
-    localizedFormat: https://ennpm.hk.cpolar.io/dayjs/plugin/localizedFormat.js
+    common: http://cdn.fucku.top/dayjs/dayjs.min.js
+    locale: http://cdn.fucku.top/dayjs/locale/:LOCALE.js
+    relativeTime: http://cdn.fucku.top/dayjs/plugin/relativeTime.js
+    localizedFormat: http://cdn.fucku.top/dayjs/plugin/localizedFormat.js
 
 magnific-popup:
-  css: https://ennpm.hk.cpolar.io/magnific-popup/dist/magnific-popup.css
-  js: https://ennpm.hk.cpolar.io/magnific-popup/dist/jquery.magnific-popup.min.js
+  css: http://cdn.fucku.top/magnific-popup/dist/magnific-popup.css
+  js: http://cdn.fucku.top/magnific-popup/dist/jquery.magnific-popup.min.js
 
 lazysizes:
-  js: https://ennpm.hk.cpolar.io/lazysizes/lazysizes.min.js
+  js: http://cdn.fucku.top/lazysizes/lazysizes.min.js
 
 clipboard:
   js: https://npm.elemecdn.com/clipboard@2.0.11/dist/clipboard.min.js
