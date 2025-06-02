@@ -42,4 +42,4 @@ author: rainsin
 
 ### 文件
 
-[直接下载](https://rainsinpan.hk.cpolar.io/mac/android12.7z),[夸克](https://pan.quark.cn/s/e352c32b3fda),[OneDrive](https://1drv.ms/u/s!Aoer2cU5SlOFiYBva71rTsGo23DIdw?e=hbHBLe)。
+[直接下载](https://source.rainsin.cn/mac/android12.7z),[夸克](https://pan.quark.cn/s/e352c32b3fda),[OneDrive](https://1drv.ms/u/s!Aoer2cU5SlOFiYBva71rTsGo23DIdw?e=hbHBLe)。

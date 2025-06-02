@@ -9,10 +9,10 @@ const threeav = [
         color2: "#CB926E",
         color3: "#D2B39C",
         color4: "#90552C",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/%E6%98%8E%E5%A4%B4.jpg",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/%E6%98%8E%E6%97%A5%E5%8F%B6.webp",
+        img: "https://source.rainsin.cn/img/comment/%E6%98%8E%E5%A4%B4.jpg",
+        bgimg: "https://source.rainsin.cn/img/comment/%E6%98%8E%E6%97%A5%E5%8F%B6.webp",
         mfact: "S1",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/s1.webp",
+        mfactlogo: "https://source.rainsin.cn/img/comment/s1.webp",
         url: "https://twitter.com/ashitaba_taba"
     },
     {
@@ -25,10 +25,10 @@ const threeav = [
         color2: "#D6D7DA",
         color3: "#C2BBBC",
         color4: "#9BA5A4",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/%E5%B1%B1%E5%A4%B4.webp",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/%E5%B1%B1.webp",
+        img: "https://source.rainsin.cn/img/comment/%E5%B1%B1%E5%A4%B4.webp",
+        bgimg: "https://source.rainsin.cn/img/comment/%E5%B1%B1.webp",
         mfact: "PREMIUM",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/pe.png",
+        mfactlogo: "https://source.rainsin.cn/img/comment/pe.png",
         url: "https://xslist.org/zh/model/358.html"
     },
     {
@@ -41,10 +41,10 @@ const threeav = [
         color2: "#2092C5",
         color3: "#a27a6c",
         color4: "#431b10",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/%E5%A5%B6%E8%91%B5%E5%A4%B4.webp",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/%E5%A5%B6%E8%91%B5.webp",
+        img: "https://source.rainsin.cn/img/comment/%E5%A5%B6%E8%91%B5%E5%A4%B4.webp",
+        bgimg: "https://source.rainsin.cn/img/comment/%E5%A5%B6%E8%91%B5.webp",
         mfact: "DAHLIA",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/toplogo.png",
+        mfactlogo: "https://source.rainsin.cn/img/comment/toplogo.png",
         url: "https://xslist.org/en/model/66603.html"
     },
     {
@@ -57,10 +57,10 @@ const threeav = [
         color2: "#d0ae96",
         color3: "#c19e8d",
         color4: "#352824",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/%E4%B8%BD%E5%A4%B4.webp",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/%E4%B8%BD.jpg",
+        img: "https://source.rainsin.cn/img/comment/%E4%B8%BD%E5%A4%B4.webp",
+        bgimg: "https://source.rainsin.cn/img/comment/%E4%B8%BD.jpg",
         mfact: "SOD",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/SOD.webp",
+        mfactlogo: "https://source.rainsin.cn/img/comment/SOD.webp",
         url: "https://xslist.org/zh/model/159548.html"
     },
     {
@@ -73,10 +73,10 @@ const threeav = [
         color2: "#DFB095",
         color3: "#B49179",
         color4: "#AD6F4B",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/mi%E5%A4%B4.jpg",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/mi.webp",
+        img: "https://source.rainsin.cn/img/comment/mi%E5%A4%B4.jpg",
+        bgimg: "https://source.rainsin.cn/img/comment/mi.webp",
         mfact: "SOD",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/SOD.webp",
+        mfactlogo: "https://source.rainsin.cn/img/comment/SOD.webp",
         url: "https://xslist.org/zh/model/134598.html"
     },
     {
@@ -89,10 +89,10 @@ const threeav = [
         color2: "#E6CECA",
         color3: "#C6BCB7",
         color4: "#838386",
-        img: "https://rainsinpan.hk.cpolar.io/img/comment/%E6%B0%B4%E5%A8%83%E5%A4%B4.jpg",
-        bgimg: "https://rainsinpan.hk.cpolar.io/img/comment/%E6%B0%B4%E5%A8%83.webp",
+        img: "https://source.rainsin.cn/img/comment/%E6%B0%B4%E5%A8%83%E5%A4%B4.jpg",
+        bgimg: "https://source.rainsin.cn/img/comment/%E6%B0%B4%E5%A8%83.webp",
         mfact: "S1",
-        mfactlogo: "https://rainsinpan.hk.cpolar.io/img/comment/s1.webp",
+        mfactlogo: "https://source.rainsin.cn/img/comment/s1.webp",
         url: "https://xslist.org/zh/model/25134.html"
     },
 ];
