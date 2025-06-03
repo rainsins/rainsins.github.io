@@ -11,3 +11,10 @@ systemctl：
 
 生成sitmap.txt
     cd assets/links && bun sitemap.js
+
+natfrp ssl：
+
+cd /etc/natfrp/FrpcWorkingDirectory 
+
+sudo cp /etc/letsencrypt/live/rainsin.cn/privkey.pem /etc/natfrp/FrpcWorkingDirectory/rainsin.cn.key
+sudo cp /etc/letsencrypt/live/rainsin.cn/fullchain.pem /etc/natfrp/FrpcWorkingDirectory/rainsin.cn.crt
