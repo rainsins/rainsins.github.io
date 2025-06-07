@@ -1,19 +1,49 @@
-<!-- The Head -->
-
+<!-- Jekyll Head Template - 优化版本 -->
 <head>
-  <script src="https://{{site.js_cdn1}}/npm/browser-tool@1.3.1/dist/browser.min.js"
-    integrity="sha256-UPj46Hf28kziVvYS7tWGvZy9COcV7hKW+KqOyqYzkeI=" crossorigin="anonymous"></script>
-  {% unless site.theme_mode %} {% include mode-toggle.html %} {% endunless %} {%
-  include embed/lookup.html %} {% include embed/pan.html %} {% include
-  embed/testOS.html %}
-
+  <!-- ========== 基础元数据 ========== -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="msvalidate.01" content="6FB18D3E0FC9068EDA29796251B1E253" />
+  
+  <!-- 主题颜色 -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e" />
 
-  <link href="https://fonts.font.im/css?family=Radley" rel="stylesheet" />
+  <!-- SEO相关 -->
+  {% if page.post %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <meta name="author" content="{{ page.author }}" />
+  {% else %}
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <meta name="author" content="{{ site.author }}" />
+  {% endif %}
 
-  <script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
-  <script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
+  <!-- ========== 核心功能脚本 ========== -->
+  <!-- 浏览器信息检测 -->
+  <script src="https://{{site.js_cdn1}}/npm/browser-tool@1.3.1/dist/browser.min.js" 
+          integrity="sha256-UPj46Hf28kziVvYS7tWGvZy9COcV7hKW+KqOyqYzkeI=" 
+          crossorigin="anonymous"></script>
 
+  <!-- 主题模式切换 -->
+  {% unless site.theme_mode %}
+  {% include mode-toggle.html %}
+  {% endunless %}
+
+  <!-- 核心includes -->
+  {% include embed/lookup.html %}
+  {% include embed/pan.html %}
+  {% include embed/testOS.html %}
+
+  <!-- 核心工具库 -->
+  {% include head/maintool.html %}
+
+  <!-- 字体资源 -->
+  {% include head/mainfont.html %}
+
+  <!-- ========== 通用工具库 ========== -->
+  <!-- CDN动态加载工具 -->
   <script>
     window.appendJQCDN = (src) => {
       var head = document.head || document.getElementsByTagName("head")[0];
@@ -38,225 +68,32 @@
     };
   </script>
 
-  {% if page.better-scroll %}
-  <script src="https://cdn.rainsin.cn/better-scroll/dist/better-scroll.min.js"></script>
-  {% endif %} {% if page.code-group %}
-  <script async>
-    if (sessionStorage.getItem("isPan") == "false") {
-      fetch("https://myapi.rainsin.cn/blog_data/js/code_type.json")
-        .then((response) => response.json())
-        .then((data) => (window.code_data = data));
-    } else {
-      fetch("https://source.rainsin.cn/js/code_type.json")
-        .then((response) => response.json())
-        .then((data) => (window.code_data = data));
-    }
-
-    window.myClipboard = (text) => {
-      function success() {
-        let str = "";
-        switch (nn_click_count % 10) {
-          case 0:
-            str = "文质彬彬👩‍🏫";
-            break;
-          case 1:
-            str = "风流倜傥👨‍🍳";
-            break;
-          case 2:
-            str = "英俊潇洒👴";
-            break;
-          case 3:
-            str = "才华横溢🧑‍🎓";
-            break;
-          case 4:
-            str = "才貌双全🦸";
-            break;
-          case 5:
-            str = "谦谦君子🤵";
-            break;
-          case 6:
-            str = "儒雅随和🗣";
-            break;
-          case 7:
-            str =
-              "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️";
-            break;
-          case 8:
-            str = "屡戒不悛🛐";
-            break;
-          case 9:
-            str = "阿弥陀佛🙏";
-            break;
-          default:
-            break;
-        }
-
-        Qmsg.success(str);
-        nn_click_count++;
-      }
-
-      const failed = () => {
-        Qmsg.success("哎呀，没对准！🤡");
-      };
-
-      navigator.clipboard.writeText(text).then(
-        function () {
-          success();
-        },
-        function () {
-          failed();
-        }
-      );
+  <!-- 加载动画控制 -->
+  <script>
+    window.load_event = {
+      load_anime: () => {
+        const loads = document.getElementById("loading-gif-box");
+        loads.style.opacity = "0";
+        loads.style.zIndex = "-999999";
+      },
     };
   </script>
 
-  <script type="text/babel" data-type="module" src="/assets/js/shiki.js"></script>
+  <!-- ========== 主题和模式控制 ========== -->
+  <!-- 加载动画样式 -->
+  <script>
+    const style = document.createElement("style");
+    style.type = "text/css";
 
-  <style>
-    .shiki {
-      display: inline-block;
-      padding: 1.9em 2.1em;
-      border-bottom-left-radius: 0.5em;
-      border-bottom-right-radius: 0.5em;
-      margin-bottom: 0 !important;
+    if (modeToggle.modeStatus == "dark") {
+      style.innerHTML = "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
+    } else {
+      style.innerHTML = "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
     }
+    document.getElementsByTagName("head")[0].appendChild(style);
+  </script>
 
-    html[data-mode="light"] pre.shiki.one-dark-pro {
-      background-color: #f7f7f7 !important;
-    }
-
-    .code-nav {
-      display: inline-flex;
-    }
-
-    html[data-mode="dark"] .code-nav-box {
-      background-color: #363b45;
-      border-bottom: 1px solid #3f3f3fb3;
-    }
-
-    .code-nav-item {
-      box-sizing: border-box;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      padding: 0 4px 0.4em 4px;
-      margin: 16px 0.6em 3px 12px;
-      overflow: auto hidden;
-      white-space: nowrap;
-      list-style: none;
-      border-radius: 6px 6px 0 0;
-      cursor: pointer;
-      overflow: clip;
-    }
-
-    .code-nav-item.active {
-      box-shadow: 0 3px 0 0 #d4c4b7;
-    }
-
-    .code-content {
-      position: relative;
-      overflow: auto;
-      max-height: 25em;
-      border-bottom-left-radius: 0.4em;
-      border-bottom-right-radius: 0.4em;
-      margin-bottom: 0.75em;
-    }
-
-    .code-type-smell {
-      position: absolute;
-      right: 0.3em;
-      top: 0.2em;
-      font-size: 10px;
-      color: var(--text-color);
-    }
-
-    .code-copy-smell {
-      position: absolute;
-      right: 2em;
-      top: 5em;
-      width: 1.4em;
-      aspect-ratio: 1;
-      background-size: cover;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23ffa061' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='72' stroke-dashoffset='72' d='M12 3h7v18h-14v-18h7Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='72;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='12' stroke-dashoffset='12' stroke-width='1' d='M14.5 3.5v3h-5v-3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.2s' values='12;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='4' stroke-dashoffset='4' d='M9 10h3'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.9s' dur='0.2s' values='4;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='6' stroke-dashoffset='6' d='M9 13h5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.1s' dur='0.2s' values='6;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M9 16h6'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='1.3s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    html[data-mode="light"] .code-content {
-      background-color: #f7f7f7;
-    }
-
-    html[data-mode="dark"] .code-content {
-      background-color: #282c34;
-    }
-
-    .code-group {
-      display: none;
-      margin-top: 0.75em;
-      position: relative;
-    }
-
-    .code-nav-box {
-      overflow-x: overlay;
-      border-top-left-radius: 0.5em;
-      border-top-right-radius: 0.5em;
-      background-color: #ececec;
-      border-bottom: 1px solid #d3d3d3;
-    }
-  </style>
-
-  {% endif %} {% if page.video-more %}
-  <script src="
-https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.js
-"></script>
-  <link href="
-https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
-" rel="stylesheet" />
-  {% endif %} {% if page.guwen %}
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZFSB/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZKTK/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/simfang/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/simkai/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/STFANGSO/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/京華老宋体2/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/汇文明朝体/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/STSONG/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/HYKB/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/HYKB/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZJinL-B_GBJF/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZJinL-L_GBJF/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/simsunb/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/PMingLiu/result.css" />
-  {% endif %}
-
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZZzOM/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FZFSB/result.css" />
-
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/STFANGSO/result.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/simfang/result.css" />
-
-  <link rel="stylesheet" href="https://source.rainsin.cn/font/heti/split/FOT-TsukuAOldMinPr6/result.css" />
-
-  <link rel="stylesheet" href="/assets/message/message.min.css" />
-  <script src="/assets/message/message.min.js"></script>
-
-  <script src="https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js" type="module"></script>
-
-  {% if page.tooltipcss %}
-  <link rel="stylesheet" href="https://cdn.staticfile.net/hint.css/3.0.0/hint.min.css" />
-  {% endif %}
-
-  {% if page.swiper %}
-  <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
-  {% endif %} {% if page.clipboard %}
-  <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js"
-    type="application/javascript"></script>
-  {% endif %} {% if page.cube %}
-
-  <script src="/assets/gzip/cube/data-min.js"></script>
-
-  {% endif %}
-
-  <script src="https://{{ site.js_cdn4 }}/npm/sweetalert2@11"></script>
-
+  <!-- 主题模式设置 -->
   <script>
     let box = document.documentElement;
     if (!box.getAttribute("data-mode")) {
@@ -268,76 +105,21 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     }
   </script>
 
-  {% if page.postsummary %}
-  <script src="https://{{site.js_cdn1}}/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js"></script>
-  <script data-pjax>
-    window.load_event = {
-      ...window.load_event,
-      load_post_summary: () => {
-        new ChucklePostAI({
-          el: "#post-content",
-          key: "FA3XwN6IKUk",
-          rec_method: "web",
-        });
-      },
-    };
-  </script>
-  {% endif %} {% if page.blockquote-sep %}
-  <link rel="stylesheet" href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css" />
-  {% endif %} {% if page.bodymovin %}
-  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
-  {% endif %} {% if page.guwen %}
-  <link rel="stylesheet" href="/assets/css/heti-min.css" />
-  <script>
-    window.load_event = {
-      ...window.load_event,
-      heti_title_style: () => {
-        const OS = sessionStorage.getItem("OS");
-        if (OS == "Linux") {
-          $("body").append(
-            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
-      font-weight: 400;
-    }</style>`)
-          );
-        } else if (OS == "iOS" || OS == "Mac OS") {
-          $("body").append(
-            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
-      font-family: "Times New Roman",times,"Heti-Kai","KT","FZK",serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-      font-weight: 400;
-    }</style>`)
-          );
-        } else if (OS == "Android") {
-          $("body").append(
-            $(`<style>.heti--ancient h1, .heti--ancient h2, .heti--ancient h3, .heti--ancient h4, .heti--ancient h5, .heti--ancient h6, .heti--poetry h1, .heti--poetry h2, .heti--poetry h3, .heti--poetry h4, .heti--poetry h5, .heti--poetry h6{
-      font-weight: 600;
-    }</style>`)
-          );
-        } else {
-          console.log("哇！");
-        }
-      },
-    };
-  </script>
+  <!-- ========== 评论系统 ========== -->
+  {% if page.comments %}
+  <script src="https://cdn.rainsin.cn/Artalk@2.9.1/Artalk.min.js"></script>
+  {% include comments-init.html %}
   {% endif %}
 
-  <link rel="stylesheet" href="/assets/css/card-profile.css" />
+  <!-- ========== 主要样式表 ========== -->
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/comments-min.css" />
+  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/root-min.css" />
+  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/card-profile.css" />
+  <link href="https://source.rainsin.cn/assets/css/font.css" rel="stylesheet" />
+  <link href="https://source.rainsin.cn/assets/css/em.css" rel="stylesheet" />
 
-  {% if page.charch %}
-  <script type="text/javascript" src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"></script>
-  {% endif %} {% if page.babel %}
-  <script src="https://cdn.rainsin.cn/@babel/standalone/babel.min.js"></script>
-  {% endif %} {% if page.anime %}
-  <script src="https://{{site.js_cdn}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
-  {% endif %}
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7" />
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-
+  <!-- 通用样式修正 -->
   <style>
     .footnotes>ol>li>p,
     .charch-indent blockquote p {
@@ -345,222 +127,61 @@ https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css
     }
   </style>
 
-  {% if page.post %}
-  <meta name="keywords" content="{{ page.keywords }}" />
-  <meta name="author" content="{{ page.author }}" />
-  {% else %}
-  <meta name="keywords" content="{{ site.keywords }}" />
-  <meta name="author" content="{{ site.author }}" />
-  {% endif %}
-
-  <script>
-    window.load_event = {
-      ...window.load_event,
-      load_anime: () => {
-        const loads = document.getElementById("loading-gif-box");
-        loads.style.opacity = "0";
-        loads.style.zIndex = "-999999";
-      },
-    };
-  </script>
-
-  {% if page.math %}
-  <!-- MathJax -->
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ["$", "$"],
-          ["\\(", "\\)"],
-        ],
-        displayMath: [
-          ["$$", "$$"],
-          ["\\[", "\\]"],
-        ],
-        tags: "ams",
-      },
-    };
-  </script>
-
-  <script crossorigin="anonymous"
-    src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
-  {% endif %}
-
-  <!-- <script src="/assets/js/dev.js"></script> -->
-
-  <link rel="stylesheet" href="/assets/css/comments-min.css" />
-  <link rel="stylesheet" href="/assets/css/root-min.css" />
-
-  {% if page.comments %}
-  <script src="https://cdn.rainsin.cn/Artalk@2.9.1/Artalk.min.js"></script>
-
-  <script>
-    window.load_event = {
-      ...window.load_event,
-      comments: () => {
-        const artalk = Artalk.init({
-          el: '#tcomment',
-          server: 'https://waline.rainsin.cn',
-          darkMode: document.documentElement.dataset.mode == "dark",
-          site: 'Rainsin\'s Blog'
-        });
-        document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
-        window.mode_change = {
-          ...window.mode_change,
-          artalk_mode: () => {
-            artalk.update({
-              el: '#tcomment',
-              server: 'https://waline.rainsin.cn',
-              darkMode: document.documentElement.dataset.mode == "dark",
-              site: 'Rainsin\'s Blog'
-            });
-            document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
-          }
-        }
-      }
-    };
-  </script>
-  {% endif %}
-
-  <script>
-    const style = document.createElement("style");
-    style.type = "text/css";
-
-    if (modeToggle.modeStatus == "dark") {
-      style.innerHTML =
-        "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
-    } else {
-      style.innerHTML =
-        "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
-    }
-    document.getElementsByTagName("head")[0].appendChild(style);
-  </script>
-
-  {% if page.code128 %}
-  <style>
-    @font-face {
-      font-family: "code 128";
-      src: url(https://source.rainsin.cn/font/code128.woff2);
-    }
-  </style>
-  {% endif %} {% if page.react %}
-  <script src="https://{{ site.unpkg_cdn1 }}/react@18.3.1/umd/react.production.min.js"></script>
-  <script src="https://{{ site.unpkg_cdn1 }}/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-  <script src="/assets/js/swr.min.js" async></script>
-  {% endif %} {% if page.video %}
-  <script src="https://source.rainsin.cn/js/artplayer/index.min.js"></script>
-  <script
-    src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
-    
-  {% endif %}
-  {% if page.videoplaylist %}
-  <script src="https://cdn.rainsin.cn/playlist.js"></script>
-  {% endif %}
-
-  {% if page.danmu %}
-  <script
-    src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
-  {% endif %} 
- 
-  {% if page.hls %}
-  <script src="https://cdn.rainsin.cn/hls.js/dist/hls.min.js" type="application/javascript"></script>
-  {% endif %} 
-  {% if page.dash %}
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/dashjs/4.3.0/dash.all.min.js" type="application/javascript"></script>
-  {% endif %} 
-  
-  {% if page.flv %}
-  <script src="https://{{site.js_cdn4}}/npm/flv.js@1.6.2/dist/flv.min.js"></script>
-  {% endif %} {% if page.crypto %}
-  <script src="https://{{site.js_cdn4}}/npm/crypto-js@4.2.0/crypto-js.js"></script>
-  {% endif %} {% if page.webtorrent %}
-  <script src="https://{{site.js_cdn4}}/npm/webtorrent@2.5.12/index.min.js"></script>
-  {% endif %} {% if page.imgpre %}
-  <script src="/assets/gzip/img-previewer/index.min.js"></script>
-  {% endif %} {% if page.music %}
-  <link rel="stylesheet" href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css" />
-  <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
-  {% endif %} {% if page.pinyin %}
-  <script src="/assets/gzip/js/pinyin.min.js"></script>
-  {% endif %} {% if page.chart %}
-  <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
-  {% endif %} {% if page.mathpolt %}
-  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
-  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/function-plot/1.25.0/function-plot.js"
-    integrity="sha512-7MI0msHrbnIetu1m53ACfA0Hu0t12NG8yyrVzjSqABYJglzbwYa97UoFzd74rB1bwY7Na850s+cg+5YuWE+TDA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  {% endif %} {% if page.cube %}
-  <script src="/assets/post/cube/dist/705.js"></script>
-  <script src="/assets/post/cube/dist/781.js"></script>
-  <script src="/assets/post/cube/dist/795.js"></script>
-  <script src="/assets/post/cube/dist/576.js"></script>
-  <script src="/assets/post/cube/dist/661.js"></script>
-  <script src="/assets/post/cube/dist/200.js"></script>
-  <script src="/assets/post/cube/dist/134.js"></script>
-
-  <script src="/assets/post/cube/dist/main.js"></script>
-
-  {% endif %} {% if page.require %}
-  <script src="https://{{ site.unpkg_cdn3 }}/requirejs@2.3.6/require.min.js"></script>
-  {% endif %} {% if page.linksdata %}
-  <script src="/assets/links/linksdata.js"></script>
-  {% endif %} {% if page.animatecss %}
-  <link rel="stylesheet" href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css" />
-  {% endif %} {% capture seo_tags %} {% seo title=false %} {% endcapture %} {%
-  if page.image %} {% assign img = page.image.path | default: page.image %} {%
-  unless img contains '://' %} {% assign img_path = page.img_path | append: '/'
-  | append: img | replace: '//', '/' %} {% capture target %}"{{ img |
-  absolute_url }}"{% endcapture %} {% if site.img_cdn contains '//' %}
-  <!-- it's a cross-origin URL -->
-  {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %} {%
-  else %}
-  <!-- it's a local file path -->
-  {%- capture replacement -%} "{{ site.img_cdn | append: '/' | append: img_path
-  | replace: '//', '/' | absolute_url }}" {%- endcapture -%} {% endif %} {%
-  assign seo_tags = seo_tags | replace: target, replacement %} {% endunless %}
-  {% endif %} {{ seo_tags }}
-
-  <title>
-    {%- unless page.layout == 'home' -%} {{ page.title | append: ' | ' }} {%-
-    endunless -%} {{ site.title }}
-  </title>
-
-  {% include favicons.html %} {% if site.resources.ignore_env !=
-  jekyll.environment and site.resources.self_hosted %}
+  <!-- Bootstrap和主题样式 -->
+  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
   <link href="{{ site.data.origin[type].webfonts | relative_url }}" rel="stylesheet" />
-
-  {% else %} {% for cdn in site.data.origin[type].cdns %}
+  {% else %}
+  {% for cdn in site.data.origin[type].cdns %}
   <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }} />
   <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }} />
   {% endfor %}
-
   <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}" />
-  {% endif %} {% if page.md5 %}
-  <script src="https://{{site.js_cdn4}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
-
   {% endif %}
 
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ site.data.origin[type].bootstrap.css | relative_url}}" />
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}" />
-
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
   {% if site.toc and page.toc %}
   <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}" />
-  {% endif %} {% if page.layout == 'page' or page.layout == 'post' %}
-  <!-- Manific Popup -->
+  {% endif %}
+
+  {% if page.layout == 'page' or page.layout == 'post' %}
   <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}" />
   {% endif %}
 
-  <link href="/assets/css/font.css" rel="stylesheet" />
-  <link href="/assets/css/em.css" rel="stylesheet" />
+  <!-- ========== SEO和页面信息 ========== -->
+  {% capture seo_tags %}
+    {% seo title=false %}
+  {% endcapture %}
 
-  <script src="/assets/js/ms.js"></script>
-  {% include js-selector.html %} {% include set-mode.html %} {% include
-  metadata-hook.html %}
+  {% if page.image %}
+  {% assign img = page.image.path | default: page.image %}
+  {% unless img contains '://' %}
+  {% assign img_path = page.img_path | append: '/' | append: img | replace: '//', '/' %}
+  {% capture target %}"{{ img | absolute_url }}"{% endcapture %}
+  {% if site.img_cdn contains '//' %}
+  {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %}
+  {% else %}
+  {%- capture replacement -%}"{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}"{%- endcapture -%}
+  {% endif %}
+  {% assign seo_tags = seo_tags | replace: target, replacement %}
+  {% endunless %}
+  {% endif %}
+
+  {{ seo_tags }}
+
+  <title>
+    {%- unless page.layout == 'home' -%}{{ page.title | append: ' | ' }}{%- endunless -%}{{ site.title }}
+  </title>
+
+  <!-- ========== 收尾工作 ========== -->
+  {% include favicons.html %}
+  <script src="https://source.rainsin.cn/assets/js/ms.js"></script>
+  {% include js-selector.html %}
+  {% include set-mode.html %}
+  {% include metadata-hook.html %}
+
+  <!-- 开发工具 (注释掉) -->
+  <!-- <script src="/assets/js/dev.js"></script> -->
 </head>

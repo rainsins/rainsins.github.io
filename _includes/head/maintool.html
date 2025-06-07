@@ -1,0 +1,206 @@
+  <!-- Popper.js & Tippy.js -->
+  <script src="https://{{site.unpkg_cdn}}/@popperjs/core@2"></script>
+  <script src="https://{{site.unpkg_cdn}}/tippy.js@6"></script>
+
+  <!-- 消息提示 -->
+  <link rel="stylesheet" href="https://source.rainsin.cn/assets/message/message.min.css" />
+  <script src="https://source.rainsin.cn/assets/message/message.min.js"></script>
+
+  <!-- SweetAlert2 -->
+  <script src="https://{{ site.js_cdn4 }}/npm/sweetalert2@11"></script>
+
+  <!-- 页面预加载 -->
+  <script src="https://npm.elemecdn.com/instant.page@5.2.0/instantpage.js" type="module"></script>
+
+  <!-- ========== 条件加载的功能模块 ========== -->
+  
+  <!-- 数学公式渲染 -->
+  {% if page.math %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+        tags: "ams",
+      },
+    };
+  </script>
+  <script crossorigin="anonymous" src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"></script>
+  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
+  {% endif %}
+
+  <!-- 代码高亮和复制 -->
+  {% if page.code-group %}
+  <script async>
+    if (sessionStorage.getItem("isPan") == "false") {
+      fetch("https://myapi.rainsin.cn/blog_data/js/code_type.json")
+        .then((response) => response.json())
+        .then((data) => (window.code_data = data));
+    } else {
+      fetch("https://source.rainsin.cn/js/code_type.json")
+        .then((response) => response.json())
+        .then((data) => (window.code_data = data));
+    }
+
+    window.myClipboard = (text) => {
+      function success() {
+        let str = "";
+        const messages = ["文质彬彬👩‍🏫", "风流倜傥👨‍🍳", "英俊潇洒👴", "才华横溢🧑‍🎓", "才貌双全🦸", "谦谦君子🤵", "儒雅随和🗣", "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️", "屡戒不悛🛐", "阿弥陀佛🙏"];
+        str = messages[nn_click_count % 10];
+        Qmsg.success(str);
+        nn_click_count++;
+      }
+
+      const failed = () => {
+        Qmsg.success("哎呀，没对准！🤡");
+      };
+
+      navigator.clipboard.writeText(text).then(success, failed);
+    };
+  </script>
+
+  <script type="text/babel" data-type="module" src="/assets/js/shiki.js"></script>
+  {% include code-group-styles.html %}
+  {% endif %}
+
+  <!-- 视频播放器 -->
+  {% if page.video %}
+  <script src="https://source.rainsin.cn/js/artplayer/index.min.js"></script>
+  <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-chapter@1.0.0/dist/artplayer-plugin-chapter.min.js"></script>
+  {% endif %}
+
+  {% if page.video-more %}
+  <script src="https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+  <link href="https://{{site.js_cdn3}}/npm/plyr@3.7.8/dist/plyr.min.css" rel="stylesheet" />
+  {% endif %}
+
+  {% if page.videoplaylist %}
+  <script src="https://cdn.rainsin.cn/playlist.js"></script>
+  {% endif %}
+
+  {% if page.danmu %}
+  <script src="https://{{ site.js_cdn }}/npm/artplayer-plugin-danmuku@5.1.4/dist/artplayer-plugin-danmuku.legacy.min.js"></script>
+  {% endif %}
+
+  <!-- 视频格式支持 -->
+  {% if page.hls %}
+  <script src="https://cdn.rainsin.cn/hls.js/dist/hls.min.js" type="application/javascript"></script>
+  {% endif %}
+
+  {% if page.dash %}
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/dashjs/4.3.0/dash.all.min.js" type="application/javascript"></script>
+  {% endif %}
+
+  {% if page.flv %}
+  <script src="https://{{site.js_cdn4}}/npm/flv.js@1.6.2/dist/flv.min.js"></script>
+  {% endif %}
+
+  {% if page.webtorrent %}
+  <script src="https://{{site.js_cdn4}}/npm/webtorrent@2.5.12/index.min.js"></script>
+  {% endif %}
+
+  <!-- 音乐播放器 -->
+  {% if page.music %}
+  <link rel="stylesheet" href="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.css" />
+  <script src="https://{{ site.unpkg_cdn2 }}/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script src="https://{{ site.unpkg_cdn2 }}/meting@2.0.1/dist/Meting.min.js"></script>
+  {% endif %}
+
+  <!-- 中文排版优化 -->
+  {% if page.guwen %}
+  <link rel="stylesheet" href="https://surce.rainsin.cn/assets/css/heti-min.css" />
+  {% include guwen-scripts.html %}
+  {% endif %}
+
+  {% if page.charch %}
+  <script type="text/javascript" src="https://{{ site.js_cdn4 }}/npm/charch@0.1.0/charch.build.js"></script>
+  {% endif %}
+
+  <!-- 开发工具库 -->
+  {% if page.babel %}
+  <script src="https://cdn.rainsin.cn/@babel/standalone/babel.min.js"></script>
+  {% endif %}
+
+  {% if page.react %}
+  <script src="https://cdn.rainsin.cn/react/umd/react.production.min.js"></script>
+  <script src="https://cdn.rainsin.cn/react-dom/umd/react-dom.production.min.js"></script>
+  <script src="https://source.rainsin.cn/assets/js/swr.min.js" async></script>
+  {% endif %}
+
+  {% if page.require %}
+  <script src="https://{{ site.unpkg_cdn3 }}/requirejs@2.3.6/require.min.js"></script>
+  {% endif %}
+
+  <!-- 功能增强库 -->
+  {% if page.better-scroll %}
+  <script src="https://cdn.rainsin.cn/better-scroll/dist/better-scroll.min.js"></script>
+  {% endif %}
+
+  {% if page.swiper %}
+  <link rel="stylesheet" href="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://{{ site.js_cdn }}/npm/swiper@11/swiper-bundle.min.js"></script>
+  {% endif %}
+
+  {% if page.clipboard %}
+  <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js" type="application/javascript"></script>
+  {% endif %}
+
+  {% if page.anime %}
+  <script src="https://{{site.js_cdn}}/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  {% endif %}
+
+  {% if page.animatecss %}
+  <link rel="stylesheet" href="https://{{ site.unpkg_cdn }}/animate.css@4.1.1/animate.min.css" />
+  {% endif %}
+
+  {% if page.bodymovin %}
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/bodymovin/4.10.2/bodymovin.min.js"></script>
+  {% endif %}
+
+  <!-- 图表和可视化 -->
+  {% if page.chart %}
+  <script src="https://{{ site.unpkg_cdn3 }}/chart.js@4.4.3/dist/chart.umd.js"></script>
+  {% endif %}
+
+  {% if page.mathpolt %}
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://{{ site.cdnjs_cdn }}/ajax/libs/function-plot/1.25.0/function-plot.js" 
+          integrity="sha512-7MI0msHrbnIetu1m53ACfA0Hu0t12NG8yyrVzjSqABYJglzbwYa97UoFzd74rB1bwY7Na850s+cg+5YuWE+TDA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
+
+  <!-- 特殊功能 -->
+  {% if page.cube %}
+  <script src="https://source.rainsin.cn/assets/gzip/cube/data-min.js"></script>
+  {% include cube-scripts.html %}
+  {% endif %}
+
+  {% if page.imgpre %}
+  <script src="/assets/gzip/img-previewer/index.min.js"></script>
+  {% endif %}
+
+  {% if page.pinyin %}
+  <script src="https://source.rainsin.cn/assets/gzip/js/pinyin.min.js"></script>
+  {% endif %}
+
+  {% if page.crypto %}
+  <script src="https://{{site.js_cdn4}}/npm/crypto-js@4.2.0/crypto-js.js"></script>
+  {% endif %}
+
+  {% if page.md5 %}
+  <script src="https://{{site.js_cdn4}}/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
+  {% endif %}
+
+  <!-- UI组件 -->
+  {% if page.tooltipcss %}
+  <link rel="stylesheet" href="https://cdn.rainsin.cn/hint.css/hint.min.css" />
+  {% endif %}
+
+  {% if page.blockquote-sep %}
+  <link rel="stylesheet" href="https://{{site.cdnjs_cdn}}/ajax/libs/ionicons/4.4.1/css/ionicons.min.css" />
+  {% endif %}
+
+  <!-- 数据相关 -->
+  {% if page.linksdata %}
+  <script src="/assets/links/linksdata.js"></script>
+  {% endif %}
