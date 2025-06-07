@@ -1,0 +1,26 @@
+<script>
+    window.load_event = {
+      ...window.load_event,
+      comments: () => {
+        const artalk = Artalk.init({
+          el: '#tcomment',
+          server: 'https://waline.rainsin.cn',
+          darkMode: document.documentElement.dataset.mode == "dark",
+          site: 'Rainsin\'s Blog'
+        });
+        document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
+        window.mode_change = {
+          ...window.mode_change,
+          artalk_mode: () => {
+            artalk.update({
+              el: '#tcomment',
+              server: 'https://waline.rainsin.cn',
+              darkMode: document.documentElement.dataset.mode == "dark",
+              site: 'Rainsin\'s Blog'
+            });
+            document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
+          }
+        }
+      }
+    };
+  </script>
