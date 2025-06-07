@@ -14,6 +14,18 @@
 
   <!-- ========== 条件加载的功能模块 ========== -->
   
+  {% if page.cube %}
+  <!-- 魔方绘制库 -->
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/705.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/781.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/795.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/576.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/661.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/200.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/134.js"></script>
+  <script src="https://source.rainsin.cn/assets/post/cube/dist/main.js"></script>
+  {% endif %} 
+
   <!-- 数学公式渲染 -->
   {% if page.math %}
   <script>
@@ -27,40 +39,6 @@
   </script>
   <script crossorigin="anonymous" src="https://polyfill.alicdn.com/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018"></script>
   <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
-  {% endif %}
-
-  <!-- 代码高亮和复制 -->
-  {% if page.code-group %}
-  <script async>
-    if (sessionStorage.getItem("isPan") == "false") {
-      fetch("https://myapi.rainsin.cn/blog_data/js/code_type.json")
-        .then((response) => response.json())
-        .then((data) => (window.code_data = data));
-    } else {
-      fetch("https://source.rainsin.cn/js/code_type.json")
-        .then((response) => response.json())
-        .then((data) => (window.code_data = data));
-    }
-
-    window.myClipboard = (text) => {
-      function success() {
-        let str = "";
-        const messages = ["文质彬彬👩‍🏫", "风流倜傥👨‍🍳", "英俊潇洒👴", "才华横溢🧑‍🎓", "才貌双全🦸", "谦谦君子🤵", "儒雅随和🗣", "少之时,血气未定,戒之在色；及其壮也,血气方刚,戒之在斗；及其老也,血气既衰,戒之在得. ☯️", "屡戒不悛🛐", "阿弥陀佛🙏"];
-        str = messages[nn_click_count % 10];
-        Qmsg.success(str);
-        nn_click_count++;
-      }
-
-      const failed = () => {
-        Qmsg.success("哎呀，没对准！🤡");
-      };
-
-      navigator.clipboard.writeText(text).then(success, failed);
-    };
-  </script>
-
-  <script type="text/babel" data-type="module" src="/assets/js/shiki.js"></script>
-  {% include code-group-styles.html %}
   {% endif %}
 
   <!-- 视频播放器 -->

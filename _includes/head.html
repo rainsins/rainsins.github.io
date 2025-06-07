@@ -80,6 +80,17 @@
   </script>
 
   <!-- ========== 主题和模式控制 ========== -->
+   <!-- 主题模式设置 -->
+  <script>
+    let box = document.documentElement;
+    if (!box.getAttribute("data-mode")) {
+      if (modeToggle.modeStatus == "dark") {
+        box.setAttribute("data-mode", "dark");
+      } else {
+        box.setAttribute("data-mode", "light");
+      }
+    }
+  </script>
   <!-- 加载动画样式 -->
   <script>
     const style = document.createElement("style");
@@ -91,18 +102,6 @@
       style.innerHTML = "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
     }
     document.getElementsByTagName("head")[0].appendChild(style);
-  </script>
-
-  <!-- 主题模式设置 -->
-  <script>
-    let box = document.documentElement;
-    if (!box.getAttribute("data-mode")) {
-      if (modeToggle.modeStatus == "dark") {
-        box.setAttribute("data-mode", "dark");
-      } else {
-        box.setAttribute("data-mode", "light");
-      }
-    }
   </script>
 
   <!-- ========== 评论系统 ========== -->
