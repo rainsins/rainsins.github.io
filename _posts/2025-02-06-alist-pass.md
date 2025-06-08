@@ -17,6 +17,8 @@ comments: true
 favicon: heart
 pangu: true
 
+des-post: 在一次启动第二个alist示例时，出现了密码无法更改的情况，查询网络后解决了这个问题，把文章贴在这。
+
 post: true
 keywords: rainsin, blog, 解决问题
 author: rainsin
