@@ -37,7 +37,6 @@ author: rainsin
     <div class="c-glitch__img" style="background-image: url('https://source.rainsin.cn/img/friend/friend.png'),url('https://source.rainsin.cn/img/friend/friend.png');"></div>
   </div>
   <div style="text-align: center;color: var(--text-color);">
-    海内存知已，天涯若比邻
   </div>
 </main>
 
@@ -47,7 +46,7 @@ author: rainsin
 
 ## 📌须知
 
-> 可以击剑🤺之后再添加友链（吾剑也未尝不利）。
+> 这里的链接是为了方便我访问的而设置，如果你的链接不希望出现在这里，请告知我。
 {: .prompt-warning }
 
 ## 😉我的信息
