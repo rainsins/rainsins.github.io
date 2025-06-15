@@ -200,12 +200,12 @@ sass:
   style: compressed
 
 compress_html:
-  clippings: []
-  comments: []
-  endings: []
-  startings: []
+  clippings: all
+  comments: all
+  endings: all
+  startings: all
   profile: false
-  blanklines: false
+  blanklines: true
   ignore:
     envs: [development]
 
