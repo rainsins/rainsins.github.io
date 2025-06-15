@@ -3,6 +3,7 @@
     flex-direction: row;
     width: 100%;
     aspect-ratio: 1/0.5;
+    margin-bottom: 20px;
 }
 
 .item {

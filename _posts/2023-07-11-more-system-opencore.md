@@ -1,7 +1,7 @@
 ---
 title: 「教程」使用Opencore引导多个系统
 date: 2023-07-02 12:23:00 +0800
-categories: [黑苹果, EFI]
+categories: [黑苹果]
 tags: [黑苹果, EFI, Openkylin, Deepin, Ubuntu, Debian, Windows10, Windows11, MacOS, Linux]
 pin: false
 math: false

@@ -2,8 +2,8 @@
 title: 「爱好」分形的一个项目（曼德布罗集和朱莉娅集）
 author: rainsin
 date: 2024-03-04 16:32:10 +0800
-categories: [混沌, 分形几何]
-tags: [混沌]
+categories: [混沌]
+tags: [混沌, 分形几何]
 pin: false
 math: false
 react: false
