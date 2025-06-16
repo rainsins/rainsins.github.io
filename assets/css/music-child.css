@@ -1,6 +1,10 @@
-pre, code, kbd, samp {
-            font-family: 'Cubic 11', cursive;
-        }
+pre,
+code,
+kbd,
+samp {
+    font-family: 'Cubic 11', cursive;
+}
+
 /* 暗黑模式 */
 html[data-mode="dark"] body {
     background-color: #212529;
@@ -102,7 +106,7 @@ html[data-mode="dark"] .music-title {
 }
 
 .music-description {
-    font-size: 8px;
+    font-size: .8em;
     line-height: 1.4;
     margin-bottom: 15px;
     transition: color 0.3s ease;
