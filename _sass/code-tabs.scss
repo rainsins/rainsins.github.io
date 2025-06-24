@@ -1,0 +1,300 @@
+// 代码组组件样式
+.code-tabs {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  
+  // 深色主题支持
+  @media (prefers-color-scheme: dark) {
+    background: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// 标签页导航
+.code-tabs-nav {
+  display: flex;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  gap: 0.25rem;
+  overflow-x: auto;
+  
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+    border-bottom-color: #4b5563;
+  }
+  
+  // 滚动条样式
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+    
+    @media (prefers-color-scheme: dark) {
+      background: #6b7280;
+    }
+  }
+}
+
+// 标签页按钮
+.code-tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  
+  @media (prefers-color-scheme: dark) {
+    color: #9ca3af;
+  }
+  
+  // 图标样式
+  iconify-icon {
+    font-size: 1.125rem;
+    transition: transform 0.2s ease;
+  }
+  
+  // 悬停效果
+  &:hover {
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-1px);
+    
+    @media (prefers-color-scheme: dark) {
+      color: #60a5fa;
+      background: rgba(96, 165, 250, 0.15);
+    }
+    
+    iconify-icon {
+      transform: scale(1.1);
+    }
+  }
+  
+  // 激活状态
+  &.active {
+    color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+    
+    @media (prefers-color-scheme: dark) {
+      color: #60a5fa;
+      background: #1f2937;
+      box-shadow: 0 2px 8px rgba(96, 165, 250, 0.2);
+    }
+    
+    // 激活状态下的底部指示器
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      border-radius: 1px;
+      
+      @media (prefers-color-scheme: dark) {
+        background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      }
+    }
+  }
+  
+  // 聚焦状态
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+}
+
+// 内容区域
+.code-tabs-content {
+  position: relative;
+  min-height: 3rem;
+}
+
+// 标签页面板
+.code-tab-panel {
+  display: none;
+  
+  &.active {
+    display: block;
+  }
+  
+  // 代码块样式优化
+  .highlight {
+    margin: 0;
+    border-radius: 0;
+    
+    pre {
+      margin: 0;
+      padding: 1.5rem;
+      background: #fafafa;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      
+      @media (prefers-color-scheme: dark) {
+        background: #111827;
+      }
+      
+      // 滚动条样式
+      &::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: #f1f5f9;
+        
+        @media (prefers-color-scheme: dark) {
+          background: #374151;
+        }
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+        
+        @media (prefers-color-scheme: dark) {
+          background: #6b7280;
+        }
+        
+        &:hover {
+          background: #94a3b8;
+          
+          @media (prefers-color-scheme: dark) {
+            background: #9ca3af;
+          }
+        }
+      }
+    }
+    
+    code {
+      background: none;
+      padding: 0;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+  
+  // 如果没有语法高亮，使用基本样式
+  > pre {
+    margin: 0;
+    padding: 1.5rem;
+    background: #fafafa;
+    color: #374151;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    overflow-x: auto;
+    
+    @media (prefers-color-scheme: dark) {
+      background: #111827;
+      color: #d1d5db;
+    }
+  }
+}
+
+// 加载动画
+.code-tabs.loading {
+  .code-tab-panel {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      border: 2px solid #e5e7eb;
+      border-top: 2px solid #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      
+      @media (prefers-color-scheme: dark) {
+        border-color: #4b5563;
+        border-top-color: #60a5fa;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .code-tabs-nav {
+    padding: 0.375rem;
+    gap: 0.125rem;
+  }
+  
+  .code-tab-button {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.8125rem;
+    
+    iconify-icon {
+      font-size: 1rem;
+    }
+  }
+  
+  .code-tab-panel {
+    .highlight pre,
+    > pre {
+      padding: 1rem;
+      font-size: 0.8125rem;
+    }
+  }
+}
+
+// 打印样式
+@media print {
+  .code-tabs {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  .code-tabs-nav {
+    display: none;
+  }
+  
+  .code-tab-panel {
+    display: block !important;
+    
+    &:not(:first-child) {
+      page-break-before: always;
+      
+      &::before {
+        content: attr(data-tab-title);
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
