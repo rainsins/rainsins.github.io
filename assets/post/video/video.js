@@ -40,26 +40,91 @@ async function send_message() {
         padding: CryptoJS.pad.Pkcs7
     }).toString();
 
+    const posterCache = new Map();
+    function preloadPoster(url) {
+        return new Promise((resolve, reject) => {
+            if (posterCache.has(url)) {
+                resolve(posterCache.get(url));
+                return;
+            }
+
+            const img = new Image();
+            img.onload = () => {
+                posterCache.set(url, url);
+                resolve(url);
+            };
+            img.onerror = () => {
+                const defaultUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+                posterCache.set(url, defaultUrl);
+                reject(new Error('Failed to load poster'));
+            };
+            img.src = url;
+        });
+    }
+
+
+    function setArtplayerPoster(art, posterUrl) {
+        try {
+
+            art.poster = posterUrl;
+
+            const posterElement = art.template?.$poster;
+            if (posterElement) {
+                posterElement.style.backgroundImage = `url("${posterUrl}")`;
+                posterElement.style.backgroundSize = 'cover';
+                posterElement.style.backgroundPosition = 'center';
+                posterElement.style.backgroundRepeat = 'no-repeat';
+            }
+
+            if (typeof art.emit === 'function') {
+                art.emit('poster', posterUrl);
+            }
+
+            console.log('Poster set successfully:', posterUrl);
+        } catch (error) {
+            console.error('Error setting poster:', error);
+        }
+    }
+
     if (!isLoad) {
         fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
-                if (response.status == "404") {
+                if (response.status == 404) {
                     Qmsg.error("哎呀，密码不对！🤡");
                     isLoad = false;
                     return false;
                 } else {
-                    return response.json()
+                    return response.json();
                 }
-            }).then((data) => {
-                if (data) {
-                    art.destroy();
+            })
+            .then(async (data) => {
+                if (data && Array.isArray(data)) {
+
+                    if (art) {
+                        art.destroy();
+                    }
+
+                    const processedData = data.map(item => ({
+                        ...item,
+                        poster: `https://myapi.rainsin.cn/pics-dmm/${encodeURIComponent(item.title)}`
+                    }));
+
+                    if (processedData.length > 0) {
+                        try {
+                            await preloadPoster(processedData[0].poster);
+                        } catch (error) {
+                            console.log('Failed to preload first poster:', error);
+                        }
+                    }
+
                     art = new Artplayer({
                         container: '#video-box',
-                        url: 'https://pan.rainsin.cn/d/aliup/win.DESKTOP-PLI9GE8/up/Sone-544/main.mpd',
+                        url: processedData[0]?.url || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/main.mpd',
                         type: 'mpd',
                         theme: "#2c9678",
-                        title: 'Sone-544',
+                        title: processedData[0]?.title || 'Start-111-Uc',
+                        poster: processedData[0]?.poster || '', // 设置初始封面
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
@@ -76,21 +141,58 @@ async function send_message() {
                         },
                         autoOrientation: true,
                         plugins: [artplayerPlaylist({
-                            rebuildPlayer: false, // 换P时重建播放器，默认false
-                            onchanged: (art) => { // 换P后的回调函数
-                                console.log('Video Changed');
+                            rebuildPlayer: false,
+                            onchanged: async (art) => {
+                                console.log('Video Changed to:', art.url);
+
+                                const currentItem = processedData.find(item => item.url === art.url);
+
+                                if (currentItem && currentItem.poster) {
+                                    console.log('Loading poster for:', currentItem.title);
+
+                                    try {
+                                        const posterUrl = await preloadPoster(currentItem.poster);
+                                        setArtplayerPoster(art, posterUrl);
+                                    } catch (error) {
+                                        console.log('Poster load failed, using default');
+                                        setArtplayerPoster(art, 'https://myapi.rainsin.cn/pics-dmm/default');
+                                    }
+                                }
+
+                                const currentIndex = processedData.findIndex(item => item.url === art.url);
+                                if (currentIndex >= 0 && currentIndex < processedData.length - 1) {
+                                    const nextItem = processedData[currentIndex + 1];
+                                    if (nextItem && nextItem.poster) {
+                                        preloadPoster(nextItem.poster).catch(() => {
+                                            console.log('Failed to preload next poster');
+                                        });
+                                    }
+                                }
                             },
-                            autoNext: true, // 自动播放下一P, 默认false
-                            showText: false, // 在控制栏显示文本，否则显示图标，默认为false
-                            playlist: data
+                            autoNext: true,
+                            showText: false,
+                            playlist: processedData
                         })]
                     },
                         function onReady(art) {
-                            this.pause()
+                            console.log('Artplayer ready');
+                            this.pause();
+
+                            if (processedData[0] && processedData[0].poster) {
+                                setTimeout(() => {
+                                    setArtplayerPoster(art, processedData[0].poster);
+                                }, 100);
+                            }
                         });
 
                     $("#middle").hide();
+                    console.log(`Loaded ${processedData.length} videos with poster support`);
                 }
+                isLoad = false;
+            })
+            .catch((error) => {
+                console.error('Error loading video data:', error);
+                Qmsg.error("加载视频数据失败！");
                 isLoad = false;
             });
     }
@@ -106,6 +208,7 @@ window.load_event = {
             type: 'm3u8',
             theme: "#2c9678",
             title: '猴王初问世',
+            poster: 'https://source.rainsin.cn/img/post/video/%E8%A5%BF%E6%B8%B8%E8%AE%B0.jpg',
             flip: true,
             playbackRate: true,
             screenshot: true,
