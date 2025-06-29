@@ -118,12 +118,14 @@
     // ============= 前端代码 (客户端) =============
 (async function () {
     // 使用内存变量而不是 sessionStorage 避免重复发送
-    if (window.visitorInfoSent) {
+    if (sessionStorage.getItem("Info")) {
         return;
     }
     
     try {
         const info = await browser.getInfo();
+
+        sessionStorage.setItem("Info",JSON.stringify(info));
         
         const options = {
             method: 'POST',
