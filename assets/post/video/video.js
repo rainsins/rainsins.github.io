@@ -63,19 +63,29 @@ async function send_message() {
     }
 
 
+
     function setArtplayerPoster(art, posterUrl) {
         try {
-
+          
             art.poster = posterUrl;
 
+       
             const posterElement = art.template?.$poster;
             if (posterElement) {
+                posterElement.style.display = 'block';
                 posterElement.style.backgroundImage = `url("${posterUrl}")`;
                 posterElement.style.backgroundSize = 'cover';
                 posterElement.style.backgroundPosition = 'center';
                 posterElement.style.backgroundRepeat = 'no-repeat';
+                posterElement.style.opacity = '1';
             }
 
+         
+            if (art.video) {
+                art.video.poster = posterUrl;
+            }
+
+    
             if (typeof art.emit === 'function') {
                 art.emit('poster', posterUrl);
             }
@@ -147,17 +157,51 @@ async function send_message() {
 
                                 const currentItem = processedData.find(item => item.url === art.url);
 
+
+                                art.pause();
+                                art.currentTime = 0;
+
+
+                                if (art.video) {
+                                    art.video.style.opacity = '0';
+                                }
+
+
+                                let finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+
                                 if (currentItem && currentItem.poster) {
                                     console.log('Loading poster for:', currentItem.title);
 
                                     try {
-                                        const posterUrl = await preloadPoster(currentItem.poster);
-                                        setArtplayerPoster(art, posterUrl);
+                                        finalPosterUrl = await preloadPoster(currentItem.poster);
+                                        console.log('Poster loaded successfully:', finalPosterUrl);
                                     } catch (error) {
                                         console.log('Poster load failed, using default');
-                                        setArtplayerPoster(art, 'https://myapi.rainsin.cn/pics-dmm/default');
+                                        finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
                                     }
                                 }
+
+
+                                setArtplayerPoster(art, finalPosterUrl);
+
+
+                                setTimeout(() => {
+                                    const posterLayer = art.template?.$poster;
+                                    if (posterLayer) {
+                                        posterLayer.style.display = 'block';
+                                        posterLayer.style.backgroundImage = `url("${finalPosterUrl}")`;
+                                        posterLayer.style.opacity = '1';
+                                    }
+
+                                    const playHandler = () => {
+                                        if (art.video) {
+                                            art.video.style.opacity = '1';
+                                        }
+                                        art.off('play', playHandler);
+                                    };
+                                    art.on('play', playHandler);
+                                }, 100);
+
 
                                 const currentIndex = processedData.findIndex(item => item.url === art.url);
                                 if (currentIndex >= 0 && currentIndex < processedData.length - 1) {
@@ -225,12 +269,12 @@ window.load_event = {
                 m3u8: playM3u8
             },
             plugins: [artplayerPlaylist({
-                rebuildPlayer: false, // 换P时重建播放器，默认false
-                onchanged: (art) => { // 换P后的回调函数
+                rebuildPlayer: false, 
+                onchanged: (art) => {
                     console.log('Video Changed');
                 },
-                autoNext: true, // 自动播放下一P, 默认false
-                showText: false, // 在控制栏显示文本，否则显示图标，默认为false
+                autoNext: true, 
+                showText: false, 
                 playlist: [
                     {
                         title: '猴王初问世',
