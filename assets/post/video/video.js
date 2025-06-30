@@ -161,7 +161,9 @@ async function send_message() {
                                 console.log('Current title:', art.title);
 
                              
-                                const currentItem = processedData.find(item => item.title === art.title);
+                                const currentIndex = art.currentPlaylistIndex || 0;
+
+                                const currentItem = processedData[currentIndex];
 
                                 console.log('Found current item:', currentItem);
 
@@ -209,8 +211,6 @@ async function send_message() {
                                     art.on('play', playHandler);
                                 }, 100);
 
-
-                                const currentIndex = processedData.findIndex(item => item.url === art.url);
                                 if (currentIndex >= 0 && currentIndex < processedData.length - 1) {
                                     const nextItem = processedData[currentIndex + 1];
                                     if (nextItem && nextItem.poster) {
@@ -221,7 +221,7 @@ async function send_message() {
                                 }
                             },
                             autoNext: true,
-                            showText: false,
+                            showText: true,
                             playlist: processedData
                         })]
                     },
