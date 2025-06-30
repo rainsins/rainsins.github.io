@@ -159,8 +159,10 @@ async function send_message() {
                             onchanged: async (art) => {
                                 console.log('Video Changed to:', art.url);
 
-                                const currentItem = processedData.find(item => item.url === art.url);
+                                const currentItem = processedData.find(item => item.title === art.title);;
 
+                                console.log("Current Video data: ", currentItem);
+                                
 
                                 art.pause();
                                 art.currentTime = 0;
