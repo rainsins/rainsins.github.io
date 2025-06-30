@@ -59,7 +59,7 @@ async function send_message() {
                 resolve(url);
             };
             img.onerror = () => {
-                posterCache.set(url, 'FAILED'); // 标记为失败
+                posterCache.set(url, 'FAILED'); 
                 reject(new Error('Failed to load poster'));
             };
             img.src = url;
@@ -138,7 +138,7 @@ async function send_message() {
                         type: 'mpd',
                         theme: "#2c9678",
                         title: processedData[0]?.title || 'Start-111-Uc',
-                        poster: processedData[0]?.poster || '', // 设置初始封面
+                        poster: processedData[0]?.poster || '', 
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
@@ -158,37 +158,36 @@ async function send_message() {
                             rebuildPlayer: false,
                             onchanged: async (art) => {
                                 console.log('Video Changed to:', art.url);
+                                console.log('Current title:', art.title);
 
-                                const currentItem = processedData.find(item => item.title === art.title);;
+                             
+                                const currentItem = processedData.find(item => item.title === art.title);
 
-                                console.log("Current Video data: ", currentItem);
-                                
+                                console.log('Found current item:', currentItem);
 
                                 art.pause();
                                 art.currentTime = 0;
-
 
                                 if (art.video) {
                                     art.video.style.opacity = '0';
                                 }
 
-
                                 let finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
 
                                 if (currentItem && currentItem.poster) {
-                                    console.log('Current item:', currentItem.title);
+                                    console.log('Loading poster for:', currentItem.title);
                                     console.log('Poster URL:', currentItem.poster);
 
                                     try {
                                         finalPosterUrl = await preloadPoster(currentItem.poster);
                                         console.log('Poster loaded successfully:', finalPosterUrl);
                                     } catch (error) {
-                                        console.log('Poster load failed:', error.message);
-                                        console.log('Using default poster');
+                                        console.log('Poster load failed, using default');
                                         finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
                                     }
+                                } else {
+                                    console.log('No current item or poster found');
                                 }
-
 
                                 setArtplayerPoster(art, finalPosterUrl);
 
