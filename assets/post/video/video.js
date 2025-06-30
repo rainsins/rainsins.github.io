@@ -44,7 +44,12 @@ async function send_message() {
     function preloadPoster(url) {
         return new Promise((resolve, reject) => {
             if (posterCache.has(url)) {
-                resolve(posterCache.get(url));
+                const cachedResult = posterCache.get(url);
+                if (cachedResult === 'FAILED') {
+                    reject(new Error('Previously failed to load poster'));
+                } else {
+                    resolve(cachedResult);
+                }
                 return;
             }
 
@@ -54,8 +59,7 @@ async function send_message() {
                 resolve(url);
             };
             img.onerror = () => {
-                const defaultUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
-                posterCache.set(url, defaultUrl);
+                posterCache.set(url, 'FAILED'); // 标记为失败
                 reject(new Error('Failed to load poster'));
             };
             img.src = url;
@@ -66,10 +70,10 @@ async function send_message() {
 
     function setArtplayerPoster(art, posterUrl) {
         try {
-          
+
             art.poster = posterUrl;
 
-       
+
             const posterElement = art.template?.$poster;
             if (posterElement) {
                 posterElement.style.display = 'block';
@@ -80,12 +84,12 @@ async function send_message() {
                 posterElement.style.opacity = '1';
             }
 
-         
+
             if (art.video) {
                 art.video.poster = posterUrl;
             }
 
-    
+
             if (typeof art.emit === 'function') {
                 art.emit('poster', posterUrl);
             }
@@ -170,13 +174,15 @@ async function send_message() {
                                 let finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
 
                                 if (currentItem && currentItem.poster) {
-                                    console.log('Loading poster for:', currentItem.title);
+                                    console.log('Current item:', currentItem.title);
+                                    console.log('Poster URL:', currentItem.poster);
 
                                     try {
                                         finalPosterUrl = await preloadPoster(currentItem.poster);
                                         console.log('Poster loaded successfully:', finalPosterUrl);
                                     } catch (error) {
-                                        console.log('Poster load failed, using default');
+                                        console.log('Poster load failed:', error.message);
+                                        console.log('Using default poster');
                                         finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
                                     }
                                 }
@@ -269,12 +275,12 @@ window.load_event = {
                 m3u8: playM3u8
             },
             plugins: [artplayerPlaylist({
-                rebuildPlayer: false, 
+                rebuildPlayer: false,
                 onchanged: (art) => {
                     console.log('Video Changed');
                 },
-                autoNext: true, 
-                showText: false, 
+                autoNext: true,
+                showText: false,
                 playlist: [
                     {
                         title: '猴王初问世',
