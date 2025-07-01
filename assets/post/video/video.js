@@ -110,7 +110,7 @@ async function send_message() {
                     }
                     const playlistData = data.map(item => ({
                         url: item.play,
-                        title: item.info.title,
+                        title: item.title,
                         poster: item.poster
                     }));
 
@@ -120,7 +120,7 @@ async function send_message() {
                         type: 'mpd',
                         theme: "#2c9678",
                         title: playlistData[0]?.title || 'Start-111-Uc',
-                        poster: playlistData[0]?.poster || 'https://seacloud.cpolar.cn/别墅/dash-av/Start-111-Uc/poster.webp',
+                        poster: playlistData[0]?.poster || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/poster.webp',
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
