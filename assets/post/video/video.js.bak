@@ -40,53 +40,63 @@ async function send_message() {
         padding: CryptoJS.pad.Pkcs7
     }).toString();
 
-    function updateVideoInfo(item) {
-        const infoContainer = $('.video-info');
-        if (!item) {
-            infoContainer.removeClass('visible');
-            return;
-        }
+    const posterCache = new Map();
+    function preloadPoster(url) {
+        return new Promise((resolve, reject) => {
+            if (posterCache.has(url)) {
+                const cachedResult = posterCache.get(url);
+                if (cachedResult === 'FAILED') {
+                    reject(new Error('Previously failed to load poster'));
+                } else {
+                    resolve(cachedResult);
+                }
+                return;
+            }
 
-        const title = item.info.title || '标题加载失败';
-        const plot = item.info.plot.replace('<![CDATA[', '').replace(']]>', '') || '暂无简介';
-        const poster = item.poster || 'https://myapi.rainsin.cn/pics-dmm/default';
-        const director = item.info.director || '未知';
-        const studio = item.info.studio || '未知';
-        const year = item.info.year || '未知';
-        const runtime = item.info.runtime || '未知';
+            const img = new Image();
+            img.onload = () => {
+                posterCache.set(url, url);
+                resolve(url);
+            };
+            img.onerror = () => {
+                posterCache.set(url, 'FAILED'); 
+                reject(new Error('Failed to load poster'));
+            };
+            img.src = url;
+        });
+    }
 
-        const actors = item.info.actor.map(a => a.replace(/<name>|<\/name>|<type>.*<\/type>/gs, '').trim()).join(', ');
-        const genresHtml = item.info.genre.map(g => `<span class="tag">${g}</span>`).join('');
 
 
-        const newHtml = `
-        <div class="video-info-grid">
-            <div class="info-poster">
-                <img src="${poster}" alt="${title} Poster">
-            </div>
-            <div class="info-details">
-                <h2>${title}</h2>
-                <div class="info-meta">
-                    <span><strong>导演:</strong> ${director}</span>
-                    <span><strong>片商:</strong> ${studio}</span>
-                    <span><strong>年份:</strong> ${year}</span>
-                    <span><strong>时长:</strong> ${runtime} 分钟</span>
-                </div>
-                 <div class="info-meta">
-                    <span><strong>演员:</strong> ${actors}</span>
-                </div>
-                <p class="info-plot">${plot}</p>
-                <div class="tags">
-                    ${genresHtml}
-                </div>
-            </div>
-        </div>
-    `;
+    function setArtplayerPoster(art, posterUrl) {
+        try {
 
-        infoContainer.html(newHtml);
+            art.poster = posterUrl;
 
-        if (!infoContainer.hasClass('visible')) {
-            setTimeout(() => infoContainer.addClass('visible'), 50);
+
+            const posterElement = art.template?.$poster;
+            if (posterElement) {
+                posterElement.style.display = 'block';
+                posterElement.style.backgroundImage = `url("${posterUrl}")`;
+                posterElement.style.backgroundSize = 'cover';
+                posterElement.style.backgroundPosition = 'center';
+                posterElement.style.backgroundRepeat = 'no-repeat';
+                posterElement.style.opacity = '1';
+            }
+
+
+            if (art.video) {
+                art.video.poster = posterUrl;
+            }
+
+
+            if (typeof art.emit === 'function') {
+                art.emit('poster', posterUrl);
+            }
+
+            console.log('Poster set successfully:', posterUrl);
+        } catch (error) {
+            console.error('Error setting poster:', error);
         }
     }
 
@@ -108,19 +118,27 @@ async function send_message() {
                     if (art) {
                         art.destroy();
                     }
-                    const playlistData = data.map(item => ({
-                        url: item.play,
-                        title: item.info.title,
-                        poster: item.poster
+
+                    const processedData = data.map(item => ({
+                        ...item,
+                        poster: `https://myapi.rainsin.cn/pics-dmm/${encodeURIComponent(item.title)}`
                     }));
+
+                    if (processedData.length > 0) {
+                        try {
+                            await preloadPoster(processedData[0].poster);
+                        } catch (error) {
+                            console.log('Failed to preload first poster:', error);
+                        }
+                    }
 
                     art = new Artplayer({
                         container: '#video-box',
-                        url: playlistData[0]?.url || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/main.mpd',
+                        url: processedData[0]?.url || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/main.mpd',
                         type: 'mpd',
                         theme: "#2c9678",
-                        title: playlistData[0]?.title || 'Start-111-Uc',
-                        poster: playlistData[0]?.poster || 'https://seacloud.cpolar.cn/别墅/dash-av/Start-111-Uc/poster.webp',
+                        title: processedData[0]?.title || 'Start-111-Uc',
+                        poster: processedData[0]?.poster || '', 
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
@@ -138,23 +156,89 @@ async function send_message() {
                         autoOrientation: true,
                         plugins: [artplayerPlaylist({
                             rebuildPlayer: false,
-                            onchanged: async (item) => {
-                                console.log('Playing:', item.title);
-                                const currentIndex = art.currentPlaylistIndex;
-                                updateVideoInfo(data[currentIndex]);
+                            onchanged: async (art) => {
+                                console.log('Video Changed to:', art.url);
+                                console.log('Current title:', art.title);
+
+                             
+                                const currentIndex = art.currentPlaylistIndex || 0;
+
+                                const currentItem = processedData[currentIndex];
+
+                                console.log('Found current item:', currentItem);
+
+                                art.pause();
+                                art.currentTime = 0;
+
+                                if (art.video) {
+                                    art.video.style.opacity = '0';
+                                }
+
+                                let finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+
+                                if (currentItem && currentItem.poster) {
+                                    console.log('Loading poster for:', currentItem.title);
+                                    console.log('Poster URL:', currentItem.poster);
+
+                                    try {
+                                        finalPosterUrl = await preloadPoster(currentItem.poster);
+                                        console.log('Poster loaded successfully:', finalPosterUrl);
+                                    } catch (error) {
+                                        console.log('Poster load failed, using default');
+                                        finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+                                    }
+                                } else {
+                                    console.log('No current item or poster found');
+                                }
+
+                                setArtplayerPoster(art, finalPosterUrl);
+
+
+                                setTimeout(() => {
+                                    const posterLayer = art.template?.$poster;
+                                    if (posterLayer) {
+                                        posterLayer.style.display = 'block';
+                                        posterLayer.style.backgroundImage = `url("${finalPosterUrl}")`;
+                                        posterLayer.style.opacity = '1';
+                                    }
+
+                                    const playHandler = () => {
+                                        if (art.video) {
+                                            art.video.style.opacity = '1';
+                                        }
+                                        art.off('play', playHandler);
+                                    };
+                                    art.on('play', playHandler);
+                                }, 100);
+
+                                if (currentIndex >= 0 && currentIndex < processedData.length - 1) {
+                                    const nextItem = processedData[currentIndex + 1];
+                                    if (nextItem && nextItem.poster) {
+                                        preloadPoster(nextItem.poster).catch(() => {
+                                            console.log('Failed to preload next poster');
+                                        });
+                                    }
+                                }
                             },
                             autoNext: true,
                             showText: true,
-                            playlist: playlistData
+                            playlist: processedData
                         })]
-                    });
-                    updateVideoInfo(data[0]);
+                    },
+                        function onReady(art) {
+                            console.log('Artplayer ready');
+                            this.pause();
+
+                            if (processedData[0] && processedData[0].poster) {
+                                setTimeout(() => {
+                                    setArtplayerPoster(art, processedData[0].poster);
+                                }, 100);
+                            }
+                        });
 
                     $("#middle").hide();
-                    console.log(`Loaded ${data.length} videos.`);
-                } else {
-                 Qmsg.warning("没有找到视频数据。");
-                };
+                    console.log(`Loaded ${processedData.length} videos with poster support`);
+                }
                 isLoad = false;
             })
             .catch((error) => {
