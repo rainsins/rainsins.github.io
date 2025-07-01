@@ -90,6 +90,38 @@ async function send_message() {
         }
     }
 
+    function setArtplayerPoster(art, posterUrl) {
+        try {
+
+            art.poster = posterUrl;
+
+
+            const posterElement = art.template?.$poster;
+            if (posterElement) {
+                posterElement.style.display = 'block';
+                posterElement.style.backgroundImage = `url("${posterUrl}")`;
+                posterElement.style.backgroundSize = 'cover';
+                posterElement.style.backgroundPosition = 'center';
+                posterElement.style.backgroundRepeat = 'no-repeat';
+                posterElement.style.opacity = '1';
+            }
+
+
+            if (art.video) {
+                art.video.poster = posterUrl;
+            }
+
+
+            if (typeof art.emit === 'function') {
+                art.emit('poster', posterUrl);
+            }
+
+            console.log('Poster set successfully:', posterUrl);
+        } catch (error) {
+            console.error('Error setting poster:', error);
+        }
+    }
+
     if (!isLoad) {
         fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
             .then((response) => {
@@ -111,7 +143,8 @@ async function send_message() {
                     const playlistData = data.map(item => ({
                         url: item.play,
                         title: item.title,
-                        poster: item.poster
+                        poster: item.poster,
+                        fanart: item.fanart
                     }));
 
                     art = new Artplayer({
@@ -120,7 +153,7 @@ async function send_message() {
                         type: 'mpd',
                         theme: "#2c9678",
                         title: playlistData[0]?.title || 'Start-111-Uc',
-                        poster: playlistData[0]?.poster || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/poster.webp',
+                        poster: playlistData[0]?.fanart || 'https://seacloud.cpolar.cn/dash-av/Start-111-Uc/fanart.webp',
                         flip: true,
                         playbackRate: true,
                         screenshot: true,
@@ -140,7 +173,15 @@ async function send_message() {
                             rebuildPlayer: false,
                             onchanged: async (item) => {
                                 console.log('Playing:', item.title);
+                                art.pause();
+                                art.currentTime = 0;
+                                if (art.video) {
+                                    art.video.style.opacity = '0';
+                                }
+
                                 const currentIndex = art.currentPlaylistIndex;
+
+                                setArtplayerPoster(art, playlistData[currentIndex].fanart);
                                 updateVideoInfo(data[currentIndex]);
                             },
                             autoNext: true,
