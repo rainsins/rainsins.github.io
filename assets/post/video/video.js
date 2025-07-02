@@ -135,8 +135,7 @@ async function send_message() {
                     <div class="still-loading">加载中...</div>
                     <img src="${url}" alt="剧照${index + 1}" 
                          style="opacity: 0;" 
-                         onload="this.style.opacity=1; this.previousElementSibling.style.display='none';" 
-                         onerror="this.parentElement.innerHTML='<div class=\\"still-loading\\">加载失败</div>'">
+                         onload="this.style.opacity=1; this.previousElementSibling.style.display='none';" >
                     <div class="cache-indicator"></div>
                 </div>
             `).join('');
