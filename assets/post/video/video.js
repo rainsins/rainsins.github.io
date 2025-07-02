@@ -1,5 +1,67 @@
 window.isLoad = false;
 let art = null;
+let imageCache = new Map(); 
+function preloadImage(url) {
+    return new Promise((resolve, reject) => {
+        if (imageCache.has(url)) {
+            resolve(imageCache.get(url));
+            return;
+        }
+
+        const img = new Image();
+        img.onload = () => {
+            imageCache.set(url, img);
+            resolve(img);
+        };
+        img.onerror = reject;
+        img.src = url;
+    });
+}
+
+async function preloadImages(urls) {
+    const promises = urls.map(url => preloadImage(url).catch(() => null));
+    return Promise.allSettled(promises);
+}
+
+// 图片预览功能
+function openImageModal(src) {
+    const modal = document.getElementById('imageModal');
+    if (!modal) {
+        const modalHtml = `
+            <div id="imageModal" class="image-modal">
+                <span class="close-btn" onclick="closeImageModal()">&times;</span>
+                <img id="modalImage" src="" alt="预览图片">
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+        
+     
+        const newModal = document.getElementById('imageModal');
+        newModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeImageModal();
+            }
+        });
+    }
+    
+    const modalImg = document.getElementById('modalImage');
+    modalImg.src = src;
+    document.getElementById('imageModal').style.display = 'flex';
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeImageModal();
+    }
+});
+
 
 function playMpd(video, url, art) {
     if (dashjs.supportsMediaSource()) {
@@ -30,6 +92,11 @@ function playM3u8(video, url, art) {
 
 async function send_message() {
     const password = $("#email-field").val();
+    
+    if (!password) {
+        Qmsg?.error("请输入密码！") || alert("请输入密码！");
+        return;
+    }
 
     const key = CryptoJS.enc.Utf8.parse('qfqf0kqcajzoa04h');
     const iv = CryptoJS.enc.Utf8.parse('4517229305703582');
@@ -47,54 +114,105 @@ async function send_message() {
             return;
         }
 
-        const title = item.info.title || '标题加载失败';
-        const plot = item.info.plot.replace('<![CDATA[', '').replace(']]>', '') || '暂无简介';
+        const title = item.info?.title || item.title || '标题加载失败';
+        const plot = item.info?.plot?.replace('<![CDATA[', '').replace(']]>', '') || '暂无简介';
         const poster = item.poster || 'https://myapi.rainsin.cn/pics-dmm/default';
-        const director = item.info.director || '未知';
-        const studio = item.info.studio || '未知';
-        const year = item.info.year || '未知';
-        const runtime = item.info.runtime || '未知';
+        const director = item.info?.director || '未知';
+        const studio = item.info?.studio || '未知';
+        const year = item.info?.year || '未知';
+        const runtime = item.info?.runtime || '未知';
 
-        const actors = item.info.actor.map(a => a.replace(/<name>|<\/name>|<type>.*<\/type>/gs, '').trim()).join(', ');
-        const genresHtml = item.info.genre.map(g => `<span class="tag">${g}</span>`).join('');
+        const actors = item.info?.actor?.map(a => 
+            typeof a === 'string' ? a.replace(/<name>|<\/name>|<type>.*<\/type>/gs, '').trim() : a
+        ).join(', ') || '未知';
+        
+        const genresHtml = item.info?.genre?.map(g => `<span class="video-tag">${g}</span>`).join('') || '';
 
+        let stillsHtml = '';
+        if (item.extrafanart && Array.isArray(item.extrafanart) && item.extrafanart.length > 0) {
+            const stillsItems = item.extrafanart.map((url, index) => `
+                <div class="still-item" onclick="openImageModal('${url}')">
+                    <div class="still-loading">加载中...</div>
+                    <img src="${url}" alt="剧照${index + 1}" 
+                         style="opacity: 0;" 
+                         onload="this.style.opacity=1; this.previousElementSibling.style.display='none';" 
+                         onerror="this.parentElement.innerHTML='<div class=\\"still-loading\\">加载失败</div>'">
+                    <div class="cache-indicator"></div>
+                </div>
+            `).join('');
+
+            stillsHtml = `
+                <div class="stills-section">
+                    <h3 class="stills-title">剧照 (${item.extrafanart.length})</h3>
+                    <div class="stills-grid">
+                        ${stillsItems}
+                    </div>
+                </div>
+            `;
+        }
 
         const newHtml = `
-        <div class="video-info-grid">
-            <div class="info-poster">
-                <img src="${poster}" alt="${title} Poster">
+            <div class="video-info-header">
+                <h2 class="video-info-title">${title}</h2>
             </div>
-            <div class="info-details">
-                <h2>${title}</h2>
-                <div class="info-meta">
-                    <span><strong>导演:</strong> ${director}</span>
-                    <span><strong>片商:</strong> ${studio}</span>
-                    <span><strong>年份:</strong> ${year}</span>
-                    <span><strong>时长:</strong> ${runtime} 分钟</span>
+            <div class="video-info-content">
+                <div class="info-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">导演</span>
+                        <span class="meta-value">${director}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">片商</span>
+                        <span class="meta-value">${studio}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">年份</span>
+                        <span class="meta-value">${year}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">时长</span>
+                        <span class="meta-value">${runtime} 分钟</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">演员</span>
+                        <span class="meta-value">${actors}</span>
+                    </div>
                 </div>
-                 <div class="info-meta">
-                    <span><strong>演员:</strong> ${actors}</span>
-                </div>
-                <p class="info-plot">${plot}</p>
-                <div class="tags">
-                    ${genresHtml}
-                </div>
+                
+                <div class="info-plot">${plot}</div>
+                
+                ${genresHtml ? `
+                    <div class="tags-section">
+                        <div class="tags-title">标签</div>
+                        <div class="video-tags">
+                            ${genresHtml}
+                        </div>
+                    </div>
+                ` : ''}
+                
+                ${stillsHtml}
             </div>
-        </div>
-    `;
+        `;
 
         infoContainer.html(newHtml);
 
         if (!infoContainer.hasClass('visible')) {
             setTimeout(() => infoContainer.addClass('visible'), 50);
         }
+
+
+        if (item.extrafanart && Array.isArray(item.extrafanart)) {
+            preloadImages(item.extrafanart).then(() => {
+                // 显示缓存指示器
+                $('.cache-indicator').addClass('visible');
+                console.log('剧照预加载完成');
+            });
+        }
     }
 
     function setArtplayerPoster(art, posterUrl) {
         try {
-
             art.poster = posterUrl;
-
 
             const posterElement = art.template?.$poster;
             if (posterElement) {
@@ -106,11 +224,9 @@ async function send_message() {
                 posterElement.style.opacity = '1';
             }
 
-
             if (art.video) {
                 art.video.poster = posterUrl;
             }
-
 
             if (typeof art.emit === 'function') {
                 art.emit('poster', posterUrl);
@@ -123,29 +239,41 @@ async function send_message() {
     }
 
     if (!isLoad) {
+  
+        $("#subscribe-button").val("加载中...").prop('disabled', true);
+        
         fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == 404) {
-                    Qmsg.error("哎呀，密码不对！🤡");
+                    Qmsg?.error("哎呀，密码不对！🤡") || alert("密码不对！");
                     isLoad = false;
+                    $("#subscribe-button").val("Subscribe").prop('disabled', false);
                     return false;
                 } else {
                     return response.json();
                 }
             })
             .then(async (data) => {
+                $("#subscribe-button").val("Subscribe").prop('disabled', false);
+                
                 if (data && Array.isArray(data)) {
-
                     if (art) {
                         art.destroy();
                     }
+                    
                     const playlistData = data.map(item => ({
                         url: item.play,
                         title: item.title,
                         poster: item.poster,
                         fanart: item.fanart
                     }));
+
+                    if (typeof Artplayer === 'undefined') {
+                        console.error('Artplayer未加载');
+                        Qmsg?.error("播放器加载失败！") || alert("播放器加载失败！");
+                        return;
+                    }
 
                     art = new Artplayer({
                         container: '#video-box',
@@ -165,6 +293,7 @@ async function send_message() {
                         miniProgressBar: true,
                         playsInline: true,
                         setting: true,
+                        autoplay: false,
                         customType: {
                             mpd: playMpd
                         },
@@ -172,35 +301,40 @@ async function send_message() {
                         plugins: [artplayerPlaylist({
                             rebuildPlayer: false,
                             onchanged: async (item) => {
-                                console.log('Playing:', item.title);
+                                console.log('Switched to:', item.title);
+        
                                 art.pause();
                                 art.currentTime = 0;
                                 if (art.video) {
                                     art.video.style.opacity = '0';
+                                    setTimeout(() => {
+                                        art.video.style.opacity = '1';
+                                    }, 100);
                                 }
 
                                 const currentIndex = art.currentPlaylistIndex;
-
                                 setArtplayerPoster(art, playlistData[currentIndex].fanart);
                                 updateVideoInfo(data[currentIndex]);
                             },
-                            autoNext: true,
+                            autoNext: false,
                             showText: true,
                             playlist: playlistData
                         })]
                     });
+
                     updateVideoInfo(data[0]);
 
                     $("#middle").hide();
                     console.log(`Loaded ${data.length} videos.`);
                 } else {
-                 Qmsg.warning("没有找到视频数据。");
-                };
+                    Qmsg?.warning("没有找到视频数据。") || alert("没有找到视频数据。");
+                }
                 isLoad = false;
             })
             .catch((error) => {
                 console.error('Error loading video data:', error);
-                Qmsg.error("加载视频数据失败！");
+                Qmsg?.error("加载视频数据失败！") || alert("加载视频数据失败！");
+                $("#subscribe-button").val("Subscribe").prop('disabled', false);
                 isLoad = false;
             });
     }
