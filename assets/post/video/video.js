@@ -241,7 +241,7 @@ async function send_message() {
   
         $("#subscribe-button").val("加载中...").prop('disabled', true);
         
-        fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
+        fetch(`https://myapi.hk.cpolar.io/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == 404) {
