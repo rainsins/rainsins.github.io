@@ -9,7 +9,6 @@ if RUBY_VERSION =~ /1.9/
 end
 
 gem "jekyll", "~> 4.3"
-gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
