@@ -8,8 +8,6 @@ if RUBY_VERSION =~ /1.9/
   Encoding.default_internal = Encoding::UTF_8
 end
 
-gemspec
-
 gem "jekyll", "~> 4.3"
 gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
 
