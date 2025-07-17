@@ -8,6 +8,7 @@ if RUBY_VERSION =~ /1.9/
   Encoding.default_internal = Encoding::UTF_8
 end
 
+
 gem "jekyll", "~> 4.3"
 
 group :jekyll_plugins do
