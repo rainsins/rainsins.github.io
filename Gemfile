@@ -10,31 +10,28 @@ end
 
 gemspec
 
-group :test do
-  gem "html-proofer", "~> 4.4"
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-archives"
+  gem "jekyll-sitemap"
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
+# Only include html-proofer in development, not in production
+group :development, :test do
+  gem "html-proofer"
 end
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
-# do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
-# Lock jekyll-sass-converter to 2.x on Linux-musl
-# if RUBY_PLATFORM =~ /linux-musl/
-#   gem "jekyll-sass-converter", "~> 2.0"
-# end
-
-#gem "kramdown-parser-gfm"
-#gem "github-pages", "~> 228", group: :jekyll_plugins
+# Windows and JRuby specific gems
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "wdm", "~> 0.1.1", platforms: [:mingw, :mswin, :x64_mingw]
+gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
 
 group :jekyll_plugins do
   gem 'jekyll-brotli'

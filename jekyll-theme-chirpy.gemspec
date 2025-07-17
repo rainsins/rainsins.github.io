@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-# encoding: utf-8
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
@@ -11,26 +10,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/cotes2020/jekyll-theme-chirpy"
   spec.license       = "MIT"
 
-  # 改用更安全的文件列表方式
-  spec.files         = Dir.glob("**/*").select { |f|
-    File.file?(f) && f.match(%r!^((_(includes|layouts|sass|app|(data\/(locales|origin)))|assets)\/|README|LICENSE)!i)
-  }
+  # 避免使用 git ls-files，改用简单的文件列表
+  spec.files         = %w[README.md LICENSE]
+  spec.require_paths = ["lib"]
 
-  spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy/issues",
-    "documentation_uri" => "https://github.com/cotes2020/jekyll-theme-chirpy/#readme",
-    "homepage_uri"      => "https://cotes2020.github.io/chirpy-demo",
-    "source_code_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy",
-    "wiki_uri"          => "https://github.com/cotes2020/jekyll-theme-chirpy/wiki",
-    "plugin_type"       => "theme"
-  }
-
-  spec.required_ruby_version = ">= 3.3"
-
-  spec.add_runtime_dependency "jekyll", "~> 4.3"
-  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
-  spec.add_runtime_dependency "jekyll-redirect-from", "~> 0.16"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8"
-  spec.add_runtime_dependency "jekyll-archives", "~> 2.2"
-  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.required_ruby_version = ">= 3.0"
 end
