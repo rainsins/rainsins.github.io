@@ -19,7 +19,6 @@ font/
 */package-lock.json
 package-lock.json
 .idea/
-jekyll-theme-chirpy.gemspec
 webhook.js
 deploy.sh
 yarn.lock
