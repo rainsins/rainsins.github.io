@@ -114,6 +114,9 @@
     window.load_event = {
       ...window.load_event,
       comments: () => {
+        
+        Artalk.use(ArtalkPlugins.ArtalkMusicPlugin);
+        
         const artalk = Artalk.init({
           el: '#tcomment',
           server: 'https://waline.cpolar.cn',
