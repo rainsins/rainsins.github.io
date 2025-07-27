@@ -131,7 +131,13 @@
               el: '#tcomment',
               server: 'https://waline.cpolar.cn',
               darkMode: document.documentElement.dataset.mode == "dark",
-              site: 'Rainsin\'s Blog'
+              site: 'Rainsin\'s Blog',
+              emoticons:
+    'https://cdn.rainsin.cn/EmojiPackage/emoji_config.json',
+    gravatar: {
+  mirror: 'https://gravatar.rainsin.cn/avatar/',
+  default: 'https://source.rainsin.cn/img/comment/act.gif',
+}
             });
             document.getElementsByClassName("atk-copyright")[0] ? document.getElementsByClassName("atk-copyright")[0].style.display = "none" : ""; 
           }
