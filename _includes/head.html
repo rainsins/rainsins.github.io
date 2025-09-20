@@ -113,7 +113,7 @@
 
   <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-music.js"></script>
   <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-video.js"></script>
-  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-ad.js"></script>
+  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-file.js"></script>
 
   <script>
     window.load_event = {
@@ -122,7 +122,7 @@
         
         Artalk.use(ArtalkPlugins.ArtalkMusicPlugin);
         Artalk.use(ArtalkPlugins.ArtalkVideoPlugin);
-        Artalk.use(ArtalkPlugins.ArtalkAdsPlugin);
+        Artalk.use(ArtalkPlugins.ArtalkFileSharePlugin);
 
         const artalk = Artalk.init({
           el: '#tcomment',
