@@ -1,47 +1,25 @@
+<!-- _includes/embed/notion.html -->
 <style>
   :root {
-    --notion-bg: #FFFFFF;
-    --notion-card-bg: #FFFFFF;
-    --notion-card-hover-bg: #F7F7F5;
-    --notion-text-primary: #191919;
-    --notion-text-secondary: #787774;
-    --notion-border: rgba(0, 0, 0, 0.09);
-    
-    /* Notion Tag Colors */
-    --notion-tag-gray-bg: #E3E2E0; --notion-tag-gray-text: #434342;
-    --notion-tag-brown-bg: #EAD9D9; --notion-tag-brown-text: #694C4C;
-    --notion-tag-orange-bg: #FDE9D0; --notion-tag-orange-text: #715535;
-    --notion-tag-yellow-bg: #FEF3D1; --notion-tag-yellow-text: #6F5E33;
-    --notion-tag-green-bg: #D4EDDB; --notion-tag-green-text: #325A3E;
-    --notion-tag-blue-bg: #D2E7F8; --notion-tag-blue-text: #2B4C69;
-    --notion-tag-purple-bg: #E6DEFA; --notion-tag-purple-text: #5D437A;
-    --notion-tag-pink-bg: #F5E1EB; --notion-tag-pink-text: #754460;
-    --notion-tag-red-bg: #FBE4E4; --notion-tag-red-text: #733B3B;
+    --card-compact-bg: #ffffff;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --card-compact-border: #e9ecef;
+    --card-compact-text-primary: #343a40;
+    --card-compact-text-secondary: #868e96;
+    --card-compact-accent-color: #0d6efd;
+    --card-compact-rating-color: #f5b72e;
   }
 
   html[data-mode='dark'] {
-    --notion-bg: #1F1F1F;
-    --notion-card-bg: #262626;
-    --notion-card-hover-bg: #303030;
-    --notion-text-primary: #E3E3E3;
-    --notion-text-secondary: #9B9A97;
-    --notion-border: rgba(255, 255, 255, 0.09);
-
-    /* Notion Dark Tag Colors */
-    --notion-tag-gray-bg: #373737; --notion-tag-gray-text: #BEBEBE;
-    --notion-tag-brown-bg: #4B3C38; --notion-tag-brown-text: #D2BFAE;
-    --notion-tag-orange-bg: #59442B; --notion-tag-orange-text: #FBC577;
-    --notion-tag-yellow-bg: #5A502A; --notion-tag-yellow-text: #F6DD75;
-    --notion-tag-green-bg: #2B4434; --notion-tag-green-text: #90C59E;
-    --notion-tag-blue-bg: #283F54; --notion-tag-blue-text: #9CC2E6;
-    --notion-tag-purple-bg: #45355B; --notion-tag-purple-text: #C4AEEF;
-    --notion-tag-pink-bg: #573549; --notion-tag-pink-text: #E8A9CB;
-    --notion-tag-red-bg: #5C3232; --notion-tag-red-text: #F6A5A5;
+    --card-compact-bg: #2d2d2d;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --card-compact-border: #444;
+    --card-compact-text-primary: #f8f9fa;
+    --card-compact-text-secondary: #adb5bd;
   }
 
   .notion-gallery-container {
-    background-color: var(--notion-bg);
-    padding: 1rem 0;
+    margin: 2rem 0;
   }
 
   .notion-gallery-header {
@@ -49,7 +27,7 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--notion-text-primary);
+    color: var(--card-compact-text-primary);
     margin-bottom: 1.5rem;
     padding-left: 0.25rem;
   }
@@ -57,214 +35,293 @@
   .notion-gallery-header i {
     font-size: 1.25rem;
     margin-right: 0.75rem;
-    color: var(--notion-text-secondary);
+    color: var(--card-compact-text-secondary);
   }
 
-  .notion-grid {
+  .media-grid-compact {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
   }
 
-  .notion-card {
-    background-color: var(--notion-card-bg);
-    border: 1px solid var(--notion-border);
-    border-radius: 6px;
-    text-decoration: none;
-    display: block;
+  .media-card-compact {
+    background-color: var(--card-compact-bg);
+    border-radius: 8px;
     overflow: hidden;
-    transition: background-color 0.2s ease;
-    /* 确保卡片有正确的结构 */
-    position: relative;
+    box-shadow: var(--card-compact-shadow);
+    border: 1px solid var(--card-compact-border);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
   }
 
-  .notion-card:hover {
-    background-color: var(--notion-card-hover-bg);
+  .media-card-compact:hover {
+    border-color: var(--card-compact-accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
 
-  .notion-cover {
-    height: 160px;
-    background-color: var(--notion-card-hover-bg);
-    border-bottom: 1px solid var(--notion-border);
-    /* 关键修复：确保图片容器的定位和溢出处理 */
-    position: relative;
+  /* 修复：使用固定高度而不是 padding-top */
+  .item-cover-compact {
+    height: 280px;
     overflow: hidden;
+    position: relative;
+    background-color: var(--card-compact-border);
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .notion-cover img {
+  .item-cover-compact a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .item-cover-compact img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 确保图片正确显示 */
+    transition: transform 0.3s ease;
     display: block;
-    border: none;
-    outline: none;
-    /* 防止图片拖拽 */
-    user-select: none;
-    pointer-events: none;
   }
 
-  /* 如果没有图片时的占位符样式 */
-  .notion-cover:empty {
-    background-color: var(--notion-card-hover-bg);
-    border-bottom: 1px solid var(--notion-border);
+  .item-cover-compact:hover img {
+    transform: scale(1.05);
   }
 
-  /* 图片加载失败时的处理 */
-  .notion-cover img:not([src]),
-  .notion-cover img[src=""] {
-    display: none;
+  /* 图片占位符 */
+  .item-cover-compact::before {
+    content: "📚";
+    font-size: 3rem;
+    color: var(--card-compact-text-secondary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
   }
 
-  .notion-properties {
-    padding: 0.75rem 1rem;
-    /* 确保内容区域不会被图片影响 */
+  .item-cover-compact img {
     position: relative;
     z-index: 1;
   }
-  
-  .notion-title {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--notion-text-primary);
-    margin-bottom: 0.75rem;
-    /* 防止标题被图片覆盖 */
-    word-wrap: break-word;
-    word-break: break-word;
-  }
 
-  .notion-title i {
-    font-size: 0.9rem;
-    margin-right: 0.5rem;
-    flex-shrink: 0;
-  }
-  
-  .notion-prop-list {
-    font-size: 0.875rem;
-    color: var(--notion-text-secondary);
-  }
-  
-  .notion-prop {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .notion-prop-name {
-    width: 60px;
-    white-space: nowrap;
-    color: var(--notion-text-secondary);
-    flex-shrink: 0;
-  }
-  
-  .notion-prop-value {
-    display: flex;
-    align-items: center;
+  .item-info-compact {
+    padding: 1rem;
     flex: 1;
-    min-width: 0;
+    display: flex;
+    flex-direction: column;
   }
-  
-  .notion-prop-text {
-    white-space: nowrap;
+
+  .item-title-compact {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-    color: var(--notion-text-primary);
   }
 
-  .notion-tag {
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 2px 8px;
+  .item-title-compact a {
+    color: var(--card-compact-text-primary);
+    text-decoration: none;
+  }
+
+  .item-title-compact a:hover {
+    color: var(--card-compact-accent-color);
+  }
+
+  .item-meta-compact {
+    font-size: 0.8rem;
+    color: var(--card-compact-text-secondary);
+    margin: 0 0 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .item-meta-compact i { 
+    margin-right: 0.5rem; 
+    width: 14px;
+    text-align: center;
+  }
+
+  .item-summary {
+    font-size: 0.8rem;
+    color: var(--card-compact-text-secondary);
+    margin: 0 0 0.75rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .item-tags {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .item-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    background: var(--card-compact-border);
+    color: var(--card-compact-text-secondary);
     border-radius: 4px;
-    display: inline-block;
-    margin-right: 4px;
-    margin-bottom: 2px;
-  }
-  
-  .tag-gray { background-color: var(--notion-tag-gray-bg); color: var(--notion-tag-gray-text); }
-  .tag-brown { background-color: var(--notion-tag-brown-bg); color: var(--notion-tag-brown-text); }
-  .tag-orange { background-color: var(--notion-tag-orange-bg); color: var(--notion-tag-orange-text); }
-  .tag-yellow { background-color: var(--notion-tag-yellow-bg); color: var(--notion-tag-yellow-text); }
-  .tag-green { background-color: var(--notion-tag-green-bg); color: var(--notion-tag-green-text); }
-  .tag-blue { background-color: var(--notion-tag-blue-bg); color: var(--notion-tag-blue-text); }
-  .tag-purple { background-color: var(--notion-tag-purple-bg); color: var(--notion-tag-purple-text); }
-  .tag-pink { background-color: var(--notion-tag-pink-bg); color: var(--notion-tag-pink-text); }
-  .tag-red { background-color: var(--notion-tag-red-bg); color: var(--notion-tag-red-text); }
-
-  .notion-prop-rating {
-    color: #F5A623; /* 星星颜色在亮暗模式下保持一致 */
+    font-weight: 500;
   }
 
-  /* 响应式处理 */
+  .item-date {
+    font-size: 0.75rem;
+    color: var(--card-compact-text-secondary);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  .item-rating-compact {
+    margin-top: auto;
+    color: var(--card-compact-rating-color);
+    font-size: 0.9rem;
+  }
+
+  .item-rating-compact .fa-regular {
+    color: var(--card-compact-text-secondary);
+  }
+
+  /* 状态标签 */
+  .status-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    z-index: 2;
+  }
+
+  /* Notion 标签颜色系统 */
+  .status-tag.gray { background: #E3E2E0; color: #434342; }
+  .status-tag.brown { background: #EAD9D9; color: #694C4C; }
+  .status-tag.orange { background: #FDE9D0; color: #715535; }
+  .status-tag.yellow { background: #FEF3D1; color: #6F5E33; }
+  .status-tag.green { background: #D4EDDB; color: #325A3E; }
+  .status-tag.blue { background: #D2E7F8; color: #2B4C69; }
+  .status-tag.purple { background: #E6DEFA; color: #5D437A; }
+  .status-tag.pink { background: #F5E1EB; color: #754460; }
+  .status-tag.red { background: #FBE4E4; color: #733B3B; }
+
+  /* 暗色模式下的标签颜色 */
+  html[data-mode='dark'] .status-tag.gray { background: #373737; color: #BEBEBE; }
+  html[data-mode='dark'] .status-tag.brown { background: #4B3C38; color: #D2BFAE; }
+  html[data-mode='dark'] .status-tag.orange { background: #59442B; color: #FBC577; }
+  html[data-mode='dark'] .status-tag.yellow { background: #5A502A; color: #F6DD75; }
+  html[data-mode='dark'] .status-tag.green { background: #2B4434; color: #90C59E; }
+  html[data-mode='dark'] .status-tag.blue { background: #283F54; color: #9CC2E6; }
+  html[data-mode='dark'] .status-tag.purple { background: #45355B; color: #C4AEEF; }
+  html[data-mode='dark'] .status-tag.pink { background: #573549; color: #E8A9CB; }
+  html[data-mode='dark'] .status-tag.red { background: #5C3232; color: #F6A5A5; }
+
+  /* 响应式 */
   @media (max-width: 768px) {
-    .notion-grid {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .media-grid-compact {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 1rem;
     }
     
-    .notion-cover {
-      height: 120px;
+    .item-cover-compact {
+      height: 220px;
+    }
+    
+    .item-info-compact {
+      padding: 0.75rem;
     }
   }
 </style>
 
 <div class="notion-gallery-container">
   {% if include.title %}
-    <div class="notion-gallery-header">
-      <i class="{{ include.icon }}"></i> <span>{{ include.title }}</span>
-    </div>
+  <div class="notion-gallery-header">
+    {% if include.icon %}<i class="{{ include.icon }}"></i>{% endif %}
+    {{ include.title }}
+  </div>
   {% endif %}
 
-  <div class="notion-grid">
+  <div class="media-grid-compact">
     {% for item in include.collection %}
-      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="notion-card">
-        <div class="notion-cover">
-          <img src="{{ item.cover }}" alt="{{ item.title }} 封面" loading="lazy">
-        </div>
-        <div class="notion-properties">
-          <div class="notion-title">
-            {% if include.type == 'book' %}
-              <i class="fa-regular fa-file-lines fa-fw"></i>
-            {% elsif include.type == 'movie' %}
-              <i class="fa-solid fa-film fa-fw"></i>
-            {% elsif include.type == 'music' %}
-              <i class="fa-solid fa-music fa-fw"></i>
-            {% endif %}
-            {{ item.title }}
-          </div>
+      <div class="media-card-compact {{ include.type }}-card">
+        <div class="item-cover-compact">
+          {% if item.status %}
+            <span class="status-tag {{ item.status_color | default: 'blue' }}">{{ item.status }}</span>
+          {% endif %}
           
-          <div class="notion-prop-list">
-            <div class="notion-prop">
-              <div class="notion-prop-name">状态</div>
-              <div class="notion-prop-value">
-                <span class="notion-tag tag-{{ item.status_color | default: 'gray' }}">{{ item.status }}</span>
-              </div>
-            </div>
-            
-            <div class="notion-prop">
-              <div class="notion-prop-name">
-                {% if include.type == 'book' %}作者{% elsif include.type == 'movie' %}导演{% elsif include.type == 'music' %}艺术家{% endif %}
-              </div>
-              <div class="notion-prop-value notion-prop-text">
-                {{ item.author | default: item.director | default: item.artist }}
-              </div>
-            </div>
-            
-            <div class="notion-prop">
-              <div class="notion-prop-name">评分</div>
-              <div class="notion-prop-value notion-prop-rating">
-                {% for i in (1..5) %}{% if i <= item.rating %}<i class="fa-solid fa-star"></i>{% else %}<i class="fa-regular fa-star"></i>{% endif %}{% endfor %}
-              </div>
-            </div>
-
-          </div>
+          {% if item.url %}
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.title }}">
+          {% endif %}
+          
+          {% if item.cover %}
+            <img src="{{ item.cover }}" alt="{{ item.title }} 封面" loading="lazy" 
+                 onerror="this.style.display='none';">
+          {% endif %}
+          
+          {% if item.url %}
+            </a>
+          {% endif %}
         </div>
-      </a>
+        
+        <div class="item-info-compact">
+          <h3 class="item-title-compact">
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </h3>
+          
+          {% if item.author %}
+            <p class="item-meta-compact">
+              <i class="fa-solid fa-pen-nib fa-fw"></i> 
+              {{ item.author }}
+            </p>
+          {% endif %}
+
+          {% if item.date %}
+            <div class="item-date">
+              <i class="fa-solid fa-calendar fa-fw"></i> {{ item.date }}
+            </div>
+          {% endif %}
+
+          {% if item.summary %}
+            <div class="item-summary">{{ item.summary }}</div>
+          {% endif %}
+
+          {% if item.tags and item.tags.size > 0 %}
+            <div class="item-tags">
+              {% for tag in item.tags %}
+                <span class="item-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          {% if item.rating %}
+            <div class="item-rating-compact">
+              {% for i in (1..5) %}
+                {% if i <= item.rating %}
+                  <i class="fa-solid fa-star"></i>
+                {% else %}
+                  <i class="fa-regular fa-star"></i>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   </div>
 </div>
