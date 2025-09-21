@@ -74,6 +74,8 @@
     display: block;
     overflow: hidden;
     transition: background-color 0.2s ease;
+    /* 确保卡片有正确的结构 */
+    position: relative;
   }
 
   .notion-card:hover {
@@ -84,16 +86,44 @@
     height: 160px;
     background-color: var(--notion-card-hover-bg);
     border-bottom: 1px solid var(--notion-border);
+    /* 关键修复：确保图片容器的定位和溢出处理 */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .notion-cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* 确保图片正确显示 */
+    display: block;
+    border: none;
+    outline: none;
+    /* 防止图片拖拽 */
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* 如果没有图片时的占位符样式 */
+  .notion-cover:empty {
+    background-color: var(--notion-card-hover-bg);
+    border-bottom: 1px solid var(--notion-border);
+  }
+
+  /* 图片加载失败时的处理 */
+  .notion-cover img:not([src]),
+  .notion-cover img[src=""] {
+    display: none;
   }
 
   .notion-properties {
     padding: 0.75rem 1rem;
+    /* 确保内容区域不会被图片影响 */
+    position: relative;
+    z-index: 1;
   }
   
   .notion-title {
@@ -103,11 +133,15 @@
     font-weight: 500;
     color: var(--notion-text-primary);
     margin-bottom: 0.75rem;
+    /* 防止标题被图片覆盖 */
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   .notion-title i {
     font-size: 0.9rem;
     margin-right: 0.5rem;
+    flex-shrink: 0;
   }
   
   .notion-prop-list {
@@ -125,6 +159,7 @@
     width: 60px;
     white-space: nowrap;
     color: var(--notion-text-secondary);
+    flex-shrink: 0;
   }
   
   .notion-prop-value {
@@ -147,6 +182,8 @@
     padding: 2px 8px;
     border-radius: 4px;
     display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 2px;
   }
   
   .tag-gray { background-color: var(--notion-tag-gray-bg); color: var(--notion-tag-gray-text); }
@@ -161,6 +198,18 @@
 
   .notion-prop-rating {
     color: #F5A623; /* 星星颜色在亮暗模式下保持一致 */
+  }
+
+  /* 响应式处理 */
+  @media (max-width: 768px) {
+    .notion-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    
+    .notion-cover {
+      height: 120px;
+    }
   }
 </style>
 
