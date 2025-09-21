@@ -1,0 +1,221 @@
+<style>
+  :root {
+    --notion-bg: #FFFFFF;
+    --notion-card-bg: #FFFFFF;
+    --notion-card-hover-bg: #F7F7F5;
+    --notion-text-primary: #191919;
+    --notion-text-secondary: #787774;
+    --notion-border: rgba(0, 0, 0, 0.09);
+    
+    /* Notion Tag Colors */
+    --notion-tag-gray-bg: #E3E2E0; --notion-tag-gray-text: #434342;
+    --notion-tag-brown-bg: #EAD9D9; --notion-tag-brown-text: #694C4C;
+    --notion-tag-orange-bg: #FDE9D0; --notion-tag-orange-text: #715535;
+    --notion-tag-yellow-bg: #FEF3D1; --notion-tag-yellow-text: #6F5E33;
+    --notion-tag-green-bg: #D4EDDB; --notion-tag-green-text: #325A3E;
+    --notion-tag-blue-bg: #D2E7F8; --notion-tag-blue-text: #2B4C69;
+    --notion-tag-purple-bg: #E6DEFA; --notion-tag-purple-text: #5D437A;
+    --notion-tag-pink-bg: #F5E1EB; --notion-tag-pink-text: #754460;
+    --notion-tag-red-bg: #FBE4E4; --notion-tag-red-text: #733B3B;
+  }
+
+  html[data-mode='dark'] {
+    --notion-bg: #1F1F1F;
+    --notion-card-bg: #262626;
+    --notion-card-hover-bg: #303030;
+    --notion-text-primary: #E3E3E3;
+    --notion-text-secondary: #9B9A97;
+    --notion-border: rgba(255, 255, 255, 0.09);
+
+    /* Notion Dark Tag Colors */
+    --notion-tag-gray-bg: #373737; --notion-tag-gray-text: #BEBEBE;
+    --notion-tag-brown-bg: #4B3C38; --notion-tag-brown-text: #D2BFAE;
+    --notion-tag-orange-bg: #59442B; --notion-tag-orange-text: #FBC577;
+    --notion-tag-yellow-bg: #5A502A; --notion-tag-yellow-text: #F6DD75;
+    --notion-tag-green-bg: #2B4434; --notion-tag-green-text: #90C59E;
+    --notion-tag-blue-bg: #283F54; --notion-tag-blue-text: #9CC2E6;
+    --notion-tag-purple-bg: #45355B; --notion-tag-purple-text: #C4AEEF;
+    --notion-tag-pink-bg: #573549; --notion-tag-pink-text: #E8A9CB;
+    --notion-tag-red-bg: #5C3232; --notion-tag-red-text: #F6A5A5;
+  }
+
+  .notion-gallery-container {
+    background-color: var(--notion-bg);
+    padding: 1rem 0;
+  }
+
+  .notion-gallery-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--notion-text-primary);
+    margin-bottom: 1.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .notion-gallery-header i {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+    color: var(--notion-text-secondary);
+  }
+
+  .notion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .notion-card {
+    background-color: var(--notion-card-bg);
+    border: 1px solid var(--notion-border);
+    border-radius: 6px;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+  }
+
+  .notion-card:hover {
+    background-color: var(--notion-card-hover-bg);
+  }
+
+  .notion-cover {
+    height: 160px;
+    background-color: var(--notion-card-hover-bg);
+    border-bottom: 1px solid var(--notion-border);
+  }
+
+  .notion-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .notion-properties {
+    padding: 0.75rem 1rem;
+  }
+  
+  .notion-title {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--notion-text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .notion-title i {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  
+  .notion-prop-list {
+    font-size: 0.875rem;
+    color: var(--notion-text-secondary);
+  }
+  
+  .notion-prop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .notion-prop-name {
+    width: 60px;
+    white-space: nowrap;
+    color: var(--notion-text-secondary);
+  }
+  
+  .notion-prop-value {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .notion-prop-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--notion-text-primary);
+  }
+
+  .notion-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .tag-gray { background-color: var(--notion-tag-gray-bg); color: var(--notion-tag-gray-text); }
+  .tag-brown { background-color: var(--notion-tag-brown-bg); color: var(--notion-tag-brown-text); }
+  .tag-orange { background-color: var(--notion-tag-orange-bg); color: var(--notion-tag-orange-text); }
+  .tag-yellow { background-color: var(--notion-tag-yellow-bg); color: var(--notion-tag-yellow-text); }
+  .tag-green { background-color: var(--notion-tag-green-bg); color: var(--notion-tag-green-text); }
+  .tag-blue { background-color: var(--notion-tag-blue-bg); color: var(--notion-tag-blue-text); }
+  .tag-purple { background-color: var(--notion-tag-purple-bg); color: var(--notion-tag-purple-text); }
+  .tag-pink { background-color: var(--notion-tag-pink-bg); color: var(--notion-tag-pink-text); }
+  .tag-red { background-color: var(--notion-tag-red-bg); color: var(--notion-tag-red-text); }
+
+  .notion-prop-rating {
+    color: #F5A623; /* 星星颜色在亮暗模式下保持一致 */
+  }
+</style>
+
+<div class="notion-gallery-container">
+  {% if include.title %}
+    <div class="notion-gallery-header">
+      <i class="{{ include.icon }}"></i> <span>{{ include.title }}</span>
+    </div>
+  {% endif %}
+
+  <div class="notion-grid">
+    {% for item in include.collection %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="notion-card">
+        <div class="notion-cover">
+          <img src="{{ item.cover }}" alt="{{ item.title }} 封面" loading="lazy">
+        </div>
+        <div class="notion-properties">
+          <div class="notion-title">
+            {% if include.type == 'book' %}
+              <i class="fa-regular fa-file-lines fa-fw"></i>
+            {% elsif include.type == 'movie' %}
+              <i class="fa-solid fa-film fa-fw"></i>
+            {% elsif include.type == 'music' %}
+              <i class="fa-solid fa-music fa-fw"></i>
+            {% endif %}
+            {{ item.title }}
+          </div>
+          
+          <div class="notion-prop-list">
+            <div class="notion-prop">
+              <div class="notion-prop-name">状态</div>
+              <div class="notion-prop-value">
+                <span class="notion-tag tag-{{ item.status_color | default: 'gray' }}">{{ item.status }}</span>
+              </div>
+            </div>
+            
+            <div class="notion-prop">
+              <div class="notion-prop-name">
+                {% if include.type == 'book' %}作者{% elsif include.type == 'movie' %}导演{% elsif include.type == 'music' %}艺术家{% endif %}
+              </div>
+              <div class="notion-prop-value notion-prop-text">
+                {{ item.author | default: item.director | default: item.artist }}
+              </div>
+            </div>
+            
+            <div class="notion-prop">
+              <div class="notion-prop-name">评分</div>
+              <div class="notion-prop-value notion-prop-rating">
+                {% for i in (1..5) %}{% if i <= item.rating %}<i class="fa-solid fa-star"></i>{% else %}<i class="fa-regular fa-star"></i>{% endif %}{% endfor %}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

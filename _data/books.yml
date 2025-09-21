@@ -3,6 +3,7 @@
   cover: "https://source.rainsin.cn/img/post/mao/%E6%96%87%E7%A8%BF.png"
   rating: 5 # 1-5 整数
   status: "想读" # 已读, 在读, 想读
+  status_color: "green" # gray, brown, orange, yellow, green, blue, purple, pink, red
   date: "1949-1976"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VYVV84bXAtUEt4R2c4YjhnS0lLT3E0QnlpSHVUdzdhaE1ucEpsdFN3WEYzVFE_ZT1XMVFNMk0.7z"
   summary: "看看历史，重新认识毛泽东。"
@@ -16,6 +17,7 @@
   cover: "https://source.rainsin.cn/img/post/mao/%E9%80%89%E9%9B%86.png"
   rating: 5
   status: "在读"
+  status_color: "gray"
   date: "1925-1957"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VlQVg5VzZOdVgxQ2ppWW1taTB3MlJjQjhmalRSaXZWSC05OTB6aExRQ2Jnc1E_ZT1xTUR6Rmw.7z"
   summary: "人手一本，脍炙人口。"
@@ -28,6 +30,7 @@
   cover: "https://www.book5.cc/wp-content/uploads/2024/02/photo_2023-03-23_21-51-47.jpg"
   rating: 5
   status: "想读"
+  status_color: "orange"
   date: "1925-1976"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VjQmFmYlpfNW50S2s3VWZQQVk3RXFZQkpFa085MHdlWE1rTmlXdzBJN3FZeHc_ZT1kbXg3eVI.7z"
   summary: "人手一本，脍炙人口。"
@@ -40,6 +43,7 @@
   cover: "https://source.rainsin.cn/img/post/mao/%E6%AF%9B%E6%80%9D%E6%83%B3%E4%B8%87%E5%B2%81.png"
   rating: 5
   status: "想读"
+  status_color: "blue"
   date: "1913-1968"
   url: "https://1drv.ms/u/c/85534a39c5d9ab87/EdfZCjj6VepPgn2-TQIsVTQB759X2GR0AMOUEXr85lSSFg?e=0q2K6t"
   summary: "毛泽东思想万岁"
