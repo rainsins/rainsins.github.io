@@ -1,0 +1,43 @@
+<style>
+  .movie-card .item-cover {
+    padding-top: 150%; /* 电影海报常见比例 */
+  }
+  
+  .item-status.watched { background: #0d6efd; }
+  .item-status.wish { background: #28a745; }
+</style>
+
+<div class="media-grid-container">
+  {% for item in site.data.movies %}
+    <div class="media-card-item movie-card">
+      <div class="item-cover">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.title }}">
+          <img src="{{ item.cover }}" alt="{{ item.title }} 海报" loading="lazy">
+        </a>
+        {% if item.status == "已看" %}
+          <span class="item-status watched">已看</span>
+        {% elsif item.status == "想看" %}
+          <span class="item-status wish">想看</span>
+        {% endif %}
+      </div>
+      <div class="item-info">
+        <h3 class="item-title">
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+        </h3>
+        <p class="item-meta"><i class="fa-solid fa-clapperboard fa-fw"></i> {{ item.director }}</p>
+        <div class="item-rating">
+          {% for i in (1..5) %}{% if i <= item.rating %}<i class="fa-solid fa-star"></i>{% else %}<i class="fa-regular fa-star"></i>{% endif %}{% endfor %}
+        </div>
+        <p class="item-summary">{{ item.summary }}</p>
+        <div class="item-footer">
+          <div class="item-tags">
+            {% for tag in item.tags limit:2 %}
+              <span>#{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <span class="item-date"><i class="fa-solid fa-calendar-days fa-fw"></i> {{ item.date | date: "%Y-%m-%d" }}</span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
