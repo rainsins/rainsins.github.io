@@ -1,8 +1,9 @@
 ---
-title: 「转载」死宅更容易变傻？
+title: 「健康科普」久坐不动真的会让大脑变笨吗？科学研究揭示真相
+author: Qbit
 date: 2024-04-01 23:44:10 +0800
-categories: [健康]
-tags: [健康, 转载]
+categories: [健康, 科学]
+tags: [健康, 科学, 大脑健康, 运动, 认知功能]
 pin: false
 math: false
 react: false
@@ -21,8 +22,8 @@ pangu: true
 favicon: heart
 
 post: true
-keywords: rainsin, blog, 健康
-author: Qbit
+keywords: rainsin, blog, 大脑健康, 缺氧研究, 运动益处, 认知功能, 科学研究, 健康生活
+description: Science最新研究发现不爱运动会导致大脑缺氧，本文详细解读大脑缺氧机制及运动对大脑健康的益处，提供科学健康建议。
 ---
 
 文章来源详见作者公众号。

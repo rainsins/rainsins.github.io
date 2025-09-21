@@ -94,12 +94,14 @@
 
   /* 图片占位符 */
   .item-cover-compact::before {
-    content: "📚";
+    font-family: "Font Awesome 6 Pro";
+    content: "\f5db";
+    font-weight: 900; /* Font Awesome Solid 需要 */
     font-size: 3rem;
     color: var(--card-compact-text-secondary);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%, -50%);
     z-index: 0;
   }

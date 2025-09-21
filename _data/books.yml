@@ -1,52 +1,55 @@
 - title: "建国以来的文稿"
   author: "毛泽东"
-  cover: "https://source.rainsin.cn/img/post/mao/%E6%96%87%E7%A8%BF.png"
-  rating: 5 # 1-5 整数
-  status: "想读" # 已读, 在读, 想读
-  status_color: "green" # gray, brown, orange, yellow, green, blue, purple, pink, red
-  date: "1949-1976"
+  cover: "https://source.rainsin.cn/img/post/mao/文稿.png"
+  rating: 5
+  status: "想读"
+  status_color: "blue"
+  date: "1949–1976"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VYVV84bXAtUEt4R2c4YjhnS0lLT3E0QnlpSHVUdzdhaE1ucEpsdFN3WEYzVFE_ZT1XMVFNMk0.7z"
-  summary: "看看历史，重新认识毛泽东。"
+  summary: "收录毛泽东建国后的重要讲话、文章和批示，是研究新中国初期历史与毛泽东思想发展的重要文献。"
   tags:
     - "党史"
-    - "毛思想"
-    - "马哲"
+    - "毛泽东"
+    - "马克思主义"
 
 - title: "毛泽东选集"
   author: "毛泽东"
-  cover: "https://source.rainsin.cn/img/post/mao/%E9%80%89%E9%9B%86.png"
+  cover: "https://source.rainsin.cn/img/post/mao/选集.png"
   rating: 5
   status: "在读"
-  status_color: "gray"
-  date: "1925-1957"
+  status_color: "yellow"
+  date: "1925–1957"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VlQVg5VzZOdVgxQ2ppWW1taTB3MlJjQjhmalRSaXZWSC05OTB6aExRQ2Jnc1E_ZT1xTUR6Rmw.7z"
-  summary: "人手一本，脍炙人口。"
+  summary: "毛泽东重要文章的精选集，涵盖革命战争时期和建国初期的理论成果，是学习毛泽东思想的基础读物。"
   tags:
     - "党史"
-    - "毛思想"
+    - "毛泽东"
+    - "马克思主义"
 
 - title: "毛泽东全集"
   author: "毛泽东"
   cover: "https://www.book5.cc/wp-content/uploads/2024/02/photo_2023-03-23_21-51-47.jpg"
   rating: 5
   status: "想读"
-  status_color: "orange"
-  date: "1925-1976"
+  status_color: "blue"
+  date: "1925–1976"
   url: "https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84NTUzNGEzOWM1ZDlhYjg3L0VjQmFmYlpfNW50S2s3VWZQQVk3RXFZQkpFa085MHdlWE1rTmlXdzBJN3FZeHc_ZT1kbXg3eVI.7z"
-  summary: "人手一本，脍炙人口。"
+  summary: "收录毛泽东一生中的绝大部分著作，包括文章、讲话、书信等，是研究毛泽东思想和中国近现代史的权威资料。"
   tags:
     - "党史"
-    - "毛思想"
+    - "毛泽东"
+    - "马克思主义"
 
 - title: "毛泽东思想万岁"
   author: "毛泽东"
-  cover: "https://source.rainsin.cn/img/post/mao/%E6%AF%9B%E6%80%9D%E6%83%B3%E4%B8%87%E5%B2%81.png"
+  cover: "https://source.rainsin.cn/img/post/mao/毛泽东思想万岁.png"
   rating: 5
   status: "想读"
   status_color: "blue"
-  date: "1913-1968"
+  date: "1913–1968"
   url: "https://1drv.ms/u/c/85534a39c5d9ab87/EdfZCjj6VepPgn2-TQIsVTQB759X2GR0AMOUEXr85lSSFg?e=0q2K6t"
-  summary: "毛泽东思想万岁"
+  summary: "一本汇编毛泽东早年至今的重要文章与讲话的合集，展现其思想演变历程与中国革命实践的紧密结合。"
   tags:
     - "党史"
-    - "毛思想"
+    - "毛泽东"
+    - "马克思主义"
