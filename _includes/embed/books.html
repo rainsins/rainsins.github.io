@@ -1,188 +1,115 @@
 <style>
   :root {
-    --card-bg: #ffffff;
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    --card-text-primary: #343a40;
-    --card-text-secondary: #868e96;
-    --card-border-color: #e9ecef;
-    --card-accent-color: #0d6efd;
-    --card-rating-color: #f5b72e;
+    --card-compact-bg: #ffffff;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --card-compact-border: #e9ecef;
+    --card-compact-text-primary: #343a40;
+    --card-compact-text-secondary: #868e96;
+    --card-compact-accent-color: #0d6efd;
+    --card-compact-rating-color: #f5b72e;
   }
 
   html[data-mode='dark'] {
-    --card-bg: #2d2d2d;
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    --card-hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-    --card-text-primary: #f8f9fa;
-    --card-text-secondary: #adb5bd;
-    --card-border-color: #444;
+    --card-compact-bg: #2d2d2d;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --card-compact-border: #444;
+    --card-compact-text-primary: #f8f9fa;
+    --card-compact-text-secondary: #adb5bd;
   }
 
-  .media-grid-container {
+  .media-grid-compact {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    /* 核心改动：减小 minmax 的最小值，让卡片更紧凑 */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
     padding-top: 1rem;
   }
 
-  .media-card-item {
-    background-color: var(--card-bg);
-    border-radius: 12px;
+  .media-card-compact {
+    background-color: var(--card-compact-bg);
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    box-shadow: var(--card-compact-shadow);
+    border: 1px solid var(--card-compact-border);
+    transition: border-color 0.3s ease; /* 简化动效 */
   }
 
-  .media-card-item:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--card-hover-shadow);
+  .media-card-compact:hover {
+    border-color: var(--card-compact-accent-color);
   }
 
-  .item-cover {
+  .item-cover-compact {
     position: relative;
-    padding-top: 141.4%; /* 书籍封面黄金比例 */
+    /* 默认给书籍封面设置 1.414 比例 */
+    padding-top: 141.4%; 
   }
 
-  .item-cover a {
-    display: block;
+  .item-cover-compact a {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
   }
   
-  .item-cover img {
+  .item-cover-compact img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
   }
 
-  .media-card-item:hover .item-cover img {
-    transform: scale(1.05);
+  .item-info-compact {
+    padding: 1rem; /* 减小内边距 */
   }
 
-  .item-status {
-    position: absolute;
-    top: 12px;
-    left: 0;
-    padding: 5px 12px 5px 15px;
-    font-size: 0.75rem;
+  .item-title-compact {
+    font-size: 1.05rem; /* 减小标题字号 */
     font-weight: 600;
-    color: #fff;
-    background: #0d6efd;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  }
-  .item-status.reading { background: #ffc107; color: #333; }
-  .item-status.wish { background: #28a745; }
-
-
-  .item-info {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  .item-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem;
-  }
-  .item-title a {
-    color: var(--card-text-primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  .item-title a:hover { color: var(--card-accent-color); }
-
-  .item-meta {
-    font-size: 0.9rem;
-    color: var(--card-text-secondary);
-    margin: 0 0 0.75rem;
-  }
-  .item-meta i { margin-right: 0.4rem; }
-
-  .item-rating {
-    margin-bottom: 1rem;
-    color: var(--card-rating-color);
-  }
-  .item-rating .fa-regular {
-    color: var(--card-text-secondary);
-  }
-
-  .item-summary {
-    font-size: 0.9rem;
-    color: var(--card-text-secondary);
-    line-height: 1.6;
-    flex-grow: 1;
-    margin: 0 0 1rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    margin: 0 0 0.3rem;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item-title-compact a {
+    color: var(--card-compact-text-primary);
+    text-decoration: none;
+  }
+  .item-title-compact a:hover {
+    color: var(--card-compact-accent-color);
   }
 
-  .item-footer {
-    border-top: 1px solid var(--card-border-color);
-    padding-top: 0.75rem;
-    margin-top: auto;
-    font-size: 0.8rem;
-    color: var(--card-text-secondary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .item-meta-compact {
+    font-size: 0.8rem; /* 减小元信息字号 */
+    color: var(--card-compact-text-secondary);
+    margin: 0 0 0.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+  .item-meta-compact i { margin-right: 0.4rem; }
 
-  .item-tags span {
-    display: inline-block;
-    background-color: rgba(13, 110, 253, 0.1);
-    color: var(--card-accent-color);
-    padding: 3px 8px;
-    border-radius: 4px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    font-size: 0.75rem;
+  .item-rating-compact {
+    margin-bottom: 0.75rem;
+    color: var(--card-compact-rating-color);
+    font-size: 0.85rem;
   }
-  
-  html[data-mode='dark'] .item-tags span {
-    background-color: rgba(13, 110, 253, 0.2);
+  .item-rating-compact .fa-regular {
+    color: var(--card-compact-text-secondary);
   }
 </style>
 
-<div class="media-grid-container">
+<div class="media-grid-compact">
   {% for item in site.data.books %}
-    <div class="media-card-item book-card">
-      <div class="item-cover">
+    <div class="media-card-compact book-card">
+      <div class="item-cover-compact">
         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.title }}">
           <img src="{{ item.cover }}" alt="{{ item.title }} 封面" loading="lazy">
         </a>
-        {% if item.status == "已读" %}
-          <span class="item-status read">已读</span>
-        {% elsif item.status == "在读" %}
-          <span class="item-status reading">在读</span>
-        {% elsif item.status == "想读" %}
-          <span class="item-status wish">想读</span>
-        {% endif %}
       </div>
-      <div class="item-info">
-        <h3 class="item-title">
+      <div class="item-info-compact">
+        <h3 class="item-title-compact">
           <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
         </h3>
-        <p class="item-meta"><i class="fa-solid fa-pen-nib fa-fw"></i> {{ item.author }}</p>
-        <div class="item-rating">
+        <p class="item-meta-compact"><i class="fa-solid fa-pen-nib fa-fw"></i> {{ item.author }}</p>
+        <div class="item-rating-compact">
           {% for i in (1..5) %}{% if i <= item.rating %}<i class="fa-solid fa-star"></i>{% else %}<i class="fa-regular fa-star"></i>{% endif %}{% endfor %}
-        </div>
-        <p class="item-summary">{{ item.summary }}</p>
-        <div class="item-footer">
-          <div class="item-tags">
-            {% for tag in item.tags limit:2 %}
-              <span>#{{ tag }}</span>
-            {% endfor %}
-          </div>
-          <span class="item-date"><i class="fa-solid fa-calendar-days fa-fw"></i> {{ item.date | date: "%Y-%m-%d" }}</span>
         </div>
       </div>
     </div>

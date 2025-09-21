@@ -1,41 +1,116 @@
 <style>
-  .movie-card .item-cover {
-    padding-top: 150%; /* 电影海报常见比例 */
+  :root {
+    --card-compact-bg: #ffffff;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --card-compact-border: #e9ecef;
+    --card-compact-text-primary: #343a40;
+    --card-compact-text-secondary: #868e96;
+    --card-compact-accent-color: #0d6efd;
+    --card-compact-rating-color: #f5b72e;
+  }
+
+  html[data-mode='dark'] {
+    --card-compact-bg: #2d2d2d;
+    --card-compact-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --card-compact-border: #444;
+    --card-compact-text-primary: #f8f9fa;
+    --card-compact-text-secondary: #adb5bd;
+  }
+
+  .media-grid-compact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .media-card-compact {
+    background-color: var(--card-compact-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-compact-shadow);
+    border: 1px solid var(--card-compact-border);
+    transition: border-color 0.3s ease;
+  }
+
+  .media-card-compact:hover {
+    border-color: var(--card-compact-accent-color);
+  }
+
+  .item-cover-compact {
+    position: relative;
+  }
+  /* 电影海报特定比例 */
+  .movie-card .item-cover-compact {
+    padding-top: 150%; 
+  }
+
+  .item-cover-compact a {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
   }
   
-  .item-status.watched { background: #0d6efd; }
-  .item-status.wish { background: #28a745; }
+  .item-cover-compact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item-info-compact {
+    padding: 1rem;
+  }
+
+  .item-title-compact {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item-title-compact a {
+    color: var(--card-compact-text-primary);
+    text-decoration: none;
+  }
+  .item-title-compact a:hover {
+    color: var(--card-compact-accent-color);
+  }
+
+  .item-meta-compact {
+    font-size: 0.8rem;
+    color: var(--card-compact-text-secondary);
+    margin: 0 0 0.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item-meta-compact i { margin-right: 0.4rem; }
+
+  .item-rating-compact {
+    margin-bottom: 0.75rem;
+    color: var(--card-compact-rating-color);
+    font-size: 0.85rem;
+  }
+  .item-rating-compact .fa-regular {
+    color: var(--card-compact-text-secondary);
+  }
 </style>
 
-<div class="media-grid-container">
+<div class="media-grid-compact">
   {% for item in site.data.movies %}
-    <div class="media-card-item movie-card">
-      <div class="item-cover">
+    <div class="media-card-compact movie-card">
+      <div class="item-cover-compact">
         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" title="{{ item.title }}">
           <img src="{{ item.cover }}" alt="{{ item.title }} 海报" loading="lazy">
         </a>
-        {% if item.status == "已看" %}
-          <span class="item-status watched">已看</span>
-        {% elsif item.status == "想看" %}
-          <span class="item-status wish">想看</span>
-        {% endif %}
       </div>
-      <div class="item-info">
-        <h3 class="item-title">
+      <div class="item-info-compact">
+        <h3 class="item-title-compact">
           <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
         </h3>
-        <p class="item-meta"><i class="fa-solid fa-clapperboard fa-fw"></i> {{ item.director }}</p>
-        <div class="item-rating">
+        <p class="item-meta-compact"><i class="fa-solid fa-clapperboard fa-fw"></i> {{ item.director }}</p>
+        <div class="item-rating-compact">
           {% for i in (1..5) %}{% if i <= item.rating %}<i class="fa-solid fa-star"></i>{% else %}<i class="fa-regular fa-star"></i>{% endif %}{% endfor %}
-        </div>
-        <p class="item-summary">{{ item.summary }}</p>
-        <div class="item-footer">
-          <div class="item-tags">
-            {% for tag in item.tags limit:2 %}
-              <span>#{{ tag }}</span>
-            {% endfor %}
-          </div>
-          <span class="item-date"><i class="fa-solid fa-calendar-days fa-fw"></i> {{ item.date | date: "%Y-%m-%d" }}</span>
         </div>
       </div>
     </div>
