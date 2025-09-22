@@ -41,8 +41,12 @@
   .media-grid-compact {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
     padding-top: 1rem;
+  }
+
+  .post-content a.popup{
+    border-bottom: 1px solid var(--link-underline-color);
   }
 
   .media-card-compact {
@@ -116,12 +120,13 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-top: .4rem;
   }
 
   .item-title-compact {
     font-size: 1.05rem;
     font-weight: 600;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.75rem;
     line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -141,13 +146,13 @@
   .item-meta-compact {
     font-size: 0.8rem;
     color: var(--card-compact-text-secondary);
-    margin: 0 0 0.5rem;
+    margin: 0 0 0rem;
     display: flex;
     align-items: center;
   }
 
   .item-meta-compact i { 
-    margin-right: 0.5rem; 
+    margin-right: 0.2rem; 
     width: 14px;
     text-align: center;
   }
@@ -216,7 +221,7 @@
   .status-tag.green { background: #D4EDDB; color: #325A3E; }
   .status-tag.blue { background: #D2E7F8; color: #2B4C69; }
   .status-tag.purple { background: #E6DEFA; color: #5D437A; }
-  .status-tag.pink { background: #F5E1EB; color: #754460; }
+  .status-tag.pink { background: #070205; color: #754460; }
   .status-tag.red { background: #FBE4E4; color: #733B3B; }
 
   /* 暗色模式下的标签颜色 */
@@ -306,7 +311,7 @@
           {% if item.tags and item.tags.size > 0 %}
             <div class="item-tags">
               {% for tag in item.tags %}
-                <span class="item-tag">{{ tag }}</span>
+                <span class="item-tag status-tag {{ item.status_color }}">{{ tag }}</span>
               {% endfor %}
             </div>
           {% endif %}
