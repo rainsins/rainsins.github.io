@@ -17,7 +17,7 @@ tail_includes:
     <p class="post-desc fw-light mb-4">{{ page.description }}</p>
     {% endif %} -->
     <!-- published date -->
-    <i class="fa-duotone fa-regular fa-calendar-pen"></i>&thinsp;
+    <i class="fa-regular fa-calendar-pen"></i>&thinsp;
     <span>
       {{ site.data.locales[lang].post.posted }}
       {% include datetime.html date=page.date tooltip=true lang=lang %}
@@ -26,7 +26,7 @@ tail_includes:
     <!-- lastmod date -->
     {% if page.last_modified_at and page.last_modified_at != page.date %}
     &emsp;
-    <i class="fa-duotone fa-solid fa-calendar-clock"></i>&thinsp;
+    <i class="fa-solid fa-calendar-clock"></i>&thinsp;
     <span>
       {{ site.data.locales[lang].post.updated }}
       {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
@@ -61,7 +61,7 @@ tail_includes:
         {% assign authors = page.authors %}
       {% endif %}
 
-      <i class="fa-duotone fa-solid fa-user"></i>&thinsp;
+      <i class="fa-solid fa-user"></i>&thinsp;
 
       {{ site.data.locales[lang].post.written_by }}
 
@@ -105,7 +105,7 @@ tail_includes:
   <!-- categories -->
   {% if page.categories.size > 0 %}
   <div class="post-meta mb-3">
-    <i class="far fa-duotone fa-solid fa-folder-open fa-fw me-1"></i>
+    <i class="far fa-solid fa-folder-open fa-fw me-1"></i>
     {% for category in page.categories %}
       <a href='{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/'>{{ category }}</a>
       {%- unless forloop.last -%}, {%- endunless -%}
@@ -116,7 +116,7 @@ tail_includes:
   <!-- tags -->
   {% if page.tags.size > 0 %}
   <div class="post-tags">
-    <i class="fa fa-duotone fa-solid fa-tags fa-fw me-1"></i>
+    <i class="fa fa-solid fa-tags fa-fw me-1"></i>
       {% for tag in page.tags %}
       <a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
           class="post-tag no-text-decoration" >

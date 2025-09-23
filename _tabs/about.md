@@ -1,10 +1,10 @@
 ---
 # the default layout is 'page'
 layout: cv
-icon: fa-duotone fa-solid fa-seedling
+icon: fa-solid fa-address-card
 order: 6
 
 description: 关于rainsin的博客和网站的详情
-keywords: rainsin, about, 甘肃 , 天水
+keywords: rainsin, about
 author: rainsin
 ---

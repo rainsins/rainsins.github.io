@@ -1,6 +1,6 @@
 ---
 layout: message
-icon: fa-duotone fa-solid fa-messages
+icon: fa-solid fa-messages
 order: 8
 forbid: true
 comments: true

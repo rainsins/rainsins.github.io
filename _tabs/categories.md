@@ -1,6 +1,6 @@
 ---
 layout: categories
-icon: fa-duotone fa-solid fa-bars-staggered
+icon: fa-solid fa-tags
 order: 2
 forbid: true
 comments: false
