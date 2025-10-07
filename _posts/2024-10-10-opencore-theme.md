@@ -1,5 +1,5 @@
 ---
-title: 「文件」我使用的Opencore的主题包
+title: 我使用的Opencore的主题包
 date: 2024-10-09 12:23:00 +0800
 categories: [黑苹果]
 tags: [黑苹果, OpenCore]

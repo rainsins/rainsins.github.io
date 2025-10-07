@@ -1,5 +1,5 @@
 ---
-title: 「解决问题」alist无法设置密码
+title: alist 解决无法设置密码的问题
 date: 2025-02-06 13:23:00 +0800
 categories: [解决问题]
 tags: [解决问题]
