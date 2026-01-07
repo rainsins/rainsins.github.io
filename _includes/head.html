@@ -100,21 +100,21 @@
     style.type = "text/css";
 
     if (modeToggle.modeStatus == "dark") {
-      style.innerHTML = "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
+      style.innerHTML = "#loading-gif-box{background-color: #000;} .loading-boxs-imgs{background-image: url(https://source.vip.cpolar.cn/img/darkload.gif?sign=HSMBFJIuwRnWabf8E1WJKYaTOneSVDmMdmfOphPDbdw=:0);}";
     } else {
-      style.innerHTML = "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://source.rainsin.cn/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
+      style.innerHTML = "#loading-gif-box{background-color: #fff;} .loading-boxs-imgs{background-image: url(https://source.vip.cpolar.cn/img/loadlight.gif?sign=FJgpddP5fi4a60y3yWNyJ6chvzOREupwOfPWk03U_ik=:0);}";
     }
     document.getElementsByTagName("head")[0].appendChild(style);
   </script>
 
   <!-- ========== 评论系统 ========== -->
   {% if page.comments %}
-  <script src="https://cdn.rainsin.cn/Artalk@2.9.1/Artalk.min.js"></script>
+  <script src="https://cdn.cpolar.top/Artalk@2.9.1/Artalk.min.js"></script>
 
-  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-music.js"></script>
-  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-video.js"></script>
-  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-file.js"></script>
-  <script src="https://cdn.rainsin.cn/artalk-plugin/artalk-plugin-pan.js"></script>
+  <script src="https://cdn.cpolar.top/artalk-plugin/artalk-plugin-music.js"></script>
+  <script src="https://cdn.cpolar.top/artalk-plugin/artalk-plugin-video.js"></script>
+  <script src="https://cdn.cpolar.top/artalk-plugin/artalk-plugin-file.js"></script>
+  <script src="https://cdn.cpolar.top/artalk-plugin/artalk-plugin-pan.js"></script>
 
   <script>
     window.load_event = {
@@ -128,7 +128,7 @@
 
         const artalk = Artalk.init({
           el: '#tcomment',
-          server: 'https://pl.rainsin.cn',
+          server: 'https://waline.cpolar.cn',
           darkMode: document.documentElement.dataset.mode == "dark",
           site: 'Rainsin\'s Blog'
         });
@@ -138,7 +138,7 @@
           artalk_mode: () => {
             artalk.update({
               el: '#tcomment',
-              server: 'https://pl.rainsin.cn',
+              server: 'https://waline.cpolar.cn',
               darkMode: document.documentElement.dataset.mode == "dark",
               site: 'Rainsin\'s Blog'
             });
@@ -152,11 +152,11 @@
 
   <!-- ========== 主要样式表 ========== -->
   <!-- 自定义样式 -->
-  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/comments-min.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/root-min.css" />
-  <link rel="stylesheet" href="https://source.rainsin.cn/assets/css/card-profile.css" />
-  <link href="https://source.rainsin.cn/assets/css/font.css" rel="stylesheet" />
-  <link href="https://source.rainsin.cn/assets/css/em.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://source.vip.cpolar.cn/assets/css/comments-min.css" />
+  <link rel="stylesheet" href="https://source.vip.cpolar.cn/assets/css/root-min.css" />
+  <link rel="stylesheet" href="https://source.vip.cpolar.cn/assets/css/card-profile.css" />
+  <link href="https://source.vip.cpolar.cn/assets/css/font.css" rel="stylesheet" />
+  <link href="https://source.vip.cpolar.cn/assets/css/em.css" rel="stylesheet" />
 
   <!-- 通用样式修正 -->
   <style>
@@ -216,7 +216,7 @@
 
   <!-- ========== 收尾工作 ========== -->
   {% include favicons.html %}
-  <script src="https://source.rainsin.cn/assets/js/ms.js"></script>
+  <script src="https://source.vip.cpolar.cn/assets/js/ms.js"></script>
   {% include js-selector.html %}
   {% include set-mode.html %}
   {% include metadata-hook.html %}

@@ -101,7 +101,7 @@ async function send_message() {
     }
 
     if (!isLoad) {
-        fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
+        fetch(`https://rapi.vip.cpolar.cn/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == 404) {
@@ -121,7 +121,7 @@ async function send_message() {
 
                     const processedData = data.map(item => ({
                         ...item,
-                        poster: `https://myapi.rainsin.cn/pics-dmm/${encodeURIComponent(item.title)}`
+                        poster: `https://rapi.vip.cpolar.cn/pics-dmm/${encodeURIComponent(item.title)}`
                     }));
 
                     if (processedData.length > 0) {
@@ -174,7 +174,7 @@ async function send_message() {
                                     art.video.style.opacity = '0';
                                 }
 
-                                let finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+                                let finalPosterUrl = 'https://rapi.vip.cpolar.cn/pics-dmm/default';
 
                                 if (currentItem && currentItem.poster) {
                                     console.log('Loading poster for:', currentItem.title);
@@ -185,7 +185,7 @@ async function send_message() {
                                         console.log('Poster loaded successfully:', finalPosterUrl);
                                     } catch (error) {
                                         console.log('Poster load failed, using default');
-                                        finalPosterUrl = 'https://myapi.rainsin.cn/pics-dmm/default';
+                                        finalPosterUrl = 'https://rapi.vip.cpolar.cn/pics-dmm/default';
                                     }
                                 } else {
                                     console.log('No current item or poster found');
@@ -259,7 +259,7 @@ window.load_event = {
             type: 'm3u8',
             theme: "#2c9678",
             title: '猴王初问世',
-            poster: 'https://source.rainsin.cn/img/post/video/%E8%A5%BF%E6%B8%B8%E8%AE%B0.jpg',
+            poster: 'https://source.vip.cpolar.cn/img/post/video/%E8%A5%BF%E6%B8%B8%E8%AE%B0.jpg',
             flip: true,
             playbackRate: true,
             screenshot: true,

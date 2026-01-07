@@ -116,7 +116,7 @@ async function send_message() {
 
         const title = item.info?.title || item.title || '标题加载失败';
         const plot = item.info?.plot?.replace('<![CDATA[', '').replace(']]>', '') || '暂无简介';
-        const poster = item.poster || 'https://myapi.rainsin.cn/pics-dmm/default';
+        const poster = item.poster || 'https://rapi.vip.cpolar.cn/pics-dmm/default';
         const director = item.info?.director || '未知';
         const studio = item.info?.studio || '未知';
         const year = item.info?.year || '未知';
@@ -241,7 +241,7 @@ async function send_message() {
   
         $("#subscribe-button").val("加载中...").prop('disabled', true);
         
-        fetch(`https://myapi.rainsin.cn/blog/envideo/${query}`)
+        fetch(`https://rapi.vip.cpolar.cn/blog/envideo/${query}`)
             .then((response) => {
                 isLoad = true;
                 if (response.status == 404) {
@@ -349,7 +349,7 @@ window.load_event = {
             type: 'm3u8',
             theme: "#2c9678",
             title: '猴王初问世',
-            poster: 'https://source.rainsin.cn/img/post/video/%E8%A5%BF%E6%B8%B8%E8%AE%B0.jpg',
+            poster: 'https://source.vip.cpolar.cn/img/post/video/%E8%A5%BF%E6%B8%B8%E8%AE%B0.jpg',
             flip: true,
             playbackRate: true,
             screenshot: true,

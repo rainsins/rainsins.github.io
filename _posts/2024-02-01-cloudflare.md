@@ -46,7 +46,7 @@ author: rainsin
 <script>
 var player = new window.Player({
   id: 'mse',
-  url: 'https://source.rainsin.cn/s/r3e91t',
+  url: 'https://source.vip.cpolar.cn/s/r3e91t',
 })
 </script>
 
