@@ -18,35 +18,35 @@ jquery:
   js: https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js
 
 bootstrap:
-  css: https://cdn.cpolar.top/bootstrap/dist/css/bootstrap.min.css
-  js: https://cdn.cpolar.top/bootstrap/dist/js/bootstrap.min.js
+  css: https://mycdn.cpolar.cn/bootstrap/dist/css/bootstrap.min.css
+  js: https://mycdn.cpolar.cn/bootstrap/dist/js/bootstrap.min.js
 
 toc:
-  css: https://cdn.cpolar.top/tocbot/dist/tocbot.css
-  js: https://cdn.cpolar.top/tocbot/dist/tocbot.min.js
+  css: https://mycdn.cpolar.cn/tocbot/dist/tocbot.css
+  js: https://mycdn.cpolar.cn/tocbot/dist/tocbot.min.js
 
 fontawesome:
-  css: https://cdn.cpolar.top/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
+  css: https://mycdn.cpolar.cn/font-awesome-6-pro/font-awesome-6-pro/css/all.min.css
 
 search:
-  js: https://cdn.cpolar.top/simple-jekyll-search/dest/simple-jekyll-search.min.js
+  js: https://mycdn.cpolar.cn/simple-jekyll-search/dest/simple-jekyll-search.min.js
 
 mermaid:
-  js: https://cdn.cpolar.top/mermaid@11.4.1/dist/mermaid.min.js
+  js: https://mycdn.cpolar.cn/mermaid@11.4.1/dist/mermaid.min.js
 
 dayjs:
   js:
-    common: https://cdn.cpolar.top/dayjs/dayjs.min.js
-    locale: https://cdn.cpolar.top/dayjs/locale/:LOCALE.js
-    relativeTime: https://cdn.cpolar.top/dayjs/plugin/relativeTime.js
-    localizedFormat: https://cdn.cpolar.top/dayjs/plugin/localizedFormat.js
+    common: https://mycdn.cpolar.cn/dayjs/dayjs.min.js
+    locale: https://mycdn.cpolar.cn/dayjs/locale/:LOCALE.js
+    relativeTime: https://mycdn.cpolar.cn/dayjs/plugin/relativeTime.js
+    localizedFormat: https://mycdn.cpolar.cn/dayjs/plugin/localizedFormat.js
 
 magnific-popup:
-  css: https://cdn.cpolar.top/magnific-popup/dist/magnific-popup.css
-  js: https://cdn.cpolar.top/magnific-popup/dist/jquery.magnific-popup.min.js
+  css: https://mycdn.cpolar.cn/magnific-popup/dist/magnific-popup.css
+  js: https://mycdn.cpolar.cn/magnific-popup/dist/jquery.magnific-popup.min.js
 
 lazysizes:
-  js: https://cdn.cpolar.top/lazysizes/lazysizes.min.js
+  js: https://mycdn.cpolar.cn/lazysizes/lazysizes.min.js
 
 clipboard:
   js: https://npm.elemecdn.com/clipboard@2.0.11/dist/clipboard.min.js
