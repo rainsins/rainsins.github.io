@@ -1,0 +1,70 @@
+# - title: "十七大报告"
+#   author: "胡锦涛"
+#   cover: "https://www.book5.cc/wp-content/uploads/2024/02/photo_2023-03-23_21-51-47.jpg"
+#   rating: 5
+#   status: "想读"
+#   status_color: "blue"
+#   date: "1925–1976"
+#   url: "https://pan.quark.cn/s/19cca8ae871a"
+#   summary: "收录毛泽东一生中的绝大部分著作，包括文章、讲话、书信等，是研究毛泽东思想和中国近现代史的权威资料。"
+#   tags:
+#     - "党史"
+#     - "毛泽东"
+#     - "马克思主义"
+
+- title: "狱中家书"
+  author: "张春桥"
+  cover: "https://source.vip.cpolar.cn/img/post/mao/文稿.png"
+  rating: 5
+  status: "想读"
+  status_color: "blue"
+  date: "1949–1976"
+  url: "https://pan.quark.cn/s/e992ad7d3c39"
+  summary: "收录毛泽东建国后的重要讲话、文章和批示，是研究新中国初期历史与毛泽东思想发展的重要文献。"
+  tags:
+    - "党史"
+    - "毛泽东"
+    - "马克思主义"
+
+- title: "新语丝：魏巍文集"
+  author: "魏巍"
+  cover: "https://source.vip.cpolar.cn/img/post/mao/选集.png"
+  rating: 5
+  status: "在读"
+  status_color: "yellow"
+  date: "1925–1957"
+  url: "https://pan.quark.cn/s/2b041306f3c0"
+  summary: "毛泽东重要文章的精选集，涵盖革命战争时期和建国初期的理论成果，是学习毛泽东思想的基础读物。"
+  tags:
+    - "党史"
+    - "毛泽东"
+    - "马克思主义"
+
+- title: "康生与文革"
+  author: "康生"
+  cover: "https://www.book5.cc/wp-content/uploads/2024/02/photo_2023-03-23_21-51-47.jpg"
+  rating: 5
+  status: "想读"
+  status_color: "blue"
+  date: "1925–1976"
+  url: "https://pan.quark.cn/s/19cca8ae871a"
+  summary: "收录毛泽东一生中的绝大部分著作，包括文章、讲话、书信等，是研究毛泽东思想和中国近现代史的权威资料。"
+  tags:
+    - "党史"
+    - "毛泽东"
+    - "马克思主义"
+
+- title: "邓小平文选"
+  author: "邓小平"
+  cover: "https://www.book5.cc/wp-content/uploads/2024/02/photo_2023-03-23_21-51-47.jpg"
+  rating: 5
+  status: "想读"
+  status_color: "blue"
+  date: "1925–1976"
+  url: "https://pan.quark.cn/s/19cca8ae871a"
+  summary: "收录毛泽东一生中的绝大部分著作，包括文章、讲话、书信等，是研究毛泽东思想和中国近现代史的权威资料。"
+  tags:
+    - "党史"
+    - "毛泽东"
+    - "马克思主义"
+
